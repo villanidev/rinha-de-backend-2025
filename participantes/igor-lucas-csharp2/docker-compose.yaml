@@ -1,14 +1,14 @@
 x-service-templates:
   api: &api
-    image: ghcr.io/igorlucasassuncao/rinha-worker-api:latest
-    #build: ./Rinha
+    image: ghcr.io/igorlucasassuncao/rinha-worker:api
+   # build: .
     depends_on:
       - rinha-db
     deploy:
       resources:
         limits:
           cpus: "0.25"
-          memory: "45MB"
+          memory: "50MB"
     networks:
       - backend
       - payment-processor
@@ -34,8 +34,8 @@ services:
       - ConnectionStrings__postgres=Host=rinha-db;Port=5432;Database=rinha;Username=postgres;Password=postgres;Pooling=true;Minimum Pool Size=10;Maximum Pool Size=50;Connection Lifetime=300;Connection Idle Lifetime=60;Command Timeout=30;Cancellation Timeout=30;No Reset On Close=true;Max Auto Prepare=20;Auto Prepare Min Usages=1;Read Buffer Size=8192;Write Buffer Size=8192;Socket Receive Buffer Size=8192;Socket Send Buffer Size=8192
   
   worker:
-   image: ghcr.io/igorlucasassuncao/rinha-worker-worker:latest
-   #build: ./Worker
+   image: ghcr.io/igorlucasassuncao/rinha-worker:worker
+   #build: ../Worker
    container_name: worker
    hostname: worker
    networks:
@@ -53,7 +53,7 @@ services:
       resources:
         limits:
           cpus: "0.3"
-          memory: "100MB"
+          memory: "90MB"
 
   nginx:
     image: nginx:alpine
