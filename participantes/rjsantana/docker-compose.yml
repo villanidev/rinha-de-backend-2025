@@ -32,7 +32,7 @@ services:
 
   # APIs Produtor ========================================================================
   api01: &api
-    image: 442494/rinha-backend-2025-produtor:v5
+    image: 442494/rinha-backend-2025-produtor:v6
     hostname: api01
     networks:
       - rinha-net
@@ -62,7 +62,7 @@ services:
 
   # APIs Consumidor ========================================================================
   api03:
-    image: 442494/rinha-backend-2025-consumidor:v5
+    image: 442494/rinha-backend-2025-consumidor:v6
     hostname: api03
     networks:
       - rinha-net
@@ -105,6 +105,12 @@ services:
         limits:
           cpus: "0.2"
           memory: "50MB"
+    sysctls:
+      - net.core.somaxconn=4096
+    ulimits:
+      nofile:
+        soft: 8192
+        hard: 8192 
 
 networks:
   payment-processor:
