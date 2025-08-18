@@ -1,5 +1,5 @@
 x-base-service: &fastapi-server
-  image: victorcoelh/rinha-backend-2025-app:a917
+  image: victorcoelh/rinha-backend-2025-app:7d56
   environment:
     REDIS_URL: redis://redis:6379/0
   networks:
@@ -36,7 +36,7 @@ services:
       - "9999:9999"
     depends_on:
       web-server-1:
-        condition: service_healthy
+        condition: service_started
       web-server-2:
         condition: service_started
     volumes:
