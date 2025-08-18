@@ -21,6 +21,7 @@ Fiz algumas submissões diferentes. Como não é necessariamente claro qual é s
 - [vfabricio-greedy](https://github.com/zanfranceschi/rinha-de-backend-2025/tree/main/participantes/vfabricio-greedy) (v1): https://github.com/VFabricio/rinha_2025/tree/v0.1
 - [vfabricio-custom-queue](https://github.com/zanfranceschi/rinha-de-backend-2025/tree/main/participantes/vfabricio-custom-queue) (v1): https://github.com/VFabricio/rinha_2025/tree/v0.2
 - [vfabricio-uds-greedy](https://github.com/zanfranceschi/rinha-de-backend-2025/tree/main/participantes/vfabricio-custom-queue) (v1): https://github.com/VFabricio/rinha_2025/tree/v0.3
+- [vfabricio-uds-quick](https://github.com/zanfranceschi/rinha-de-backend-2025/tree/main/participantes/vfabricio-custom-queue) (v4): https://github.com/VFabricio/rinha_2025/tree/v0.3 (é o mesmo código, só muda uma variável de ambiente no docker-compose.yml)
 
 Todas elas tem os mesmos compoenentes básicos:
 - load balancer: recebe as requisições HTTP do mundo externo e as encaminha para os gateways. Escrito do zero.
@@ -41,4 +42,23 @@ Aqui os ganhos de performance foram marginais.
 Mas esta queue é escrita de forma bastante simplória e com certeza tem oportunidades grandes de otimização.
 
 A partir da v3 os componentes são os mesmos mas, ao invés de usarem conexões TCP toda a comunicação entre meus componentes (isto é, tudo exceto as conexões dos clientes com o load balancer e do worker com os payment providers) são feitas através de Unix domain sockets.
-Nos meus testes locais isso diminui o p99 em cerca de 30%, mas veremos como fica o resultado no servidor da Rinha.
+
+# Estratégias de roteamento
+
+O twist desta versão da Rinha está nos dois processadores de pagamentos.
+Para além das questões de infraestrutura genéricas, a pergunta é: qual é a estratégia ótima para distribuir os pagamentos entre os processadores.
+
+O insight é que, se fosse um sistema real, a escolha seria determinada pelo tempo aceitável para processar os pagamentos após enfileirados.
+Se não houver nenhum requisito duro sobre isso, nunca há motivo para usar o fallback!
+Contanto que possamos esperar, sempre vale a pena esperar o default estar saudável e sempre mandar tudo para ele.
+
+Se isso é viável na Rinha vai depender de como exatamente os steps vão estar configurados no teste final.
+No exemplo que temos para o desenvolvimento, há um tempo razoável entre o default voltar a estar saudável e os resultados finais serem coletados.
+Então, o que a maioria das submissões que tenho visto está fazendo é rotear tudo par ele incondicionalmente.
+
+Mas, se nos testes finais, o default não estiver saudável por tempo suficiente para drenar a fila, podemos perder pagamentos.
+Nesse caso pode ser mais rentável mandar pelo menos alguns dos pagamentos para o fallback.
+
+Levando isso em consideração, estou dividindo minhas submissões entre duas estratégias:
+- A v1 e a v3 usam a estratégia _greedy_: mandar tudo para o default e rezar!
+- A v2 e a v4 usam a estratégia _quick_: aqui os workers usam os health checks e as respostas retornadas pelos payment providers (se há erros ou timeouts) para monitorar a saúde destes. Com base nisso eles tentam dividir os pagamentos entre eles tentando maximizar throughput e o tempo em que os pedidos ficam enfileirados. Esta estratégia é mais necessariamente mais cara, em termos da porcentagem paga em taxas, mas mais segura, no sentido de que a probabilidade de perda de pagamentos no final do teste é menor.
