@@ -1,0 +1,8 @@
+{
+  "name": "Caio Caminha",
+  "social": ["https://www.linkedin.com/in/caio-freitas-caminha/"],
+  "source-code-repo": "https://github.com/CaioCaminha/rinha-backend-kotlin-spring",
+  "langs": ["Kotlin", "Spring"],
+  "storages": ["In Memory"],
+  "load-balancers": ["nginx"]
+}
