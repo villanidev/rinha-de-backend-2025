@@ -1,0 +1,9 @@
+{
+    "name": "Arthur Fernandes",
+    "social": ["https://github.com/arthurbpf"],
+    "source-code-repo": "https://github.com/arthurbpf/rinha-de-backend-2025-worker",
+    "langs": ["typescript"],
+    "storages": ["sqlite"],
+    "messaging": ["pqueue"],
+    "load-balancers": ["nginx"]
+}
