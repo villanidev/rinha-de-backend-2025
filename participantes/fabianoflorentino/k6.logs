@@ -1,0 +1,8 @@
+
+time="2025-08-18T02:43:32Z" level=warning msg="56 inconsistências encontradas." source=console
+time="2025-08-18T02:43:42Z" level=warning msg="243 inconsistências encontradas." source=console
+time="2025-08-18T02:43:52Z" level=warning msg="1326 inconsistências encontradas." source=console
+time="2025-08-18T02:44:02Z" level=warning msg="3072 inconsistências encontradas." source=console
+time="2025-08-18T02:44:12Z" level=warning msg="4347 inconsistências encontradas." source=console
+time="2025-08-18T02:44:23Z" level=info msg="summaries from 2025-08-18T02:43:13.612Z to 2025-08-18T02:44:23.612Z" source=console
+log truncated at line 1000

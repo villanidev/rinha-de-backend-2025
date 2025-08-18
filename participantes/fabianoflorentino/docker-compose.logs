@@ -1,0 +1,90 @@
+
+ Network fabianoflorentino_rinha  Creating
+ Network fabianoflorentino_rinha  Created
+ Container eliot-redis  Creating
+ Container eliot-redis  Created
+ Container eliot-1  Creating
+ Container eliot-2  Creating
+ Container eliot-2  Created
+ Container eliot-1  Created
+ Container eliot-haproxy  Creating
+ Container eliot-haproxy  Created
+Attaching to eliot-1, eliot-2, eliot-haproxy, eliot-redis
+eliot-redis  | Starting Redis Server
+eliot-redis  | 1:C 18 Aug 2025 02:43:12.752 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+eliot-redis  | 1:C 18 Aug 2025 02:43:12.753 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+eliot-redis  | 1:C 18 Aug 2025 02:43:12.753 * Redis version=8.2.0, bits=64, commit=00000000, modified=1, pid=1, just started
+eliot-redis  | 1:C 18 Aug 2025 02:43:12.753 * Configuration loaded
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.753 * monotonic clock: POSIX clock_gettime
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.755 * Running mode=standalone, port=6379.
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.758 * <bf> RedisBloom version 8.2.0 (Git=unknown)
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.758 * <bf> Registering configuration options: [
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.758 * <bf> 	{ bf-error-rate       :      0.01 }
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.758 * <bf> 	{ bf-initial-size     :       100 }
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.758 * <bf> 	{ bf-expansion-factor :         2 }
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.758 * <bf> 	{ cf-bucket-size      :         2 }
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.758 * <bf> 	{ cf-initial-size     :      1024 }
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.758 * <bf> 	{ cf-max-iterations   :        20 }
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.759 * <bf> 	{ cf-expansion-factor :         1 }
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.759 * <bf> 	{ cf-max-expansions   :        32 }
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.759 * <bf> ]
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.759 * Module 'bf' loaded from /usr/local/lib/redis/modules//redisbloom.so
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.782 * <search> Redis version found by RedisSearch : 8.2.0 - oss
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.782 * <search> RediSearch version 8.2.0 (Git=d81ebce)
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.782 * <search> Low level api version 1 initialized successfully
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.782 * <search> gc: ON, prefix min length: 2, min word length to stem: 4, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, 
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.784 * <search> Initialized thread pools!
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.784 * <search> Disabled workers threadpool of size 0
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.787 * <search> Subscribe to config changes
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.787 * <search> Enabled role change notification
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.788 * <search> Cluster configuration: AUTO partitions, type: 0, coordinator timeout: 0ms
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.788 * <search> Register write commands
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.788 * Module 'search' loaded from /usr/local/lib/redis/modules//redisearch.so
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.792 * <timeseries> RedisTimeSeries version 80200, git_sha=1439d4a439ca9c063e6ef124a510abff09a5d493
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.792 * <timeseries> Redis version found by RedisTimeSeries : 8.2.0 - oss
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.792 * <timeseries> Registering configuration options: [
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.792 * <timeseries> 	{ ts-compaction-policy   :              }
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.792 * <timeseries> 	{ ts-num-threads         :            3 }
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.792 * <timeseries> 	{ ts-retention-policy    :            0 }
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.792 * <timeseries> 	{ ts-duplicate-policy    :        block }
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.792 * <timeseries> 	{ ts-chunk-size-bytes    :         4096 }
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.792 * <timeseries> 	{ ts-encoding            :   compressed }
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.792 * <timeseries> 	{ ts-ignore-max-time-diff:            0 }
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.792 * <timeseries> 	{ ts-ignore-max-val-diff :     0.000000 }
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.792 * <timeseries> ]
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.793 * <timeseries> Detected redis oss
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.794 * <timeseries> Enabled diskless replication
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.794 * Module 'timeseries' loaded from /usr/local/lib/redis/modules//redistimeseries.so
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.802 * <ReJSON> Created new data type 'ReJSON-RL'
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.806 * <ReJSON> version: 80200 git sha: unknown branch: unknown
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.807 * <ReJSON> Exported RedisJSON_V1 API
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.807 * <ReJSON> Exported RedisJSON_V2 API
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.807 * <ReJSON> Exported RedisJSON_V3 API
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.807 * <ReJSON> Exported RedisJSON_V4 API
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.807 * <ReJSON> Exported RedisJSON_V5 API
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.807 * <ReJSON> Enabled diskless replication
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.807 * <ReJSON> Initialized shared string cache, thread safe: false.
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.807 * Module 'ReJSON' loaded from /usr/local/lib/redis/modules//rejson.so
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.807 * <search> Acquired RedisJSON_V5 API
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.807 * Server initialized
+eliot-redis  | 1:M 18 Aug 2025 02:43:12.807 * Ready to accept connections tcp
+eliot-2      | 2025/08/18 02:43:13 listening on :8080
+eliot-1      | 2025/08/18 02:43:13 listening on :8080
+eliot-haproxy  | [NOTICE]   (1) : Initializing new worker (8)
+eliot-haproxy  | [NOTICE]   (8) : haproxy version is 3.1.8-4391242
+eliot-haproxy  | [WARNING]  (8) : 'option http-buffer-request' ignored for frontend 'fe' as it requires HTTP mode.
+eliot-haproxy  | [WARNING]  (8) : 'option http-buffer-request' ignored for backend 'be' as it requires HTTP mode.
+eliot-haproxy  | [NOTICE]   (1) : Loading success.
+eliot-haproxy  | [NOTICE]   (1) : haproxy version is 3.1.8-4391242
+eliot-haproxy  | [WARNING]  (1) : Exiting Master process...
+eliot-haproxy  | [WARNING]  (8) : Proxy fe stopped (cumulated conns: FE: 553, BE: 0).
+eliot-haproxy  | [WARNING]  (8) : Proxy be stopped (cumulated conns: FE: 0, BE: 553).
+eliot-haproxy  | [WARNING]  (1) : Current worker (8) exited with code 0 (Exit)
+eliot-haproxy  | [WARNING]  (1) : All workers exited. Exiting... (0)
+[Keliot-haproxy exited with code 0
+[Keliot-1 exited with code 2
+[Keliot-2 exited with code 2
+eliot-redis    | 1:signal-handler (1755485064) Received SIGTERM scheduling shutdown...
+eliot-redis    | 1:M 18 Aug 2025 02:44:24.494 * User requested shutdown...
+eliot-redis    | 1:M 18 Aug 2025 02:44:24.494 # Redis is now ready to exit, bye bye...
+log truncated at line 1000
