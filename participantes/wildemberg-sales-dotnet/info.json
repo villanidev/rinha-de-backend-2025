@@ -1,0 +1,9 @@
+{
+    "name": "Wildemberg Sales",
+    "social": ["https://github.com/wildemberg-sales", "https://br.linkedin.com/in/wildemberg-sales-86439913b"],
+    "source-code-repo": "https://github.com/wildemberg-sales/API-AOT-Payments-RinhaDeBackend2025",
+    "langs": ["c#", "dotnet", ".net", ".NET"],
+    "frameworks": ["aspnet"],
+    "storages": ["postgresql"],
+    "load-balancers": ["nginx"]
+}
