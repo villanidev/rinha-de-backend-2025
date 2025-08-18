@@ -1,5 +1,5 @@
 x-api-template: &api-common
-  image: matheusdph20/rinha01:59
+  image: matheusdph20/rinha01:60
   restart: on-failure
   environment:
     - ASPNETCORE_URLS=http://+:80
