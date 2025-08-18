@@ -1,1 +1,1 @@
-insert into payment_processor_priority values (1, current_timestamp);
+insert into payment_processor_priority values ('N', 0, current_timestamp, 'N', 0, current_timestamp, current_timestamp);
