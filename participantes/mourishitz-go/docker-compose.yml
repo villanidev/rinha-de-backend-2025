@@ -30,7 +30,7 @@ services:
       resources:
         limits:
           cpus: "0.20"
-          memory: "30MB"
+          memory: "25MB"
     networks:
       - rinha-backend
     depends_on:
@@ -57,7 +57,7 @@ services:
       resources:
         limits:
           cpus: "0.4325"
-          memory: "218.75MB"
+          memory: "221.75MB"
 
   worker1: &worker
     container_name: worker-1
@@ -73,7 +73,7 @@ services:
       resources:
         limits:
           cpus: "0.1875"
-          memory: "18.75MB"
+          memory: "20.75MB"
     networks:
       - rinha-backend
       - payment-processor
