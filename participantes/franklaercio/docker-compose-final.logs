@@ -1,0 +1,1001 @@
+
+ api02 Pulling 
+ api01 Pulling 
+ 1747dece9491 Already exists 
+ 04682873b875 Pulling fs layer 
+ 1747dece9491 Already exists 
+ 04682873b875 Pulling fs layer 
+ 04682873b875 Downloading [>                                                  ]  50.65kB/4.036MB
+ 04682873b875 Downloading [>                                                  ]  50.65kB/4.036MB
+ 04682873b875 Verifying Checksum 
+ 04682873b875 Download complete 
+ 04682873b875 Verifying Checksum 
+ 04682873b875 Download complete 
+ 04682873b875 Extracting [>                                                  ]  65.54kB/4.036MB
+ 04682873b875 Extracting [>                                                  ]  65.54kB/4.036MB
+ 04682873b875 Extracting [==================================================>]  4.036MB/4.036MB
+ 04682873b875 Extracting [==================================================>]  4.036MB/4.036MB
+ 04682873b875 Pull complete 
+ 04682873b875 Pull complete 
+ api02 Pulled 
+ api01 Pulled 
+ Network franklaercio_backend  Creating
+ Network franklaercio_backend  Created
+ Volume "franklaercio_postgres_data"  Creating
+ Volume "franklaercio_postgres_data"  Created
+ Volume "franklaercio_redis_data"  Creating
+ Volume "franklaercio_redis_data"  Created
+ Container redis  Creating
+ Container db  Creating
+ Container redis  Created
+ Container db  Created
+ Container api02  Creating
+ Container api01  Creating
+ Container api01  Created
+ Container api02  Created
+ Container nginx_load_balancer  Creating
+ Container nginx_load_balancer  Created
+Attaching to api01, api02, db, nginx_load_balancer, redis
+redis  | 1:C 18 Aug 2025 16:36:08.016 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis  | 1:C 18 Aug 2025 16:36:08.016 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis  | 1:C 18 Aug 2025 16:36:08.016 * Redis version=7.4.5, bits=64, commit=00000000, modified=0, pid=1, just started
+redis  | 1:C 18 Aug 2025 16:36:08.016 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+redis  | 1:M 18 Aug 2025 16:36:08.016 * monotonic clock: POSIX clock_gettime
+redis  | 1:M 18 Aug 2025 16:36:08.017 * Running mode=standalone, port=6379.
+redis  | 1:M 18 Aug 2025 16:36:08.018 * Server initialized
+redis  | 1:M 18 Aug 2025 16:36:08.018 * Ready to accept connections tcp
+db     | The files belonging to this database system will be owned by user "postgres".
+db     | This user must also own the server process.
+db     | 
+db     | The database cluster will be initialized with locale "en_US.utf8".
+db     | The default database encoding has accordingly been set to "UTF8".
+db     | The default text search configuration will be set to "english".
+db     | 
+db     | Data page checksums are disabled.
+db     | 
+db     | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+db     | creating subdirectories ... ok
+db     | selecting dynamic shared memory implementation ... posix
+db     | selecting default "max_connections" ... 100
+db     | selecting default "shared_buffers" ... 128MB
+db     | selecting default time zone ... UTC
+db     | creating configuration files ... ok
+db     | running bootstrap script ... ok
+db     | sh: locale: not found
+db     | 2025-08-18 16:36:09.361 UTC [36] WARNING:  no usable system locales were found
+db     | performing post-bootstrap initialization ... ok
+db     | initdb: warning: enabling "trust" authentication for local connections
+db     | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+db     | syncing data to disk ... ok
+db     | 
+db     | 
+db     | Success. You can now start the database server using:
+db     | 
+db     |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+db     | 
+db     | waiting for server to start....2025-08-18 16:36:10.769 UTC [48] LOG:  starting PostgreSQL 17.5 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+db     | 2025-08-18 16:36:10.769 UTC [48] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+db     | 2025-08-18 16:36:10.771 UTC [51] LOG:  database system was shut down at 2025-08-18 16:36:10 UTC
+db     | 2025-08-18 16:36:10.776 UTC [48] LOG:  database system is ready to accept connections
+db     |  done
+db     | server started
+db     | CREATE DATABASE
+db     | 
+db     | 
+db     | /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/init.sql
+db     | CREATE TABLE
+db     | CREATE INDEX
+db     | 
+db     | 
+db     | waiting for server to shut down....2025-08-18 16:36:11.063 UTC [48] LOG:  received fast shutdown request
+db     | 2025-08-18 16:36:11.063 UTC [48] LOG:  aborting any active transactions
+db     | 2025-08-18 16:36:11.067 UTC [48] LOG:  background worker "logical replication launcher" (PID 54) exited with exit code 1
+db     | 2025-08-18 16:36:11.067 UTC [49] LOG:  shutting down
+db     | 2025-08-18 16:36:11.067 UTC [49] LOG:  checkpoint starting: shutdown immediate
+db     | 2025-08-18 16:36:11.147 UTC [49] LOG:  checkpoint complete: wrote 933 buffers (18.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.080 s, sync=0.001 s, total=0.080 s; sync files=0, longest=0.000 s, average=0.000 s; distance=4282 kB, estimate=4282 kB; lsn=0/191BDC8, redo lsn=0/191BDC8
+db     | 2025-08-18 16:36:11.158 UTC [48] LOG:  database system is shut down
+db     |  done
+db     | server stopped
+db     | 
+db     | PostgreSQL init process complete; ready for start up.
+db     | 
+db     | 2025-08-18 16:36:11.246 UTC [1] LOG:  starting PostgreSQL 17.5 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+db     | 2025-08-18 16:36:11.246 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+db     | 2025-08-18 16:36:11.246 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+db     | 2025-08-18 16:36:11.246 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+db     | 2025-08-18 16:36:11.249 UTC [66] LOG:  database system was shut down at 2025-08-18 16:36:11 UTC
+db     | 2025-08-18 16:36:11.253 UTC [1] LOG:  database system is ready to accept connections
+api01  | 2025/08/18 16:36:12 [INFO] Successfully connected to Postgres.
+api01  | 2025/08/18 16:36:12 [INFO] Successfully connected to Redis.
+api01  | 2025/08/18 16:36:12 Servidor iniciado na porta :8080
+api02  | 2025/08/18 16:36:12 [INFO] Successfully connected to Postgres.
+api02  | 2025/08/18 16:36:12 [INFO] Successfully connected to Redis.
+api02  | 2025/08/18 16:36:12 Servidor iniciado na porta :8080
+nginx_load_balancer  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+nginx_load_balancer  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+nginx_load_balancer  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+nginx_load_balancer  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+nginx_load_balancer  | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+nginx_load_balancer  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+nginx_load_balancer  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+nginx_load_balancer  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+nginx_load_balancer  | /docker-entrypoint.sh: Configuration complete; ready for start up
+api01                | 2025/08/18 16:36:15 [INFO] GET /payment-summary?from=&to=
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:15 +0000] "GET /payments-summary HTTP/1.1" 200 95 "-" "curl/8.5.0"
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:21 +0000] "POST /purge-payments HTTP/1.1" 404 19 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:21 [INFO] GET /payment-summary?from=2025-08-18T16:36:06.291Z&to=2025-08-18T16:36:19.291Z
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:21 +0000] "GET /payments-summary?from=2025-08-18T16:36:06.291Z&to=2025-08-18T16:36:19.291Z HTTP/1.1" 200 95 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:21 [INFO] Send payment to proccess: 07b40846-e94d-4c4c-a80d-2ae9c884d023, Amount: 20.050000
+api01                | 2025/08/18 16:36:21 Payment enqueued: 07b40846-e94d-4c4c-a80d-2ae9c884d023
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:21 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:21 [INFO] Payment saved in database with CorrelationID '07b40846-e94d-4c4c-a80d-2ae9c884d023' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:21.29674518 +0000 UTC
+api01                | 2025/08/18 16:36:21 [Worker 6] Payment sent via Default: 07b40846-e94d-4c4c-a80d-2ae9c884d023
+api02                | 2025/08/18 16:36:21 [INFO] Send payment to proccess: c96c30df-526b-47ed-ae59-074512730b19, Amount: 20.050000
+api02                | 2025/08/18 16:36:21 Payment enqueued: c96c30df-526b-47ed-ae59-074512730b19
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:21 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:21 [INFO] Payment saved in database with CorrelationID 'c96c30df-526b-47ed-ae59-074512730b19' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:21.791904656 +0000 UTC
+api01                | 2025/08/18 16:36:21 [Worker 12] Payment sent via Default: c96c30df-526b-47ed-ae59-074512730b19
+api01                | 2025/08/18 16:36:22 [INFO] Send payment to proccess: dbaee110-399f-46b6-834c-9747f6c18f76, Amount: 20.050000
+api01                | 2025/08/18 16:36:22 Payment enqueued: dbaee110-399f-46b6-834c-9747f6c18f76
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:22 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:22 [INFO] Payment saved in database with CorrelationID 'dbaee110-399f-46b6-834c-9747f6c18f76' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:22.290523657 +0000 UTC
+api01                | 2025/08/18 16:36:22 [Worker 3] Payment sent via Default: dbaee110-399f-46b6-834c-9747f6c18f76
+api02                | 2025/08/18 16:36:22 [INFO] Send payment to proccess: 29a382e8-fa56-4629-9e6c-4a47723767e8, Amount: 20.050000
+api02                | 2025/08/18 16:36:22 Payment enqueued: 29a382e8-fa56-4629-9e6c-4a47723767e8
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:22 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:22 [INFO] Payment saved in database with CorrelationID '29a382e8-fa56-4629-9e6c-4a47723767e8' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:22.299432032 +0000 UTC
+api01                | 2025/08/18 16:36:22 [Worker 1] Payment sent via Default: 29a382e8-fa56-4629-9e6c-4a47723767e8
+api02                | 2025/08/18 16:36:22 [INFO] Send payment to proccess: 9daa4e18-1250-4c30-8edb-4a9910c7c681, Amount: 20.050000
+api02                | 2025/08/18 16:36:22 Payment enqueued: 9daa4e18-1250-4c30-8edb-4a9910c7c681
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:22 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:22 [INFO] Payment saved in database with CorrelationID '9daa4e18-1250-4c30-8edb-4a9910c7c681' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:22.788388854 +0000 UTC
+api01                | 2025/08/18 16:36:22 [Worker 4] Payment sent via Default: 9daa4e18-1250-4c30-8edb-4a9910c7c681
+api01                | 2025/08/18 16:36:22 [INFO] Send payment to proccess: d21d9496-ea9f-47c6-bad3-3205c6e6b8a6, Amount: 20.050000
+api01                | 2025/08/18 16:36:22 Payment enqueued: d21d9496-ea9f-47c6-bad3-3205c6e6b8a6
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:22 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:22 [INFO] Payment saved in database with CorrelationID 'd21d9496-ea9f-47c6-bad3-3205c6e6b8a6' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:22.79497595 +0000 UTC
+api01                | 2025/08/18 16:36:22 [Worker 2] Payment sent via Default: d21d9496-ea9f-47c6-bad3-3205c6e6b8a6
+api02                | 2025/08/18 16:36:23 [INFO] Send payment to proccess: a4a9b6e1-7da5-47c5-ae82-bd83fcd36ade, Amount: 20.050000
+api02                | 2025/08/18 16:36:23 Payment enqueued: a4a9b6e1-7da5-47c5-ae82-bd83fcd36ade
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:23 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:23 [INFO] Payment saved in database with CorrelationID 'a4a9b6e1-7da5-47c5-ae82-bd83fcd36ade' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:23.287121001 +0000 UTC
+api01                | 2025/08/18 16:36:23 [Worker 5] Payment sent via Default: a4a9b6e1-7da5-47c5-ae82-bd83fcd36ade
+api01                | 2025/08/18 16:36:23 [INFO] Send payment to proccess: 707dae08-3bf1-4024-a4a0-76e50fc652b3, Amount: 20.050000
+api01                | 2025/08/18 16:36:23 Payment enqueued: 707dae08-3bf1-4024-a4a0-76e50fc652b3
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:23 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:23 [INFO] Payment saved in database with CorrelationID '707dae08-3bf1-4024-a4a0-76e50fc652b3' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:23.292605779 +0000 UTC
+api01                | 2025/08/18 16:36:23 [Worker 9] Payment sent via Default: 707dae08-3bf1-4024-a4a0-76e50fc652b3
+api01                | 2025/08/18 16:36:23 [INFO] Send payment to proccess: 39e24a6d-191b-4dd0-a9c7-35ed32c9eec3, Amount: 20.050000
+api01                | 2025/08/18 16:36:23 Payment enqueued: 39e24a6d-191b-4dd0-a9c7-35ed32c9eec3
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:23 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:23 [INFO] Payment saved in database with CorrelationID '39e24a6d-191b-4dd0-a9c7-35ed32c9eec3' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:23.301017887 +0000 UTC
+api01                | 2025/08/18 16:36:23 [Worker 10] Payment sent via Default: 39e24a6d-191b-4dd0-a9c7-35ed32c9eec3
+api02                | 2025/08/18 16:36:23 [INFO] Send payment to proccess: dcc91c1a-e73c-4422-87ad-fdafda19da78, Amount: 20.050000
+api02                | 2025/08/18 16:36:23 Payment enqueued: dcc91c1a-e73c-4422-87ad-fdafda19da78
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:23 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:23 [INFO] Payment saved in database with CorrelationID 'dcc91c1a-e73c-4422-87ad-fdafda19da78' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:23.784884476 +0000 UTC
+api01                | 2025/08/18 16:36:23 [Worker 8] Payment sent via Default: dcc91c1a-e73c-4422-87ad-fdafda19da78
+api01                | 2025/08/18 16:36:23 [INFO] Send payment to proccess: 6988c4b2-a415-4f6c-98f5-8fd8bfb40bcd, Amount: 20.050000
+api01                | 2025/08/18 16:36:23 Payment enqueued: 6988c4b2-a415-4f6c-98f5-8fd8bfb40bcd
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:23 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:23 [INFO] Payment saved in database with CorrelationID '6988c4b2-a415-4f6c-98f5-8fd8bfb40bcd' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:23.79055762 +0000 UTC
+api01                | 2025/08/18 16:36:23 [Worker 11] Payment sent via Default: 6988c4b2-a415-4f6c-98f5-8fd8bfb40bcd
+api02                | 2025/08/18 16:36:23 [INFO] Send payment to proccess: 81880396-591a-4688-9a70-261b73725c8d, Amount: 20.050000
+api02                | 2025/08/18 16:36:23 Payment enqueued: 81880396-591a-4688-9a70-261b73725c8d
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:23 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:23 [INFO] Payment saved in database with CorrelationID '81880396-591a-4688-9a70-261b73725c8d' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:23.796840865 +0000 UTC
+api01                | 2025/08/18 16:36:23 [Worker 7] Payment sent via Default: 81880396-591a-4688-9a70-261b73725c8d
+api01                | 2025/08/18 16:36:24 [INFO] Send payment to proccess: bc0e14d4-a9ab-45ad-9316-7e5a07692b46, Amount: 20.050000
+api01                | 2025/08/18 16:36:24 Payment enqueued: bc0e14d4-a9ab-45ad-9316-7e5a07692b46
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:24 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:24 [INFO] Payment saved in database with CorrelationID 'bc0e14d4-a9ab-45ad-9316-7e5a07692b46' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:24.283440397 +0000 UTC
+api02                | 2025/08/18 16:36:24 [Worker 9] Payment sent via Default: bc0e14d4-a9ab-45ad-9316-7e5a07692b46
+api02                | 2025/08/18 16:36:24 [INFO] Send payment to proccess: bbcd1eeb-fe87-40b3-84dc-b49722f5c581, Amount: 20.050000
+api02                | 2025/08/18 16:36:24 Payment enqueued: bbcd1eeb-fe87-40b3-84dc-b49722f5c581
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:24 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:24 [INFO] Payment saved in database with CorrelationID 'bbcd1eeb-fe87-40b3-84dc-b49722f5c581' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:24.289034689 +0000 UTC
+api02                | 2025/08/18 16:36:24 [Worker 6] Payment sent via Default: bbcd1eeb-fe87-40b3-84dc-b49722f5c581
+api01                | 2025/08/18 16:36:24 [INFO] Send payment to proccess: 2a85223d-c534-4597-9aaa-90dfd3ba8b2c, Amount: 20.050000
+api01                | 2025/08/18 16:36:24 Payment enqueued: 2a85223d-c534-4597-9aaa-90dfd3ba8b2c
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:24 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:24 [INFO] Payment saved in database with CorrelationID '2a85223d-c534-4597-9aaa-90dfd3ba8b2c' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:24.294441654 +0000 UTC
+api02                | 2025/08/18 16:36:24 [Worker 3] Payment sent via Default: 2a85223d-c534-4597-9aaa-90dfd3ba8b2c
+api02                | 2025/08/18 16:36:24 [INFO] Send payment to proccess: b908df5f-f339-4d84-aae2-eb3b49bd730c, Amount: 20.050000
+api02                | 2025/08/18 16:36:24 Payment enqueued: b908df5f-f339-4d84-aae2-eb3b49bd730c
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:24 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:24 [INFO] Payment saved in database with CorrelationID 'b908df5f-f339-4d84-aae2-eb3b49bd730c' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:24.302888673 +0000 UTC
+api02                | 2025/08/18 16:36:24 [Worker 1] Payment sent via Default: b908df5f-f339-4d84-aae2-eb3b49bd730c
+api02                | 2025/08/18 16:36:24 [INFO] Send payment to proccess: b6bbb96e-489e-4133-9d32-8493ae3fd2c1, Amount: 20.050000
+api02                | 2025/08/18 16:36:24 Payment enqueued: b6bbb96e-489e-4133-9d32-8493ae3fd2c1
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:24 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:24 [INFO] Payment saved in database with CorrelationID 'b6bbb96e-489e-4133-9d32-8493ae3fd2c1' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:24.781918594 +0000 UTC
+api02                | 2025/08/18 16:36:24 [Worker 7] Payment sent via Default: b6bbb96e-489e-4133-9d32-8493ae3fd2c1
+api01                | 2025/08/18 16:36:24 [INFO] Send payment to proccess: 985ee51a-36a3-4fa9-8060-715d653123cd, Amount: 20.050000
+api01                | 2025/08/18 16:36:24 Payment enqueued: 985ee51a-36a3-4fa9-8060-715d653123cd
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:24 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:24 [INFO] Payment saved in database with CorrelationID '985ee51a-36a3-4fa9-8060-715d653123cd' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:24.787320909 +0000 UTC
+api02                | 2025/08/18 16:36:24 [Worker 4] Payment sent via Default: 985ee51a-36a3-4fa9-8060-715d653123cd
+api02                | 2025/08/18 16:36:24 [INFO] Send payment to proccess: 8d797b09-3173-48e7-b1ff-0f3a3f587b58, Amount: 20.050000
+api02                | 2025/08/18 16:36:24 Payment enqueued: 8d797b09-3173-48e7-b1ff-0f3a3f587b58
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:24 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:24 [INFO] Payment saved in database with CorrelationID '8d797b09-3173-48e7-b1ff-0f3a3f587b58' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:24.792830927 +0000 UTC
+api02                | 2025/08/18 16:36:24 [Worker 2] Payment sent via Default: 8d797b09-3173-48e7-b1ff-0f3a3f587b58
+api01                | 2025/08/18 16:36:24 [INFO] Send payment to proccess: 9e8b6d4b-6698-43e9-b7e8-4116ff19412f, Amount: 20.050000
+api01                | 2025/08/18 16:36:24 Payment enqueued: 9e8b6d4b-6698-43e9-b7e8-4116ff19412f
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:24 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:24 [INFO] Payment saved in database with CorrelationID '9e8b6d4b-6698-43e9-b7e8-4116ff19412f' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:24.799093042 +0000 UTC
+api02                | 2025/08/18 16:36:24 [Worker 12] Payment sent via Default: 9e8b6d4b-6698-43e9-b7e8-4116ff19412f
+api02                | 2025/08/18 16:36:25 [INFO] Send payment to proccess: f4161647-2908-44a9-b0ff-4189c25cec95, Amount: 20.050000
+api02                | 2025/08/18 16:36:25 Payment enqueued: f4161647-2908-44a9-b0ff-4189c25cec95
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:25 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:25 [INFO] Payment saved in database with CorrelationID 'f4161647-2908-44a9-b0ff-4189c25cec95' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:25.280221726 +0000 UTC
+api02                | 2025/08/18 16:36:25 [Worker 5] Payment sent via Default: f4161647-2908-44a9-b0ff-4189c25cec95
+api01                | 2025/08/18 16:36:25 [INFO] Send payment to proccess: 5a515912-dea7-48f8-a24e-8dc160138d06, Amount: 20.050000
+api01                | 2025/08/18 16:36:25 Payment enqueued: 5a515912-dea7-48f8-a24e-8dc160138d06
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:25 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:25 [INFO] Payment saved in database with CorrelationID '5a515912-dea7-48f8-a24e-8dc160138d06' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:25.285826578 +0000 UTC
+api02                | 2025/08/18 16:36:25 [Worker 10] Payment sent via Default: 5a515912-dea7-48f8-a24e-8dc160138d06
+api02                | 2025/08/18 16:36:25 [INFO] Send payment to proccess: 9424f9ba-3424-41af-872c-dfe2d252294d, Amount: 20.050000
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:25 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:25 Payment enqueued: 9424f9ba-3424-41af-872c-dfe2d252294d
+api02                | 2025/08/18 16:36:25 [INFO] Payment saved in database with CorrelationID '9424f9ba-3424-41af-872c-dfe2d252294d' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:25.291230353 +0000 UTC
+api02                | 2025/08/18 16:36:25 [Worker 8] Payment sent via Default: 9424f9ba-3424-41af-872c-dfe2d252294d
+api01                | 2025/08/18 16:36:25 [INFO] Send payment to proccess: 32d6f84b-b83c-494f-8346-cd2b0614ca27, Amount: 20.050000
+api01                | 2025/08/18 16:36:25 Payment enqueued: 32d6f84b-b83c-494f-8346-cd2b0614ca27
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:25 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:25 [INFO] Payment saved in database with CorrelationID '32d6f84b-b83c-494f-8346-cd2b0614ca27' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:25.296816414 +0000 UTC
+api02                | 2025/08/18 16:36:25 [Worker 11] Payment sent via Default: 32d6f84b-b83c-494f-8346-cd2b0614ca27
+api01                | 2025/08/18 16:36:25 [INFO] Send payment to proccess: 5fa6dfaf-c1d7-42f8-bc5b-aa7eaef74d5e, Amount: 20.050000
+api01                | 2025/08/18 16:36:25 Payment enqueued: 5fa6dfaf-c1d7-42f8-bc5b-aa7eaef74d5e
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:25 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:25 [INFO] Payment saved in database with CorrelationID '5fa6dfaf-c1d7-42f8-bc5b-aa7eaef74d5e' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:25.304263379 +0000 UTC
+api01                | 2025/08/18 16:36:25 [Worker 6] Payment sent via Default: 5fa6dfaf-c1d7-42f8-bc5b-aa7eaef74d5e
+api02                | 2025/08/18 16:36:25 [INFO] Send payment to proccess: 307167c8-39cb-4e9e-960c-1832bc70992b, Amount: 20.050000
+api02                | 2025/08/18 16:36:25 Payment enqueued: 307167c8-39cb-4e9e-960c-1832bc70992b
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:25 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:25 [INFO] Payment saved in database with CorrelationID '307167c8-39cb-4e9e-960c-1832bc70992b' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:25.778160266 +0000 UTC
+api01                | 2025/08/18 16:36:25 [Worker 12] Payment sent via Default: 307167c8-39cb-4e9e-960c-1832bc70992b
+api01                | 2025/08/18 16:36:25 [INFO] Send payment to proccess: 38005b2b-dac9-43c3-9ec9-c383d1f36428, Amount: 20.050000
+api01                | 2025/08/18 16:36:25 Payment enqueued: 38005b2b-dac9-43c3-9ec9-c383d1f36428
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:25 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:25 [INFO] Payment saved in database with CorrelationID '38005b2b-dac9-43c3-9ec9-c383d1f36428' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:25.78383005 +0000 UTC
+api01                | 2025/08/18 16:36:25 [Worker 3] Payment sent via Default: 38005b2b-dac9-43c3-9ec9-c383d1f36428
+api02                | 2025/08/18 16:36:25 [INFO] Send payment to proccess: d506a885-7e8f-44c9-a5cf-af900f4950c0, Amount: 20.050000
+api02                | 2025/08/18 16:36:25 Payment enqueued: d506a885-7e8f-44c9-a5cf-af900f4950c0
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:25 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:25 [INFO] Payment saved in database with CorrelationID 'd506a885-7e8f-44c9-a5cf-af900f4950c0' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:25.78908892 +0000 UTC
+api01                | 2025/08/18 16:36:25 [Worker 1] Payment sent via Default: d506a885-7e8f-44c9-a5cf-af900f4950c0
+api01                | 2025/08/18 16:36:25 [INFO] Send payment to proccess: 069680b9-8e37-427c-8f99-be8223763401, Amount: 20.050000
+api01                | 2025/08/18 16:36:25 Payment enqueued: 069680b9-8e37-427c-8f99-be8223763401
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:25 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:25 [INFO] Payment saved in database with CorrelationID '069680b9-8e37-427c-8f99-be8223763401' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:25.794447873 +0000 UTC
+api01                | 2025/08/18 16:36:25 [Worker 4] Payment sent via Default: 069680b9-8e37-427c-8f99-be8223763401
+api02                | 2025/08/18 16:36:25 [INFO] Send payment to proccess: 7ce80b8c-d7bb-49a4-b781-3595c249d5ed, Amount: 20.050000
+api02                | 2025/08/18 16:36:25 Payment enqueued: 7ce80b8c-d7bb-49a4-b781-3595c249d5ed
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:25 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:25 [INFO] Payment saved in database with CorrelationID '7ce80b8c-d7bb-49a4-b781-3595c249d5ed' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:25.800766729 +0000 UTC
+api01                | 2025/08/18 16:36:25 [Worker 2] Payment sent via Default: 7ce80b8c-d7bb-49a4-b781-3595c249d5ed
+api01                | 2025/08/18 16:36:26 [INFO] Send payment to proccess: c45fe71d-7da6-4d7f-9ecf-bea375d258e3, Amount: 20.050000
+api01                | 2025/08/18 16:36:26 Payment enqueued: c45fe71d-7da6-4d7f-9ecf-bea375d258e3
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:26 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:26 [INFO] Payment saved in database with CorrelationID 'c45fe71d-7da6-4d7f-9ecf-bea375d258e3' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:26.2768072 +0000 UTC
+api01                | 2025/08/18 16:36:26 [Worker 5] Payment sent via Default: c45fe71d-7da6-4d7f-9ecf-bea375d258e3
+api02                | 2025/08/18 16:36:26 [INFO] Send payment to proccess: c109295e-3dc8-49b7-992d-f4e24a1669b3, Amount: 20.050000
+api02                | 2025/08/18 16:36:26 Payment enqueued: c109295e-3dc8-49b7-992d-f4e24a1669b3
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:26 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:26 [INFO] Payment saved in database with CorrelationID 'c109295e-3dc8-49b7-992d-f4e24a1669b3' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:26.282514225 +0000 UTC
+api01                | 2025/08/18 16:36:26 [Worker 9] Payment sent via Default: c109295e-3dc8-49b7-992d-f4e24a1669b3
+api01                | 2025/08/18 16:36:26 [INFO] Send payment to proccess: cfefb4b0-2223-4929-bb91-3fec3ba482e7, Amount: 20.050000
+api01                | 2025/08/18 16:36:26 Payment enqueued: cfefb4b0-2223-4929-bb91-3fec3ba482e7
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:26 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:26 [INFO] Payment saved in database with CorrelationID 'cfefb4b0-2223-4929-bb91-3fec3ba482e7' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:26.287766945 +0000 UTC
+api01                | 2025/08/18 16:36:26 [Worker 10] Payment sent via Default: cfefb4b0-2223-4929-bb91-3fec3ba482e7
+api02                | 2025/08/18 16:36:26 [INFO] Send payment to proccess: 3e139af3-eac1-4843-ac5f-55d821ad8f6f, Amount: 20.050000
+api02                | 2025/08/18 16:36:26 Payment enqueued: 3e139af3-eac1-4843-ac5f-55d821ad8f6f
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:26 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:26 [INFO] Payment saved in database with CorrelationID '3e139af3-eac1-4843-ac5f-55d821ad8f6f' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:26.293046796 +0000 UTC
+api01                | 2025/08/18 16:36:26 [Worker 8] Payment sent via Default: 3e139af3-eac1-4843-ac5f-55d821ad8f6f
+api01                | 2025/08/18 16:36:26 [INFO] Send payment to proccess: 109d80a1-9a06-408b-9780-c2529a268399, Amount: 20.050000
+api01                | 2025/08/18 16:36:26 Payment enqueued: 109d80a1-9a06-408b-9780-c2529a268399
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:26 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:26 [INFO] Payment saved in database with CorrelationID '109d80a1-9a06-408b-9780-c2529a268399' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:26.298445771 +0000 UTC
+api01                | 2025/08/18 16:36:26 [Worker 11] Payment sent via Default: 109d80a1-9a06-408b-9780-c2529a268399
+api02                | 2025/08/18 16:36:26 [INFO] Send payment to proccess: b0fa67f6-fd86-4f29-a0f7-4e1255b069ab, Amount: 20.050000
+api02                | 2025/08/18 16:36:26 Payment enqueued: b0fa67f6-fd86-4f29-a0f7-4e1255b069ab
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:26 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:26 [INFO] Payment saved in database with CorrelationID 'b0fa67f6-fd86-4f29-a0f7-4e1255b069ab' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:26.305781902 +0000 UTC
+api01                | 2025/08/18 16:36:26 [Worker 7] Payment sent via Default: b0fa67f6-fd86-4f29-a0f7-4e1255b069ab
+api02                | 2025/08/18 16:36:26 [INFO] Send payment to proccess: 193d180d-fa23-488c-9eed-34fe8bdce9e5, Amount: 20.050000
+api02                | 2025/08/18 16:36:26 Payment enqueued: 193d180d-fa23-488c-9eed-34fe8bdce9e5
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:26 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:26 [INFO] Payment saved in database with CorrelationID '193d180d-fa23-488c-9eed-34fe8bdce9e5' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:26.775578468 +0000 UTC
+api02                | 2025/08/18 16:36:26 [Worker 9] Payment sent via Default: 193d180d-fa23-488c-9eed-34fe8bdce9e5
+api01                | 2025/08/18 16:36:26 [INFO] Send payment to proccess: f5bf6d8c-8771-411a-aafb-85813067d006, Amount: 20.050000
+api01                | 2025/08/18 16:36:26 Payment enqueued: f5bf6d8c-8771-411a-aafb-85813067d006
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:26 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:26 [INFO] Payment saved in database with CorrelationID 'f5bf6d8c-8771-411a-aafb-85813067d006' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:26.780141434 +0000 UTC
+api02                | 2025/08/18 16:36:26 [Worker 6] Payment sent via Default: f5bf6d8c-8771-411a-aafb-85813067d006
+api02                | 2025/08/18 16:36:26 [INFO] Send payment to proccess: 1071af17-547e-48d7-83af-d0694851fc80, Amount: 20.050000
+api02                | 2025/08/18 16:36:26 Payment enqueued: 1071af17-547e-48d7-83af-d0694851fc80
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:26 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:26 [INFO] Payment saved in database with CorrelationID '1071af17-547e-48d7-83af-d0694851fc80' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:26.78554785 +0000 UTC
+api02                | 2025/08/18 16:36:26 [Worker 3] Payment sent via Default: 1071af17-547e-48d7-83af-d0694851fc80
+api01                | 2025/08/18 16:36:26 [INFO] Send payment to proccess: 787bb08b-48dc-4618-a8b7-f4357145922c, Amount: 20.050000
+api01                | 2025/08/18 16:36:26 Payment enqueued: 787bb08b-48dc-4618-a8b7-f4357145922c
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:26 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:26 [INFO] Payment saved in database with CorrelationID '787bb08b-48dc-4618-a8b7-f4357145922c' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:26.79081546 +0000 UTC
+api02                | 2025/08/18 16:36:26 [Worker 1] Payment sent via Default: 787bb08b-48dc-4618-a8b7-f4357145922c
+api02                | 2025/08/18 16:36:26 [INFO] Send payment to proccess: 4410383a-d391-4426-8f17-7733e73a6b3e, Amount: 20.050000
+api02                | 2025/08/18 16:36:26 Payment enqueued: 4410383a-d391-4426-8f17-7733e73a6b3e
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:26 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:26 [INFO] Payment saved in database with CorrelationID '4410383a-d391-4426-8f17-7733e73a6b3e' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:26.796128132 +0000 UTC
+api02                | 2025/08/18 16:36:26 [Worker 7] Payment sent via Default: 4410383a-d391-4426-8f17-7733e73a6b3e
+api01                | 2025/08/18 16:36:26 [INFO] Send payment to proccess: e50de284-997c-4ba4-ba8a-6bfe9f7cb9dc, Amount: 20.050000
+api01                | 2025/08/18 16:36:26 Payment enqueued: e50de284-997c-4ba4-ba8a-6bfe9f7cb9dc
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:26 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:26 [INFO] Payment saved in database with CorrelationID 'e50de284-997c-4ba4-ba8a-6bfe9f7cb9dc' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:26.802557892 +0000 UTC
+api02                | 2025/08/18 16:36:26 [Worker 4] Payment sent via Default: e50de284-997c-4ba4-ba8a-6bfe9f7cb9dc
+api02                | 2025/08/18 16:36:27 [INFO] Send payment to proccess: 4be78f9f-2ab1-4b5c-856e-1572d68682c2, Amount: 20.050000
+api02                | 2025/08/18 16:36:27 Payment enqueued: 4be78f9f-2ab1-4b5c-856e-1572d68682c2
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:27 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:27 [INFO] Payment saved in database with CorrelationID '4be78f9f-2ab1-4b5c-856e-1572d68682c2' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:27.273393723 +0000 UTC
+api02                | 2025/08/18 16:36:27 [Worker 2] Payment sent via Default: 4be78f9f-2ab1-4b5c-856e-1572d68682c2
+api01                | 2025/08/18 16:36:27 [INFO] Send payment to proccess: b850d5f0-5248-4ed9-bfc3-983cb0f82ceb, Amount: 20.050000
+api01                | 2025/08/18 16:36:27 Payment enqueued: b850d5f0-5248-4ed9-bfc3-983cb0f82ceb
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:27 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:27 [INFO] Payment saved in database with CorrelationID 'b850d5f0-5248-4ed9-bfc3-983cb0f82ceb' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:27.279079488 +0000 UTC
+api02                | 2025/08/18 16:36:27 [Worker 12] Payment sent via Default: b850d5f0-5248-4ed9-bfc3-983cb0f82ceb
+api02                | 2025/08/18 16:36:27 [INFO] Send payment to proccess: 3d0a9907-1748-460b-b8b5-830379fe285c, Amount: 20.050000
+api02                | 2025/08/18 16:36:27 Payment enqueued: 3d0a9907-1748-460b-b8b5-830379fe285c
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:27 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:27 [INFO] Payment saved in database with CorrelationID '3d0a9907-1748-460b-b8b5-830379fe285c' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:27.284368429 +0000 UTC
+api02                | 2025/08/18 16:36:27 [Worker 5] Payment sent via Default: 3d0a9907-1748-460b-b8b5-830379fe285c
+api01                | 2025/08/18 16:36:27 [INFO] Send payment to proccess: 930e7605-3b9c-4ba8-8ba5-42d451c398f9, Amount: 20.050000
+api01                | 2025/08/18 16:36:27 Payment enqueued: 930e7605-3b9c-4ba8-8ba5-42d451c398f9
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:27 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:27 [INFO] Payment saved in database with CorrelationID '930e7605-3b9c-4ba8-8ba5-42d451c398f9' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:27.289872187 +0000 UTC
+api02                | 2025/08/18 16:36:27 [Worker 10] Payment sent via Default: 930e7605-3b9c-4ba8-8ba5-42d451c398f9
+api02                | 2025/08/18 16:36:27 [INFO] Send payment to proccess: f30c78de-8e88-4210-9e26-b6e72f7177cd, Amount: 20.050000
+api02                | 2025/08/18 16:36:27 Payment enqueued: f30c78de-8e88-4210-9e26-b6e72f7177cd
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:27 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:27 [INFO] Payment saved in database with CorrelationID 'f30c78de-8e88-4210-9e26-b6e72f7177cd' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:27.29521025 +0000 UTC
+api02                | 2025/08/18 16:36:27 [Worker 8] Payment sent via Default: f30c78de-8e88-4210-9e26-b6e72f7177cd
+api01                | 2025/08/18 16:36:27 [INFO] Send payment to proccess: de9c2852-216a-4207-89e3-b74815533771, Amount: 20.050000
+api01                | 2025/08/18 16:36:27 Payment enqueued: de9c2852-216a-4207-89e3-b74815533771
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:27 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:27 [INFO] Payment saved in database with CorrelationID 'de9c2852-216a-4207-89e3-b74815533771' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:27.300548223 +0000 UTC
+api02                | 2025/08/18 16:36:27 [Worker 11] Payment sent via Default: de9c2852-216a-4207-89e3-b74815533771
+api01                | 2025/08/18 16:36:27 [INFO] Send payment to proccess: 9b63faa8-e1d5-4559-b6f6-55b63e092223, Amount: 20.050000
+api01                | 2025/08/18 16:36:27 Payment enqueued: 9b63faa8-e1d5-4559-b6f6-55b63e092223
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:27 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:27 [INFO] Payment saved in database with CorrelationID '9b63faa8-e1d5-4559-b6f6-55b63e092223' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:27.307888584 +0000 UTC
+api01                | 2025/08/18 16:36:27 [Worker 6] Payment sent via Default: 9b63faa8-e1d5-4559-b6f6-55b63e092223
+api02                | 2025/08/18 16:36:27 [INFO] Send payment to proccess: 704804ff-9b3c-4615-ae8c-8ffba338da4a, Amount: 20.050000
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:27 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:27 Payment enqueued: 704804ff-9b3c-4615-ae8c-8ffba338da4a
+api01                | 2025/08/18 16:36:27 [INFO] Payment saved in database with CorrelationID '704804ff-9b3c-4615-ae8c-8ffba338da4a' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:27.771701025 +0000 UTC
+api01                | 2025/08/18 16:36:27 [Worker 12] Payment sent via Default: 704804ff-9b3c-4615-ae8c-8ffba338da4a
+api01                | 2025/08/18 16:36:27 [INFO] Send payment to proccess: 3ffa1a31-d616-42d8-817a-9b6dc952506d, Amount: 20.050000
+api01                | 2025/08/18 16:36:27 Payment enqueued: 3ffa1a31-d616-42d8-817a-9b6dc952506d
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:27 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:27 [INFO] Payment saved in database with CorrelationID '3ffa1a31-d616-42d8-817a-9b6dc952506d' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:27.777171662 +0000 UTC
+api01                | 2025/08/18 16:36:27 [Worker 3] Payment sent via Default: 3ffa1a31-d616-42d8-817a-9b6dc952506d
+api02                | 2025/08/18 16:36:27 [INFO] Send payment to proccess: 9a48b4e0-19b9-4d4e-bcf7-baa5fb4c54e8, Amount: 20.050000
+api02                | 2025/08/18 16:36:27 Payment enqueued: 9a48b4e0-19b9-4d4e-bcf7-baa5fb4c54e8
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:27 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:27 [INFO] Payment saved in database with CorrelationID '9a48b4e0-19b9-4d4e-bcf7-baa5fb4c54e8' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:27.781516461 +0000 UTC
+api01                | 2025/08/18 16:36:27 [Worker 1] Payment sent via Default: 9a48b4e0-19b9-4d4e-bcf7-baa5fb4c54e8
+api01                | 2025/08/18 16:36:27 [INFO] Send payment to proccess: e6e22123-52da-48fc-8700-7aaf2a3de21b, Amount: 20.050000
+api01                | 2025/08/18 16:36:27 Payment enqueued: e6e22123-52da-48fc-8700-7aaf2a3de21b
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:27 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:27 [INFO] Payment saved in database with CorrelationID 'e6e22123-52da-48fc-8700-7aaf2a3de21b' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:27.786976218 +0000 UTC
+api01                | 2025/08/18 16:36:27 [Worker 4] Payment sent via Default: e6e22123-52da-48fc-8700-7aaf2a3de21b
+api02                | 2025/08/18 16:36:27 [INFO] Send payment to proccess: 8f83c426-6741-4000-99e5-fb149063a664, Amount: 20.050000
+api02                | 2025/08/18 16:36:27 Payment enqueued: 8f83c426-6741-4000-99e5-fb149063a664
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:27 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:27 [INFO] Payment saved in database with CorrelationID '8f83c426-6741-4000-99e5-fb149063a664' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:27.79228393 +0000 UTC
+api01                | 2025/08/18 16:36:27 [Worker 2] Payment sent via Default: 8f83c426-6741-4000-99e5-fb149063a664
+api01                | 2025/08/18 16:36:27 [INFO] Send payment to proccess: b76e5b86-cedc-4c12-832e-d7810b989678, Amount: 20.050000
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:27 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:27 Payment enqueued: b76e5b86-cedc-4c12-832e-d7810b989678
+api01                | 2025/08/18 16:36:27 [INFO] Payment saved in database with CorrelationID 'b76e5b86-cedc-4c12-832e-d7810b989678' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:27.79753557 +0000 UTC
+api01                | 2025/08/18 16:36:27 [Worker 5] Payment sent via Default: b76e5b86-cedc-4c12-832e-d7810b989678
+api02                | 2025/08/18 16:36:27 [INFO] Send payment to proccess: ce2fb6b8-1755-49ed-9190-f4b596387e8f, Amount: 20.050000
+api02                | 2025/08/18 16:36:27 Payment enqueued: ce2fb6b8-1755-49ed-9190-f4b596387e8f
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:27 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:27 [INFO] Payment saved in database with CorrelationID 'ce2fb6b8-1755-49ed-9190-f4b596387e8f' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:27.803844926 +0000 UTC
+api01                | 2025/08/18 16:36:27 [Worker 9] Payment sent via Default: ce2fb6b8-1755-49ed-9190-f4b596387e8f
+api01                | 2025/08/18 16:36:28 [INFO] Send payment to proccess: ff9989af-5880-4683-9278-452f57e7bc28, Amount: 20.050000
+api01                | 2025/08/18 16:36:28 Payment enqueued: ff9989af-5880-4683-9278-452f57e7bc28
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:28 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:28 [INFO] Payment saved in database with CorrelationID 'ff9989af-5880-4683-9278-452f57e7bc28' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:28.26979344 +0000 UTC
+api01                | 2025/08/18 16:36:28 [Worker 10] Payment sent via Default: ff9989af-5880-4683-9278-452f57e7bc28
+api02                | 2025/08/18 16:36:28 [INFO] Send payment to proccess: bf708b43-84c7-4a7f-a59b-708e364d4478, Amount: 20.050000
+api02                | 2025/08/18 16:36:28 Payment enqueued: bf708b43-84c7-4a7f-a59b-708e364d4478
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:28 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:28 [INFO] Payment saved in database with CorrelationID 'bf708b43-84c7-4a7f-a59b-708e364d4478' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:28.275259527 +0000 UTC
+api01                | 2025/08/18 16:36:28 [Worker 8] Payment sent via Default: bf708b43-84c7-4a7f-a59b-708e364d4478
+api01                | 2025/08/18 16:36:28 [INFO] Send payment to proccess: 8a75c3a9-8e9c-4160-810a-8ed86d9d27c8, Amount: 20.050000
+api01                | 2025/08/18 16:36:28 Payment enqueued: 8a75c3a9-8e9c-4160-810a-8ed86d9d27c8
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:28 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:28 [INFO] Payment saved in database with CorrelationID '8a75c3a9-8e9c-4160-810a-8ed86d9d27c8' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:28.280578389 +0000 UTC
+api01                | 2025/08/18 16:36:28 [Worker 11] Payment sent via Default: 8a75c3a9-8e9c-4160-810a-8ed86d9d27c8
+api02                | 2025/08/18 16:36:28 [INFO] Send payment to proccess: f55b1a63-932f-4f7c-ab67-2ec46b81bd3e, Amount: 20.050000
+api02                | 2025/08/18 16:36:28 Payment enqueued: f55b1a63-932f-4f7c-ab67-2ec46b81bd3e
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:28 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:28 [INFO] Payment saved in database with CorrelationID 'f55b1a63-932f-4f7c-ab67-2ec46b81bd3e' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:28.285907812 +0000 UTC
+api01                | 2025/08/18 16:36:28 [Worker 7] Payment sent via Default: f55b1a63-932f-4f7c-ab67-2ec46b81bd3e
+api01                | 2025/08/18 16:36:28 [INFO] Send payment to proccess: ca728a9b-95b3-40b4-be66-aa4ab1fd7fec, Amount: 20.050000
+api01                | 2025/08/18 16:36:28 Payment enqueued: ca728a9b-95b3-40b4-be66-aa4ab1fd7fec
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:28 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:28 [INFO] Payment saved in database with CorrelationID 'ca728a9b-95b3-40b4-be66-aa4ab1fd7fec' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:28.291139641 +0000 UTC
+api02                | 2025/08/18 16:36:28 [Worker 9] Payment sent via Default: ca728a9b-95b3-40b4-be66-aa4ab1fd7fec
+api02                | 2025/08/18 16:36:28 [INFO] Send payment to proccess: 63da50b9-1813-43c7-aed6-213868f3d957, Amount: 20.050000
+api02                | 2025/08/18 16:36:28 Payment enqueued: 63da50b9-1813-43c7-aed6-213868f3d957
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:28 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:28 [INFO] Payment saved in database with CorrelationID '63da50b9-1813-43c7-aed6-213868f3d957' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:28.297412046 +0000 UTC
+api02                | 2025/08/18 16:36:28 [Worker 6] Payment sent via Default: 63da50b9-1813-43c7-aed6-213868f3d957
+api01                | 2025/08/18 16:36:28 [INFO] Send payment to proccess: 3e7ffc9b-d591-4dd1-a2e5-933470898160, Amount: 20.050000
+api01                | 2025/08/18 16:36:28 Payment enqueued: 3e7ffc9b-d591-4dd1-a2e5-933470898160
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:28 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:28 [INFO] Payment saved in database with CorrelationID '3e7ffc9b-d591-4dd1-a2e5-933470898160' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:28.301830267 +0000 UTC
+api02                | 2025/08/18 16:36:28 [Worker 3] Payment sent via Default: 3e7ffc9b-d591-4dd1-a2e5-933470898160
+api02                | 2025/08/18 16:36:28 [INFO] Send payment to proccess: e9ee1647-7190-4236-ab93-0ee147554918, Amount: 20.050000
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:28 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:28 Payment enqueued: e9ee1647-7190-4236-ab93-0ee147554918
+api02                | 2025/08/18 16:36:28 [INFO] Payment saved in database with CorrelationID 'e9ee1647-7190-4236-ab93-0ee147554918' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:28.310003197 +0000 UTC
+api02                | 2025/08/18 16:36:28 [Worker 1] Payment sent via Default: e9ee1647-7190-4236-ab93-0ee147554918
+api02                | 2025/08/18 16:36:28 [INFO] Send payment to proccess: e06a2749-4b79-4f20-9064-e8f44b21e986, Amount: 20.050000
+api02                | 2025/08/18 16:36:28 Payment enqueued: e06a2749-4b79-4f20-9064-e8f44b21e986
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:28 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:28 [INFO] Payment saved in database with CorrelationID 'e06a2749-4b79-4f20-9064-e8f44b21e986' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:28.768887799 +0000 UTC
+api02                | 2025/08/18 16:36:28 [Worker 7] Payment sent via Default: e06a2749-4b79-4f20-9064-e8f44b21e986
+api01                | 2025/08/18 16:36:28 [INFO] Send payment to proccess: 4d6f2bc4-b861-4167-a15f-a3cc787d2041, Amount: 20.050000
+api01                | 2025/08/18 16:36:28 Payment enqueued: 4d6f2bc4-b861-4167-a15f-a3cc787d2041
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:28 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:28 [INFO] Payment saved in database with CorrelationID '4d6f2bc4-b861-4167-a15f-a3cc787d2041' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:28.773434335 +0000 UTC
+api02                | 2025/08/18 16:36:28 [Worker 4] Payment sent via Default: 4d6f2bc4-b861-4167-a15f-a3cc787d2041
+api02                | 2025/08/18 16:36:28 [INFO] Send payment to proccess: 5c5b0e99-fd8b-46ea-801d-1beb3946333a, Amount: 20.050000
+api02                | 2025/08/18 16:36:28 Payment enqueued: 5c5b0e99-fd8b-46ea-801d-1beb3946333a
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:28 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:28 [INFO] Payment saved in database with CorrelationID '5c5b0e99-fd8b-46ea-801d-1beb3946333a' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:28.778905992 +0000 UTC
+api02                | 2025/08/18 16:36:28 [Worker 2] Payment sent via Default: 5c5b0e99-fd8b-46ea-801d-1beb3946333a
+api01                | 2025/08/18 16:36:28 [INFO] Send payment to proccess: 7de779a9-75b9-4227-bc4e-6f58c3ca982e, Amount: 20.050000
+api01                | 2025/08/18 16:36:28 Payment enqueued: 7de779a9-75b9-4227-bc4e-6f58c3ca982e
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:28 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:28 [INFO] Payment saved in database with CorrelationID '7de779a9-75b9-4227-bc4e-6f58c3ca982e' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:28.783332154 +0000 UTC
+api02                | 2025/08/18 16:36:28 [Worker 12] Payment sent via Default: 7de779a9-75b9-4227-bc4e-6f58c3ca982e
+api02                | 2025/08/18 16:36:28 [INFO] Send payment to proccess: 77d5a307-2a9d-48ae-9f60-71df9f23b1e0, Amount: 20.050000
+api02                | 2025/08/18 16:36:28 Payment enqueued: 77d5a307-2a9d-48ae-9f60-71df9f23b1e0
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:28 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:28 [INFO] Payment saved in database with CorrelationID '77d5a307-2a9d-48ae-9f60-71df9f23b1e0' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:28.788638455 +0000 UTC
+api02                | 2025/08/18 16:36:28 [Worker 5] Payment sent via Default: 77d5a307-2a9d-48ae-9f60-71df9f23b1e0
+api01                | 2025/08/18 16:36:28 [INFO] Send payment to proccess: 910570a2-44b4-4072-ae54-d9fbc66f0d33, Amount: 20.050000
+api01                | 2025/08/18 16:36:28 Payment enqueued: 910570a2-44b4-4072-ae54-d9fbc66f0d33
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:28 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:28 [INFO] Payment saved in database with CorrelationID '910570a2-44b4-4072-ae54-d9fbc66f0d33' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:28.794026 +0000 UTC
+api02                | 2025/08/18 16:36:28 [Worker 10] Payment sent via Default: 910570a2-44b4-4072-ae54-d9fbc66f0d33
+api02                | 2025/08/18 16:36:28 [INFO] Send payment to proccess: 7975254a-df80-4bdc-84ce-5929595aac0e, Amount: 20.050000
+api02                | 2025/08/18 16:36:28 Payment enqueued: 7975254a-df80-4bdc-84ce-5929595aac0e
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:28 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:28 [INFO] Payment saved in database with CorrelationID '7975254a-df80-4bdc-84ce-5929595aac0e' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:28.799201027 +0000 UTC
+api02                | 2025/08/18 16:36:28 [Worker 8] Payment sent via Default: 7975254a-df80-4bdc-84ce-5929595aac0e
+api01                | 2025/08/18 16:36:28 [INFO] Send payment to proccess: db419c3c-f7ef-4988-80a0-8be7cfa32ccf, Amount: 20.050000
+api01                | 2025/08/18 16:36:28 Payment enqueued: db419c3c-f7ef-4988-80a0-8be7cfa32ccf
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:28 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:28 [INFO] Payment saved in database with CorrelationID 'db419c3c-f7ef-4988-80a0-8be7cfa32ccf' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:28.805582536 +0000 UTC
+api02                | 2025/08/18 16:36:28 [Worker 11] Payment sent via Default: db419c3c-f7ef-4988-80a0-8be7cfa32ccf
+api02                | 2025/08/18 16:36:29 [INFO] Send payment to proccess: b4610c80-4103-4cf0-bc41-e9f6cab27e82, Amount: 20.050000
+api02                | 2025/08/18 16:36:29 Payment enqueued: b4610c80-4103-4cf0-bc41-e9f6cab27e82
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:29 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:29 [INFO] Payment saved in database with CorrelationID 'b4610c80-4103-4cf0-bc41-e9f6cab27e82' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:29.2674234 +0000 UTC
+api01                | 2025/08/18 16:36:29 [Worker 6] Payment sent via Default: b4610c80-4103-4cf0-bc41-e9f6cab27e82
+api01                | 2025/08/18 16:36:29 [INFO] Send payment to proccess: 7bafc528-b109-42a5-a454-31aa6a779f71, Amount: 20.050000
+api01                | 2025/08/18 16:36:29 Payment enqueued: 7bafc528-b109-42a5-a454-31aa6a779f71
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:29 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:29 [INFO] Payment saved in database with CorrelationID '7bafc528-b109-42a5-a454-31aa6a779f71' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:29.271891403 +0000 UTC
+api01                | 2025/08/18 16:36:29 [Worker 12] Payment sent via Default: 7bafc528-b109-42a5-a454-31aa6a779f71
+api02                | 2025/08/18 16:36:29 [INFO] Send payment to proccess: a0977582-34c6-4c91-8d1b-33ddadbc50eb, Amount: 20.050000
+api02                | 2025/08/18 16:36:29 Payment enqueued: a0977582-34c6-4c91-8d1b-33ddadbc50eb
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:29 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:29 [INFO] Payment saved in database with CorrelationID 'a0977582-34c6-4c91-8d1b-33ddadbc50eb' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:29.277208425 +0000 UTC
+api01                | 2025/08/18 16:36:29 [Worker 3] Payment sent via Default: a0977582-34c6-4c91-8d1b-33ddadbc50eb
+api01                | 2025/08/18 16:36:29 [INFO] Send payment to proccess: e18d4a5f-6301-4f4c-b057-816ba204e200, Amount: 20.050000
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:29 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:29 Payment enqueued: e18d4a5f-6301-4f4c-b057-816ba204e200
+api01                | 2025/08/18 16:36:29 [INFO] Payment saved in database with CorrelationID 'e18d4a5f-6301-4f4c-b057-816ba204e200' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:29.282510946 +0000 UTC
+api01                | 2025/08/18 16:36:29 [Worker 1] Payment sent via Default: e18d4a5f-6301-4f4c-b057-816ba204e200
+api02                | 2025/08/18 16:36:29 [INFO] Send payment to proccess: 25425f7b-8e59-40a0-a02e-b7bfe3d9a6fe, Amount: 20.050000
+api02                | 2025/08/18 16:36:29 Payment enqueued: 25425f7b-8e59-40a0-a02e-b7bfe3d9a6fe
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:29 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:29 [INFO] Payment saved in database with CorrelationID '25425f7b-8e59-40a0-a02e-b7bfe3d9a6fe' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:29.287959073 +0000 UTC
+api01                | 2025/08/18 16:36:29 [Worker 4] Payment sent via Default: 25425f7b-8e59-40a0-a02e-b7bfe3d9a6fe
+api01                | 2025/08/18 16:36:29 [INFO] Send payment to proccess: 2a5e52f8-598e-43af-af19-06ca573bfcf2, Amount: 20.050000
+api01                | 2025/08/18 16:36:29 Payment enqueued: 2a5e52f8-598e-43af-af19-06ca573bfcf2
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:29 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:29 [INFO] Payment saved in database with CorrelationID '2a5e52f8-598e-43af-af19-06ca573bfcf2' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:29.293200142 +0000 UTC
+api01                | 2025/08/18 16:36:29 [Worker 2] Payment sent via Default: 2a5e52f8-598e-43af-af19-06ca573bfcf2
+api02                | 2025/08/18 16:36:29 [INFO] Send payment to proccess: fe07cfc3-94e7-40fd-8121-2b8865fcc6e1, Amount: 20.050000
+api02                | 2025/08/18 16:36:29 Payment enqueued: fe07cfc3-94e7-40fd-8121-2b8865fcc6e1
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:29 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:29 [INFO] Payment saved in database with CorrelationID 'fe07cfc3-94e7-40fd-8121-2b8865fcc6e1' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:29.299522639 +0000 UTC
+api01                | 2025/08/18 16:36:29 [Worker 5] Payment sent via Default: fe07cfc3-94e7-40fd-8121-2b8865fcc6e1
+api01                | 2025/08/18 16:36:29 [INFO] Send payment to proccess: 969c737e-347a-4ffb-a887-9a443e51ef1c, Amount: 20.050000
+api01                | 2025/08/18 16:36:29 Payment enqueued: 969c737e-347a-4ffb-a887-9a443e51ef1c
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:29 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:29 [INFO] Payment saved in database with CorrelationID '969c737e-347a-4ffb-a887-9a443e51ef1c' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:29.302828952 +0000 UTC
+api01                | 2025/08/18 16:36:29 [Worker 9] Payment sent via Default: 969c737e-347a-4ffb-a887-9a443e51ef1c
+api01                | 2025/08/18 16:36:29 [INFO] Send payment to proccess: b8df6704-1c76-4ca2-92cf-e03ea47ad22d, Amount: 20.050000
+api01                | 2025/08/18 16:36:29 Payment enqueued: b8df6704-1c76-4ca2-92cf-e03ea47ad22d
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:29 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:29 [INFO] Payment saved in database with CorrelationID 'b8df6704-1c76-4ca2-92cf-e03ea47ad22d' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:29.312136461 +0000 UTC
+api01                | 2025/08/18 16:36:29 [Worker 10] Payment sent via Default: b8df6704-1c76-4ca2-92cf-e03ea47ad22d
+api02                | 2025/08/18 16:36:29 [INFO] Send payment to proccess: b7aad3ba-19de-4d54-8db6-3a594ef16197, Amount: 20.050000
+api02                | 2025/08/18 16:36:29 Payment enqueued: b7aad3ba-19de-4d54-8db6-3a594ef16197
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:29 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:29 [INFO] Payment saved in database with CorrelationID 'b7aad3ba-19de-4d54-8db6-3a594ef16197' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:29.765270886 +0000 UTC
+api01                | 2025/08/18 16:36:29 [Worker 8] Payment sent via Default: b7aad3ba-19de-4d54-8db6-3a594ef16197
+api02                | 2025/08/18 16:36:29 [INFO] Send payment to proccess: 37872372-159d-44bc-a4cb-d345670c22b8, Amount: 20.050000
+api02                | 2025/08/18 16:36:29 Payment enqueued: 37872372-159d-44bc-a4cb-d345670c22b8
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:29 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:29 [INFO] Payment saved in database with CorrelationID '37872372-159d-44bc-a4cb-d345670c22b8' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:29.770807046 +0000 UTC
+api01                | 2025/08/18 16:36:29 [Worker 11] Payment sent via Default: 37872372-159d-44bc-a4cb-d345670c22b8
+api01                | 2025/08/18 16:36:29 [INFO] Send payment to proccess: 2ad891ad-63ce-48a0-b016-1f2eaf4a6788, Amount: 20.050000
+api01                | 2025/08/18 16:36:29 Payment enqueued: 2ad891ad-63ce-48a0-b016-1f2eaf4a6788
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:29 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:29 [INFO] Payment saved in database with CorrelationID '2ad891ad-63ce-48a0-b016-1f2eaf4a6788' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:29.775064111 +0000 UTC
+api01                | 2025/08/18 16:36:29 [Worker 7] Payment sent via Default: 2ad891ad-63ce-48a0-b016-1f2eaf4a6788
+api02                | 2025/08/18 16:36:29 [INFO] Send payment to proccess: b41474ff-e9e6-488d-817f-3194ef6dad9d, Amount: 20.050000
+api02                | 2025/08/18 16:36:29 Payment enqueued: b41474ff-e9e6-488d-817f-3194ef6dad9d
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:29 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:29 [INFO] Payment saved in database with CorrelationID 'b41474ff-e9e6-488d-817f-3194ef6dad9d' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:29.780464856 +0000 UTC
+api02                | 2025/08/18 16:36:29 [Worker 9] Payment sent via Default: b41474ff-e9e6-488d-817f-3194ef6dad9d
+api01                | 2025/08/18 16:36:29 [INFO] Send payment to proccess: d88c4ac7-b3d2-4d17-b5e6-bf7aa620c707, Amount: 20.050000
+api01                | 2025/08/18 16:36:29 Payment enqueued: d88c4ac7-b3d2-4d17-b5e6-bf7aa620c707
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:29 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:29 [INFO] Payment saved in database with CorrelationID 'd88c4ac7-b3d2-4d17-b5e6-bf7aa620c707' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:29.785106415 +0000 UTC
+api02                | 2025/08/18 16:36:29 [Worker 6] Payment sent via Default: d88c4ac7-b3d2-4d17-b5e6-bf7aa620c707
+api02                | 2025/08/18 16:36:29 [INFO] Send payment to proccess: 81e605a8-e45f-4737-931f-42a5114604f4, Amount: 20.050000
+api02                | 2025/08/18 16:36:29 Payment enqueued: 81e605a8-e45f-4737-931f-42a5114604f4
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:29 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:29 [INFO] Payment saved in database with CorrelationID '81e605a8-e45f-4737-931f-42a5114604f4' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:29.790295553 +0000 UTC
+api02                | 2025/08/18 16:36:29 [Worker 3] Payment sent via Default: 81e605a8-e45f-4737-931f-42a5114604f4
+api01                | 2025/08/18 16:36:29 [INFO] Send payment to proccess: 7eb619f7-0a1e-482a-92fb-b835af5aa73c, Amount: 20.050000
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:29 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:29 Payment enqueued: 7eb619f7-0a1e-482a-92fb-b835af5aa73c
+api02                | 2025/08/18 16:36:29 [INFO] Payment saved in database with CorrelationID '7eb619f7-0a1e-482a-92fb-b835af5aa73c' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:29.795642976 +0000 UTC
+api02                | 2025/08/18 16:36:29 [Worker 1] Payment sent via Default: 7eb619f7-0a1e-482a-92fb-b835af5aa73c
+api02                | 2025/08/18 16:36:29 [INFO] Send payment to proccess: 9bef1062-7fdd-40e3-ab9e-ee85309352b4, Amount: 20.050000
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:29 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:29 Payment enqueued: 9bef1062-7fdd-40e3-ab9e-ee85309352b4
+api02                | 2025/08/18 16:36:29 [INFO] Payment saved in database with CorrelationID '9bef1062-7fdd-40e3-ab9e-ee85309352b4' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:29.801049221 +0000 UTC
+api02                | 2025/08/18 16:36:29 [Worker 7] Payment sent via Default: 9bef1062-7fdd-40e3-ab9e-ee85309352b4
+api01                | 2025/08/18 16:36:29 [INFO] Send payment to proccess: 98e7e853-686c-4d32-aafb-29bbac5f2f70, Amount: 20.050000
+api01                | 2025/08/18 16:36:29 Payment enqueued: 98e7e853-686c-4d32-aafb-29bbac5f2f70
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:29 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:29 [INFO] Payment saved in database with CorrelationID '98e7e853-686c-4d32-aafb-29bbac5f2f70' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:29.807347567 +0000 UTC
+api02                | 2025/08/18 16:36:29 [Worker 4] Payment sent via Default: 98e7e853-686c-4d32-aafb-29bbac5f2f70
+api01                | 2025/08/18 16:36:30 [INFO] Send payment to proccess: 8f6e7de9-8025-40ae-8fb8-7edbf6018066, Amount: 20.050000
+api01                | 2025/08/18 16:36:30 Payment enqueued: 8f6e7de9-8025-40ae-8fb8-7edbf6018066
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:30 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:30 [INFO] Payment saved in database with CorrelationID '8f6e7de9-8025-40ae-8fb8-7edbf6018066' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:30.263210404 +0000 UTC
+api02                | 2025/08/18 16:36:30 [Worker 2] Payment sent via Default: 8f6e7de9-8025-40ae-8fb8-7edbf6018066
+api02                | 2025/08/18 16:36:30 [INFO] Send payment to proccess: b5a18fc4-df28-42b5-bfd2-9071f0508196, Amount: 20.050000
+api02                | 2025/08/18 16:36:30 Payment enqueued: b5a18fc4-df28-42b5-bfd2-9071f0508196
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:30 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:30 [INFO] Payment saved in database with CorrelationID 'b5a18fc4-df28-42b5-bfd2-9071f0508196' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:30.269841941 +0000 UTC
+api02                | 2025/08/18 16:36:30 [Worker 12] Payment sent via Default: b5a18fc4-df28-42b5-bfd2-9071f0508196
+api01                | 2025/08/18 16:36:30 [INFO] Send payment to proccess: 9d0d5f5b-15d8-4ed8-9442-9ab01ddb1daa, Amount: 20.050000
+api01                | 2025/08/18 16:36:30 Payment enqueued: 9d0d5f5b-15d8-4ed8-9442-9ab01ddb1daa
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:30 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:30 [INFO] Payment saved in database with CorrelationID '9d0d5f5b-15d8-4ed8-9442-9ab01ddb1daa' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:30.273304179 +0000 UTC
+api02                | 2025/08/18 16:36:30 [Worker 5] Payment sent via Default: 9d0d5f5b-15d8-4ed8-9442-9ab01ddb1daa
+api02                | 2025/08/18 16:36:30 [INFO] Send payment to proccess: c4f60561-bdc5-4c07-be4a-0924dcad5853, Amount: 20.050000
+api02                | 2025/08/18 16:36:30 Payment enqueued: c4f60561-bdc5-4c07-be4a-0924dcad5853
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:30 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:30 [INFO] Payment saved in database with CorrelationID 'c4f60561-bdc5-4c07-be4a-0924dcad5853' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:30.278590619 +0000 UTC
+api02                | 2025/08/18 16:36:30 [Worker 10] Payment sent via Default: c4f60561-bdc5-4c07-be4a-0924dcad5853
+api01                | 2025/08/18 16:36:30 [INFO] Send payment to proccess: 8ea81af7-715a-47cd-976d-9af6d6293aae, Amount: 20.050000
+api01                | 2025/08/18 16:36:30 Payment enqueued: 8ea81af7-715a-47cd-976d-9af6d6293aae
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:30 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:30 [INFO] Payment saved in database with CorrelationID '8ea81af7-715a-47cd-976d-9af6d6293aae' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:30.283964222 +0000 UTC
+api02                | 2025/08/18 16:36:30 [Worker 8] Payment sent via Default: 8ea81af7-715a-47cd-976d-9af6d6293aae
+api02                | 2025/08/18 16:36:30 [INFO] Send payment to proccess: df56c27a-b8ee-46a0-9c89-4d4d26c75434, Amount: 20.050000
+api02                | 2025/08/18 16:36:30 Payment enqueued: df56c27a-b8ee-46a0-9c89-4d4d26c75434
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:30 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:30 [INFO] Payment saved in database with CorrelationID 'df56c27a-b8ee-46a0-9c89-4d4d26c75434' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:30.290267197 +0000 UTC
+api02                | 2025/08/18 16:36:30 [Worker 11] Payment sent via Default: df56c27a-b8ee-46a0-9c89-4d4d26c75434
+api01                | 2025/08/18 16:36:30 [INFO] Send payment to proccess: 8db69680-aecc-4a62-80c4-5450f918d99a, Amount: 20.050000
+api01                | 2025/08/18 16:36:30 Payment enqueued: 8db69680-aecc-4a62-80c4-5450f918d99a
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:30 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:30 [INFO] Payment saved in database with CorrelationID '8db69680-aecc-4a62-80c4-5450f918d99a' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:30.294564214 +0000 UTC
+api01                | 2025/08/18 16:36:30 [Worker 6] Payment sent via Default: 8db69680-aecc-4a62-80c4-5450f918d99a
+api02                | 2025/08/18 16:36:30 [INFO] Send payment to proccess: 6945da36-12a3-40f9-9078-bddabd4d02cb, Amount: 20.050000
+api02                | 2025/08/18 16:36:30 Payment enqueued: 6945da36-12a3-40f9-9078-bddabd4d02cb
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:30 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:30 [INFO] Payment saved in database with CorrelationID '6945da36-12a3-40f9-9078-bddabd4d02cb' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:30.300962582 +0000 UTC
+api01                | 2025/08/18 16:36:30 [Worker 12] Payment sent via Default: 6945da36-12a3-40f9-9078-bddabd4d02cb
+api01                | 2025/08/18 16:36:30 [INFO] Send payment to proccess: 82c3c177-aed1-492a-adc6-0823b8ccc536, Amount: 20.050000
+api01                | 2025/08/18 16:36:30 Payment enqueued: 82c3c177-aed1-492a-adc6-0823b8ccc536
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:30 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:30 [INFO] Payment saved in database with CorrelationID '82c3c177-aed1-492a-adc6-0823b8ccc536' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:30.304321167 +0000 UTC
+api01                | 2025/08/18 16:36:30 [Worker 3] Payment sent via Default: 82c3c177-aed1-492a-adc6-0823b8ccc536
+api02                | 2025/08/18 16:36:30 [INFO] Send payment to proccess: 3f806b9b-1ba0-40be-9596-aaa0b9a78f6b, Amount: 20.050000
+api02                | 2025/08/18 16:36:30 Payment enqueued: 3f806b9b-1ba0-40be-9596-aaa0b9a78f6b
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:30 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:30 [INFO] Payment saved in database with CorrelationID '3f806b9b-1ba0-40be-9596-aaa0b9a78f6b' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:30.313931334 +0000 UTC
+api01                | 2025/08/18 16:36:30 [Worker 1] Payment sent via Default: 3f806b9b-1ba0-40be-9596-aaa0b9a78f6b
+api02                | 2025/08/18 16:36:30 [INFO] Send payment to proccess: 60b1c6b6-2b27-493a-8361-04803b988b30, Amount: 20.050000
+api02                | 2025/08/18 16:36:30 Payment enqueued: 60b1c6b6-2b27-493a-8361-04803b988b30
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:30 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:30 [INFO] Payment saved in database with CorrelationID '60b1c6b6-2b27-493a-8361-04803b988b30' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:30.761912194 +0000 UTC
+api01                | 2025/08/18 16:36:30 [Worker 4] Payment sent via Default: 60b1c6b6-2b27-493a-8361-04803b988b30
+api01                | 2025/08/18 16:36:30 [INFO] Send payment to proccess: ba079162-8a42-4a03-93b5-dcf5aca995a3, Amount: 20.050000
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:30 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:30 Payment enqueued: ba079162-8a42-4a03-93b5-dcf5aca995a3
+api01                | 2025/08/18 16:36:30 [INFO] Payment saved in database with CorrelationID 'ba079162-8a42-4a03-93b5-dcf5aca995a3' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:30.767327219 +0000 UTC
+api01                | 2025/08/18 16:36:30 [Worker 2] Payment sent via Default: ba079162-8a42-4a03-93b5-dcf5aca995a3
+api02                | 2025/08/18 16:36:30 [INFO] Send payment to proccess: 80283343-8a06-48fc-841b-8120efe4b6af, Amount: 20.050000
+api02                | 2025/08/18 16:36:30 Payment enqueued: 80283343-8a06-48fc-841b-8120efe4b6af
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:30 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:30 [INFO] Payment saved in database with CorrelationID '80283343-8a06-48fc-841b-8120efe4b6af' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:30.772596758 +0000 UTC
+api01                | 2025/08/18 16:36:30 [Worker 5] Payment sent via Default: 80283343-8a06-48fc-841b-8120efe4b6af
+api01                | 2025/08/18 16:36:30 [INFO] Send payment to proccess: c1b1406e-96c1-4b77-bd6b-665e163d2f81, Amount: 20.050000
+api01                | 2025/08/18 16:36:30 Payment enqueued: c1b1406e-96c1-4b77-bd6b-665e163d2f81
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:30 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:30 [INFO] Payment saved in database with CorrelationID 'c1b1406e-96c1-4b77-bd6b-665e163d2f81' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:30.776961707 +0000 UTC
+api01                | 2025/08/18 16:36:30 [Worker 9] Payment sent via Default: c1b1406e-96c1-4b77-bd6b-665e163d2f81
+api02                | 2025/08/18 16:36:30 [INFO] Send payment to proccess: c6254d96-d4c9-4908-8c57-c0da94b7e00f, Amount: 20.050000
+api02                | 2025/08/18 16:36:30 Payment enqueued: c6254d96-d4c9-4908-8c57-c0da94b7e00f
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:30 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:30 [INFO] Payment saved in database with CorrelationID 'c6254d96-d4c9-4908-8c57-c0da94b7e00f' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:30.782192525 +0000 UTC
+api01                | 2025/08/18 16:36:30 [Worker 10] Payment sent via Default: c6254d96-d4c9-4908-8c57-c0da94b7e00f
+api01                | 2025/08/18 16:36:30 [INFO] Send payment to proccess: c6705a0c-c25e-4f26-b582-11a53ff42e8e, Amount: 20.050000
+api01                | 2025/08/18 16:36:30 Payment enqueued: c6705a0c-c25e-4f26-b582-11a53ff42e8e
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:30 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:30 [INFO] Payment saved in database with CorrelationID 'c6705a0c-c25e-4f26-b582-11a53ff42e8e' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:30.786520853 +0000 UTC
+api01                | 2025/08/18 16:36:30 [Worker 8] Payment sent via Default: c6705a0c-c25e-4f26-b582-11a53ff42e8e
+api02                | 2025/08/18 16:36:30 [INFO] Send payment to proccess: d9a457be-0e19-49e8-9887-3cce201a7738, Amount: 20.050000
+api02                | 2025/08/18 16:36:30 Payment enqueued: d9a457be-0e19-49e8-9887-3cce201a7738
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:30 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:30 [INFO] Payment saved in database with CorrelationID 'd9a457be-0e19-49e8-9887-3cce201a7738' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:30.792059102 +0000 UTC
+api01                | 2025/08/18 16:36:30 [Worker 11] Payment sent via Default: d9a457be-0e19-49e8-9887-3cce201a7738
+api01                | 2025/08/18 16:36:30 [INFO] Send payment to proccess: f3965f2f-a296-468c-9d27-b6ae0c5e635a, Amount: 20.050000
+api01                | 2025/08/18 16:36:30 Payment enqueued: f3965f2f-a296-468c-9d27-b6ae0c5e635a
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:30 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:30 [INFO] Payment saved in database with CorrelationID 'f3965f2f-a296-468c-9d27-b6ae0c5e635a' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:30.797367743 +0000 UTC
+api01                | 2025/08/18 16:36:30 [Worker 7] Payment sent via Default: f3965f2f-a296-468c-9d27-b6ae0c5e635a
+api02                | 2025/08/18 16:36:30 [INFO] Send payment to proccess: dad24bbb-469b-403f-bc21-4993449b0293, Amount: 20.050000
+api02                | 2025/08/18 16:36:30 Payment enqueued: dad24bbb-469b-403f-bc21-4993449b0293
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:30 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:30 [INFO] Payment saved in database with CorrelationID 'dad24bbb-469b-403f-bc21-4993449b0293' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:30.80285414 +0000 UTC
+api02                | 2025/08/18 16:36:30 [Worker 9] Payment sent via Default: dad24bbb-469b-403f-bc21-4993449b0293
+api01                | 2025/08/18 16:36:30 [INFO] Send payment to proccess: cd95d711-4af8-4838-a18e-6f5dcb3a3698, Amount: 20.050000
+api01                | 2025/08/18 16:36:30 Payment enqueued: cd95d711-4af8-4838-a18e-6f5dcb3a3698
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:30 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:30 [INFO] Payment saved in database with CorrelationID 'cd95d711-4af8-4838-a18e-6f5dcb3a3698' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:30.809326811 +0000 UTC
+api02                | 2025/08/18 16:36:30 [Worker 6] Payment sent via Default: cd95d711-4af8-4838-a18e-6f5dcb3a3698
+api02                | 2025/08/18 16:36:31 [INFO] Send payment to proccess: 8b936234-f27f-4068-a66b-2006f7060e96, Amount: 20.050000
+api02                | 2025/08/18 16:36:31 Payment enqueued: 8b936234-f27f-4068-a66b-2006f7060e96
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:31 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:31 [INFO] Payment saved in database with CorrelationID '8b936234-f27f-4068-a66b-2006f7060e96' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:31.260205659 +0000 UTC
+api02                | 2025/08/18 16:36:31 [Worker 3] Payment sent via Default: 8b936234-f27f-4068-a66b-2006f7060e96
+api01                | 2025/08/18 16:36:31 [INFO] Send payment to proccess: 3dec27cd-e0e9-4f9b-b3e2-b2e92eeb36de, Amount: 20.050000
+api01                | 2025/08/18 16:36:31 Payment enqueued: 3dec27cd-e0e9-4f9b-b3e2-b2e92eeb36de
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:31 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:31 [INFO] Payment saved in database with CorrelationID '3dec27cd-e0e9-4f9b-b3e2-b2e92eeb36de' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:31.265714987 +0000 UTC
+api02                | 2025/08/18 16:36:31 [Worker 1] Payment sent via Default: 3dec27cd-e0e9-4f9b-b3e2-b2e92eeb36de
+api02                | 2025/08/18 16:36:31 [INFO] Send payment to proccess: da0f7adb-d171-4bce-a45a-ba114427cb92, Amount: 20.050000
+api02                | 2025/08/18 16:36:31 Payment enqueued: da0f7adb-d171-4bce-a45a-ba114427cb92
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:31 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:31 [INFO] Payment saved in database with CorrelationID 'da0f7adb-d171-4bce-a45a-ba114427cb92' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:31.272384884 +0000 UTC
+api02                | 2025/08/18 16:36:31 [Worker 7] Payment sent via Default: da0f7adb-d171-4bce-a45a-ba114427cb92
+api01                | 2025/08/18 16:36:31 [INFO] Send payment to proccess: 649cef5d-d41c-45ec-905c-72cab4edca4f, Amount: 20.050000
+api01                | 2025/08/18 16:36:31 Payment enqueued: 649cef5d-d41c-45ec-905c-72cab4edca4f
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:31 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:31 [INFO] Payment saved in database with CorrelationID '649cef5d-d41c-45ec-905c-72cab4edca4f' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:31.274967832 +0000 UTC
+api02                | 2025/08/18 16:36:31 [Worker 4] Payment sent via Default: 649cef5d-d41c-45ec-905c-72cab4edca4f
+api02                | 2025/08/18 16:36:31 [INFO] Send payment to proccess: b47183cb-2cac-422e-9be5-ef8fcbd9a647, Amount: 20.050000
+api02                | 2025/08/18 16:36:31 Payment enqueued: b47183cb-2cac-422e-9be5-ef8fcbd9a647
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:31 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:31 [INFO] Payment saved in database with CorrelationID 'b47183cb-2cac-422e-9be5-ef8fcbd9a647' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:31.28046651 +0000 UTC
+api02                | 2025/08/18 16:36:31 [Worker 2] Payment sent via Default: b47183cb-2cac-422e-9be5-ef8fcbd9a647
+api01                | 2025/08/18 16:36:31 [INFO] Send payment to proccess: d132fac9-e742-405e-887b-7d2a2d09f060, Amount: 20.050000
+api01                | 2025/08/18 16:36:31 Payment enqueued: d132fac9-e742-405e-887b-7d2a2d09f060
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:31 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:31 [INFO] Payment saved in database with CorrelationID 'd132fac9-e742-405e-887b-7d2a2d09f060' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:31.286284168 +0000 UTC
+api02                | 2025/08/18 16:36:31 [Worker 12] Payment sent via Default: d132fac9-e742-405e-887b-7d2a2d09f060
+api02                | 2025/08/18 16:36:31 [INFO] Send payment to proccess: faed6a05-d3a0-4ed5-bac7-68f3ecda134c, Amount: 20.050000
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:31 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:31 Payment enqueued: faed6a05-d3a0-4ed5-bac7-68f3ecda134c
+api02                | 2025/08/18 16:36:31 [INFO] Payment saved in database with CorrelationID 'faed6a05-d3a0-4ed5-bac7-68f3ecda134c' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:31.291708063 +0000 UTC
+api02                | 2025/08/18 16:36:31 [Worker 5] Payment sent via Default: faed6a05-d3a0-4ed5-bac7-68f3ecda134c
+api01                | 2025/08/18 16:36:31 [INFO] Send payment to proccess: e36fb361-8367-448e-9396-86f05bba9bd9, Amount: 20.050000
+api01                | 2025/08/18 16:36:31 Payment enqueued: e36fb361-8367-448e-9396-86f05bba9bd9
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:31 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:31 [INFO] Payment saved in database with CorrelationID 'e36fb361-8367-448e-9396-86f05bba9bd9' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:31.296128564 +0000 UTC
+api02                | 2025/08/18 16:36:31 [Worker 10] Payment sent via Default: e36fb361-8367-448e-9396-86f05bba9bd9
+api02                | 2025/08/18 16:36:31 [INFO] GET /payment-summary?from=2025-08-18T16:36:16.298Z&to=2025-08-18T16:36:29.298Z
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:31 +0000] "GET /payments-summary?from=2025-08-18T16:36:16.298Z&to=2025-08-18T16:36:29.298Z HTTP/1.1" 200 101 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:31 [INFO] Send payment to proccess: f301be2c-5e0b-4125-abaf-caf53534459b, Amount: 20.050000
+api02                | 2025/08/18 16:36:31 Payment enqueued: f301be2c-5e0b-4125-abaf-caf53534459b
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:31 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:31 [INFO] Payment saved in database with CorrelationID 'f301be2c-5e0b-4125-abaf-caf53534459b' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:31.303087991 +0000 UTC
+api02                | 2025/08/18 16:36:31 [Worker 8] Payment sent via Default: f301be2c-5e0b-4125-abaf-caf53534459b
+api01                | 2025/08/18 16:36:31 [INFO] Send payment to proccess: 29c976bf-be18-4cdd-9e12-d0de24baa0bb, Amount: 20.050000
+api01                | 2025/08/18 16:36:31 Payment enqueued: 29c976bf-be18-4cdd-9e12-d0de24baa0bb
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:31 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:31 [INFO] Payment saved in database with CorrelationID '29c976bf-be18-4cdd-9e12-d0de24baa0bb' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:31.306658583 +0000 UTC
+api02                | 2025/08/18 16:36:31 [Worker 11] Payment sent via Default: 29c976bf-be18-4cdd-9e12-d0de24baa0bb
+api01                | 2025/08/18 16:36:31 [INFO] Send payment to proccess: 94e5a126-ea38-4756-aeeb-bc2271368be3, Amount: 20.050000
+api01                | 2025/08/18 16:36:31 Payment enqueued: 94e5a126-ea38-4756-aeeb-bc2271368be3
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:31 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:31 [INFO] Payment saved in database with CorrelationID '94e5a126-ea38-4756-aeeb-bc2271368be3' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:31.316135626 +0000 UTC
+api01                | 2025/08/18 16:36:31 [Worker 6] Payment sent via Default: 94e5a126-ea38-4756-aeeb-bc2271368be3
+api02                | 2025/08/18 16:36:31 [INFO] Send payment to proccess: 3597aed5-a3da-45d5-8ef0-cc0b3a73f01a, Amount: 20.050000
+api02                | 2025/08/18 16:36:31 Payment enqueued: 3597aed5-a3da-45d5-8ef0-cc0b3a73f01a
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:31 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:31 [INFO] Payment saved in database with CorrelationID '3597aed5-a3da-45d5-8ef0-cc0b3a73f01a' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:31.759069004 +0000 UTC
+api01                | 2025/08/18 16:36:31 [Worker 12] Payment sent via Default: 3597aed5-a3da-45d5-8ef0-cc0b3a73f01a
+api01                | 2025/08/18 16:36:31 [INFO] Send payment to proccess: 2e0e2ea7-f326-43f7-b302-3d0f6a4b3ff0, Amount: 20.050000
+api01                | 2025/08/18 16:36:31 Payment enqueued: 2e0e2ea7-f326-43f7-b302-3d0f6a4b3ff0
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:31 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:31 [INFO] Payment saved in database with CorrelationID '2e0e2ea7-f326-43f7-b302-3d0f6a4b3ff0' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:31.763667581 +0000 UTC
+api01                | 2025/08/18 16:36:31 [Worker 3] Payment sent via Default: 2e0e2ea7-f326-43f7-b302-3d0f6a4b3ff0
+api02                | 2025/08/18 16:36:31 [INFO] Send payment to proccess: 7adaf038-bcad-4ca7-b69e-33823c550277, Amount: 20.050000
+api02                | 2025/08/18 16:36:31 Payment enqueued: 7adaf038-bcad-4ca7-b69e-33823c550277
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:31 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:31 [INFO] Payment saved in database with CorrelationID '7adaf038-bcad-4ca7-b69e-33823c550277' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:31.769186999 +0000 UTC
+api01                | 2025/08/18 16:36:31 [Worker 1] Payment sent via Default: 7adaf038-bcad-4ca7-b69e-33823c550277
+api02                | 2025/08/18 16:36:31 [INFO] Send payment to proccess: bd741feb-f989-4cb3-9903-c2614e9f5ef5, Amount: 20.050000
+api02                | 2025/08/18 16:36:31 Payment enqueued: bd741feb-f989-4cb3-9903-c2614e9f5ef5
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:31 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:31 [INFO] Payment saved in database with CorrelationID 'bd741feb-f989-4cb3-9903-c2614e9f5ef5' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:31.774597093 +0000 UTC
+api01                | 2025/08/18 16:36:31 [Worker 4] Payment sent via Default: bd741feb-f989-4cb3-9903-c2614e9f5ef5
+api01                | 2025/08/18 16:36:31 [INFO] Send payment to proccess: 910a2896-db99-4682-b624-e752e0289742, Amount: 20.050000
+api01                | 2025/08/18 16:36:31 Payment enqueued: 910a2896-db99-4682-b624-e752e0289742
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:31 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:31 [INFO] Payment saved in database with CorrelationID '910a2896-db99-4682-b624-e752e0289742' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:31.779098456 +0000 UTC
+api01                | 2025/08/18 16:36:31 [Worker 2] Payment sent via Default: 910a2896-db99-4682-b624-e752e0289742
+api02                | 2025/08/18 16:36:31 [INFO] Send payment to proccess: c0696ecf-6168-420b-9b07-8c1fce33333f, Amount: 20.050000
+api02                | 2025/08/18 16:36:31 Payment enqueued: c0696ecf-6168-420b-9b07-8c1fce33333f
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:31 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:31 [INFO] Payment saved in database with CorrelationID 'c0696ecf-6168-420b-9b07-8c1fce33333f' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:31.783565519 +0000 UTC
+api01                | 2025/08/18 16:36:31 [Worker 5] Payment sent via Default: c0696ecf-6168-420b-9b07-8c1fce33333f
+api01                | 2025/08/18 16:36:31 [INFO] Send payment to proccess: 9b879232-0465-4752-a9e8-663d21c63bb4, Amount: 20.050000
+api01                | 2025/08/18 16:36:31 Payment enqueued: 9b879232-0465-4752-a9e8-663d21c63bb4
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:31 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:31 [INFO] Payment saved in database with CorrelationID '9b879232-0465-4752-a9e8-663d21c63bb4' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:31.78889008 +0000 UTC
+api01                | 2025/08/18 16:36:31 [Worker 9] Payment sent via Default: 9b879232-0465-4752-a9e8-663d21c63bb4
+api02                | 2025/08/18 16:36:31 [INFO] Send payment to proccess: 09204a1d-45b1-428f-b04a-71be0e24849d, Amount: 20.050000
+api02                | 2025/08/18 16:36:31 Payment enqueued: 09204a1d-45b1-428f-b04a-71be0e24849d
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:31 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:31 [INFO] Payment saved in database with CorrelationID '09204a1d-45b1-428f-b04a-71be0e24849d' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:31.794286404 +0000 UTC
+api01                | 2025/08/18 16:36:31 [Worker 10] Payment sent via Default: 09204a1d-45b1-428f-b04a-71be0e24849d
+api01                | 2025/08/18 16:36:31 [INFO] Send payment to proccess: 29902207-5987-4d46-82a0-28641399763f, Amount: 20.050000
+api01                | 2025/08/18 16:36:31 Payment enqueued: 29902207-5987-4d46-82a0-28641399763f
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:31 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:31 [INFO] Payment saved in database with CorrelationID '29902207-5987-4d46-82a0-28641399763f' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:31.799519933 +0000 UTC
+api01                | 2025/08/18 16:36:31 [Worker 8] Payment sent via Default: 29902207-5987-4d46-82a0-28641399763f
+api02                | 2025/08/18 16:36:31 [INFO] Send payment to proccess: 555bd54e-6d28-45f2-bdc6-8de0b8ab162a, Amount: 20.050000
+api02                | 2025/08/18 16:36:31 Payment enqueued: 555bd54e-6d28-45f2-bdc6-8de0b8ab162a
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:31 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:31 [INFO] Payment saved in database with CorrelationID '555bd54e-6d28-45f2-bdc6-8de0b8ab162a' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:31.804822624 +0000 UTC
+api01                | 2025/08/18 16:36:31 [Worker 11] Payment sent via Default: 555bd54e-6d28-45f2-bdc6-8de0b8ab162a
+api01                | 2025/08/18 16:36:31 [INFO] Send payment to proccess: f84d7df5-84dd-49a9-9236-df836f477805, Amount: 20.050000
+api01                | 2025/08/18 16:36:31 Payment enqueued: f84d7df5-84dd-49a9-9236-df836f477805
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:31 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:31 [INFO] Payment saved in database with CorrelationID 'f84d7df5-84dd-49a9-9236-df836f477805' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:31.811472851 +0000 UTC
+api01                | 2025/08/18 16:36:31 [Worker 7] Payment sent via Default: f84d7df5-84dd-49a9-9236-df836f477805
+api01                | 2025/08/18 16:36:32 [INFO] Send payment to proccess: 8e65f5bf-c0a1-4806-8c81-af7eda8c9650, Amount: 20.050000
+api01                | 2025/08/18 16:36:32 Payment enqueued: 8e65f5bf-c0a1-4806-8c81-af7eda8c9650
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:32 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:32 [INFO] Payment saved in database with CorrelationID '8e65f5bf-c0a1-4806-8c81-af7eda8c9650' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:32.257366459 +0000 UTC
+api02                | 2025/08/18 16:36:32 [Worker 9] Payment sent via Default: 8e65f5bf-c0a1-4806-8c81-af7eda8c9650
+api02                | 2025/08/18 16:36:32 [INFO] Send payment to proccess: 51f8bb71-70a3-480a-889f-cb3598ffc70a, Amount: 20.050000
+api02                | 2025/08/18 16:36:32 Payment enqueued: 51f8bb71-70a3-480a-889f-cb3598ffc70a
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:32 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:32 [INFO] Payment saved in database with CorrelationID '51f8bb71-70a3-480a-889f-cb3598ffc70a' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:32.261847132 +0000 UTC
+api02                | 2025/08/18 16:36:32 [Worker 6] Payment sent via Default: 51f8bb71-70a3-480a-889f-cb3598ffc70a
+api01                | 2025/08/18 16:36:32 [INFO] Send payment to proccess: 51e48d16-189a-4921-b7e6-b9348112ddd8, Amount: 20.050000
+api01                | 2025/08/18 16:36:32 Payment enqueued: 51e48d16-189a-4921-b7e6-b9348112ddd8
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:32 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:32 [INFO] Payment saved in database with CorrelationID '51e48d16-189a-4921-b7e6-b9348112ddd8' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:32.267136912 +0000 UTC
+api02                | 2025/08/18 16:36:32 [Worker 3] Payment sent via Default: 51e48d16-189a-4921-b7e6-b9348112ddd8
+api02                | 2025/08/18 16:36:32 [INFO] Send payment to proccess: a4161cd9-ccbb-40bd-bc4e-d42c06c198f7, Amount: 20.050000
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:32 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:32 Payment enqueued: a4161cd9-ccbb-40bd-bc4e-d42c06c198f7
+api02                | 2025/08/18 16:36:32 [INFO] Payment saved in database with CorrelationID 'a4161cd9-ccbb-40bd-bc4e-d42c06c198f7' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:32.274474183 +0000 UTC
+api02                | 2025/08/18 16:36:32 [Worker 1] Payment sent via Default: a4161cd9-ccbb-40bd-bc4e-d42c06c198f7
+api01                | 2025/08/18 16:36:32 [INFO] Send payment to proccess: 50d4c122-81f8-4f98-b353-c41667833a3e, Amount: 20.050000
+api01                | 2025/08/18 16:36:32 Payment enqueued: 50d4c122-81f8-4f98-b353-c41667833a3e
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:32 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:32 [INFO] Payment saved in database with CorrelationID '50d4c122-81f8-4f98-b353-c41667833a3e' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:32.276698708 +0000 UTC
+api02                | 2025/08/18 16:36:32 [Worker 7] Payment sent via Default: 50d4c122-81f8-4f98-b353-c41667833a3e
+api02                | 2025/08/18 16:36:32 [INFO] Send payment to proccess: e59aa56d-31d5-4372-9d09-893933be6c9a, Amount: 20.050000
+api02                | 2025/08/18 16:36:32 Payment enqueued: e59aa56d-31d5-4372-9d09-893933be6c9a
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:32 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:32 [INFO] Payment saved in database with CorrelationID 'e59aa56d-31d5-4372-9d09-893933be6c9a' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:32.2820088 +0000 UTC
+api02                | 2025/08/18 16:36:32 [Worker 4] Payment sent via Default: e59aa56d-31d5-4372-9d09-893933be6c9a
+api01                | 2025/08/18 16:36:32 [INFO] Send payment to proccess: 28ffe3cc-dc13-4378-b394-f0c106064127, Amount: 20.050000
+api01                | 2025/08/18 16:36:32 Payment enqueued: 28ffe3cc-dc13-4378-b394-f0c106064127
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:32 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:32 [INFO] Payment saved in database with CorrelationID '28ffe3cc-dc13-4378-b394-f0c106064127' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:32.288286634 +0000 UTC
+api02                | 2025/08/18 16:36:32 [Worker 2] Payment sent via Default: 28ffe3cc-dc13-4378-b394-f0c106064127
+api02                | 2025/08/18 16:36:32 [INFO] Send payment to proccess: 54ae2e83-0f0b-4dd3-a66f-e6cb3dfac1b7, Amount: 20.050000
+api02                | 2025/08/18 16:36:32 Payment enqueued: 54ae2e83-0f0b-4dd3-a66f-e6cb3dfac1b7
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:32 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:32 [INFO] Payment saved in database with CorrelationID '54ae2e83-0f0b-4dd3-a66f-e6cb3dfac1b7' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:32.293663787 +0000 UTC
+api02                | 2025/08/18 16:36:32 [Worker 12] Payment sent via Default: 54ae2e83-0f0b-4dd3-a66f-e6cb3dfac1b7
+api01                | 2025/08/18 16:36:32 [INFO] Send payment to proccess: de7668df-f0c4-4bde-b412-58708a673c68, Amount: 20.050000
+api01                | 2025/08/18 16:36:32 Payment enqueued: de7668df-f0c4-4bde-b412-58708a673c68
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:32 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:32 [INFO] Payment saved in database with CorrelationID 'de7668df-f0c4-4bde-b412-58708a673c68' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:32.29813848 +0000 UTC
+api02                | 2025/08/18 16:36:32 [Worker 5] Payment sent via Default: de7668df-f0c4-4bde-b412-58708a673c68
+api02                | 2025/08/18 16:36:32 [INFO] Send payment to proccess: 06d8c515-4682-4919-8101-72db8edb2a35, Amount: 20.050000
+api02                | 2025/08/18 16:36:32 Payment enqueued: 06d8c515-4682-4919-8101-72db8edb2a35
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:32 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:32 [INFO] Payment saved in database with CorrelationID '06d8c515-4682-4919-8101-72db8edb2a35' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:32.304735845 +0000 UTC
+api02                | 2025/08/18 16:36:32 [Worker 10] Payment sent via Default: 06d8c515-4682-4919-8101-72db8edb2a35
+api01                | 2025/08/18 16:36:32 [INFO] Send payment to proccess: b2ed65bf-7190-4347-8f23-fa8e4d7d7374, Amount: 20.050000
+api01                | 2025/08/18 16:36:32 Payment enqueued: b2ed65bf-7190-4347-8f23-fa8e4d7d7374
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:32 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:32 [INFO] Payment saved in database with CorrelationID 'b2ed65bf-7190-4347-8f23-fa8e4d7d7374' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:32.308135671 +0000 UTC
+api02                | 2025/08/18 16:36:32 [Worker 8] Payment sent via Default: b2ed65bf-7190-4347-8f23-fa8e4d7d7374
+api02                | 2025/08/18 16:36:32 [INFO] Send payment to proccess: 851e3488-417f-4ee9-aa50-2aeb7d5e53d6, Amount: 20.050000
+api02                | 2025/08/18 16:36:32 Payment enqueued: 851e3488-417f-4ee9-aa50-2aeb7d5e53d6
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:32 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:32 [INFO] Payment saved in database with CorrelationID '851e3488-417f-4ee9-aa50-2aeb7d5e53d6' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:32.318450612 +0000 UTC
+api02                | 2025/08/18 16:36:32 [Worker 11] Payment sent via Default: 851e3488-417f-4ee9-aa50-2aeb7d5e53d6
+api02                | 2025/08/18 16:36:32 [INFO] Send payment to proccess: 664baeae-2f69-454d-b5af-78c48ec8843e, Amount: 20.050000
+api02                | 2025/08/18 16:36:32 Payment enqueued: 664baeae-2f69-454d-b5af-78c48ec8843e
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:32 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:32 [INFO] Payment saved in database with CorrelationID '664baeae-2f69-454d-b5af-78c48ec8843e' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:32.755262501 +0000 UTC
+api01                | 2025/08/18 16:36:32 [Worker 6] Payment sent via Default: 664baeae-2f69-454d-b5af-78c48ec8843e
+api01                | 2025/08/18 16:36:32 [INFO] Send payment to proccess: a0aef245-9543-437d-a231-f2e88be2db63, Amount: 20.050000
+api01                | 2025/08/18 16:36:32 Payment enqueued: a0aef245-9543-437d-a231-f2e88be2db63
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:32 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:32 [INFO] Payment saved in database with CorrelationID 'a0aef245-9543-437d-a231-f2e88be2db63' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:32.760602373 +0000 UTC
+api01                | 2025/08/18 16:36:32 [Worker 12] Payment sent via Default: a0aef245-9543-437d-a231-f2e88be2db63
+api02                | 2025/08/18 16:36:32 [INFO] Send payment to proccess: 6fb9a3aa-803b-4fc1-91ac-282ecb2689a0, Amount: 20.050000
+api02                | 2025/08/18 16:36:32 Payment enqueued: 6fb9a3aa-803b-4fc1-91ac-282ecb2689a0
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:32 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:32 [INFO] Payment saved in database with CorrelationID '6fb9a3aa-803b-4fc1-91ac-282ecb2689a0' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:32.765956866 +0000 UTC
+api01                | 2025/08/18 16:36:32 [Worker 3] Payment sent via Default: 6fb9a3aa-803b-4fc1-91ac-282ecb2689a0
+api01                | 2025/08/18 16:36:32 [INFO] Send payment to proccess: 4d665093-9481-46f9-8754-598f87042d3b, Amount: 20.050000
+api01                | 2025/08/18 16:36:32 Payment enqueued: 4d665093-9481-46f9-8754-598f87042d3b
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:32 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:32 [INFO] Payment saved in database with CorrelationID '4d665093-9481-46f9-8754-598f87042d3b' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:32.770382187 +0000 UTC
+api01                | 2025/08/18 16:36:32 [Worker 1] Payment sent via Default: 4d665093-9481-46f9-8754-598f87042d3b
+api02                | 2025/08/18 16:36:32 [INFO] Send payment to proccess: 83e70df6-3968-490a-9382-e41dc9483ec5, Amount: 20.050000
+api02                | 2025/08/18 16:36:32 Payment enqueued: 83e70df6-3968-490a-9382-e41dc9483ec5
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:32 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:32 [INFO] Payment saved in database with CorrelationID '83e70df6-3968-490a-9382-e41dc9483ec5' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:32.776748334 +0000 UTC
+api01                | 2025/08/18 16:36:32 [Worker 4] Payment sent via Default: 83e70df6-3968-490a-9382-e41dc9483ec5
+api01                | 2025/08/18 16:36:32 [INFO] Send payment to proccess: 36f0fb33-8194-4b13-8078-fabccdca5fa2, Amount: 20.050000
+api01                | 2025/08/18 16:36:32 Payment enqueued: 36f0fb33-8194-4b13-8078-fabccdca5fa2
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:32 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:32 [INFO] Payment saved in database with CorrelationID '36f0fb33-8194-4b13-8078-fabccdca5fa2' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:32.781212326 +0000 UTC
+api01                | 2025/08/18 16:36:32 [Worker 2] Payment sent via Default: 36f0fb33-8194-4b13-8078-fabccdca5fa2
+api02                | 2025/08/18 16:36:32 [INFO] Send payment to proccess: 98c484af-0131-4eac-8cf1-f56842a9c861, Amount: 20.050000
+api02                | 2025/08/18 16:36:32 Payment enqueued: 98c484af-0131-4eac-8cf1-f56842a9c861
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:32 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:32 [INFO] Payment saved in database with CorrelationID '98c484af-0131-4eac-8cf1-f56842a9c861' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:32.785533664 +0000 UTC
+api01                | 2025/08/18 16:36:32 [Worker 5] Payment sent via Default: 98c484af-0131-4eac-8cf1-f56842a9c861
+api01                | 2025/08/18 16:36:32 [INFO] Send payment to proccess: ef1c5f78-282b-4b3c-9154-884e2ff21481, Amount: 20.050000
+api01                | 2025/08/18 16:36:32 Payment enqueued: ef1c5f78-282b-4b3c-9154-884e2ff21481
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:32 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:32 [INFO] Payment saved in database with CorrelationID 'ef1c5f78-282b-4b3c-9154-884e2ff21481' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:32.790895856 +0000 UTC
+api01                | 2025/08/18 16:36:32 [Worker 9] Payment sent via Default: ef1c5f78-282b-4b3c-9154-884e2ff21481
+api02                | 2025/08/18 16:36:32 [INFO] Send payment to proccess: 1fc3cb82-155f-45cc-875d-ff2a3a454627, Amount: 20.050000
+api02                | 2025/08/18 16:36:32 Payment enqueued: 1fc3cb82-155f-45cc-875d-ff2a3a454627
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:32 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:32 [INFO] Payment saved in database with CorrelationID '1fc3cb82-155f-45cc-875d-ff2a3a454627' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:32.796126135 +0000 UTC
+api01                | 2025/08/18 16:36:32 [Worker 10] Payment sent via Default: 1fc3cb82-155f-45cc-875d-ff2a3a454627
+api01                | 2025/08/18 16:36:32 [INFO] Send payment to proccess: 71cd9816-cc45-43a6-b5de-1545bc6bda51, Amount: 20.050000
+api01                | 2025/08/18 16:36:32 Payment enqueued: 71cd9816-cc45-43a6-b5de-1545bc6bda51
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:32 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:32 [INFO] Payment saved in database with CorrelationID '71cd9816-cc45-43a6-b5de-1545bc6bda51' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:32.801429236 +0000 UTC
+api01                | 2025/08/18 16:36:32 [Worker 8] Payment sent via Default: 71cd9816-cc45-43a6-b5de-1545bc6bda51
+api02                | 2025/08/18 16:36:32 [INFO] Send payment to proccess: 43c14b45-1f88-4f15-b4e2-394cc183774b, Amount: 20.050000
+api02                | 2025/08/18 16:36:32 Payment enqueued: 43c14b45-1f88-4f15-b4e2-394cc183774b
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:32 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:32 [INFO] Payment saved in database with CorrelationID '43c14b45-1f88-4f15-b4e2-394cc183774b' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:32.806869521 +0000 UTC
+api01                | 2025/08/18 16:36:32 [Worker 11] Payment sent via Default: 43c14b45-1f88-4f15-b4e2-394cc183774b
+api01                | 2025/08/18 16:36:32 [INFO] Send payment to proccess: 9bd634a3-223e-4c8d-870a-b454b3dc97ac, Amount: 20.050000
+api01                | 2025/08/18 16:36:32 Payment enqueued: 9bd634a3-223e-4c8d-870a-b454b3dc97ac
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:32 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:32 [INFO] Payment saved in database with CorrelationID '9bd634a3-223e-4c8d-870a-b454b3dc97ac' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:32.813394794 +0000 UTC
+api01                | 2025/08/18 16:36:32 [Worker 7] Payment sent via Default: 9bd634a3-223e-4c8d-870a-b454b3dc97ac
+api02                | 2025/08/18 16:36:33 [INFO] Send payment to proccess: 274e2676-9d6e-47d9-9910-38a8a67ce01d, Amount: 20.050000
+api02                | 2025/08/18 16:36:33 Payment enqueued: 274e2676-9d6e-47d9-9910-38a8a67ce01d
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:33 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:33 [INFO] Payment saved in database with CorrelationID '274e2676-9d6e-47d9-9910-38a8a67ce01d' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:33.253401761 +0000 UTC
+api02                | 2025/08/18 16:36:33 [Worker 9] Payment sent via Default: 274e2676-9d6e-47d9-9910-38a8a67ce01d
+api01                | 2025/08/18 16:36:33 [INFO] Send payment to proccess: 8cd3542a-0ef3-48a7-9657-76687906ef67, Amount: 20.050000
+api01                | 2025/08/18 16:36:33 Payment enqueued: 8cd3542a-0ef3-48a7-9657-76687906ef67
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:33 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:33 [INFO] Payment saved in database with CorrelationID '8cd3542a-0ef3-48a7-9657-76687906ef67' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:33.258971061 +0000 UTC
+api02                | 2025/08/18 16:36:33 [Worker 6] Payment sent via Default: 8cd3542a-0ef3-48a7-9657-76687906ef67
+api02                | 2025/08/18 16:36:33 [INFO] Send payment to proccess: 2dcc86fe-6004-444a-b12d-7bdacccfc3b1, Amount: 20.050000
+api02                | 2025/08/18 16:36:33 Payment enqueued: 2dcc86fe-6004-444a-b12d-7bdacccfc3b1
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:33 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:33 [INFO] Payment saved in database with CorrelationID '2dcc86fe-6004-444a-b12d-7bdacccfc3b1' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:33.263385162 +0000 UTC
+api02                | 2025/08/18 16:36:33 [Worker 3] Payment sent via Default: 2dcc86fe-6004-444a-b12d-7bdacccfc3b1
+api01                | 2025/08/18 16:36:33 [INFO] Send payment to proccess: 8d8ba7e3-9e49-4524-9edb-ba6dc30c1440, Amount: 20.050000
+api01                | 2025/08/18 16:36:33 Payment enqueued: 8d8ba7e3-9e49-4524-9edb-ba6dc30c1440
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:33 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:33 [INFO] Payment saved in database with CorrelationID '8d8ba7e3-9e49-4524-9edb-ba6dc30c1440' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:33.268815197 +0000 UTC
+api02                | 2025/08/18 16:36:33 [Worker 1] Payment sent via Default: 8d8ba7e3-9e49-4524-9edb-ba6dc30c1440
+api02                | 2025/08/18 16:36:33 [INFO] Send payment to proccess: a62bc8e3-7d24-42e8-852b-861062e5da18, Amount: 20.050000
+api02                | 2025/08/18 16:36:33 Payment enqueued: a62bc8e3-7d24-42e8-852b-861062e5da18
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:33 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:33 [INFO] Payment saved in database with CorrelationID 'a62bc8e3-7d24-42e8-852b-861062e5da18' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:33.276215759 +0000 UTC
+api02                | 2025/08/18 16:36:33 [Worker 7] Payment sent via Default: a62bc8e3-7d24-42e8-852b-861062e5da18
+api01                | 2025/08/18 16:36:33 [INFO] Send payment to proccess: 1f4e9aa9-a778-4636-b46d-d6cc01a5de7b, Amount: 20.050000
+api01                | 2025/08/18 16:36:33 Payment enqueued: 1f4e9aa9-a778-4636-b46d-d6cc01a5de7b
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:33 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:33 [INFO] Payment saved in database with CorrelationID '1f4e9aa9-a778-4636-b46d-d6cc01a5de7b' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:33.27856443 +0000 UTC
+api02                | 2025/08/18 16:36:33 [Worker 4] Payment sent via Default: 1f4e9aa9-a778-4636-b46d-d6cc01a5de7b
+api02                | 2025/08/18 16:36:33 [INFO] Send payment to proccess: fe0252db-f508-483e-967d-edafcbb7944d, Amount: 20.050000
+api02                | 2025/08/18 16:36:33 Payment enqueued: fe0252db-f508-483e-967d-edafcbb7944d
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:33 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:33 [INFO] Payment saved in database with CorrelationID 'fe0252db-f508-483e-967d-edafcbb7944d' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:33.284015855 +0000 UTC
+api02                | 2025/08/18 16:36:33 [Worker 2] Payment sent via Default: fe0252db-f508-483e-967d-edafcbb7944d
+api01                | 2025/08/18 16:36:33 [INFO] Send payment to proccess: 4492a4eb-972e-4f4e-8bb1-72849eb06da0, Amount: 20.050000
+api01                | 2025/08/18 16:36:33 Payment enqueued: 4492a4eb-972e-4f4e-8bb1-72849eb06da0
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:33 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:33 [INFO] Payment saved in database with CorrelationID '4492a4eb-972e-4f4e-8bb1-72849eb06da0' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:33.290156735 +0000 UTC
+api02                | 2025/08/18 16:36:33 [Worker 12] Payment sent via Default: 4492a4eb-972e-4f4e-8bb1-72849eb06da0
+api02                | 2025/08/18 16:36:33 [INFO] Send payment to proccess: 5adecc72-3ac1-4e9d-afec-ac86b02dff35, Amount: 20.050000
+api02                | 2025/08/18 16:36:33 Payment enqueued: 5adecc72-3ac1-4e9d-afec-ac86b02dff35
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:33 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:33 [INFO] Payment saved in database with CorrelationID '5adecc72-3ac1-4e9d-afec-ac86b02dff35' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:33.295326171 +0000 UTC
+api02                | 2025/08/18 16:36:33 [Worker 5] Payment sent via Default: 5adecc72-3ac1-4e9d-afec-ac86b02dff35
+api01                | 2025/08/18 16:36:33 [INFO] Send payment to proccess: 7fc397a9-3617-4379-9d83-fe2b994e6bf5, Amount: 20.050000
+api01                | 2025/08/18 16:36:33 Payment enqueued: 7fc397a9-3617-4379-9d83-fe2b994e6bf5
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:33 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:33 [INFO] Payment saved in database with CorrelationID '7fc397a9-3617-4379-9d83-fe2b994e6bf5' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:33.300648563 +0000 UTC
+api02                | 2025/08/18 16:36:33 [Worker 10] Payment sent via Default: 7fc397a9-3617-4379-9d83-fe2b994e6bf5
+api02                | 2025/08/18 16:36:33 [INFO] Send payment to proccess: d78a256d-a840-433a-91bd-bc8ed2dadd53, Amount: 20.050000
+api02                | 2025/08/18 16:36:33 Payment enqueued: d78a256d-a840-433a-91bd-bc8ed2dadd53
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:33 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:33 [INFO] Payment saved in database with CorrelationID 'd78a256d-a840-433a-91bd-bc8ed2dadd53' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:33.306969938 +0000 UTC
+api02                | 2025/08/18 16:36:33 [Worker 8] Payment sent via Default: d78a256d-a840-433a-91bd-bc8ed2dadd53
+api01                | 2025/08/18 16:36:33 [INFO] Send payment to proccess: 9b3e9202-eab0-45cc-b39d-d237eb62a8fa, Amount: 20.050000
+api01                | 2025/08/18 16:36:33 Payment enqueued: 9b3e9202-eab0-45cc-b39d-d237eb62a8fa
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:33 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api02                | 2025/08/18 16:36:33 [INFO] Payment saved in database with CorrelationID '9b3e9202-eab0-45cc-b39d-d237eb62a8fa' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:33.309261746 +0000 UTC
+api02                | 2025/08/18 16:36:33 [Worker 11] Payment sent via Default: 9b3e9202-eab0-45cc-b39d-d237eb62a8fa
+api01                | 2025/08/18 16:36:33 [INFO] Send payment to proccess: 907f4879-dfe6-4f18-8f94-b2982e47b0c5, Amount: 20.050000
+api01                | 2025/08/18 16:36:33 Payment enqueued: 907f4879-dfe6-4f18-8f94-b2982e47b0c5
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:33 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:33 [INFO] Payment saved in database with CorrelationID '907f4879-dfe6-4f18-8f94-b2982e47b0c5' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:33.320616354 +0000 UTC
+api01                | 2025/08/18 16:36:33 [Worker 6] Payment sent via Default: 907f4879-dfe6-4f18-8f94-b2982e47b0c5
+api02                | 2025/08/18 16:36:33 [INFO] Send payment to proccess: 628ef1e6-9e09-497d-8b7e-1051bfdaaa8a, Amount: 20.050000
+api02                | 2025/08/18 16:36:33 Payment enqueued: 628ef1e6-9e09-497d-8b7e-1051bfdaaa8a
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:33 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:33 [INFO] Payment saved in database with CorrelationID '628ef1e6-9e09-497d-8b7e-1051bfdaaa8a' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:33.751563922 +0000 UTC
+api01                | 2025/08/18 16:36:33 [Worker 12] Payment sent via Default: 628ef1e6-9e09-497d-8b7e-1051bfdaaa8a
+api01                | 2025/08/18 16:36:33 [INFO] Send payment to proccess: 44c74822-a448-468f-8c91-13cc83fbd876, Amount: 20.050000
+api01                | 2025/08/18 16:36:33 Payment enqueued: 44c74822-a448-468f-8c91-13cc83fbd876
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:33 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:33 [INFO] Payment saved in database with CorrelationID '44c74822-a448-468f-8c91-13cc83fbd876' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:33.756949426 +0000 UTC
+api01                | 2025/08/18 16:36:33 [Worker 3] Payment sent via Default: 44c74822-a448-468f-8c91-13cc83fbd876
+api02                | 2025/08/18 16:36:33 [INFO] Send payment to proccess: 733c5e27-851d-4135-89ca-df74e8152666, Amount: 20.050000
+api02                | 2025/08/18 16:36:33 Payment enqueued: 733c5e27-851d-4135-89ca-df74e8152666
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:33 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:33 [INFO] Payment saved in database with CorrelationID '733c5e27-851d-4135-89ca-df74e8152666' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:33.762295578 +0000 UTC
+api01                | 2025/08/18 16:36:33 [Worker 1] Payment sent via Default: 733c5e27-851d-4135-89ca-df74e8152666
+api01                | 2025/08/18 16:36:33 [INFO] Send payment to proccess: 61ec6098-1a9f-4c83-b081-df2d99cd57f7, Amount: 20.050000
+api01                | 2025/08/18 16:36:33 Payment enqueued: 61ec6098-1a9f-4c83-b081-df2d99cd57f7
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:33 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:33 [INFO] Payment saved in database with CorrelationID '61ec6098-1a9f-4c83-b081-df2d99cd57f7' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:33.767507565 +0000 UTC
+api01                | 2025/08/18 16:36:33 [Worker 4] Payment sent via Default: 61ec6098-1a9f-4c83-b081-df2d99cd57f7
+api02                | 2025/08/18 16:36:33 [INFO] Send payment to proccess: 9edd26d2-c8c9-4ac4-a562-65f541d3d8e8, Amount: 20.050000
+api02                | 2025/08/18 16:36:33 Payment enqueued: 9edd26d2-c8c9-4ac4-a562-65f541d3d8e8
+nginx_load_balancer  | 172.21.0.1 - - [18/Aug/2025:16:36:33 +0000] "POST /payments HTTP/1.1" 201 0 "-" "Grafana k6/1.1.0"
+api01                | 2025/08/18 16:36:33 [INFO] Payment saved in database with CorrelationID '9edd26d2-c8c9-4ac4-a562-65f541d3d8e8' external API: http://payment-processor-default:8080 at 2025-08-18 16:36:33.77204021 +0000 UTC
+api01                | 2025/08/18 16:36:33 [Worker 2] Payment sent via Default: 9edd26d2-c8c9-4ac4-a562-65f541d3d8e8
+api02                | 2025/08/18 16:36:33 [INFO] Send payment to proccess: 5a1893dc-bc7b-4cce-be6b-dd3b9ab1974a, Amount: 20.050000
+log truncated at line 1000
