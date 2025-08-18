@@ -1,0 +1,8 @@
+{
+  "name": "Gustavo de Bortoli",
+  "social": ["www.linkedin.com/in/gustavo-de-bortoli-999ab9183"],
+  "source-code-repo": "https://github.com/gustavo-bortoli/rinha-backend-2025",
+  "langs": ["c#"],
+  "storages": ["postgres"],
+  "load-balancers": ["nginx"]
+}
