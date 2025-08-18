@@ -1,0 +1,31 @@
+
+ go-backend-1 Pulling 
+ go-backend-2 Pulling 
+ 01d036902a3c Already exists 
+ fe91f51e05da Already exists 
+ 0d32a801b8d2 Pulling fs layer 
+ 01d036902a3c Already exists 
+ fe91f51e05da Already exists 
+ 0d32a801b8d2 Pulling fs layer 
+ 0d32a801b8d2 Downloading [>                                                  ]  113.7kB/11.19MB
+ 0d32a801b8d2 Downloading [>                                                  ]  113.7kB/11.19MB
+ 0d32a801b8d2 Verifying Checksum 
+ 0d32a801b8d2 Download complete 
+ 0d32a801b8d2 Downloading [==================================================>]  11.19MB/11.19MB
+ 0d32a801b8d2 Download complete 
+ 0d32a801b8d2 Extracting [>                                                  ]  131.1kB/11.19MB
+ 0d32a801b8d2 Extracting [>                                                  ]  131.1kB/11.19MB
+ 0d32a801b8d2 Extracting [=================================================> ]  11.01MB/11.19MB
+ 0d32a801b8d2 Extracting [=================================================> ]  11.01MB/11.19MB
+ 0d32a801b8d2 Extracting [==================================================>]  11.19MB/11.19MB
+ 0d32a801b8d2 Extracting [==================================================>]  11.19MB/11.19MB
+ 0d32a801b8d2 Pull complete 
+ 0d32a801b8d2 Pull complete 
+ go-backend-2 Pulled 
+ go-backend-1 Pulled 
+ Network davidalecrim1-go-2_app  Creating
+ Network davidalecrim1-go-2_app  Created
+ Container redis-db  Creating
+ Container mongodb  Creating
+ Container mongodb  Error response from daemon: invalid restart policy: unknown policy 'on'; use one of 'no', 'always', 'on-failure', or 'unless-stopped'
+Error response from daemon: invalid restart policy: unknown policy 'on'; use one of 'no', 'always', 'on-failure', or 'unless-stopped'
