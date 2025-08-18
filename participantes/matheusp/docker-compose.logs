@@ -1,0 +1,1001 @@
+
+ api01 Pulling 
+ api02 Pulling 
+ 0368fd46e3c6 Already exists 
+ 0670596c9dd1 Already exists 
+ b2683b5bf4e2 Already exists 
+ b5598bc273a6 Pulling fs layer 
+ 744bd36b051e Pulling fs layer 
+ 0368fd46e3c6 Already exists 
+ 0670596c9dd1 Already exists 
+ b2683b5bf4e2 Already exists 
+ b5598bc273a6 Pulling fs layer 
+ 744bd36b051e Pulling fs layer 
+ b5598bc273a6 Download complete 
+ b5598bc273a6 Download complete 
+ b5598bc273a6 Extracting [==================================================>]      93B/93B
+ b5598bc273a6 Extracting [==================================================>]      93B/93B
+ b5598bc273a6 Extracting [==================================================>]      93B/93B
+ b5598bc273a6 Extracting [==================================================>]      93B/93B
+ b5598bc273a6 Pull complete 
+ b5598bc273a6 Pull complete 
+ 744bd36b051e Downloading [>                                                  ]  213.3kB/20.35MB
+ 744bd36b051e Downloading [>                                                  ]  213.3kB/20.35MB
+ 744bd36b051e Downloading [=====>                                             ]  2.334MB/20.35MB
+ 744bd36b051e Downloading [=====>                                             ]  2.334MB/20.35MB
+ 744bd36b051e Downloading [================>                                  ]  6.757MB/20.35MB
+ 744bd36b051e Downloading [================>                                  ]  6.757MB/20.35MB
+ 744bd36b051e Downloading [===========================================>       ]  17.78MB/20.35MB
+ 744bd36b051e Downloading [===========================================>       ]  17.78MB/20.35MB
+ 744bd36b051e Verifying Checksum 
+ 744bd36b051e Download complete 
+ 744bd36b051e Verifying Checksum 
+ 744bd36b051e Download complete 
+ 744bd36b051e Extracting [>                                                  ]  229.4kB/20.35MB
+ 744bd36b051e Extracting [>                                                  ]  229.4kB/20.35MB
+ 744bd36b051e Extracting [=========================>                         ]  10.55MB/20.35MB
+ 744bd36b051e Extracting [=========================>                         ]  10.55MB/20.35MB
+ 744bd36b051e Extracting [===============================================>   ]   19.5MB/20.35MB
+ 744bd36b051e Extracting [===============================================>   ]   19.5MB/20.35MB
+ 744bd36b051e Extracting [==================================================>]  20.35MB/20.35MB
+ 744bd36b051e Extracting [==================================================>]  20.35MB/20.35MB
+ 744bd36b051e Pull complete 
+ 744bd36b051e Pull complete 
+ api01 Pulled 
+ api02 Pulled 
+ Network matheusp_rinha-net  Creating
+ Network matheusp_rinha-net  Created
+ Container redis  Creating
+ Container redis  Created
+ Container matheusp-api01-1  Creating
+ Container matheusp-api02-1  Creating
+ Container matheusp-api01-1  Created
+ Container matheusp-api02-1  Created
+ Container matheusp-nginx-1  Creating
+ Container matheusp-nginx-1  Created
+Attaching to api01-1, api02-1, nginx-1, redis
+redis  | 1:C 18 Aug 2025 03:07:29.341 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis  | 1:C 18 Aug 2025 03:07:29.341 # Redis version=6.2.19, bits=64, commit=00000000, modified=0, pid=1, just started
+redis  | 1:C 18 Aug 2025 03:07:29.341 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+redis  | 1:M 18 Aug 2025 03:07:29.342 * monotonic clock: POSIX clock_gettime
+api01-1  | Unhandled exception. StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code.
+api01-1  |    at StackExchange.Redis.ConnectionMultiplexer.ConnectImpl(ConfigurationOptions, TextWriter, Nullable`1, EndPointCollection) + 0x609
+api01-1  |    at Program.<>c__DisplayClass0_0.<<Main>$>b__1(IServiceProvider sp) + 0x146
+api01-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite, RuntimeResolverContext) + 0xf
+api01-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite, RuntimeResolverContext) + 0x64
+api01-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite, TArgument) + 0xb8
+api01-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite, RuntimeResolverContext) + 0x75
+api01-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite, RuntimeResolverContext) + 0x64
+api01-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite, TArgument) + 0xb8
+api01-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite, RuntimeResolverContext) + 0x75
+api01-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite, RuntimeResolverContext) + 0x64
+api01-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite, TArgument) + 0xb8
+api01-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite, RuntimeResolverContext) + 0x65
+api01-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite, RuntimeResolverContext) + 0x64
+api01-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite, TArgument) + 0xb8
+api01-1  |    at System.Threading.Tasks.Task`1.InnerInvoke() + 0x66
+api01-1  |    at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread, ExecutionContext, ContextCallback, Object) + 0x5d
+api01-1  | --- End of stack trace from previous location ---
+api01-1  |    at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread, ExecutionContext, ContextCallback, Object) + 0xa5
+api01-1  |    at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task&, Thread) + 0xca
+api01-1  | --- End of stack trace from previous location ---
+api01-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.StackGuard.RunOnEmptyStackCore[R](Func`2, Object) + 0x145
+api01-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.StackGuard.RunOnEmptyStack[T1,T2,TR](Func`3, T1, T2) + 0xd0
+api01-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite, TArgument) + 0x195
+api01-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite, ServiceProviderEngineScope) + 0x1e
+api01-1  |    at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier) + 0x14d
+api01-1  |    at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier, ServiceProviderEngineScope) + 0x191
+api01-1  |    at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type) + 0xf
+api01-1  |    at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider, Type) + 0x6c
+api01-1  |    at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>d__14.MoveNext() + 0x1b0
+api01-1  | --- End of stack trace from previous location ---
+api01-1  |    at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.<RunAsync>d__4.MoveNext() + 0x13a
+api01-1  | --- End of stack trace from previous location ---
+api01-1  |    at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.<RunAsync>d__4.MoveNext() + 0x331
+api01-1  | --- End of stack trace from previous location ---
+api01-1  |    at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost) + 0x28
+api01-1  |    at Program.<Main>$(String[] args) + 0x586
+api02-1  | Unhandled exception. StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code.
+api02-1  |    at StackExchange.Redis.ConnectionMultiplexer.ConnectImpl(ConfigurationOptions, TextWriter, Nullable`1, EndPointCollection) + 0x609
+api02-1  |    at Program.<>c__DisplayClass0_0.<<Main>$>b__1(IServiceProvider sp) + 0x146
+api02-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite, RuntimeResolverContext) + 0xf
+api02-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite, RuntimeResolverContext) + 0x64
+api02-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite, TArgument) + 0xb8
+api02-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite, RuntimeResolverContext) + 0x75
+api02-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite, RuntimeResolverContext) + 0x64
+api02-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite, TArgument) + 0xb8
+api02-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite, RuntimeResolverContext) + 0x75
+api02-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite, RuntimeResolverContext) + 0x64
+api02-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite, TArgument) + 0xb8
+api02-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite, RuntimeResolverContext) + 0x65
+api02-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite, RuntimeResolverContext) + 0x64
+api02-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite, TArgument) + 0xb8
+api02-1  |    at System.Threading.Tasks.Task`1.InnerInvoke() + 0x66
+api02-1  |    at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread, ExecutionContext, ContextCallback, Object) + 0x5d
+api02-1  | --- End of stack trace from previous location ---
+api02-1  |    at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread, ExecutionContext, ContextCallback, Object) + 0xa5
+api02-1  |    at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task&, Thread) + 0xca
+api02-1  | --- End of stack trace from previous location ---
+api02-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.StackGuard.RunOnEmptyStackCore[R](Func`2, Object) + 0x145
+api02-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.StackGuard.RunOnEmptyStack[T1,T2,TR](Func`3, T1, T2) + 0xd0
+api02-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite, TArgument) + 0x195
+api02-1  |    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite, ServiceProviderEngineScope) + 0x1e
+api02-1  |    at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier) + 0x14d
+api02-1  |    at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier, ServiceProviderEngineScope) + 0x191
+api02-1  |    at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type) + 0xf
+api02-1  |    at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider, Type) + 0x6c
+api02-1  |    at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>d__14.MoveNext() + 0x1b0
+api02-1  | --- End of stack trace from previous location ---
+api02-1  |    at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.<RunAsync>d__4.MoveNext() + 0x13a
+api02-1  | --- End of stack trace from previous location ---
+api02-1  |    at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.<RunAsync>d__4.MoveNext() + 0x331
+api02-1  | --- End of stack trace from previous location ---
+api02-1  |    at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost) + 0x28
+api02-1  |    at Program.<Main>$(String[] args) + 0x586
+redis    | 1:M 18 Aug 2025 03:07:29.438 * Running mode=standalone, port=6379.
+redis    | 1:M 18 Aug 2025 03:07:29.438 # Server initialized
+redis    | 1:M 18 Aug 2025 03:07:29.438 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis    | 1:M 18 Aug 2025 03:07:29.440 * Ready to accept connections
+nginx-1  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+nginx-1  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+nginx-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+nginx-1  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+nginx-1  | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+nginx-1  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+nginx-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+nginx-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+nginx-1  | /docker-entrypoint.sh: Configuration complete; ready for start up
+[Kapi02-1 exited with code 139
+[Kapi01-1 exited with code 139
+api02-1  | warn: Microsoft.AspNetCore.Hosting.Diagnostics[15]
+api02-1  |       Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:80'.
+api02-1  | info: Microsoft.Hosting.Lifetime[14]
+api02-1  |       Now listening on: http://[::]:80
+api02-1  | info: Microsoft.Hosting.Lifetime[0]
+api02-1  |       Application started. Press Ctrl+C to shut down.
+api02-1  | info: Microsoft.Hosting.Lifetime[0]
+api02-1  |       Hosting environment: Production
+api02-1  | info: Microsoft.Hosting.Lifetime[0]
+api02-1  |       Content root path: /app
+api01-1  | warn: Microsoft.AspNetCore.Hosting.Diagnostics[15]
+api01-1  |       Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:80'.
+api01-1  | info: Microsoft.Hosting.Lifetime[14]
+api01-1  |       Now listening on: http://[::]:80
+api01-1  | info: Microsoft.Hosting.Lifetime[0]
+api01-1  |       Application started. Press Ctrl+C to shut down.
+api01-1  | info: Microsoft.Hosting.Lifetime[0]
+api01-1  |       Hosting environment: Production
+api01-1  | info: Microsoft.Hosting.Lifetime[0]
+api01-1  |       Content root path: /app
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 2.1972ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 2.4117ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 1.3969ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 1.5752ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.889ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.9524ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.8335ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.8772ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 1.0269ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 1.0736ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.8416ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.8896ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.8228ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.8664ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.8637ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.9121ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.8138ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.8587ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.9486ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.9925ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.7987ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.8411ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.8841ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.9301ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.5145ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.5503ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.8672ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.9166ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.7281ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.7662ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.8283ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.8726ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.6265ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.6624ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.8489ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.8914ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.7364ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.7798ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.8576ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.9008ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.5684ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.6204ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.9309ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.9774ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.6514ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.6923ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.8012ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.8476ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.6966ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.737ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.8968ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.9376ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.8106ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.8485ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.8815ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.9224ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.6416ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.6943ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.7954ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.8316ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.8029ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.8445ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.6423ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.6898ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.4999ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.5287ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.7541ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.8033ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.7048ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.7432ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.6702ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.7ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.8815ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.9322ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.8391ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.88ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 4.5721ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 4.6279ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.9284ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.9773ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.6739ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.7097ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.5187ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.5459ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.7819ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.8269ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.6376ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.6771ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.576ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.612ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.9254ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.9876ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.521ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.5557ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.4938ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.5348ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.7765ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.8201ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.4834ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.5194ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.5093ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.544ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.8831ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.9222ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.7054ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.7389ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.7938ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.8284ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.8588ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.9ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.7619ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.8015ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.6717ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.7039ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.8043ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.8369ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.8382ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.8759ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.7379ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.7784ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.5404ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.5707ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.628ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.6615ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.8863ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.9317ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.6872ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.7229ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.693ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.7272ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.5508ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.5893ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.8265ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.8714ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.6959ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.7339ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.4697ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.5055ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.5843ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.6195ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.8968ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.9455ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.8183ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.8544ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.492ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.5267ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.5427ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.5731ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.8699ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.9123ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.719ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.7617ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.6128ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.6425ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.6266ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.6561ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.8461ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.8907ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.6649ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.6988ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.5146ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.5469ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.4851ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.5446ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.8881ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.9258ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.6599ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.7005ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.7157ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.7439ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.5115ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.5441ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.8852ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.9296ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.5792ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.6233ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.456ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.5079ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.675ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.7171ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.8124ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.8526ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.6513ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.6914ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.6306ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.6698ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.7232ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.7542ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.5774ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.615ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.8319ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.8747ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.6991ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.7355ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.7254ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.7627ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.6526ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.6852ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.5519ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.5848ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.7563ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.795ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.7351ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api01-1  |       End processing HTTP request after 0.7765ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api02-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api02-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api02-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api02-1  |       Received HTTP response headers after 0.6336ms - 200
+api02-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+api02-1  |       End processing HTTP request after 0.6725ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+api01-1  |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+api01-1  |       Sending HTTP request POST http://payment-processor-default:8080/payments
+api01-1  | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+api01-1  |       Received HTTP response headers after 0.5575ms - 200
+api01-1  | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+log truncated at line 1000
