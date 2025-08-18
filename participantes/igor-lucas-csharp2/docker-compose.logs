@@ -1,0 +1,1001 @@
+
+ worker Pulling 
+ api-1 Pulling 
+ api-2 Pulling 
+ 9824c27679d3 Already exists 
+ 1a283093615e Already exists 
+ c0055458ac5d Already exists 
+ 9824c27679d3 Already exists 
+ e0b734aef486 Pulling fs layer 
+ 23bfe385bc41 Pulling fs layer 
+ 1a283093615e Already exists 
+ c0055458ac5d Already exists 
+ e0b734aef486 Pulling fs layer 
+ 23bfe385bc41 Pulling fs layer 
+ 9824c27679d3 Already exists 
+ 1a283093615e Already exists 
+ c0055458ac5d Already exists 
+ e0b734aef486 Verifying Checksum 
+ e0b734aef486 Download complete 
+ e0b734aef486 Extracting [==================================================>]      93B/93B
+ e0b734aef486 Downloading [==================================================>]      93B/93B
+ e0b734aef486 Download complete 
+ e0b734aef486 Extracting [==================================================>]      93B/93B
+ e0b734aef486 Extracting [==================================================>]      93B/93B
+ e0b734aef486 Extracting [==================================================>]      93B/93B
+ e0b734aef486 Pulling fs layer 
+ e331e5e576e7 Pulling fs layer 
+ e0b734aef486 Extracting [==================================================>]      93B/93B
+ e0b734aef486 Pull complete 
+ e0b734aef486 Pull complete 
+ e0b734aef486 Pull complete 
+ 23bfe385bc41 Downloading [>                                                  ]  244.6kB/23.78MB
+ 23bfe385bc41 Downloading [>                                                  ]  244.6kB/23.78MB
+ 23bfe385bc41 Downloading [================================>                  ]  15.24MB/23.78MB
+ 23bfe385bc41 Downloading [================================>                  ]  15.24MB/23.78MB
+ e331e5e576e7 Downloading [>                                                  ]  244.6kB/23.64MB
+ 23bfe385bc41 Verifying Checksum 
+ 23bfe385bc41 Download complete 
+ 23bfe385bc41 Verifying Checksum 
+ 23bfe385bc41 Download complete 
+ 23bfe385bc41 Extracting [>                                                  ]  262.1kB/23.78MB
+ 23bfe385bc41 Extracting [>                                                  ]  262.1kB/23.78MB
+ e331e5e576e7 Downloading [===================================>               ]  16.92MB/23.64MB
+ e331e5e576e7 Verifying Checksum 
+ e331e5e576e7 Download complete 
+ 23bfe385bc41 Extracting [===============>                                   ]   7.34MB/23.78MB
+ e331e5e576e7 Extracting [>                                                  ]  262.1kB/23.64MB
+ 23bfe385bc41 Extracting [===============>                                   ]   7.34MB/23.78MB
+ e331e5e576e7 Extracting [==============>                                    ]  6.816MB/23.64MB
+ 23bfe385bc41 Extracting [=========================================>         ]  19.66MB/23.78MB
+ 23bfe385bc41 Extracting [=========================================>         ]  19.66MB/23.78MB
+ e331e5e576e7 Extracting [========================================>          ]  19.14MB/23.64MB
+ 23bfe385bc41 Extracting [================================================>  ]  23.07MB/23.78MB
+ 23bfe385bc41 Extracting [================================================>  ]  23.07MB/23.78MB
+ 23bfe385bc41 Extracting [==================================================>]  23.78MB/23.78MB
+ 23bfe385bc41 Extracting [==================================================>]  23.78MB/23.78MB
+ 23bfe385bc41 Pull complete 
+ 23bfe385bc41 Pull complete 
+ api-1 Pulled 
+ api-2 Pulled 
+ e331e5e576e7 Extracting [===============================================>   ]  22.28MB/23.64MB
+ e331e5e576e7 Extracting [==================================================>]  23.64MB/23.64MB
+ e331e5e576e7 Pull complete 
+ worker Pulled 
+ Network igor-lucas-csharp2_backend  Creating
+ Network igor-lucas-csharp2_backend  Created
+ Volume "igor-lucas-csharp2_socket_data"  Creating
+ Volume "igor-lucas-csharp2_socket_data"  Created
+ Container igor-lucas-csharp2-rinha-db-1  Creating
+ Container redis  Creating
+ Container redis  Created
+ Container igor-lucas-csharp2-rinha-db-1  Created
+ Container worker  Creating
+ Container backend-1  Creating
+ Container backend-2  Creating
+ Container backend-1  Created
+ Container backend-2  Created
+ Container worker  Created
+ Container igor-lucas-csharp2-nginx-1  Creating
+ Container igor-lucas-csharp2-nginx-1  Created
+Attaching to backend-1, backend-2, nginx-1, rinha-db-1, redis, worker
+rinha-db-1  | The files belonging to this database system will be owned by user "postgres".
+rinha-db-1  | This user must also own the server process.
+rinha-db-1  | 
+rinha-db-1  | The database cluster will be initialized with locale "en_US.utf8".
+rinha-db-1  | The default database encoding has accordingly been set to "UTF8".
+rinha-db-1  | The default text search configuration will be set to "english".
+rinha-db-1  | 
+rinha-db-1  | Data page checksums are disabled.
+rinha-db-1  | 
+rinha-db-1  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+rinha-db-1  | creating subdirectories ... ok
+rinha-db-1  | selecting dynamic shared memory implementation ... posix
+rinha-db-1  | selecting default "max_connections" ... 100
+rinha-db-1  | selecting default "shared_buffers" ... 128MB
+redis       | Starting Redis Server
+backend-2   | warn: Microsoft.AspNetCore.Server.Kestrel[0]
+backend-2   |       Overriding address(es) 'http://*:8080'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+backend-2   | info: Microsoft.Hosting.Lifetime[14]
+backend-2   |       Now listening on: http://unix:/tmp/backend_2.sock
+backend-2   | info: Microsoft.Hosting.Lifetime[0]
+backend-2   |       Application started. Press Ctrl+C to shut down.
+backend-2   | info: Microsoft.Hosting.Lifetime[0]
+backend-2   |       Hosting environment: Production
+backend-2   | info: Microsoft.Hosting.Lifetime[0]
+backend-2   |       Content root path: /app
+backend-1   | warn: Microsoft.AspNetCore.Server.Kestrel[0]
+backend-1   |       Overriding address(es) 'http://*:8080'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+backend-1   | info: Microsoft.Hosting.Lifetime[14]
+backend-1   |       Now listening on: http://unix:/tmp/backend_1.sock
+backend-1   | info: Microsoft.Hosting.Lifetime[0]
+backend-1   |       Application started. Press Ctrl+C to shut down.
+backend-1   | info: Microsoft.Hosting.Lifetime[0]
+backend-1   |       Hosting environment: Production
+backend-1   | info: Microsoft.Hosting.Lifetime[0]
+backend-1   |       Content root path: /app
+redis       | 1:C 18 Aug 2025 02:51:02.712 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+rinha-db-1  | selecting default time zone ... UTC
+rinha-db-1  | creating configuration files ... ok
+nginx-1     | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+nginx-1     | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+nginx-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+nginx-1     | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+nginx-1     | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+nginx-1     | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+nginx-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+worker      | Async Retry 1: NpgsqlException - Failed to connect to 172.19.0.4:5432
+nginx-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+nginx-1     | /docker-entrypoint.sh: Configuration complete; ready for start up
+rinha-db-1  | running bootstrap script ... ok
+worker      | Async Retry 2: NpgsqlException - Failed to connect to 172.19.0.4:5432
+rinha-db-1  | sh: locale: not found
+rinha-db-1  | 2025-08-18 02:51:04.422 UTC [41] WARNING:  no usable system locales were found
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-1   |       Request starting HTTP/1.1 GET http://api/payments-summary - application/json -
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-1   |       Executing endpoint 'HTTP: GET /payments-summary'
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-1   |       Executed endpoint 'HTTP: GET /payments-summary'
+backend-1   | fail: Microsoft.AspNetCore.Server.Kestrel[13]
+backend-1   |       Connection id "0HNEU089EKUIK", Request id "0HNEU089EKUIK:00000001": An unhandled exception was thrown by the application.
+backend-1   |       Npgsql.NpgsqlException (0x80004005): Failed to connect to 172.19.0.4:5432
+backend-1   |        ---> System.Net.Sockets.SocketException (111): Connection refused
+backend-1   |          at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError, CancellationToken) + 0x3e
+backend-1   |          at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16) + 0x59
+backend-1   |          at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object) + 0x6c
+backend-1   |       --- End of stack trace from previous location ---
+backend-1   |          at Npgsql.TaskTimeoutAndCancellation.<ExecuteAsync>d__1.MoveNext() + 0x2b5
+backend-1   |       --- End of stack trace from previous location ---
+backend-1   |          at Npgsql.Internal.NpgsqlConnector.<ConnectAsync>d__222.MoveNext() + 0x4a1
+backend-1   |          at Npgsql.Internal.NpgsqlConnector.<ConnectAsync>d__222.MoveNext() + 0x7d8
+backend-1   |       --- End of stack trace from previous location ---
+backend-1   |          at Npgsql.Internal.NpgsqlConnector.<RawOpen>d__218.MoveNext() + 0xc2c
+backend-1   |       --- End of stack trace from previous location ---
+backend-1   |          at Npgsql.Internal.NpgsqlConnector.<<Open>g__OpenCore|214_1>d.MoveNext() + 0x237
+backend-1   |       --- End of stack trace from previous location ---
+backend-1   |          at Npgsql.Internal.NpgsqlConnector.<Open>d__214.MoveNext() + 0x69f
+backend-1   |       --- End of stack trace from previous location ---
+backend-1   |          at Npgsql.PoolingDataSource.<OpenNewConnector>d__36.MoveNext() + 0x563
+backend-1   |       --- End of stack trace from previous location ---
+backend-1   |          at Npgsql.PoolingDataSource.<<Get>g__RentAsync|33_0>d.MoveNext() + 0x1d7
+backend-1   |       --- End of stack trace from previous location ---
+backend-1   |          at Npgsql.NpgsqlConnection.<<Open>g__OpenAsync|42_0>d.MoveNext() + 0x3cc
+backend-1   |       --- End of stack trace from previous location ---
+backend-1   |          at rinha_backend.Program.<>c__DisplayClass0_0.<<Main>b__7>d.MoveNext() + 0x153
+backend-1   |       --- End of stack trace from previous location ---
+backend-1   |          at rinha_backend.Program.<>c__DisplayClass0_0.<<Main>b__7>d.MoveNext() + 0x56b
+backend-1   |       --- End of stack trace from previous location ---
+backend-1   |          at Microsoft.AspNetCore.Http.Generated.<GeneratedRouteBuilderExtensions_g>FA7B584A6F0C82DB4D2C9FB1C8BCE41AA95A2F2C5043CCC15C209E8BD6989714B__GeneratedRouteBuilderExtensionsCore.<>c__DisplayClass6_0.<<MapGet3>g__RequestHandler|5>d.MoveNext() + 0x95
+backend-1   |       --- End of stack trace from previous location ---
+backend-1   |          at Microsoft.AspNetCore.Routing.EndpointMiddleware.<<Invoke>g__AwaitRequestTask|7_0>d.MoveNext() + 0x5a
+backend-1   |       --- End of stack trace from previous location ---
+backend-1   |          at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.<ProcessRequests>d__237`1.MoveNext() + 0x3e7
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-1   |       Request finished HTTP/1.1 GET http://api/payments-summary - 500 0 - 14.6509ms
+worker      | Async Retry 3: NpgsqlException - Failed to connect to 172.19.0.4:5432
+worker      | Async Retry 4: NpgsqlException - Failed to connect to 172.19.0.4:5432
+worker      | Async Retry 5: NpgsqlException - Failed to connect to 172.19.0.4:5432
+rinha-db-1  | performing post-bootstrap initialization ... ok
+rinha-db-1  | initdb: warning: enabling "trust" authentication for local connections
+rinha-db-1  | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+rinha-db-1  | syncing data to disk ... ok
+rinha-db-1  | 
+rinha-db-1  | 
+rinha-db-1  | Success. You can now start the database server using:
+rinha-db-1  | 
+rinha-db-1  |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+rinha-db-1  | 
+rinha-db-1  | waiting for server to start....2025-08-18 02:51:07.566 UTC [65] LOG:  starting PostgreSQL 17.5 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+rinha-db-1  | 2025-08-18 02:51:07.567 UTC [65] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+rinha-db-1  | 2025-08-18 02:51:07.569 UTC [68] LOG:  database system was shut down at 2025-08-18 02:51:07 UTC
+rinha-db-1  | 2025-08-18 02:51:07.573 UTC [65] LOG:  database system is ready to accept connections
+rinha-db-1  |  done
+rinha-db-1  | server started
+worker      | Async Retry 6: NpgsqlException - Failed to connect to 172.19.0.4:5432
+rinha-db-1  | CREATE DATABASE
+rinha-db-1  | 
+rinha-db-1  | 
+rinha-db-1  | /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/init.sql
+rinha-db-1  | CREATE TABLE
+rinha-db-1  | CREATE INDEX
+rinha-db-1  | 
+rinha-db-1  | 
+rinha-db-1  | waiting for server to shut down....2025-08-18 02:51:08.070 UTC [65] LOG:  received fast shutdown request
+rinha-db-1  | 2025-08-18 02:51:08.070 UTC [65] LOG:  aborting any active transactions
+rinha-db-1  | 2025-08-18 02:51:08.161 UTC [65] LOG:  background worker "logical replication launcher" (PID 71) exited with exit code 1
+rinha-db-1  | 2025-08-18 02:51:08.163 UTC [66] LOG:  shutting down
+rinha-db-1  | 2025-08-18 02:51:08.163 UTC [66] LOG:  checkpoint starting: shutdown immediate
+rinha-db-1  | 2025-08-18 02:51:08.173 UTC [66] LOG:  checkpoint complete: wrote 927 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.010 s, sync=0.001 s, total=0.010 s; sync files=0, longest=0.000 s, average=0.000 s; distance=4276 kB, estimate=4276 kB; lsn=0/191A348, redo lsn=0/191A348
+rinha-db-1  | 2025-08-18 02:51:08.261 UTC [65] LOG:  database system is shut down
+rinha-db-1  |  done
+rinha-db-1  | server stopped
+rinha-db-1  | 
+rinha-db-1  | PostgreSQL init process complete; ready for start up.
+rinha-db-1  | 
+rinha-db-1  | 2025-08-18 02:51:08.366 UTC [1] LOG:  starting PostgreSQL 17.5 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+rinha-db-1  | 2025-08-18 02:51:08.366 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+rinha-db-1  | 2025-08-18 02:51:08.366 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+rinha-db-1  | 2025-08-18 02:51:08.366 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+rinha-db-1  | 2025-08-18 02:51:08.369 UTC [90] LOG:  database system was shut down at 2025-08-18 02:51:08 UTC
+rinha-db-1  | 2025-08-18 02:51:08.373 UTC [1] LOG:  database system is ready to accept connections
+worker      | Sucesso: WarmUp Connection
+worker      | info: Microsoft.Hosting.Lifetime[14]
+worker      |       Now listening on: http://[::]:8080
+worker      | info: Microsoft.Hosting.Lifetime[0]
+worker      |       Application started. Press Ctrl+C to shut down.
+worker      | info: Microsoft.Hosting.Lifetime[0]
+worker      |       Hosting environment: Production
+worker      | info: Microsoft.Hosting.Lifetime[0]
+worker      |       Content root path: /app
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request GET http://payment-processor-default:8080/payments/service-health
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request GET http://payment-processor-default:8080/payments/service-health
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 3.4989ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 3.8495ms - 200
+worker      | info: System.Net.Http.HttpClient.fallback.LogicalHandler[100]
+worker      |       Start processing HTTP request GET http://payment-processor-fallback:8080/payments/service-health
+worker      | info: System.Net.Http.HttpClient.fallback.ClientHandler[100]
+worker      |       Sending HTTP request GET http://payment-processor-fallback:8080/payments/service-health
+worker      | info: System.Net.Http.HttpClient.fallback.ClientHandler[101]
+worker      |       Received HTTP response headers after 3.2195ms - 200
+worker      | info: System.Net.Http.HttpClient.fallback.LogicalHandler[101]
+worker      |       End processing HTTP request after 3.2576ms - 200
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-2   |       Request starting HTTP/1.1 GET http://api/payments-summary - application/json -
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-2   |       Executing endpoint 'HTTP: GET /payments-summary'
+backend-2   | info: Microsoft.AspNetCore.Http.Result.OkObjectResult[1]
+backend-2   |       Setting HTTP status code 200.
+backend-2   | info: Microsoft.AspNetCore.Http.Result.OkObjectResult[3]
+backend-2   |       Writing value of type 'PaymentsSummaryResponse' as Json.
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-2   |       Executed endpoint 'HTTP: GET /payments-summary'
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-2   |       Request finished HTTP/1.1 GET http://api/payments-summary - 200 - application/json;+charset=utf-8 28.1735ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request GET http://payment-processor-default:8080/payments/service-health
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request GET http://payment-processor-default:8080/payments/service-health
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.3542ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.4105ms - 200
+worker      | info: System.Net.Http.HttpClient.fallback.LogicalHandler[100]
+worker      |       Start processing HTTP request GET http://payment-processor-fallback:8080/payments/service-health
+worker      | info: System.Net.Http.HttpClient.fallback.ClientHandler[100]
+worker      |       Sending HTTP request GET http://payment-processor-fallback:8080/payments/service-health
+worker      | info: System.Net.Http.HttpClient.fallback.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.2669ms - 200
+worker      | info: System.Net.Http.HttpClient.fallback.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.291ms - 200
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-1   |       Request starting HTTP/1.1 POST http://api/purge-payments - application/json 0
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-1   |       Executing endpoint 'HTTP: POST /purge-payments'
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-1   |       Executed endpoint 'HTTP: POST /purge-payments'
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-1   |       Request finished HTTP/1.1 POST http://api/purge-payments - 200 0 - 26.7122ms
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-2   |       Request starting HTTP/1.1 GET http://api/payments-summary?from=2025-08-18T02:51:00.122Z&to=2025-08-18T02:51:13.622Z - application/json -
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-2   |       Executing endpoint 'HTTP: GET /payments-summary'
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-1   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-1   |       Executing endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Http.Result.OkObjectResult[1]
+backend-2   |       Setting HTTP status code 200.
+backend-2   | info: Microsoft.AspNetCore.Http.Result.OkObjectResult[3]
+backend-2   |       Writing value of type 'PaymentsSummaryResponse' as Json.
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-2   |       Executed endpoint 'HTTP: GET /payments-summary'
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-2   |       Request finished HTTP/1.1 GET http://api/payments-summary?from=2025-08-18T02:51:00.122Z&to=2025-08-18T02:51:13.622Z - 200 - application/json;+charset=utf-8 3.5378ms
+backend-1   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-1   |       Setting HTTP status code 202.
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-1   |       Executed endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-1   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 4.4110ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 1.2476ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 1.2972ms - 200
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-2   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-2   |       Executing endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-2   |       Setting HTTP status code 202.
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-2   |       Executed endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-2   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 2.4006ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.8148ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.8839ms - 200
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-1   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-1   |       Executing endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-1   |       Setting HTTP status code 202.
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-1   |       Executed endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-1   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.0944ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.7477ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.7995ms - 200
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-2   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-2   |       Executing endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-2   |       Setting HTTP status code 202.
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-2   |       Executed endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-2   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.1007ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.9332ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.9773ms - 200
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-1   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-1   |       Executing endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-1   |       Setting HTTP status code 202.
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-1   |       Executed endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-1   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.1025ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.7727ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.8188ms - 200
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-2   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-2   |       Executing endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-2   |       Setting HTTP status code 202.
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-2   |       Executed endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-2   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.1055ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.9402ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.9941ms - 200
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-1   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-1   |       Executing endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-1   |       Setting HTTP status code 202.
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-1   |       Executed endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-1   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.1057ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.7154ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.7601ms - 200
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-2   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-2   |       Executing endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-2   |       Setting HTTP status code 202.
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-2   |       Executed endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-2   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.0915ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.7417ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.7863ms - 200
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-1   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-1   |       Executing endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-1   |       Setting HTTP status code 202.
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-1   |       Executed endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-1   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.0820ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.6969ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.7341ms - 200
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-2   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-2   |       Executing endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-2   |       Setting HTTP status code 202.
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-2   |       Executed endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-2   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.0959ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.7147ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.7601ms - 200
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-1   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-1   |       Executing endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-1   |       Setting HTTP status code 202.
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-1   |       Executed endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-1   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.0901ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.7018ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.7483ms - 200
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-2   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-2   |       Executing endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-2   |       Setting HTTP status code 202.
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-2   |       Executed endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-2   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.1001ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.7436ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.7872ms - 200
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-1   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-1   |       Executing endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-1   |       Setting HTTP status code 202.
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-1   |       Executed endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-1   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.0684ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.5685ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.6046ms - 200
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-2   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-2   |       Executing endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-2   |       Setting HTTP status code 202.
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-2   |       Executed endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-2   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.0908ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.8021ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.8468ms - 200
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-1   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-1   |       Executing endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-1   |       Setting HTTP status code 202.
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-1   |       Executed endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-1   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.0875ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.494ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.5248ms - 200
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-2   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-2   |       Executing endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-2   |       Setting HTTP status code 202.
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-2   |       Executed endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-2   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.1275ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.7442ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.7844ms - 200
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-1   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-1   |       Executing endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-1   |       Setting HTTP status code 202.
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-1   |       Executed endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-1   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.0678ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.599ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.634ms - 200
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-2   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-2   |       Executing endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-2   |       Setting HTTP status code 202.
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-2   |       Executed endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-2   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.0991ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.874ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.9182ms - 200
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-1   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-1   |       Executing endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-1   |       Setting HTTP status code 202.
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-1   |       Executed endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-1   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.1164ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.749ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.7959ms - 200
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-2   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-2   |       Executing endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-2   |       Setting HTTP status code 202.
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-2   |       Executed endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-2   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.1031ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.7682ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.8538ms - 200
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-1   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-1   |       Executing endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-1   |       Setting HTTP status code 202.
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-1   |       Executed endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-1   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.0693ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.6133ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.6491ms - 200
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-2   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-2   |       Executing endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-2   |       Setting HTTP status code 202.
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-2   |       Executed endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-2   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.2203ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.7314ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.8163ms - 200
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-1   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-1   |       Executing endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-1   |       Setting HTTP status code 202.
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-1   |       Executed endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-1   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.0846ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.526ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.5642ms - 200
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-2   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-2   |       Executing endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-2   |       Setting HTTP status code 202.
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-2   |       Executed endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-2   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.1046ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.7583ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.8004ms - 200
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-1   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-1   |       Executing endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-1   |       Setting HTTP status code 202.
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-1   |       Executed endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-1   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.0840ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.5268ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.5619ms - 200
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-2   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-2   |       Executing endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-2   |       Setting HTTP status code 202.
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-2   |       Executed endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-2   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.0906ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.7766ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.8191ms - 200
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-1   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-1   |       Executing endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-1   |       Setting HTTP status code 202.
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-1   |       Executed endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-1   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.0758ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.5593ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.5952ms - 200
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-2   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-2   |       Executing endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-2   |       Setting HTTP status code 202.
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-2   |       Executed endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-2   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.1138ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.7256ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.7875ms - 200
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-1   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-1   |       Executing endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-1   |       Setting HTTP status code 202.
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-1   |       Executed endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-1   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.0772ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.5675ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.6123ms - 200
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-2   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-2   |       Executing endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-2   |       Setting HTTP status code 202.
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-2   |       Executed endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-2   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.0771ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.6491ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.6833ms - 200
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-1   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-1   |       Executing endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-1   |       Setting HTTP status code 202.
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-1   |       Executed endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-1   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.0943ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.6944ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.7394ms - 200
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-2   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-2   |       Executing endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-2   |       Setting HTTP status code 202.
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-2   |       Executed endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-2   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.0720ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.5656ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.6002ms - 200
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-1   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-1   |       Executing endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-1   |       Setting HTTP status code 202.
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-1   |       Executed endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-1   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.0939ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.5742ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.6055ms - 200
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-2   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-2   |       Executing endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-2   |       Setting HTTP status code 202.
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-2   |       Executed endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-2   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.0919ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.8018ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.8417ms - 200
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-1   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-1   |       Executing endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-1   |       Setting HTTP status code 202.
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-1   |       Executed endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-1   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.0814ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.5835ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.6178ms - 200
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-2   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-2   |       Executing endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-2   |       Setting HTTP status code 202.
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-2   |       Executed endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-2   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.0576ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.4591ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.4913ms - 200
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-1   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-1   |       Executing endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-1   |       Setting HTTP status code 202.
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-1   |       Executed endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-1   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.0918ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.8165ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.859ms - 200
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-2   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-2   |       Executing endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-2   |       Setting HTTP status code 202.
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-2   |       Executed endpoint 'HTTP: POST /payments'
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-2   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.1101ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.6389ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.6718ms - 200
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-1   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-1   |       Executing endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Http.Result.AcceptedResult[1]
+backend-1   |       Setting HTTP status code 202.
+backend-1   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+backend-1   |       Executed endpoint 'HTTP: POST /payments'
+backend-1   | info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+backend-1   |       Request finished HTTP/1.1 POST http://api/payments - 202 0 - 0.0523ms
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[100]
+worker      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[100]
+worker      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+worker      | info: System.Net.Http.HttpClient.default.ClientHandler[101]
+worker      |       Received HTTP response headers after 0.5261ms - 200
+worker      | info: System.Net.Http.HttpClient.default.LogicalHandler[101]
+worker      |       End processing HTTP request after 0.5907ms - 200
+backend-2   | info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+backend-2   |       Request starting HTTP/1.1 POST http://api/payments - application/json 70
+backend-2   | info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+backend-2   |       Executing endpoint 'HTTP: POST /payments'
+log truncated at line 1000
