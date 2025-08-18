@@ -23,11 +23,11 @@ services:
     deploy:
       resources:
         limits:
-          cpus: "0.5"
+          cpus: "0.40"
           memory: "110MB"
 
-  api01:
-    image: hfurlan/rinha-backend-2025-java-v1:0.0.2
+  api01: &api
+    image: hfurlan/rinha-backend-2025-java-v1:0.0.4
     hostname: api01
     environment:
       - DB_HOST=db
@@ -38,22 +38,32 @@ services:
       - PROCESSOR_DEFAULT_URL=http://payment-processor-default:8080
       - PROCESSOR_FALLBACK_URL=http://payment-processor-fallback:8080
       - LOGGING_LEVEL_ROOT=ERROR
-      - SERVER_TOMCAT_THREADS_MAX=10
+      - LOGGING_LEVEL_BR_COM_HFURLAN_RINHABACKEND2025_SCHEDULLER=INFO
+      - SERVER_TOMCAT_THREADS_MAX=5
+      - SERVER_PORT=8080
+      - SPRING_DATASOURCE_HIKARY_MAXIMUM_POOL_SIZE=7
+      - SPRING_DATASOURCE_HIKARY_MINIMUM_IDLE=7
+    ports:
+      - "8081:8080"
     networks:
       - payment-processor
       - rinha-net
     depends_on:
       db:
         condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/payments-summary?from=2025-01-01T00:00:00.000Z&to=2025-01-01T23:59:59.000Z"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
     deploy:
       resources:
         limits:
-          cpus: "0.4"
+          cpus: "0.45"
           memory: "100MB"
 
   api02:
-    image: hfurlan/rinha-backend-2025-java-v1:0.0.2
-    hostname: api01
+    <<: *api
     environment:
       - DB_HOST=db
       - DB_PORT=5432
@@ -63,19 +73,16 @@ services:
       - PROCESSOR_DEFAULT_URL=http://payment-processor-default:8080
       - PROCESSOR_FALLBACK_URL=http://payment-processor-fallback:8080
       - LOGGING_LEVEL_ROOT=ERROR
-      - SERVER_TOMCAT_THREADS_MAX=10
-      - RINHA_PAYMENT_PROCESSOR_SCHEDULLER_ENABLED=false
-    networks:
-      - payment-processor
-      - rinha-net
-    depends_on:
-      db:
-        condition: service_healthy
-    deploy:
-      resources:
-        limits:
-          cpus: "0.4"
-          memory: "100MB"
+      - LOGGING_LEVEL_BR_COM_HFURLAN_RINHABACKEND2025_SCHEDULLER=INFO
+      - SERVER_TOMCAT_THREADS_MAX=5
+      - SERVER_PORT=8080
+      - SPRING_DATASOURCE_HIKARY_MAXIMUM_POOL_SIZE=5
+      - SPRING_DATASOURCE_HIKARY_MINIMUM_IDLE=5
+      - RINHA_PAYMENT_PROCESSOR_AVAILABILITY_SCHEDULLER_ENABLED=false
+      - RINHA_PAYMENT_PROCESSOR_RETRY_SCHEDULLER_ENABLED=false
+    hostname: api02
+    ports:
+      - "8082:8080"
 
   lb:
     image: nginx:latest
