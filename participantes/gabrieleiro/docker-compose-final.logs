@@ -1,0 +1,23 @@
+
+ Network rinha-de-backend-2025  Creating
+ Network rinha-de-backend-2025  Created
+ Container gabrieleiro-api-1-1  Creating
+ Container gabrieleiro-api-2-1  Creating
+ Container gabrieleiro-api-2-1  Created
+ Container gabrieleiro-api-1-1  Created
+ Container gabrieleiro-load-balancer-1  Creating
+ Container gabrieleiro-load-balancer-1  Created
+Attaching to api-1-1, api-2-1, load-balancer-1
+api-2-1  | up and running
+api-1-1  | up and running
+load-balancer-1  | [WARNING] 229/165518 (7) : config : missing timeouts for frontend 'http_front'.
+load-balancer-1  |    | While not properly invalid, you will certainly encounter various problems
+load-balancer-1  |    | with such a configuration. To fix this, please ensure that all following
+load-balancer-1  |    | timeouts are set to a non-zero value: 'client', 'connect', 'server'.
+load-balancer-1  | [WARNING] 229/165518 (7) : config : missing timeouts for backend 'http_back'.
+load-balancer-1  |    | While not properly invalid, you will certainly encounter various problems
+load-balancer-1  |    | with such a configuration. To fix this, please ensure that all following
+load-balancer-1  |    | timeouts are set to a non-zero value: 'client', 'connect', 'server'.
+load-balancer-1  | Killed
+[Kload-balancer-1 exited with code 137
+log truncated at line 1000

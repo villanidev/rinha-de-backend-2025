@@ -1,0 +1,1001 @@
+
+time="2025-08-18T18:36:05Z" level=warning msg="/home/ubuntu/rinha-de-backend-2025/participantes/gui-anacleto-python-0001/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+ Network gui-anacleto-python-0001_backend  Creating
+ Network gui-anacleto-python-0001_backend  Created
+ Container gui-anacleto-python-0001-nginx-1  Creating
+ Container gui-anacleto-python-0001-app1-1  Creating
+ Container gui-anacleto-python-0001-app2-1  Creating
+ Container gui-anacleto-python-0001-app2-1  Created
+ Container gui-anacleto-python-0001-nginx-1  Created
+ Container gui-anacleto-python-0001-app1-1  Created
+Attaching to app1-1, app2-1, nginx-1
+nginx-1  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+nginx-1  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+nginx-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+nginx-1  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+nginx-1  | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+nginx-1  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+nginx-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+nginx-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+nginx-1  | /docker-entrypoint.sh: Configuration complete; ready for start up
+app1-1   | INFO:     Started server process [1]
+app1-1   | INFO:     Waiting for application startup.
+app2-1   | INFO:     Started server process [1]
+app2-1   | INFO:     Waiting for application startup.
+app1-1   | INFO:     Application startup complete.
+app2-1   | INFO:     Application startup complete.
+app1-1   | INFO:     Uvicorn running on http://0.0.0.0:9999 (Press CTRL+C to quit)
+app2-1   | INFO:     Uvicorn running on http://0.0.0.0:9999 (Press CTRL+C to quit)
+app1-1   | INFO:     172.21.0.4:39876 - "GET /payments-summary HTTP/1.0" 200 OK
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:10 +0000] "GET /payments-summary HTTP/1.1" 200 217 "-" "curl/8.5.0"
+app2-1   | INFO:     172.21.0.4:34082 - "POST /purge-payments HTTP/1.0" 404 Not Found
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:15 +0000] "POST /purge-payments HTTP/1.1" 404 26 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:48858 - "GET /payments-summary?from=2025-08-18T18:36:00.987Z&to=2025-08-18T18:36:13.987Z HTTP/1.0" 200 OK
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:15 +0000] "GET /payments-summary?from=2025-08-18T18:36:00.987Z&to=2025-08-18T18:36:13.987Z HTTP/1.1" 200 217 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34088 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:15 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:48866 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:16 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34100 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:16 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:48882 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:16 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34108 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:17 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:48896 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:17 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34120 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:17 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:48908 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:17 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34134 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:17 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:48922 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:18 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34140 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:18 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:48932 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:18 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34144 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:18 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:48944 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:18 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34160 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:18 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:48958 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:18 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34170 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:19 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:48964 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:19 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34176 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:19 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:48976 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:19 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34190 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:19 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:48988 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:19 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34206 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:19 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:48992 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:19 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34214 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:20 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49008 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:20 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34228 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:20 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49014 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:20 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34242 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:20 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49024 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:20 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34248 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:20 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49030 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:20 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34252 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:20 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49040 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:20 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34254 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:20 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49052 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:21 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34266 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:21 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49068 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:21 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34268 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:21 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49080 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:21 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34270 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:21 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49086 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:21 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34274 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:21 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49098 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:21 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34284 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:21 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49112 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:21 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34300 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:21 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49120 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:21 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34306 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:22 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49130 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:22 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34316 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:22 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49146 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:22 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34326 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:22 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49158 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:22 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34334 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:22 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49162 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:22 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34340 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:22 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49170 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:22 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34346 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:22 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49184 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:22 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34354 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:22 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49194 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:22 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34362 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:23 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49196 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:23 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34374 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:23 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49198 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:23 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34382 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:23 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49206 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:23 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34386 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:23 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49216 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:23 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34394 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:23 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49224 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:23 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34398 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:23 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49238 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:23 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34406 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:23 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49244 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:23 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34422 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:23 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49250 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:23 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34428 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:23 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49258 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:24 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34444 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:24 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49266 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:24 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34460 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:24 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49272 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:24 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34466 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:24 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49274 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:24 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34468 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:24 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49280 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:24 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34484 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:24 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49296 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:24 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34488 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:24 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49302 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:24 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34494 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:24 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49316 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:24 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34508 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:24 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49318 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:24 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34520 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:24 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49332 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:24 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34526 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:25 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49334 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:25 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34532 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:25 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49346 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:25 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34536 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:25 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49352 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:25 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34550 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:25 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49368 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:25 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34562 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:25 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49380 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:25 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:34570 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:25 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:49384 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:25 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55536 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:25 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46226 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:25 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55542 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:25 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46240 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:25 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55546 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:25 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46250 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:25 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55548 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:25 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46256 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:25 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55556 - "GET /payments-summary?from=2025-08-18T18:36:10.994Z&to=2025-08-18T18:36:23.994Z HTTP/1.0" 200 OK
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:25 +0000] "GET /payments-summary?from=2025-08-18T18:36:10.994Z&to=2025-08-18T18:36:23.994Z HTTP/1.1" 200 222 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46260 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:26 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55560 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:26 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46276 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:26 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55564 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:26 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46288 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:26 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55580 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:26 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46296 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:26 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55584 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:26 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46308 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:26 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55600 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:26 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46314 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:26 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55604 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:26 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46328 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:26 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55608 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:26 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46338 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:26 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55616 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:26 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46354 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:26 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55622 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:26 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46362 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:26 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55632 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:26 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46372 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:26 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55634 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:26 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46378 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:26 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55650 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:27 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46388 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:27 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55664 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:27 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46392 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:27 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55666 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:27 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46400 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:27 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55672 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:27 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46406 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:27 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55678 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:27 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46422 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:27 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55682 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:27 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46430 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:27 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55686 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:27 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46434 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:27 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55702 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:27 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46446 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:27 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55714 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:27 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46448 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:27 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55722 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:27 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46452 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:27 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55738 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:27 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46468 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:27 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55754 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:27 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46476 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:27 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55756 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:27 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46486 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55760 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46492 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55772 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46496 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55784 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46500 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55786 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46502 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55802 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46510 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55818 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46524 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55834 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46538 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55844 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46552 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55858 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46566 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55860 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46570 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55862 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46578 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55866 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46590 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55878 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:28 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46606 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55894 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46618 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55910 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46620 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55918 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46626 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55924 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46630 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55934 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46646 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55936 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46662 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55940 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46674 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55950 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46690 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55952 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46692 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55964 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46696 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55968 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46702 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55984 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46716 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55986 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46718 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:55998 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46734 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:29 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56010 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46736 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56014 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46752 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56022 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46766 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56034 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46774 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56036 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46788 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56042 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46804 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56054 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46814 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56062 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46822 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56078 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46826 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56090 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46842 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56094 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46852 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56108 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46864 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56122 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46870 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56132 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46886 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56140 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46890 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:30 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56156 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46906 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56162 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46908 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56170 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46918 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56176 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46934 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56182 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46938 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56194 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46952 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56208 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46962 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56222 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46974 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56236 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46976 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56240 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46992 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56256 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:46996 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56260 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47000 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56276 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47004 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56284 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47016 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56286 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47022 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56298 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47026 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56304 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:31 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47040 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56318 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47042 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56330 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47058 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56342 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47074 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56354 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47084 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56360 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47092 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56370 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47104 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56372 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47112 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56378 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47118 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56388 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47120 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56394 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47122 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56396 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47138 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56406 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47150 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56418 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47162 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56426 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47164 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56442 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47168 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56444 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47182 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56448 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:32 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47194 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56460 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47202 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56468 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47208 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56484 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47216 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56500 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47220 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56508 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47226 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56512 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47236 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56514 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47250 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56522 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47256 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56528 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47266 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56540 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47268 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56546 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47276 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56552 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47280 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56566 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47296 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56570 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47306 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56576 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47312 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56586 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47322 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56590 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47332 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56604 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47340 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:33 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56618 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47356 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56632 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47364 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56646 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47366 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56658 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47370 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56660 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47386 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56674 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47394 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56678 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47398 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56690 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47408 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56700 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47416 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56702 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47428 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56714 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47442 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56722 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47458 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56736 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47468 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56746 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47472 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56754 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47474 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56766 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47478 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56768 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47492 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56772 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47504 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56782 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47520 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56784 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:34 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47536 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56786 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47548 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56790 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47562 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56806 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47578 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56812 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47590 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56828 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47596 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56830 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47600 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56832 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47616 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56848 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47620 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56854 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47624 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56870 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47640 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56874 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47646 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56876 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:47660 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:56886 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36248 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54542 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36256 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54558 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36258 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54566 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36262 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54570 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36278 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54578 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36280 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54582 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36290 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54586 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36306 - "GET /payments-summary?from=2025-08-18T18:36:20.997Z&to=2025-08-18T18:36:33.997Z HTTP/1.0" 200 OK
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:35 +0000] "GET /payments-summary?from=2025-08-18T18:36:20.997Z&to=2025-08-18T18:36:33.997Z HTTP/1.1" 200 225 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54590 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36314 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54598 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36324 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54606 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36334 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54622 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36346 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54624 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36362 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54640 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36368 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54656 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36384 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54662 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36398 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54664 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36412 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54680 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36414 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54694 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36424 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54710 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36432 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54720 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36438 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54726 - "POST /payments HTTP/1.0" 202 Accepted
+app1-1   | INFO:     172.21.0.4:36440 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54730 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36442 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54734 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36444 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54744 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36450 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54748 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36454 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54760 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36470 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54772 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36482 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54774 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36486 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54780 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:36 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36496 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:37 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54794 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:37 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app1-1   | INFO:     172.21.0.4:36500 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:37 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+app2-1   | INFO:     172.21.0.4:54798 - "POST /payments HTTP/1.0" 202 Accepted
+nginx-1  | 172.21.0.1 - - [18/Aug/2025:18:36:37 +0000] "POST /payments HTTP/1.1" 202 36 "-" "Grafana k6/1.1.0"
+log truncated at line 1000

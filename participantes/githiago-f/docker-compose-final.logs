@@ -1,0 +1,224 @@
+
+ nginx Pulling 
+ backend1 Pulling 
+ backend2 Pulling 
+ storage Pulling 
+ 1e654d6ada44 Already exists 
+ 1e654d6ada44 Already exists 
+ 695bf607cc79 Already exists 
+ 695bf607cc79 Already exists 
+ 9763864a6ad7 Pulling fs layer 
+ c18c53f3ccad Pulling fs layer 
+ ece739f3e577 Pulling fs layer 
+ 375001147f70 Pulling fs layer 
+ 375001147f70 Waiting 
+ 9763864a6ad7 Pulling fs layer 
+ 35049e28d06f Pulling fs layer 
+ c1212fbbb2f6 Pulling fs layer 
+ d7c0cff26a26 Pulling fs layer 
+ 35049e28d06f Waiting 
+ c1212fbbb2f6 Waiting 
+ d7c0cff26a26 Waiting 
+ 1e654d6ada44 Already exists 
+ 695bf607cc79 Already exists 
+ 9763864a6ad7 Pulling fs layer 
+ 35049e28d06f Pulling fs layer 
+ c1212fbbb2f6 Pulling fs layer 
+ d7c0cff26a26 Pulling fs layer 
+ d7c0cff26a26 Waiting 
+ 35049e28d06f Waiting 
+ c1212fbbb2f6 Waiting 
+ 42c077c10790 Already exists 
+ ece739f3e577 Downloading [==================================================>]   6.08kB/6.08kB
+ ece739f3e577 Download complete 
+ 992fa0855102 Already exists 
+ 94ad8e5864b2 Already exists 
+ c18c53f3ccad Downloading [==================================================>]     719B/719B
+ c18c53f3ccad Verifying Checksum 
+ c18c53f3ccad Download complete 
+ 9bfcb21bb22b Already exists 
+ 754b68b57877 Pulling fs layer 
+ fa45b267a73f Pulling fs layer 
+ c5e1183838d5 Pulling fs layer 
+ 8a5d45cbf368 Pulling fs layer 
+ 754b68b57877 Waiting 
+ fa45b267a73f Waiting 
+ c5e1183838d5 Waiting 
+ 8a5d45cbf368 Waiting 
+ 35049e28d06f Downloading [==================================================>]     729B/729B
+ 35049e28d06f Verifying Checksum 
+ 35049e28d06f Download complete 
+ 35049e28d06f Downloading [==================================================>]     729B/729B
+ 35049e28d06f Verifying Checksum 
+ 35049e28d06f Download complete 
+ 9763864a6ad7 Downloading [>                                                  ]  159.2kB/15.84MB
+ 9763864a6ad7 Downloading [>                                                  ]  159.2kB/15.84MB
+ 9763864a6ad7 Downloading [>                                                  ]  159.2kB/15.84MB
+ 375001147f70 Downloading [==>                                                ]  16.38kB/390.9kB
+ 375001147f70 Downloading [==================================================>]  390.9kB/390.9kB
+ 375001147f70 Verifying Checksum 
+ 375001147f70 Download complete 
+ c1212fbbb2f6 Verifying Checksum 
+ c1212fbbb2f6 Download complete 
+ c1212fbbb2f6 Downloading [==================================================>]  8.392kB/8.392kB
+ c1212fbbb2f6 Download complete 
+ 754b68b57877 Downloading [==================================================>]     830B/830B
+ 754b68b57877 Verifying Checksum 
+ 754b68b57877 Download complete 
+ 754b68b57877 Extracting [==================================================>]     830B/830B
+ 754b68b57877 Extracting [==================================================>]     830B/830B
+ 754b68b57877 Pull complete 
+ 9763864a6ad7 Downloading [============================================>      ]  14.12MB/15.84MB
+ 9763864a6ad7 Downloading [============================================>      ]  14.12MB/15.84MB
+ 9763864a6ad7 Downloading [============================================>      ]  14.12MB/15.84MB
+ 9763864a6ad7 Verifying Checksum 
+ 9763864a6ad7 Download complete 
+ 9763864a6ad7 Verifying Checksum 
+ 9763864a6ad7 Download complete 
+ 9763864a6ad7 Verifying Checksum 
+ 9763864a6ad7 Download complete 
+ 9763864a6ad7 Extracting [>                                                  ]  163.8kB/15.84MB
+ 9763864a6ad7 Extracting [>                                                  ]  163.8kB/15.84MB
+ 9763864a6ad7 Extracting [>                                                  ]  163.8kB/15.84MB
+ d7c0cff26a26 Downloading [=>                                                 ]  16.38kB/419.2kB
+ d7c0cff26a26 Downloading [=>                                                 ]  16.38kB/419.2kB
+ d7c0cff26a26 Downloading [==================================================>]  419.2kB/419.2kB
+ d7c0cff26a26 Downloading [==================================================>]  419.2kB/419.2kB
+ d7c0cff26a26 Verifying Checksum 
+ d7c0cff26a26 Verifying Checksum 
+ d7c0cff26a26 Download complete 
+ d7c0cff26a26 Download complete 
+ 9763864a6ad7 Extracting [===========================================>       ]  13.76MB/15.84MB
+ 9763864a6ad7 Extracting [===========================================>       ]  13.76MB/15.84MB
+ 9763864a6ad7 Extracting [===========================================>       ]  13.76MB/15.84MB
+ 9763864a6ad7 Extracting [==================================================>]  15.84MB/15.84MB
+ 9763864a6ad7 Extracting [==================================================>]  15.84MB/15.84MB
+ 9763864a6ad7 Extracting [==================================================>]  15.84MB/15.84MB
+ 9763864a6ad7 Pull complete 
+ 9763864a6ad7 Pull complete 
+ 9763864a6ad7 Pull complete 
+ c18c53f3ccad Extracting [==================================================>]     719B/719B
+ 35049e28d06f Extracting [==================================================>]     729B/729B
+ 35049e28d06f Extracting [==================================================>]     729B/729B
+ 35049e28d06f Extracting [==================================================>]     729B/729B
+ 35049e28d06f Extracting [==================================================>]     729B/729B
+ fa45b267a73f Downloading [>                                                  ]  539.8kB/119.9MB
+ c18c53f3ccad Extracting [==================================================>]     719B/719B
+ c5e1183838d5 Downloading [===>                                               ]  16.38kB/234.8kB
+ c18c53f3ccad Pull complete 
+ c5e1183838d5 Downloading [==================================================>]  234.8kB/234.8kB
+ c5e1183838d5 Verifying Checksum 
+ c5e1183838d5 Download complete 
+ 35049e28d06f Pull complete 
+ 35049e28d06f Pull complete 
+ ece739f3e577 Extracting [==================================================>]   6.08kB/6.08kB
+ ece739f3e577 Extracting [==================================================>]   6.08kB/6.08kB
+ c1212fbbb2f6 Extracting [==================================================>]  8.392kB/8.392kB
+ c1212fbbb2f6 Extracting [==================================================>]  8.392kB/8.392kB
+ c1212fbbb2f6 Extracting [==================================================>]  8.392kB/8.392kB
+ c1212fbbb2f6 Extracting [==================================================>]  8.392kB/8.392kB
+ 8a5d45cbf368 Downloading [==================================================>]     440B/440B
+ 8a5d45cbf368 Verifying Checksum 
+ 8a5d45cbf368 Download complete 
+ ece739f3e577 Pull complete 
+ 375001147f70 Extracting [====>                                              ]  32.77kB/390.9kB
+ c1212fbbb2f6 Pull complete 
+ c1212fbbb2f6 Pull complete 
+ d7c0cff26a26 Extracting [===>                                               ]  32.77kB/419.2kB
+ d7c0cff26a26 Extracting [===>                                               ]  32.77kB/419.2kB
+ fa45b267a73f Downloading [====>                                              ]  9.714MB/119.9MB
+ 375001147f70 Extracting [==================================================>]  390.9kB/390.9kB
+ d7c0cff26a26 Extracting [==================================================>]  419.2kB/419.2kB
+ d7c0cff26a26 Extracting [==================================================>]  419.2kB/419.2kB
+ 375001147f70 Pull complete 
+ d7c0cff26a26 Pull complete 
+ d7c0cff26a26 Pull complete 
+ storage Pulled 
+ backend1 Pulled 
+ backend2 Pulled 
+ fa45b267a73f Downloading [=======>                                           ]   17.8MB/119.9MB
+ fa45b267a73f Downloading [==============>                                    ]  33.94MB/119.9MB
+ fa45b267a73f Downloading [=====================>                             ]   51.6MB/119.9MB
+ fa45b267a73f Downloading [===========================>                       ]  67.09MB/119.9MB
+ fa45b267a73f Downloading [============================>                      ]  67.63MB/119.9MB
+ fa45b267a73f Downloading [===================================>               ]  84.84MB/119.9MB
+ fa45b267a73f Downloading [===================================>               ]  85.38MB/119.9MB
+ fa45b267a73f Downloading [==========================================>        ]    101MB/119.9MB
+ fa45b267a73f Downloading [=================================================> ]  118.5MB/119.9MB
+ fa45b267a73f Verifying Checksum 
+ fa45b267a73f Download complete 
+ fa45b267a73f Extracting [>                                                  ]  557.1kB/119.9MB
+ fa45b267a73f Extracting [==>                                                ]  6.685MB/119.9MB
+ fa45b267a73f Extracting [======>                                            ]   15.6MB/119.9MB
+ fa45b267a73f Extracting [========>                                          ]  20.61MB/119.9MB
+ fa45b267a73f Extracting [========>                                          ]  21.17MB/119.9MB
+ fa45b267a73f Extracting [=========>                                         ]  21.73MB/119.9MB
+ fa45b267a73f Extracting [=========>                                         ]  22.28MB/119.9MB
+ fa45b267a73f Extracting [============>                                      ]  29.52MB/119.9MB
+ fa45b267a73f Extracting [==============>                                    ]  34.54MB/119.9MB
+ fa45b267a73f Extracting [==================>                                ]  43.45MB/119.9MB
+ fa45b267a73f Extracting [====================>                              ]  50.14MB/119.9MB
+ fa45b267a73f Extracting [=====================>                             ]  52.36MB/119.9MB
+ fa45b267a73f Extracting [========================>                          ]   59.6MB/119.9MB
+ fa45b267a73f Extracting [============================>                      ]  69.07MB/119.9MB
+ fa45b267a73f Extracting [================================>                  ]  77.43MB/119.9MB
+ fa45b267a73f Extracting [===================================>               ]  84.67MB/119.9MB
+ fa45b267a73f Extracting [=====================================>             ]   90.8MB/119.9MB
+ fa45b267a73f Extracting [=======================================>           ]  94.14MB/119.9MB
+ fa45b267a73f Extracting [========================================>          ]  96.37MB/119.9MB
+ fa45b267a73f Extracting [========================================>          ]  97.48MB/119.9MB
+ fa45b267a73f Extracting [=========================================>         ]  99.71MB/119.9MB
+ fa45b267a73f Extracting [=========================================>         ]  100.3MB/119.9MB
+ fa45b267a73f Extracting [==========================================>        ]  101.4MB/119.9MB
+ fa45b267a73f Extracting [==========================================>        ]  103.1MB/119.9MB
+ fa45b267a73f Extracting [===========================================>       ]  104.7MB/119.9MB
+ fa45b267a73f Extracting [================================================>  ]  115.3MB/119.9MB
+ fa45b267a73f Extracting [=================================================> ]  119.8MB/119.9MB
+ fa45b267a73f Extracting [==================================================>]  119.9MB/119.9MB
+ fa45b267a73f Pull complete 
+ c5e1183838d5 Extracting [======>                                            ]  32.77kB/234.8kB
+ c5e1183838d5 Extracting [==================================================>]  234.8kB/234.8kB
+ c5e1183838d5 Extracting [==================================================>]  234.8kB/234.8kB
+ c5e1183838d5 Pull complete 
+ 8a5d45cbf368 Extracting [==================================================>]     440B/440B
+ 8a5d45cbf368 Extracting [==================================================>]     440B/440B
+ 8a5d45cbf368 Pull complete 
+ nginx Pulled 
+ Network githiago-f_backend  Creating
+ Network githiago-f_backend  Created
+ Container githiago-f-storage-1  Creating
+ Container githiago-f-storage-1  Created
+ Container githiago-f-backend1-1  Creating
+ Container githiago-f-backend2-1  Creating
+ Container githiago-f-backend1-1  Created
+ Container githiago-f-backend2-1  Created
+ Container githiago-f-nginx-1  Creating
+ Container githiago-f-nginx-1  Created
+Attaching to backend1-1, backend2-1, nginx-1, storage-1
+backend1-1  | INFO exec -a "java" java -XX:MaxRAMPercentage=80.0 -XX:+UseParallelGC -XX:MinHeapFreeRatio=10 -XX:MaxHeapFreeRatio=20 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -XX:+ExitOnOutOfMemoryError -Dquarkus.http.host=0.0.0.0 -Djava.util.logging.manager=org.jboss.logmanager.LogManager -cp "." -jar /deployments/quarkus-run.jar 
+backend1-1  | INFO running in /deployments
+backend2-1  | INFO exec -a "java" java -XX:MaxRAMPercentage=80.0 -XX:+UseParallelGC -XX:MinHeapFreeRatio=10 -XX:MaxHeapFreeRatio=20 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -XX:+ExitOnOutOfMemoryError -Dquarkus.http.host=0.0.0.0 -Djava.util.logging.manager=org.jboss.logmanager.LogManager -cp "." -jar /deployments/quarkus-run.jar 
+backend2-1  | INFO running in /deployments
+storage-1   | INFO exec -a "java" java -XX:MaxRAMPercentage=80.0 -XX:+UseParallelGC -XX:MinHeapFreeRatio=10 -XX:MaxHeapFreeRatio=20 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -XX:+ExitOnOutOfMemoryError -Dquarkus.http.host=0.0.0.0 -Djava.util.logging.manager=org.jboss.logmanager.LogManager -cp "." -jar /deployments/quarkus-run.jar 
+storage-1   | INFO running in /deployments
+backend2-1  | __  ____  __  _____   ___  __ ____  ______ 
+backend2-1  |  --/ __ \/ / / / _ | / _ \/ //_/ / / / __/ 
+backend2-1  |  -/ /_/ / /_/ / __ |/ , _/ ,< / /_/ /\ \   
+backend2-1  | --\___\_\____/_/ |_/_/|_/_/|_|\____/___/   
+backend2-1  | 2025-08-18 18:08:58,882 INFO  [io.quarkus] (main) payments 1.0.0-SNAPSHOT on JVM (powered by Quarkus 3.25.2) started in 3.764s. Listening on: http://0.0.0.0:8080
+backend2-1  | 2025-08-18 18:08:58,886 INFO  [io.quarkus] (main) Profile prod activated. 
+backend2-1  | 2025-08-18 18:08:58,886 INFO  [io.quarkus] (main) Installed features: [cdi, rest, rest-jackson, smallrye-context-propagation, vertx]
+backend1-1  | __  ____  __  _____   ___  __ ____  ______ 
+backend1-1  |  --/ __ \/ / / / _ | / _ \/ //_/ / / / __/ 
+backend1-1  |  -/ /_/ / /_/ / __ |/ , _/ ,< / /_/ /\ \   
+backend1-1  | --\___\_\____/_/ |_/_/|_/_/|_|\____/___/   
+backend1-1  | 2025-08-18 18:08:59,022 INFO  [io.quarkus] (main) payments 1.0.0-SNAPSHOT on JVM (powered by Quarkus 3.25.2) started in 3.903s. Listening on: http://0.0.0.0:8080
+backend1-1  | 2025-08-18 18:08:59,025 INFO  [io.quarkus] (main) Profile prod activated. 
+backend1-1  | 2025-08-18 18:08:59,025 INFO  [io.quarkus] (main) Installed features: [cdi, rest, rest-jackson, smallrye-context-propagation, vertx]
+nginx-1     | 2025/08/18 18:08:59 [error] 6#6: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.2:8080/payments-summary", host: "localhost:9999"
+nginx-1     | 2025/08/18 18:09:04 [error] 6#6: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.2:8080/payments-summary", host: "localhost:9999"
+nginx-1     | 2025/08/18 18:09:09 [error] 6#6: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.2:8080/payments-summary", host: "localhost:9999"
+[Kstorage-1 exited with code 137
+[Knginx-1 exited with code 0
+backend1-1  | 2025-08-18 18:10:32,221 INFO  [io.qua.thread-pool] (Shutdown thread) Awaiting thread pool shutdown; 16 thread(s) running
+backend2-1  | 2025-08-18 18:10:32,283 INFO  [io.qua.thread-pool] (main) Awaiting thread pool shutdown; 16 thread(s) running

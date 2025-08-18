@@ -1,0 +1,50 @@
+
+ memcached Pulling 
+ 396b1da7636e Already exists 
+ ebfc0a813c97 Pulling fs layer 
+ 6d44cb640c5a Pulling fs layer 
+ e9c2449a0115 Pulling fs layer 
+ c9bbdd035dc4 Pulling fs layer 
+ bc99f3761e7c Pulling fs layer 
+ c9bbdd035dc4 Waiting 
+ bc99f3761e7c Waiting 
+ e9c2449a0115 Downloading [>                                                  ]  33.27kB/2.294MB
+ 6d44cb640c5a Downloading [=====>                                             ]  16.38kB/136.6kB
+ 6d44cb640c5a Downloading [==================================================>]  136.6kB/136.6kB
+ 6d44cb640c5a Verifying Checksum 
+ 6d44cb640c5a Download complete 
+ e9c2449a0115 Downloading [==================================================>]  2.294MB/2.294MB
+ e9c2449a0115 Verifying Checksum 
+ e9c2449a0115 Download complete 
+ ebfc0a813c97 Downloading [==================================================>]  1.108kB/1.108kB
+ ebfc0a813c97 Verifying Checksum 
+ ebfc0a813c97 Download complete 
+ ebfc0a813c97 Extracting [==================================================>]  1.108kB/1.108kB
+ ebfc0a813c97 Extracting [==================================================>]  1.108kB/1.108kB
+ c9bbdd035dc4 Downloading [==================================================>]     283B/283B
+ c9bbdd035dc4 Verifying Checksum 
+ c9bbdd035dc4 Download complete 
+ ebfc0a813c97 Pull complete 
+ 6d44cb640c5a Extracting [===========>                                       ]  32.77kB/136.6kB
+ 6d44cb640c5a Extracting [==================================================>]  136.6kB/136.6kB
+ 6d44cb640c5a Extracting [==================================================>]  136.6kB/136.6kB
+ bc99f3761e7c Downloading [==================================================>]     122B/122B
+ bc99f3761e7c Verifying Checksum 
+ bc99f3761e7c Download complete 
+ 6d44cb640c5a Pull complete 
+ e9c2449a0115 Extracting [>                                                  ]  32.77kB/2.294MB
+ e9c2449a0115 Extracting [==================================================>]  2.294MB/2.294MB
+ e9c2449a0115 Extracting [==================================================>]  2.294MB/2.294MB
+ e9c2449a0115 Pull complete 
+ c9bbdd035dc4 Extracting [==================================================>]     283B/283B
+ c9bbdd035dc4 Extracting [==================================================>]     283B/283B
+ c9bbdd035dc4 Pull complete 
+ bc99f3761e7c Extracting [==================================================>]     122B/122B
+ bc99f3761e7c Extracting [==================================================>]     122B/122B
+ bc99f3761e7c Pull complete 
+ memcached Pulled 
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.13kB done
+#1 DONE 0.0s
+unable to prepare context: path "/home/ubuntu/rinha-de-backend-2025/participantes/gemersondenner/MinimalAPI" not found
+

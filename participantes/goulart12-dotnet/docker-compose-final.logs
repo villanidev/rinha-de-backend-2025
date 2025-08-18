@@ -1,0 +1,1001 @@
+
+ Network goulart12-dotnet_backend  Creating
+ Network goulart12-dotnet_backend  Created
+ Container redis  Creating
+ Container redis  Created
+ Container backend2  Creating
+ Container backend1  Creating
+ Container backend2  Created
+ Container backend1  Created
+ Container load-balance  Creating
+ Container load-balance  Created
+Attaching to backend1, backend2, load-balance, redis
+redis  | 1:C 18 Aug 2025 18:16:27.521 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis  | 1:C 18 Aug 2025 18:16:27.521 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis  | 1:C 18 Aug 2025 18:16:27.521 * Redis version=7.2.10, bits=64, commit=00000000, modified=0, pid=1, just started
+redis  | 1:C 18 Aug 2025 18:16:27.521 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+redis  | 1:M 18 Aug 2025 18:16:27.521 * monotonic clock: POSIX clock_gettime
+redis  | 1:M 18 Aug 2025 18:16:27.522 * Running mode=standalone, port=6379.
+redis  | 1:M 18 Aug 2025 18:16:27.523 * Server initialized
+redis  | 1:M 18 Aug 2025 18:16:27.523 * Ready to accept connections tcp
+load-balance  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+load-balance  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+load-balance  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+load-balance  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+load-balance  | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+load-balance  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+load-balance  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+load-balance  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+load-balance  | /docker-entrypoint.sh: Configuration complete; ready for start up
+backend1      | info: RinhaDeBackend2025.Services.QueuedHostedService[0]
+backend1      |       Queued Hosted Service is starting.
+backend1      | warn: Microsoft.AspNetCore.Hosting.Diagnostics[15]
+backend1      |       Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://0.0.0.0:8080'.
+backend2      | info: RinhaDeBackend2025.Services.QueuedHostedService[0]
+backend2      |       Queued Hosted Service is starting.
+backend2      | warn: Microsoft.AspNetCore.Hosting.Diagnostics[15]
+backend2      |       Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://0.0.0.0:8080'.
+backend2      | info: Microsoft.Hosting.Lifetime[14]
+backend2      |       Now listening on: http://0.0.0.0:8080
+backend2      | info: Microsoft.Hosting.Lifetime[0]
+backend2      |       Application started. Press Ctrl+C to shut down.
+backend2      | info: Microsoft.Hosting.Lifetime[0]
+backend2      |       Hosting environment: Production
+backend2      | info: Microsoft.Hosting.Lifetime[0]
+backend2      |       Content root path: /app
+backend1      | info: Microsoft.Hosting.Lifetime[14]
+backend1      |       Now listening on: http://0.0.0.0:8080
+backend1      | info: Microsoft.Hosting.Lifetime[0]
+backend1      |       Application started. Press Ctrl+C to shut down.
+backend1      | info: Microsoft.Hosting.Lifetime[0]
+backend1      |       Hosting environment: Production
+backend1      | info: Microsoft.Hosting.Lifetime[0]
+backend1      |       Content root path: /app
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       GetSummaryAsync called with from: 01/01/0001 00:00:00 and to: 01/01/0001 00:00:00
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       Redis returned 0 entries.
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       GetSummaryAsync called with from: 08/18/2025 18:16:27 and to: 08/18/2025 18:16:40
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       Redis returned 0 entries.
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: 88c3869a-8fed-4287-8358-19f34aeedffd
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request GET http://payment-processor-default:8080/payments/service-health
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request GET http://payment-processor-default:8080/payments/service-health
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 35.7757ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 86.3798ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 2.7907ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 2.9449ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:42.7258156Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: 88c3869a-8fed-4287-8358-19f34aeedffd
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Starting payment process for CorrelationId: 6a342471-1e2e-44c3-a6dc-202d6d9795a5
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend2      |       Start processing HTTP request GET http://payment-processor-default:8080/payments/service-health
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend2      |       Sending HTTP request GET http://payment-processor-default:8080/payments/service-health
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: 61f7797d-1e98-4f87-a466-cefd8b4985d0
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 0.9734ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 1.5351ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:43.5593505Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: 61f7797d-1e98-4f87-a466-cefd8b4985d0
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: bc319d09-799b-47a1-a099-55c23731e88f
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 0.9299ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 1.0526ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:44.2816894Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: bc319d09-799b-47a1-a099-55c23731e88f
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: 0b163933-ce49-4c27-932a-0a38257f95ce
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 1.0256ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 1.1048ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:44.5611019Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: 0b163933-ce49-4c27-932a-0a38257f95ce
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: 5790c1f8-3e7f-4c19-875b-3599a0c9c497
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 0.7859ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 0.8621ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:44.5956571Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: 5790c1f8-3e7f-4c19-875b-3599a0c9c497
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: 941526d2-d080-463e-9fee-17a3225f08df
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 1.0069ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 1.5308ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:45.0599587Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: 941526d2-d080-463e-9fee-17a3225f08df
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: 25c8b207-dbea-4bf4-8b83-fc59d51bdcda
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 1.0506ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 1.1316ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:45.5505494Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: 25c8b207-dbea-4bf4-8b83-fc59d51bdcda
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: 89d5fa14-2b52-466e-ae8c-4f849773acf6
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 1.2364ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 1.2943ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:45.5635816Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: 89d5fa14-2b52-466e-ae8c-4f849773acf6
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: f826304f-9fdd-4373-8e1a-e3970f5c96b9
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 0.8868ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 0.9586ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:46.0542189Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: f826304f-9fdd-4373-8e1a-e3970f5c96b9
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: f1dc067e-23c4-4631-b253-7aa276ca4227
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 1.2606ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 1.3193ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:46.2860696Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: f1dc067e-23c4-4631-b253-7aa276ca4227
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Default processor health check result: False
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend2      |       Start processing HTTP request GET http://payment-processor-fallback:8080/payments/service-health
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend2      |       Sending HTTP request GET http://payment-processor-fallback:8080/payments/service-health
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend2      |       Received HTTP response headers after 2.3383ms - 200
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend2      |       End processing HTTP request after 6.7628ms - 200
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Fallback processor health check result: True
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend2      |       Start processing HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend2      |       Sending HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend2      |       Received HTTP response headers after 2.5001ms - 200
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend2      |       End processing HTTP request after 2.6031ms - 200
+backend2      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend2      |       InsertSummaryAsync called with: {"Processor":"fallback","Amount":20.05,"TimeStamp":"2025-08-18T18:16:46.3236975Z"}
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Payment processed and recorded using fallback processor for CorrelationId: 6a342471-1e2e-44c3-a6dc-202d6d9795a5
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Starting payment process for CorrelationId: 4e4a08db-55ba-40c1-bb90-b645976c0bbf
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Default processor health check result: False
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Fallback processor health check result: True
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend2      |       Start processing HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend2      |       Sending HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend2      |       Received HTTP response headers after 0.8664ms - 200
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend2      |       End processing HTTP request after 0.9328ms - 200
+backend2      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend2      |       InsertSummaryAsync called with: {"Processor":"fallback","Amount":20.05,"TimeStamp":"2025-08-18T18:16:46.3338754Z"}
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Payment processed and recorded using fallback processor for CorrelationId: 4e4a08db-55ba-40c1-bb90-b645976c0bbf
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Starting payment process for CorrelationId: ec2e8a2e-a981-4a13-b7b3-1707eccab0c7
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Default processor health check result: False
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Fallback processor health check result: True
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend2      |       Start processing HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend2      |       Sending HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend2      |       Received HTTP response headers after 0.5634ms - 200
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend2      |       End processing HTTP request after 0.6391ms - 200
+backend2      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend2      |       InsertSummaryAsync called with: {"Processor":"fallback","Amount":20.05,"TimeStamp":"2025-08-18T18:16:46.3355888Z"}
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Payment processed and recorded using fallback processor for CorrelationId: ec2e8a2e-a981-4a13-b7b3-1707eccab0c7
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Starting payment process for CorrelationId: 0487820b-5a9b-48fd-9feb-625176d3ef44
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Default processor health check result: False
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Fallback processor health check result: True
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend2      |       Start processing HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend2      |       Sending HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend2      |       Received HTTP response headers after 0.6354ms - 200
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend2      |       End processing HTTP request after 0.7023ms - 200
+backend2      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend2      |       InsertSummaryAsync called with: {"Processor":"fallback","Amount":20.05,"TimeStamp":"2025-08-18T18:16:46.3753979Z"}
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Payment processed and recorded using fallback processor for CorrelationId: 0487820b-5a9b-48fd-9feb-625176d3ef44
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Starting payment process for CorrelationId: 131df117-852b-41f7-af1f-f34372a71acd
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Default processor health check result: False
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Fallback processor health check result: True
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend2      |       Start processing HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend2      |       Sending HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend2      |       Received HTTP response headers after 0.5645ms - 200
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend2      |       End processing HTTP request after 0.6208ms - 200
+backend2      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend2      |       InsertSummaryAsync called with: {"Processor":"fallback","Amount":20.05,"TimeStamp":"2025-08-18T18:16:46.3764206Z"}
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Payment processed and recorded using fallback processor for CorrelationId: 131df117-852b-41f7-af1f-f34372a71acd
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Starting payment process for CorrelationId: a320839c-a386-4986-8102-c61e7265288c
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Default processor health check result: False
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Fallback processor health check result: True
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend2      |       Start processing HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend2      |       Sending HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend2      |       Received HTTP response headers after 0.3912ms - 200
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend2      |       End processing HTTP request after 0.4656ms - 200
+backend2      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend2      |       InsertSummaryAsync called with: {"Processor":"fallback","Amount":20.05,"TimeStamp":"2025-08-18T18:16:46.3773265Z"}
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Payment processed and recorded using fallback processor for CorrelationId: a320839c-a386-4986-8102-c61e7265288c
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Starting payment process for CorrelationId: e6b70297-e138-4ab8-9155-9da76e242f23
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Default processor health check result: False
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Fallback processor health check result: True
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend2      |       Start processing HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend2      |       Sending HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend2      |       Received HTTP response headers after 0.4461ms - 200
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend2      |       End processing HTTP request after 0.5087ms - 200
+backend2      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend2      |       InsertSummaryAsync called with: {"Processor":"fallback","Amount":20.05,"TimeStamp":"2025-08-18T18:16:46.3782584Z"}
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Payment processed and recorded using fallback processor for CorrelationId: e6b70297-e138-4ab8-9155-9da76e242f23
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Starting payment process for CorrelationId: 02937c19-1d70-4dad-87d3-c2d886f4e23a
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Default processor health check result: False
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Fallback processor health check result: True
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend2      |       Start processing HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend2      |       Sending HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend2      |       Received HTTP response headers after 0.4646ms - 200
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend2      |       End processing HTTP request after 0.5208ms - 200
+backend2      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend2      |       InsertSummaryAsync called with: {"Processor":"fallback","Amount":20.05,"TimeStamp":"2025-08-18T18:16:46.379198Z"}
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Payment processed and recorded using fallback processor for CorrelationId: 02937c19-1d70-4dad-87d3-c2d886f4e23a
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Starting payment process for CorrelationId: a1d2680b-de45-4ed4-bf48-f4a78205e817
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Default processor health check result: False
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Fallback processor health check result: True
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend2      |       Start processing HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend2      |       Sending HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend2      |       Received HTTP response headers after 0.6242ms - 200
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend2      |       End processing HTTP request after 0.6733ms - 200
+backend2      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend2      |       InsertSummaryAsync called with: {"Processor":"fallback","Amount":20.05,"TimeStamp":"2025-08-18T18:16:46.3802182Z"}
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Payment processed and recorded using fallback processor for CorrelationId: a1d2680b-de45-4ed4-bf48-f4a78205e817
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Starting payment process for CorrelationId: 8645aac6-a2d5-4cbf-b64b-14f90614b7c7
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Default processor health check result: False
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Fallback processor health check result: True
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend2      |       Start processing HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend2      |       Sending HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend2      |       Received HTTP response headers after 0.5844ms - 200
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend2      |       End processing HTTP request after 0.6399ms - 200
+backend2      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend2      |       InsertSummaryAsync called with: {"Processor":"fallback","Amount":20.05,"TimeStamp":"2025-08-18T18:16:46.3813014Z"}
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Payment processed and recorded using fallback processor for CorrelationId: 8645aac6-a2d5-4cbf-b64b-14f90614b7c7
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Starting payment process for CorrelationId: 8fc5e1b2-f70f-4c48-a90b-dfb4bac46663
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Default processor health check result: False
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Fallback processor health check result: True
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend2      |       Start processing HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend2      |       Sending HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend2      |       Received HTTP response headers after 0.8518ms - 200
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend2      |       End processing HTTP request after 0.9194ms - 200
+backend2      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend2      |       InsertSummaryAsync called with: {"Processor":"fallback","Amount":20.05,"TimeStamp":"2025-08-18T18:16:46.5473109Z"}
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Payment processed and recorded using fallback processor for CorrelationId: 8fc5e1b2-f70f-4c48-a90b-dfb4bac46663
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: e1098d4c-6222-4ea8-96e9-1bf702058ab8
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 0.8482ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 0.9065ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:46.5522257Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: e1098d4c-6222-4ea8-96e9-1bf702058ab8
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Starting payment process for CorrelationId: d3dd6fc6-6649-41c8-9d37-f6de9589a318
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Default processor health check result: False
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Fallback processor health check result: True
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend2      |       Start processing HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend2      |       Sending HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend2      |       Received HTTP response headers after 0.8533ms - 200
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend2      |       End processing HTTP request after 0.9168ms - 200
+backend2      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend2      |       InsertSummaryAsync called with: {"Processor":"fallback","Amount":20.05,"TimeStamp":"2025-08-18T18:16:46.5570131Z"}
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Payment processed and recorded using fallback processor for CorrelationId: d3dd6fc6-6649-41c8-9d37-f6de9589a318
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: 3357e876-89a2-40ea-82b7-0bfacc042a6a
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 0.8014ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 0.8897ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:46.5647002Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: 3357e876-89a2-40ea-82b7-0bfacc042a6a
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: 54f2bb0b-c61f-4f3a-b9f3-2c2557a29089
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 0.6436ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 0.7016ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:46.6002662Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: 54f2bb0b-c61f-4f3a-b9f3-2c2557a29089
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Starting payment process for CorrelationId: 89920b2a-b625-416a-8e5a-347d708ec445
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Default processor health check result: False
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Fallback processor health check result: True
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend2      |       Start processing HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend2      |       Sending HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend2      |       Received HTTP response headers after 0.9605ms - 200
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend2      |       End processing HTTP request after 1.0488ms - 200
+backend2      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend2      |       InsertSummaryAsync called with: {"Processor":"fallback","Amount":20.05,"TimeStamp":"2025-08-18T18:16:47.0453713Z"}
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Payment processed and recorded using fallback processor for CorrelationId: 89920b2a-b625-416a-8e5a-347d708ec445
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: 828d2c0a-2e36-4cf1-be8e-3040bcdba493
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 0.7937ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 0.861ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:47.05073Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: 828d2c0a-2e36-4cf1-be8e-3040bcdba493
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Starting payment process for CorrelationId: c6f5af03-7d81-41f4-9440-c39ca1aebebb
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Default processor health check result: False
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Fallback processor health check result: True
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend2      |       Start processing HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend2      |       Sending HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend2      |       Received HTTP response headers after 0.9028ms - 200
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend2      |       End processing HTTP request after 0.9828ms - 200
+backend2      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend2      |       InsertSummaryAsync called with: {"Processor":"fallback","Amount":20.05,"TimeStamp":"2025-08-18T18:16:47.0564284Z"}
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Payment processed and recorded using fallback processor for CorrelationId: c6f5af03-7d81-41f4-9440-c39ca1aebebb
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: eaa6e77b-524d-469f-b9e1-e26798892d29
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 0.6827ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 0.7516ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:47.0625834Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: eaa6e77b-524d-469f-b9e1-e26798892d29
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Starting payment process for CorrelationId: cf393b2d-a59f-4532-9b00-726389782f8a
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Default processor health check result: False
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Fallback processor health check result: True
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend2      |       Start processing HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend2      |       Sending HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend2      |       Received HTTP response headers after 0.9808ms - 200
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend2      |       End processing HTTP request after 1.0972ms - 200
+backend2      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend2      |       InsertSummaryAsync called with: {"Processor":"fallback","Amount":20.05,"TimeStamp":"2025-08-18T18:16:47.2876939Z"}
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Payment processed and recorded using fallback processor for CorrelationId: cf393b2d-a59f-4532-9b00-726389782f8a
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: 71ad826e-42d1-4c19-9d2b-a239f9bd9cf1
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 1.1247ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 1.1949ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:47.544319Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: 71ad826e-42d1-4c19-9d2b-a239f9bd9cf1
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Starting payment process for CorrelationId: fe2fd3c3-8217-4017-ba41-288216177d5f
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Default processor health check result: False
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Fallback processor health check result: True
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend2      |       Start processing HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend2      |       Sending HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend2      |       Received HTTP response headers after 1.0126ms - 200
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend2      |       End processing HTTP request after 1.08ms - 200
+backend2      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend2      |       InsertSummaryAsync called with: {"Processor":"fallback","Amount":20.05,"TimeStamp":"2025-08-18T18:16:47.5499413Z"}
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Payment processed and recorded using fallback processor for CorrelationId: fe2fd3c3-8217-4017-ba41-288216177d5f
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: fbfbcc66-bf52-47f5-9309-219748212bf2
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 0.7955ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 0.8861ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:47.5544096Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: fbfbcc66-bf52-47f5-9309-219748212bf2
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Starting payment process for CorrelationId: 4c4e4a43-ac64-439d-927d-210e91bbfd9a
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Default processor health check result: False
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Fallback processor health check result: True
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend2      |       Start processing HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend2      |       Sending HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend2      |       Received HTTP response headers after 0.8483ms - 200
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend2      |       End processing HTTP request after 0.9108ms - 200
+backend2      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend2      |       InsertSummaryAsync called with: {"Processor":"fallback","Amount":20.05,"TimeStamp":"2025-08-18T18:16:47.5588691Z"}
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Payment processed and recorded using fallback processor for CorrelationId: 4c4e4a43-ac64-439d-927d-210e91bbfd9a
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: da61d7d3-2d60-49fe-ba1a-9825b745efd7
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 0.8036ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 0.8618ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:47.5663709Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: da61d7d3-2d60-49fe-ba1a-9825b745efd7
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Starting payment process for CorrelationId: 7c72ae0b-6b6b-4697-9484-99243bba3e1b
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Default processor health check result: False
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Fallback processor health check result: True
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend2      |       Start processing HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend2      |       Sending HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend2      |       Received HTTP response headers after 1.0358ms - 200
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend2      |       End processing HTTP request after 1.1007ms - 200
+backend2      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend2      |       InsertSummaryAsync called with: {"Processor":"fallback","Amount":20.05,"TimeStamp":"2025-08-18T18:16:47.6022891Z"}
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Payment processed and recorded using fallback processor for CorrelationId: 7c72ae0b-6b6b-4697-9484-99243bba3e1b
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Starting payment process for CorrelationId: 4f52119b-c10b-4610-b512-70da2b0eded2
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Default processor health check result: False
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Fallback processor health check result: True
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend2      |       Start processing HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend2      |       Sending HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend2      |       Received HTTP response headers after 0.9435ms - 200
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend2      |       End processing HTTP request after 1.0225ms - 200
+backend2      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend2      |       InsertSummaryAsync called with: {"Processor":"fallback","Amount":20.05,"TimeStamp":"2025-08-18T18:16:48.0425011Z"}
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Payment processed and recorded using fallback processor for CorrelationId: 4f52119b-c10b-4610-b512-70da2b0eded2
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: a339866a-2866-49f0-9555-d399958f6477
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request GET http://payment-processor-default:8080/payments/service-health
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request GET http://payment-processor-default:8080/payments/service-health
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 0.3132ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 0.388ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 0.71ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 0.7531ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:48.0478044Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: a339866a-2866-49f0-9555-d399958f6477
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Starting payment process for CorrelationId: 53922070-6339-4bd0-98b6-4ce8e888dd20
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Default processor health check result: False
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Fallback processor health check result: True
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend2      |       Start processing HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend2      |       Sending HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend2      |       Received HTTP response headers after 0.8335ms - 200
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend2      |       End processing HTTP request after 0.9083ms - 200
+backend2      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend2      |       InsertSummaryAsync called with: {"Processor":"fallback","Amount":20.05,"TimeStamp":"2025-08-18T18:16:48.0523613Z"}
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Payment processed and recorded using fallback processor for CorrelationId: 53922070-6339-4bd0-98b6-4ce8e888dd20
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: 562bcc00-bf12-4b76-b0c3-5c47f188143f
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 0.9088ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 0.9646ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:48.0580819Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: 562bcc00-bf12-4b76-b0c3-5c47f188143f
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Starting payment process for CorrelationId: 504438e3-2f1e-4799-99f9-8e0d92e62255
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Default processor health check result: False
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Fallback processor health check result: True
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend2      |       Start processing HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend2      |       Sending HTTP request POST http://payment-processor-fallback:8080/payments
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend2      |       Received HTTP response headers after 0.8311ms - 200
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend2      |       End processing HTTP request after 0.893ms - 200
+backend2      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend2      |       InsertSummaryAsync called with: {"Processor":"fallback","Amount":20.05,"TimeStamp":"2025-08-18T18:16:48.0643594Z"}
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Payment processed and recorded using fallback processor for CorrelationId: 504438e3-2f1e-4799-99f9-8e0d92e62255
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: 3f830feb-f058-4f49-ae98-dca402d892c6
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 0.9883ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 1.0907ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:48.2899089Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: 3f830feb-f058-4f49-ae98-dca402d892c6
+backend2      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend2      |       Starting payment process for CorrelationId: 6acefcd0-0a68-4b5b-a685-6a696a098904
+backend2      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend2      |       Start processing HTTP request GET http://payment-processor-default:8080/payments/service-health
+backend2      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend2      |       Sending HTTP request GET http://payment-processor-default:8080/payments/service-health
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: 4dc3034b-615f-42a3-9980-7aeb35f76303
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 0.9346ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 0.9981ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:48.546844Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: 4dc3034b-615f-42a3-9980-7aeb35f76303
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: 6efbe464-0645-425c-a238-2efda1a8563a
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 0.8063ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 0.8559ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:48.5565896Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: 6efbe464-0645-425c-a238-2efda1a8563a
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: 90062800-b782-4354-9ca7-498cc0abd23e
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 0.6881ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 0.7378ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:48.5677632Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: 90062800-b782-4354-9ca7-498cc0abd23e
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: a23cbfbf-b003-473f-b5f1-8592dfbeefc8
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 0.6759ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 0.7355ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:48.6042962Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: a23cbfbf-b003-473f-b5f1-8592dfbeefc8
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: 902ed942-b343-4e0c-94a3-bdf492a81235
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 1.0576ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 1.1266ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:49.0443813Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: 902ed942-b343-4e0c-94a3-bdf492a81235
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: 17cd4765-0ce1-4295-bc87-38562d071dbf
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 0.8333ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 0.8951ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:49.0538081Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: 17cd4765-0ce1-4295-bc87-38562d071dbf
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: e72a6e32-96c8-4f4f-9703-018ec15e2cd3
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 1.0952ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 1.1599ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:49.067285Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: e72a6e32-96c8-4f4f-9703-018ec15e2cd3
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: 0ad871ed-d588-4776-8a20-ded349bea813
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 1.2464ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 1.3508ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:49.537553Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: 0ad871ed-d588-4776-8a20-ded349bea813
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: b69bd964-b820-43ce-be2e-8ffeb79f3707
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 0.7234ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 0.7784ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:49.5479685Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: b69bd964-b820-43ce-be2e-8ffeb79f3707
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: a16770ff-25a2-4215-a7db-b1f76dcb8040
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 0.7888ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 0.8441ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:49.5585241Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: a16770ff-25a2-4215-a7db-b1f76dcb8040
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: f95b7c17-7205-4f1b-8209-69f966fa8e44
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 0.779ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 0.8326ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:49.5700707Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Payment processed and recorded using default processor for CorrelationId: f95b7c17-7205-4f1b-8209-69f966fa8e44
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Starting payment process for CorrelationId: 9b6763f3-02b1-4b05-940c-a81fdd40b9e2
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+backend1      |       Default processor health check result: True
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[100]
+backend1      |       Start processing HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[100]
+backend1      |       Sending HTTP request POST http://payment-processor-default:8080/payments
+backend1      | info: System.Net.Http.HttpClient.Default.ClientHandler[101]
+backend1      |       Received HTTP response headers after 0.9912ms - 200
+backend1      | info: System.Net.Http.HttpClient.Default.LogicalHandler[101]
+backend1      |       End processing HTTP request after 1.0498ms - 200
+backend1      | info: RinhaDeBackend2025.Services.PaymentSummaryService[0]
+backend1      |       InsertSummaryAsync called with: {"Processor":"default","Amount":20.05,"TimeStamp":"2025-08-18T18:16:50.0401501Z"}
+backend1      | info: RinhaDeBackend2025.Services.PaymentService[0]
+log truncated at line 1000

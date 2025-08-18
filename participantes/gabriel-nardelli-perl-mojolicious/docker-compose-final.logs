@@ -1,0 +1,255 @@
+
+ worker_light Pulling 
+ worker_heavy Pulling 
+ api1 Pulling 
+ api2 Pulling 
+ 3da95a905ed5 Already exists 
+ c8195ff91f0d Pulling fs layer 
+ 6ccdbdb8b557 Pulling fs layer 
+ b58ac1cada01 Pulling fs layer 
+ 4f4fb700ef54 Pulling fs layer 
+ 62d6197a4468 Pulling fs layer 
+ 98307b6a1110 Pulling fs layer 
+ 4f4fb700ef54 Waiting 
+ 62d6197a4468 Waiting 
+ 98307b6a1110 Waiting 
+ c8195ff91f0d Downloading [==================================================>]     135B/135B
+ c8195ff91f0d Verifying Checksum 
+ c8195ff91f0d Download complete 
+ c8195ff91f0d Extracting [==================================================>]     135B/135B
+ c8195ff91f0d Extracting [==================================================>]     135B/135B
+ c8195ff91f0d Pull complete 
+ b58ac1cada01 Downloading [==================================================>]     132B/132B
+ b58ac1cada01 Verifying Checksum 
+ b58ac1cada01 Download complete 
+ 4f4fb700ef54 Downloading [==================================================>]      32B/32B
+ 4f4fb700ef54 Verifying Checksum 
+ 4f4fb700ef54 Download complete 
+ 6ccdbdb8b557 Downloading [>                                                  ]  305.1kB/29.45MB
+ 98307b6a1110 Download complete 
+ 62d6197a4468 Downloading [>                                                  ]  50.67kB/4.66MB
+ 62d6197a4468 Verifying Checksum 
+ 62d6197a4468 Download complete 
+ 6ccdbdb8b557 Downloading [==============================>                    ]  17.76MB/29.45MB
+ 6ccdbdb8b557 Verifying Checksum 
+ 6ccdbdb8b557 Download complete 
+ 3da95a905ed5 Already exists 
+ 6ccdbdb8b557 Extracting [>                                                  ]  294.9kB/29.45MB
+ c8195ff91f0d Already exists 
+ 6ccdbdb8b557 Pulling fs layer 
+ b58ac1cada01 Pulling fs layer 
+ 4f4fb700ef54 Pulling fs layer 
+ 62d6197a4468 Pulling fs layer 
+ 98307b6a1110 Pulling fs layer 
+ 6ccdbdb8b557 Extracting [>                                                  ]  294.9kB/29.45MB
+ 98307b6a1110 Download complete 
+ b58ac1cada01 Download complete 
+ 4f4fb700ef54 Download complete 
+ 62d6197a4468 Download complete 
+ 6ccdbdb8b557 Extracting [===>                                               ]  1.769MB/29.45MB
+ 6ccdbdb8b557 Extracting [===>                                               ]  1.769MB/29.45MB
+ 6ccdbdb8b557 Extracting [====>                                              ]  2.359MB/29.45MB
+ 6ccdbdb8b557 Extracting [====>                                              ]  2.359MB/29.45MB
+ 3da95a905ed5 Already exists 
+ c8195ff91f0d Already exists 
+ 6ccdbdb8b557 Pulling fs layer 
+ b58ac1cada01 Pulling fs layer 
+ 4f4fb700ef54 Pulling fs layer 
+ 62d6197a4468 Pulling fs layer 
+ 98307b6a1110 Pulling fs layer 
+ 98307b6a1110 Download complete 
+ b58ac1cada01 Download complete 
+ 6ccdbdb8b557 Extracting [====>                                              ]  2.359MB/29.45MB
+ 4f4fb700ef54 Download complete 
+ 62d6197a4468 Download complete 
+ 3da95a905ed5 Already exists 
+ c8195ff91f0d Already exists 
+ 6ccdbdb8b557 Pulling fs layer 
+ b58ac1cada01 Pulling fs layer 
+ 4f4fb700ef54 Pulling fs layer 
+ 62d6197a4468 Pulling fs layer 
+ 98307b6a1110 Pulling fs layer 
+ 98307b6a1110 Download complete 
+ 6ccdbdb8b557 Extracting [====>                                              ]  2.359MB/29.45MB
+ b58ac1cada01 Download complete 
+ 4f4fb700ef54 Download complete 
+ 62d6197a4468 Download complete 
+ 6ccdbdb8b557 Extracting [=====>                                             ]  3.244MB/29.45MB
+ 6ccdbdb8b557 Extracting [=====>                                             ]  3.244MB/29.45MB
+ 6ccdbdb8b557 Extracting [=====>                                             ]  3.244MB/29.45MB
+ 6ccdbdb8b557 Extracting [=====>                                             ]  3.244MB/29.45MB
+ 6ccdbdb8b557 Extracting [=======>                                           ]  4.129MB/29.45MB
+ 6ccdbdb8b557 Extracting [=======>                                           ]  4.129MB/29.45MB
+ 6ccdbdb8b557 Extracting [=======>                                           ]  4.129MB/29.45MB
+ 6ccdbdb8b557 Extracting [=======>                                           ]  4.129MB/29.45MB
+ 6ccdbdb8b557 Extracting [===================>                               ]   11.5MB/29.45MB
+ 6ccdbdb8b557 Extracting [===================>                               ]   11.5MB/29.45MB
+ 6ccdbdb8b557 Extracting [===================>                               ]   11.5MB/29.45MB
+ 6ccdbdb8b557 Extracting [===================>                               ]   11.5MB/29.45MB
+ 6ccdbdb8b557 Extracting [=========================>                         ]  15.04MB/29.45MB
+ 6ccdbdb8b557 Extracting [=========================>                         ]  15.04MB/29.45MB
+ 6ccdbdb8b557 Extracting [=========================>                         ]  15.04MB/29.45MB
+ 6ccdbdb8b557 Extracting [=========================>                         ]  15.04MB/29.45MB
+ 6ccdbdb8b557 Extracting [============================>                      ]  16.52MB/29.45MB
+ 6ccdbdb8b557 Extracting [============================>                      ]  16.52MB/29.45MB
+ 6ccdbdb8b557 Extracting [============================>                      ]  16.52MB/29.45MB
+ 6ccdbdb8b557 Extracting [============================>                      ]  16.52MB/29.45MB
+ 6ccdbdb8b557 Extracting [================================>                  ]  18.87MB/29.45MB
+ 6ccdbdb8b557 Extracting [================================>                  ]  18.87MB/29.45MB
+ 6ccdbdb8b557 Extracting [================================>                  ]  18.87MB/29.45MB
+ 6ccdbdb8b557 Extracting [================================>                  ]  18.87MB/29.45MB
+ 6ccdbdb8b557 Extracting [====================================>              ]  21.23MB/29.45MB
+ 6ccdbdb8b557 Extracting [====================================>              ]  21.23MB/29.45MB
+ 6ccdbdb8b557 Extracting [====================================>              ]  21.23MB/29.45MB
+ 6ccdbdb8b557 Extracting [====================================>              ]  21.23MB/29.45MB
+ 6ccdbdb8b557 Extracting [=========================================>         ]  24.18MB/29.45MB
+ 6ccdbdb8b557 Extracting [=========================================>         ]  24.18MB/29.45MB
+ 6ccdbdb8b557 Extracting [=========================================>         ]  24.18MB/29.45MB
+ 6ccdbdb8b557 Extracting [=========================================>         ]  24.18MB/29.45MB
+ 6ccdbdb8b557 Extracting [================================================>  ]  28.31MB/29.45MB
+ 6ccdbdb8b557 Extracting [================================================>  ]  28.31MB/29.45MB
+ 6ccdbdb8b557 Extracting [================================================>  ]  28.31MB/29.45MB
+ 6ccdbdb8b557 Extracting [================================================>  ]  28.31MB/29.45MB
+ 6ccdbdb8b557 Extracting [==================================================>]  29.45MB/29.45MB
+ 6ccdbdb8b557 Extracting [==================================================>]  29.45MB/29.45MB
+ 6ccdbdb8b557 Extracting [==================================================>]  29.45MB/29.45MB
+ 6ccdbdb8b557 Extracting [==================================================>]  29.45MB/29.45MB
+ 6ccdbdb8b557 Pull complete 
+ 6ccdbdb8b557 Pull complete 
+ 6ccdbdb8b557 Pull complete 
+ 6ccdbdb8b557 Pull complete 
+ b58ac1cada01 Extracting [==================================================>]     132B/132B
+ b58ac1cada01 Extracting [==================================================>]     132B/132B
+ b58ac1cada01 Extracting [==================================================>]     132B/132B
+ b58ac1cada01 Extracting [==================================================>]     132B/132B
+ b58ac1cada01 Extracting [==================================================>]     132B/132B
+ b58ac1cada01 Extracting [==================================================>]     132B/132B
+ b58ac1cada01 Extracting [==================================================>]     132B/132B
+ b58ac1cada01 Extracting [==================================================>]     132B/132B
+ b58ac1cada01 Pull complete 
+ b58ac1cada01 Pull complete 
+ b58ac1cada01 Pull complete 
+ b58ac1cada01 Pull complete 
+ 4f4fb700ef54 Extracting [==================================================>]      32B/32B
+ 4f4fb700ef54 Extracting [==================================================>]      32B/32B
+ 4f4fb700ef54 Extracting [==================================================>]      32B/32B
+ 4f4fb700ef54 Extracting [==================================================>]      32B/32B
+ 4f4fb700ef54 Extracting [==================================================>]      32B/32B
+ 4f4fb700ef54 Extracting [==================================================>]      32B/32B
+ 4f4fb700ef54 Extracting [==================================================>]      32B/32B
+ 4f4fb700ef54 Extracting [==================================================>]      32B/32B
+ 4f4fb700ef54 Pull complete 
+ 4f4fb700ef54 Pull complete 
+ 4f4fb700ef54 Pull complete 
+ 4f4fb700ef54 Pull complete 
+ 62d6197a4468 Extracting [>                                                  ]  65.54kB/4.66MB
+ 62d6197a4468 Extracting [>                                                  ]  65.54kB/4.66MB
+ 62d6197a4468 Extracting [>                                                  ]  65.54kB/4.66MB
+ 62d6197a4468 Extracting [>                                                  ]  65.54kB/4.66MB
+ 62d6197a4468 Extracting [===========>                                       ]  1.049MB/4.66MB
+ 62d6197a4468 Extracting [===========>                                       ]  1.049MB/4.66MB
+ 62d6197a4468 Extracting [===========>                                       ]  1.049MB/4.66MB
+ 62d6197a4468 Extracting [===========>                                       ]  1.049MB/4.66MB
+ 62d6197a4468 Extracting [============>                                      ]   1.18MB/4.66MB
+ 62d6197a4468 Extracting [============>                                      ]   1.18MB/4.66MB
+ 62d6197a4468 Extracting [============>                                      ]   1.18MB/4.66MB
+ 62d6197a4468 Extracting [============>                                      ]   1.18MB/4.66MB
+ 62d6197a4468 Extracting [==============>                                    ]  1.376MB/4.66MB
+ 62d6197a4468 Extracting [==============>                                    ]  1.376MB/4.66MB
+ 62d6197a4468 Extracting [==============>                                    ]  1.376MB/4.66MB
+ 62d6197a4468 Extracting [==============>                                    ]  1.376MB/4.66MB
+ 62d6197a4468 Extracting [==================>                                ]  1.704MB/4.66MB
+ 62d6197a4468 Extracting [==================>                                ]  1.704MB/4.66MB
+ 62d6197a4468 Extracting [==================>                                ]  1.704MB/4.66MB
+ 62d6197a4468 Extracting [==================>                                ]  1.704MB/4.66MB
+ 62d6197a4468 Extracting [===========================>                       ]  2.556MB/4.66MB
+ 62d6197a4468 Extracting [===========================>                       ]  2.556MB/4.66MB
+ 62d6197a4468 Extracting [===========================>                       ]  2.556MB/4.66MB
+ 62d6197a4468 Extracting [===========================>                       ]  2.556MB/4.66MB
+ 62d6197a4468 Extracting [====================================>              ]  3.408MB/4.66MB
+ 62d6197a4468 Extracting [====================================>              ]  3.408MB/4.66MB
+ 62d6197a4468 Extracting [====================================>              ]  3.408MB/4.66MB
+ 62d6197a4468 Extracting [====================================>              ]  3.408MB/4.66MB
+ 62d6197a4468 Extracting [=====================================>             ]  3.539MB/4.66MB
+ 62d6197a4468 Extracting [=====================================>             ]  3.539MB/4.66MB
+ 62d6197a4468 Extracting [=====================================>             ]  3.539MB/4.66MB
+ 62d6197a4468 Extracting [=====================================>             ]  3.539MB/4.66MB
+ 62d6197a4468 Extracting [=======================================>           ]   3.67MB/4.66MB
+ 62d6197a4468 Extracting [=======================================>           ]   3.67MB/4.66MB
+ 62d6197a4468 Extracting [=======================================>           ]   3.67MB/4.66MB
+ 62d6197a4468 Extracting [=======================================>           ]   3.67MB/4.66MB
+ 62d6197a4468 Extracting [==================================================>]   4.66MB/4.66MB
+ 62d6197a4468 Extracting [==================================================>]   4.66MB/4.66MB
+ 62d6197a4468 Extracting [==================================================>]   4.66MB/4.66MB
+ 62d6197a4468 Extracting [==================================================>]   4.66MB/4.66MB
+ 62d6197a4468 Pull complete 
+ 62d6197a4468 Pull complete 
+ 62d6197a4468 Pull complete 
+ 62d6197a4468 Pull complete 
+ 98307b6a1110 Extracting [==================================================>]  5.951kB/5.951kB
+ 98307b6a1110 Extracting [==================================================>]  5.951kB/5.951kB
+ 98307b6a1110 Extracting [==================================================>]  5.951kB/5.951kB
+ 98307b6a1110 Extracting [==================================================>]  5.951kB/5.951kB
+ 98307b6a1110 Extracting [==================================================>]  5.951kB/5.951kB
+ 98307b6a1110 Extracting [==================================================>]  5.951kB/5.951kB
+ 98307b6a1110 Extracting [==================================================>]  5.951kB/5.951kB
+ 98307b6a1110 Extracting [==================================================>]  5.951kB/5.951kB
+ 98307b6a1110 Pull complete 
+ 98307b6a1110 Pull complete 
+ 98307b6a1110 Pull complete 
+ 98307b6a1110 Pull complete 
+ worker_light Pulled 
+ api2 Pulled 
+ api1 Pulled 
+ worker_heavy Pulled 
+ Network gabriel-nardelli-perl-mojolicious_backend  Creating
+ Network gabriel-nardelli-perl-mojolicious_backend  Created
+ Volume "gabriel-nardelli-perl-mojolicious_pgdata"  Creating
+ Volume "gabriel-nardelli-perl-mojolicious_pgdata"  Created
+ Container gabriel-nardelli-perl-mojolicious-postgres-1  Creating
+ Container gabriel-nardelli-perl-mojolicious-redis-1  Creating
+ Container gabriel-nardelli-perl-mojolicious-postgres-1  Created
+ Container gabriel-nardelli-perl-mojolicious-redis-1  Created
+ Container gabriel-nardelli-perl-mojolicious-worker_heavy-1  Creating
+ Container gabriel-nardelli-perl-mojolicious-api2-1  Creating
+ Container gabriel-nardelli-perl-mojolicious-worker_light-1  Creating
+ Container gabriel-nardelli-perl-mojolicious-api1-1  Creating
+ Container gabriel-nardelli-perl-mojolicious-api2-1  Created
+ Container gabriel-nardelli-perl-mojolicious-worker_heavy-1  Created
+ Container gabriel-nardelli-perl-mojolicious-worker_light-1  Created
+ Container gabriel-nardelli-perl-mojolicious-api1-1  Created
+ Container gabriel-nardelli-perl-mojolicious-nginx-1  Creating
+ Container gabriel-nardelli-perl-mojolicious-nginx-1  Created
+Attaching to api1-1, api2-1, nginx-1, postgres-1, redis-1, worker_heavy-1, worker_light-1
+postgres-1  | The files belonging to this database system will be owned by user "postgres".
+postgres-1  | This user must also own the server process.
+postgres-1  | 
+postgres-1  | The database cluster will be initialized with locale "en_US.utf8".
+postgres-1  | The default database encoding has accordingly been set to "UTF8".
+postgres-1  | The default text search configuration will be set to "english".
+postgres-1  | 
+postgres-1  | Data page checksums are disabled.
+postgres-1  | 
+postgres-1  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+postgres-1  | creating subdirectories ... ok
+postgres-1  | selecting dynamic shared memory implementation ... posix
+postgres-1  | selecting default max_connections ... 100
+redis-1     | 1:C 18 Aug 2025 16:54:00.725 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis-1     | 1:C 18 Aug 2025 16:54:00.726 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-1     | 1:C 18 Aug 2025 16:54:00.726 * Redis version=7.2.10, bits=64, commit=00000000, modified=0, pid=1, just started
+redis-1     | 1:C 18 Aug 2025 16:54:00.726 * Configuration loaded
+redis-1     | 1:M 18 Aug 2025 16:54:00.726 * monotonic clock: POSIX clock_gettime
+redis-1     | 1:M 18 Aug 2025 16:54:00.727 * Running mode=standalone, port=6379.
+redis-1     | 1:M 18 Aug 2025 16:54:00.727 * Server initialized
+redis-1     | 1:M 18 Aug 2025 16:54:00.727 * Ready to accept connections tcp
+postgres-1  | selecting default shared_buffers ... 128MB
+postgres-1  | selecting default time zone ... UTC
+postgres-1  | creating configuration files ... ok
+postgres-1  | running bootstrap script ... ok
+postgres-1  | sh: locale: not found
+postgres-1  | 2025-08-18 16:54:02.542 UTC [35] WARNING:  no usable system locales were found
+postgres-1  | child process was terminated by signal 9: Killed
+postgres-1  | initdb: removing contents of data directory "/var/lib/postgresql/data"
+postgres-1  | performing post-bootstrap initialization ... 
+[Kpostgres-1 exited with code 1
+dependency failed to start: container gabriel-nardelli-perl-mojolicious-postgres-1 exited (1)

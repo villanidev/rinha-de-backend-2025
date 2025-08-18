@@ -1,0 +1,1001 @@
+
+ api2 Pulling 
+ api1 Pulling 
+ 9824c27679d3 Already exists 
+ 8c59d92d6fc9 Already exists 
+ 54225bd60196 Already exists 
+ a9e48ad1219d Already exists 
+ 87ec7b19dd43 Pulling fs layer 
+ 50f6579fc868 Pulling fs layer 
+ ac9df2eb09a9 Pulling fs layer 
+ d70da0b73853 Pulling fs layer 
+ d70da0b73853 Waiting 
+ 9824c27679d3 Already exists 
+ 8c59d92d6fc9 Already exists 
+ 54225bd60196 Already exists 
+ a9e48ad1219d Already exists 
+ 87ec7b19dd43 Pulling fs layer 
+ 50f6579fc868 Pulling fs layer 
+ ac9df2eb09a9 Pulling fs layer 
+ d70da0b73853 Pulling fs layer 
+ d70da0b73853 Waiting 
+ 50f6579fc868 Downloading [==================================================>]  14.26kB/14.26kB
+ 50f6579fc868 Download complete 
+ 50f6579fc868 Downloading [==================================================>]  14.26kB/14.26kB
+ 50f6579fc868 Verifying Checksum 
+ 50f6579fc868 Download complete 
+ 87ec7b19dd43 Verifying Checksum 
+ 87ec7b19dd43 Download complete 
+ 87ec7b19dd43 Downloading [==================================================>]      93B/93B
+ 87ec7b19dd43 Verifying Checksum 
+ 87ec7b19dd43 Download complete 
+ 87ec7b19dd43 Extracting [==================================================>]      93B/93B
+ 87ec7b19dd43 Extracting [==================================================>]      93B/93B
+ 87ec7b19dd43 Extracting [==================================================>]      93B/93B
+ 87ec7b19dd43 Extracting [==================================================>]      93B/93B
+ 87ec7b19dd43 Pull complete 
+ 87ec7b19dd43 Pull complete 
+ 50f6579fc868 Extracting [==================================================>]  14.26kB/14.26kB
+ 50f6579fc868 Extracting [==================================================>]  14.26kB/14.26kB
+ 50f6579fc868 Extracting [==================================================>]  14.26kB/14.26kB
+ 50f6579fc868 Extracting [==================================================>]  14.26kB/14.26kB
+ 50f6579fc868 Pull complete 
+ 50f6579fc868 Pull complete 
+ ac9df2eb09a9 Downloading [>                                                  ]  50.65kB/3.557MB
+ ac9df2eb09a9 Downloading [>                                                  ]  50.65kB/3.557MB
+ d70da0b73853 Download complete 
+ d70da0b73853 Downloading [==================================================>]  4.572kB/4.572kB
+ d70da0b73853 Verifying Checksum 
+ d70da0b73853 Download complete 
+ ac9df2eb09a9 Downloading [==============================>                    ]  2.167MB/3.557MB
+ ac9df2eb09a9 Downloading [==============================>                    ]  2.167MB/3.557MB
+ ac9df2eb09a9 Verifying Checksum 
+ ac9df2eb09a9 Download complete 
+ ac9df2eb09a9 Download complete 
+ ac9df2eb09a9 Extracting [>                                                  ]  65.54kB/3.557MB
+ ac9df2eb09a9 Extracting [>                                                  ]  65.54kB/3.557MB
+ ac9df2eb09a9 Extracting [=====>                                             ]  393.2kB/3.557MB
+ ac9df2eb09a9 Extracting [=====>                                             ]  393.2kB/3.557MB
+ ac9df2eb09a9 Extracting [=========>                                         ]  655.4kB/3.557MB
+ ac9df2eb09a9 Extracting [=========>                                         ]  655.4kB/3.557MB
+ ac9df2eb09a9 Extracting [===============>                                   ]  1.114MB/3.557MB
+ ac9df2eb09a9 Extracting [===============>                                   ]  1.114MB/3.557MB
+ ac9df2eb09a9 Extracting [=====================>                             ]  1.507MB/3.557MB
+ ac9df2eb09a9 Extracting [=====================>                             ]  1.507MB/3.557MB
+ ac9df2eb09a9 Extracting [=========================>                         ]  1.835MB/3.557MB
+ ac9df2eb09a9 Extracting [=========================>                         ]  1.835MB/3.557MB
+ ac9df2eb09a9 Extracting [================================================>  ]  3.473MB/3.557MB
+ ac9df2eb09a9 Extracting [================================================>  ]  3.473MB/3.557MB
+ ac9df2eb09a9 Extracting [==================================================>]  3.557MB/3.557MB
+ ac9df2eb09a9 Extracting [==================================================>]  3.557MB/3.557MB
+ ac9df2eb09a9 Pull complete 
+ ac9df2eb09a9 Pull complete 
+ d70da0b73853 Extracting [==================================================>]  4.572kB/4.572kB
+ d70da0b73853 Extracting [==================================================>]  4.572kB/4.572kB
+ d70da0b73853 Extracting [==================================================>]  4.572kB/4.572kB
+ d70da0b73853 Extracting [==================================================>]  4.572kB/4.572kB
+ d70da0b73853 Pull complete 
+ d70da0b73853 Pull complete 
+ api2 Pulled 
+ api1 Pulled 
+ Network guidugaich-node_backend  Creating
+ Network guidugaich-node_backend  Created
+ Volume "guidugaich-node_pgdata"  Creating
+ Volume "guidugaich-node_pgdata"  Created
+ Container cache  Creating
+ Container db  Creating
+ Container cache  Created
+ Container db  Created
+ Container api2  Creating
+ Container api1  Creating
+ Container api2  Created
+ Container api1  Created
+ Container nginx  Creating
+ Container nginx  Created
+Attaching to api1, api2, cache, db, nginx
+db  | The files belonging to this database system will be owned by user "postgres".
+db  | This user must also own the server process.
+db  | 
+db  | The database cluster will be initialized with locale "en_US.utf8".
+db  | The default database encoding has accordingly been set to "UTF8".
+db  | The default text search configuration will be set to "english".
+db  | 
+db  | Data page checksums are disabled.
+db  | 
+db  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+db  | creating subdirectories ... ok
+db  | selecting dynamic shared memory implementation ... posix
+db  | selecting default "max_connections" ... 100
+db  | selecting default "shared_buffers" ... 128MB
+db  | selecting default time zone ... UTC
+db  | creating configuration files ... ok
+db  | running bootstrap script ... ok
+cache  | 1:C 18 Aug 2025 18:42:52.293 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+cache  | 1:C 18 Aug 2025 18:42:52.293 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+cache  | 1:C 18 Aug 2025 18:42:52.293 * Redis version=7.2.10, bits=64, commit=00000000, modified=0, pid=1, just started
+cache  | 1:C 18 Aug 2025 18:42:52.293 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+cache  | 1:M 18 Aug 2025 18:42:52.293 * monotonic clock: POSIX clock_gettime
+cache  | 1:M 18 Aug 2025 18:42:52.294 * Running mode=standalone, port=6379.
+cache  | 1:M 18 Aug 2025 18:42:52.294 * Server initialized
+cache  | 1:M 18 Aug 2025 18:42:52.294 * Ready to accept connections tcp
+db     | sh: locale: not found
+db     | 2025-08-18 18:42:52.622 UTC [36] WARNING:  no usable system locales were found
+db     | performing post-bootstrap initialization ... ok
+db     | initdb: warning: enabling "trust" authentication for local connections
+db     | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+db     | syncing data to disk ... ok
+db     | 
+db     | 
+db     | Success. You can now start the database server using:
+db     | 
+db     |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+db     | 
+db     | waiting for server to start....2025-08-18 18:42:53.712 UTC [42] LOG:  starting PostgreSQL 17.5 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+db     | 2025-08-18 18:42:53.715 UTC [42] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+db     | 2025-08-18 18:42:53.726 UTC [45] LOG:  database system was shut down at 2025-08-18 18:42:53 UTC
+db     | 2025-08-18 18:42:53.733 UTC [42] LOG:  database system is ready to accept connections
+db     |  done
+db     | server started
+db     | CREATE DATABASE
+db     | 
+db     | 
+db     | /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/init.sql
+db     | DROP TABLE
+db     | psql:/docker-entrypoint-initdb.d/init.sql:1: NOTICE:  table "payments" does not exist, skipping
+db     | CREATE TABLE
+db     | 
+db     | 
+db     | waiting for server to shut down....2025-08-18 18:42:53.925 UTC [42] LOG:  received fast shutdown request
+db     | 2025-08-18 18:42:53.929 UTC [42] LOG:  aborting any active transactions
+db     | 2025-08-18 18:42:53.932 UTC [42] LOG:  background worker "logical replication launcher" (PID 48) exited with exit code 1
+db     | 2025-08-18 18:42:53.932 UTC [43] LOG:  shutting down
+db     | 2025-08-18 18:42:53.935 UTC [43] LOG:  checkpoint starting: shutdown immediate
+db     | 2025-08-18 18:42:54.019 UTC [43] LOG:  checkpoint complete: wrote 933 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.068 s, sync=0.006 s, total=0.087 s; sync files=305, longest=0.003 s, average=0.001 s; distance=4279 kB, estimate=4279 kB; lsn=0/191B1D0, redo lsn=0/191B1D0
+db     | 2025-08-18 18:42:54.029 UTC [42] LOG:  database system is shut down
+db     |  done
+db     | server stopped
+db     | 
+db     | PostgreSQL init process complete; ready for start up.
+db     | 
+db     | 2025-08-18 18:42:54.153 UTC [1] LOG:  starting PostgreSQL 17.5 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+db     | 2025-08-18 18:42:54.153 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+db     | 2025-08-18 18:42:54.153 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+db     | 2025-08-18 18:42:54.159 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+db     | 2025-08-18 18:42:54.167 UTC [60] LOG:  database system was shut down at 2025-08-18 18:42:54 UTC
+db     | 2025-08-18 18:42:54.175 UTC [1] LOG:  database system is ready to accept connections
+nginx  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+nginx  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+nginx  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+nginx  | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+nginx  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+nginx  | /docker-entrypoint.sh: Configuration complete; ready for start up
+api2   | [dotenv@17.2.0] injecting env (0) from .env (tip: ⚙️  suppress all logs with { quiet: true })
+api2   | [dotenv@17.2.0] injecting env (0) from .env (tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' })
+api2   | [dotenv@17.2.0] injecting env (0) from .env (tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] })
+api1   | [dotenv@17.2.0] injecting env (0) from .env (tip: ⚙️  enable debug logging with { debug: true })
+api1   | [dotenv@17.2.0] injecting env (0) from .env (tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] })
+api1   | [dotenv@17.2.0] injecting env (0) from .env (tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild)
+api1   | {"level":30,"time":1755542578445,"pid":1,"hostname":"api1","msg":"Server listening at http://127.0.0.1:9999"}
+api1   | {"level":30,"time":1755542578446,"pid":1,"hostname":"api1","msg":"Server listening at http://172.21.0.4:9999"}
+api1   | {"level":30,"time":1755542578446,"pid":1,"hostname":"api1","msg":"Server listening at http://172.19.0.4:9999"}
+api1   | {"level":30,"time":1755542578446,"pid":1,"hostname":"api1","msg":"Server listening on 9999"}
+api1   | {"level":30,"time":1755542578550,"pid":1,"hostname":"api1","reqId":"req-1","req":{"method":"GET","url":"/payments-summary","host":"localhost","remoteAddress":"172.21.0.6","remotePort":51714},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:42:58 +0000] "GET /payments-summary HTTP/1.1" 200 94 "-" "curl/8.5.0"
+api1   | {"level":30,"time":1755542578575,"pid":1,"hostname":"api1","reqId":"req-1","res":{"statusCode":200},"responseTime":24.740436017513275,"msg":"request completed"}
+api2   | {"level":30,"time":1755542578593,"pid":1,"hostname":"api2","msg":"Server listening at http://127.0.0.1:9999"}
+api2   | {"level":30,"time":1755542578593,"pid":1,"hostname":"api2","msg":"Server listening at http://172.21.0.5:9999"}
+api2   | {"level":30,"time":1755542578593,"pid":1,"hostname":"api2","msg":"Server listening at http://172.19.0.5:9999"}
+api2   | {"level":30,"time":1755542578594,"pid":1,"hostname":"api2","msg":"Server listening on 9999"}
+api2   | {"level":30,"time":1755542584077,"pid":1,"hostname":"api2","reqId":"req-1","req":{"method":"POST","url":"/purge-payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":52310},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:04 +0000] "POST /purge-payments HTTP/1.1" 400 157 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542584079,"pid":1,"hostname":"api2","reqId":"req-1","res":{"statusCode":400},"err":{"type":"FastifyError","message":"Body cannot be empty when content-type is set to 'application/json'","stack":"FastifyError: Body cannot be empty when content-type is set to 'application/json'\n    at Parser.defaultJsonParser [as fn] (/app/node_modules/fastify/lib/contentTypeParser.js:308:12)\n    at IncomingMessage.onEnd (/app/node_modules/fastify/lib/contentTypeParser.js:296:27)\n    at IncomingMessage.emit (node:events:524:28)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","code":"FST_ERR_CTP_EMPTY_JSON_BODY","name":"FastifyError","statusCode":400},"msg":"Body cannot be empty when content-type is set to 'application/json'"}
+api2   | {"level":30,"time":1755542584083,"pid":1,"hostname":"api2","reqId":"req-1","res":{"statusCode":400},"responseTime":5.132044970989227,"msg":"request completed"}
+api1   | {"level":30,"time":1755542584086,"pid":1,"hostname":"api1","reqId":"req-2","req":{"method":"GET","url":"/payments-summary?from=2025-08-18T18:42:49.082Z&to=2025-08-18T18:43:02.082Z","host":"localhost","remoteAddress":"172.21.0.6","remotePort":51722},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:04 +0000] "GET /payments-summary?from=2025-08-18T18:42:49.082Z&to=2025-08-18T18:43:02.082Z HTTP/1.1" 200 94 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542584090,"pid":1,"hostname":"api1","reqId":"req-2","res":{"statusCode":200},"responseTime":3.759449005126953,"msg":"request completed"}
+api2   | {"level":30,"time":1755542584100,"pid":1,"hostname":"api2","reqId":"req-2","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":52322},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:04 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542584105,"pid":1,"hostname":"api2","reqId":"req-2","res":{"statusCode":202},"responseTime":4.438760995864868,"msg":"request completed"}
+api1   | {"level":30,"time":1755542584583,"pid":1,"hostname":"api1","reqId":"req-3","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":51730},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:04 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542584585,"pid":1,"hostname":"api1","reqId":"req-3","res":{"statusCode":202},"responseTime":2.5610179901123047,"msg":"request completed"}
+api2   | {"level":30,"time":1755542585082,"pid":1,"hostname":"api2","reqId":"req-3","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":52324},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:05 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542585082,"pid":1,"hostname":"api2","reqId":"req-3","res":{"statusCode":202},"responseTime":0.7538059949874878,"msg":"request completed"}
+api1   | {"level":30,"time":1755542585108,"pid":1,"hostname":"api1","reqId":"req-4","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":51732},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:05 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542585108,"pid":1,"hostname":"api1","reqId":"req-4","res":{"statusCode":202},"responseTime":0.7209340333938599,"msg":"request completed"}
+api2   | {"level":30,"time":1755542585579,"pid":1,"hostname":"api2","reqId":"req-4","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":52334},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:05 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542585580,"pid":1,"hostname":"api2","reqId":"req-4","res":{"statusCode":202},"responseTime":0.45904600620269775,"msg":"request completed"}
+api1   | {"level":30,"time":1755542585587,"pid":1,"hostname":"api1","reqId":"req-5","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":51740},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:05 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542585587,"pid":1,"hostname":"api1","reqId":"req-5","res":{"statusCode":202},"responseTime":0.40038400888442993,"msg":"request completed"}
+api2   | {"level":30,"time":1755542586077,"pid":1,"hostname":"api2","reqId":"req-5","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45576},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:06 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542586078,"pid":1,"hostname":"api2","reqId":"req-5","res":{"statusCode":202},"responseTime":0.4444050192832947,"msg":"request completed"}
+api1   | {"level":30,"time":1755542586084,"pid":1,"hostname":"api1","reqId":"req-6","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":35836},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:06 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542586085,"pid":1,"hostname":"api1","reqId":"req-6","res":{"statusCode":202},"responseTime":0.4286839962005615,"msg":"request completed"}
+api2   | {"level":30,"time":1755542586110,"pid":1,"hostname":"api2","reqId":"req-6","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45590},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:06 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542586110,"pid":1,"hostname":"api2","reqId":"req-6","res":{"statusCode":202},"responseTime":0.347991943359375,"msg":"request completed"}
+api1   | {"level":30,"time":1755542586576,"pid":1,"hostname":"api1","reqId":"req-7","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":35840},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:06 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542586577,"pid":1,"hostname":"api1","reqId":"req-7","res":{"statusCode":202},"responseTime":0.3929029703140259,"msg":"request completed"}
+api2   | {"level":30,"time":1755542586581,"pid":1,"hostname":"api2","reqId":"req-7","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45600},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:06 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542586582,"pid":1,"hostname":"api2","reqId":"req-7","res":{"statusCode":202},"responseTime":0.6450819969177246,"msg":"request completed"}
+api1   | {"level":30,"time":1755542586589,"pid":1,"hostname":"api1","reqId":"req-8","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":35842},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:06 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542586590,"pid":1,"hostname":"api1","reqId":"req-8","res":{"statusCode":202},"responseTime":0.36107200384140015,"msg":"request completed"}
+api2   | {"level":30,"time":1755542587075,"pid":1,"hostname":"api2","reqId":"req-8","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45608},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:07 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542587076,"pid":1,"hostname":"api2","reqId":"req-8","res":{"statusCode":202},"responseTime":0.436585009098053,"msg":"request completed"}
+api1   | {"level":30,"time":1755542587079,"pid":1,"hostname":"api1","reqId":"req-9","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":35854},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:07 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542587080,"pid":1,"hostname":"api1","reqId":"req-9","res":{"statusCode":202},"responseTime":0.38839399814605713,"msg":"request completed"}
+api2   | {"level":30,"time":1755542587086,"pid":1,"hostname":"api2","reqId":"req-9","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45624},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:07 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542587087,"pid":1,"hostname":"api2","reqId":"req-9","res":{"statusCode":202},"responseTime":0.6125810146331787,"msg":"request completed"}
+api1   | {"level":30,"time":1755542587113,"pid":1,"hostname":"api1","reqId":"req-a","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":35870},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:07 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542587113,"pid":1,"hostname":"api1","reqId":"req-a","res":{"statusCode":202},"responseTime":0.5903900265693665,"msg":"request completed"}
+api2   | {"level":30,"time":1755542587574,"pid":1,"hostname":"api2","reqId":"req-a","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45632},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:07 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542587575,"pid":1,"hostname":"api2","reqId":"req-a","res":{"statusCode":202},"responseTime":0.7543660402297974,"msg":"request completed"}
+api1   | {"level":30,"time":1755542587579,"pid":1,"hostname":"api1","reqId":"req-b","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":35874},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:07 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542587580,"pid":1,"hostname":"api1","reqId":"req-b","res":{"statusCode":202},"responseTime":0.40639400482177734,"msg":"request completed"}
+api2   | {"level":30,"time":1755542587583,"pid":1,"hostname":"api2","reqId":"req-b","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45646},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:07 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542587584,"pid":1,"hostname":"api2","reqId":"req-b","res":{"statusCode":202},"responseTime":0.456246018409729,"msg":"request completed"}
+api1   | {"level":30,"time":1755542587591,"pid":1,"hostname":"api1","reqId":"req-c","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":35880},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:07 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542587591,"pid":1,"hostname":"api1","reqId":"req-c","res":{"statusCode":202},"responseTime":0.36573201417922974,"msg":"request completed"}
+api2   | {"level":30,"time":1755542588071,"pid":1,"hostname":"api2","reqId":"req-c","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45660},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:08 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542588072,"pid":1,"hostname":"api2","reqId":"req-c","res":{"statusCode":202},"responseTime":0.43805497884750366,"msg":"request completed"}
+api1   | {"level":30,"time":1755542588077,"pid":1,"hostname":"api1","reqId":"req-d","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":35886},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:08 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542588078,"pid":1,"hostname":"api1","reqId":"req-d","res":{"statusCode":202},"responseTime":0.38127297163009644,"msg":"request completed"}
+api2   | {"level":30,"time":1755542588081,"pid":1,"hostname":"api2","reqId":"req-d","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45662},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:08 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542588081,"pid":1,"hostname":"api2","reqId":"req-d","res":{"statusCode":202},"responseTime":0.3309609889984131,"msg":"request completed"}
+api1   | {"level":30,"time":1755542588088,"pid":1,"hostname":"api1","reqId":"req-e","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":35890},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:08 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542588088,"pid":1,"hostname":"api1","reqId":"req-e","res":{"statusCode":202},"responseTime":0.36948299407958984,"msg":"request completed"}
+api2   | {"level":30,"time":1755542588115,"pid":1,"hostname":"api2","reqId":"req-e","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45670},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:08 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542588115,"pid":1,"hostname":"api2","reqId":"req-e","res":{"statusCode":202},"responseTime":0.4764460325241089,"msg":"request completed"}
+api1   | {"level":30,"time":1755542588570,"pid":1,"hostname":"api1","reqId":"req-f","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":35902},"msg":"incoming request"}
+api1   | {"level":30,"time":1755542588570,"pid":1,"hostname":"api1","reqId":"req-f","res":{"statusCode":202},"responseTime":0.48038601875305176,"msg":"request completed"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:08 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542588576,"pid":1,"hostname":"api2","reqId":"req-f","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45678},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:08 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542588577,"pid":1,"hostname":"api2","reqId":"req-f","res":{"statusCode":202},"responseTime":0.4731760025024414,"msg":"request completed"}
+api1   | {"level":30,"time":1755542588581,"pid":1,"hostname":"api1","reqId":"req-g","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":35910},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:08 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542588581,"pid":1,"hostname":"api1","reqId":"req-g","res":{"statusCode":202},"responseTime":0.4802970290184021,"msg":"request completed"}
+api2   | {"level":30,"time":1755542588585,"pid":1,"hostname":"api2","reqId":"req-g","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45682},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:08 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542588586,"pid":1,"hostname":"api2","reqId":"req-g","res":{"statusCode":202},"responseTime":0.40180397033691406,"msg":"request completed"}
+api1   | {"level":30,"time":1755542588593,"pid":1,"hostname":"api1","reqId":"req-h","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":35922},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:08 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542588593,"pid":1,"hostname":"api1","reqId":"req-h","res":{"statusCode":202},"responseTime":0.4816870093345642,"msg":"request completed"}
+api2   | {"level":30,"time":1755542589068,"pid":1,"hostname":"api2","reqId":"req-h","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45698},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542589069,"pid":1,"hostname":"api2","reqId":"req-h","res":{"statusCode":202},"responseTime":0.4287949800491333,"msg":"request completed"}
+api1   | {"level":30,"time":1755542589074,"pid":1,"hostname":"api1","reqId":"req-i","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":35936},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542589075,"pid":1,"hostname":"api1","reqId":"req-i","res":{"statusCode":202},"responseTime":0.6270219683647156,"msg":"request completed"}
+api2   | {"level":30,"time":1755542589079,"pid":1,"hostname":"api2","reqId":"req-i","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45706},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542589079,"pid":1,"hostname":"api2","reqId":"req-i","res":{"statusCode":202},"responseTime":0.5274689793586731,"msg":"request completed"}
+api1   | {"level":30,"time":1755542589082,"pid":1,"hostname":"api1","reqId":"req-j","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":35950},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542589083,"pid":1,"hostname":"api1","reqId":"req-j","res":{"statusCode":202},"responseTime":0.4465649724006653,"msg":"request completed"}
+api2   | {"level":30,"time":1755542589090,"pid":1,"hostname":"api2","reqId":"req-j","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45712},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542589090,"pid":1,"hostname":"api2","reqId":"req-j","res":{"statusCode":202},"responseTime":0.4235150218009949,"msg":"request completed"}
+api1   | {"level":30,"time":1755542589117,"pid":1,"hostname":"api1","reqId":"req-k","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":35956},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542589117,"pid":1,"hostname":"api1","reqId":"req-k","res":{"statusCode":202},"responseTime":0.48577696084976196,"msg":"request completed"}
+api2   | {"level":30,"time":1755542589566,"pid":1,"hostname":"api2","reqId":"req-k","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45720},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542589567,"pid":1,"hostname":"api2","reqId":"req-k","res":{"statusCode":202},"responseTime":0.42603498697280884,"msg":"request completed"}
+api1   | {"level":30,"time":1755542589572,"pid":1,"hostname":"api1","reqId":"req-l","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":35958},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542589572,"pid":1,"hostname":"api1","reqId":"req-l","res":{"statusCode":202},"responseTime":0.5500789880752563,"msg":"request completed"}
+api2   | {"level":30,"time":1755542589579,"pid":1,"hostname":"api2","reqId":"req-l","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45722},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542589579,"pid":1,"hostname":"api2","reqId":"req-l","res":{"statusCode":202},"responseTime":0.3585120439529419,"msg":"request completed"}
+api1   | {"level":30,"time":1755542589583,"pid":1,"hostname":"api1","reqId":"req-m","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":35970},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542589583,"pid":1,"hostname":"api1","reqId":"req-m","res":{"statusCode":202},"responseTime":0.2941800355911255,"msg":"request completed"}
+api2   | {"level":30,"time":1755542589587,"pid":1,"hostname":"api2","reqId":"req-m","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45738},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542589588,"pid":1,"hostname":"api2","reqId":"req-m","res":{"statusCode":202},"responseTime":0.25599896907806396,"msg":"request completed"}
+api1   | {"level":30,"time":1755542589595,"pid":1,"hostname":"api1","reqId":"req-n","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":35980},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542589595,"pid":1,"hostname":"api1","reqId":"req-n","res":{"statusCode":202},"responseTime":0.46617603302001953,"msg":"request completed"}
+api2   | {"level":30,"time":1755542590064,"pid":1,"hostname":"api2","reqId":"req-n","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45742},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542590064,"pid":1,"hostname":"api2","reqId":"req-n","res":{"statusCode":202},"responseTime":0.40705400705337524,"msg":"request completed"}
+api1   | {"level":30,"time":1755542590071,"pid":1,"hostname":"api1","reqId":"req-o","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":35990},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542590071,"pid":1,"hostname":"api1","reqId":"req-o","res":{"statusCode":202},"responseTime":0.45169597864151,"msg":"request completed"}
+api2   | {"level":30,"time":1755542590076,"pid":1,"hostname":"api2","reqId":"req-o","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45744},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542590077,"pid":1,"hostname":"api2","reqId":"req-o","res":{"statusCode":202},"responseTime":0.287339985370636,"msg":"request completed"}
+api1   | {"level":30,"time":1755542590081,"pid":1,"hostname":"api1","reqId":"req-p","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36006},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542590081,"pid":1,"hostname":"api1","reqId":"req-p","res":{"statusCode":202},"responseTime":0.3536520004272461,"msg":"request completed"}
+api2   | {"level":30,"time":1755542590084,"pid":1,"hostname":"api2","reqId":"req-p","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45758},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542590084,"pid":1,"hostname":"api2","reqId":"req-p","res":{"statusCode":202},"responseTime":0.40461403131484985,"msg":"request completed"}
+api1   | {"level":30,"time":1755542590091,"pid":1,"hostname":"api1","reqId":"req-q","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36014},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542590092,"pid":1,"hostname":"api1","reqId":"req-q","res":{"statusCode":202},"responseTime":0.29155999422073364,"msg":"request completed"}
+api2   | {"level":30,"time":1755542590119,"pid":1,"hostname":"api2","reqId":"req-q","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45762},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542590120,"pid":1,"hostname":"api2","reqId":"req-q","res":{"statusCode":202},"responseTime":0.34922200441360474,"msg":"request completed"}
+api1   | {"level":30,"time":1755542590563,"pid":1,"hostname":"api1","reqId":"req-r","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36020},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542590563,"pid":1,"hostname":"api1","reqId":"req-r","res":{"statusCode":202},"responseTime":0.5336589813232422,"msg":"request completed"}
+api2   | {"level":30,"time":1755542590568,"pid":1,"hostname":"api2","reqId":"req-r","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45770},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542590569,"pid":1,"hostname":"api2","reqId":"req-r","res":{"statusCode":202},"responseTime":0.4630360007286072,"msg":"request completed"}
+api1   | {"level":30,"time":1755542590574,"pid":1,"hostname":"api1","reqId":"req-s","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36028},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542590574,"pid":1,"hostname":"api1","reqId":"req-s","res":{"statusCode":202},"responseTime":0.330640971660614,"msg":"request completed"}
+api2   | {"level":30,"time":1755542590580,"pid":1,"hostname":"api2","reqId":"req-s","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45782},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542590580,"pid":1,"hostname":"api2","reqId":"req-s","res":{"statusCode":202},"responseTime":0.2772290110588074,"msg":"request completed"}
+api1   | {"level":30,"time":1755542590584,"pid":1,"hostname":"api1","reqId":"req-t","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36036},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542590585,"pid":1,"hostname":"api1","reqId":"req-t","res":{"statusCode":202},"responseTime":0.39450401067733765,"msg":"request completed"}
+api2   | {"level":30,"time":1755542590589,"pid":1,"hostname":"api2","reqId":"req-t","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45788},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542590589,"pid":1,"hostname":"api2","reqId":"req-t","res":{"statusCode":202},"responseTime":0.3124009966850281,"msg":"request completed"}
+api1   | {"level":30,"time":1755542590596,"pid":1,"hostname":"api1","reqId":"req-u","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36048},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542590597,"pid":1,"hostname":"api1","reqId":"req-u","res":{"statusCode":202},"responseTime":0.26096898317337036,"msg":"request completed"}
+api2   | {"level":30,"time":1755542591061,"pid":1,"hostname":"api2","reqId":"req-u","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45804},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542591061,"pid":1,"hostname":"api2","reqId":"req-u","res":{"statusCode":202},"responseTime":0.369422972202301,"msg":"request completed"}
+api1   | {"level":30,"time":1755542591067,"pid":1,"hostname":"api1","reqId":"req-v","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36052},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542591067,"pid":1,"hostname":"api1","reqId":"req-v","res":{"statusCode":202},"responseTime":0.33636200428009033,"msg":"request completed"}
+api2   | {"level":30,"time":1755542591073,"pid":1,"hostname":"api2","reqId":"req-v","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45818},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542591073,"pid":1,"hostname":"api2","reqId":"req-v","res":{"statusCode":202},"responseTime":0.3093410134315491,"msg":"request completed"}
+api1   | {"level":30,"time":1755542591078,"pid":1,"hostname":"api1","reqId":"req-w","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36068},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542591078,"pid":1,"hostname":"api1","reqId":"req-w","res":{"statusCode":202},"responseTime":0.2986699938774109,"msg":"request completed"}
+api2   | {"level":30,"time":1755542591082,"pid":1,"hostname":"api2","reqId":"req-w","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45832},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542591083,"pid":1,"hostname":"api2","reqId":"req-w","res":{"statusCode":202},"responseTime":0.2711789608001709,"msg":"request completed"}
+api1   | {"level":30,"time":1755542591086,"pid":1,"hostname":"api1","reqId":"req-x","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36082},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542591086,"pid":1,"hostname":"api1","reqId":"req-x","res":{"statusCode":202},"responseTime":0.24993795156478882,"msg":"request completed"}
+api2   | {"level":30,"time":1755542591093,"pid":1,"hostname":"api2","reqId":"req-x","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45834},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542591093,"pid":1,"hostname":"api2","reqId":"req-x","res":{"statusCode":202},"responseTime":0.3199610114097595,"msg":"request completed"}
+api1   | {"level":30,"time":1755542591122,"pid":1,"hostname":"api1","reqId":"req-y","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36086},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542591123,"pid":1,"hostname":"api1","reqId":"req-y","res":{"statusCode":202},"responseTime":0.4092640280723572,"msg":"request completed"}
+api2   | {"level":30,"time":1755542591559,"pid":1,"hostname":"api2","reqId":"req-y","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45842},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542591560,"pid":1,"hostname":"api2","reqId":"req-y","res":{"statusCode":202},"responseTime":0.4378160238265991,"msg":"request completed"}
+api1   | {"level":30,"time":1755542591565,"pid":1,"hostname":"api1","reqId":"req-z","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36102},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542591565,"pid":1,"hostname":"api1","reqId":"req-z","res":{"statusCode":202},"responseTime":0.4259539842605591,"msg":"request completed"}
+api2   | {"level":30,"time":1755542591570,"pid":1,"hostname":"api2","reqId":"req-z","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45846},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542591571,"pid":1,"hostname":"api2","reqId":"req-z","res":{"statusCode":202},"responseTime":0.2756989598274231,"msg":"request completed"}
+api1   | {"level":30,"time":1755542591576,"pid":1,"hostname":"api1","reqId":"req-10","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36106},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542591577,"pid":1,"hostname":"api1","reqId":"req-10","res":{"statusCode":202},"responseTime":0.273078978061676,"msg":"request completed"}
+api2   | {"level":30,"time":1755542591582,"pid":1,"hostname":"api2","reqId":"req-10","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45852},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542591583,"pid":1,"hostname":"api2","reqId":"req-10","res":{"statusCode":202},"responseTime":0.3298010230064392,"msg":"request completed"}
+api1   | {"level":30,"time":1755542591587,"pid":1,"hostname":"api1","reqId":"req-11","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36120},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542591587,"pid":1,"hostname":"api1","reqId":"req-11","res":{"statusCode":202},"responseTime":0.44962501525878906,"msg":"request completed"}
+api2   | {"level":30,"time":1755542591591,"pid":1,"hostname":"api2","reqId":"req-11","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45858},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542591591,"pid":1,"hostname":"api2","reqId":"req-11","res":{"statusCode":202},"responseTime":0.4288249611854553,"msg":"request completed"}
+api1   | {"level":30,"time":1755542591598,"pid":1,"hostname":"api1","reqId":"req-12","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36134},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542591599,"pid":1,"hostname":"api1","reqId":"req-12","res":{"statusCode":202},"responseTime":0.30140000581741333,"msg":"request completed"}
+api2   | {"level":30,"time":1755542592058,"pid":1,"hostname":"api2","reqId":"req-12","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45868},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542592058,"pid":1,"hostname":"api2","reqId":"req-12","res":{"statusCode":202},"responseTime":0.3847329616546631,"msg":"request completed"}
+api1   | {"level":30,"time":1755542592063,"pid":1,"hostname":"api1","reqId":"req-13","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36144},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542592064,"pid":1,"hostname":"api1","reqId":"req-13","res":{"statusCode":202},"responseTime":0.3369019627571106,"msg":"request completed"}
+api2   | {"level":30,"time":1755542592069,"pid":1,"hostname":"api2","reqId":"req-13","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45884},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542592069,"pid":1,"hostname":"api2","reqId":"req-13","res":{"statusCode":202},"responseTime":0.25109797716140747,"msg":"request completed"}
+api1   | {"level":30,"time":1755542592074,"pid":1,"hostname":"api1","reqId":"req-14","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36160},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542592074,"pid":1,"hostname":"api1","reqId":"req-14","res":{"statusCode":202},"responseTime":0.25063902139663696,"msg":"request completed"}
+api2   | {"level":30,"time":1755542592079,"pid":1,"hostname":"api2","reqId":"req-14","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45892},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542592080,"pid":1,"hostname":"api2","reqId":"req-14","res":{"statusCode":202},"responseTime":0.24441802501678467,"msg":"request completed"}
+api1   | {"level":30,"time":1755542592084,"pid":1,"hostname":"api1","reqId":"req-15","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36174},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542592084,"pid":1,"hostname":"api1","reqId":"req-15","res":{"statusCode":202},"responseTime":0.2586590051651001,"msg":"request completed"}
+api2   | {"level":30,"time":1755542592087,"pid":1,"hostname":"api2","reqId":"req-15","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45908},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542592087,"pid":1,"hostname":"api2","reqId":"req-15","res":{"statusCode":202},"responseTime":0.2807300090789795,"msg":"request completed"}
+api1   | {"level":30,"time":1755542592094,"pid":1,"hostname":"api1","reqId":"req-16","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36186},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542592095,"pid":1,"hostname":"api1","reqId":"req-16","res":{"statusCode":202},"responseTime":0.24740898609161377,"msg":"request completed"}
+api2   | {"level":30,"time":1755542592124,"pid":1,"hostname":"api2","reqId":"req-16","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45920},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542592125,"pid":1,"hostname":"api2","reqId":"req-16","res":{"statusCode":202},"responseTime":0.28383004665374756,"msg":"request completed"}
+api1   | {"level":30,"time":1755542592556,"pid":1,"hostname":"api1","reqId":"req-17","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36188},"msg":"incoming request"}
+api1   | {"level":30,"time":1755542592557,"pid":1,"hostname":"api1","reqId":"req-17","res":{"statusCode":202},"responseTime":0.3310009837150574,"msg":"request completed"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542592562,"pid":1,"hostname":"api2","reqId":"req-17","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45930},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542592562,"pid":1,"hostname":"api2","reqId":"req-17","res":{"statusCode":202},"responseTime":0.3299409747123718,"msg":"request completed"}
+api1   | {"level":30,"time":1755542592567,"pid":1,"hostname":"api1","reqId":"req-18","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36198},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542592568,"pid":1,"hostname":"api1","reqId":"req-18","res":{"statusCode":202},"responseTime":0.29493004083633423,"msg":"request completed"}
+api2   | {"level":30,"time":1755542592573,"pid":1,"hostname":"api2","reqId":"req-18","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45932},"msg":"incoming request"}
+api2   | {"level":30,"time":1755542592573,"pid":1,"hostname":"api2","reqId":"req-18","res":{"statusCode":202},"responseTime":0.24778896570205688,"msg":"request completed"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542592578,"pid":1,"hostname":"api1","reqId":"req-19","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36204},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542592578,"pid":1,"hostname":"api1","reqId":"req-19","res":{"statusCode":202},"responseTime":0.2717199921607971,"msg":"request completed"}
+api2   | {"level":30,"time":1755542592584,"pid":1,"hostname":"api2","reqId":"req-19","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45940},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542592585,"pid":1,"hostname":"api2","reqId":"req-19","res":{"statusCode":202},"responseTime":0.2334580421447754,"msg":"request completed"}
+api1   | {"level":30,"time":1755542592589,"pid":1,"hostname":"api1","reqId":"req-1a","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36220},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542592589,"pid":1,"hostname":"api1","reqId":"req-1a","res":{"statusCode":202},"responseTime":0.25018900632858276,"msg":"request completed"}
+api2   | {"level":30,"time":1755542592593,"pid":1,"hostname":"api2","reqId":"req-1a","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45956},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542592593,"pid":1,"hostname":"api2","reqId":"req-1a","res":{"statusCode":202},"responseTime":0.26044899225234985,"msg":"request completed"}
+api1   | {"level":30,"time":1755542592600,"pid":1,"hostname":"api1","reqId":"req-1b","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36222},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542592601,"pid":1,"hostname":"api1","reqId":"req-1b","res":{"statusCode":202},"responseTime":0.3938329815864563,"msg":"request completed"}
+api2   | {"level":30,"time":1755542593054,"pid":1,"hostname":"api2","reqId":"req-1b","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45970},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542593055,"pid":1,"hostname":"api2","reqId":"req-1b","res":{"statusCode":202},"responseTime":0.33152198791503906,"msg":"request completed"}
+api1   | {"level":30,"time":1755542593060,"pid":1,"hostname":"api1","reqId":"req-1c","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36226},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542593061,"pid":1,"hostname":"api1","reqId":"req-1c","res":{"statusCode":202},"responseTime":0.3248720169067383,"msg":"request completed"}
+api2   | {"level":30,"time":1755542593065,"pid":1,"hostname":"api2","reqId":"req-1c","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45976},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542593065,"pid":1,"hostname":"api2","reqId":"req-1c","res":{"statusCode":202},"responseTime":0.25741899013519287,"msg":"request completed"}
+api1   | {"level":30,"time":1755542593070,"pid":1,"hostname":"api1","reqId":"req-1d","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36236},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542593070,"pid":1,"hostname":"api1","reqId":"req-1d","res":{"statusCode":202},"responseTime":0.2702999711036682,"msg":"request completed"}
+api2   | {"level":30,"time":1755542593076,"pid":1,"hostname":"api2","reqId":"req-1d","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":45992},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542593077,"pid":1,"hostname":"api2","reqId":"req-1d","res":{"statusCode":202},"responseTime":0.4146040081977844,"msg":"request completed"}
+api1   | {"level":30,"time":1755542593082,"pid":1,"hostname":"api1","reqId":"req-1e","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36250},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542593082,"pid":1,"hostname":"api1","reqId":"req-1e","res":{"statusCode":202},"responseTime":0.2612290382385254,"msg":"request completed"}
+api2   | {"level":30,"time":1755542593086,"pid":1,"hostname":"api2","reqId":"req-1e","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46000},"msg":"incoming request"}
+api2   | {"level":30,"time":1755542593086,"pid":1,"hostname":"api2","reqId":"req-1e","res":{"statusCode":202},"responseTime":0.2892400026321411,"msg":"request completed"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542593089,"pid":1,"hostname":"api1","reqId":"req-1f","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36264},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542593090,"pid":1,"hostname":"api1","reqId":"req-1f","res":{"statusCode":202},"responseTime":0.3120099902153015,"msg":"request completed"}
+api2   | {"level":30,"time":1755542593097,"pid":1,"hostname":"api2","reqId":"req-1f","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46008},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542593097,"pid":1,"hostname":"api2","reqId":"req-1f","res":{"statusCode":202},"responseTime":0.24789798259735107,"msg":"request completed"}
+api1   | {"level":30,"time":1755542593126,"pid":1,"hostname":"api1","reqId":"req-1g","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36266},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542593126,"pid":1,"hostname":"api1","reqId":"req-1g","res":{"statusCode":202},"responseTime":0.38630300760269165,"msg":"request completed"}
+api2   | {"level":30,"time":1755542593553,"pid":1,"hostname":"api2","reqId":"req-1g","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46016},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542593553,"pid":1,"hostname":"api2","reqId":"req-1g","res":{"statusCode":202},"responseTime":0.32745200395584106,"msg":"request completed"}
+api1   | {"level":30,"time":1755542593559,"pid":1,"hostname":"api1","reqId":"req-1h","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36278},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542593559,"pid":1,"hostname":"api1","reqId":"req-1h","res":{"statusCode":202},"responseTime":0.2927500009536743,"msg":"request completed"}
+api2   | {"level":30,"time":1755542593564,"pid":1,"hostname":"api2","reqId":"req-1h","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46022},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542593564,"pid":1,"hostname":"api2","reqId":"req-1h","res":{"statusCode":202},"responseTime":0.29131096601486206,"msg":"request completed"}
+api1   | {"level":30,"time":1755542593569,"pid":1,"hostname":"api1","reqId":"req-1i","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36286},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542593570,"pid":1,"hostname":"api1","reqId":"req-1i","res":{"statusCode":202},"responseTime":0.2671089768409729,"msg":"request completed"}
+api2   | {"level":30,"time":1755542593575,"pid":1,"hostname":"api2","reqId":"req-1i","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46026},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542593575,"pid":1,"hostname":"api2","reqId":"req-1i","res":{"statusCode":202},"responseTime":0.24684804677963257,"msg":"request completed"}
+api1   | {"level":30,"time":1755542593580,"pid":1,"hostname":"api1","reqId":"req-1j","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36288},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542593580,"pid":1,"hostname":"api1","reqId":"req-1j","res":{"statusCode":202},"responseTime":0.27359896898269653,"msg":"request completed"}
+api2   | {"level":30,"time":1755542593586,"pid":1,"hostname":"api2","reqId":"req-1j","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46038},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542593587,"pid":1,"hostname":"api2","reqId":"req-1j","res":{"statusCode":202},"responseTime":0.23653805255889893,"msg":"request completed"}
+api1   | {"level":30,"time":1755542593591,"pid":1,"hostname":"api1","reqId":"req-1k","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36296},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542593591,"pid":1,"hostname":"api1","reqId":"req-1k","res":{"statusCode":202},"responseTime":0.24772900342941284,"msg":"request completed"}
+api2   | {"level":30,"time":1755542593595,"pid":1,"hostname":"api2","reqId":"req-1k","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46052},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542593595,"pid":1,"hostname":"api2","reqId":"req-1k","res":{"statusCode":202},"responseTime":0.29552096128463745,"msg":"request completed"}
+api1   | {"level":30,"time":1755542593602,"pid":1,"hostname":"api1","reqId":"req-1l","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36304},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542593603,"pid":1,"hostname":"api1","reqId":"req-1l","res":{"statusCode":202},"responseTime":0.2495579719543457,"msg":"request completed"}
+api2   | {"level":30,"time":1755542594051,"pid":1,"hostname":"api2","reqId":"req-1l","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46060},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542594052,"pid":1,"hostname":"api2","reqId":"req-1l","res":{"statusCode":202},"responseTime":0.3331509828567505,"msg":"request completed"}
+api1   | {"level":30,"time":1755542594057,"pid":1,"hostname":"api1","reqId":"req-1m","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36316},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542594057,"pid":1,"hostname":"api1","reqId":"req-1m","res":{"statusCode":202},"responseTime":0.36451297998428345,"msg":"request completed"}
+api2   | {"level":30,"time":1755542594062,"pid":1,"hostname":"api2","reqId":"req-1m","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46064},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542594062,"pid":1,"hostname":"api2","reqId":"req-1m","res":{"statusCode":202},"responseTime":0.2492079734802246,"msg":"request completed"}
+api1   | {"level":30,"time":1755542594066,"pid":1,"hostname":"api1","reqId":"req-1n","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36320},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542594067,"pid":1,"hostname":"api1","reqId":"req-1n","res":{"statusCode":202},"responseTime":0.2687499523162842,"msg":"request completed"}
+api2   | {"level":30,"time":1755542594072,"pid":1,"hostname":"api2","reqId":"req-1n","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46078},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542594072,"pid":1,"hostname":"api2","reqId":"req-1n","res":{"statusCode":202},"responseTime":0.3202509880065918,"msg":"request completed"}
+api1   | {"level":30,"time":1755542594078,"pid":1,"hostname":"api1","reqId":"req-1o","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36328},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542594079,"pid":1,"hostname":"api1","reqId":"req-1o","res":{"statusCode":202},"responseTime":0.2662389874458313,"msg":"request completed"}
+api2   | {"level":30,"time":1755542594083,"pid":1,"hostname":"api2","reqId":"req-1o","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46092},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542594084,"pid":1,"hostname":"api2","reqId":"req-1o","res":{"statusCode":202},"responseTime":0.26750898361206055,"msg":"request completed"}
+api1   | {"level":30,"time":1755542594088,"pid":1,"hostname":"api1","reqId":"req-1p","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36332},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542594088,"pid":1,"hostname":"api1","reqId":"req-1p","res":{"statusCode":202},"responseTime":0.2664390206336975,"msg":"request completed"}
+api2   | {"level":30,"time":1755542594091,"pid":1,"hostname":"api2","reqId":"req-1p","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46106},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542594091,"pid":1,"hostname":"api2","reqId":"req-1p","res":{"statusCode":202},"responseTime":0.2371479868888855,"msg":"request completed"}
+api1   | {"level":30,"time":1755542594099,"pid":1,"hostname":"api1","reqId":"req-1q","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36344},"msg":"incoming request"}
+api2   | {"level":30,"time":1755542594099,"pid":1,"hostname":"api2","reqId":"req-1q","req":{"method":"GET","url":"/payments-summary?from=2025-08-18T18:42:59.098Z&to=2025-08-18T18:43:12.098Z","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46112},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542594100,"pid":1,"hostname":"api1","reqId":"req-1q","res":{"statusCode":202},"responseTime":0.7645959854125977,"msg":"request completed"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:14 +0000] "GET /payments-summary?from=2025-08-18T18:42:59.098Z&to=2025-08-18T18:43:12.098Z HTTP/1.1" 200 98 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542594104,"pid":1,"hostname":"api2","reqId":"req-1q","res":{"statusCode":200},"responseTime":4.713273048400879,"msg":"request completed"}
+api1   | {"level":30,"time":1755542594127,"pid":1,"hostname":"api1","reqId":"req-1r","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36350},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542594128,"pid":1,"hostname":"api1","reqId":"req-1r","res":{"statusCode":202},"responseTime":0.6033009886741638,"msg":"request completed"}
+api2   | {"level":30,"time":1755542594549,"pid":1,"hostname":"api2","reqId":"req-1r","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46116},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542594550,"pid":1,"hostname":"api2","reqId":"req-1r","res":{"statusCode":202},"responseTime":0.5151380300521851,"msg":"request completed"}
+api1   | {"level":30,"time":1755542594555,"pid":1,"hostname":"api1","reqId":"req-1s","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36362},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542594555,"pid":1,"hostname":"api1","reqId":"req-1s","res":{"statusCode":202},"responseTime":0.3567720055580139,"msg":"request completed"}
+api2   | {"level":30,"time":1755542594560,"pid":1,"hostname":"api2","reqId":"req-1s","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46130},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542594561,"pid":1,"hostname":"api2","reqId":"req-1s","res":{"statusCode":202},"responseTime":0.2889900207519531,"msg":"request completed"}
+api1   | {"level":30,"time":1755542594566,"pid":1,"hostname":"api1","reqId":"req-1t","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36370},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542594566,"pid":1,"hostname":"api1","reqId":"req-1t","res":{"statusCode":202},"responseTime":0.4015039801597595,"msg":"request completed"}
+api2   | {"level":30,"time":1755542594571,"pid":1,"hostname":"api2","reqId":"req-1t","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46134},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542594572,"pid":1,"hostname":"api2","reqId":"req-1t","res":{"statusCode":202},"responseTime":0.27748000621795654,"msg":"request completed"}
+api1   | {"level":30,"time":1755542594576,"pid":1,"hostname":"api1","reqId":"req-1u","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36384},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542594577,"pid":1,"hostname":"api1","reqId":"req-1u","res":{"statusCode":202},"responseTime":0.25192904472351074,"msg":"request completed"}
+api2   | {"level":30,"time":1755542594582,"pid":1,"hostname":"api2","reqId":"req-1u","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46146},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542594582,"pid":1,"hostname":"api2","reqId":"req-1u","res":{"statusCode":202},"responseTime":0.302170991897583,"msg":"request completed"}
+api1   | {"level":30,"time":1755542594588,"pid":1,"hostname":"api1","reqId":"req-1v","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36396},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542594588,"pid":1,"hostname":"api1","reqId":"req-1v","res":{"statusCode":202},"responseTime":0.2529280185699463,"msg":"request completed"}
+api2   | {"level":30,"time":1755542594592,"pid":1,"hostname":"api2","reqId":"req-1v","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46152},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542594593,"pid":1,"hostname":"api2","reqId":"req-1v","res":{"statusCode":202},"responseTime":0.25887900590896606,"msg":"request completed"}
+api1   | {"level":30,"time":1755542594597,"pid":1,"hostname":"api1","reqId":"req-1w","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36398},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542594597,"pid":1,"hostname":"api1","reqId":"req-1w","res":{"statusCode":202},"responseTime":0.2473980188369751,"msg":"request completed"}
+api2   | {"level":30,"time":1755542594604,"pid":1,"hostname":"api2","reqId":"req-1w","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46162},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542594604,"pid":1,"hostname":"api2","reqId":"req-1w","res":{"statusCode":202},"responseTime":0.2539290189743042,"msg":"request completed"}
+api1   | {"level":30,"time":1755542595048,"pid":1,"hostname":"api1","reqId":"req-1x","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36400},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542595048,"pid":1,"hostname":"api1","reqId":"req-1x","res":{"statusCode":202},"responseTime":0.3289009928703308,"msg":"request completed"}
+api2   | {"level":30,"time":1755542595053,"pid":1,"hostname":"api2","reqId":"req-1x","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46168},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542595054,"pid":1,"hostname":"api2","reqId":"req-1x","res":{"statusCode":202},"responseTime":0.3360520005226135,"msg":"request completed"}
+api1   | {"level":30,"time":1755542595059,"pid":1,"hostname":"api1","reqId":"req-1y","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36402},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542595059,"pid":1,"hostname":"api1","reqId":"req-1y","res":{"statusCode":202},"responseTime":0.28123998641967773,"msg":"request completed"}
+api2   | {"level":30,"time":1755542595064,"pid":1,"hostname":"api2","reqId":"req-1y","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46182},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542595065,"pid":1,"hostname":"api2","reqId":"req-1y","res":{"statusCode":202},"responseTime":0.26050901412963867,"msg":"request completed"}
+api1   | {"level":30,"time":1755542595069,"pid":1,"hostname":"api1","reqId":"req-1z","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36406},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542595069,"pid":1,"hostname":"api1","reqId":"req-1z","res":{"statusCode":202},"responseTime":0.26698899269104004,"msg":"request completed"}
+api2   | {"level":30,"time":1755542595074,"pid":1,"hostname":"api2","reqId":"req-1z","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46198},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542595075,"pid":1,"hostname":"api2","reqId":"req-1z","res":{"statusCode":202},"responseTime":0.26205897331237793,"msg":"request completed"}
+api1   | {"level":30,"time":1755542595080,"pid":1,"hostname":"api1","reqId":"req-20","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36422},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542595080,"pid":1,"hostname":"api1","reqId":"req-20","res":{"statusCode":202},"responseTime":0.22821801900863647,"msg":"request completed"}
+api2   | {"level":30,"time":1755542595085,"pid":1,"hostname":"api2","reqId":"req-20","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46200},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542595085,"pid":1,"hostname":"api2","reqId":"req-20","res":{"statusCode":202},"responseTime":0.2569790482521057,"msg":"request completed"}
+api1   | {"level":30,"time":1755542595089,"pid":1,"hostname":"api1","reqId":"req-21","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36438},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542595090,"pid":1,"hostname":"api1","reqId":"req-21","res":{"statusCode":202},"responseTime":0.31773102283477783,"msg":"request completed"}
+api2   | {"level":30,"time":1755542595093,"pid":1,"hostname":"api2","reqId":"req-21","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46204},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542595093,"pid":1,"hostname":"api2","reqId":"req-21","res":{"statusCode":202},"responseTime":0.35606199502944946,"msg":"request completed"}
+api1   | {"level":30,"time":1755542595100,"pid":1,"hostname":"api1","reqId":"req-22","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36452},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542595101,"pid":1,"hostname":"api1","reqId":"req-22","res":{"statusCode":202},"responseTime":0.23798799514770508,"msg":"request completed"}
+api2   | {"level":30,"time":1755542595129,"pid":1,"hostname":"api2","reqId":"req-22","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46208},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542595129,"pid":1,"hostname":"api2","reqId":"req-22","res":{"statusCode":202},"responseTime":0.2920699715614319,"msg":"request completed"}
+api1   | {"level":30,"time":1755542595546,"pid":1,"hostname":"api1","reqId":"req-23","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36460},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542595546,"pid":1,"hostname":"api1","reqId":"req-23","res":{"statusCode":202},"responseTime":0.2953310012817383,"msg":"request completed"}
+api2   | {"level":30,"time":1755542595551,"pid":1,"hostname":"api2","reqId":"req-23","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46214},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542595552,"pid":1,"hostname":"api2","reqId":"req-23","res":{"statusCode":202},"responseTime":0.3302319645881653,"msg":"request completed"}
+api1   | {"level":30,"time":1755542595557,"pid":1,"hostname":"api1","reqId":"req-24","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36470},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542595557,"pid":1,"hostname":"api1","reqId":"req-24","res":{"statusCode":202},"responseTime":0.22853797674179077,"msg":"request completed"}
+api2   | {"level":30,"time":1755542595562,"pid":1,"hostname":"api2","reqId":"req-24","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46230},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542595562,"pid":1,"hostname":"api2","reqId":"req-24","res":{"statusCode":202},"responseTime":0.3263710141181946,"msg":"request completed"}
+api1   | {"level":30,"time":1755542595567,"pid":1,"hostname":"api1","reqId":"req-25","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36472},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542595568,"pid":1,"hostname":"api1","reqId":"req-25","res":{"statusCode":202},"responseTime":0.225227952003479,"msg":"request completed"}
+api2   | {"level":30,"time":1755542595573,"pid":1,"hostname":"api2","reqId":"req-25","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46236},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542595573,"pid":1,"hostname":"api2","reqId":"req-25","res":{"statusCode":202},"responseTime":0.2573789954185486,"msg":"request completed"}
+api1   | {"level":30,"time":1755542595578,"pid":1,"hostname":"api1","reqId":"req-26","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36484},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542595578,"pid":1,"hostname":"api1","reqId":"req-26","res":{"statusCode":202},"responseTime":0.25689899921417236,"msg":"request completed"}
+api2   | {"level":30,"time":1755542595583,"pid":1,"hostname":"api2","reqId":"req-26","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46244},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542595584,"pid":1,"hostname":"api2","reqId":"req-26","res":{"statusCode":202},"responseTime":0.41831398010253906,"msg":"request completed"}
+api1   | {"level":30,"time":1755542595590,"pid":1,"hostname":"api1","reqId":"req-27","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36494},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542595590,"pid":1,"hostname":"api1","reqId":"req-27","res":{"statusCode":202},"responseTime":0.2111479640007019,"msg":"request completed"}
+api2   | {"level":30,"time":1755542595595,"pid":1,"hostname":"api2","reqId":"req-27","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46258},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542595595,"pid":1,"hostname":"api2","reqId":"req-27","res":{"statusCode":202},"responseTime":0.24745899438858032,"msg":"request completed"}
+api1   | {"level":30,"time":1755542595598,"pid":1,"hostname":"api1","reqId":"req-28","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36504},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542595598,"pid":1,"hostname":"api1","reqId":"req-28","res":{"statusCode":202},"responseTime":0.26055896282196045,"msg":"request completed"}
+api2   | {"level":30,"time":1755542595605,"pid":1,"hostname":"api2","reqId":"req-28","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":46270},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542595606,"pid":1,"hostname":"api2","reqId":"req-28","res":{"statusCode":202},"responseTime":0.28172004222869873,"msg":"request completed"}
+api1   | {"level":30,"time":1755542596044,"pid":1,"hostname":"api1","reqId":"req-29","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36590},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542596045,"pid":1,"hostname":"api1","reqId":"req-29","res":{"statusCode":202},"responseTime":0.32457101345062256,"msg":"request completed"}
+api2   | {"level":30,"time":1755542596050,"pid":1,"hostname":"api2","reqId":"req-29","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":59964},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542596050,"pid":1,"hostname":"api2","reqId":"req-29","res":{"statusCode":202},"responseTime":0.31912100315093994,"msg":"request completed"}
+api1   | {"level":30,"time":1755542596055,"pid":1,"hostname":"api1","reqId":"req-2a","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36602},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542596056,"pid":1,"hostname":"api1","reqId":"req-2a","res":{"statusCode":202},"responseTime":0.5717290043830872,"msg":"request completed"}
+api2   | {"level":30,"time":1755542596061,"pid":1,"hostname":"api2","reqId":"req-2a","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":59974},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542596061,"pid":1,"hostname":"api2","reqId":"req-2a","res":{"statusCode":202},"responseTime":0.3599420189857483,"msg":"request completed"}
+api1   | {"level":30,"time":1755542596066,"pid":1,"hostname":"api1","reqId":"req-2b","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36608},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542596067,"pid":1,"hostname":"api1","reqId":"req-2b","res":{"statusCode":202},"responseTime":0.24781900644302368,"msg":"request completed"}
+api2   | {"level":30,"time":1755542596071,"pid":1,"hostname":"api2","reqId":"req-2b","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":59976},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542596071,"pid":1,"hostname":"api2","reqId":"req-2b","res":{"statusCode":202},"responseTime":0.3298410177230835,"msg":"request completed"}
+api1   | {"level":30,"time":1755542596076,"pid":1,"hostname":"api1","reqId":"req-2c","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36616},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542596076,"pid":1,"hostname":"api1","reqId":"req-2c","res":{"statusCode":202},"responseTime":0.30883997678756714,"msg":"request completed"}
+api2   | {"level":30,"time":1755542596081,"pid":1,"hostname":"api2","reqId":"req-2c","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":59984},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542596082,"pid":1,"hostname":"api2","reqId":"req-2c","res":{"statusCode":202},"responseTime":0.23955798149108887,"msg":"request completed"}
+api1   | {"level":30,"time":1755542596087,"pid":1,"hostname":"api1","reqId":"req-2d","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36626},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542596087,"pid":1,"hostname":"api1","reqId":"req-2d","res":{"statusCode":202},"responseTime":0.2268579602241516,"msg":"request completed"}
+api2   | {"level":30,"time":1755542596091,"pid":1,"hostname":"api2","reqId":"req-2d","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":59996},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542596091,"pid":1,"hostname":"api2","reqId":"req-2d","res":{"statusCode":202},"responseTime":0.23702800273895264,"msg":"request completed"}
+api1   | {"level":30,"time":1755542596095,"pid":1,"hostname":"api1","reqId":"req-2e","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36630},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542596095,"pid":1,"hostname":"api1","reqId":"req-2e","res":{"statusCode":202},"responseTime":0.24709796905517578,"msg":"request completed"}
+api2   | {"level":30,"time":1755542596102,"pid":1,"hostname":"api2","reqId":"req-2e","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60002},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542596103,"pid":1,"hostname":"api2","reqId":"req-2e","res":{"statusCode":202},"responseTime":0.24660897254943848,"msg":"request completed"}
+api1   | {"level":30,"time":1755542596131,"pid":1,"hostname":"api1","reqId":"req-2f","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36634},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542596131,"pid":1,"hostname":"api1","reqId":"req-2f","res":{"statusCode":202},"responseTime":0.22131705284118652,"msg":"request completed"}
+api2   | {"level":30,"time":1755542596542,"pid":1,"hostname":"api2","reqId":"req-2f","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60016},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542596543,"pid":1,"hostname":"api2","reqId":"req-2f","res":{"statusCode":202},"responseTime":0.28314000368118286,"msg":"request completed"}
+api1   | {"level":30,"time":1755542596548,"pid":1,"hostname":"api1","reqId":"req-2g","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36638},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542596548,"pid":1,"hostname":"api1","reqId":"req-2g","res":{"statusCode":202},"responseTime":0.29516005516052246,"msg":"request completed"}
+api2   | {"level":30,"time":1755542596553,"pid":1,"hostname":"api2","reqId":"req-2g","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60024},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542596554,"pid":1,"hostname":"api2","reqId":"req-2g","res":{"statusCode":202},"responseTime":0.22972798347473145,"msg":"request completed"}
+api1   | {"level":30,"time":1755542596559,"pid":1,"hostname":"api1","reqId":"req-2h","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36652},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542596559,"pid":1,"hostname":"api1","reqId":"req-2h","res":{"statusCode":202},"responseTime":0.22867697477340698,"msg":"request completed"}
+api2   | {"level":30,"time":1755542596564,"pid":1,"hostname":"api2","reqId":"req-2h","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60038},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542596564,"pid":1,"hostname":"api2","reqId":"req-2h","res":{"statusCode":202},"responseTime":0.2638290524482727,"msg":"request completed"}
+api1   | {"level":30,"time":1755542596569,"pid":1,"hostname":"api1","reqId":"req-2i","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36656},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542596570,"pid":1,"hostname":"api1","reqId":"req-2i","res":{"statusCode":202},"responseTime":0.23077696561813354,"msg":"request completed"}
+api2   | {"level":30,"time":1755542596575,"pid":1,"hostname":"api2","reqId":"req-2i","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60042},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542596575,"pid":1,"hostname":"api2","reqId":"req-2i","res":{"statusCode":202},"responseTime":0.2185879945755005,"msg":"request completed"}
+api1   | {"level":30,"time":1755542596580,"pid":1,"hostname":"api1","reqId":"req-2j","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36672},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542596580,"pid":1,"hostname":"api1","reqId":"req-2j","res":{"statusCode":202},"responseTime":0.21339797973632812,"msg":"request completed"}
+api2   | {"level":30,"time":1755542596585,"pid":1,"hostname":"api2","reqId":"req-2j","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60048},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542596585,"pid":1,"hostname":"api2","reqId":"req-2j","res":{"statusCode":202},"responseTime":0.24103796482086182,"msg":"request completed"}
+api1   | {"level":30,"time":1755542596591,"pid":1,"hostname":"api1","reqId":"req-2k","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36686},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542596592,"pid":1,"hostname":"api1","reqId":"req-2k","res":{"statusCode":202},"responseTime":0.224357008934021,"msg":"request completed"}
+api2   | {"level":30,"time":1755542596597,"pid":1,"hostname":"api2","reqId":"req-2k","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60050},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542596597,"pid":1,"hostname":"api2","reqId":"req-2k","res":{"statusCode":202},"responseTime":0.22510701417922974,"msg":"request completed"}
+api1   | {"level":30,"time":1755542596600,"pid":1,"hostname":"api1","reqId":"req-2l","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36694},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542596600,"pid":1,"hostname":"api1","reqId":"req-2l","res":{"statusCode":202},"responseTime":0.3491210341453552,"msg":"request completed"}
+api2   | {"level":30,"time":1755542596607,"pid":1,"hostname":"api2","reqId":"req-2l","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60066},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542596608,"pid":1,"hostname":"api2","reqId":"req-2l","res":{"statusCode":202},"responseTime":0.4168739914894104,"msg":"request completed"}
+api1   | {"level":30,"time":1755542597041,"pid":1,"hostname":"api1","reqId":"req-2m","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36708},"msg":"incoming request"}
+api1   | {"level":30,"time":1755542597042,"pid":1,"hostname":"api1","reqId":"req-2m","res":{"statusCode":202},"responseTime":0.49054598808288574,"msg":"request completed"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542597047,"pid":1,"hostname":"api2","reqId":"req-2m","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60074},"msg":"incoming request"}
+api2   | {"level":30,"time":1755542597047,"pid":1,"hostname":"api2","reqId":"req-2m","res":{"statusCode":202},"responseTime":0.31022000312805176,"msg":"request completed"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542597051,"pid":1,"hostname":"api1","reqId":"req-2n","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36712},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542597052,"pid":1,"hostname":"api1","reqId":"req-2n","res":{"statusCode":202},"responseTime":0.2902500033378601,"msg":"request completed"}
+api2   | {"level":30,"time":1755542597057,"pid":1,"hostname":"api2","reqId":"req-2n","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60086},"msg":"incoming request"}
+api2   | {"level":30,"time":1755542597057,"pid":1,"hostname":"api2","reqId":"req-2n","res":{"statusCode":202},"responseTime":0.25321799516677856,"msg":"request completed"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542597062,"pid":1,"hostname":"api1","reqId":"req-2o","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36714},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542597063,"pid":1,"hostname":"api1","reqId":"req-2o","res":{"statusCode":202},"responseTime":0.22120797634124756,"msg":"request completed"}
+api2   | {"level":30,"time":1755542597068,"pid":1,"hostname":"api2","reqId":"req-2o","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60092},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542597068,"pid":1,"hostname":"api2","reqId":"req-2o","res":{"statusCode":202},"responseTime":0.25234901905059814,"msg":"request completed"}
+api1   | {"level":30,"time":1755542597072,"pid":1,"hostname":"api1","reqId":"req-2p","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36720},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542597073,"pid":1,"hostname":"api1","reqId":"req-2p","res":{"statusCode":202},"responseTime":0.221157968044281,"msg":"request completed"}
+api2   | {"level":30,"time":1755542597078,"pid":1,"hostname":"api2","reqId":"req-2p","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60106},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542597078,"pid":1,"hostname":"api2","reqId":"req-2p","res":{"statusCode":202},"responseTime":0.31296998262405396,"msg":"request completed"}
+api1   | {"level":30,"time":1755542597083,"pid":1,"hostname":"api1","reqId":"req-2q","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36734},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542597083,"pid":1,"hostname":"api1","reqId":"req-2q","res":{"statusCode":202},"responseTime":0.23129802942276,"msg":"request completed"}
+api2   | {"level":30,"time":1755542597088,"pid":1,"hostname":"api2","reqId":"req-2q","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60122},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542597089,"pid":1,"hostname":"api2","reqId":"req-2q","res":{"statusCode":202},"responseTime":0.33910101652145386,"msg":"request completed"}
+api1   | {"level":30,"time":1755542597092,"pid":1,"hostname":"api1","reqId":"req-2r","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36748},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542597093,"pid":1,"hostname":"api1","reqId":"req-2r","res":{"statusCode":202},"responseTime":0.1978759765625,"msg":"request completed"}
+api2   | {"level":30,"time":1755542597097,"pid":1,"hostname":"api2","reqId":"req-2r","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60130},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542597097,"pid":1,"hostname":"api2","reqId":"req-2r","res":{"statusCode":202},"responseTime":0.21349698305130005,"msg":"request completed"}
+api1   | {"level":30,"time":1755542597104,"pid":1,"hostname":"api1","reqId":"req-2s","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36760},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542597104,"pid":1,"hostname":"api1","reqId":"req-2s","res":{"statusCode":202},"responseTime":0.23895800113677979,"msg":"request completed"}
+api2   | {"level":30,"time":1755542597132,"pid":1,"hostname":"api2","reqId":"req-2s","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60144},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542597133,"pid":1,"hostname":"api2","reqId":"req-2s","res":{"statusCode":202},"responseTime":0.21970701217651367,"msg":"request completed"}
+api1   | {"level":30,"time":1755542597539,"pid":1,"hostname":"api1","reqId":"req-2t","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36776},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542597540,"pid":1,"hostname":"api1","reqId":"req-2t","res":{"statusCode":202},"responseTime":0.2552880048751831,"msg":"request completed"}
+api2   | {"level":30,"time":1755542597545,"pid":1,"hostname":"api2","reqId":"req-2t","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60148},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542597545,"pid":1,"hostname":"api2","reqId":"req-2t","res":{"statusCode":202},"responseTime":0.25213801860809326,"msg":"request completed"}
+api1   | {"level":30,"time":1755542597550,"pid":1,"hostname":"api1","reqId":"req-2u","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36784},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542597550,"pid":1,"hostname":"api1","reqId":"req-2u","res":{"statusCode":202},"responseTime":0.21728801727294922,"msg":"request completed"}
+api2   | {"level":30,"time":1755542597555,"pid":1,"hostname":"api2","reqId":"req-2u","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60164},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542597556,"pid":1,"hostname":"api2","reqId":"req-2u","res":{"statusCode":202},"responseTime":0.20563703775405884,"msg":"request completed"}
+api1   | {"level":30,"time":1755542597561,"pid":1,"hostname":"api1","reqId":"req-2v","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36790},"msg":"incoming request"}
+api1   | {"level":30,"time":1755542597561,"pid":1,"hostname":"api1","reqId":"req-2v","res":{"statusCode":202},"responseTime":0.20678699016571045,"msg":"request completed"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542597566,"pid":1,"hostname":"api2","reqId":"req-2v","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60174},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542597566,"pid":1,"hostname":"api2","reqId":"req-2v","res":{"statusCode":202},"responseTime":0.20425701141357422,"msg":"request completed"}
+api1   | {"level":30,"time":1755542597571,"pid":1,"hostname":"api1","reqId":"req-2w","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36792},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542597572,"pid":1,"hostname":"api1","reqId":"req-2w","res":{"statusCode":202},"responseTime":0.21662700176239014,"msg":"request completed"}
+api2   | {"level":30,"time":1755542597576,"pid":1,"hostname":"api2","reqId":"req-2w","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60178},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542597576,"pid":1,"hostname":"api2","reqId":"req-2w","res":{"statusCode":202},"responseTime":0.20558702945709229,"msg":"request completed"}
+api1   | {"level":30,"time":1755542597581,"pid":1,"hostname":"api1","reqId":"req-2x","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36794},"msg":"incoming request"}
+api1   | {"level":30,"time":1755542597581,"pid":1,"hostname":"api1","reqId":"req-2x","res":{"statusCode":202},"responseTime":0.1905360221862793,"msg":"request completed"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542597586,"pid":1,"hostname":"api2","reqId":"req-2x","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60182},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542597587,"pid":1,"hostname":"api2","reqId":"req-2x","res":{"statusCode":202},"responseTime":0.21182698011398315,"msg":"request completed"}
+api1   | {"level":30,"time":1755542597593,"pid":1,"hostname":"api1","reqId":"req-2y","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36806},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542597593,"pid":1,"hostname":"api1","reqId":"req-2y","res":{"statusCode":202},"responseTime":0.19989699125289917,"msg":"request completed"}
+api2   | {"level":30,"time":1755542597599,"pid":1,"hostname":"api2","reqId":"req-2y","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60194},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542597599,"pid":1,"hostname":"api2","reqId":"req-2y","res":{"statusCode":202},"responseTime":0.21130698919296265,"msg":"request completed"}
+api1   | {"level":30,"time":1755542597602,"pid":1,"hostname":"api1","reqId":"req-2z","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36816},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542597603,"pid":1,"hostname":"api1","reqId":"req-2z","res":{"statusCode":202},"responseTime":0.46967601776123047,"msg":"request completed"}
+api2   | {"level":30,"time":1755542597610,"pid":1,"hostname":"api2","reqId":"req-2z","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60202},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542597610,"pid":1,"hostname":"api2","reqId":"req-2z","res":{"statusCode":202},"responseTime":0.6182209849357605,"msg":"request completed"}
+api1   | {"level":30,"time":1755542598037,"pid":1,"hostname":"api1","reqId":"req-30","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36832},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542598038,"pid":1,"hostname":"api1","reqId":"req-30","res":{"statusCode":202},"responseTime":0.2861499786376953,"msg":"request completed"}
+api2   | {"level":30,"time":1755542598043,"pid":1,"hostname":"api2","reqId":"req-30","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60208},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542598043,"pid":1,"hostname":"api2","reqId":"req-30","res":{"statusCode":202},"responseTime":0.2835500240325928,"msg":"request completed"}
+api1   | {"level":30,"time":1755542598049,"pid":1,"hostname":"api1","reqId":"req-31","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36844},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542598049,"pid":1,"hostname":"api1","reqId":"req-31","res":{"statusCode":202},"responseTime":0.27229905128479004,"msg":"request completed"}
+api2   | {"level":30,"time":1755542598053,"pid":1,"hostname":"api2","reqId":"req-31","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60218},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542598054,"pid":1,"hostname":"api2","reqId":"req-31","res":{"statusCode":202},"responseTime":0.22014695405960083,"msg":"request completed"}
+api1   | {"level":30,"time":1755542598059,"pid":1,"hostname":"api1","reqId":"req-32","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36854},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542598059,"pid":1,"hostname":"api1","reqId":"req-32","res":{"statusCode":202},"responseTime":0.24417799711227417,"msg":"request completed"}
+api2   | {"level":30,"time":1755542598064,"pid":1,"hostname":"api2","reqId":"req-32","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60220},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542598065,"pid":1,"hostname":"api2","reqId":"req-32","res":{"statusCode":202},"responseTime":0.2505989670753479,"msg":"request completed"}
+api1   | {"level":30,"time":1755542598070,"pid":1,"hostname":"api1","reqId":"req-33","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36870},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542598070,"pid":1,"hostname":"api1","reqId":"req-33","res":{"statusCode":202},"responseTime":0.19779598712921143,"msg":"request completed"}
+api2   | {"level":30,"time":1755542598074,"pid":1,"hostname":"api2","reqId":"req-33","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60232},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542598074,"pid":1,"hostname":"api2","reqId":"req-33","res":{"statusCode":202},"responseTime":0.21014702320098877,"msg":"request completed"}
+api1   | {"level":30,"time":1755542598079,"pid":1,"hostname":"api1","reqId":"req-34","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36874},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542598079,"pid":1,"hostname":"api1","reqId":"req-34","res":{"statusCode":202},"responseTime":0.38084298372268677,"msg":"request completed"}
+api2   | {"level":30,"time":1755542598084,"pid":1,"hostname":"api2","reqId":"req-34","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60246},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542598085,"pid":1,"hostname":"api2","reqId":"req-34","res":{"statusCode":202},"responseTime":0.21697700023651123,"msg":"request completed"}
+api1   | {"level":30,"time":1755542598090,"pid":1,"hostname":"api1","reqId":"req-35","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36886},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542598090,"pid":1,"hostname":"api1","reqId":"req-35","res":{"statusCode":202},"responseTime":0.1949869990348816,"msg":"request completed"}
+api2   | {"level":30,"time":1755542598094,"pid":1,"hostname":"api2","reqId":"req-35","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60252},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542598094,"pid":1,"hostname":"api2","reqId":"req-35","res":{"statusCode":202},"responseTime":0.22806799411773682,"msg":"request completed"}
+api1   | {"level":30,"time":1755542598098,"pid":1,"hostname":"api1","reqId":"req-36","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36894},"msg":"incoming request"}
+api1   | {"level":30,"time":1755542598098,"pid":1,"hostname":"api1","reqId":"req-36","res":{"statusCode":202},"responseTime":0.1837959885597229,"msg":"request completed"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542598106,"pid":1,"hostname":"api2","reqId":"req-36","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60256},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542598106,"pid":1,"hostname":"api2","reqId":"req-36","res":{"statusCode":202},"responseTime":0.20842701196670532,"msg":"request completed"}
+api1   | {"level":30,"time":1755542598134,"pid":1,"hostname":"api1","reqId":"req-37","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36902},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542598134,"pid":1,"hostname":"api1","reqId":"req-37","res":{"statusCode":202},"responseTime":0.2370780110359192,"msg":"request completed"}
+api2   | {"level":30,"time":1755542598536,"pid":1,"hostname":"api2","reqId":"req-37","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60270},"msg":"incoming request"}
+api2   | {"level":30,"time":1755542598536,"pid":1,"hostname":"api2","reqId":"req-37","res":{"statusCode":202},"responseTime":0.2250380516052246,"msg":"request completed"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542598541,"pid":1,"hostname":"api1","reqId":"req-38","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36910},"msg":"incoming request"}
+api1   | {"level":30,"time":1755542598542,"pid":1,"hostname":"api1","reqId":"req-38","res":{"statusCode":202},"responseTime":0.31233102083206177,"msg":"request completed"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542598547,"pid":1,"hostname":"api2","reqId":"req-38","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60276},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542598547,"pid":1,"hostname":"api2","reqId":"req-38","res":{"statusCode":202},"responseTime":0.2678489685058594,"msg":"request completed"}
+api1   | {"level":30,"time":1755542598552,"pid":1,"hostname":"api1","reqId":"req-39","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36918},"msg":"incoming request"}
+api1   | {"level":30,"time":1755542598553,"pid":1,"hostname":"api1","reqId":"req-39","res":{"statusCode":202},"responseTime":0.3010600209236145,"msg":"request completed"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542598558,"pid":1,"hostname":"api2","reqId":"req-39","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60290},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542598558,"pid":1,"hostname":"api2","reqId":"req-39","res":{"statusCode":202},"responseTime":0.21857702732086182,"msg":"request completed"}
+api1   | {"level":30,"time":1755542598563,"pid":1,"hostname":"api1","reqId":"req-3a","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36924},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542598563,"pid":1,"hostname":"api1","reqId":"req-3a","res":{"statusCode":202},"responseTime":0.2610490322113037,"msg":"request completed"}
+api2   | {"level":30,"time":1755542598568,"pid":1,"hostname":"api2","reqId":"req-3a","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60292},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542598568,"pid":1,"hostname":"api2","reqId":"req-3a","res":{"statusCode":202},"responseTime":0.22587800025939941,"msg":"request completed"}
+api1   | {"level":30,"time":1755542598573,"pid":1,"hostname":"api1","reqId":"req-3b","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36930},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542598574,"pid":1,"hostname":"api1","reqId":"req-3b","res":{"statusCode":202},"responseTime":0.20802700519561768,"msg":"request completed"}
+api2   | {"level":30,"time":1755542598578,"pid":1,"hostname":"api2","reqId":"req-3b","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60296},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542598578,"pid":1,"hostname":"api2","reqId":"req-3b","res":{"statusCode":202},"responseTime":0.21297699213027954,"msg":"request completed"}
+api1   | {"level":30,"time":1755542598583,"pid":1,"hostname":"api1","reqId":"req-3c","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36932},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542598583,"pid":1,"hostname":"api1","reqId":"req-3c","res":{"statusCode":202},"responseTime":0.28850996494293213,"msg":"request completed"}
+api2   | {"level":30,"time":1755542598588,"pid":1,"hostname":"api2","reqId":"req-3c","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60304},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542598589,"pid":1,"hostname":"api2","reqId":"req-3c","res":{"statusCode":202},"responseTime":0.19154703617095947,"msg":"request completed"}
+api1   | {"level":30,"time":1755542598595,"pid":1,"hostname":"api1","reqId":"req-3d","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36944},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542598595,"pid":1,"hostname":"api1","reqId":"req-3d","res":{"statusCode":202},"responseTime":0.19725698232650757,"msg":"request completed"}
+api2   | {"level":30,"time":1755542598601,"pid":1,"hostname":"api2","reqId":"req-3d","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60318},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542598601,"pid":1,"hostname":"api2","reqId":"req-3d","res":{"statusCode":202},"responseTime":0.21285700798034668,"msg":"request completed"}
+api1   | {"level":30,"time":1755542598604,"pid":1,"hostname":"api1","reqId":"req-3e","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36954},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542598604,"pid":1,"hostname":"api1","reqId":"req-3e","res":{"statusCode":202},"responseTime":0.20378702878952026,"msg":"request completed"}
+api2   | {"level":30,"time":1755542598612,"pid":1,"hostname":"api2","reqId":"req-3e","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60330},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542598612,"pid":1,"hostname":"api2","reqId":"req-3e","res":{"statusCode":202},"responseTime":0.21165698766708374,"msg":"request completed"}
+api1   | {"level":30,"time":1755542599034,"pid":1,"hostname":"api1","reqId":"req-3f","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36966},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542599035,"pid":1,"hostname":"api1","reqId":"req-3f","res":{"statusCode":202},"responseTime":0.27696895599365234,"msg":"request completed"}
+api2   | {"level":30,"time":1755542599040,"pid":1,"hostname":"api2","reqId":"req-3f","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60332},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542599040,"pid":1,"hostname":"api2","reqId":"req-3f","res":{"statusCode":202},"responseTime":0.315621018409729,"msg":"request completed"}
+api1   | {"level":30,"time":1755542599045,"pid":1,"hostname":"api1","reqId":"req-3g","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36978},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542599045,"pid":1,"hostname":"api1","reqId":"req-3g","res":{"statusCode":202},"responseTime":0.23669695854187012,"msg":"request completed"}
+api2   | {"level":30,"time":1755542599051,"pid":1,"hostname":"api2","reqId":"req-3g","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60334},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542599051,"pid":1,"hostname":"api2","reqId":"req-3g","res":{"statusCode":202},"responseTime":0.36476200819015503,"msg":"request completed"}
+api1   | {"level":30,"time":1755542599056,"pid":1,"hostname":"api1","reqId":"req-3h","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36990},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542599056,"pid":1,"hostname":"api1","reqId":"req-3h","res":{"statusCode":202},"responseTime":0.8133469820022583,"msg":"request completed"}
+api2   | {"level":30,"time":1755542599061,"pid":1,"hostname":"api2","reqId":"req-3h","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60340},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542599061,"pid":1,"hostname":"api2","reqId":"req-3h","res":{"statusCode":202},"responseTime":0.2666289806365967,"msg":"request completed"}
+api1   | {"level":30,"time":1755542599067,"pid":1,"hostname":"api1","reqId":"req-3i","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":36994},"msg":"incoming request"}
+api1   | {"level":30,"time":1755542599067,"pid":1,"hostname":"api1","reqId":"req-3i","res":{"statusCode":202},"responseTime":0.26068800687789917,"msg":"request completed"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542599072,"pid":1,"hostname":"api2","reqId":"req-3i","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60348},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542599073,"pid":1,"hostname":"api2","reqId":"req-3i","res":{"statusCode":202},"responseTime":0.24269801378250122,"msg":"request completed"}
+api1   | {"level":30,"time":1755542599076,"pid":1,"hostname":"api1","reqId":"req-3j","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":37000},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542599076,"pid":1,"hostname":"api1","reqId":"req-3j","res":{"statusCode":202},"responseTime":0.2654290199279785,"msg":"request completed"}
+api2   | {"level":30,"time":1755542599081,"pid":1,"hostname":"api2","reqId":"req-3j","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60358},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542599081,"pid":1,"hostname":"api2","reqId":"req-3j","res":{"statusCode":202},"responseTime":0.24821799993515015,"msg":"request completed"}
+api1   | {"level":30,"time":1755542599086,"pid":1,"hostname":"api1","reqId":"req-3k","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":37006},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542599087,"pid":1,"hostname":"api1","reqId":"req-3k","res":{"statusCode":202},"responseTime":0.4106629490852356,"msg":"request completed"}
+api2   | {"level":30,"time":1755542599092,"pid":1,"hostname":"api2","reqId":"req-3k","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60362},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542599092,"pid":1,"hostname":"api2","reqId":"req-3k","res":{"statusCode":202},"responseTime":0.24583899974822998,"msg":"request completed"}
+api1   | {"level":30,"time":1755542599095,"pid":1,"hostname":"api1","reqId":"req-3l","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":37012},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542599096,"pid":1,"hostname":"api1","reqId":"req-3l","res":{"statusCode":202},"responseTime":0.24647897481918335,"msg":"request completed"}
+api2   | {"level":30,"time":1755542599100,"pid":1,"hostname":"api2","reqId":"req-3l","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60364},"msg":"incoming request"}
+api2   | {"level":30,"time":1755542599100,"pid":1,"hostname":"api2","reqId":"req-3l","res":{"statusCode":202},"responseTime":0.2472590208053589,"msg":"request completed"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542599107,"pid":1,"hostname":"api1","reqId":"req-3m","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":37014},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542599108,"pid":1,"hostname":"api1","reqId":"req-3m","res":{"statusCode":202},"responseTime":0.24368804693222046,"msg":"request completed"}
+api2   | {"level":30,"time":1755542599136,"pid":1,"hostname":"api2","reqId":"req-3m","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60366},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542599136,"pid":1,"hostname":"api2","reqId":"req-3m","res":{"statusCode":202},"responseTime":0.2918499708175659,"msg":"request completed"}
+api1   | {"level":30,"time":1755542599532,"pid":1,"hostname":"api1","reqId":"req-3n","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":37024},"msg":"incoming request"}
+api1   | {"level":30,"time":1755542599533,"pid":1,"hostname":"api1","reqId":"req-3n","res":{"statusCode":202},"responseTime":0.23025697469711304,"msg":"request completed"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542599538,"pid":1,"hostname":"api2","reqId":"req-3n","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60372},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542599538,"pid":1,"hostname":"api2","reqId":"req-3n","res":{"statusCode":202},"responseTime":0.264909029006958,"msg":"request completed"}
+api1   | {"level":30,"time":1755542599543,"pid":1,"hostname":"api1","reqId":"req-3o","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":37038},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542599543,"pid":1,"hostname":"api1","reqId":"req-3o","res":{"statusCode":202},"responseTime":0.21544700860977173,"msg":"request completed"}
+api2   | {"level":30,"time":1755542599548,"pid":1,"hostname":"api2","reqId":"req-3o","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60382},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542599549,"pid":1,"hostname":"api2","reqId":"req-3o","res":{"statusCode":202},"responseTime":0.22189801931381226,"msg":"request completed"}
+api1   | {"level":30,"time":1755542599554,"pid":1,"hostname":"api1","reqId":"req-3p","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":37054},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542599554,"pid":1,"hostname":"api1","reqId":"req-3p","res":{"statusCode":202},"responseTime":0.2007770538330078,"msg":"request completed"}
+api2   | {"level":30,"time":1755542599559,"pid":1,"hostname":"api2","reqId":"req-3p","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60396},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542599559,"pid":1,"hostname":"api2","reqId":"req-3p","res":{"statusCode":202},"responseTime":0.21689701080322266,"msg":"request completed"}
+api1   | {"level":30,"time":1755542599564,"pid":1,"hostname":"api1","reqId":"req-3q","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":37060},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542599565,"pid":1,"hostname":"api1","reqId":"req-3q","res":{"statusCode":202},"responseTime":0.20480698347091675,"msg":"request completed"}
+api2   | {"level":30,"time":1755542599570,"pid":1,"hostname":"api2","reqId":"req-3q","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60412},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542599570,"pid":1,"hostname":"api2","reqId":"req-3q","res":{"statusCode":202},"responseTime":0.20969700813293457,"msg":"request completed"}
+api1   | {"level":30,"time":1755542599575,"pid":1,"hostname":"api1","reqId":"req-3r","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":37066},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api1   | {"level":30,"time":1755542599575,"pid":1,"hostname":"api1","reqId":"req-3r","res":{"statusCode":202},"responseTime":0.1991170048713684,"msg":"request completed"}
+api2   | {"level":30,"time":1755542599580,"pid":1,"hostname":"api2","reqId":"req-3r","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":60428},"msg":"incoming request"}
+nginx  | 172.21.0.1 - - [18/Aug/2025:18:43:19 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api2   | {"level":30,"time":1755542599580,"pid":1,"hostname":"api2","reqId":"req-3r","res":{"statusCode":202},"responseTime":0.24789899587631226,"msg":"request completed"}
+api1   | {"level":30,"time":1755542599584,"pid":1,"hostname":"api1","reqId":"req-3s","req":{"method":"POST","url":"/payments","host":"localhost","remoteAddress":"172.21.0.6","remotePort":37080},"msg":"incoming request"}
+log truncated at line 1000

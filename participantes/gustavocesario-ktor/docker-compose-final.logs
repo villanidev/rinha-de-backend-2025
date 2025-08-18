@@ -1,0 +1,227 @@
+
+ Network gustavocesario-ktor_backend  Creating
+ Network gustavocesario-ktor_backend  Created
+ Container redis  Creating
+ Container redis  Created
+ Container backend-01  Creating
+ Container backend-02  Creating
+ Container backend-02  Created
+ Container backend-01  Created
+ Container gustavocesario-ktor-nginx-1  Creating
+ Container gustavocesario-ktor-nginx-1  Created
+Attaching to backend-01, backend-02, nginx-1, redis
+redis  | Starting Redis Server
+redis  | 1:C 18 Aug 2025 19:25:44.743 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis  | 1:C 18 Aug 2025 19:25:44.743 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis  | 1:C 18 Aug 2025 19:25:44.743 * Redis version=8.0.3, bits=64, commit=00000000, modified=1, pid=1, just started
+redis  | 1:C 18 Aug 2025 19:25:44.743 * Configuration loaded
+redis  | 1:M 18 Aug 2025 19:25:44.744 * monotonic clock: POSIX clock_gettime
+redis  | 1:M 18 Aug 2025 19:25:44.746 * Running mode=standalone, port=6379.
+redis  | 1:M 18 Aug 2025 19:25:44.746 * <bf> RedisBloom version 8.0.1 (Git=unknown)
+redis  | 1:M 18 Aug 2025 19:25:44.746 * <bf> Registering configuration options: [
+redis  | 1:M 18 Aug 2025 19:25:44.746 * <bf> 	{ bf-error-rate       :      0.01 }
+redis  | 1:M 18 Aug 2025 19:25:44.746 * <bf> 	{ bf-initial-size     :       100 }
+redis  | 1:M 18 Aug 2025 19:25:44.746 * <bf> 	{ bf-expansion-factor :         2 }
+redis  | 1:M 18 Aug 2025 19:25:44.747 * <bf> 	{ cf-bucket-size      :         2 }
+redis  | 1:M 18 Aug 2025 19:25:44.747 * <bf> 	{ cf-initial-size     :      1024 }
+redis  | 1:M 18 Aug 2025 19:25:44.747 * <bf> 	{ cf-max-iterations   :        20 }
+redis  | 1:M 18 Aug 2025 19:25:44.747 * <bf> 	{ cf-expansion-factor :         1 }
+redis  | 1:M 18 Aug 2025 19:25:44.747 * <bf> 	{ cf-max-expansions   :        32 }
+redis  | 1:M 18 Aug 2025 19:25:44.747 * <bf> ]
+redis  | 1:M 18 Aug 2025 19:25:44.747 * Module 'bf' loaded from /usr/local/lib/redis/modules//redisbloom.so
+redis  | 1:M 18 Aug 2025 19:25:44.748 * <search> Redis version found by RedisSearch : 8.0.3 - oss
+redis  | 1:M 18 Aug 2025 19:25:44.748 * <search> RediSearch version 8.0.1 (Git=5688fcc)
+redis  | 1:M 18 Aug 2025 19:25:44.748 * <search> Low level api version 1 initialized successfully
+redis  | 1:M 18 Aug 2025 19:25:44.749 * <search> gc: ON, prefix min length: 2, min word length to stem: 4, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, 
+redis  | 1:M 18 Aug 2025 19:25:44.749 * <search> Initialized thread pools!
+redis  | 1:M 18 Aug 2025 19:25:44.749 * <search> Disabled workers threadpool of size 0
+redis  | 1:M 18 Aug 2025 19:25:44.749 * <search> Subscribe to config changes
+redis  | 1:M 18 Aug 2025 19:25:44.749 * <search> Enabled role change notification
+redis  | 1:M 18 Aug 2025 19:25:44.749 * <search> Cluster configuration: AUTO partitions, type: 0, coordinator timeout: 0ms
+redis  | 1:M 18 Aug 2025 19:25:44.749 * <search> Register write commands
+redis  | 1:M 18 Aug 2025 19:25:44.749 * Module 'search' loaded from /usr/local/lib/redis/modules//redisearch.so
+redis  | 1:M 18 Aug 2025 19:25:44.750 * <timeseries> RedisTimeSeries version 80001, git_sha=577bfa8b5909e7ee572f0b651399be8303dc6641
+redis  | 1:M 18 Aug 2025 19:25:44.750 * <timeseries> Redis version found by RedisTimeSeries : 8.0.3 - oss
+redis  | 1:M 18 Aug 2025 19:25:44.750 * <timeseries> Registering configuration options: [
+redis  | 1:M 18 Aug 2025 19:25:44.750 * <timeseries> 	{ ts-compaction-policy   :              }
+redis  | 1:M 18 Aug 2025 19:25:44.750 * <timeseries> 	{ ts-num-threads         :            3 }
+redis  | 1:M 18 Aug 2025 19:25:44.750 * <timeseries> 	{ ts-retention-policy    :            0 }
+redis  | 1:M 18 Aug 2025 19:25:44.750 * <timeseries> 	{ ts-duplicate-policy    :        block }
+redis  | 1:M 18 Aug 2025 19:25:44.750 * <timeseries> 	{ ts-chunk-size-bytes    :         4096 }
+redis  | 1:M 18 Aug 2025 19:25:44.750 * <timeseries> 	{ ts-encoding            :   compressed }
+redis  | 1:M 18 Aug 2025 19:25:44.750 * <timeseries> 	{ ts-ignore-max-time-diff:            0 }
+redis  | 1:M 18 Aug 2025 19:25:44.750 * <timeseries> 	{ ts-ignore-max-val-diff :     0.000000 }
+redis  | 1:M 18 Aug 2025 19:25:44.750 * <timeseries> ]
+redis  | 1:M 18 Aug 2025 19:25:44.750 * <timeseries> Detected redis oss
+redis  | 1:M 18 Aug 2025 19:25:44.750 * Module 'timeseries' loaded from /usr/local/lib/redis/modules//redistimeseries.so
+redis  | 1:M 18 Aug 2025 19:25:44.751 * <ReJSON> Created new data type 'ReJSON-RL'
+redis  | 1:M 18 Aug 2025 19:25:44.751 * <ReJSON> version: 80001 git sha: unknown branch: unknown
+redis  | 1:M 18 Aug 2025 19:25:44.751 * <ReJSON> Exported RedisJSON_V1 API
+redis  | 1:M 18 Aug 2025 19:25:44.751 * <ReJSON> Exported RedisJSON_V2 API
+redis  | 1:M 18 Aug 2025 19:25:44.751 * <ReJSON> Exported RedisJSON_V3 API
+redis  | 1:M 18 Aug 2025 19:25:44.751 * <ReJSON> Exported RedisJSON_V4 API
+redis  | 1:M 18 Aug 2025 19:25:44.751 * <ReJSON> Exported RedisJSON_V5 API
+redis  | 1:M 18 Aug 2025 19:25:44.751 * <ReJSON> Enabled diskless replication
+redis  | 1:M 18 Aug 2025 19:25:44.751 * <ReJSON> Initialized shared string cache, thread safe: false.
+redis  | 1:M 18 Aug 2025 19:25:44.751 * Module 'ReJSON' loaded from /usr/local/lib/redis/modules//rejson.so
+redis  | 1:M 18 Aug 2025 19:25:44.751 * <search> Acquired RedisJSON_V5 API
+redis  | 1:M 18 Aug 2025 19:25:44.751 * Server initialized
+redis  | 1:M 18 Aug 2025 19:25:44.751 * Ready to accept connections tcp
+nginx-1  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+nginx-1  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+nginx-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+backend-01  | [main] INFO Application - Autoreload is disabled because the development mode is off.
+backend-02  | [main] INFO Application - Autoreload is disabled because the development mode is off.
+backend-02  | [main] INFO Application - Starting Native Ktor application :D
+backend-02  | [main] INFO app.cesario.services.RedisService - Redis host: redis
+backend-02  | [main] INFO app.cesario.services.RedisService - Redis port: 6379
+backend-01  | [main] INFO Application - Starting Native Ktor application :D
+backend-01  | [main] INFO app.cesario.services.RedisService - Redis host: redis
+backend-01  | [main] INFO app.cesario.services.RedisService - Redis port: 6379
+nginx-1     | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+backend-01  | [main] INFO app.cesario.services.RedisService - Resetting processed payments
+backend-02  | [main] INFO app.cesario.services.RedisService - Resetting processed payments
+backend-02  | [main] INFO app.cesario.services.RedisService - Processed payments reset successfully
+backend-01  | [main] INFO app.cesario.services.RedisService - Processed payments reset successfully
+backend-02  | [main] INFO app.cesario.services.PaymentService - Default Processor: http://payment-processor-1:8080
+backend-02  | [main] INFO app.cesario.services.PaymentService - Fallback Processor: http://payment-processor-2:8080
+backend-02  | [main] INFO app.cesario.services.PaymentService - isUpdater: false
+backend-01  | [main] INFO app.cesario.services.PaymentService - Default Processor: http://payment-processor-1:8080
+backend-01  | [main] INFO app.cesario.services.PaymentService - Fallback Processor: http://payment-processor-2:8080
+backend-01  | [main] INFO app.cesario.services.PaymentService - isUpdater: true
+backend-02  | [main] INFO Application - Application started in 0.226 seconds.
+backend-01  | [main] INFO Application - Application started in 0.226 seconds.
+backend-02  | [DefaultDispatcher-worker-4] INFO Application - Responding at http://0.0.0.0:9999
+backend-01  | [DefaultDispatcher-worker-5] INFO Application - Responding at http://0.0.0.0:9999
+nginx-1     | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+nginx-1     | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+nginx-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+nginx-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+nginx-1     | /docker-entrypoint.sh: Configuration complete; ready for start up
+backend-01  | [DefaultDispatcher-worker-7] INFO app.cesario.services.PaymentRouterService - Switching service from DEFAULT to FALLBACK
+backend-01  | [DefaultDispatcher-worker-7] INFO app.cesario.services.PaymentRouterService - Response times: default=2, fallback=0
+backend-01  | [DefaultDispatcher-worker-7] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-02  | [DefaultDispatcher-worker-3] INFO app.cesario.services.PaymentRouterService - Switching service from DEFAULT to FALLBACK
+backend-02  | [DefaultDispatcher-worker-3] INFO app.cesario.services.PaymentRouterService - Response times: default=2, fallback=0
+backend-02  | [DefaultDispatcher-worker-3] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-02  | [DefaultDispatcher-worker-7] INFO app.cesario.services.PaymentRouterService - Switching service from FALLBACK to DEFAULT
+backend-02  | [DefaultDispatcher-worker-7] INFO app.cesario.services.PaymentRouterService - Response times: default=0, fallback=1
+backend-02  | [DefaultDispatcher-worker-7] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-01  | [DefaultDispatcher-worker-5] INFO app.cesario.services.PaymentRouterService - Switching service from FALLBACK to DEFAULT
+backend-01  | [DefaultDispatcher-worker-5] INFO app.cesario.services.PaymentRouterService - Response times: default=0, fallback=1
+backend-01  | [DefaultDispatcher-worker-5] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-01  | [DefaultDispatcher-worker-7] INFO app.cesario.services.PaymentRouterService - Switching service from DEFAULT to FALLBACK
+backend-01  | [DefaultDispatcher-worker-7] INFO app.cesario.services.PaymentRouterService - Response times: default=2, fallback=0
+backend-01  | [DefaultDispatcher-worker-7] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-02  | [DefaultDispatcher-worker-8] INFO app.cesario.services.PaymentRouterService - Switching service from DEFAULT to FALLBACK
+backend-02  | [DefaultDispatcher-worker-8] INFO app.cesario.services.PaymentRouterService - Response times: default=2, fallback=0
+backend-02  | [DefaultDispatcher-worker-8] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-02  | [DefaultDispatcher-worker-10] INFO app.cesario.services.PaymentRouterService - Switching service from FALLBACK to DEFAULT
+backend-02  | [DefaultDispatcher-worker-10] INFO app.cesario.services.PaymentRouterService - Response times: default=2, fallback=1
+backend-02  | [DefaultDispatcher-worker-10] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-01  | [DefaultDispatcher-worker-11] INFO app.cesario.services.PaymentRouterService - Switching service from FALLBACK to DEFAULT
+backend-01  | [DefaultDispatcher-worker-11] INFO app.cesario.services.PaymentRouterService - Response times: default=2, fallback=1
+backend-01  | [DefaultDispatcher-worker-11] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-01  | [DefaultDispatcher-worker-6] INFO app.cesario.services.PaymentRouterService - Switching service from DEFAULT to FALLBACK
+backend-01  | [DefaultDispatcher-worker-6] INFO app.cesario.services.PaymentRouterService - Response times: default=1, fallback=0
+backend-01  | [DefaultDispatcher-worker-6] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-02  | [DefaultDispatcher-worker-5] INFO app.cesario.services.PaymentRouterService - Switching service from DEFAULT to FALLBACK
+backend-02  | [DefaultDispatcher-worker-5] INFO app.cesario.services.PaymentRouterService - Response times: default=1, fallback=0
+backend-02  | [DefaultDispatcher-worker-5] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-02  | [DefaultDispatcher-worker-9] INFO app.cesario.services.PaymentRouterService - Switching service from FALLBACK to DEFAULT
+backend-02  | [DefaultDispatcher-worker-9] INFO app.cesario.services.PaymentRouterService - Response times: default=0, fallback=2
+backend-02  | [DefaultDispatcher-worker-9] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-01  | [DefaultDispatcher-worker-11] INFO app.cesario.services.PaymentRouterService - Switching service from FALLBACK to DEFAULT
+backend-01  | [DefaultDispatcher-worker-11] INFO app.cesario.services.PaymentRouterService - Response times: default=0, fallback=2
+backend-01  | [DefaultDispatcher-worker-11] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-01  | [DefaultDispatcher-worker-10] INFO app.cesario.services.PaymentRouterService - Switching service from DEFAULT to FALLBACK
+backend-01  | [DefaultDispatcher-worker-10] INFO app.cesario.services.PaymentRouterService - Response times: default=2, fallback=0
+backend-01  | [DefaultDispatcher-worker-10] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-02  | [DefaultDispatcher-worker-12] INFO app.cesario.services.PaymentRouterService - Switching service from DEFAULT to FALLBACK
+backend-02  | [DefaultDispatcher-worker-12] INFO app.cesario.services.PaymentRouterService - Response times: default=2, fallback=0
+backend-02  | [DefaultDispatcher-worker-12] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-01  | [DefaultDispatcher-worker-10] INFO app.cesario.services.PaymentRouterService - Switching service from FALLBACK to DEFAULT
+backend-01  | [DefaultDispatcher-worker-10] INFO app.cesario.services.PaymentRouterService - Response times: default=0, fallback=5
+backend-01  | [DefaultDispatcher-worker-10] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: true
+backend-02  | [DefaultDispatcher-worker-22] INFO app.cesario.services.PaymentRouterService - Switching service from FALLBACK to DEFAULT
+backend-02  | [DefaultDispatcher-worker-22] INFO app.cesario.services.PaymentRouterService - Response times: default=0, fallback=5
+backend-02  | [DefaultDispatcher-worker-22] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: true
+backend-01  | [DefaultDispatcher-worker-37] INFO app.cesario.services.PaymentRouterService - Switching service from DEFAULT to FALLBACK
+backend-01  | [DefaultDispatcher-worker-37] INFO app.cesario.services.PaymentRouterService - Response times: default=103, fallback=5
+backend-01  | [DefaultDispatcher-worker-37] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-02  | [DefaultDispatcher-worker-30] INFO app.cesario.services.PaymentRouterService - Switching service from DEFAULT to FALLBACK
+backend-02  | [DefaultDispatcher-worker-30] INFO app.cesario.services.PaymentRouterService - Response times: default=103, fallback=5
+backend-02  | [DefaultDispatcher-worker-30] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-01  | [DefaultDispatcher-worker-41] INFO app.cesario.services.PaymentRouterService - Switching service from FALLBACK to DEFAULT
+backend-01  | [DefaultDispatcher-worker-41] INFO app.cesario.services.PaymentRouterService - Response times: default=100, fallback=88
+backend-01  | [DefaultDispatcher-worker-41] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-01  | [DefaultDispatcher-worker-38] INFO app.cesario.services.PaymentRouterService - Switching service from DEFAULT to FALLBACK
+backend-01  | [DefaultDispatcher-worker-38] INFO app.cesario.services.PaymentRouterService - Response times: default=104, fallback=10
+backend-01  | [DefaultDispatcher-worker-38] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-02  | [DefaultDispatcher-worker-47] INFO app.cesario.services.PaymentRouterService - Switching service from FALLBACK to DEFAULT
+backend-02  | [DefaultDispatcher-worker-47] INFO app.cesario.services.PaymentRouterService - Response times: default=100, fallback=77
+backend-02  | [DefaultDispatcher-worker-47] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-02  | [DefaultDispatcher-worker-6] INFO app.cesario.services.PaymentRouterService - Switching service from DEFAULT to FALLBACK
+backend-02  | [DefaultDispatcher-worker-6] INFO app.cesario.services.PaymentRouterService - Response times: default=104, fallback=28
+backend-02  | [DefaultDispatcher-worker-6] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-01  | [DefaultDispatcher-worker-29] INFO app.cesario.services.PaymentRouterService - Switching service from FALLBACK to DEFAULT
+backend-01  | [DefaultDispatcher-worker-29] INFO app.cesario.services.PaymentRouterService - Response times: default=102, fallback=93
+backend-01  | [DefaultDispatcher-worker-29] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-01  | [DefaultDispatcher-worker-63] INFO app.cesario.services.PaymentRouterService - Switching service from DEFAULT to FALLBACK
+backend-01  | [DefaultDispatcher-worker-63] INFO app.cesario.services.PaymentRouterService - Response times: default=102, fallback=12
+backend-01  | [DefaultDispatcher-worker-63] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-02  | [DefaultDispatcher-worker-13] INFO app.cesario.services.PaymentRouterService - Switching service from FALLBACK to DEFAULT
+backend-02  | [DefaultDispatcher-worker-13] INFO app.cesario.services.PaymentRouterService - Response times: default=106, fallback=95
+backend-02  | [DefaultDispatcher-worker-13] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-02  | [DefaultDispatcher-worker-4] INFO app.cesario.services.PaymentRouterService - Switching service from DEFAULT to FALLBACK
+backend-02  | [DefaultDispatcher-worker-4] INFO app.cesario.services.PaymentRouterService - Response times: default=56, fallback=10
+backend-02  | [DefaultDispatcher-worker-4] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-01  | [DefaultDispatcher-worker-25] INFO app.cesario.services.PaymentRouterService - Switching service from FALLBACK to DEFAULT
+backend-01  | [DefaultDispatcher-worker-25] INFO app.cesario.services.PaymentRouterService - Response times: default=50, fallback=72
+backend-01  | [DefaultDispatcher-worker-25] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-02  | [DefaultDispatcher-worker-58] INFO app.cesario.services.PaymentRouterService - Switching service from FALLBACK to DEFAULT
+backend-02  | [DefaultDispatcher-worker-58] INFO app.cesario.services.PaymentRouterService - Response times: default=50, fallback=31
+backend-02  | [DefaultDispatcher-worker-58] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-02  | [DefaultDispatcher-worker-10] INFO app.cesario.services.PaymentRouterService - Switching service from DEFAULT to FALLBACK
+backend-02  | [DefaultDispatcher-worker-10] INFO app.cesario.services.PaymentRouterService - Response times: default=62, fallback=30
+backend-02  | [DefaultDispatcher-worker-10] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-01  | [DefaultDispatcher-worker-19] INFO app.cesario.services.PaymentRouterService - Switching service from DEFAULT to FALLBACK
+backend-01  | [DefaultDispatcher-worker-19] INFO app.cesario.services.PaymentRouterService - Response times: default=62, fallback=30
+backend-01  | [DefaultDispatcher-worker-19] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+[Knginx-1 exited with code 137
+backend-02  | [DefaultDispatcher-worker-61] INFO app.cesario.services.PaymentRouterService - Switching service from FALLBACK to DEFAULT
+backend-02  | [DefaultDispatcher-worker-61] INFO app.cesario.services.PaymentRouterService - Response times: default=111, fallback=84
+backend-02  | [DefaultDispatcher-worker-61] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-01  | [DefaultDispatcher-worker-20] INFO app.cesario.services.PaymentRouterService - Switching service from FALLBACK to DEFAULT
+backend-01  | [DefaultDispatcher-worker-20] INFO app.cesario.services.PaymentRouterService - Response times: default=111, fallback=3492
+backend-01  | [DefaultDispatcher-worker-20] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-02  | [DefaultDispatcher-worker-51] INFO app.cesario.services.PaymentRouterService - Switching service from DEFAULT to FALLBACK
+backend-02  | [DefaultDispatcher-worker-51] INFO app.cesario.services.PaymentRouterService - Response times: default=51, fallback=0
+backend-02  | [DefaultDispatcher-worker-51] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-01  | [DefaultDispatcher-worker-70] INFO app.cesario.services.PaymentRouterService - Switching service from DEFAULT to FALLBACK
+backend-01  | [DefaultDispatcher-worker-70] INFO app.cesario.services.PaymentRouterService - Response times: default=51, fallback=0
+backend-01  | [DefaultDispatcher-worker-70] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-02  | [DefaultDispatcher-worker-62] INFO app.cesario.services.PaymentRouterService - Switching service from FALLBACK to DEFAULT
+backend-02  | [DefaultDispatcher-worker-62] INFO app.cesario.services.PaymentRouterService - Response times: default=78, fallback=77
+backend-02  | [DefaultDispatcher-worker-62] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-01  | [DefaultDispatcher-worker-52] INFO app.cesario.services.PaymentRouterService - Switching service from FALLBACK to DEFAULT
+backend-01  | [DefaultDispatcher-worker-52] INFO app.cesario.services.PaymentRouterService - Response times: default=78, fallback=77
+backend-01  | [DefaultDispatcher-worker-52] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-02  | [DefaultDispatcher-worker-49] INFO app.cesario.services.PaymentRouterService - Switching service from DEFAULT to FALLBACK
+backend-02  | [DefaultDispatcher-worker-49] INFO app.cesario.services.PaymentRouterService - Response times: default=50, fallback=0
+backend-02  | [DefaultDispatcher-worker-49] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-01  | [DefaultDispatcher-worker-52] INFO app.cesario.services.PaymentRouterService - Switching service from DEFAULT to FALLBACK
+backend-01  | [DefaultDispatcher-worker-52] INFO app.cesario.services.PaymentRouterService - Response times: default=50, fallback=0
+backend-01  | [DefaultDispatcher-worker-52] INFO app.cesario.services.PaymentRouterService - Default failing: false, Fallback failing: false
+backend-01  | [KtorShutdownHook] INFO app.cesario.services.RedisService - Closing Redis connection
+backend-01  | [KtorShutdownHook] WARN io.lettuce.core.RedisChannelHandler - Connection is already closed
+backend-02  | [KtorShutdownHook] INFO app.cesario.services.RedisService - Closing Redis connection
+backend-02  | [KtorShutdownHook] WARN io.lettuce.core.RedisChannelHandler - Connection is already closed
+backend-02  | [KtorShutdownHook] INFO app.cesario.services.RedisService - Redis connection closed successfully
+backend-01  | [KtorShutdownHook] INFO app.cesario.services.RedisService - Redis connection closed successfully
+[Kbackend-02 exited with code 143
+[Kbackend-01 exited with code 143
+redis       | 1:signal-handler (1755545457) Received SIGTERM scheduling shutdown...
+redis       | 1:M 18 Aug 2025 19:30:57.499 * User requested shutdown...
+redis       | 1:M 18 Aug 2025 19:30:57.500 # Redis is now ready to exit, bye bye...
+log truncated at line 1000
