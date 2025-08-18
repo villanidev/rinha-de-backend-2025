@@ -1,5 +1,5 @@
 # Rinha de Backend 2025
-Submissão feita por [Matheus Baptistella](www.linkedin.com/in/matheus-baptistella-458786226) em Rust. [Link](https://github.com/matheusbaptistella/backend-showdown-2025) para o código fonte.
+Submissão feita por [Matheus Baptistella](www.linkedin.com/in/matheus-baptistella-458786226) em Rust. [Link](https://github.com/matheusbaptistella/backend-showdown-2025-full) para o código fonte.
 
 # Features
 - Server HTTP implementado em Rust.
