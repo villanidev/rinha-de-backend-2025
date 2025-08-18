@@ -1,3 +1,4 @@
+
 # Rinha de Backend 2025 – Submissão
 
 ## Tecnologias utilizadas
