@@ -1,0 +1,154 @@
+
+ app01 Pulling 
+ app02 Pulling 
+ ed4eefb93832 Pulling fs layer 
+ ed4eefb93832 Downloading [>                                                  ]  129.9kB/12.86MB
+ ed4eefb93832 Verifying Checksum 
+ ed4eefb93832 Download complete 
+ ed4eefb93832 Extracting [>                                                  ]  131.1kB/12.86MB
+ ed4eefb93832 Extracting [=========================================>         ]  10.62MB/12.86MB
+ ed4eefb93832 Extracting [==================================================>]  12.86MB/12.86MB
+ ed4eefb93832 Pull complete 
+ app01 Pulled 
+ app02 Pulled 
+ Network carlosqsilva-go_rinha  Creating
+ Network carlosqsilva-go_rinha  Created
+ Volume "carlosqsilva-go_nats"  Creating
+ Volume "carlosqsilva-go_nats"  Created
+ Volume "carlosqsilva-go_sockets"  Creating
+ Volume "carlosqsilva-go_sockets"  Created
+ Volume "carlosqsilva-go_data"  Creating
+ Volume "carlosqsilva-go_data"  Created
+ Container carlosqsilva-go-nats-1  Creating
+ Container carlosqsilva-go-nats-1  Created
+ Container app01  Creating
+ Container app01  Created
+ Container app02  Creating
+ Container app02  Created
+ Container proxy  Creating
+ Container proxy  Created
+Attaching to app01, app02, nats-1, proxy
+nats-1  | [1] 2025/08/18 10:03:45.452272 [INF] Starting nats-server
+nats-1  | [1] 2025/08/18 10:03:45.452343 [INF]   Version:  2.11.8
+nats-1  | [1] 2025/08/18 10:03:45.452346 [INF]   Git:      [ec0d7e3]
+nats-1  | [1] 2025/08/18 10:03:45.452348 [INF]   Name:     ND5E3MZUHZ2R6JHAJ22WBTQUEZLIEHFRJ7PWSWBFHZBQMNV27IPHVVQK
+nats-1  | [1] 2025/08/18 10:03:45.452352 [INF]   Node:     6w15PRjV
+nats-1  | [1] 2025/08/18 10:03:45.452354 [INF]   ID:       ND5E3MZUHZ2R6JHAJ22WBTQUEZLIEHFRJ7PWSWBFHZBQMNV27IPHVVQK
+nats-1  | [1] 2025/08/18 10:03:45.462887 [INF] Starting JetStream
+nats-1  | [1] 2025/08/18 10:03:45.463246 [INF]     _ ___ _____ ___ _____ ___ ___   _   __  __
+nats-1  | [1] 2025/08/18 10:03:45.463251 [INF]  _ | | __|_   _/ __|_   _| _ \ __| /_\ |  \/  |
+nats-1  | [1] 2025/08/18 10:03:45.463254 [INF] | || | _|  | | \__ \ | | |   / _| / _ \| |\/| |
+nats-1  | [1] 2025/08/18 10:03:45.463256 [INF]  \__/|___| |_| |___/ |_| |_|_\___/_/ \_\_|  |_|
+nats-1  | [1] 2025/08/18 10:03:45.463257 [INF] 
+nats-1  | [1] 2025/08/18 10:03:45.463259 [INF]          https://docs.nats.io/jetstream
+nats-1  | [1] 2025/08/18 10:03:45.463261 [INF] 
+nats-1  | [1] 2025/08/18 10:03:45.463263 [INF] ---------------- JETSTREAM ----------------
+nats-1  | [1] 2025/08/18 10:03:45.463268 [INF]   Max Memory:      5.73 GB
+nats-1  | [1] 2025/08/18 10:03:45.463271 [INF]   Max Storage:     108.26 GB
+nats-1  | [1] 2025/08/18 10:03:45.463273 [INF]   Store Directory: "/data/jetstream"
+nats-1  | [1] 2025/08/18 10:03:45.463276 [INF]   API Level:       1
+nats-1  | [1] 2025/08/18 10:03:45.463278 [INF] -------------------------------------------
+nats-1  | [1] 2025/08/18 10:03:45.466016 [INF] Listening for client connections on 0.0.0.0:4222
+nats-1  | [1] 2025/08/18 10:03:45.466237 [INF] Server is ready
+app01   | [Fx] PROVIDE	fx.Lifecycle <= go.uber.org/fx.New.func1()
+app01   | [Fx] PROVIDE	fx.Shutdowner <= go.uber.org/fx.(*App).shutdowner-fm()
+app01   | [Fx] PROVIDE	fx.DotGraph <= go.uber.org/fx.(*App).dotGraph-fm()
+app01   | [Fx] PROVIDE	*config.Config <= github.com/carlosqsilva/rinha-2025/internal/config.New()
+app01   | [Fx] PROVIDE	*db.Queries <= github.com/carlosqsilva/rinha-2025/internal/db.Connect()
+app01   | [Fx] PROVIDE	*queue.Message <= github.com/carlosqsilva/rinha-2025/internal/queue.New()
+app01   | [Fx] PROVIDE	*handler.Handler <= github.com/carlosqsilva/rinha-2025/internal/handler.New()
+app01   | [Fx] PROVIDE	*healthcheck.HealthChecker <= github.com/carlosqsilva/rinha-2025/internal/health-check.New()
+app01   | [Fx] PROVIDE	*api.Api <= github.com/carlosqsilva/rinha-2025/internal/api.New()
+app01   | [Fx] INVOKE		main.main.func1()
+app01   | [Fx] BEFORE RUN	provide: go.uber.org/fx.New.func1()
+app01   | [Fx] RUN	provide: go.uber.org/fx.New.func1() in 10.491µs
+app01   | [Fx] BEFORE RUN	provide: github.com/carlosqsilva/rinha-2025/internal/config.New()
+app01   | [Fx] RUN	provide: github.com/carlosqsilva/rinha-2025/internal/config.New() in 9.63µs
+app01   | [Fx] BEFORE RUN	provide: github.com/carlosqsilva/rinha-2025/internal/queue.New()
+app01   | [Fx] RUN	provide: github.com/carlosqsilva/rinha-2025/internal/queue.New() in 16.659586ms
+app01   | [Fx] BEFORE RUN	provide: github.com/carlosqsilva/rinha-2025/internal/db.Connect()
+app01   | 2025/08/18 10:03:45 OK   001_intial.sql (430.1µs)
+app01   | 2025/08/18 10:03:45 goose: successfully migrated database to version: 1
+app01   | [Fx] RUN	provide: github.com/carlosqsilva/rinha-2025/internal/db.Connect() in 14.763985ms
+app01   | [Fx] BEFORE RUN	provide: github.com/carlosqsilva/rinha-2025/internal/handler.New()
+app01   | [Fx] RUN	provide: github.com/carlosqsilva/rinha-2025/internal/handler.New() in 48.262µs
+app01   | [Fx] BEFORE RUN	provide: github.com/carlosqsilva/rinha-2025/internal/api.New()
+app01   | [Fx] RUN	provide: github.com/carlosqsilva/rinha-2025/internal/api.New() in 300.3µs
+app01   | [Fx] BEFORE RUN	provide: github.com/carlosqsilva/rinha-2025/internal/health-check.New()
+app01   | [Fx] RUN	provide: github.com/carlosqsilva/rinha-2025/internal/health-check.New() in 28.15µs
+app01   | [Fx] HOOK OnStart		main.main.func1.1() executing (caller: main.main.func1)
+app01   | [Fx] HOOK OnStart		main.main.func1.1() called by main.main.func1 ran successfully in 10.981µs
+app01   | [Fx] RUNNING
+app01   | 
+app01   |  ┌───────────────────────────────────────────────────┐ 
+app01   |  │                   Fiber v2.52.8                   │ 
+app01   |  │           http://./sockets/rinha.app01:           │ 
+app01   |  │                                                   │ 
+app01   |  │ Handlers ............. 3  Processes ........... 1 │ 
+app01   |  │ Prefork ....... Disabled  PID ................. 1 │ 
+app01   |  └───────────────────────────────────────────────────┘ 
+app01   | 
+app02   | [Fx] PROVIDE	fx.Lifecycle <= go.uber.org/fx.New.func1()
+app02   | [Fx] PROVIDE	fx.Shutdowner <= go.uber.org/fx.(*App).shutdowner-fm()
+app02   | [Fx] PROVIDE	fx.DotGraph <= go.uber.org/fx.(*App).dotGraph-fm()
+app02   | [Fx] PROVIDE	*config.Config <= github.com/carlosqsilva/rinha-2025/internal/config.New()
+app02   | [Fx] PROVIDE	*db.Queries <= github.com/carlosqsilva/rinha-2025/internal/db.Connect()
+app02   | [Fx] PROVIDE	*queue.Message <= github.com/carlosqsilva/rinha-2025/internal/queue.New()
+app02   | [Fx] PROVIDE	*handler.Handler <= github.com/carlosqsilva/rinha-2025/internal/handler.New()
+app02   | [Fx] PROVIDE	*healthcheck.HealthChecker <= github.com/carlosqsilva/rinha-2025/internal/health-check.New()
+app02   | [Fx] PROVIDE	*api.Api <= github.com/carlosqsilva/rinha-2025/internal/api.New()
+app02   | [Fx] INVOKE		main.main.func1()
+app02   | [Fx] BEFORE RUN	provide: go.uber.org/fx.New.func1()
+app02   | [Fx] RUN	provide: go.uber.org/fx.New.func1() in 8.55µs
+app02   | [Fx] BEFORE RUN	provide: github.com/carlosqsilva/rinha-2025/internal/config.New()
+app02   | [Fx] RUN	provide: github.com/carlosqsilva/rinha-2025/internal/config.New() in 8.79µs
+app02   | [Fx] BEFORE RUN	provide: github.com/carlosqsilva/rinha-2025/internal/queue.New()
+app02   | [Fx] RUN	provide: github.com/carlosqsilva/rinha-2025/internal/queue.New() in 1.932164ms
+app02   | [Fx] BEFORE RUN	provide: github.com/carlosqsilva/rinha-2025/internal/db.Connect()
+app02   | 2025/08/18 10:03:45 goose: no migrations to run. current version: 1
+app02   | [Fx] RUN	provide: github.com/carlosqsilva/rinha-2025/internal/db.Connect() in 817.927µs
+app02   | [Fx] BEFORE RUN	provide: github.com/carlosqsilva/rinha-2025/internal/handler.New()
+app02   | [Fx] RUN	provide: github.com/carlosqsilva/rinha-2025/internal/handler.New() in 16.891µs
+app02   | [Fx] BEFORE RUN	provide: github.com/carlosqsilva/rinha-2025/internal/api.New()
+app02   | [Fx] RUN	provide: github.com/carlosqsilva/rinha-2025/internal/api.New() in 165.956µs
+app02   | [Fx] BEFORE RUN	provide: github.com/carlosqsilva/rinha-2025/internal/health-check.New()
+app02   | [Fx] RUN	provide: github.com/carlosqsilva/rinha-2025/internal/health-check.New() in 8.261µs
+app02   | [Fx] HOOK OnStart		main.main.func1.1() executing (caller: main.main.func1)
+app02   | [Fx] HOOK OnStart		main.main.func1.1() called by main.main.func1 ran successfully in 19.281µs
+app02   | [Fx] RUNNING
+app02   | 
+app02   |  ┌───────────────────────────────────────────────────┐ 
+app02   |  │                   Fiber v2.52.8                   │ 
+app02   |  │           http://./sockets/rinha.app02:           │ 
+app02   |  │                                                   │ 
+app02   |  │ Handlers ............. 3  Processes ........... 1 │ 
+app02   |  │ Prefork ....... Disabled  PID ................. 1 │ 
+app02   |  └───────────────────────────────────────────────────┘ 
+app02   | 
+proxy   | [NOTICE]   (1) : Initializing new worker (8)
+proxy   | [NOTICE]   (1) : Loading success.
+proxy   | [NOTICE]   (1) : haproxy version is 3.2.3-1844da7
+proxy   | [WARNING]  (1) : Exiting Master process...
+proxy   | [WARNING]  (8) : Proxy frontend stopped (cumulated conns: FE: 605, BE: 0).
+proxy   | [WARNING]  (8) : Proxy rinha stopped (cumulated conns: FE: 0, BE: 90178).
+proxy   | [WARNING]  (1) : Current worker (8) exited with code 0 (Exit)
+proxy   | [WARNING]  (1) : All workers exited. Exiting... (0)
+[Kproxy exited with code 0
+app02   | [Fx] HOOK OnStop		main.main.func1.2() executing (caller: main.main.func1)
+app02   | 2025/08/18 10:08:53 ERROR Server shutting down...
+app02   | 2025/08/18 10:08:53 ERROR Listener shutdown failed error="close unix ./sockets/rinha.app02: use of closed network connection"
+app02   | 2025/08/18 10:08:53 ERROR Failed to cleanup socket error="remove rinha.app02: no such file or directory"
+app02   | [Fx] HOOK OnStop		main.main.func1.2() called by main.main.func1 ran successfully in 6.689927ms
+[Kapp02 exited with code 0
+app01   | [Fx] HOOK OnStop		main.main.func1.2() executing (caller: main.main.func1)
+app01   | 2025/08/18 10:08:53 ERROR Server shutting down...
+app01   | 2025/08/18 10:08:53 ERROR Listener shutdown failed error="close unix ./sockets/rinha.app01: use of closed network connection"
+app01   | 2025/08/18 10:08:53 ERROR Failed to cleanup socket error="remove rinha.app01: no such file or directory"
+app01   | [Fx] HOOK OnStop		main.main.func1.2() called by main.main.func1 ran successfully in 1.073915ms
+[Kapp01 exited with code 0
+nats-1  | [1] 2025/08/18 10:08:54.138823 [INF] Trapped "terminated" signal
+nats-1  | [1] 2025/08/18 10:08:54.190687 [INF] Initiating Shutdown...
+nats-1  | [1] 2025/08/18 10:08:54.190709 [INF] Initiating JetStream Shutdown...
+nats-1  | [1] 2025/08/18 10:08:54.190888 [INF] JetStream Shutdown
+nats-1  | [1] 2025/08/18 10:08:54.190961 [INF] Server Exiting..
+log truncated at line 1000

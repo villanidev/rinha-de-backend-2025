@@ -1,0 +1,1001 @@
+
+time="2025-08-18T07:50:47Z" level=warning msg="/home/ubuntu/rinha-de-backend-2025/participantes/arthur-r-oliveira/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+ api02 Pulling 
+ api01 Pulling 
+ worker Pulling 
+ lb Pulling 
+ e7dc8c72147d Pulling fs layer 
+ 2dfa0180818f Pulling fs layer 
+ e7dc8c72147d Pulling fs layer 
+ fb94c03a38ed Pulling fs layer 
+ e7dc8c72147d Pulling fs layer 
+ 2dfa0180818f Pulling fs layer 
+ e7dc8c72147d Pulling fs layer 
+ 2dfa0180818f Pulling fs layer 
+ e7dc8c72147d Downloading [>                                                  ]  400.5kB/39.62MB
+ e7dc8c72147d Downloading [>                                                  ]  400.5kB/39.62MB
+ e7dc8c72147d Downloading [>                                                  ]  400.5kB/39.62MB
+ e7dc8c72147d Downloading [>                                                  ]  400.5kB/39.62MB
+ 2dfa0180818f Downloading [>                                                  ]   50.6kB/3.885MB
+ 2dfa0180818f Downloading [>                                                  ]   50.6kB/3.885MB
+ 2dfa0180818f Downloading [>                                                  ]   50.6kB/3.885MB
+ fb94c03a38ed Downloading [>                                                  ]  224.7kB/21.38MB
+ 2dfa0180818f Verifying Checksum 
+ 2dfa0180818f Download complete 
+ 2dfa0180818f Verifying Checksum 
+ 2dfa0180818f Download complete 
+ 2dfa0180818f Verifying Checksum 
+ 2dfa0180818f Download complete 
+ e7dc8c72147d Downloading [=========================>                         ]  20.48MB/39.62MB
+ e7dc8c72147d Downloading [=========================>                         ]  20.48MB/39.62MB
+ e7dc8c72147d Downloading [=========================>                         ]  20.48MB/39.62MB
+ e7dc8c72147d Downloading [=========================>                         ]  20.48MB/39.62MB
+ fb94c03a38ed Downloading [====================>                              ]  8.817MB/21.38MB
+ e7dc8c72147d Downloading [======================================>            ]  30.54MB/39.62MB
+ e7dc8c72147d Downloading [======================================>            ]  30.54MB/39.62MB
+ e7dc8c72147d Downloading [======================================>            ]  30.54MB/39.62MB
+ e7dc8c72147d Downloading [======================================>            ]  30.54MB/39.62MB
+ e7dc8c72147d Downloading [===========================================>       ]  34.57MB/39.62MB
+ e7dc8c72147d Downloading [===========================================>       ]  34.57MB/39.62MB
+ e7dc8c72147d Downloading [===========================================>       ]  34.57MB/39.62MB
+ e7dc8c72147d Downloading [===========================================>       ]  34.57MB/39.62MB
+ fb94c03a38ed Downloading [=======================================>           ]  16.87MB/21.38MB
+ e7dc8c72147d Verifying Checksum 
+ e7dc8c72147d Verifying Checksum 
+ e7dc8c72147d Download complete 
+ e7dc8c72147d Download complete 
+ e7dc8c72147d Verifying Checksum 
+ e7dc8c72147d Download complete 
+ e7dc8c72147d Download complete 
+ fb94c03a38ed Verifying Checksum 
+ fb94c03a38ed Download complete 
+ e7dc8c72147d Extracting [>                                                  ]    426kB/39.62MB
+ e7dc8c72147d Extracting [>                                                  ]    426kB/39.62MB
+ e7dc8c72147d Extracting [>                                                  ]    426kB/39.62MB
+ e7dc8c72147d Extracting [>                                                  ]    426kB/39.62MB
+ e7dc8c72147d Extracting [==>                                                ]  1.704MB/39.62MB
+ e7dc8c72147d Extracting [==>                                                ]  1.704MB/39.62MB
+ e7dc8c72147d Extracting [==>                                                ]  1.704MB/39.62MB
+ e7dc8c72147d Extracting [==>                                                ]  1.704MB/39.62MB
+ e7dc8c72147d Extracting [=========>                                         ]  7.242MB/39.62MB
+ e7dc8c72147d Extracting [=========>                                         ]  7.242MB/39.62MB
+ e7dc8c72147d Extracting [=========>                                         ]  7.242MB/39.62MB
+ e7dc8c72147d Extracting [=========>                                         ]  7.242MB/39.62MB
+ e7dc8c72147d Extracting [==================>                                ]  14.91MB/39.62MB
+ e7dc8c72147d Extracting [==================>                                ]  14.91MB/39.62MB
+ e7dc8c72147d Extracting [==================>                                ]  14.91MB/39.62MB
+ e7dc8c72147d Extracting [==================>                                ]  14.91MB/39.62MB
+ e7dc8c72147d Extracting [=============================>                     ]  23.43MB/39.62MB
+ e7dc8c72147d Extracting [=============================>                     ]  23.43MB/39.62MB
+ e7dc8c72147d Extracting [=============================>                     ]  23.43MB/39.62MB
+ e7dc8c72147d Extracting [=============================>                     ]  23.43MB/39.62MB
+ e7dc8c72147d Extracting [=======================================>           ]   31.1MB/39.62MB
+ e7dc8c72147d Extracting [=======================================>           ]   31.1MB/39.62MB
+ e7dc8c72147d Extracting [=======================================>           ]   31.1MB/39.62MB
+ e7dc8c72147d Extracting [=======================================>           ]   31.1MB/39.62MB
+ e7dc8c72147d Extracting [=============================================>     ]  35.78MB/39.62MB
+ e7dc8c72147d Extracting [=============================================>     ]  35.78MB/39.62MB
+ e7dc8c72147d Extracting [=============================================>     ]  35.78MB/39.62MB
+ e7dc8c72147d Extracting [=============================================>     ]  35.78MB/39.62MB
+ e7dc8c72147d Extracting [===============================================>   ]  37.91MB/39.62MB
+ e7dc8c72147d Extracting [===============================================>   ]  37.91MB/39.62MB
+ e7dc8c72147d Extracting [===============================================>   ]  37.91MB/39.62MB
+ e7dc8c72147d Extracting [===============================================>   ]  37.91MB/39.62MB
+ e7dc8c72147d Extracting [==================================================>]  39.62MB/39.62MB
+ e7dc8c72147d Extracting [==================================================>]  39.62MB/39.62MB
+ e7dc8c72147d Extracting [==================================================>]  39.62MB/39.62MB
+ e7dc8c72147d Extracting [==================================================>]  39.62MB/39.62MB
+ e7dc8c72147d Pull complete 
+ e7dc8c72147d Pull complete 
+ e7dc8c72147d Pull complete 
+ e7dc8c72147d Pull complete 
+ 2dfa0180818f Extracting [>                                                  ]  65.54kB/3.885MB
+ 2dfa0180818f Extracting [>                                                  ]  65.54kB/3.885MB
+ 2dfa0180818f Extracting [>                                                  ]  65.54kB/3.885MB
+ fb94c03a38ed Extracting [>                                                  ]  229.4kB/21.38MB
+ 2dfa0180818f Extracting [==================================================>]  3.885MB/3.885MB
+ 2dfa0180818f Extracting [==================================================>]  3.885MB/3.885MB
+ 2dfa0180818f Extracting [==================================================>]  3.885MB/3.885MB
+ 2dfa0180818f Pull complete 
+ 2dfa0180818f Pull complete 
+ 2dfa0180818f Pull complete 
+ api01 Pulled 
+ api02 Pulled 
+ worker Pulled 
+ fb94c03a38ed Extracting [=====>                                             ]  2.523MB/21.38MB
+ fb94c03a38ed Extracting [========>                                          ]  3.441MB/21.38MB
+ fb94c03a38ed Extracting [=====================>                             ]  9.404MB/21.38MB
+ fb94c03a38ed Extracting [==================================>                ]  14.68MB/21.38MB
+ fb94c03a38ed Extracting [========================================>          ]   17.2MB/21.38MB
+ fb94c03a38ed Extracting [===========================================>       ]  18.81MB/21.38MB
+ fb94c03a38ed Extracting [==================================================>]  21.38MB/21.38MB
+ fb94c03a38ed Pull complete 
+ lb Pulled 
+ Container arthur-r-oliveira-postgres-1  Creating
+ Container arthur-r-oliveira-postgres-1  Created
+ Container arthur-r-oliveira-api02-1  Creating
+ Container arthur-r-oliveira-worker-1  Creating
+ Container arthur-r-oliveira-api01-1  Creating
+ Container arthur-r-oliveira-worker-1  Created
+ Container arthur-r-oliveira-api02-1  Created
+ Container arthur-r-oliveira-api01-1  Created
+ Container lb  Creating
+ Container lb  Created
+Attaching to api01-1, api02-1, postgres-1, worker-1, lb
+api02-1  | 2025/08/18 07:50:51 Attempt 1: Could not ensure payments table: failed to connect to `host=postgres user=postgres database=rinha`: dial error (dial tcp 172.18.0.4:5432: connect: connection refused)
+postgres-1  | The files belonging to this database system will be owned by user "postgres".
+postgres-1  | This user must also own the server process.
+postgres-1  | 
+postgres-1  | The database cluster will be initialized with locale "en_US.utf8".
+postgres-1  | The default database encoding has accordingly been set to "UTF8".
+postgres-1  | The default text search configuration will be set to "english".
+postgres-1  | 
+postgres-1  | Data page checksums are disabled.
+postgres-1  | 
+postgres-1  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+postgres-1  | creating subdirectories ... ok
+postgres-1  | selecting dynamic shared memory implementation ... posix
+api01-1     | 2025/08/18 07:50:52 Attempt 1: Could not ensure payments table: failed to connect to `host=postgres user=postgres database=rinha`: dial error (dial tcp 172.18.0.4:5432: connect: connection refused)
+worker-1    | 2025/08/18 07:50:52 Attempt 1: Could not ensure payments table: failed to connect to `host=postgres user=postgres database=rinha`: dial error (dial tcp 172.18.0.4:5432: connect: connection refused)
+postgres-1  | selecting default max_connections ... 100
+postgres-1  | selecting default shared_buffers ... 128MB
+lb          | [WARNING]  (1) : Server api_backend/api01 is DOWN, reason: Layer4 connection problem, info: "Connection refused", check duration: 0ms. 1 active and 0 backup servers left. 0 sessions active, 0 requeued, 0 remaining in queue.
+lb          | Server api_backend/api01 is DOWN, reason: Layer4 connection problem, info: "Connection refused", check duration: 0ms. 1 active and 0 backup servers left. 0 sessions active, 0 requeued, 0 remaining in queue.
+postgres-1  | selecting default time zone ... UTC
+postgres-1  | creating configuration files ... ok
+lb          | Server api_backend/api02 is DOWN, reason: Layer4 connection problem, info: "Connection refused", check duration: 0ms. 0 active and 0 backup servers left. 0 sessions active, 0 requeued, 0 remaining in queue.
+lb          | backend api_backend has no server available!
+lb          | [WARNING]  (1) : Server api_backend/api02 is DOWN, reason: Layer4 connection problem, info: "Connection refused", check duration: 0ms. 0 active and 0 backup servers left. 0 sessions active, 0 requeued, 0 remaining in queue.
+lb          | [NOTICE]   (1) : haproxy version is 2.4.22-f8e3218
+lb          | [NOTICE]   (1) : path to executable is /usr/sbin/haproxy
+lb          | [ALERT]    (1) : backend 'api_backend' has no server available!
+api02-1     | 2025/08/18 07:50:52 Attempt 2: Could not ensure payments table: failed to connect to `host=postgres user=postgres database=rinha`: dial error (dial tcp 172.18.0.4:5432: connect: connection refused)
+api01-1     | 2025/08/18 07:50:53 Attempt 2: Could not ensure payments table: failed to connect to `host=postgres user=postgres database=rinha`: dial error (dial tcp 172.18.0.4:5432: connect: connection refused)
+worker-1    | 2025/08/18 07:50:53 Attempt 2: Could not ensure payments table: failed to connect to `host=postgres user=postgres database=rinha`: dial error (dial tcp 172.18.0.4:5432: connect: connection refused)
+postgres-1  | running bootstrap script ... ok
+lb          | Server worker_backend/worker01 is DOWN, reason: Layer4 connection problem, info: "Connection refused", check duration: 0ms. 0 active and 0 backup servers left. 0 sessions active, 0 requeued, 0 remaining in queue.
+lb          | backend worker_backend has no server available!
+lb          | [WARNING]  (1) : Server worker_backend/worker01 is DOWN, reason: Layer4 connection problem, info: "Connection refused", check duration: 0ms. 0 active and 0 backup servers left. 0 sessions active, 0 requeued, 0 remaining in queue.
+lb          | [ALERT]    (1) : backend 'worker_backend' has no server available!
+postgres-1  | sh: locale: not found
+postgres-1  | 2025-08-18 07:50:54.275 UTC [35] WARNING:  no usable system locales were found
+api02-1     | 2025/08/18 07:50:54 Attempt 3: Could not ensure payments table: failed to connect to `host=postgres user=postgres database=rinha`: dial error (dial tcp 172.18.0.4:5432: connect: connection refused)
+api01-1     | 2025/08/18 07:50:55 Attempt 3: Could not ensure payments table: failed to connect to `host=postgres user=postgres database=rinha`: dial error (dial tcp 172.18.0.4:5432: connect: connection refused)
+worker-1    | 2025/08/18 07:50:55 Attempt 3: Could not ensure payments table: failed to connect to `host=postgres user=postgres database=rinha`: dial error (dial tcp 172.18.0.4:5432: connect: connection refused)
+lb          | 172.18.0.1:42548 [18/Aug/2025:07:50:52.460] http_front worker_backend/worker01 0/0/-1/-1/3002 503 217 - - SC-- 1/1/0/0/3 0/0 "GET /payments-summary HTTP/1.1"
+postgres-1  | performing post-bootstrap initialization ... ok
+postgres-1  | syncing data to disk ... ok
+postgres-1  | 
+postgres-1  | initdb: warning: enabling "trust" authentication for local connections
+postgres-1  | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+postgres-1  | 
+postgres-1  | Success. You can now start the database server using:
+postgres-1  | 
+postgres-1  |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+postgres-1  | 
+postgres-1  | waiting for server to start....2025-08-18 07:50:57.481 UTC [41] LOG:  starting PostgreSQL 15.13 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+postgres-1  | 2025-08-18 07:50:57.485 UTC [41] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-1  | 2025-08-18 07:50:57.497 UTC [44] LOG:  database system was shut down at 2025-08-18 07:50:57 UTC
+postgres-1  | 2025-08-18 07:50:57.505 UTC [41] LOG:  database system is ready to accept connections
+postgres-1  |  done
+postgres-1  | server started
+postgres-1  | CREATE DATABASE
+postgres-1  | 
+postgres-1  | 
+postgres-1  | /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+postgres-1  | 
+postgres-1  | waiting for server to shut down....2025-08-18 07:50:57.913 UTC [41] LOG:  received fast shutdown request
+postgres-1  | 2025-08-18 07:50:57.917 UTC [41] LOG:  aborting any active transactions
+postgres-1  | 2025-08-18 07:50:57.960 UTC [41] LOG:  background worker "logical replication launcher" (PID 47) exited with exit code 1
+postgres-1  | 2025-08-18 07:50:57.960 UTC [42] LOG:  shutting down
+postgres-1  | 2025-08-18 07:50:57.962 UTC [42] LOG:  checkpoint starting: shutdown immediate
+api02-1     | 2025/08/18 07:50:57 Attempt 4: Could not ensure payments table: context deadline exceeded
+api01-1     | 2025/08/18 07:50:58 Attempt 4: Could not ensure payments table: context deadline exceeded
+postgres-1  | 2025-08-18 07:50:58.027 UTC [42] LOG:  checkpoint complete: wrote 921 buffers (5.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.049 s, sync=0.008 s, total=0.067 s; sync files=301, longest=0.003 s, average=0.001 s; distance=4238 kB, estimate=4238 kB
+worker-1    | 2025/08/18 07:50:58 Attempt 4: Could not ensure payments table: context deadline exceeded
+postgres-1  | 2025-08-18 07:50:58.067 UTC [41] LOG:  database system is shut down
+postgres-1  |  done
+postgres-1  | server stopped
+postgres-1  | 
+postgres-1  | PostgreSQL init process complete; ready for start up.
+postgres-1  | 
+postgres-1  | 2025-08-18 07:50:58.164 UTC [1] LOG:  starting PostgreSQL 15.13 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+postgres-1  | 2025-08-18 07:50:58.164 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres-1  | 2025-08-18 07:50:58.164 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+postgres-1  | 2025-08-18 07:50:58.170 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-1  | 2025-08-18 07:50:58.179 UTC [57] LOG:  database system was shut down at 2025-08-18 07:50:58 UTC
+postgres-1  | 2025-08-18 07:50:58.186 UTC [1] LOG:  database system is ready to accept connections
+lb          | 172.18.0.1:52320 [18/Aug/2025:07:51:00.471] http_front worker_backend/<NOSRV> 0/-1/-1/-1/0 503 217 - - SC-- 1/1/0/0/0 0/0 "GET /payments-summary HTTP/1.1"
+api02-1     | 2025/08/18 07:51:01 Attempt 5: Could not ensure payments table: context deadline exceeded
+api02-1     | 2025/08/18 07:51:01 Failed to create payments table after 5 attempts, continuing anyway: context deadline exceeded
+api02-1     | 2025/08/18 07:51:01 Connected to Postgres successfully!
+api01-1     | 2025/08/18 07:51:02 Attempt 5: Could not ensure payments table: context deadline exceeded
+api01-1     | 2025/08/18 07:51:02 Failed to create payments table after 5 attempts, continuing anyway: context deadline exceeded
+api01-1     | 2025/08/18 07:51:02 Connected to Postgres successfully!
+worker-1    | 2025/08/18 07:51:02 Attempt 5: Could not ensure payments table: context deadline exceeded
+worker-1    | 2025/08/18 07:51:02 Failed to create payments table after 5 attempts, continuing anyway: context deadline exceeded
+worker-1    | 2025/08/18 07:51:02 Connected to Postgres successfully!
+worker-1    | 2025/08/18 07:51:02 Worker starting on port 8081
+postgres-1  | 2025-08-18 07:51:02.074 UTC [63] ERROR:  duplicate key value violates unique constraint "pg_type_typname_nsp_index"
+postgres-1  | 2025-08-18 07:51:02.074 UTC [63] DETAIL:  Key (typname, typnamespace)=(payments, 2200) already exists.
+postgres-1  | 2025-08-18 07:51:02.074 UTC [63] STATEMENT:  CREATE TABLE IF NOT EXISTS payments (
+postgres-1  | 	            correlation_id TEXT PRIMARY KEY,
+postgres-1  | 	            amount NUMERIC,
+postgres-1  | 	            processor TEXT,
+postgres-1  | 	            created_at TIMESTAMPTZ DEFAULT now()
+postgres-1  | 	        )
+api02-1     | 2025/08/18 07:51:02 API Gateway starting on port 8080
+api01-1     | 2025/08/18 07:51:02 PaymentLogger: create table error: ERROR: duplicate key value violates unique constraint "pg_type_typname_nsp_index" (SQLSTATE 23505)
+api01-1     | 2025/08/18 07:51:02 API Gateway starting on port 8080
+lb          | [WARNING]  (1) : Server api_backend/api01 is UP, reason: Layer4 check passed, check duration: 0ms. 1 active and 0 backup servers online. 0 sessions requeued, 0 total in queue.
+lb          | Server api_backend/api01 is UP, reason: Layer4 check passed, check duration: 0ms. 1 active and 0 backup servers online. 0 sessions requeued, 0 total in queue.
+lb          | Server api_backend/api02 is UP, reason: Layer4 check passed, check duration: 0ms. 2 active and 0 backup servers online. 0 sessions requeued, 0 total in queue.
+lb          | [WARNING]  (1) : Server api_backend/api02 is UP, reason: Layer4 check passed, check duration: 0ms. 2 active and 0 backup servers online. 0 sessions requeued, 0 total in queue.
+lb          | 172.18.0.1:52332 [18/Aug/2025:07:51:05.480] http_front worker_backend/<NOSRV> 0/-1/-1/-1/0 503 217 - - SC-- 1/1/0/0/0 0/0 "GET /payments-summary HTTP/1.1"
+lb          | Server worker_backend/worker01 is UP, reason: Layer4 check passed, check duration: 0ms. 1 active and 0 backup servers online. 0 sessions requeued, 0 total in queue.
+lb          | [WARNING]  (1) : Server worker_backend/worker01 is UP, reason: Layer4 check passed, check duration: 0ms. 1 active and 0 backup servers online. 0 sessions requeued, 0 total in queue.
+worker-1    | 2025/08/18 07:51:07 Worker: Checking health for default at http://payment-processor-default:8080/payments/service-health
+worker-1    | 2025/08/18 07:51:07 Worker: Health check for default returned status: 200
+worker-1    | 2025/08/18 07:51:07 Worker: Health check for default - Failing: false
+worker-1    | 2025/08/18 07:51:07 Worker: Checking health for fallback at http://payment-processor-fallback:8080/payments/service-health
+worker-1    | 2025/08/18 07:51:07 Worker: Health check for fallback returned status: 200
+worker-1    | 2025/08/18 07:51:07 Worker: Health check for fallback - Failing: false
+lb          | 172.18.0.1:41138 [18/Aug/2025:07:51:10.489] http_front worker_backend/worker01 0/0/0/8/8 200 206 - - ---- 1/1/0/0/0 0/0 "GET /payments-summary HTTP/1.1"
+worker-1    | 2025/08/18 07:51:12 Worker: Checking health for default at http://payment-processor-default:8080/payments/service-health
+worker-1    | 2025/08/18 07:51:12 Worker: Health check for default returned status: 200
+worker-1    | 2025/08/18 07:51:12 Worker: Health check for default - Failing: false
+worker-1    | 2025/08/18 07:51:12 Worker: Checking health for fallback at http://payment-processor-fallback:8080/payments/service-health
+worker-1    | 2025/08/18 07:51:12 Worker: Health check for fallback returned status: 200
+worker-1    | 2025/08/18 07:51:12 Worker: Health check for fallback - Failing: false
+lb          | 172.18.0.1:59372 [18/Aug/2025:07:51:16.041] http_front api_backend/api01 0/0/0/0/0 404 175 - - ---- 1/1/0/0/0 0/0 "POST /purge-payments HTTP/1.1"
+lb          | 172.18.0.1:59388 [18/Aug/2025:07:51:16.043] http_front worker_backend/worker01 0/0/0/1/1 200 206 - - ---- 2/2/0/0/0 0/0 "GET /payments-summary?from=2025-08-18T07:51:01.042Z&to=2025-08-18T07:51:14.042Z HTTP/1.1"
+lb          | 172.18.0.1:59404 [18/Aug/2025:07:51:16.046] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 3/3/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:16 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:16 Worker processing payment: c12f16b4-f6be-4dc3-a3e8-9a6c5d68e25d, Amount: 20.05
+worker-1    | 2025/08/18 07:51:16 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:16 Worker: Attempting to call default processor for payment c12f16b4-f6be-4dc3-a3e8-9a6c5d68e25d
+worker-1    | 2025/08/18 07:51:16 Worker: Successfully processed payment c12f16b4-f6be-4dc3-a3e8-9a6c5d68e25d with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:16 Worker: Successfully processed payment c12f16b4-f6be-4dc3-a3e8-9a6c5d68e25d with default processor and updated Postgres.
+lb          | 172.18.0.1:59408 [18/Aug/2025:07:51:16.542] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 4/4/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:16 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:16 Worker processing payment: aa422919-4227-4ff5-94d8-55534cee2fd7, Amount: 20.05
+worker-1    | 2025/08/18 07:51:16 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:16 Worker: Attempting to call default processor for payment aa422919-4227-4ff5-94d8-55534cee2fd7
+worker-1    | 2025/08/18 07:51:16 Worker: Successfully processed payment aa422919-4227-4ff5-94d8-55534cee2fd7 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:16 Worker: Successfully processed payment aa422919-4227-4ff5-94d8-55534cee2fd7 with default processor and updated Postgres.
+lb          | 172.18.0.1:59416 [18/Aug/2025:07:51:17.040] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 5/5/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:17 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:17 Worker processing payment: 244a492e-d914-457d-8ea9-8f916603901d, Amount: 20.05
+worker-1    | 2025/08/18 07:51:17 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:17 Worker: Attempting to call default processor for payment 244a492e-d914-457d-8ea9-8f916603901d
+worker-1    | 2025/08/18 07:51:17 Worker: Successfully processed payment 244a492e-d914-457d-8ea9-8f916603901d with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:17 Worker: Checking health for default at http://payment-processor-default:8080/payments/service-health
+worker-1    | 2025/08/18 07:51:17 Worker: Successfully processed payment 244a492e-d914-457d-8ea9-8f916603901d with default processor and updated Postgres.
+worker-1    | 2025/08/18 07:51:17 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:17 Worker processing payment: 7b4323b7-3782-4669-9e70-53c0308c4eef, Amount: 20.05
+lb          | 172.18.0.1:59404 [18/Aug/2025:07:51:17.048] http_front api_backend/api01 0/0/0/1/1 200 82 - - ---- 5/5/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:17 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:17 Worker: Attempting to call default processor for payment 7b4323b7-3782-4669-9e70-53c0308c4eef
+worker-1    | 2025/08/18 07:51:17 Worker: Successfully processed payment 7b4323b7-3782-4669-9e70-53c0308c4eef with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:17 Worker: Successfully processed payment 7b4323b7-3782-4669-9e70-53c0308c4eef with default processor and updated Postgres.
+worker-1    | 2025/08/18 07:51:17 Worker: Health check for default returned status: 200
+worker-1    | 2025/08/18 07:51:17 Worker: Health check for default - Failing: false
+worker-1    | 2025/08/18 07:51:17 Worker: Checking health for fallback at http://payment-processor-fallback:8080/payments/service-health
+worker-1    | 2025/08/18 07:51:17 Worker: Health check for fallback returned status: 200
+worker-1    | 2025/08/18 07:51:17 Worker: Health check for fallback - Failing: false
+lb          | 172.18.0.1:59418 [18/Aug/2025:07:51:17.538] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 6/6/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:17 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:17 Worker processing payment: cae1016d-09c7-4c73-a729-ade18b34b4f5, Amount: 20.05
+worker-1    | 2025/08/18 07:51:17 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:17 Worker: Attempting to call default processor for payment cae1016d-09c7-4c73-a729-ade18b34b4f5
+worker-1    | 2025/08/18 07:51:17 Worker: Successfully processed payment cae1016d-09c7-4c73-a729-ade18b34b4f5 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:17 Worker: Successfully processed payment cae1016d-09c7-4c73-a729-ade18b34b4f5 with default processor and updated Postgres.
+lb          | 172.18.0.1:59408 [18/Aug/2025:07:51:17.543] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 6/6/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:17 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:17 Worker processing payment: 380733ae-cf8e-4776-9dd8-b760bde8b148, Amount: 20.05
+worker-1    | 2025/08/18 07:51:17 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:17 Worker: Attempting to call default processor for payment 380733ae-cf8e-4776-9dd8-b760bde8b148
+worker-1    | 2025/08/18 07:51:17 Worker: Successfully processed payment 380733ae-cf8e-4776-9dd8-b760bde8b148 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:17 Worker: Successfully processed payment 380733ae-cf8e-4776-9dd8-b760bde8b148 with default processor and updated Postgres.
+lb          | 172.18.0.1:59432 [18/Aug/2025:07:51:18.036] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 7/7/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:18 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:18 Worker processing payment: 45b26f8c-1519-46fc-9e05-1ce3e4bf5ad8, Amount: 20.05
+worker-1    | 2025/08/18 07:51:18 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:18 Worker: Attempting to call default processor for payment 45b26f8c-1519-46fc-9e05-1ce3e4bf5ad8
+worker-1    | 2025/08/18 07:51:18 Worker: Successfully processed payment 45b26f8c-1519-46fc-9e05-1ce3e4bf5ad8 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:18 Worker: Successfully processed payment 45b26f8c-1519-46fc-9e05-1ce3e4bf5ad8 with default processor and updated Postgres.
+lb          | 172.18.0.1:59416 [18/Aug/2025:07:51:18.041] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 7/7/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:18 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:18 Worker processing payment: b46e3eb1-4ca4-44a5-b412-58b350a663bf, Amount: 20.05
+worker-1    | 2025/08/18 07:51:18 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:18 Worker: Attempting to call default processor for payment b46e3eb1-4ca4-44a5-b412-58b350a663bf
+worker-1    | 2025/08/18 07:51:18 Worker: Successfully processed payment b46e3eb1-4ca4-44a5-b412-58b350a663bf with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:18 Worker: Successfully processed payment b46e3eb1-4ca4-44a5-b412-58b350a663bf with default processor and updated Postgres.
+lb          | 172.18.0.1:59404 [18/Aug/2025:07:51:18.050] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 7/7/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:18 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:18 Worker processing payment: baf0915a-3aac-4e66-b539-072b25927b31, Amount: 20.05
+worker-1    | 2025/08/18 07:51:18 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:18 Worker: Attempting to call default processor for payment baf0915a-3aac-4e66-b539-072b25927b31
+worker-1    | 2025/08/18 07:51:18 Worker: Successfully processed payment baf0915a-3aac-4e66-b539-072b25927b31 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:18 Worker: Successfully processed payment baf0915a-3aac-4e66-b539-072b25927b31 with default processor and updated Postgres.
+lb          | 172.18.0.1:59436 [18/Aug/2025:07:51:18.535] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 8/8/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:18 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:18 Worker processing payment: e5662f8f-baa2-44fe-b3b4-16763b610c4b, Amount: 20.05
+worker-1    | 2025/08/18 07:51:18 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:18 Worker: Attempting to call default processor for payment e5662f8f-baa2-44fe-b3b4-16763b610c4b
+worker-1    | 2025/08/18 07:51:18 Worker: Successfully processed payment e5662f8f-baa2-44fe-b3b4-16763b610c4b with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:18 Worker: Successfully processed payment e5662f8f-baa2-44fe-b3b4-16763b610c4b with default processor and updated Postgres.
+lb          | 172.18.0.1:59418 [18/Aug/2025:07:51:18.540] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 8/8/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:18 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:18 Worker processing payment: c0696d2d-8436-4dd2-9c12-eb367a6c12a0, Amount: 20.05
+worker-1    | 2025/08/18 07:51:18 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:18 Worker: Attempting to call default processor for payment c0696d2d-8436-4dd2-9c12-eb367a6c12a0
+worker-1    | 2025/08/18 07:51:18 Worker: Successfully processed payment c0696d2d-8436-4dd2-9c12-eb367a6c12a0 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:18 Worker: Successfully processed payment c0696d2d-8436-4dd2-9c12-eb367a6c12a0 with default processor and updated Postgres.
+lb          | 172.18.0.1:59408 [18/Aug/2025:07:51:18.545] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 8/8/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:18 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:18 Worker processing payment: 2c768146-ed98-426a-b408-aa8511ad0296, Amount: 20.05
+worker-1    | 2025/08/18 07:51:18 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:18 Worker: Attempting to call default processor for payment 2c768146-ed98-426a-b408-aa8511ad0296
+worker-1    | 2025/08/18 07:51:18 Worker: Successfully processed payment 2c768146-ed98-426a-b408-aa8511ad0296 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:18 Worker: Successfully processed payment 2c768146-ed98-426a-b408-aa8511ad0296 with default processor and updated Postgres.
+lb          | 172.18.0.1:59438 [18/Aug/2025:07:51:19.033] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 9/9/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:19 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:19 Worker processing payment: 9b14374a-f4a7-4d6b-8552-217de8240802, Amount: 20.05
+worker-1    | 2025/08/18 07:51:19 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:19 Worker: Attempting to call default processor for payment 9b14374a-f4a7-4d6b-8552-217de8240802
+worker-1    | 2025/08/18 07:51:19 Worker: Successfully processed payment 9b14374a-f4a7-4d6b-8552-217de8240802 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:19 Worker: Successfully processed payment 9b14374a-f4a7-4d6b-8552-217de8240802 with default processor and updated Postgres.
+lb          | 172.18.0.1:59432 [18/Aug/2025:07:51:19.038] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 9/9/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:19 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:19 Worker processing payment: 2b86a345-ab54-49bf-bdff-8038473329ba, Amount: 20.05
+worker-1    | 2025/08/18 07:51:19 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:19 Worker: Attempting to call default processor for payment 2b86a345-ab54-49bf-bdff-8038473329ba
+worker-1    | 2025/08/18 07:51:19 Worker: Successfully processed payment 2b86a345-ab54-49bf-bdff-8038473329ba with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:19 Worker: Successfully processed payment 2b86a345-ab54-49bf-bdff-8038473329ba with default processor and updated Postgres.
+lb          | 172.18.0.1:59416 [18/Aug/2025:07:51:19.043] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 9/9/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:19 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:19 Worker processing payment: 6491e370-501b-4dfe-82de-29077f93a6ee, Amount: 20.05
+worker-1    | 2025/08/18 07:51:19 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:19 Worker: Attempting to call default processor for payment 6491e370-501b-4dfe-82de-29077f93a6ee
+worker-1    | 2025/08/18 07:51:19 Worker: Successfully processed payment 6491e370-501b-4dfe-82de-29077f93a6ee with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:19 Worker: Successfully processed payment 6491e370-501b-4dfe-82de-29077f93a6ee with default processor and updated Postgres.
+lb          | 172.18.0.1:59404 [18/Aug/2025:07:51:19.051] http_front api_backend/api01 0/0/0/1/1 200 82 - - ---- 9/9/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:19 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:19 Worker processing payment: 64db55fb-74eb-4b6e-ae2e-3eca41c46d4e, Amount: 20.05
+worker-1    | 2025/08/18 07:51:19 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:19 Worker: Attempting to call default processor for payment 64db55fb-74eb-4b6e-ae2e-3eca41c46d4e
+worker-1    | 2025/08/18 07:51:19 Worker: Successfully processed payment 64db55fb-74eb-4b6e-ae2e-3eca41c46d4e with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:19 Worker: Successfully processed payment 64db55fb-74eb-4b6e-ae2e-3eca41c46d4e with default processor and updated Postgres.
+lb          | 172.18.0.1:59440 [18/Aug/2025:07:51:19.531] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 10/10/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:19 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:19 Worker processing payment: b33cde5a-1130-4b3b-ab46-05b091f9042a, Amount: 20.05
+worker-1    | 2025/08/18 07:51:19 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:19 Worker: Attempting to call default processor for payment b33cde5a-1130-4b3b-ab46-05b091f9042a
+worker-1    | 2025/08/18 07:51:19 Worker: Successfully processed payment b33cde5a-1130-4b3b-ab46-05b091f9042a with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:19 Worker: Successfully processed payment b33cde5a-1130-4b3b-ab46-05b091f9042a with default processor and updated Postgres.
+lb          | 172.18.0.1:59436 [18/Aug/2025:07:51:19.537] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 10/10/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:19 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:19 Worker processing payment: fe2d4bd6-d9f7-4f17-a1b8-2aeff156eab4, Amount: 20.05
+worker-1    | 2025/08/18 07:51:19 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:19 Worker: Attempting to call default processor for payment fe2d4bd6-d9f7-4f17-a1b8-2aeff156eab4
+worker-1    | 2025/08/18 07:51:19 Worker: Successfully processed payment fe2d4bd6-d9f7-4f17-a1b8-2aeff156eab4 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:19 Worker: Successfully processed payment fe2d4bd6-d9f7-4f17-a1b8-2aeff156eab4 with default processor and updated Postgres.
+lb          | 172.18.0.1:59418 [18/Aug/2025:07:51:19.540] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 10/10/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:19 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:19 Worker processing payment: 708ba402-1951-4ffc-a187-2871184d1ebc, Amount: 20.05
+worker-1    | 2025/08/18 07:51:19 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:19 Worker: Attempting to call default processor for payment 708ba402-1951-4ffc-a187-2871184d1ebc
+worker-1    | 2025/08/18 07:51:19 Worker: Successfully processed payment 708ba402-1951-4ffc-a187-2871184d1ebc with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:19 Worker: Successfully processed payment 708ba402-1951-4ffc-a187-2871184d1ebc with default processor and updated Postgres.
+lb          | 172.18.0.1:59408 [18/Aug/2025:07:51:19.545] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 10/10/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:19 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:19 Worker processing payment: 5d80dc3f-ca28-4404-b50c-cd13c3be430f, Amount: 20.05
+worker-1    | 2025/08/18 07:51:19 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:19 Worker: Attempting to call default processor for payment 5d80dc3f-ca28-4404-b50c-cd13c3be430f
+worker-1    | 2025/08/18 07:51:19 Worker: Successfully processed payment 5d80dc3f-ca28-4404-b50c-cd13c3be430f with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:19 Worker: Successfully processed payment 5d80dc3f-ca28-4404-b50c-cd13c3be430f with default processor and updated Postgres.
+lb          | 172.18.0.1:59446 [18/Aug/2025:07:51:20.030] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 11/11/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:20 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:20 Worker processing payment: 72152aaf-fca4-43be-8a85-8f5b8ebcbed5, Amount: 20.05
+worker-1    | 2025/08/18 07:51:20 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:20 Worker: Attempting to call default processor for payment 72152aaf-fca4-43be-8a85-8f5b8ebcbed5
+worker-1    | 2025/08/18 07:51:20 Worker: Successfully processed payment 72152aaf-fca4-43be-8a85-8f5b8ebcbed5 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:20 Worker: Successfully processed payment 72152aaf-fca4-43be-8a85-8f5b8ebcbed5 with default processor and updated Postgres.
+lb          | 172.18.0.1:59438 [18/Aug/2025:07:51:20.033] http_front api_backend/api01 0/0/0/1/1 200 82 - - ---- 11/11/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:20 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:20 Worker processing payment: b55a4877-2bd2-483c-a39b-e430884aed28, Amount: 20.05
+worker-1    | 2025/08/18 07:51:20 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:20 Worker: Attempting to call default processor for payment b55a4877-2bd2-483c-a39b-e430884aed28
+worker-1    | 2025/08/18 07:51:20 Worker: Successfully processed payment b55a4877-2bd2-483c-a39b-e430884aed28 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:20 Worker: Successfully processed payment b55a4877-2bd2-483c-a39b-e430884aed28 with default processor and updated Postgres.
+lb          | 172.18.0.1:59432 [18/Aug/2025:07:51:20.038] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 11/11/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:20 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:20 Worker processing payment: 143cd66e-a015-4fcf-9ce4-86727d2a6c1a, Amount: 20.05
+worker-1    | 2025/08/18 07:51:20 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:20 Worker: Attempting to call default processor for payment 143cd66e-a015-4fcf-9ce4-86727d2a6c1a
+worker-1    | 2025/08/18 07:51:20 Worker: Successfully processed payment 143cd66e-a015-4fcf-9ce4-86727d2a6c1a with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:20 Worker: Successfully processed payment 143cd66e-a015-4fcf-9ce4-86727d2a6c1a with default processor and updated Postgres.
+lb          | 172.18.0.1:59416 [18/Aug/2025:07:51:20.044] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 11/11/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:20 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:20 Worker processing payment: 3aa47c2a-cf2c-4cfc-b73c-5d9abefc4777, Amount: 20.05
+worker-1    | 2025/08/18 07:51:20 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:20 Worker: Attempting to call default processor for payment 3aa47c2a-cf2c-4cfc-b73c-5d9abefc4777
+worker-1    | 2025/08/18 07:51:20 Worker: Successfully processed payment 3aa47c2a-cf2c-4cfc-b73c-5d9abefc4777 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:20 Worker: Successfully processed payment 3aa47c2a-cf2c-4cfc-b73c-5d9abefc4777 with default processor and updated Postgres.
+lb          | 172.18.0.1:59404 [18/Aug/2025:07:51:20.052] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 11/11/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:20 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:20 Worker processing payment: de758b90-54a6-491b-9446-c8f7ac85e5d4, Amount: 20.05
+worker-1    | 2025/08/18 07:51:20 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:20 Worker: Attempting to call default processor for payment de758b90-54a6-491b-9446-c8f7ac85e5d4
+worker-1    | 2025/08/18 07:51:20 Worker: Successfully processed payment de758b90-54a6-491b-9446-c8f7ac85e5d4 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:20 Worker: Successfully processed payment de758b90-54a6-491b-9446-c8f7ac85e5d4 with default processor and updated Postgres.
+lb          | 172.18.0.1:59452 [18/Aug/2025:07:51:20.528] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 12/12/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:20 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:20 Worker processing payment: 91bd98d7-0032-4550-a963-2ff60fb02649, Amount: 20.05
+worker-1    | 2025/08/18 07:51:20 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:20 Worker: Attempting to call default processor for payment 91bd98d7-0032-4550-a963-2ff60fb02649
+worker-1    | 2025/08/18 07:51:20 Worker: Successfully processed payment 91bd98d7-0032-4550-a963-2ff60fb02649 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:20 Worker: Successfully processed payment 91bd98d7-0032-4550-a963-2ff60fb02649 with default processor and updated Postgres.
+lb          | 172.18.0.1:59440 [18/Aug/2025:07:51:20.533] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 12/12/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:20 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:20 Worker processing payment: 32980494-2edf-49de-99d9-f5e4419560e7, Amount: 20.05
+worker-1    | 2025/08/18 07:51:20 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:20 Worker: Attempting to call default processor for payment 32980494-2edf-49de-99d9-f5e4419560e7
+worker-1    | 2025/08/18 07:51:20 Worker: Successfully processed payment 32980494-2edf-49de-99d9-f5e4419560e7 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:20 Worker: Successfully processed payment 32980494-2edf-49de-99d9-f5e4419560e7 with default processor and updated Postgres.
+lb          | 172.18.0.1:59436 [18/Aug/2025:07:51:20.538] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 12/12/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:20 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:20 Worker processing payment: 6d5e3d8b-dc50-4887-8c6c-d73df897aaab, Amount: 20.05
+worker-1    | 2025/08/18 07:51:20 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:20 Worker: Attempting to call default processor for payment 6d5e3d8b-dc50-4887-8c6c-d73df897aaab
+worker-1    | 2025/08/18 07:51:20 Worker: Successfully processed payment 6d5e3d8b-dc50-4887-8c6c-d73df897aaab with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:20 Worker: Successfully processed payment 6d5e3d8b-dc50-4887-8c6c-d73df897aaab with default processor and updated Postgres.
+lb          | 172.18.0.1:59418 [18/Aug/2025:07:51:20.541] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 12/12/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:20 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:20 Worker processing payment: cffacf91-e061-4dd9-ae1b-b9f0de02dfbc, Amount: 20.05
+worker-1    | 2025/08/18 07:51:20 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:20 Worker: Attempting to call default processor for payment cffacf91-e061-4dd9-ae1b-b9f0de02dfbc
+worker-1    | 2025/08/18 07:51:20 Worker: Successfully processed payment cffacf91-e061-4dd9-ae1b-b9f0de02dfbc with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:20 Worker: Successfully processed payment cffacf91-e061-4dd9-ae1b-b9f0de02dfbc with default processor and updated Postgres.
+lb          | 172.18.0.1:59408 [18/Aug/2025:07:51:20.547] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 12/12/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:20 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:20 Worker processing payment: 24eb2ce0-b84f-4524-a4ed-28b91fde7a07, Amount: 20.05
+worker-1    | 2025/08/18 07:51:20 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:20 Worker: Attempting to call default processor for payment 24eb2ce0-b84f-4524-a4ed-28b91fde7a07
+worker-1    | 2025/08/18 07:51:20 Worker: Successfully processed payment 24eb2ce0-b84f-4524-a4ed-28b91fde7a07 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:20 Worker: Successfully processed payment 24eb2ce0-b84f-4524-a4ed-28b91fde7a07 with default processor and updated Postgres.
+lb          | 172.18.0.1:59462 [18/Aug/2025:07:51:21.026] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 13/13/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:21 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:21 Worker processing payment: 5882452c-b660-47dc-bf07-e5a27947da2e, Amount: 20.05
+worker-1    | 2025/08/18 07:51:21 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:21 Worker: Attempting to call default processor for payment 5882452c-b660-47dc-bf07-e5a27947da2e
+worker-1    | 2025/08/18 07:51:21 Worker: Successfully processed payment 5882452c-b660-47dc-bf07-e5a27947da2e with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:21 Worker: Successfully processed payment 5882452c-b660-47dc-bf07-e5a27947da2e with default processor and updated Postgres.
+lb          | 172.18.0.1:59446 [18/Aug/2025:07:51:21.031] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 13/13/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:21 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:21 Worker processing payment: 619314bb-c32c-440f-83a0-e65796d27c1a, Amount: 20.05
+worker-1    | 2025/08/18 07:51:21 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:21 Worker: Attempting to call default processor for payment 619314bb-c32c-440f-83a0-e65796d27c1a
+worker-1    | 2025/08/18 07:51:21 Worker: Successfully processed payment 619314bb-c32c-440f-83a0-e65796d27c1a with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:21 Worker: Successfully processed payment 619314bb-c32c-440f-83a0-e65796d27c1a with default processor and updated Postgres.
+lb          | 172.18.0.1:59438 [18/Aug/2025:07:51:21.035] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 13/13/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:21 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:21 Worker processing payment: ab983d95-dc40-4ef3-87cf-64c84b318808, Amount: 20.05
+worker-1    | 2025/08/18 07:51:21 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:21 Worker: Attempting to call default processor for payment ab983d95-dc40-4ef3-87cf-64c84b318808
+worker-1    | 2025/08/18 07:51:21 Worker: Successfully processed payment ab983d95-dc40-4ef3-87cf-64c84b318808 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:21 Worker: Successfully processed payment ab983d95-dc40-4ef3-87cf-64c84b318808 with default processor and updated Postgres.
+worker-1    | 2025/08/18 07:51:21 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:21 Worker processing payment: 0de8c8a7-ecb0-491f-afca-a774a005f716, Amount: 20.05
+lb          | 172.18.0.1:59432 [18/Aug/2025:07:51:21.040] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 13/13/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:21 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:21 Worker: Attempting to call default processor for payment 0de8c8a7-ecb0-491f-afca-a774a005f716
+worker-1    | 2025/08/18 07:51:21 Worker: Successfully processed payment 0de8c8a7-ecb0-491f-afca-a774a005f716 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:21 Worker: Successfully processed payment 0de8c8a7-ecb0-491f-afca-a774a005f716 with default processor and updated Postgres.
+lb          | 172.18.0.1:59416 [18/Aug/2025:07:51:21.046] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 13/13/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:21 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:21 Worker processing payment: 64f8645b-846b-4e96-9e11-1e77aefe273a, Amount: 20.05
+worker-1    | 2025/08/18 07:51:21 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:21 Worker: Attempting to call default processor for payment 64f8645b-846b-4e96-9e11-1e77aefe273a
+worker-1    | 2025/08/18 07:51:21 Worker: Successfully processed payment 64f8645b-846b-4e96-9e11-1e77aefe273a with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:21 Worker: Successfully processed payment 64f8645b-846b-4e96-9e11-1e77aefe273a with default processor and updated Postgres.
+lb          | 172.18.0.1:59404 [18/Aug/2025:07:51:21.052] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 13/13/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:21 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:21 Worker processing payment: e9ce1e11-5bb0-4fdd-9c4c-e2589aa05830, Amount: 20.05
+worker-1    | 2025/08/18 07:51:21 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:21 Worker: Attempting to call default processor for payment e9ce1e11-5bb0-4fdd-9c4c-e2589aa05830
+worker-1    | 2025/08/18 07:51:21 Worker: Successfully processed payment e9ce1e11-5bb0-4fdd-9c4c-e2589aa05830 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:21 Worker: Successfully processed payment e9ce1e11-5bb0-4fdd-9c4c-e2589aa05830 with default processor and updated Postgres.
+lb          | 172.18.0.1:59464 [18/Aug/2025:07:51:21.525] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 14/14/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:21 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:21 Worker processing payment: f313da84-56ab-488b-b187-a2bcd6b266f9, Amount: 20.05
+worker-1    | 2025/08/18 07:51:21 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:21 Worker: Attempting to call default processor for payment f313da84-56ab-488b-b187-a2bcd6b266f9
+worker-1    | 2025/08/18 07:51:21 Worker: Successfully processed payment f313da84-56ab-488b-b187-a2bcd6b266f9 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:21 Worker: Successfully processed payment f313da84-56ab-488b-b187-a2bcd6b266f9 with default processor and updated Postgres.
+worker-1    | 2025/08/18 07:51:21 Worker received process-payment request
+lb          | 172.18.0.1:59452 [18/Aug/2025:07:51:21.529] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 14/14/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:21 Worker processing payment: e1b47b6a-e520-4a69-bdab-5ef74b461cd0, Amount: 20.05
+worker-1    | 2025/08/18 07:51:21 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:21 Worker: Attempting to call default processor for payment e1b47b6a-e520-4a69-bdab-5ef74b461cd0
+worker-1    | 2025/08/18 07:51:21 Worker: Successfully processed payment e1b47b6a-e520-4a69-bdab-5ef74b461cd0 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:21 Worker: Successfully processed payment e1b47b6a-e520-4a69-bdab-5ef74b461cd0 with default processor and updated Postgres.
+lb          | 172.18.0.1:59440 [18/Aug/2025:07:51:21.534] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 14/14/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:21 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:21 Worker processing payment: 18b8ad49-faf0-4d20-af58-a603d1b8c5d6, Amount: 20.05
+worker-1    | 2025/08/18 07:51:21 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:21 Worker: Attempting to call default processor for payment 18b8ad49-faf0-4d20-af58-a603d1b8c5d6
+worker-1    | 2025/08/18 07:51:21 Worker: Successfully processed payment 18b8ad49-faf0-4d20-af58-a603d1b8c5d6 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:21 Worker: Successfully processed payment 18b8ad49-faf0-4d20-af58-a603d1b8c5d6 with default processor and updated Postgres.
+lb          | 172.18.0.1:59436 [18/Aug/2025:07:51:21.540] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 14/14/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:21 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:21 Worker processing payment: 3955177f-03f7-463c-baa9-e2696fc680bb, Amount: 20.05
+worker-1    | 2025/08/18 07:51:21 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:21 Worker: Attempting to call default processor for payment 3955177f-03f7-463c-baa9-e2696fc680bb
+worker-1    | 2025/08/18 07:51:21 Worker: Successfully processed payment 3955177f-03f7-463c-baa9-e2696fc680bb with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:21 Worker: Successfully processed payment 3955177f-03f7-463c-baa9-e2696fc680bb with default processor and updated Postgres.
+lb          | 172.18.0.1:59418 [18/Aug/2025:07:51:21.543] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 14/14/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:21 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:21 Worker processing payment: ef92e12a-0769-421f-8f07-6175fc1260ca, Amount: 20.05
+worker-1    | 2025/08/18 07:51:21 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:21 Worker: Attempting to call default processor for payment ef92e12a-0769-421f-8f07-6175fc1260ca
+worker-1    | 2025/08/18 07:51:21 Worker: Successfully processed payment ef92e12a-0769-421f-8f07-6175fc1260ca with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:21 Worker: Successfully processed payment ef92e12a-0769-421f-8f07-6175fc1260ca with default processor and updated Postgres.
+lb          | 172.18.0.1:59408 [18/Aug/2025:07:51:21.549] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 14/14/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:21 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:21 Worker processing payment: 8d78dd19-b146-4dbf-9d49-16b1ca6b84d3, Amount: 20.05
+worker-1    | 2025/08/18 07:51:21 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:21 Worker: Attempting to call default processor for payment 8d78dd19-b146-4dbf-9d49-16b1ca6b84d3
+worker-1    | 2025/08/18 07:51:21 Worker: Successfully processed payment 8d78dd19-b146-4dbf-9d49-16b1ca6b84d3 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:21 Worker: Successfully processed payment 8d78dd19-b146-4dbf-9d49-16b1ca6b84d3 with default processor and updated Postgres.
+lb          | 172.18.0.1:59466 [18/Aug/2025:07:51:22.023] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 15/15/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:22 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:22 Worker processing payment: b3f72b1f-0c08-4ca2-abf3-dbe4b4d6a5be, Amount: 20.05
+worker-1    | 2025/08/18 07:51:22 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:22 Worker: Attempting to call default processor for payment b3f72b1f-0c08-4ca2-abf3-dbe4b4d6a5be
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment b3f72b1f-0c08-4ca2-abf3-dbe4b4d6a5be with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment b3f72b1f-0c08-4ca2-abf3-dbe4b4d6a5be with default processor and updated Postgres.
+lb          | 172.18.0.1:59462 [18/Aug/2025:07:51:22.028] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 15/15/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:22 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:22 Worker processing payment: 014519e2-3f52-4fd3-8c41-d05967347bfd, Amount: 20.05
+worker-1    | 2025/08/18 07:51:22 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:22 Worker: Attempting to call default processor for payment 014519e2-3f52-4fd3-8c41-d05967347bfd
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment 014519e2-3f52-4fd3-8c41-d05967347bfd with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment 014519e2-3f52-4fd3-8c41-d05967347bfd with default processor and updated Postgres.
+lb          | 172.18.0.1:59446 [18/Aug/2025:07:51:22.033] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 15/15/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:22 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:22 Worker processing payment: 0390860e-30b3-42ef-8abe-d47a7fa83863, Amount: 20.05
+worker-1    | 2025/08/18 07:51:22 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:22 Worker: Attempting to call default processor for payment 0390860e-30b3-42ef-8abe-d47a7fa83863
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment 0390860e-30b3-42ef-8abe-d47a7fa83863 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment 0390860e-30b3-42ef-8abe-d47a7fa83863 with default processor and updated Postgres.
+lb          | 172.18.0.1:59438 [18/Aug/2025:07:51:22.037] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 15/15/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:22 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:22 Worker processing payment: 8f05606e-4b83-47bf-ac7e-bfeb998fdb0f, Amount: 20.05
+worker-1    | 2025/08/18 07:51:22 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:22 Worker: Attempting to call default processor for payment 8f05606e-4b83-47bf-ac7e-bfeb998fdb0f
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment 8f05606e-4b83-47bf-ac7e-bfeb998fdb0f with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment 8f05606e-4b83-47bf-ac7e-bfeb998fdb0f with default processor and updated Postgres.
+worker-1    | 2025/08/18 07:51:22 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:22 Worker processing payment: bd2e478d-b3f4-4d27-87ef-ea44c1f209f1, Amount: 20.05
+lb          | 172.18.0.1:59432 [18/Aug/2025:07:51:22.042] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 15/15/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:22 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:22 Worker: Attempting to call default processor for payment bd2e478d-b3f4-4d27-87ef-ea44c1f209f1
+worker-1    | 2025/08/18 07:51:22 Worker: Checking health for default at http://payment-processor-default:8080/payments/service-health
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment bd2e478d-b3f4-4d27-87ef-ea44c1f209f1 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment bd2e478d-b3f4-4d27-87ef-ea44c1f209f1 with default processor and updated Postgres.
+lb          | 172.18.0.1:59416 [18/Aug/2025:07:51:22.047] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 15/15/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:22 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:22 Worker processing payment: d7ab6060-22c4-4eeb-9d5d-a0457ab8720d, Amount: 20.05
+worker-1    | 2025/08/18 07:51:22 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:22 Worker: Attempting to call default processor for payment d7ab6060-22c4-4eeb-9d5d-a0457ab8720d
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment d7ab6060-22c4-4eeb-9d5d-a0457ab8720d with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment d7ab6060-22c4-4eeb-9d5d-a0457ab8720d with default processor and updated Postgres.
+worker-1    | 2025/08/18 07:51:22 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:22 Worker processing payment: f082c6c0-4222-4559-8147-b91865873caf, Amount: 20.05
+lb          | 172.18.0.1:59404 [18/Aug/2025:07:51:22.054] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 15/15/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:22 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:22 Worker: Attempting to call default processor for payment f082c6c0-4222-4559-8147-b91865873caf
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment f082c6c0-4222-4559-8147-b91865873caf with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment f082c6c0-4222-4559-8147-b91865873caf with default processor and updated Postgres.
+worker-1    | 2025/08/18 07:51:22 Worker: Health check for default returned status: 200
+worker-1    | 2025/08/18 07:51:22 Worker: Health check for default - Failing: false
+worker-1    | 2025/08/18 07:51:22 Worker: Checking health for fallback at http://payment-processor-fallback:8080/payments/service-health
+worker-1    | 2025/08/18 07:51:22 Worker: Health check for fallback returned status: 200
+worker-1    | 2025/08/18 07:51:22 Worker: Health check for fallback - Failing: false
+lb          | 172.18.0.1:59472 [18/Aug/2025:07:51:22.522] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 16/16/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:22 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:22 Worker processing payment: 7ec90cc3-15ab-45b0-806e-bd4c94015c5b, Amount: 20.05
+worker-1    | 2025/08/18 07:51:22 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:22 Worker: Attempting to call default processor for payment 7ec90cc3-15ab-45b0-806e-bd4c94015c5b
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment 7ec90cc3-15ab-45b0-806e-bd4c94015c5b with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment 7ec90cc3-15ab-45b0-806e-bd4c94015c5b with default processor and updated Postgres.
+lb          | 172.18.0.1:59464 [18/Aug/2025:07:51:22.526] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 16/16/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:22 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:22 Worker processing payment: 8c897f84-7883-449a-9769-b3ad2df5ef81, Amount: 20.05
+worker-1    | 2025/08/18 07:51:22 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:22 Worker: Attempting to call default processor for payment 8c897f84-7883-449a-9769-b3ad2df5ef81
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment 8c897f84-7883-449a-9769-b3ad2df5ef81 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment 8c897f84-7883-449a-9769-b3ad2df5ef81 with default processor and updated Postgres.
+lb          | 172.18.0.1:59452 [18/Aug/2025:07:51:22.531] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 16/16/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:22 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:22 Worker processing payment: 320eba0c-f7c6-4536-8fb1-1b93de91695e, Amount: 20.05
+worker-1    | 2025/08/18 07:51:22 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:22 Worker: Attempting to call default processor for payment 320eba0c-f7c6-4536-8fb1-1b93de91695e
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment 320eba0c-f7c6-4536-8fb1-1b93de91695e with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment 320eba0c-f7c6-4536-8fb1-1b93de91695e with default processor and updated Postgres.
+lb          | 172.18.0.1:59440 [18/Aug/2025:07:51:22.536] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 16/16/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:22 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:22 Worker processing payment: 8e34f218-4daa-4815-83f5-76b223623974, Amount: 20.05
+worker-1    | 2025/08/18 07:51:22 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:22 Worker: Attempting to call default processor for payment 8e34f218-4daa-4815-83f5-76b223623974
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment 8e34f218-4daa-4815-83f5-76b223623974 with processor http://payment-processor-default:8080
+lb          | 172.18.0.1:59436 [18/Aug/2025:07:51:22.542] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 16/16/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:22 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:22 Worker processing payment: 9b99a346-c38c-4212-9820-4af5094aa86c, Amount: 20.05
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment 8e34f218-4daa-4815-83f5-76b223623974 with default processor and updated Postgres.
+lb          | 172.18.0.1:59418 [18/Aug/2025:07:51:22.545] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 16/16/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:22 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:22 Worker processing payment: f6740299-64f0-4279-9e90-0473405efff2, Amount: 20.05
+worker-1    | 2025/08/18 07:51:22 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:22 Worker: Attempting to call default processor for payment f6740299-64f0-4279-9e90-0473405efff2
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment f6740299-64f0-4279-9e90-0473405efff2 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment f6740299-64f0-4279-9e90-0473405efff2 with default processor and updated Postgres.
+worker-1    | 2025/08/18 07:51:22 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:22 Worker: Attempting to call default processor for payment 9b99a346-c38c-4212-9820-4af5094aa86c
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment 9b99a346-c38c-4212-9820-4af5094aa86c with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:22 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:22 Worker processing payment: a82260a8-cc07-466b-8e17-6e8957bf6c16, Amount: 20.05
+lb          | 172.18.0.1:59408 [18/Aug/2025:07:51:22.550] http_front api_backend/api01 0/0/0/1/1 200 82 - - ---- 16/16/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:22 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:22 Worker: Attempting to call default processor for payment a82260a8-cc07-466b-8e17-6e8957bf6c16
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment a82260a8-cc07-466b-8e17-6e8957bf6c16 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment 9b99a346-c38c-4212-9820-4af5094aa86c with default processor and updated Postgres.
+worker-1    | 2025/08/18 07:51:22 Worker: Successfully processed payment a82260a8-cc07-466b-8e17-6e8957bf6c16 with default processor and updated Postgres.
+lb          | 172.18.0.1:59480 [18/Aug/2025:07:51:23.019] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 17/17/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:23 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:23 Worker processing payment: 97748e70-6eeb-4efe-bc55-07caa79efb98, Amount: 20.05
+worker-1    | 2025/08/18 07:51:23 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:23 Worker: Attempting to call default processor for payment 97748e70-6eeb-4efe-bc55-07caa79efb98
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment 97748e70-6eeb-4efe-bc55-07caa79efb98 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment 97748e70-6eeb-4efe-bc55-07caa79efb98 with default processor and updated Postgres.
+lb          | 172.18.0.1:59466 [18/Aug/2025:07:51:23.025] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 17/17/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:23 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:23 Worker processing payment: 661af3f2-143b-433c-a423-e50bd1e06a21, Amount: 20.05
+worker-1    | 2025/08/18 07:51:23 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:23 Worker: Attempting to call default processor for payment 661af3f2-143b-433c-a423-e50bd1e06a21
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment 661af3f2-143b-433c-a423-e50bd1e06a21 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment 661af3f2-143b-433c-a423-e50bd1e06a21 with default processor and updated Postgres.
+lb          | 172.18.0.1:59462 [18/Aug/2025:07:51:23.030] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 17/17/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:23 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:23 Worker processing payment: 8e55d257-94b9-4748-8b26-da6408dbe2e5, Amount: 20.05
+worker-1    | 2025/08/18 07:51:23 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:23 Worker: Attempting to call default processor for payment 8e55d257-94b9-4748-8b26-da6408dbe2e5
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment 8e55d257-94b9-4748-8b26-da6408dbe2e5 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment 8e55d257-94b9-4748-8b26-da6408dbe2e5 with default processor and updated Postgres.
+lb          | 172.18.0.1:59446 [18/Aug/2025:07:51:23.033] http_front api_backend/api01 0/0/0/1/1 200 82 - - ---- 17/17/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:23 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:23 Worker processing payment: 807e7614-6079-4a6a-bb06-535015742742, Amount: 20.05
+worker-1    | 2025/08/18 07:51:23 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:23 Worker: Attempting to call default processor for payment 807e7614-6079-4a6a-bb06-535015742742
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment 807e7614-6079-4a6a-bb06-535015742742 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment 807e7614-6079-4a6a-bb06-535015742742 with default processor and updated Postgres.
+lb          | 172.18.0.1:59438 [18/Aug/2025:07:51:23.037] http_front api_backend/api02 0/0/0/1/1 200 82 - - ---- 17/17/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:23 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:23 Worker processing payment: d3bb518b-82bd-421e-b3d3-d7192229ae11, Amount: 20.05
+worker-1    | 2025/08/18 07:51:23 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:23 Worker: Attempting to call default processor for payment d3bb518b-82bd-421e-b3d3-d7192229ae11
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment d3bb518b-82bd-421e-b3d3-d7192229ae11 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment d3bb518b-82bd-421e-b3d3-d7192229ae11 with default processor and updated Postgres.
+lb          | 172.18.0.1:59432 [18/Aug/2025:07:51:23.042] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 17/17/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:23 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:23 Worker processing payment: d19bd264-383b-4afd-a4d5-9c8cfa509649, Amount: 20.05
+worker-1    | 2025/08/18 07:51:23 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:23 Worker: Attempting to call default processor for payment d19bd264-383b-4afd-a4d5-9c8cfa509649
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment d19bd264-383b-4afd-a4d5-9c8cfa509649 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment d19bd264-383b-4afd-a4d5-9c8cfa509649 with default processor and updated Postgres.
+lb          | 172.18.0.1:59416 [18/Aug/2025:07:51:23.049] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 17/17/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:23 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:23 Worker processing payment: 753d4163-2efe-4ebe-ae74-7c90aa868fb7, Amount: 20.05
+worker-1    | 2025/08/18 07:51:23 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:23 Worker: Attempting to call default processor for payment 753d4163-2efe-4ebe-ae74-7c90aa868fb7
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment 753d4163-2efe-4ebe-ae74-7c90aa868fb7 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment 753d4163-2efe-4ebe-ae74-7c90aa868fb7 with default processor and updated Postgres.
+lb          | 172.18.0.1:59404 [18/Aug/2025:07:51:23.055] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 17/17/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:23 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:23 Worker processing payment: 55abf9d9-419a-435d-8f70-cf0be4cf3b5e, Amount: 20.05
+worker-1    | 2025/08/18 07:51:23 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:23 Worker: Attempting to call default processor for payment 55abf9d9-419a-435d-8f70-cf0be4cf3b5e
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment 55abf9d9-419a-435d-8f70-cf0be4cf3b5e with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment 55abf9d9-419a-435d-8f70-cf0be4cf3b5e with default processor and updated Postgres.
+lb          | 172.18.0.1:59482 [18/Aug/2025:07:51:23.517] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 18/18/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:23 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:23 Worker processing payment: 10acaabf-2776-4339-b20f-088fe2f3caf9, Amount: 20.05
+worker-1    | 2025/08/18 07:51:23 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:23 Worker: Attempting to call default processor for payment 10acaabf-2776-4339-b20f-088fe2f3caf9
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment 10acaabf-2776-4339-b20f-088fe2f3caf9 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment 10acaabf-2776-4339-b20f-088fe2f3caf9 with default processor and updated Postgres.
+worker-1    | 2025/08/18 07:51:23 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:23 Worker processing payment: 9ebb0982-2798-430f-abf7-8a48460ad4f3, Amount: 20.05
+lb          | 172.18.0.1:59472 [18/Aug/2025:07:51:23.523] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 18/18/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:23 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:23 Worker: Attempting to call default processor for payment 9ebb0982-2798-430f-abf7-8a48460ad4f3
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment 9ebb0982-2798-430f-abf7-8a48460ad4f3 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment 9ebb0982-2798-430f-abf7-8a48460ad4f3 with default processor and updated Postgres.
+lb          | 172.18.0.1:59464 [18/Aug/2025:07:51:23.527] http_front api_backend/api02 0/0/0/1/1 200 82 - - ---- 18/18/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:23 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:23 Worker processing payment: 1717223f-8fc8-41cd-8b60-d413cb556c6d, Amount: 20.05
+worker-1    | 2025/08/18 07:51:23 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:23 Worker: Attempting to call default processor for payment 1717223f-8fc8-41cd-8b60-d413cb556c6d
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment 1717223f-8fc8-41cd-8b60-d413cb556c6d with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment 1717223f-8fc8-41cd-8b60-d413cb556c6d with default processor and updated Postgres.
+lb          | 172.18.0.1:59452 [18/Aug/2025:07:51:23.532] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 18/18/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:23 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:23 Worker processing payment: 9e2e2905-2a14-4f4f-ad85-5fb43b82e227, Amount: 20.05
+worker-1    | 2025/08/18 07:51:23 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:23 Worker: Attempting to call default processor for payment 9e2e2905-2a14-4f4f-ad85-5fb43b82e227
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment 9e2e2905-2a14-4f4f-ad85-5fb43b82e227 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment 9e2e2905-2a14-4f4f-ad85-5fb43b82e227 with default processor and updated Postgres.
+lb          | 172.18.0.1:59440 [18/Aug/2025:07:51:23.537] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 18/18/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:23 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:23 Worker processing payment: 4ee64b1e-0c4d-46d0-bd92-a84f847c676c, Amount: 20.05
+worker-1    | 2025/08/18 07:51:23 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:23 Worker: Attempting to call default processor for payment 4ee64b1e-0c4d-46d0-bd92-a84f847c676c
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment 4ee64b1e-0c4d-46d0-bd92-a84f847c676c with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment 4ee64b1e-0c4d-46d0-bd92-a84f847c676c with default processor and updated Postgres.
+lb          | 172.18.0.1:59436 [18/Aug/2025:07:51:23.543] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 18/18/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:23 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:23 Worker processing payment: d53034b2-05f9-4a15-90d0-bd0a52dd71ea, Amount: 20.05
+worker-1    | 2025/08/18 07:51:23 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:23 Worker: Attempting to call default processor for payment d53034b2-05f9-4a15-90d0-bd0a52dd71ea
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment d53034b2-05f9-4a15-90d0-bd0a52dd71ea with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment d53034b2-05f9-4a15-90d0-bd0a52dd71ea with default processor and updated Postgres.
+lb          | 172.18.0.1:59418 [18/Aug/2025:07:51:23.547] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 18/18/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:23 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:23 Worker processing payment: 9c029247-21a2-4bec-899a-012d840ff622, Amount: 20.05
+worker-1    | 2025/08/18 07:51:23 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:23 Worker: Attempting to call default processor for payment 9c029247-21a2-4bec-899a-012d840ff622
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment 9c029247-21a2-4bec-899a-012d840ff622 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment 9c029247-21a2-4bec-899a-012d840ff622 with default processor and updated Postgres.
+worker-1    | 2025/08/18 07:51:23 Worker received process-payment request
+lb          | 172.18.0.1:59408 [18/Aug/2025:07:51:23.552] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 18/18/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:23 Worker processing payment: c0b2b193-07d5-4134-845e-ff118e450603, Amount: 20.05
+worker-1    | 2025/08/18 07:51:23 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:23 Worker: Attempting to call default processor for payment c0b2b193-07d5-4134-845e-ff118e450603
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment c0b2b193-07d5-4134-845e-ff118e450603 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:23 Worker: Successfully processed payment c0b2b193-07d5-4134-845e-ff118e450603 with default processor and updated Postgres.
+lb          | 172.18.0.1:59494 [18/Aug/2025:07:51:24.017] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 19/19/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:24 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:24 Worker processing payment: 528ba697-e89c-41f1-b48b-6d7052856aa9, Amount: 20.05
+worker-1    | 2025/08/18 07:51:24 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:24 Worker: Attempting to call default processor for payment 528ba697-e89c-41f1-b48b-6d7052856aa9
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 528ba697-e89c-41f1-b48b-6d7052856aa9 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 528ba697-e89c-41f1-b48b-6d7052856aa9 with default processor and updated Postgres.
+lb          | 172.18.0.1:59480 [18/Aug/2025:07:51:24.020] http_front api_backend/api01 0/0/0/1/1 200 82 - - ---- 19/19/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:24 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:24 Worker processing payment: af1aa71e-5fd8-4e36-8af7-e47904706455, Amount: 20.05
+worker-1    | 2025/08/18 07:51:24 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:24 Worker: Attempting to call default processor for payment af1aa71e-5fd8-4e36-8af7-e47904706455
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment af1aa71e-5fd8-4e36-8af7-e47904706455 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment af1aa71e-5fd8-4e36-8af7-e47904706455 with default processor and updated Postgres.
+lb          | 172.18.0.1:59466 [18/Aug/2025:07:51:24.025] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 19/19/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:24 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:24 Worker processing payment: b644bafb-c1f0-41c7-8afa-3d57bcbe2f11, Amount: 20.05
+worker-1    | 2025/08/18 07:51:24 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:24 Worker: Attempting to call default processor for payment b644bafb-c1f0-41c7-8afa-3d57bcbe2f11
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment b644bafb-c1f0-41c7-8afa-3d57bcbe2f11 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment b644bafb-c1f0-41c7-8afa-3d57bcbe2f11 with default processor and updated Postgres.
+lb          | 172.18.0.1:59462 [18/Aug/2025:07:51:24.030] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 19/19/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:24 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:24 Worker processing payment: f1cc76f0-c4fe-4dd1-a207-a8f6096c0629, Amount: 20.05
+worker-1    | 2025/08/18 07:51:24 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:24 Worker: Attempting to call default processor for payment f1cc76f0-c4fe-4dd1-a207-a8f6096c0629
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment f1cc76f0-c4fe-4dd1-a207-a8f6096c0629 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment f1cc76f0-c4fe-4dd1-a207-a8f6096c0629 with default processor and updated Postgres.
+lb          | 172.18.0.1:59446 [18/Aug/2025:07:51:24.035] http_front api_backend/api02 0/0/0/1/1 200 82 - - ---- 19/19/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:24 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:24 Worker processing payment: 89da9696-bede-42fa-a9bb-5aa40d6bc52a, Amount: 20.05
+worker-1    | 2025/08/18 07:51:24 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:24 Worker: Attempting to call default processor for payment 89da9696-bede-42fa-a9bb-5aa40d6bc52a
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 89da9696-bede-42fa-a9bb-5aa40d6bc52a with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 89da9696-bede-42fa-a9bb-5aa40d6bc52a with default processor and updated Postgres.
+worker-1    | 2025/08/18 07:51:24 Worker received process-payment request
+lb          | 172.18.0.1:59438 [18/Aug/2025:07:51:24.039] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 19/19/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:24 Worker processing payment: 8d613f51-5af0-4578-8f65-873e8867d2fe, Amount: 20.05
+worker-1    | 2025/08/18 07:51:24 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:24 Worker: Attempting to call default processor for payment 8d613f51-5af0-4578-8f65-873e8867d2fe
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 8d613f51-5af0-4578-8f65-873e8867d2fe with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 8d613f51-5af0-4578-8f65-873e8867d2fe with default processor and updated Postgres.
+lb          | 172.18.0.1:59432 [18/Aug/2025:07:51:24.044] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 19/19/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:24 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:24 Worker processing payment: 279af639-55f9-45d7-a076-2084787dd5f8, Amount: 20.05
+worker-1    | 2025/08/18 07:51:24 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:24 Worker: Attempting to call default processor for payment 279af639-55f9-45d7-a076-2084787dd5f8
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 279af639-55f9-45d7-a076-2084787dd5f8 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 279af639-55f9-45d7-a076-2084787dd5f8 with default processor and updated Postgres.
+lb          | 172.18.0.1:59416 [18/Aug/2025:07:51:24.051] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 19/19/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:24 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:24 Worker processing payment: d434e9ae-a20c-4400-978a-ecb5f4617b3b, Amount: 20.05
+worker-1    | 2025/08/18 07:51:24 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:24 Worker: Attempting to call default processor for payment d434e9ae-a20c-4400-978a-ecb5f4617b3b
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment d434e9ae-a20c-4400-978a-ecb5f4617b3b with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment d434e9ae-a20c-4400-978a-ecb5f4617b3b with default processor and updated Postgres.
+lb          | 172.18.0.1:59404 [18/Aug/2025:07:51:24.057] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 19/19/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:24 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:24 Worker processing payment: 26252e9f-9502-45e1-aa26-6b1f5eb771ed, Amount: 20.05
+worker-1    | 2025/08/18 07:51:24 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:24 Worker: Attempting to call default processor for payment 26252e9f-9502-45e1-aa26-6b1f5eb771ed
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 26252e9f-9502-45e1-aa26-6b1f5eb771ed with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 26252e9f-9502-45e1-aa26-6b1f5eb771ed with default processor and updated Postgres.
+worker-1    | 2025/08/18 07:51:24 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:24 Worker processing payment: c5bd8948-113c-4ae8-895e-2abc17cd5525, Amount: 20.05
+lb          | 172.18.0.1:59500 [18/Aug/2025:07:51:24.514] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 20/20/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:24 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:24 Worker: Attempting to call default processor for payment c5bd8948-113c-4ae8-895e-2abc17cd5525
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment c5bd8948-113c-4ae8-895e-2abc17cd5525 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment c5bd8948-113c-4ae8-895e-2abc17cd5525 with default processor and updated Postgres.
+lb          | 172.18.0.1:59482 [18/Aug/2025:07:51:24.519] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 20/20/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:24 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:24 Worker processing payment: 4a40a620-8971-44e1-a32f-29565ac16bd2, Amount: 20.05
+worker-1    | 2025/08/18 07:51:24 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:24 Worker: Attempting to call default processor for payment 4a40a620-8971-44e1-a32f-29565ac16bd2
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 4a40a620-8971-44e1-a32f-29565ac16bd2 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 4a40a620-8971-44e1-a32f-29565ac16bd2 with default processor and updated Postgres.
+lb          | 172.18.0.1:59472 [18/Aug/2025:07:51:24.525] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 20/20/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:24 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:24 Worker processing payment: 1ae7b226-47d8-471e-b96c-90ed16049a06, Amount: 20.05
+worker-1    | 2025/08/18 07:51:24 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:24 Worker: Attempting to call default processor for payment 1ae7b226-47d8-471e-b96c-90ed16049a06
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 1ae7b226-47d8-471e-b96c-90ed16049a06 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 1ae7b226-47d8-471e-b96c-90ed16049a06 with default processor and updated Postgres.
+lb          | 172.18.0.1:59464 [18/Aug/2025:07:51:24.529] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 20/20/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:24 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:24 Worker processing payment: 364ed72b-541a-466e-a6f5-e0f9d53649d1, Amount: 20.05
+worker-1    | 2025/08/18 07:51:24 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:24 Worker: Attempting to call default processor for payment 364ed72b-541a-466e-a6f5-e0f9d53649d1
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 364ed72b-541a-466e-a6f5-e0f9d53649d1 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 364ed72b-541a-466e-a6f5-e0f9d53649d1 with default processor and updated Postgres.
+worker-1    | 2025/08/18 07:51:24 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:24 Worker processing payment: 7740066f-6cc3-45c8-b38d-0c2185f570e2, Amount: 20.05
+lb          | 172.18.0.1:59452 [18/Aug/2025:07:51:24.534] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 20/20/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:24 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:24 Worker: Attempting to call default processor for payment 7740066f-6cc3-45c8-b38d-0c2185f570e2
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 7740066f-6cc3-45c8-b38d-0c2185f570e2 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 7740066f-6cc3-45c8-b38d-0c2185f570e2 with default processor and updated Postgres.
+lb          | 172.18.0.1:59440 [18/Aug/2025:07:51:24.539] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 20/20/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:24 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:24 Worker processing payment: 83ac7c6f-85ba-48b2-952e-81c7baf34799, Amount: 20.05
+worker-1    | 2025/08/18 07:51:24 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:24 Worker: Attempting to call default processor for payment 83ac7c6f-85ba-48b2-952e-81c7baf34799
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 83ac7c6f-85ba-48b2-952e-81c7baf34799 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 83ac7c6f-85ba-48b2-952e-81c7baf34799 with default processor and updated Postgres.
+lb          | 172.18.0.1:59436 [18/Aug/2025:07:51:24.544] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 20/20/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:24 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:24 Worker processing payment: 5f59b4fd-2755-4ef6-ab92-4cb1b8e0df95, Amount: 20.05
+worker-1    | 2025/08/18 07:51:24 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:24 Worker: Attempting to call default processor for payment 5f59b4fd-2755-4ef6-ab92-4cb1b8e0df95
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 5f59b4fd-2755-4ef6-ab92-4cb1b8e0df95 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 5f59b4fd-2755-4ef6-ab92-4cb1b8e0df95 with default processor and updated Postgres.
+lb          | 172.18.0.1:59418 [18/Aug/2025:07:51:24.548] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 20/20/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:24 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:24 Worker processing payment: 3e7baf04-996a-423b-a871-0377d7309dc8, Amount: 20.05
+worker-1    | 2025/08/18 07:51:24 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:24 Worker: Attempting to call default processor for payment 3e7baf04-996a-423b-a871-0377d7309dc8
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 3e7baf04-996a-423b-a871-0377d7309dc8 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 3e7baf04-996a-423b-a871-0377d7309dc8 with default processor and updated Postgres.
+lb          | 172.18.0.1:59408 [18/Aug/2025:07:51:24.553] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 20/20/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:24 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:24 Worker processing payment: 02196a5a-79fa-4049-986e-bb5e9c86eac3, Amount: 20.05
+worker-1    | 2025/08/18 07:51:24 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:24 Worker: Attempting to call default processor for payment 02196a5a-79fa-4049-986e-bb5e9c86eac3
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 02196a5a-79fa-4049-986e-bb5e9c86eac3 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:24 Worker: Successfully processed payment 02196a5a-79fa-4049-986e-bb5e9c86eac3 with default processor and updated Postgres.
+lb          | 172.18.0.1:59506 [18/Aug/2025:07:51:25.017] http_front api_backend/api02 0/0/0/1/1 200 82 - - ---- 21/21/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:25 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:25 Worker processing payment: f552b12f-f96e-447b-9a77-a69eef0b2266, Amount: 20.05
+worker-1    | 2025/08/18 07:51:25 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:25 Worker: Attempting to call default processor for payment f552b12f-f96e-447b-9a77-a69eef0b2266
+lb          | 172.18.0.1:59494 [18/Aug/2025:07:51:25.017] http_front api_backend/api01 0/0/0/1/1 200 82 - - ---- 21/21/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:25 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:25 Worker processing payment: 9847a180-77d0-45b3-8a4b-dd3a8eb62b0f, Amount: 20.05
+worker-1    | 2025/08/18 07:51:25 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:25 Worker: Attempting to call default processor for payment 9847a180-77d0-45b3-8a4b-dd3a8eb62b0f
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment f552b12f-f96e-447b-9a77-a69eef0b2266 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment f552b12f-f96e-447b-9a77-a69eef0b2266 with default processor and updated Postgres.
+worker-1    | 2025/08/18 07:51:25 Worker received process-payment request
+lb          | 172.18.0.1:59480 [18/Aug/2025:07:51:25.022] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 21/21/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:25 Worker processing payment: 7b43bf95-b18b-49b6-898f-cc29ba75cb6a, Amount: 20.05
+worker-1    | 2025/08/18 07:51:25 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:25 Worker: Attempting to call default processor for payment 7b43bf95-b18b-49b6-898f-cc29ba75cb6a
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment 7b43bf95-b18b-49b6-898f-cc29ba75cb6a with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment 9847a180-77d0-45b3-8a4b-dd3a8eb62b0f with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment 7b43bf95-b18b-49b6-898f-cc29ba75cb6a with default processor and updated Postgres.
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment 9847a180-77d0-45b3-8a4b-dd3a8eb62b0f with default processor and updated Postgres.
+lb          | 172.18.0.1:59466 [18/Aug/2025:07:51:25.027] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 21/21/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:25 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:25 Worker processing payment: 57525389-6c82-4d49-a847-d884cd8c1053, Amount: 20.05
+worker-1    | 2025/08/18 07:51:25 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:25 Worker: Attempting to call default processor for payment 57525389-6c82-4d49-a847-d884cd8c1053
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment 57525389-6c82-4d49-a847-d884cd8c1053 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment 57525389-6c82-4d49-a847-d884cd8c1053 with default processor and updated Postgres.
+lb          | 172.18.0.1:59462 [18/Aug/2025:07:51:25.032] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 21/21/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:25 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:25 Worker processing payment: 8bdcd702-b10f-4a85-b954-220eb997c08f, Amount: 20.05
+worker-1    | 2025/08/18 07:51:25 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:25 Worker: Attempting to call default processor for payment 8bdcd702-b10f-4a85-b954-220eb997c08f
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment 8bdcd702-b10f-4a85-b954-220eb997c08f with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment 8bdcd702-b10f-4a85-b954-220eb997c08f with default processor and updated Postgres.
+lb          | 172.18.0.1:59446 [18/Aug/2025:07:51:25.037] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 21/21/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:25 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:25 Worker processing payment: c16c03ac-28c7-4f4b-9bf9-c3785a06aa39, Amount: 20.05
+worker-1    | 2025/08/18 07:51:25 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:25 Worker: Attempting to call default processor for payment c16c03ac-28c7-4f4b-9bf9-c3785a06aa39
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment c16c03ac-28c7-4f4b-9bf9-c3785a06aa39 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment c16c03ac-28c7-4f4b-9bf9-c3785a06aa39 with default processor and updated Postgres.
+lb          | 172.18.0.1:59438 [18/Aug/2025:07:51:25.040] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 21/21/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:25 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:25 Worker processing payment: 509eb537-f6b4-4c97-a681-bc7981c07164, Amount: 20.05
+worker-1    | 2025/08/18 07:51:25 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:25 Worker: Attempting to call default processor for payment 509eb537-f6b4-4c97-a681-bc7981c07164
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment 509eb537-f6b4-4c97-a681-bc7981c07164 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment 509eb537-f6b4-4c97-a681-bc7981c07164 with default processor and updated Postgres.
+lb          | 172.18.0.1:59432 [18/Aug/2025:07:51:25.045] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 21/21/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:25 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:25 Worker processing payment: 6a366c01-433f-4d77-a288-8aba88e446a6, Amount: 20.05
+worker-1    | 2025/08/18 07:51:25 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:25 Worker: Attempting to call default processor for payment 6a366c01-433f-4d77-a288-8aba88e446a6
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment 6a366c01-433f-4d77-a288-8aba88e446a6 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment 6a366c01-433f-4d77-a288-8aba88e446a6 with default processor and updated Postgres.
+worker-1    | 2025/08/18 07:51:25 Worker received process-payment request
+lb          | 172.18.0.1:59416 [18/Aug/2025:07:51:25.052] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 21/21/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:25 Worker processing payment: 8fb4dff2-99b3-4953-bc3b-abb15ceb94a0, Amount: 20.05
+worker-1    | 2025/08/18 07:51:25 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:25 Worker: Attempting to call default processor for payment 8fb4dff2-99b3-4953-bc3b-abb15ceb94a0
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment 8fb4dff2-99b3-4953-bc3b-abb15ceb94a0 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment 8fb4dff2-99b3-4953-bc3b-abb15ceb94a0 with default processor and updated Postgres.
+lb          | 172.18.0.1:59404 [18/Aug/2025:07:51:25.058] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 21/21/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:25 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:25 Worker processing payment: 51ae849d-b3d6-4eee-b218-dc67f39127e9, Amount: 20.05
+worker-1    | 2025/08/18 07:51:25 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:25 Worker: Attempting to call default processor for payment 51ae849d-b3d6-4eee-b218-dc67f39127e9
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment 51ae849d-b3d6-4eee-b218-dc67f39127e9 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment 51ae849d-b3d6-4eee-b218-dc67f39127e9 with default processor and updated Postgres.
+lb          | 172.18.0.1:59510 [18/Aug/2025:07:51:25.511] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 22/22/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:25 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:25 Worker processing payment: 65b68f07-438f-4d87-8862-ae35f13a9146, Amount: 20.05
+worker-1    | 2025/08/18 07:51:25 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:25 Worker: Attempting to call default processor for payment 65b68f07-438f-4d87-8862-ae35f13a9146
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment 65b68f07-438f-4d87-8862-ae35f13a9146 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment 65b68f07-438f-4d87-8862-ae35f13a9146 with default processor and updated Postgres.
+lb          | 172.18.0.1:59500 [18/Aug/2025:07:51:25.516] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 22/22/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:25 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:25 Worker processing payment: 17f0e482-932d-43ba-82fb-7de341c2c560, Amount: 20.05
+worker-1    | 2025/08/18 07:51:25 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:25 Worker: Attempting to call default processor for payment 17f0e482-932d-43ba-82fb-7de341c2c560
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment 17f0e482-932d-43ba-82fb-7de341c2c560 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment 17f0e482-932d-43ba-82fb-7de341c2c560 with default processor and updated Postgres.
+lb          | 172.18.0.1:59482 [18/Aug/2025:07:51:25.521] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 22/22/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:25 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:25 Worker processing payment: 92a5b7c1-cca6-49b7-b98d-abad1541efde, Amount: 20.05
+worker-1    | 2025/08/18 07:51:25 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:25 Worker: Attempting to call default processor for payment 92a5b7c1-cca6-49b7-b98d-abad1541efde
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment 92a5b7c1-cca6-49b7-b98d-abad1541efde with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment 92a5b7c1-cca6-49b7-b98d-abad1541efde with default processor and updated Postgres.
+lb          | 172.18.0.1:59472 [18/Aug/2025:07:51:25.527] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 22/22/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:25 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:25 Worker processing payment: c15f9b81-df35-4ffd-a6b2-e3dcca8ee8dd, Amount: 20.05
+worker-1    | 2025/08/18 07:51:25 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:25 Worker: Attempting to call default processor for payment c15f9b81-df35-4ffd-a6b2-e3dcca8ee8dd
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment c15f9b81-df35-4ffd-a6b2-e3dcca8ee8dd with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment c15f9b81-df35-4ffd-a6b2-e3dcca8ee8dd with default processor and updated Postgres.
+lb          | 172.18.0.1:59464 [18/Aug/2025:07:51:25.531] http_front api_backend/api02 0/0/0/0/0 200 82 - - ---- 22/22/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:25 Worker received process-payment request
+worker-1    | 2025/08/18 07:51:25 Worker processing payment: be9a5164-06a0-420b-a883-23396fdd8b56, Amount: 20.05
+worker-1    | 2025/08/18 07:51:25 Worker: Health status - Default: true, Fallback: true
+worker-1    | 2025/08/18 07:51:25 Worker: Attempting to call default processor for payment be9a5164-06a0-420b-a883-23396fdd8b56
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment be9a5164-06a0-420b-a883-23396fdd8b56 with processor http://payment-processor-default:8080
+worker-1    | 2025/08/18 07:51:25 Worker: Successfully processed payment be9a5164-06a0-420b-a883-23396fdd8b56 with default processor and updated Postgres.
+lb          | 172.18.0.1:59452 [18/Aug/2025:07:51:25.536] http_front api_backend/api01 0/0/0/0/0 200 82 - - ---- 22/22/0/0/0 0/0 "POST /payments HTTP/1.1"
+worker-1    | 2025/08/18 07:51:25 Worker received process-payment request
+log truncated at line 1000

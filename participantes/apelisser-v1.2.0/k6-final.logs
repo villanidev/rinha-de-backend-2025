@@ -1,0 +1,18 @@
+
+time="2025-08-18T07:21:22Z" level=warning msg="================ [inconsistências encontradas] ================" source=console
+time="2025-08-18T07:21:22Z" level=warning msg="backend.default.totalRequests vs default.totalRequests: 3924 vs 3906" source=console
+time="2025-08-18T07:21:22Z" level=warning msg="backend.fallback.totalRequests vs fallback.totalRequests: 0 vs 0" source=console
+time="2025-08-18T07:21:32Z" level=warning msg="================ [inconsistências encontradas] ================" source=console
+time="2025-08-18T07:21:32Z" level=warning msg="backend.default.totalRequests vs default.totalRequests: 3294 vs 3304" source=console
+time="2025-08-18T07:21:32Z" level=warning msg="backend.fallback.totalRequests vs fallback.totalRequests: 0 vs 0" source=console
+time="2025-08-18T07:21:42Z" level=warning msg="================ [inconsistências encontradas] ================" source=console
+time="2025-08-18T07:21:42Z" level=warning msg="backend.default.totalRequests vs default.totalRequests: 4935 vs 4941" source=console
+time="2025-08-18T07:21:42Z" level=warning msg="backend.fallback.totalRequests vs fallback.totalRequests: 0 vs 0" source=console
+time="2025-08-18T07:22:13Z" level=warning msg="================ [inconsistências encontradas] ================" source=console
+time="2025-08-18T07:22:13Z" level=warning msg="backend.default.totalRequests vs default.totalRequests: 4915 vs 4910" source=console
+time="2025-08-18T07:22:13Z" level=warning msg="backend.fallback.totalRequests vs fallback.totalRequests: 0 vs 0" source=console
+time="2025-08-18T07:22:23Z" level=warning msg="================ [inconsistências encontradas] ================" source=console
+time="2025-08-18T07:22:23Z" level=warning msg="backend.default.totalRequests vs default.totalRequests: 2885 vs 2891" source=console
+time="2025-08-18T07:22:23Z" level=warning msg="backend.fallback.totalRequests vs fallback.totalRequests: 0 vs 0" source=console
+time="2025-08-18T07:23:03Z" level=info msg="summaries from 2025-08-18T07:21:53.380Z to 2025-08-18T07:23:03.380Z" source=console
+log truncated at line 1000

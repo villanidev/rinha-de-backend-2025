@@ -1,0 +1,118 @@
+
+ payment-api-1 Pulling 
+ payment-api-2 Pulling 
+ payment-worker Pulling 
+ 01d036902a3c Already exists 
+ f873f8e02f1a Pulling fs layer 
+ 24485ff1037b Pulling fs layer 
+ 01d036902a3c Already exists 
+ f873f8e02f1a Pulling fs layer 
+ 85469658561e Pulling fs layer 
+ 01d036902a3c Already exists 
+ f873f8e02f1a Pulling fs layer 
+ 85469658561e Pulling fs layer 
+ f873f8e02f1a Downloading [==================================================>]      93B/93B
+ f873f8e02f1a Download complete 
+ f873f8e02f1a Downloading [==================================================>]      93B/93B
+ f873f8e02f1a Verifying Checksum 
+ f873f8e02f1a Download complete 
+ f873f8e02f1a Verifying Checksum 
+ f873f8e02f1a Extracting [==================================================>]      93B/93B
+ f873f8e02f1a Download complete 
+ f873f8e02f1a Extracting [==================================================>]      93B/93B
+ f873f8e02f1a Extracting [==================================================>]      93B/93B
+ f873f8e02f1a Extracting [==================================================>]      93B/93B
+ f873f8e02f1a Extracting [==================================================>]      93B/93B
+ f873f8e02f1a Extracting [==================================================>]      93B/93B
+ f873f8e02f1a Pull complete 
+ f873f8e02f1a Pull complete 
+ f873f8e02f1a Pull complete 
+ 24485ff1037b Downloading [>                                                  ]  69.81kB/6.293MB
+ 24485ff1037b Verifying Checksum 
+ 24485ff1037b Download complete 
+ 24485ff1037b Extracting [>                                                  ]  65.54kB/6.293MB
+ 85469658561e Downloading [>                                                  ]  69.83kB/6.231MB
+ 85469658561e Downloading [>                                                  ]  69.83kB/6.231MB
+ 24485ff1037b Extracting [==================================================>]  6.293MB/6.293MB
+ 24485ff1037b Pull complete 
+ 85469658561e Verifying Checksum 
+ 85469658561e Download complete 
+ 85469658561e Download complete 
+ 85469658561e Extracting [>                                                  ]  65.54kB/6.231MB
+ 85469658561e Extracting [>                                                  ]  65.54kB/6.231MB
+ payment-worker Pulled 
+ 85469658561e Extracting [==================================================>]  6.231MB/6.231MB
+ 85469658561e Extracting [==================================================>]  6.231MB/6.231MB
+ 85469658561e Pull complete 
+ 85469658561e Pull complete 
+ payment-api-1 Pulled 
+ payment-api-2 Pulled 
+ Network arthur-seus-100_backend  Creating
+ Network arthur-seus-100_backend  Created
+ Container nats  Creating
+ Container nats  Created
+ Container payment-api-1  Creating
+ Container payment-api-2  Creating
+ Container payment-worker  Creating
+ Container payment-api-2  Created
+ Container payment-api-1  Created
+ Container payment-worker  Created
+ Container haproxy  Creating
+ Container haproxy  Created
+Attaching to haproxy, nats, payment-api-1, payment-api-2, payment-worker
+nats  | [1] 2025/08/18 07:56:41.701262 [INF] Starting nats-server
+nats  | [1] 2025/08/18 07:56:41.707264 [INF]   Version:  2.10.29
+nats  | [1] 2025/08/18 07:56:41.707268 [INF]   Git:      [f91ddd8]
+nats  | [1] 2025/08/18 07:56:41.707271 [INF]   Name:     NCNNFH2W6RG7EGBQKVLSFC5H6IKVDW55U4TVOYGO7O74STLF6BCBG3XA
+nats  | [1] 2025/08/18 07:56:41.707281 [INF]   Node:     QYWy3o73
+nats  | [1] 2025/08/18 07:56:41.707283 [INF]   ID:       NCNNFH2W6RG7EGBQKVLSFC5H6IKVDW55U4TVOYGO7O74STLF6BCBG3XA
+nats  | [1] 2025/08/18 07:56:41.712196 [INF] Starting http monitor on 0.0.0.0:8222
+nats  | [1] 2025/08/18 07:56:41.715174 [INF] Starting JetStream
+nats  | [1] 2025/08/18 07:56:41.715245 [WRN] Temporary storage directory used, data could be lost on system reboot
+nats  | [1] 2025/08/18 07:56:41.721832 [INF]     _ ___ _____ ___ _____ ___ ___   _   __  __
+nats  | [1] 2025/08/18 07:56:41.721846 [INF]  _ | | __|_   _/ __|_   _| _ \ __| /_\ |  \/  |
+nats  | [1] 2025/08/18 07:56:41.721848 [INF] | || | _|  | | \__ \ | | |   / _| / _ \| |\/| |
+nats  | [1] 2025/08/18 07:56:41.721850 [INF]  \__/|___| |_| |___/ |_| |_|_\___/_/ \_\_|  |_|
+nats  | [1] 2025/08/18 07:56:41.721852 [INF] 
+nats  | [1] 2025/08/18 07:56:41.721854 [INF]          https://docs.nats.io/jetstream
+nats  | [1] 2025/08/18 07:56:41.721856 [INF] 
+nats  | [1] 2025/08/18 07:56:41.721858 [INF] ---------------- JETSTREAM ----------------
+nats  | [1] 2025/08/18 07:56:41.721862 [INF]   Max Memory:      5.73 GB
+nats  | [1] 2025/08/18 07:56:41.721864 [INF]   Max Storage:     111.90 GB
+nats  | [1] 2025/08/18 07:56:41.721867 [INF]   Store Directory: "/tmp/nats/jetstream"
+nats  | [1] 2025/08/18 07:56:41.721869 [INF] -------------------------------------------
+nats  | [1] 2025/08/18 07:56:41.722302 [INF] Listening for client connections on 0.0.0.0:4222
+nats  | [1] 2025/08/18 07:56:41.723515 [INF] Server is ready
+payment-api-2  | 2025/08/18 07:56:42 connected to NATS on attempt 1
+payment-api-2  | 2025/08/18 07:56:42 created JetStream on NATS
+payment-api-2  | 2025/08/18 07:56:42 Creating stream: PAYMENTS
+payment-api-2  | 2025/08/18 07:56:42 created stream on NATS
+payment-api-1  | 2025/08/18 07:56:42 connected to NATS on attempt 1
+payment-api-1  | 2025/08/18 07:56:42 created JetStream on NATS
+payment-api-1  | 2025/08/18 07:56:42 created stream on NATS
+payment-worker  | 2025/08/18 07:56:42 connected to NATS on attempt 1
+payment-worker  | 2025/08/18 07:56:42 created JetStream on NATS
+payment-worker  | 2025/08/18 07:56:42 created stream on NATS
+payment-worker  | 2025/08/18 07:56:42 PROCESSOR_DEFAULT_URL: http://payment-processor-default:8080
+payment-worker  | 2025/08/18 07:56:42 PROCESSOR_FALLBACK_URL: http://payment-processor-fallback:8080
+haproxy         | [NOTICE]   (1) : New worker (8) forked
+haproxy         | [NOTICE]   (1) : Loading success.
+haproxy         | [NOTICE]   (8) : haproxy version is 2.9.15-e872a3f
+haproxy         | [WARNING]  (8) : [haproxy.main()] Failed to drop supplementary groups. Using 'gid'/'group' without 'uid'/'user' is generally useless.
+haproxy         | [NOTICE]   (1) : haproxy version is 2.9.15-e872a3f
+haproxy         | [WARNING]  (1) : Exiting Master process...
+haproxy         | [WARNING]  (8) : Proxy http-in stopped (cumulated conns: FE: 605, BE: 0).
+haproxy         | [WARNING]  (8) : Proxy payment_api stopped (cumulated conns: FE: 0, BE: 90592).
+haproxy         | [WARNING]  (8) : Proxy reject_all stopped (cumulated conns: FE: 0, BE: 0).
+haproxy         | [WARNING]  (1) : Current worker (8) exited with code 0 (Exit)
+haproxy         | [WARNING]  (1) : All workers exited. Exiting... (0)
+[Khaproxy exited with code 0
+[Kpayment-api-1 exited with code 2
+[Kpayment-api-2 exited with code 2
+[Kpayment-worker exited with code 2
+nats            | [1] 2025/08/18 08:01:51.772069 [INF] Trapped "terminated" signal
+nats            | [1] 2025/08/18 08:01:51.772227 [INF] Initiating Shutdown...
+nats            | [1] 2025/08/18 08:01:51.772249 [INF] Initiating JetStream Shutdown...
+nats            | [1] 2025/08/18 08:01:51.772483 [INF] JetStream Shutdown
+nats            | [1] 2025/08/18 08:01:51.772573 [INF] Server Exiting..
+log truncated at line 1000

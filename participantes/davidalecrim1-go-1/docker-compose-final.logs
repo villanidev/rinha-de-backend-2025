@@ -1,0 +1,621 @@
+
+ Network davidalecrim1-go-1_app  Creating
+ Network davidalecrim1-go-1_app  Created
+ Container redis-db  Creating
+ Container redis-db  Created
+ Container go-backend-1  Creating
+ Container go-backend-2  Creating
+ Container go-backend-1  Created
+ Container go-backend-2  Created
+ Container load-balancer-nginx  Creating
+ Container load-balancer-nginx  Created
+Attaching to go-backend-1, go-backend-2, load-balancer-nginx, redis-db
+redis-db  | Starting Redis Server
+redis-db  | 1:C 18 Aug 2025 12:29:47.054 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis-db  | 1:C 18 Aug 2025 12:29:47.054 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-db  | 1:C 18 Aug 2025 12:29:47.054 * Redis version=8.0.3, bits=64, commit=00000000, modified=1, pid=1, just started
+redis-db  | 1:C 18 Aug 2025 12:29:47.054 * Configuration loaded
+redis-db  | 1:M 18 Aug 2025 12:29:47.055 * monotonic clock: POSIX clock_gettime
+redis-db  | 1:M 18 Aug 2025 12:29:47.060 * Running mode=standalone, port=6379.
+redis-db  | 1:M 18 Aug 2025 12:29:47.063 * <bf> RedisBloom version 8.0.1 (Git=unknown)
+redis-db  | 1:M 18 Aug 2025 12:29:47.063 * <bf> Registering configuration options: [
+redis-db  | 1:M 18 Aug 2025 12:29:47.063 * <bf> 	{ bf-error-rate       :      0.01 }
+redis-db  | 1:M 18 Aug 2025 12:29:47.063 * <bf> 	{ bf-initial-size     :       100 }
+redis-db  | 1:M 18 Aug 2025 12:29:47.063 * <bf> 	{ bf-expansion-factor :         2 }
+redis-db  | 1:M 18 Aug 2025 12:29:47.063 * <bf> 	{ cf-bucket-size      :         2 }
+redis-db  | 1:M 18 Aug 2025 12:29:47.063 * <bf> 	{ cf-initial-size     :      1024 }
+redis-db  | 1:M 18 Aug 2025 12:29:47.063 * <bf> 	{ cf-max-iterations   :        20 }
+redis-db  | 1:M 18 Aug 2025 12:29:47.063 * <bf> 	{ cf-expansion-factor :         1 }
+redis-db  | 1:M 18 Aug 2025 12:29:47.063 * <bf> 	{ cf-max-expansions   :        32 }
+redis-db  | 1:M 18 Aug 2025 12:29:47.063 * <bf> ]
+redis-db  | 1:M 18 Aug 2025 12:29:47.064 * Module 'bf' loaded from /usr/local/lib/redis/modules//redisbloom.so
+redis-db  | 1:M 18 Aug 2025 12:29:47.089 * <search> Redis version found by RedisSearch : 8.0.3 - oss
+redis-db  | 1:M 18 Aug 2025 12:29:47.089 * <search> RediSearch version 8.0.1 (Git=5688fcc)
+redis-db  | 1:M 18 Aug 2025 12:29:47.090 * <search> Low level api version 1 initialized successfully
+redis-db  | 1:M 18 Aug 2025 12:29:47.091 * <search> gc: ON, prefix min length: 2, min word length to stem: 4, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, 
+redis-db  | 1:M 18 Aug 2025 12:29:47.092 * <search> Initialized thread pools!
+redis-db  | 1:M 18 Aug 2025 12:29:47.092 * <search> Disabled workers threadpool of size 0
+redis-db  | 1:M 18 Aug 2025 12:29:47.093 * <search> Subscribe to config changes
+redis-db  | 1:M 18 Aug 2025 12:29:47.093 * <search> Enabled role change notification
+redis-db  | 1:M 18 Aug 2025 12:29:47.093 * <search> Cluster configuration: AUTO partitions, type: 0, coordinator timeout: 0ms
+redis-db  | 1:M 18 Aug 2025 12:29:47.094 * <search> Register write commands
+redis-db  | 1:M 18 Aug 2025 12:29:47.094 * Module 'search' loaded from /usr/local/lib/redis/modules//redisearch.so
+redis-db  | 1:M 18 Aug 2025 12:29:47.096 * <timeseries> RedisTimeSeries version 80001, git_sha=577bfa8b5909e7ee572f0b651399be8303dc6641
+redis-db  | 1:M 18 Aug 2025 12:29:47.096 * <timeseries> Redis version found by RedisTimeSeries : 8.0.3 - oss
+redis-db  | 1:M 18 Aug 2025 12:29:47.096 * <timeseries> Registering configuration options: [
+redis-db  | 1:M 18 Aug 2025 12:29:47.097 * <timeseries> 	{ ts-compaction-policy   :              }
+redis-db  | 1:M 18 Aug 2025 12:29:47.097 * <timeseries> 	{ ts-num-threads         :            3 }
+redis-db  | 1:M 18 Aug 2025 12:29:47.097 * <timeseries> 	{ ts-retention-policy    :            0 }
+redis-db  | 1:M 18 Aug 2025 12:29:47.097 * <timeseries> 	{ ts-duplicate-policy    :        block }
+redis-db  | 1:M 18 Aug 2025 12:29:47.097 * <timeseries> 	{ ts-chunk-size-bytes    :         4096 }
+redis-db  | 1:M 18 Aug 2025 12:29:47.097 * <timeseries> 	{ ts-encoding            :   compressed }
+redis-db  | 1:M 18 Aug 2025 12:29:47.097 * <timeseries> 	{ ts-ignore-max-time-diff:            0 }
+redis-db  | 1:M 18 Aug 2025 12:29:47.097 * <timeseries> 	{ ts-ignore-max-val-diff :     0.000000 }
+redis-db  | 1:M 18 Aug 2025 12:29:47.097 * <timeseries> ]
+redis-db  | 1:M 18 Aug 2025 12:29:47.097 * <timeseries> Detected redis oss
+redis-db  | 1:M 18 Aug 2025 12:29:47.098 * Module 'timeseries' loaded from /usr/local/lib/redis/modules//redistimeseries.so
+redis-db  | 1:M 18 Aug 2025 12:29:47.117 * <ReJSON> Created new data type 'ReJSON-RL'
+redis-db  | 1:M 18 Aug 2025 12:29:47.119 * <ReJSON> version: 80001 git sha: unknown branch: unknown
+redis-db  | 1:M 18 Aug 2025 12:29:47.119 * <ReJSON> Exported RedisJSON_V1 API
+redis-db  | 1:M 18 Aug 2025 12:29:47.119 * <ReJSON> Exported RedisJSON_V2 API
+redis-db  | 1:M 18 Aug 2025 12:29:47.119 * <ReJSON> Exported RedisJSON_V3 API
+redis-db  | 1:M 18 Aug 2025 12:29:47.119 * <ReJSON> Exported RedisJSON_V4 API
+redis-db  | 1:M 18 Aug 2025 12:29:47.119 * <ReJSON> Exported RedisJSON_V5 API
+redis-db  | 1:M 18 Aug 2025 12:29:47.119 * <ReJSON> Enabled diskless replication
+redis-db  | 1:M 18 Aug 2025 12:29:47.120 * <ReJSON> Initialized shared string cache, thread safe: false.
+redis-db  | 1:M 18 Aug 2025 12:29:47.120 * Module 'ReJSON' loaded from /usr/local/lib/redis/modules//rejson.so
+redis-db  | 1:M 18 Aug 2025 12:29:47.120 * <search> Acquired RedisJSON_V5 API
+redis-db  | 1:M 18 Aug 2025 12:29:47.121 * Server initialized
+redis-db  | 1:M 18 Aug 2025 12:29:47.121 * Ready to accept connections tcp
+go-backend-2  | 2025/08/18 12:29:47 INFO Status of queue lenRetryQueue=0
+go-backend-1  | 2025/08/18 12:29:47 INFO Status of queue lenRetryQueue=0
+go-backend-1  | 
+go-backend-1  |  ┌───────────────────────────────────────────────────┐ 
+go-backend-1  |  │               High Performance API                │ 
+go-backend-1  |  │                   Fiber v2.52.8                   │ 
+go-backend-1  |  │                http://127.0.0.1:80                │ 
+go-backend-1  |  │        (bound on host 0.0.0.0 and port 80)        │ 
+go-backend-1  |  │                                                   │ 
+go-backend-1  |  │ Handlers ............. 4  Processes ........... 1 │ 
+go-backend-1  |  │ Prefork ....... Disabled  PID ................. 1 │ 
+go-backend-1  |  └───────────────────────────────────────────────────┘ 
+go-backend-1  | 
+go-backend-2  | 
+go-backend-2  |  ┌───────────────────────────────────────────────────┐ 
+go-backend-2  |  │               High Performance API                │ 
+go-backend-2  |  │                   Fiber v2.52.8                   │ 
+go-backend-2  |  │                http://127.0.0.1:80                │ 
+go-backend-2  |  │        (bound on host 0.0.0.0 and port 80)        │ 
+go-backend-2  |  │                                                   │ 
+go-backend-2  |  │ Handlers ............. 4  Processes ........... 1 │ 
+go-backend-2  |  │ Prefork ....... Disabled  PID ................. 1 │ 
+go-backend-2  |  └───────────────────────────────────────────────────┘ 
+go-backend-2  | 
+load-balancer-nginx  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+load-balancer-nginx  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+load-balancer-nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+load-balancer-nginx  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+load-balancer-nginx  | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+load-balancer-nginx  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+load-balancer-nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+load-balancer-nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+load-balancer-nginx  | /docker-entrypoint.sh: Configuration complete; ready for start up
+go-backend-1         | 2025/08/18 12:29:49 INFO Status of queue lenRetryQueue=0
+go-backend-2         | 2025/08/18 12:29:49 INFO Status of queue lenRetryQueue=0
+go-backend-1         | 2025/08/18 12:29:51 INFO Status of queue lenRetryQueue=0
+go-backend-2         | 2025/08/18 12:29:51 INFO Status of queue lenRetryQueue=0
+go-backend-1         | 2025/08/18 12:29:53 INFO Status of queue lenRetryQueue=0
+go-backend-2         | 2025/08/18 12:29:53 INFO Status of queue lenRetryQueue=0
+go-backend-1         | 2025/08/18 12:29:55 INFO Status of queue lenRetryQueue=0
+go-backend-2         | 2025/08/18 12:29:55 INFO Status of queue lenRetryQueue=0
+go-backend-1         | 2025/08/18 12:29:57 INFO Status of queue lenRetryQueue=0
+go-backend-2         | 2025/08/18 12:29:57 INFO Status of queue lenRetryQueue=0
+go-backend-1         | 2025/08/18 12:29:59 INFO Status of queue lenRetryQueue=0
+go-backend-2         | 2025/08/18 12:29:59 INFO Status of queue lenRetryQueue=0
+go-backend-1         | 2025/08/18 12:30:01 INFO Status of queue lenRetryQueue=0
+go-backend-2         | 2025/08/18 12:30:01 INFO Status of queue lenRetryQueue=0
+go-backend-1         | 2025/08/18 12:30:03 INFO Status of queue lenRetryQueue=0
+go-backend-2         | 2025/08/18 12:30:03 INFO Status of queue lenRetryQueue=0
+go-backend-1         | 2025/08/18 12:30:05 INFO Status of queue lenRetryQueue=0
+go-backend-2         | 2025/08/18 12:30:05 INFO Status of queue lenRetryQueue=0
+go-backend-1         | 2025/08/18 12:30:07 INFO Status of queue lenRetryQueue=0
+go-backend-2         | 2025/08/18 12:30:07 INFO Status of queue lenRetryQueue=0
+go-backend-1         | 2025/08/18 12:30:09 INFO Status of queue lenRetryQueue=0
+go-backend-2         | 2025/08/18 12:30:09 INFO Status of queue lenRetryQueue=0
+go-backend-1         | 2025/08/18 12:30:11 INFO Status of queue lenRetryQueue=0
+go-backend-2         | 2025/08/18 12:30:11 INFO Status of queue lenRetryQueue=0
+go-backend-1         | 2025/08/18 12:30:13 INFO Status of queue lenRetryQueue=0
+go-backend-2         | 2025/08/18 12:30:13 INFO Status of queue lenRetryQueue=0
+go-backend-1         | 2025/08/18 12:30:15 INFO Status of queue lenRetryQueue=0
+go-backend-2         | 2025/08/18 12:30:15 INFO Status of queue lenRetryQueue=0
+go-backend-1         | 2025/08/18 12:30:17 INFO Status of queue lenRetryQueue=0
+go-backend-2         | 2025/08/18 12:30:17 INFO Status of queue lenRetryQueue=0
+go-backend-1         | 2025/08/18 12:30:19 INFO Status of queue lenRetryQueue=0
+go-backend-2         | 2025/08/18 12:30:19 INFO Status of queue lenRetryQueue=0
+go-backend-1         | 2025/08/18 12:30:21 INFO Status of queue lenRetryQueue=0
+go-backend-2         | 2025/08/18 12:30:21 INFO Status of queue lenRetryQueue=0
+go-backend-1         | 2025/08/18 12:30:23 INFO Status of queue lenRetryQueue=0
+go-backend-2         | 2025/08/18 12:30:23 INFO Status of queue lenRetryQueue=0
+go-backend-1         | 2025/08/18 12:30:25 INFO Status of queue lenRetryQueue=0
+go-backend-2         | 2025/08/18 12:30:25 INFO Status of queue lenRetryQueue=0
+go-backend-1         | 2025/08/18 12:30:27 INFO Status of queue lenRetryQueue=0
+go-backend-2         | 2025/08/18 12:30:27 INFO Status of queue lenRetryQueue=0
+go-backend-1         | 2025/08/18 12:30:29 INFO Status of queue lenRetryQueue=0
+go-backend-2         | 2025/08/18 12:30:29 INFO Status of queue lenRetryQueue=0
+go-backend-1         | 2025/08/18 12:30:31 INFO Status of queue lenRetryQueue=49
+go-backend-2         | 2025/08/18 12:30:31 INFO Status of queue lenRetryQueue=49
+go-backend-1         | 2025/08/18 12:30:33 INFO Status of queue lenRetryQueue=122
+go-backend-2         | 2025/08/18 12:30:33 INFO Status of queue lenRetryQueue=122
+go-backend-1         | 2025/08/18 12:30:35 INFO Status of queue lenRetryQueue=199
+go-backend-2         | 2025/08/18 12:30:35 INFO Status of queue lenRetryQueue=199
+go-backend-1         | 2025/08/18 12:30:37 INFO Status of queue lenRetryQueue=280
+go-backend-2         | 2025/08/18 12:30:37 INFO Status of queue lenRetryQueue=280
+go-backend-1         | 2025/08/18 12:30:39 INFO Status of queue lenRetryQueue=365
+go-backend-2         | 2025/08/18 12:30:39 INFO Status of queue lenRetryQueue=365
+go-backend-1         | 2025/08/18 12:30:41 INFO Status of queue lenRetryQueue=454
+go-backend-2         | 2025/08/18 12:30:41 INFO Status of queue lenRetryQueue=454
+go-backend-1         | 2025/08/18 12:30:43 INFO Status of queue lenRetryQueue=547
+go-backend-2         | 2025/08/18 12:30:43 INFO Status of queue lenRetryQueue=547
+go-backend-1         | 2025/08/18 12:30:45 INFO Status of queue lenRetryQueue=644
+go-backend-2         | 2025/08/18 12:30:45 INFO Status of queue lenRetryQueue=644
+go-backend-1         | 2025/08/18 12:30:47 INFO Status of queue lenRetryQueue=746
+go-backend-2         | 2025/08/18 12:30:47 INFO Status of queue lenRetryQueue=744
+go-backend-1         | 2025/08/18 12:30:49 INFO Status of queue lenRetryQueue=851
+go-backend-2         | 2025/08/18 12:30:49 INFO Status of queue lenRetryQueue=849
+go-backend-1         | 2025/08/18 12:30:51 INFO Status of queue lenRetryQueue=960
+go-backend-2         | 2025/08/18 12:30:51 INFO Status of queue lenRetryQueue=958
+go-backend-1         | 2025/08/18 12:30:53 INFO Status of queue lenRetryQueue=1072
+go-backend-2         | 2025/08/18 12:30:53 INFO Status of queue lenRetryQueue=1072
+go-backend-1         | 2025/08/18 12:30:55 INFO Status of queue lenRetryQueue=1189
+go-backend-2         | 2025/08/18 12:30:55 INFO Status of queue lenRetryQueue=1189
+go-backend-1         | 2025/08/18 12:30:57 INFO Status of queue lenRetryQueue=1310
+go-backend-2         | 2025/08/18 12:30:57 INFO Status of queue lenRetryQueue=1310
+go-backend-1         | 2025/08/18 12:30:59 INFO Status of queue lenRetryQueue=1435
+go-backend-2         | 2025/08/18 12:30:59 INFO Status of queue lenRetryQueue=1435
+go-backend-1         | 2025/08/18 12:31:01 INFO Status of queue lenRetryQueue=1564
+go-backend-2         | 2025/08/18 12:31:01 INFO Status of queue lenRetryQueue=1564
+go-backend-1         | 2025/08/18 12:31:03 INFO Status of queue lenRetryQueue=1697
+go-backend-2         | 2025/08/18 12:31:03 INFO Status of queue lenRetryQueue=1697
+go-backend-1         | 2025/08/18 12:31:05 INFO Status of queue lenRetryQueue=1834
+go-backend-2         | 2025/08/18 12:31:05 INFO Status of queue lenRetryQueue=1834
+go-backend-1         | 2025/08/18 12:31:07 INFO Status of queue lenRetryQueue=1975
+go-backend-2         | 2025/08/18 12:31:07 INFO Status of queue lenRetryQueue=1975
+go-backend-2         | 2025/08/18 12:31:09 INFO Status of queue lenRetryQueue=2120
+go-backend-1         | 2025/08/18 12:31:09 INFO Status of queue lenRetryQueue=2120
+go-backend-1         | 2025/08/18 12:31:11 INFO Status of queue lenRetryQueue=2269
+go-backend-2         | 2025/08/18 12:31:11 INFO Status of queue lenRetryQueue=2269
+go-backend-2         | 2025/08/18 12:31:13 INFO Status of queue lenRetryQueue=2422
+go-backend-1         | 2025/08/18 12:31:13 INFO Status of queue lenRetryQueue=2422
+go-backend-2         | 2025/08/18 12:31:15 INFO Status of queue lenRetryQueue=2579
+go-backend-1         | 2025/08/18 12:31:15 INFO Status of queue lenRetryQueue=2579
+go-backend-2         | 2025/08/18 12:31:17 INFO Status of queue lenRetryQueue=2740
+go-backend-1         | 2025/08/18 12:31:17 INFO Status of queue lenRetryQueue=2740
+go-backend-1         | 2025/08/18 12:31:19 INFO Status of queue lenRetryQueue=2905
+go-backend-2         | 2025/08/18 12:31:19 INFO Status of queue lenRetryQueue=2905
+go-backend-1         | 2025/08/18 12:31:21 INFO Status of queue lenRetryQueue=3074
+go-backend-2         | 2025/08/18 12:31:21 INFO Status of queue lenRetryQueue=3074
+go-backend-1         | 2025/08/18 12:31:23 INFO Status of queue lenRetryQueue=3247
+go-backend-2         | 2025/08/18 12:31:23 INFO Status of queue lenRetryQueue=3247
+go-backend-2         | 2025/08/18 12:31:25 INFO Status of queue lenRetryQueue=3424
+go-backend-1         | 2025/08/18 12:31:25 INFO Status of queue lenRetryQueue=3424
+go-backend-2         | 2025/08/18 12:31:27 INFO Status of queue lenRetryQueue=3606
+go-backend-1         | 2025/08/18 12:31:27 INFO Status of queue lenRetryQueue=3604
+go-backend-2         | 2025/08/18 12:31:29 INFO Status of queue lenRetryQueue=3791
+go-backend-1         | 2025/08/18 12:31:29 INFO Status of queue lenRetryQueue=3789
+go-backend-2         | 2025/08/18 12:31:31 INFO Status of queue lenRetryQueue=3980
+go-backend-1         | 2025/08/18 12:31:31 INFO Status of queue lenRetryQueue=3978
+go-backend-2         | 2025/08/18 12:31:33 INFO Status of queue lenRetryQueue=4173
+go-backend-1         | 2025/08/18 12:31:33 INFO Status of queue lenRetryQueue=4171
+go-backend-2         | 2025/08/18 12:31:35 INFO Status of queue lenRetryQueue=4370
+go-backend-1         | 2025/08/18 12:31:35 INFO Status of queue lenRetryQueue=4368
+go-backend-2         | 2025/08/18 12:31:37 INFO Status of queue lenRetryQueue=4571
+go-backend-1         | 2025/08/18 12:31:37 INFO Status of queue lenRetryQueue=4569
+go-backend-2         | 2025/08/18 12:31:39 INFO Status of queue lenRetryQueue=4776
+go-backend-1         | 2025/08/18 12:31:39 INFO Status of queue lenRetryQueue=4774
+go-backend-2         | 2025/08/18 12:31:41 INFO Status of queue lenRetryQueue=4985
+go-backend-1         | 2025/08/18 12:31:41 INFO Status of queue lenRetryQueue=4984
+go-backend-2         | 2025/08/18 12:31:43 INFO Status of queue lenRetryQueue=5198
+go-backend-1         | 2025/08/18 12:31:43 INFO Status of queue lenRetryQueue=5195
+go-backend-2         | 2025/08/18 12:31:45 INFO Status of queue lenRetryQueue=5415
+go-backend-1         | 2025/08/18 12:31:45 INFO Status of queue lenRetryQueue=5413
+go-backend-1         | 2025/08/18 12:31:47 INFO Status of queue lenRetryQueue=5634
+go-backend-2         | 2025/08/18 12:31:47 INFO Status of queue lenRetryQueue=5637
+go-backend-1         | 2025/08/18 12:31:49 INFO Status of queue lenRetryQueue=5860
+go-backend-2         | 2025/08/18 12:31:49 INFO Status of queue lenRetryQueue=5863
+go-backend-1         | 2025/08/18 12:31:51 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:31:51 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:31:53 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:31:53 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:31:55 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:31:55 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:31:57 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:31:57 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:31:59 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:31:59 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:01 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:01 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:03 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:03 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:05 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:05 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:07 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:07 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:09 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:09 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:11 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:11 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:13 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:13 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:15 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:15 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:17 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:17 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:19 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:19 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:21 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:21 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:23 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:23 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:25 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:25 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:27 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:27 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:29 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:29 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:31 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:31 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:33 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:33 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:35 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:35 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:37 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:37 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:39 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:39 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:41 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:41 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:43 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:43 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:45 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:45 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:47 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:47 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:49 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:49 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:51 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:51 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:53 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:53 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:55 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:55 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:57 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:57 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:32:59 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:32:59 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:01 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:01 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:03 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:03 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:05 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:05 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:07 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:07 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:09 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:09 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:11 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:11 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:13 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:13 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:15 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:15 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:17 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:17 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:19 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:19 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:21 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:21 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:23 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:23 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:25 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:25 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:27 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:27 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:29 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:29 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:31 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:31 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:33 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:33 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:35 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:35 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:37 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:37 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:39 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:39 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:41 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:41 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:43 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:43 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:45 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:45 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:47 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:47 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:49 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:49 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:51 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:51 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:53 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:53 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:55 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:55 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:57 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:57 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:33:59 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:33:59 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:34:01 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:34:01 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:34:03 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:34:03 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:34:05 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:34:05 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:34:07 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:34:07 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:34:09 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:34:09 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:34:11 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:34:11 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:34:13 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:34:13 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:34:15 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:34:15 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:34:17 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:34:17 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:34:19 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:34:19 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:34:21 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:34:21 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:34:23 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:34:23 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:34:25 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:34:25 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:34:27 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:34:27 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:34:29 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:34:29 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:34:31 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:34:31 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:34:33 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:34:33 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:34:35 INFO Status of queue lenRetryQueue=6000
+go-backend-2         | 2025/08/18 12:34:35 INFO Status of queue lenRetryQueue=6000
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *581 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 31#31: *92 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *100 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *335 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *569 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *327 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 31#31: *79 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *333 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 31#31: *86 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *337 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *558 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 31#31: *81 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *75 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 31#31: *77 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *325 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *71 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 31#31: *294 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *323 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *67 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 31#31: *302 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *320 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *63 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 31#31: *535 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *553 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *519 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 31#31: *530 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *311 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *281 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 31#31: *292 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *316 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *273 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *546 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 31#31: *528 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *49 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *543 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 31#31: *513 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *539 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *55 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *37 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *45 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *39 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *286 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *275 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *503 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *27 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *259 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *266 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *501 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *241 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *497 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *253 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *43 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *257 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *264 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *244 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *494 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *483 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *248 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *195 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *189 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *186 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *405 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *181 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *413 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *184 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *667 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *661 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *650 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *643 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *641 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *114 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *125 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *123 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *119 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *111 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *338 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *340 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *328 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *326 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *568 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *571 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *560 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *562 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *52 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *509 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *511 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *208 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *237 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *215 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *233 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *468 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *54 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *478 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *474 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *58 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *176 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *50 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *172 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *265 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *162 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *164 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *397 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 32#32: *395 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *633 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *260 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *387 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *262 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *495 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *639 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *490 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *488 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *629 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *498 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 33#33: *484 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *624 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *385 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *107 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *109 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *99 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *25 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *101 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *19 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *9 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *432 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *17 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *205 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *455 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *324 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *15 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *310 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *453 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *221 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *445 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *201 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *229 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *313 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *438 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *213 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *322 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *225 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *549 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *156 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *415 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *544 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *154 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *152 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *547 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *941 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *542 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *147 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *620 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *44 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *379 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *423 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *612 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *36 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *363 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *34 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *376 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *247 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *141 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *243 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *139 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *232 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *135 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *481 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *355 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *357 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *471 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *131 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *238 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *350 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *479 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *359 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 32#32: *464 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *599 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *593 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *582 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *586 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *76 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *72 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *68 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *285 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *62 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *269 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *279 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *518 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *516 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *512 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *506 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *504 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:38 [error] 34#34: *7 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 34#34: *211 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 34#34: *1197 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *609 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *374 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *616 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *601 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *89 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *85 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *78 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *299 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *536 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *293 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *303 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *531 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *527 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *523 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *525 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *22 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *228 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *26 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *14 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *16 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *226 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *11 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+load-balancer-nginx  | 2025/08/18 12:34:39 [error] 31#31: *216 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 172.21.0.1, server: , request: "POST /payments HTTP/1.1", upstream: "http://172.21.0.4:80/payments", host: "localhost:9999"
+[Kgo-backend-2 exited with code 137
+go-backend-1         | 2025/08/18 12:34:39 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:34:43 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:34:48 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:34:50 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:34:53 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:34:56 INFO Status of queue lenRetryQueue=6000
+go-backend-1         | 2025/08/18 12:34:59 INFO Status of queue lenRetryQueue=6000
+[Kload-balancer-nginx exited with code 0
+[Kgo-backend-1 exited with code 2
+redis-db             | 1:signal-handler (1755520500) Received SIGTERM scheduling shutdown...
+redis-db             | 1:M 18 Aug 2025 12:35:00.068 * User requested shutdown...
+redis-db             | 1:M 18 Aug 2025 12:35:00.069 # Redis is now ready to exit, bye bye...
+log truncated at line 1000

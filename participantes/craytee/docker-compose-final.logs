@@ -1,0 +1,36 @@
+
+ Network craytee_backend  Creating
+ Network craytee_backend  Created
+ Volume "craytee_socket_volume"  Creating
+ Volume "craytee_socket_volume"  Created
+ Volume "craytee_shared_memory"  Creating
+ Volume "craytee_shared_memory"  Created
+ Container api2  Creating
+ Container api1  Creating
+ Container api1  Created
+ Container api2  Created
+ Container loadbalancer  Creating
+ Container loadbalancer  Created
+Attaching to api1, api2, loadbalancer
+api2  | {"level":"info","time":"2025-08-18T11:07:57Z","message":"API attached to existing shared storage memory buffer"}
+api2  | {"level":"info","time":"2025-08-18T11:07:57Z","message":"PROCESS_PAYMENTS=false: this API instance will not process payments"}
+api1  | {"level":"info","time":"2025-08-18T11:07:57Z","message":"API created shared storage memory buffer"}
+api2  | {"level":"info","path":"/var/run/sockets/api2.sock","time":"2025-08-18T11:07:57Z","message":"Unix server started"}
+api1  | {"level":"info","path":"/var/run/sockets/api1.sock","time":"2025-08-18T11:07:57Z","message":"Unix server started"}
+api1  | {"level":"info","time":"2025-08-18T11:07:57Z","message":"API created new shared memory ring buffer"}
+api1  | {"level":"info","time":"2025-08-18T11:07:57Z","message":"API ready - shared memory mode enabled!"}
+api1  | {"level":"info","time":"2025-08-18T11:07:57Z","message":"Starting shared memory processing loop"}
+loadbalancer  | {"level":"info","time":"2025-08-18T11:07:57Z","message":"LoadBalancer attached to existing shared memory ring buffer"}
+loadbalancer  | {"level":"info","time":"2025-08-18T11:07:57Z","message":"🚀 Starting Load Balancer..."}
+loadbalancer  | {"level":"info","server":0,"path":"/var/run/sockets/api1.sock","time":"2025-08-18T11:07:57Z","message":"LoadBalancer: Created connection pool for server"}
+loadbalancer  | {"level":"info","server":1,"path":"/var/run/sockets/api2.sock","time":"2025-08-18T11:07:57Z","message":"LoadBalancer: Created connection pool for server"}
+loadbalancer  | {"level":"info","addr":":8080","listeners":2,"time":"2025-08-18T11:07:57Z","message":"⚡ Reuseport listeners started"}
+loadbalancer  | {"level":"info","time":"2025-08-18T11:13:08Z","message":"🛑 LoadBalancer shutting down..."}
+loadbalancer  | {"level":"info","server":0,"time":"2025-08-18T11:13:08Z","message":"Closed connection pool for server"}
+loadbalancer  | {"level":"info","server":1,"time":"2025-08-18T11:13:08Z","message":"Closed connection pool for server"}
+[Kloadbalancer exited with code 0
+api2          | {"level":"info","time":"2025-08-18T11:13:08Z","message":"Server shutting down..."}
+api2          | {"level":"info","time":"2025-08-18T11:13:08Z","message":"Shared memory storage closed successfully"}
+api1          | {"level":"info","time":"2025-08-18T11:13:08Z","message":"Server shutting down..."}
+api1          | {"level":"info","time":"2025-08-18T11:13:08Z","message":"Shared memory storage closed successfully"}
+log truncated at line 1000

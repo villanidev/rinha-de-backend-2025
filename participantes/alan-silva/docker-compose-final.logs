@@ -1,0 +1,77 @@
+
+ rinha-database Pulling 
+ rinha-gateway-1 Pulling 
+ rinha-gateway-2 Pulling 
+ rinha-gateway-3 Pulling 
+ rinha-gateway-2 Pulled 
+ rinha-gateway-3 Pulled 
+ rinha-gateway-1 Pulled 
+ rinha-database Pulled 
+ Network rinha-net  Creating
+ Network rinha-net  Created
+ Volume "alan-silva_sockets"  Creating
+ Volume "alan-silva_sockets"  Created
+ Container rinha-database  Creating
+ Container rinha-database  Created
+ Container rinha-gateway-1  Creating
+ Container rinha-gateway-2  Creating
+ Container rinha-gateway-3  Creating
+ Container rinha-gateway-2  Created
+ Container rinha-gateway-3  Created
+ Container rinha-gateway-1  Created
+ Container rinha-haproxy  Creating
+ Container rinha-haproxy  Created
+Attaching to rinha-database, rinha-gateway-1, rinha-gateway-2, rinha-gateway-3, rinha-haproxy
+rinha-database  | VERSION: 7.0 SKYLAKE
+rinha-database  | Umbral Server listening on "/sockets/database.sock"
+rinha-gateway-2  | VERSION: 7.0 SKYLAKE
+rinha-gateway-2  | TRIGGER: 1100
+rinha-gateway-2  | SLAVES: 100
+rinha-gateway-2  | ANALYST: false
+rinha-gateway-1  | VERSION: 7.0 SKYLAKE
+rinha-gateway-1  | TRIGGER: 1100
+rinha-gateway-1  | SLAVES: 100
+rinha-gateway-1  | ANALYST: false
+rinha-gateway-3  | VERSION: 7.0 SKYLAKE
+rinha-gateway-3  | TRIGGER: 1100
+rinha-gateway-3  | SLAVES: 100
+rinha-gateway-3  | ANALYST: false
+rinha-haproxy    | [NOTICE]   (1) : Initializing new worker (8)
+rinha-haproxy    | [NOTICE]   (1) : Loading success.
+rinha-database   | Error processing connection: Connection reset by peer (os error 104)
+rinha-database   | Error processing connection: Connection reset by peer (os error 104)
+rinha-database   | Error processing connection: Connection reset by peer (os error 104)
+rinha-database   | Error processing connection: Connection reset by peer (os error 104)
+rinha-database   | Error processing connection: Connection reset by peer (os error 104)
+rinha-database   | Error processing connection: Connection reset by peer (os error 104)
+rinha-database   | Error processing connection: Connection reset by peer (os error 104)
+rinha-database   | Error processing connection: Connection reset by peer (os error 104)
+rinha-database   | Error processing connection: Connection reset by peer (os error 104)
+rinha-database   | Error processing connection: Connection reset by peer (os error 104)
+rinha-database   | Error processing connection: Connection reset by peer (os error 104)
+rinha-database   | Error processing connection: Connection reset by peer (os error 104)
+rinha-database   | Error processing connection: Connection reset by peer (os error 104)
+rinha-database   | Error processing connection: Connection reset by peer (os error 104)
+rinha-database   | Error processing connection: Connection reset by peer (os error 104)
+rinha-database   | Error processing connection: Connection reset by peer (os error 104)
+[Krinha-gateway-1 exited with code 137
+rinha-haproxy    | [WARNING]  (8) : Server backend/gateway-1 is DOWN, reason: Socket error, info: "General socket error (Connection refused)", check duration: 0ms. 2 active and 0 backup servers left. 0 sessions active, 0 requeued, 0 remaining in queue.
+[Krinha-gateway-2 exited with code 137
+rinha-database   | Error processing connection: Connection reset by peer (os error 104)
+rinha-database   | Error processing connection: Connection reset by peer (os error 104)
+rinha-database   | Error processing connection: Connection reset by peer (os error 104)
+rinha-database   | Error processing connection: Connection reset by peer (os error 104)
+rinha-database   | Error processing connection: Connection reset by peer (os error 104)
+rinha-database   | Error processing connection: Connection reset by peer (os error 104)
+[Krinha-gateway-3 exited with code 137
+rinha-haproxy    | [WARNING]  (8) : Server backend/gateway-2 is DOWN, reason: Socket error, info: "General socket error (Connection refused)", check duration: 0ms. 1 active and 0 backup servers left. 0 sessions active, 0 requeued, 0 remaining in queue.
+rinha-haproxy    | [WARNING]  (8) : Server backend/gateway-3 is DOWN, reason: Socket error, info: "General socket error (Connection refused)", check duration: 0ms. 0 active and 0 backup servers left. 0 sessions active, 0 requeued, 0 remaining in queue.
+rinha-haproxy    | [ALERT]    (8) : backend 'backend' has no server available!
+rinha-haproxy    | [NOTICE]   (1) : haproxy version is 3.2.3-1844da7
+rinha-haproxy    | [WARNING]  (1) : Exiting Master process...
+rinha-haproxy    | [WARNING]  (8) : Proxy frontend stopped (cumulated conns: FE: 1209, BE: 0).
+rinha-haproxy    | [WARNING]  (8) : Proxy backend stopped (cumulated conns: FE: 0, BE: 89520).
+rinha-haproxy    | [WARNING]  (1) : Current worker (8) exited with code 0 (Exit)
+rinha-haproxy    | [WARNING]  (1) : All workers exited. Exiting... (0)
+[Krinha-haproxy exited with code 0
+log truncated at line 1000

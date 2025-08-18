@@ -1,0 +1,73 @@
+
+time="2025-08-18T14:08:01Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:08:02Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:08:02Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:08:08Z" level=warning msg="Request Failed" error="Get \"http://localhost:9999/payments-summary?from=2025-08-18T14:07:52.478Z&to=2025-08-18T14:08:05.478Z\": request timeout"
+time="2025-08-18T14:08:08Z" level=error msg="Não foi possível obter resposta de '/payments-summary?from=2025-08-18T14:07:52.478Z&to=2025-08-18T14:08:05.478Z' para o backend (HTTP 0)" source=console
+time="2025-08-18T14:08:08Z" level=warning msg="================ [inconsistências encontradas] ================" source=console
+time="2025-08-18T14:08:08Z" level=warning msg="backend.default.totalRequests vs default.totalRequests: 0 vs 5097" source=console
+time="2025-08-18T14:08:08Z" level=warning msg="backend.fallback.totalRequests vs fallback.totalRequests: 0 vs 0" source=console
+time="2025-08-18T14:08:20Z" level=warning msg="Request Failed" error="Get \"http://localhost:9999/payments-summary?from=2025-08-18T14:08:03.981Z&to=2025-08-18T14:08:16.981Z\": request timeout"
+time="2025-08-18T14:08:20Z" level=error msg="Não foi possível obter resposta de '/payments-summary?from=2025-08-18T14:08:03.981Z&to=2025-08-18T14:08:16.981Z' para o backend (HTTP 0)" source=console
+time="2025-08-18T14:08:20Z" level=warning msg="================ [inconsistências encontradas] ================" source=console
+time="2025-08-18T14:08:20Z" level=warning msg="backend.default.totalRequests vs default.totalRequests: 0 vs 2452" source=console
+time="2025-08-18T14:08:20Z" level=warning msg="backend.fallback.totalRequests vs fallback.totalRequests: 0 vs 0" source=console
+time="2025-08-18T14:08:31Z" level=warning msg="Request Failed" error="Get \"http://localhost:9999/payments-summary?from=2025-08-18T14:08:15.483Z&to=2025-08-18T14:08:28.483Z\": request timeout"
+time="2025-08-18T14:08:31Z" level=error msg="Não foi possível obter resposta de '/payments-summary?from=2025-08-18T14:08:15.483Z&to=2025-08-18T14:08:28.483Z' para o backend (HTTP 0)" source=console
+time="2025-08-18T14:08:31Z" level=warning msg="================ [inconsistências encontradas] ================" source=console
+time="2025-08-18T14:08:31Z" level=warning msg="backend.default.totalRequests vs default.totalRequests: 0 vs 2358" source=console
+time="2025-08-18T14:08:31Z" level=warning msg="backend.fallback.totalRequests vs fallback.totalRequests: 0 vs 0" source=console
+time="2025-08-18T14:09:16Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:09:34Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:09:34Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:09:34Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:09:59Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:00Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:00Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:00Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:02Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:02Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:02Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:02Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:02Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:02Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:02Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:02Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:02Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:02Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:02Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:02Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:02Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:03Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:03Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:03Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:03Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:03Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:03Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:03Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:03Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:03Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:03Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:03Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:03Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:03Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:03Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:04Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:04Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:04Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:04Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:04Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:04Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:04Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:04Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:04Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:04Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:04Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:04Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:04Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:05Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:05Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:05Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:05Z" level=warning msg="Request Failed" error="Post \"http://localhost:9999/payments\": EOF"
+time="2025-08-18T14:10:11Z" level=info msg="summaries from 2025-08-18T14:09:01.077Z to 2025-08-18T14:10:11.077Z" source=console
+log truncated at line 1000

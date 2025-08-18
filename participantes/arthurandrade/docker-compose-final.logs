@@ -1,0 +1,216 @@
+
+time="2025-08-18T08:01:59Z" level=warning msg="/home/ubuntu/rinha-de-backend-2025/participantes/arthurandrade/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+ api1 Pulling 
+ api2 Pulling 
+ 59e22667830b Already exists 
+ 136759efcfb5 Pulling fs layer 
+ 267fb3c0707c Pulling fs layer 
+ 7a8adda00518 Pulling fs layer 
+ 462e6c1e58f3 Pulling fs layer 
+ 54076c9489fe Pulling fs layer 
+ b767ca86a80e Pulling fs layer 
+ 3cafd94efeb2 Pulling fs layer 
+ 462e6c1e58f3 Waiting 
+ 54076c9489fe Waiting 
+ b767ca86a80e Waiting 
+ 3cafd94efeb2 Waiting 
+ 267fb3c0707c Downloading [==================================================>]  3.282kB/3.282kB
+ 267fb3c0707c Verifying Checksum 
+ 267fb3c0707c Download complete 
+ 59e22667830b Already exists 
+ 136759efcfb5 Pulling fs layer 
+ 267fb3c0707c Pulling fs layer 
+ 7a8adda00518 Pulling fs layer 
+ 462e6c1e58f3 Pulling fs layer 
+ 54076c9489fe Pulling fs layer 
+ b767ca86a80e Pulling fs layer 
+ 3cafd94efeb2 Pulling fs layer 
+ 3cafd94efeb2 Waiting 
+ 267fb3c0707c Download complete 
+ 462e6c1e58f3 Waiting 
+ 54076c9489fe Waiting 
+ b767ca86a80e Waiting 
+ 462e6c1e58f3 Verifying Checksum 
+ 462e6c1e58f3 Download complete 
+ 462e6c1e58f3 Downloading [==================================================>]     154B/154B
+ 462e6c1e58f3 Verifying Checksum 
+ 462e6c1e58f3 Download complete 
+ 136759efcfb5 Downloading [>                                                  ]  189.9kB/18.74MB
+ 136759efcfb5 Downloading [>                                                  ]  189.9kB/18.74MB
+ 7a8adda00518 Downloading [>                                                  ]  330.9kB/32.25MB
+ 7a8adda00518 Downloading [>                                                  ]  330.9kB/32.25MB
+ 54076c9489fe Downloading [>                                                  ]  113.6kB/11.09MB
+ 54076c9489fe Downloading [>                                                  ]  113.6kB/11.09MB
+ 136759efcfb5 Downloading [===============================================>   ]  17.82MB/18.74MB
+ 136759efcfb5 Downloading [===============================================>   ]  17.82MB/18.74MB
+ 136759efcfb5 Download complete 
+ 136759efcfb5 Download complete 
+ 136759efcfb5 Extracting [>                                                  ]  196.6kB/18.74MB
+ 136759efcfb5 Extracting [>                                                  ]  196.6kB/18.74MB
+ 54076c9489fe Download complete 
+ 54076c9489fe Verifying Checksum 
+ 54076c9489fe Download complete 
+ b767ca86a80e Downloading [==================================================>]      93B/93B
+ b767ca86a80e Verifying Checksum 
+ b767ca86a80e Download complete 
+ b767ca86a80e Downloading [==================================================>]      93B/93B
+ b767ca86a80e Verifying Checksum 
+ b767ca86a80e Download complete 
+ 136759efcfb5 Extracting [===============>                                   ]  5.702MB/18.74MB
+ 136759efcfb5 Extracting [===============>                                   ]  5.702MB/18.74MB
+ 7a8adda00518 Downloading [===========================>                       ]  17.79MB/32.25MB
+ 7a8adda00518 Downloading [===========================>                       ]  17.79MB/32.25MB
+ 3cafd94efeb2 Downloading [>                                                  ]  16.91kB/1.648MB
+ 3cafd94efeb2 Downloading [>                                                  ]  16.91kB/1.648MB
+ 3cafd94efeb2 Verifying Checksum 
+ 3cafd94efeb2 Verifying Checksum 
+ 3cafd94efeb2 Download complete 
+ 3cafd94efeb2 Download complete 
+ 136759efcfb5 Extracting [====================================>              ]  13.76MB/18.74MB
+ 136759efcfb5 Extracting [====================================>              ]  13.76MB/18.74MB
+ 7a8adda00518 Verifying Checksum 
+ 7a8adda00518 Download complete 
+ 7a8adda00518 Verifying Checksum 
+ 7a8adda00518 Download complete 
+ 136759efcfb5 Extracting [=================================================> ]  18.48MB/18.74MB
+ 136759efcfb5 Extracting [=================================================> ]  18.48MB/18.74MB
+ 136759efcfb5 Extracting [==================================================>]  18.74MB/18.74MB
+ 136759efcfb5 Extracting [==================================================>]  18.74MB/18.74MB
+ 136759efcfb5 Pull complete 
+ 136759efcfb5 Pull complete 
+ 267fb3c0707c Extracting [==================================================>]  3.282kB/3.282kB
+ 267fb3c0707c Extracting [==================================================>]  3.282kB/3.282kB
+ 267fb3c0707c Extracting [==================================================>]  3.282kB/3.282kB
+ 267fb3c0707c Extracting [==================================================>]  3.282kB/3.282kB
+ 267fb3c0707c Pull complete 
+ 267fb3c0707c Pull complete 
+ 7a8adda00518 Extracting [>                                                  ]  327.7kB/32.25MB
+ 7a8adda00518 Extracting [>                                                  ]  327.7kB/32.25MB
+ 7a8adda00518 Extracting [=============>                                     ]   8.52MB/32.25MB
+ 7a8adda00518 Extracting [=============>                                     ]   8.52MB/32.25MB
+ 7a8adda00518 Extracting [===========================>                       ]  17.69MB/32.25MB
+ 7a8adda00518 Extracting [===========================>                       ]  17.69MB/32.25MB
+ 7a8adda00518 Extracting [=======================================>           ]  25.56MB/32.25MB
+ 7a8adda00518 Extracting [=======================================>           ]  25.56MB/32.25MB
+ 7a8adda00518 Extracting [==================================================>]  32.25MB/32.25MB
+ 7a8adda00518 Extracting [==================================================>]  32.25MB/32.25MB
+ 7a8adda00518 Pull complete 
+ 7a8adda00518 Pull complete 
+ 462e6c1e58f3 Extracting [==================================================>]     154B/154B
+ 462e6c1e58f3 Extracting [==================================================>]     154B/154B
+ 462e6c1e58f3 Extracting [==================================================>]     154B/154B
+ 462e6c1e58f3 Extracting [==================================================>]     154B/154B
+ 462e6c1e58f3 Pull complete 
+ 462e6c1e58f3 Pull complete 
+ 54076c9489fe Extracting [>                                                  ]  131.1kB/11.09MB
+ 54076c9489fe Extracting [>                                                  ]  131.1kB/11.09MB
+ 54076c9489fe Extracting [==================================>                ]  7.733MB/11.09MB
+ 54076c9489fe Extracting [==================================>                ]  7.733MB/11.09MB
+ 54076c9489fe Extracting [==================================================>]  11.09MB/11.09MB
+ 54076c9489fe Extracting [==================================================>]  11.09MB/11.09MB
+ 54076c9489fe Pull complete 
+ 54076c9489fe Pull complete 
+ b767ca86a80e Extracting [==================================================>]      93B/93B
+ b767ca86a80e Extracting [==================================================>]      93B/93B
+ b767ca86a80e Extracting [==================================================>]      93B/93B
+ b767ca86a80e Extracting [==================================================>]      93B/93B
+ b767ca86a80e Pull complete 
+ b767ca86a80e Pull complete 
+ 3cafd94efeb2 Extracting [>                                                  ]  32.77kB/1.648MB
+ 3cafd94efeb2 Extracting [>                                                  ]  32.77kB/1.648MB
+ 3cafd94efeb2 Extracting [==================================================>]  1.648MB/1.648MB
+ 3cafd94efeb2 Extracting [==================================================>]  1.648MB/1.648MB
+ 3cafd94efeb2 Pull complete 
+ 3cafd94efeb2 Pull complete 
+ api2 Pulled 
+ api1 Pulled 
+ Network arthurandrade_backend  Creating
+ Network arthurandrade_backend  Created
+ Container redis  Creating
+ Container redis  Created
+ Container api2  Creating
+ Container api1  Creating
+ Container api1  Created
+ Container api2  Created
+ Container nginx-loadbalancer  Creating
+ Container nginx-loadbalancer  Created
+Attaching to api1, api2, nginx-loadbalancer, redis
+redis  | 1:C 18 Aug 2025 08:02:02.953 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis  | 1:C 18 Aug 2025 08:02:02.954 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis  | 1:C 18 Aug 2025 08:02:02.954 * Redis version=7.2.10, bits=64, commit=00000000, modified=0, pid=1, just started
+redis  | 1:C 18 Aug 2025 08:02:02.954 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+redis  | 1:M 18 Aug 2025 08:02:02.954 * monotonic clock: POSIX clock_gettime
+redis  | 1:M 18 Aug 2025 08:02:02.955 * Running mode=standalone, port=6379.
+redis  | 1:M 18 Aug 2025 08:02:02.955 * Server initialized
+redis  | 1:M 18 Aug 2025 08:02:02.956 * Ready to accept connections tcp
+nginx-loadbalancer  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+nginx-loadbalancer  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+nginx-loadbalancer  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+nginx-loadbalancer  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+nginx-loadbalancer  | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+nginx-loadbalancer  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+nginx-loadbalancer  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+nginx-loadbalancer  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+nginx-loadbalancer  | /docker-entrypoint.sh: Configuration complete; ready for start up
+api2                | info: rinhabackend.Application.Worker.PaymentWorker[0]
+api2                |       Worker de pagamentos iniciado.
+api1                | info: rinhabackend.Application.Worker.PaymentWorker[0]
+api1                |       Worker de pagamentos iniciado.
+api1                | warn: Microsoft.AspNetCore.Hosting.Diagnostics[15]
+api1                |       Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:9999'.
+api2                | warn: Microsoft.AspNetCore.Hosting.Diagnostics[15]
+api2                |       Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:9999'.
+api1                | warn: Microsoft.AspNetCore.Server.Kestrel[0]
+api1                |       Overriding address(es) 'http://+:9999'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+api2                | warn: Microsoft.AspNetCore.Server.Kestrel[0]
+api2                |       Overriding address(es) 'http://+:9999'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+api2                | info: Microsoft.Hosting.Lifetime[14]
+api2                |       Now listening on: http://[::]:9999
+api2                | info: Microsoft.Hosting.Lifetime[0]
+api2                |       Application started. Press Ctrl+C to shut down.
+api2                | info: Microsoft.Hosting.Lifetime[0]
+api2                |       Hosting environment: Production
+api2                | info: Microsoft.Hosting.Lifetime[0]
+api2                |       Content root path: /app
+api1                | info: Microsoft.Hosting.Lifetime[14]
+api1                |       Now listening on: http://[::]:9999
+api1                | info: Microsoft.Hosting.Lifetime[0]
+api1                |       Application started. Press Ctrl+C to shut down.
+api1                | info: Microsoft.Hosting.Lifetime[0]
+api1                |       Hosting environment: Production
+api1                | info: Microsoft.Hosting.Lifetime[0]
+api1                |       Content root path: /app
+nginx-loadbalancer  | 172.21.0.1 - - [18/Aug/2025:08:02:04 +0000] "GET /payments-summary HTTP/1.1" 400 55 "-" "curl/8.5.0"
+nginx-loadbalancer  | 172.21.0.1 - - [18/Aug/2025:08:02:09 +0000] "GET /payments-summary HTTP/1.1" 400 55 "-" "curl/8.5.0"
+nginx-loadbalancer  | 172.21.0.1 - - [18/Aug/2025:08:02:14 +0000] "GET /payments-summary HTTP/1.1" 400 55 "-" "curl/8.5.0"
+nginx-loadbalancer  | 172.21.0.1 - - [18/Aug/2025:08:02:19 +0000] "GET /payments-summary HTTP/1.1" 400 55 "-" "curl/8.5.0"
+nginx-loadbalancer  | 172.21.0.1 - - [18/Aug/2025:08:02:24 +0000] "GET /payments-summary HTTP/1.1" 400 55 "-" "curl/8.5.0"
+nginx-loadbalancer  | 172.21.0.1 - - [18/Aug/2025:08:02:29 +0000] "GET /payments-summary HTTP/1.1" 400 55 "-" "curl/8.5.0"
+nginx-loadbalancer  | 172.21.0.1 - - [18/Aug/2025:08:02:34 +0000] "GET /payments-summary HTTP/1.1" 400 55 "-" "curl/8.5.0"
+nginx-loadbalancer  | 172.21.0.1 - - [18/Aug/2025:08:02:39 +0000] "GET /payments-summary HTTP/1.1" 400 55 "-" "curl/8.5.0"
+nginx-loadbalancer  | 172.21.0.1 - - [18/Aug/2025:08:02:44 +0000] "GET /payments-summary HTTP/1.1" 400 55 "-" "curl/8.5.0"
+nginx-loadbalancer  | 172.21.0.1 - - [18/Aug/2025:08:02:49 +0000] "GET /payments-summary HTTP/1.1" 400 55 "-" "curl/8.5.0"
+nginx-loadbalancer  | 172.21.0.1 - - [18/Aug/2025:08:02:54 +0000] "GET /payments-summary HTTP/1.1" 400 55 "-" "curl/8.5.0"
+nginx-loadbalancer  | 172.21.0.1 - - [18/Aug/2025:08:02:59 +0000] "GET /payments-summary HTTP/1.1" 400 55 "-" "curl/8.5.0"
+nginx-loadbalancer  | 172.21.0.1 - - [18/Aug/2025:08:03:04 +0000] "GET /payments-summary HTTP/1.1" 400 55 "-" "curl/8.5.0"
+nginx-loadbalancer  | 172.21.0.1 - - [18/Aug/2025:08:03:10 +0000] "GET /payments-summary HTTP/1.1" 400 55 "-" "curl/8.5.0"
+[Knginx-loadbalancer exited with code 0
+api2                | info: Microsoft.Hosting.Lifetime[0]
+api2                |       Application is shutting down...
+api1                | info: Microsoft.Hosting.Lifetime[0]
+api1                |       Application is shutting down...
+api2                | fail: rinhabackend.Application.Worker.PaymentWorker[0]
+api2                |       Erro ao processar pagamento
+api2                |       System.Threading.Tasks.TaskCanceledException: A task was canceled.
+api2                |          at rinhabackend.Application.Worker.PaymentWorker.ExecuteAsync(CancellationToken stoppingToken) in /src/src/rinhabackend.Application/Worker/PaymentWorker.cs:line 70
+api1                | fail: rinhabackend.Application.Worker.PaymentWorker[0]
+api1                |       Erro ao processar pagamento
+api1                |       System.Threading.Tasks.TaskCanceledException: A task was canceled.
+api1                |          at rinhabackend.Application.Worker.PaymentWorker.ExecuteAsync(CancellationToken stoppingToken) in /src/src/rinhabackend.Application/Worker/PaymentWorker.cs:line 70
+[Kapi2 exited with code 0
+[Kapi1 exited with code 0
+redis               | 1:signal-handler (1755504195) Received SIGTERM scheduling shutdown...
+redis               | 1:M 18 Aug 2025 08:03:15.782 * User requested shutdown...
+redis               | 1:M 18 Aug 2025 08:03:15.782 * Saving the final RDB snapshot before exiting.
+redis               | 1:M 18 Aug 2025 08:03:15.788 * DB saved on disk
+redis               | 1:M 18 Aug 2025 08:03:15.788 # Redis is now ready to exit, bye bye...

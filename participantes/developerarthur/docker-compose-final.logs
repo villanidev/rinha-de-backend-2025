@@ -1,0 +1,309 @@
+
+ clojure-instance-2 Pulling 
+ service-worker Pulling 
+ clojure-instance Pulling 
+ 9824c27679d3 Already exists 
+ 6a46580b9894 Already exists 
+ 9824c27679d3 Already exists 
+ 57f9d6575194 Already exists 
+ 6a46580b9894 Already exists 
+ 57f9d6575194 Already exists 
+ cf466e9ba1cf Already exists 
+ cf466e9ba1cf Already exists 
+ 9824c27679d3 Already exists 
+ fb760d495f93 Already exists 
+ 6a46580b9894 Already exists 
+ fb760d495f93 Already exists 
+ f63cceb3b793 Pulling fs layer 
+ 942b22a28b06 Pulling fs layer 
+ f63cceb3b793 Pulling fs layer 
+ 942b22a28b06 Pulling fs layer 
+ 57f9d6575194 Already exists 
+ cf466e9ba1cf Already exists 
+ fb760d495f93 Already exists 
+ f63cceb3b793 Pulling fs layer 
+ 4229c944238e Pulling fs layer 
+ f63cceb3b793 Verifying Checksum 
+ f63cceb3b793 Download complete 
+ f63cceb3b793 Downloading [==================================================>]      92B/92B
+ f63cceb3b793 Downloading [==================================================>]      92B/92B
+ f63cceb3b793 Verifying Checksum 
+ f63cceb3b793 Download complete 
+ f63cceb3b793 Extracting [==================================================>]      92B/92B
+ f63cceb3b793 Verifying Checksum 
+ f63cceb3b793 Download complete 
+ f63cceb3b793 Extracting [==================================================>]      92B/92B
+ f63cceb3b793 Extracting [==================================================>]      92B/92B
+ f63cceb3b793 Extracting [==================================================>]      92B/92B
+ f63cceb3b793 Extracting [==================================================>]      92B/92B
+ f63cceb3b793 Extracting [==================================================>]      92B/92B
+ f63cceb3b793 Pull complete 
+ f63cceb3b793 Pull complete 
+ f63cceb3b793 Pull complete 
+ 942b22a28b06 Downloading [>                                                  ]  197.4kB/19.29MB
+ 942b22a28b06 Downloading [>                                                  ]  197.4kB/19.29MB
+ 4229c944238e Downloading [>                                                  ]  197.4kB/19.28MB
+ 942b22a28b06 Downloading [===================================>               ]  13.64MB/19.29MB
+ 942b22a28b06 Downloading [===================================>               ]  13.64MB/19.29MB
+ 4229c944238e Downloading [=======================>                           ]  8.871MB/19.28MB
+ 942b22a28b06 Downloading [==============================================>    ]  17.88MB/19.29MB
+ 942b22a28b06 Downloading [==============================================>    ]  17.88MB/19.29MB
+ 942b22a28b06 Verifying Checksum 
+ 942b22a28b06 Download complete 
+ 942b22a28b06 Verifying Checksum 
+ 942b22a28b06 Download complete 
+ 942b22a28b06 Extracting [>                                                  ]  196.6kB/19.29MB
+ 942b22a28b06 Extracting [>                                                  ]  196.6kB/19.29MB
+ 4229c944238e Downloading [==============================================>    ]  17.76MB/19.28MB
+ 4229c944238e Verifying Checksum 
+ 4229c944238e Download complete 
+ 4229c944238e Extracting [>                                                  ]  196.6kB/19.28MB
+ 942b22a28b06 Extracting [===========================>                       ]  10.62MB/19.29MB
+ 942b22a28b06 Extracting [===========================>                       ]  10.62MB/19.29MB
+ 4229c944238e Extracting [=======================>                           ]  9.241MB/19.28MB
+ 942b22a28b06 Extracting [==================================================>]  19.29MB/19.29MB
+ 942b22a28b06 Extracting [==================================================>]  19.29MB/19.29MB
+ 942b22a28b06 Pull complete 
+ 942b22a28b06 Pull complete 
+ clojure-instance Pulled 
+ clojure-instance-2 Pulled 
+ 4229c944238e Extracting [==================================================>]  19.28MB/19.28MB
+ 4229c944238e Pull complete 
+ service-worker Pulled 
+ Network developerarthur_nginx_net  Creating
+ Network developerarthur_nginx_net  Created
+ Container developerarthur-postgres-1  Creating
+ Container developerarthur-postgres-1  Created
+ Container developerarthur-clojure-instance-2-1  Creating
+ Container developerarthur-clojure-instance-1  Creating
+ Container developerarthur-service-worker-1  Creating
+ Container developerarthur-clojure-instance-1  Created
+ Container developerarthur-clojure-instance-2-1  Created
+ Container developerarthur-nginx-1  Creating
+ Container developerarthur-service-worker-1  Created
+ Container developerarthur-nginx-1  Created
+Attaching to clojure-instance-1, clojure-instance-2-1, nginx-1, postgres-1, service-worker-1
+postgres-1  | The files belonging to this database system will be owned by user "postgres".
+postgres-1  | This user must also own the server process.
+postgres-1  | 
+postgres-1  | The database cluster will be initialized with locale "en_US.utf8".
+postgres-1  | The default database encoding has accordingly been set to "UTF8".
+postgres-1  | The default text search configuration will be set to "english".
+postgres-1  | 
+postgres-1  | Data page checksums are disabled.
+postgres-1  | 
+postgres-1  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+postgres-1  | creating subdirectories ... ok
+postgres-1  | selecting dynamic shared memory implementation ... posix
+postgres-1  | selecting default "max_connections" ... 100
+postgres-1  | selecting default "shared_buffers" ... 128MB
+postgres-1  | selecting default time zone ... Etc/UTC
+postgres-1  | creating configuration files ... ok
+nginx-1     | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+nginx-1     | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+nginx-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+nginx-1     | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+nginx-1     | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+nginx-1     | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+nginx-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+nginx-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+nginx-1     | /docker-entrypoint.sh: Configuration complete; ready for start up
+postgres-1  | running bootstrap script ... ok
+nginx-1     | 2025/08/18 13:28:37 [error] 29#29: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.5:8080/payments-summary", host: "localhost:9999"
+nginx-1     | 2025/08/18 13:28:37 [error] 29#29: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.3:8080/payments-summary", host: "localhost:9999"
+nginx-1     | 172.21.0.1 - - [18/Aug/2025:13:28:37 +0000] "GET /payments-summary HTTP/1.1" 502 157 "-" "curl/8.5.0"
+[Kservice-worker-1 exited with code 137
+postgres-1        | performing post-bootstrap initialization ... ok
+postgres-1        | initdb: warning: enabling "trust" authentication for local connections
+postgres-1        | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+postgres-1        | syncing data to disk ... ok
+postgres-1        | 
+postgres-1        | 
+postgres-1        | Success. You can now start the database server using:
+postgres-1        | 
+postgres-1        |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+postgres-1        | 
+postgres-1        | waiting for server to start....2025-08-18 13:28:39.253 UTC [50] LOG:  starting PostgreSQL 17.5 (Debian 17.5-1.pgdg130+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+postgres-1        | 2025-08-18 13:28:39.257 UTC [50] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-1        | 2025-08-18 13:28:39.269 UTC [53] LOG:  database system was shut down at 2025-08-18 13:28:38 UTC
+postgres-1        | 2025-08-18 13:28:39.280 UTC [50] LOG:  database system is ready to accept connections
+postgres-1        |  done
+postgres-1        | server started
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.passes, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-1    | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-1    | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.passes, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+postgres-1            | CREATE DATABASE
+postgres-1            | 
+postgres-1            | 
+postgres-1            | /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/init.sql
+postgres-1            | CREATE TYPE
+postgres-1            | CREATE TABLE
+postgres-1            | CREATE TABLE
+postgres-1            | 
+postgres-1            | 
+postgres-1            | waiting for server to shut down...2025-08-18 13:28:39.964 UTC [50] LOG:  received fast shutdown request
+postgres-1            | .2025-08-18 13:28:39.968 UTC [50] LOG:  aborting any active transactions
+postgres-1            | 2025-08-18 13:28:39.970 UTC [50] LOG:  background worker "logical replication launcher" (PID 56) exited with exit code 1
+postgres-1            | 2025-08-18 13:28:39.976 UTC [51] LOG:  shutting down
+postgres-1            | 2025-08-18 13:28:39.979 UTC [51] LOG:  checkpoint starting: shutdown immediate
+postgres-1            | 2025-08-18 13:28:40.087 UTC [51] LOG:  checkpoint complete: wrote 938 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.082 s, sync=0.014 s, total=0.111 s; sync files=307, longest=0.004 s, average=0.001 s; distance=4291 kB, estimate=4291 kB; lsn=0/191E508, redo lsn=0/191E508
+postgres-1            | 2025-08-18 13:28:40.096 UTC [50] LOG:  database system is shut down
+postgres-1            |  done
+postgres-1            | server stopped
+postgres-1            | 
+postgres-1            | PostgreSQL init process complete; ready for start up.
+postgres-1            | 
+postgres-1            | 2025-08-18 13:28:40.195 UTC [1] LOG:  starting PostgreSQL 17.5 (Debian 17.5-1.pgdg130+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+postgres-1            | 2025-08-18 13:28:40.196 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres-1            | 2025-08-18 13:28:40.196 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+postgres-1            | 2025-08-18 13:28:40.202 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-1            | 2025-08-18 13:28:40.210 UTC [68] LOG:  database system was shut down at 2025-08-18 13:28:40 UTC
+postgres-1            | 2025-08-18 13:28:40.251 UTC [1] LOG:  database system is ready to accept connections
+[Kclojure-instance-1 exited with code 137
+[Kclojure-instance-2-1 exited with code 137
+[Kservice-worker-1 exited with code 137
+nginx-1               | 2025/08/18 13:28:42 [error] 29#29: *4 no live upstreams while connecting to upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://instances/payments-summary", host: "localhost:9999"
+nginx-1               | 172.21.0.1 - - [18/Aug/2025:13:28:42 +0000] "GET /payments-summary HTTP/1.1" 502 157 "-" "curl/8.5.0"
+[Kservice-worker-1 exited with code 137
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-1    | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-1    | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.passes, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.passes, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+[Kclojure-instance-1 exited with code 137
+[Kclojure-instance-2-1 exited with code 137
+[Kservice-worker-1 exited with code 137
+nginx-1               | 172.21.0.1 - - [18/Aug/2025:13:28:47 +0000] "GET /payments-summary HTTP/1.1" 502 157 "-" "curl/8.5.0"
+nginx-1               | 2025/08/18 13:28:47 [error] 29#29: *5 no live upstreams while connecting to upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://instances/payments-summary", host: "localhost:9999"
+[Kservice-worker-1 exited with code 137
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-1    | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-1    | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.passes, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.passes, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+[Kclojure-instance-1 exited with code 137
+nginx-1               | 2025/08/18 13:28:52 [error] 29#29: *6 connect() failed (111: Connection refused) while connecting to upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.3:8080/payments-summary", host: "localhost:9999"
+nginx-1               | 172.21.0.1 - - [18/Aug/2025:13:28:52 +0000] "GET /payments-summary HTTP/1.1" 502 157 "-" "curl/8.5.0"
+nginx-1               | 2025/08/18 13:28:52 [error] 29#29: *6 connect() failed (111: Connection refused) while connecting to upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.5:8080/payments-summary", host: "localhost:9999"
+[Kclojure-instance-2-1 exited with code 137
+[Kservice-worker-1 exited with code 137
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-1    | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-1    | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+nginx-1               | 2025/08/18 13:28:57 [error] 29#29: *9 no live upstreams while connecting to upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://instances/payments-summary", host: "localhost:9999"
+nginx-1               | 172.21.0.1 - - [18/Aug/2025:13:28:57 +0000] "GET /payments-summary HTTP/1.1" 502 157 "-" "curl/8.5.0"
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.passes, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.passes, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+[Kclojure-instance-1 exited with code 137
+[Kclojure-instance-2-1 exited with code 137
+[Kservice-worker-1 exited with code 137
+nginx-1               | 172.21.0.1 - - [18/Aug/2025:13:29:02 +0000] "GET /payments-summary HTTP/1.1" 502 157 "-" "curl/8.5.0"
+nginx-1               | 2025/08/18 13:29:02 [error] 29#29: *10 no live upstreams while connecting to upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://instances/payments-summary", host: "localhost:9999"
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-1    | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-1    | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.passes, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.passes, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+[Kclojure-instance-1 exited with code 137
+[Kclojure-instance-2-1 exited with code 137
+nginx-1               | 2025/08/18 13:29:07 [error] 29#29: *11 connect() failed (111: Connection refused) while connecting to upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.3:8080/payments-summary", host: "localhost:9999"
+nginx-1               | 2025/08/18 13:29:08 [error] 29#29: *11 connect() failed (111: Connection refused) while connecting to upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.5:8080/payments-summary", host: "localhost:9999"
+nginx-1               | 172.21.0.1 - - [18/Aug/2025:13:29:08 +0000] "GET /payments-summary HTTP/1.1" 502 157 "-" "curl/8.5.0"
+[Kservice-worker-1 exited with code 137
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-1    | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-1    | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.passes, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.passes, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+[Kclojure-instance-1 exited with code 137
+[Kclojure-instance-2-1 exited with code 137
+nginx-1               | 2025/08/18 13:29:13 [error] 29#29: *14 no live upstreams while connecting to upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://instances/payments-summary", host: "localhost:9999"
+nginx-1               | 172.21.0.1 - - [18/Aug/2025:13:29:13 +0000] "GET /payments-summary HTTP/1.1" 502 157 "-" "curl/8.5.0"
+nginx-1               | 2025/08/18 13:29:18 [error] 29#29: *15 connect() failed (111: Connection refused) while connecting to upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.3:8080/payments-summary", host: "localhost:9999"
+nginx-1               | 2025/08/18 13:29:18 [error] 29#29: *15 no live upstreams while connecting to upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://instances/payments-summary", host: "localhost:9999"
+nginx-1               | 172.21.0.1 - - [18/Aug/2025:13:29:18 +0000] "GET /payments-summary HTTP/1.1" 502 157 "-" "curl/8.5.0"
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-1    | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-1    | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.passes, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.passes, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+[Kclojure-instance-1 exited with code 137
+[Kclojure-instance-2-1 exited with code 137
+[Kservice-worker-1 exited with code 137
+nginx-1               | 172.21.0.1 - - [18/Aug/2025:13:29:26 +0000] "GET /payments-summary HTTP/1.1" 499 0 "-" "curl/8.5.0"
+nginx-1               | 2025/08/18 13:29:31 [error] 29#29: *19 connect() failed (111: Connection refused) while connecting to upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.3:8080/payments-summary", host: "localhost:9999"
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-1    | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-1    | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.passes, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.passes, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+[Kclojure-instance-1 exited with code 137
+[Kclojure-instance-2-1 exited with code 137
+nginx-1               | 172.21.0.1 - - [18/Aug/2025:13:29:34 +0000] "GET /payments-summary HTTP/1.1" 499 0 "-" "curl/8.5.0"
+nginx-1               | 172.21.0.1 - - [18/Aug/2025:13:29:42 +0000] "GET /payments-summary HTTP/1.1" 499 0 "-" "curl/8.5.0"
+nginx-1               | 2025/08/18 13:29:47 [error] 29#29: *24 connect() failed (111: Connection refused) while connecting to upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.3:8080/payments-summary", host: "localhost:9999"
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-1    | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-1    | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-1    | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.passes, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer.utils, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+clojure-instance-2-1  | WARNING: update-keys already refers to: #'clojure.core/update-keys in namespace: clojure.tools.analyzer, being replaced by: #'clojure.tools.analyzer.utils/update-keys
+clojure-instance-2-1  | WARNING: update-vals already refers to: #'clojure.core/update-vals in namespace: clojure.tools.analyzer.passes, being replaced by: #'clojure.tools.analyzer.utils/update-vals
+nginx-1               | 172.21.0.1 - - [18/Aug/2025:13:29:50 +0000] "GET /payments-summary HTTP/1.1" 499 0 "-" "curl/8.5.0"
+[Kclojure-instance-1 exited with code 137
+[Kclojure-instance-2-1 exited with code 137
+[Kservice-worker-1 exited with code 137
+nginx-1               | 172.21.0.1 - - [18/Aug/2025:13:29:58 +0000] "GET /payments-summary HTTP/1.1" 499 0 "-" "curl/8.5.0"
+[Knginx-1 exited with code 0
+postgres-1            | 2025-08-18 13:30:04.335 UTC [1] LOG:  received fast shutdown request
+postgres-1            | 2025-08-18 13:30:04.338 UTC [1] LOG:  aborting any active transactions
+postgres-1            | 2025-08-18 13:30:04.340 UTC [1] LOG:  background worker "logical replication launcher" (PID 71) exited with exit code 1
+postgres-1            | 2025-08-18 13:30:04.341 UTC [66] LOG:  shutting down
+postgres-1            | 2025-08-18 13:30:04.344 UTC [66] LOG:  checkpoint starting: shutdown immediate
+postgres-1            | 2025-08-18 13:30:04.367 UTC [66] LOG:  checkpoint complete: wrote 45 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.004 s, total=0.026 s; sync files=13, longest=0.003 s, average=0.001 s; distance=245 kB, estimate=245 kB; lsn=0/195BA10, redo lsn=0/195BA10
+postgres-1            | 2025-08-18 13:30:04.373 UTC [1] LOG:  database system is shut down

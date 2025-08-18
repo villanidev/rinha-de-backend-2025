@@ -1,0 +1,228 @@
+
+time="2025-08-18T07:34:29Z" level=warning msg="/home/ubuntu/rinha-de-backend-2025/participantes/arthur-isvi-php-swoole/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+ worker_payments Pulling 
+ api_1 Pulling 
+ api_2 Pulling 
+ 9824c27679d3 Already exists 
+ 9824c27679d3 Already exists 
+ e2b8c404eae6 Already exists 
+ e2b8c404eae6 Already exists 
+ fa0d882c5edb Already exists 
+ fa0d882c5edb Already exists 
+ 9824c27679d3 Already exists 
+ 769d794d159a Already exists 
+ 769d794d159a Already exists 
+ e2b8c404eae6 Already exists 
+ cf3cf3bc6932 Already exists 
+ cf3cf3bc6932 Already exists 
+ fa0d882c5edb Already exists 
+ 7a7066989316 Already exists 
+ 769d794d159a Already exists 
+ 7a7066989316 Already exists 
+ cf3cf3bc6932 Already exists 
+ f2176a4cebfd Already exists 
+ f2176a4cebfd Already exists 
+ 7a7066989316 Already exists 
+ c43e4b7ed65e Already exists 
+ f2176a4cebfd Already exists 
+ c43e4b7ed65e Already exists 
+ c43e4b7ed65e Already exists 
+ 7d1d54c809af Already exists 
+ 7d1d54c809af Already exists 
+ 7d1d54c809af Already exists 
+ 2151aa88e776 Already exists 
+ 2151aa88e776 Already exists 
+ 2151aa88e776 Already exists 
+ a5cba5bbba6c Already exists 
+ a5cba5bbba6c Already exists 
+ a5cba5bbba6c Already exists 
+ 2268cd9cbfe8 Pulling fs layer 
+ 1bc874a6c700 Pulling fs layer 
+ c0592e625c3d Pulling fs layer 
+ 365d63dd63a8 Pulling fs layer 
+ feedc350c5f0 Pulling fs layer 
+ 1f5ae7c7894c Pulling fs layer 
+ 365d63dd63a8 Waiting 
+ feedc350c5f0 Waiting 
+ 1f5ae7c7894c Waiting 
+ 2268cd9cbfe8 Pulling fs layer 
+ 1bc874a6c700 Pulling fs layer 
+ c0592e625c3d Pulling fs layer 
+ 365d63dd63a8 Pulling fs layer 
+ feedc350c5f0 Pulling fs layer 
+ 1f5ae7c7894c Pulling fs layer 
+ 1f5ae7c7894c Waiting 
+ 365d63dd63a8 Waiting 
+ feedc350c5f0 Waiting 
+ 2268cd9cbfe8 Pulling fs layer 
+ 9976cd6b0898 Pulling fs layer 
+ af03aa008653 Pulling fs layer 
+ c54dad1e96c2 Pulling fs layer 
+ f66e817ad8bb Pulling fs layer 
+ ec0e1ccb9893 Pulling fs layer 
+ f63f875bef74 Pulling fs layer 
+ 9976cd6b0898 Waiting 
+ af03aa008653 Waiting 
+ c54dad1e96c2 Waiting 
+ f66e817ad8bb Waiting 
+ ec0e1ccb9893 Waiting 
+ f63f875bef74 Waiting 
+ c0592e625c3d Downloading [==================>                                ]  8.491kB/22.72kB
+ c0592e625c3d Downloading [==================>                                ]  8.491kB/22.72kB
+ c0592e625c3d Downloading [==================================================>]  22.72kB/22.72kB
+ c0592e625c3d Verifying Checksum 
+ c0592e625c3d Download complete 
+ c0592e625c3d Verifying Checksum 
+ c0592e625c3d Download complete 
+ 1bc874a6c700 Downloading [==================================================>]     420B/420B
+ 1bc874a6c700 Downloading [==================================================>]     420B/420B
+ 1bc874a6c700 Download complete 
+ 1bc874a6c700 Downloading [==================================================>]     420B/420B
+ 1bc874a6c700 Download complete 
+ 365d63dd63a8 Download complete 
+ 365d63dd63a8 Downloading [==================================================>]     955B/955B
+ 365d63dd63a8 Verifying Checksum 
+ 365d63dd63a8 Download complete 
+ feedc350c5f0 Downloading [==================================================>]     115B/115B
+ feedc350c5f0 Verifying Checksum 
+ feedc350c5f0 Download complete 
+ feedc350c5f0 Verifying Checksum 
+ feedc350c5f0 Download complete 
+ 2268cd9cbfe8 Downloading [>                                                  ]  230.7kB/21.86MB
+ 2268cd9cbfe8 Downloading [>                                                  ]  230.7kB/21.86MB
+ 2268cd9cbfe8 Downloading [>                                                  ]  230.7kB/21.86MB
+ 1f5ae7c7894c Downloading [==================================================>]  2.132kB/2.132kB
+ 1f5ae7c7894c Verifying Checksum 
+ 1f5ae7c7894c Download complete 
+ 1f5ae7c7894c Download complete 
+ 9976cd6b0898 Downloading [==================================================>]     477B/477B
+ 9976cd6b0898 Verifying Checksum 
+ 9976cd6b0898 Download complete 
+ af03aa008653 Downloading [==================>                                ]  8.491kB/22.87kB
+ af03aa008653 Download complete 
+ c54dad1e96c2 Downloading [==================================================>]     960B/960B
+ c54dad1e96c2 Verifying Checksum 
+ c54dad1e96c2 Download complete 
+ f66e817ad8bb Downloading [==================================================>]     110B/110B
+ f66e817ad8bb Verifying Checksum 
+ f66e817ad8bb Download complete 
+ ec0e1ccb9893 Downloading [==================================================>]  2.279kB/2.279kB
+ ec0e1ccb9893 Verifying Checksum 
+ ec0e1ccb9893 Download complete 
+ f63f875bef74 Downloading [==================================================>]  2.297kB/2.297kB
+ f63f875bef74 Verifying Checksum 
+ f63f875bef74 Download complete 
+ 2268cd9cbfe8 Downloading [===========================================>       ]  18.87MB/21.86MB
+ 2268cd9cbfe8 Downloading [===========================================>       ]  18.87MB/21.86MB
+ 2268cd9cbfe8 Downloading [===========================================>       ]  18.87MB/21.86MB
+ 2268cd9cbfe8 Verifying Checksum 
+ 2268cd9cbfe8 Download complete 
+ 2268cd9cbfe8 Verifying Checksum 
+ 2268cd9cbfe8 Download complete 
+ 2268cd9cbfe8 Download complete 
+ 2268cd9cbfe8 Extracting [>                                                  ]  229.4kB/21.86MB
+ 2268cd9cbfe8 Extracting [>                                                  ]  229.4kB/21.86MB
+ 2268cd9cbfe8 Extracting [>                                                  ]  229.4kB/21.86MB
+ 2268cd9cbfe8 Extracting [=======>                                           ]  3.441MB/21.86MB
+ 2268cd9cbfe8 Extracting [=======>                                           ]  3.441MB/21.86MB
+ 2268cd9cbfe8 Extracting [=======>                                           ]  3.441MB/21.86MB
+ 2268cd9cbfe8 Extracting [===================>                               ]  8.716MB/21.86MB
+ 2268cd9cbfe8 Extracting [===================>                               ]  8.716MB/21.86MB
+ 2268cd9cbfe8 Extracting [===================>                               ]  8.716MB/21.86MB
+ 2268cd9cbfe8 Extracting [=======================================>           ]  17.43MB/21.86MB
+ 2268cd9cbfe8 Extracting [=======================================>           ]  17.43MB/21.86MB
+ 2268cd9cbfe8 Extracting [=======================================>           ]  17.43MB/21.86MB
+ 2268cd9cbfe8 Extracting [=================================================> ]  21.79MB/21.86MB
+ 2268cd9cbfe8 Extracting [=================================================> ]  21.79MB/21.86MB
+ 2268cd9cbfe8 Extracting [=================================================> ]  21.79MB/21.86MB
+ 2268cd9cbfe8 Extracting [==================================================>]  21.86MB/21.86MB
+ 2268cd9cbfe8 Extracting [==================================================>]  21.86MB/21.86MB
+ 2268cd9cbfe8 Extracting [==================================================>]  21.86MB/21.86MB
+ 2268cd9cbfe8 Pull complete 
+ 2268cd9cbfe8 Pull complete 
+ 2268cd9cbfe8 Pull complete 
+ 9976cd6b0898 Extracting [==================================================>]     477B/477B
+ 1bc874a6c700 Extracting [==================================================>]     420B/420B
+ 1bc874a6c700 Extracting [==================================================>]     420B/420B
+ 9976cd6b0898 Extracting [==================================================>]     477B/477B
+ 1bc874a6c700 Extracting [==================================================>]     420B/420B
+ 1bc874a6c700 Extracting [==================================================>]     420B/420B
+ 9976cd6b0898 Pull complete 
+ 1bc874a6c700 Pull complete 
+ 1bc874a6c700 Pull complete 
+ af03aa008653 Extracting [==================================================>]  22.87kB/22.87kB
+ af03aa008653 Extracting [==================================================>]  22.87kB/22.87kB
+ c0592e625c3d Extracting [==================================================>]  22.72kB/22.72kB
+ c0592e625c3d Extracting [==================================================>]  22.72kB/22.72kB
+ c0592e625c3d Extracting [==================================================>]  22.72kB/22.72kB
+ c0592e625c3d Extracting [==================================================>]  22.72kB/22.72kB
+ af03aa008653 Pull complete 
+ c0592e625c3d Pull complete 
+ c0592e625c3d Pull complete 
+ c54dad1e96c2 Extracting [==================================================>]     960B/960B
+ c54dad1e96c2 Extracting [==================================================>]     960B/960B
+ 365d63dd63a8 Extracting [==================================================>]     955B/955B
+ 365d63dd63a8 Extracting [==================================================>]     955B/955B
+ 365d63dd63a8 Extracting [==================================================>]     955B/955B
+ 365d63dd63a8 Extracting [==================================================>]     955B/955B
+ c54dad1e96c2 Pull complete 
+ 365d63dd63a8 Pull complete 
+ 365d63dd63a8 Pull complete 
+ f66e817ad8bb Extracting [==================================================>]     110B/110B
+ f66e817ad8bb Extracting [==================================================>]     110B/110B
+ feedc350c5f0 Extracting [==================================================>]     115B/115B
+ feedc350c5f0 Extracting [==================================================>]     115B/115B
+ feedc350c5f0 Extracting [==================================================>]     115B/115B
+ feedc350c5f0 Extracting [==================================================>]     115B/115B
+ f66e817ad8bb Pull complete 
+ feedc350c5f0 Pull complete 
+ feedc350c5f0 Pull complete 
+ ec0e1ccb9893 Extracting [==================================================>]  2.279kB/2.279kB
+ ec0e1ccb9893 Extracting [==================================================>]  2.279kB/2.279kB
+ 1f5ae7c7894c Extracting [==================================================>]  2.132kB/2.132kB
+ 1f5ae7c7894c Extracting [==================================================>]  2.132kB/2.132kB
+ 1f5ae7c7894c Extracting [==================================================>]  2.132kB/2.132kB
+ 1f5ae7c7894c Extracting [==================================================>]  2.132kB/2.132kB
+ ec0e1ccb9893 Pull complete 
+ 1f5ae7c7894c Pull complete 
+ 1f5ae7c7894c Pull complete 
+ f63f875bef74 Extracting [==================================================>]  2.297kB/2.297kB
+ f63f875bef74 Extracting [==================================================>]  2.297kB/2.297kB
+ f63f875bef74 Pull complete 
+ api_1 Pulled 
+ api_2 Pulled 
+ worker_payments Pulled 
+ Network arthur-isvi-php-swoole_rinha-network  Creating
+ Network arthur-isvi-php-swoole_rinha-network  Created
+ Container arthur-isvi-php-swoole-redis-1  Creating
+ Container arthur-isvi-php-swoole-redis-1  Created
+ Container arthur-isvi-php-swoole-api_1-1  Creating
+ Container arthur-isvi-php-swoole-worker_payments-1  Creating
+ Container arthur-isvi-php-swoole-api_2-1  Creating
+ Container arthur-isvi-php-swoole-api_2-1  Created
+ Container arthur-isvi-php-swoole-api_1-1  Created
+ Container arthur-isvi-php-swoole-nginx-1  Creating
+ Container arthur-isvi-php-swoole-worker_payments-1  Created
+ Container arthur-isvi-php-swoole-nginx-1  Created
+Attaching to api_1-1, api_2-1, nginx-1, redis-1, worker_payments-1
+redis-1  | Starting Redis Server
+worker_payments-1  | 🚀 Payment Worker iniciado com 20 corrotinas concorrentes
+api_1-1            | Swoole HTTP server está de pé em http://0.0.0.0:8080
+api_2-1            | Swoole HTTP server está de pé em http://0.0.0.0:8080
+api_1-1            | Worker 0 iniciado e pool de conexões Redis pronto.
+nginx-1            | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+nginx-1            | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+nginx-1            | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+nginx-1            | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+api_2-1            | Worker 0 iniciado e pool de conexões Redis pronto.
+nginx-1            | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+nginx-1            | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+nginx-1            | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+nginx-1            | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+nginx-1            | /docker-entrypoint.sh: Configuration complete; ready for start up
+worker_payments-1  | 🛑 Sinal de parada recebido. Encerrando workers...
+[Knginx-1 exited with code 0
+[Kapi_2-1 exited with code 0
+[Kapi_1-1 exited with code 0
+[Kworker_payments-1 exited with code 0
+log truncated at line 1000

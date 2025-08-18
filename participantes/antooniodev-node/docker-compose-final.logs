@@ -1,0 +1,1001 @@
+
+ Network antooniodev-node_backend  Creating
+ Network antooniodev-node_backend  Created
+ Container redis  Creating
+ Container redis  Created
+ Container antooniodev-node-api01-1  Creating
+ Container antooniodev-node-api02-1  Creating
+ Container antooniodev-node-api02-1  Created
+ Container antooniodev-node-api01-1  Created
+ Container antooniodev-node-lb-1  Creating
+ Container antooniodev-node-lb-1  Created
+Attaching to api01-1, api02-1, lb-1, redis
+redis  | Starting Redis Server
+redis  | 1:C 18 Aug 2025 07:12:21.007 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+api01-1  | yarn run v1.22.22
+api02-1  | yarn run v1.22.22
+api01-1  | $ node dist/server.js
+api02-1  | $ node dist/server.js
+api02-1  | Iniciando fila e workers...
+api02-1  | Iniciando workers com concorrência 20...
+api02-1  | Workers iniciados. Startando servidor...
+api02-1  | (Server) running on port 3333
+api01-1  | Iniciando fila e workers...
+api01-1  | Iniciando workers com concorrência 20...
+api01-1  | Workers iniciados. Startando servidor...
+api01-1  | (Server) running on port 3333
+lb-1     | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+lb-1     | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+lb-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+lb-1     | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+lb-1     | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+lb-1     | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+lb-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+lb-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+lb-1     | /docker-entrypoint.sh: Configuration complete; ready for start up
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:29 +0000] "GET /payments-summary HTTP/1.1" 200 94 "-" "curl/8.5.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:35 +0000] "POST /purge-payments HTTP/1.1" 200 47 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:35 +0000] "GET /payments-summary?from=2025-08-18T07:12:20.613Z&to=2025-08-18T07:12:33.613Z HTTP/1.1" 200 94 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:35 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:35.619Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:36 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api01-1  | Saving payment at score: 2025-08-18T07:12:36.122Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:36 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:36.613Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:36 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api01-1  | Saving payment at score: 2025-08-18T07:12:36.622Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:37 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:37.111Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:37 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api01-1  | Saving payment at score: 2025-08-18T07:12:37.125Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:37 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:37 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:37 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:37.608Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:37.624Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:38 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api01-1  | Saving payment at score: 2025-08-18T07:12:37.615Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:38.107Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:38 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:38 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:38 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:38.113Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:38 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api01-1  | Saving payment at score: 2025-08-18T07:12:38.128Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:38.606Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:38.611Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:38 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:38 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:39 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:39 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:39 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:39 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:39 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:39.104Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:39 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:38.617Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:39.115Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:39.602Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:39.110Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:39 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api01-1  | Saving payment at score: 2025-08-18T07:12:38.626Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:39.130Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:39.608Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:39 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:39 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:40 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:40 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:40 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:40 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:39.628Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:39.614Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:40.117Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:40.106Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:40 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api01-1  | Saving payment at score: 2025-08-18T07:12:40.112Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:40.100Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:39.619Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:40.132Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:40 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:40 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:40 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:40 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:40 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:40 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:41 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:41 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:41 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:41 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:41 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:41 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:41 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:41 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:41 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:40.621Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:41.097Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:41 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:40.598Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:40.610Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:41.108Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:41.119Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:41.605Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:41.595Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:41 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api01-1  | Saving payment at score: 2025-08-18T07:12:40.615Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:41.103Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:40.630Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:40.604Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:41.113Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:41.134Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:41 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api01-1  | Saving payment at score: 2025-08-18T07:12:41.600Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:41.612Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:41 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:42 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:42 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:42 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:42 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:42 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:42 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:42 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:42 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:42 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:42 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:42 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:42 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:41.618Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:42.100Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:41.632Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:42.120Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:42.110Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:42 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:42.614Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:42.602Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:42.592Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:42.104Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:42.094Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:42 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api01-1  | Saving payment at score: 2025-08-18T07:12:41.625Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:42.114Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:42.596Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:42.136Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:42.621Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:42.607Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:42 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:43 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:43 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:43 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:43 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:43 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:43 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:43 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:43 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:43 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:43 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:43 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:43 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:43 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:43 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:43 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:43 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:43 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:44 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:44 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:44 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:44 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:44 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:44 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:44 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:44 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:44 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:44 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:44 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:44 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:44 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:44 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api01-1  | Saving payment at score: 2025-08-18T07:12:42.634Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:44 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:42.627Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:43.629Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:43.096Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:43.106Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:43.112Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:43.090Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:43.116Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:43.604Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:43.101Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:43.594Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:43.588Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:44.139Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:44.103Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:44.098Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:44.118Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:44 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:43.123Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:44.108Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:43.635Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:44 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:44.092Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:44.087Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:44.114Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:44.590Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:44.598Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:43.616Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:43.137Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:44 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api01-1  | Saving payment at score: 2025-08-18T07:12:44.600Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:43.624Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:44.595Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:44 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:43.598Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:44.125Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:43.609Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:45 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:45 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:45 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:45 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:45 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:45 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:45 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:45 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:45 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:45 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:45 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:45 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:45 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:45 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:45 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:45 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:45 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:45 +0000] "GET /payments-summary?from=2025-08-18T07:12:30.620Z&to=2025-08-18T07:12:43.620Z HTTP/1.1" 200 112 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:45 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:45 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:45 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:45 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:46 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:46 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:46 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:46 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:46 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:44.624Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:44.613Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:45.084Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:46 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:45.094Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:45.126Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:45.115Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:44.634Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:45.597Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:45.602Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:45.581Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:45.615Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:45.105Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:46.086Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:46.097Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:45.630Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:45.638Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:46 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:46 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api01-1  | Saving payment at score: 2025-08-18T07:12:44.627Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:44.610Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:45.100Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:45.089Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:46 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api01-1  | Saving payment at score: 2025-08-18T07:12:44.637Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:45.140Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:45.120Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:45.109Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:45.592Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:45.600Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:45.636Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:46.080Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:45.628Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:45.612Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:46.107Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:46.091Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:46 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:46 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:46 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:46 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:46 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:46 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:46 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:46 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:46 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:46 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:46 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:46 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:46 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:46 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:47 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:47 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:47 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:47 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:47 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:47 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:47 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:47 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:47 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:47 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:47 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:47 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:47 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:47 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:47 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:47 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:47 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:47 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:47 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:47 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:47 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:47 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:47 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:47 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:47 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:46.115Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:46.106Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:46.142Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:46.632Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:46.584Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:46.604Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:46.122Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:46.599Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:46.640Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:47.082Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:47.093Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:46.617Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:47.117Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:47.143Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:47.123Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:47.108Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:47.581Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:47.594Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:48.095Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:48.109Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:47.632Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:48.125Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:48.119Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:48.602Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:48.587Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:48.145Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:48.578Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:47.603Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:47.615Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:48.083Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:48.073Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:47.640Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api01-1  | Saving payment at score: 2025-08-18T07:12:46.119Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:46.578Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:46.593Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:46.127Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:46.614Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:46.630Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:47.087Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:46.601Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:47.077Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:47.109Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:47.575Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:46.638Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:47.129Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:47.121Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:47.098Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:47.586Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:48 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api01-1  | Saving payment at score: 2025-08-18T07:12:47.600Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:47.606Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:47.618Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:47.634Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:47.642Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:48.079Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:48.088Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:48.110Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:48.100Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:48.130Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:48.124Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:48.572Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:48.582Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:48.596Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:48.605Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:48.621Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:49 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:48.619Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:48.644Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:48.667Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:49.111Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:49.085Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:49.121Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:49.606Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:50.067Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:49.147Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:49.126Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:48.635Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:49.575Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:49.075Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:49.654Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:50.099Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:50.077Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:50.128Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:49.585Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:49.097Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:49.623Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:49.599Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:50.113Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:50.123Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:50.571Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:50.581Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:50.148Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:50.623Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:50.607Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:49.646Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:50.086Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:50.592Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:50.639Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:50 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api01-1  | Saving payment at score: 2025-08-18T07:12:48.652Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:49.090Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:49.070Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:49.102Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:49.621Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:49.081Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:49.589Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:49.112Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:50.082Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:49.580Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:49.131Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:48.665Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:49.569Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:49.125Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:49.668Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:50.133Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:49.637Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:50.114Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:50.127Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:49.667Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:50.577Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:50.072Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:50.105Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:50.608Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:50.677Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:50.587Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:50.092Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:50.565Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:50.648Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:50.601Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:49.605Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:50.625Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:51 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:52 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:50.680Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:50.670Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:51.100Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:51.087Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:51.079Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:51.069Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:51.130Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:51.590Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:51.650Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:51.151Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:51.115Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:51.125Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:51.567Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:51.579Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:52.060Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:52.081Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:52.610Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:51.610Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:51.626Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:52.117Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:51.603Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:52.574Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:52.103Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:51.679Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:52.070Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:52.595Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:52.126Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:52.153Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:52.564Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:52.131Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:52.585Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:52.089Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:52.642Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:52.683Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:53.063Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:52.673Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:52.627Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:53.072Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:53.083Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api01-1  | Saving payment at score: 2025-08-18T07:12:51.084Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:51.074Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:51.064Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:51.094Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:51.135Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:51.609Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:51.671Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:51.115Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:51.572Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:51.641Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:51.107Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:51.583Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api01-1  | Saving payment at score: 2025-08-18T07:12:52.066Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:51.129Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:52.077Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:51.562Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:52.096Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:51.625Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:52.559Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:51.593Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:52.085Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:52.109Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:52.137Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:52.568Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:52.130Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:51.682Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api01-1  | Saving payment at score: 2025-08-18T07:12:52.117Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:52.611Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:52.628Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:52.592Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:52.605Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:52.581Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:53.087Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:53.100Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:52.651Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:53.068Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:53.078Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:52.681Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:53.057Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:53 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:54 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:53.101Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:53.128Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:53.154Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:53.106Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:53.607Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:53.594Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:53.613Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:53.128Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:54.053Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:53.139Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:54.064Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:53.570Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:53.630Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:54.557Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:54.631Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:53.133Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:53.566Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:53.556Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:53.612Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:53.644Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:53.596Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:53.140Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:53.587Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api01-1  | Saving payment at score: 2025-08-18T07:12:54.102Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:53.676Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:53.685Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:53.629Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:54.059Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:54.089Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:53.125Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:54.080Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:53.575Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:54.608Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:54.070Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:54.135Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:54.552Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:54.130Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:54.127Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:54.596Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:54.571Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api01-1  | Saving payment at score: 2025-08-18T07:12:55.072Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:54.141Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:54.615Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:54.562Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:54.655Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:54.685Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:55.084Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:54.585Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:53.129Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:54.631Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:55.091Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:55.111Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:55.060Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:55.055Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:55.089Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:54.085Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:53.683Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:54.156Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:54.614Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:55.056Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:53.583Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:53.560Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:54.598Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:53.653Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:54.686Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:54.102Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:54.679Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:54.130Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:54.108Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:54.588Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:54.131Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:54.646Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:54.141Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:54.075Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:54.567Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:54.576Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:55.066Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:55.077Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "GET /payments-summary?from=2025-08-18T07:12:40.622Z&to=2025-08-18T07:12:53.622Z HTTP/1.1" 200 112 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:55 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:56 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:57 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:57 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:57 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:57 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:55.140Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:55.172Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:55.105Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:55.586Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:55.598Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:55.616Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:57 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:55.573Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:57 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:55.184Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:55.202Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:55.148Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:55.633Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:55.553Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:56.057Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:55.564Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:55.610Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:56.047Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:56.186Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:56.601Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:56.635Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:56.580Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:56.068Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:56.091Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:56.156Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:56.591Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:56.142Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:56.690Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:57.048Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:55.657Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:56.174Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:55.686Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:56.550Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:56.204Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:56.570Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:56.617Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:56.107Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:56.562Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:56.079Z
+api02-1  | Saving payment at score: 2025-08-18T07:12:56.682Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:57 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api02-1  | Saving payment at score: 2025-08-18T07:12:56.649Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:57 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:57 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api01-1  | Saving payment at score: 2025-08-18T07:12:55.559Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:55.568Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:55.120Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:56.150Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:55.600Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:55.185Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:56.073Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:56.185Z
+lb-1     | 172.21.0.1 - - [18/Aug/2025:07:12:57 +0000] "POST /payments HTTP/1.1" 202 2 "-" "Grafana k6/1.1.0"
+api01-1  | Saving payment at score: 2025-08-18T07:12:56.566Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:56.165Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:55.183Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:56.088Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:55.154Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:55.549Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:55.578Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:56.057Z
+api01-1  | Saving payment at score: 2025-08-18T07:12:56.618Z
+log truncated at line 1000

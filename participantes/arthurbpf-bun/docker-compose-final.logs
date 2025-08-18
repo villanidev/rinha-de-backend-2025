@@ -1,0 +1,226 @@
+
+ api1 Pulling 
+ api2 Pulling 
+ lb Pulling 
+ worker Pulling 
+ ebed137c7c18 Already exists 
+ ebed137c7c18 Already exists 
+ 3ed3a4c6890f Already exists 
+ 3ed3a4c6890f Already exists 
+ lb Pulled 
+ ebed137c7c18 Already exists 
+ abf5f3b8c045 Already exists 
+ abf5f3b8c045 Already exists 
+ 3ed3a4c6890f Already exists 
+ 6ddafa3d1cf1 Already exists 
+ abf5f3b8c045 Already exists 
+ 6ddafa3d1cf1 Already exists 
+ 7cc3782231a5 Already exists 
+ 6ddafa3d1cf1 Already exists 
+ 664593009acb Already exists 
+ 7cc3782231a5 Already exists 
+ 7cc3782231a5 Already exists 
+ 664593009acb Already exists 
+ 824478536cac Pulling fs layer 
+ 0e2a5331bd73 Pulling fs layer 
+ 1706c8ea3b64 Pulling fs layer 
+ e44e27067a33 Pulling fs layer 
+ 2eaf7433ad58 Pulling fs layer 
+ e44e27067a33 Waiting 
+ 2eaf7433ad58 Waiting 
+ 664593009acb Already exists 
+ 824478536cac Pulling fs layer 
+ 0e6609519230 Pulling fs layer 
+ cd61fc0a84ab Pulling fs layer 
+ aaf1fbe33686 Pulling fs layer 
+ 0e6609519230 Waiting 
+ cd61fc0a84ab Waiting 
+ aaf1fbe33686 Waiting 
+ 824478536cac Pulling fs layer 
+ 0e6609519230 Pulling fs layer 
+ cd61fc0a84ab Pulling fs layer 
+ aaf1fbe33686 Pulling fs layer 
+ aaf1fbe33686 Waiting 
+ 0e6609519230 Waiting 
+ cd61fc0a84ab Waiting 
+ 824478536cac Downloading [==================================================>]     139B/139B
+ 824478536cac Verifying Checksum 
+ 824478536cac Download complete 
+ 824478536cac Download complete 
+ 824478536cac Download complete 
+ 824478536cac Extracting [==================================================>]     139B/139B
+ 824478536cac Extracting [==================================================>]     139B/139B
+ 824478536cac Extracting [==================================================>]     139B/139B
+ 824478536cac Extracting [==================================================>]     139B/139B
+ 824478536cac Extracting [==================================================>]     139B/139B
+ 824478536cac Extracting [==================================================>]     139B/139B
+ 824478536cac Pull complete 
+ 824478536cac Pull complete 
+ 824478536cac Pull complete 
+ 1706c8ea3b64 Downloading [>                                                  ]  401.6kB/40.1MB
+ 0e2a5331bd73 Downloading [>                                                  ]    190kB/18.87MB
+ e44e27067a33 Downloading [==================================================>]     912B/912B
+ e44e27067a33 Verifying Checksum 
+ e44e27067a33 Download complete 
+ 2eaf7433ad58 Download complete 
+ 0e2a5331bd73 Downloading [=================================================> ]  18.78MB/18.87MB
+ 0e2a5331bd73 Verifying Checksum 
+ 0e2a5331bd73 Download complete 
+ 0e2a5331bd73 Extracting [>                                                  ]  196.6kB/18.87MB
+ 1706c8ea3b64 Downloading [======================>                            ]  17.99MB/40.1MB
+ 0e6609519230 Downloading [>                                                  ]  69.85kB/5.732MB
+ 0e6609519230 Downloading [>                                                  ]  69.85kB/5.732MB
+ cd61fc0a84ab Downloading [>                                                  ]  416.3kB/40.07MB
+ cd61fc0a84ab Downloading [>                                                  ]  416.3kB/40.07MB
+ 0e2a5331bd73 Extracting [==========>                                        ]  3.932MB/18.87MB
+ 0e6609519230 Verifying Checksum 
+ 0e6609519230 Verifying Checksum 
+ 0e6609519230 Download complete 
+ 0e6609519230 Download complete 
+ 0e6609519230 Extracting [>                                                  ]  65.54kB/5.732MB
+ 0e6609519230 Extracting [>                                                  ]  65.54kB/5.732MB
+ 1706c8ea3b64 Downloading [==========================================>        ]  33.95MB/40.1MB
+ aaf1fbe33686 Downloading [==================================================>]     442B/442B
+ aaf1fbe33686 Download complete 
+ aaf1fbe33686 Verifying Checksum 
+ aaf1fbe33686 Download complete 
+ 1706c8ea3b64 Verifying Checksum 
+ 1706c8ea3b64 Download complete 
+ 0e6609519230 Extracting [==>                                                ]  262.1kB/5.732MB
+ 0e6609519230 Extracting [==>                                                ]  262.1kB/5.732MB
+ cd61fc0a84ab Downloading [==============>                                    ]  11.44MB/40.07MB
+ cd61fc0a84ab Downloading [==============>                                    ]  11.44MB/40.07MB
+ cd61fc0a84ab Downloading [=======================>                           ]  18.81MB/40.07MB
+ cd61fc0a84ab Downloading [=======================>                           ]  18.81MB/40.07MB
+ 0e2a5331bd73 Extracting [=======================>                           ]  9.044MB/18.87MB
+ 0e6609519230 Extracting [===>                                               ]  393.2kB/5.732MB
+ 0e6609519230 Extracting [===>                                               ]  393.2kB/5.732MB
+ cd61fc0a84ab Downloading [=============================>                     ]  23.32MB/40.07MB
+ cd61fc0a84ab Downloading [=============================>                     ]  23.32MB/40.07MB
+ 0e6609519230 Extracting [========>                                          ]  917.5kB/5.732MB
+ 0e6609519230 Extracting [========>                                          ]  917.5kB/5.732MB
+ 0e2a5331bd73 Extracting [========================>                          ]  9.241MB/18.87MB
+ 0e6609519230 Extracting [======================>                            ]  2.556MB/5.732MB
+ 0e6609519230 Extracting [======================>                            ]  2.556MB/5.732MB
+ 0e2a5331bd73 Extracting [===========================>                       ]  10.22MB/18.87MB
+ cd61fc0a84ab Downloading [=========================================>         ]  33.56MB/40.07MB
+ cd61fc0a84ab Downloading [=========================================>         ]  33.56MB/40.07MB
+ 0e6609519230 Extracting [==============================================>    ]  5.308MB/5.732MB
+ 0e6609519230 Extracting [==============================================>    ]  5.308MB/5.732MB
+ 0e6609519230 Extracting [==================================================>]  5.732MB/5.732MB
+ 0e6609519230 Extracting [==================================================>]  5.732MB/5.732MB
+ cd61fc0a84ab Verifying Checksum 
+ cd61fc0a84ab Download complete 
+ cd61fc0a84ab Verifying Checksum 
+ cd61fc0a84ab Download complete 
+ 0e6609519230 Pull complete 
+ 0e6609519230 Pull complete 
+ cd61fc0a84ab Extracting [>                                                  ]    426kB/40.07MB
+ cd61fc0a84ab Extracting [>                                                  ]    426kB/40.07MB
+ 0e2a5331bd73 Extracting [============================>                      ]  10.62MB/18.87MB
+ cd61fc0a84ab Extracting [==========>                                        ]   8.52MB/40.07MB
+ cd61fc0a84ab Extracting [==========>                                        ]   8.52MB/40.07MB
+ 0e2a5331bd73 Extracting [============================>                      ]  10.81MB/18.87MB
+ cd61fc0a84ab Extracting [===================>                               ]  15.34MB/40.07MB
+ cd61fc0a84ab Extracting [===================>                               ]  15.34MB/40.07MB
+ cd61fc0a84ab Extracting [============================>                      ]     23MB/40.07MB
+ cd61fc0a84ab Extracting [============================>                      ]     23MB/40.07MB
+ 0e2a5331bd73 Extracting [=============================>                     ]  11.21MB/18.87MB
+ cd61fc0a84ab Extracting [=====================================>             ]  30.24MB/40.07MB
+ cd61fc0a84ab Extracting [=====================================>             ]  30.24MB/40.07MB
+ cd61fc0a84ab Extracting [==============================================>    ]  37.06MB/40.07MB
+ cd61fc0a84ab Extracting [==============================================>    ]  37.06MB/40.07MB
+ 0e2a5331bd73 Extracting [==============================>                    ]   11.4MB/18.87MB
+ cd61fc0a84ab Extracting [==================================================>]  40.07MB/40.07MB
+ cd61fc0a84ab Extracting [==================================================>]  40.07MB/40.07MB
+ cd61fc0a84ab Pull complete 
+ cd61fc0a84ab Pull complete 
+ aaf1fbe33686 Extracting [==================================================>]     442B/442B
+ aaf1fbe33686 Extracting [==================================================>]     442B/442B
+ aaf1fbe33686 Extracting [==================================================>]     442B/442B
+ aaf1fbe33686 Extracting [==================================================>]     442B/442B
+ aaf1fbe33686 Pull complete 
+ aaf1fbe33686 Pull complete 
+ 0e2a5331bd73 Extracting [==============================>                    ]   11.6MB/18.87MB
+ api1 Pulled 
+ api2 Pulled 
+ 0e2a5331bd73 Extracting [================================>                  ]  12.19MB/18.87MB
+ 0e2a5331bd73 Extracting [==================================>                ]  12.98MB/18.87MB
+ 0e2a5331bd73 Extracting [==========================================>        ]  16.12MB/18.87MB
+ 0e2a5331bd73 Extracting [==================================================>]  18.87MB/18.87MB
+ 0e2a5331bd73 Extracting [==================================================>]  18.87MB/18.87MB
+ 0e2a5331bd73 Pull complete 
+ 1706c8ea3b64 Extracting [>                                                  ]    426kB/40.1MB
+ 1706c8ea3b64 Extracting [============>                                      ]  10.22MB/40.1MB
+ 1706c8ea3b64 Extracting [======================>                            ]  17.89MB/40.1MB
+ 1706c8ea3b64 Extracting [================================>                  ]  25.99MB/40.1MB
+ 1706c8ea3b64 Extracting [==========================================>        ]  34.08MB/40.1MB
+ 1706c8ea3b64 Extracting [==================================================>]   40.1MB/40.1MB
+ 1706c8ea3b64 Pull complete 
+ e44e27067a33 Extracting [==================================================>]     912B/912B
+ e44e27067a33 Extracting [==================================================>]     912B/912B
+ e44e27067a33 Pull complete 
+ 2eaf7433ad58 Extracting [==================================================>]     495B/495B
+ 2eaf7433ad58 Extracting [==================================================>]     495B/495B
+ 2eaf7433ad58 Pull complete 
+ worker Pulled 
+ Network arthurbpf-bun_rinha-net  Creating
+ Network arthurbpf-bun_rinha-net  Created
+ Container arthurbpf-bun-worker-1  Creating
+ Container arthurbpf-bun-worker-1  Created
+ Container arthurbpf-bun-api2-1  Creating
+ Container arthurbpf-bun-api1-1  Creating
+ Container arthurbpf-bun-api1-1  Created
+ Container arthurbpf-bun-api2-1  Created
+ Container arthurbpf-bun-lb-1  Creating
+ Container arthurbpf-bun-lb-1  Created
+Attaching to api1-1, api2-1, lb-1, worker-1
+worker-1  | WORKER is running at localhost:3000
+api2-1    | API is running at localhost:3000
+lb-1      | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+lb-1      | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+lb-1      | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+api1-1    | API is running at localhost:3000
+lb-1      | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+lb-1      | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+lb-1      | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+lb-1      | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+lb-1      | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+lb-1      | /docker-entrypoint.sh: Configuration complete; ready for start up
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+lb-1      | 2025/08/18 08:06:10 [alert] 30#30: 512 worker_connections are not enough
+[Klb-1 exited with code 0
+[Kapi2-1 exited with code 137
+[Kapi1-1 exited with code 137
+log truncated at line 1000

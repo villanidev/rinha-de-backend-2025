@@ -1,0 +1,111 @@
+
+ api1 Pulling 
+ api2 Pulling 
+ 01d036902a3c Already exists 
+ eae6a1dbaa37 Pulling fs layer 
+ bc32f42978e6 Pulling fs layer 
+ 01d036902a3c Already exists 
+ eae6a1dbaa37 Pulling fs layer 
+ bc32f42978e6 Pulling fs layer 
+ eae6a1dbaa37 Download complete 
+ eae6a1dbaa37 Download complete 
+ eae6a1dbaa37 Extracting [==================================================>]      93B/93B
+ eae6a1dbaa37 Extracting [==================================================>]      93B/93B
+ eae6a1dbaa37 Extracting [==================================================>]      93B/93B
+ eae6a1dbaa37 Extracting [==================================================>]      93B/93B
+ eae6a1dbaa37 Pull complete 
+ eae6a1dbaa37 Pull complete 
+ bc32f42978e6 Downloading [>                                                  ]  87.26kB/7.183MB
+ bc32f42978e6 Downloading [>                                                  ]  87.26kB/7.183MB
+ bc32f42978e6 Verifying Checksum 
+ bc32f42978e6 Download complete 
+ bc32f42978e6 Verifying Checksum 
+ bc32f42978e6 Download complete 
+ bc32f42978e6 Extracting [>                                                  ]   98.3kB/7.183MB
+ bc32f42978e6 Extracting [>                                                  ]   98.3kB/7.183MB
+ bc32f42978e6 Extracting [==================================================>]  7.183MB/7.183MB
+ bc32f42978e6 Extracting [==================================================>]  7.183MB/7.183MB
+ bc32f42978e6 Pull complete 
+ bc32f42978e6 Pull complete 
+ api1 Pulled 
+ api2 Pulled 
+ Network arthur-queiroz-golang_backend  Creating
+ Network arthur-queiroz-golang_backend  Created
+ Volume "arthur-queiroz-golang_redis-data"  Creating
+ Volume "arthur-queiroz-golang_redis-data"  Created
+ Container rinha-redis  Creating
+ Container rinha-redis  Created
+ Container arthur-queiroz-golang-api2-1  Creating
+ Container arthur-queiroz-golang-api1-1  Creating
+ Container arthur-queiroz-golang-api1-1  Created
+ Container arthur-queiroz-golang-api2-1  Created
+ Container arthur-queiroz-golang-nginx-1  Creating
+ Container arthur-queiroz-golang-nginx-1  Created
+Attaching to api1-1, api2-1, nginx-1, rinha-redis
+rinha-redis  | 1:C 18 Aug 2025 07:45:16.929 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+rinha-redis  | 1:C 18 Aug 2025 07:45:16.930 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+rinha-redis  | 1:C 18 Aug 2025 07:45:16.930 * Redis version=7.2.10, bits=64, commit=00000000, modified=0, pid=1, just started
+rinha-redis  | 1:C 18 Aug 2025 07:45:16.930 * Configuration loaded
+rinha-redis  | 1:M 18 Aug 2025 07:45:16.930 * monotonic clock: POSIX clock_gettime
+rinha-redis  | 1:M 18 Aug 2025 07:45:16.931 * Running mode=standalone, port=6379.
+rinha-redis  | 1:M 18 Aug 2025 07:45:16.933 * Server initialized
+rinha-redis  | 1:M 18 Aug 2025 07:45:16.934 * Ready to accept connections tcp
+api1-1       | 2025/08/18 07:45:27 INFO Default payment processor URL url=http://payment-processor-default:8080
+api1-1       | 2025/08/18 07:45:27 INFO Fallback payment processor URL url=http://payment-processor-fallback:8080
+api1-1       | 2025/08/18 07:45:27 INFO Starting server on :8080
+api1-1       | 2025/08/18 07:45:27 INFO [WRK-1] Starting dequeue with routine
+api1-1       | 2025/08/18 07:45:27 INFO [WRK-2] Starting dequeue with routine
+api1-1       | 2025/08/18 07:45:27 INFO [WRK-3] Starting dequeue with routine
+api1-1       | 2025/08/18 07:45:27 INFO [WRK-4] Starting dequeue with routine
+api1-1       | 2025/08/18 07:45:27 INFO [WRK-5] Starting dequeue with routine
+api1-1       | 2025/08/18 07:45:27 INFO [WRK-6] Starting dequeue with routine
+api1-1       | 2025/08/18 07:45:27 INFO [WRK-7] Starting dequeue with routine
+api1-1       | 2025/08/18 07:45:27 INFO [WRK-8] Starting dequeue with routine
+api1-1       | 2025/08/18 07:45:27 INFO [WRK-9] Starting dequeue with routine
+api1-1       | 2025/08/18 07:45:27 INFO [WRK-10] Starting dequeue with routine
+api1-1       | 2025/08/18 07:45:27 INFO [WRK-11] Starting dequeue with routine
+api1-1       | 2025/08/18 07:45:27 INFO [WRK-12] Starting dequeue with routine
+api1-1       | 2025/08/18 07:45:27 INFO [WRK-13] Starting dequeue with routine
+api1-1       | 2025/08/18 07:45:27 INFO [WRK-14] Starting dequeue with routine
+api1-1       | 2025/08/18 07:45:27 INFO [WRK-15] Starting dequeue with routine
+api1-1       | 2025/08/18 07:45:27 INFO [WRK-16] Starting dequeue with routine
+api1-1       | 2025/08/18 07:45:27 INFO [WRK-17] Starting dequeue with routine
+api1-1       | 2025/08/18 07:45:27 INFO [WRK-18] Starting dequeue with routine
+api2-1       | 2025/08/18 07:45:27 INFO Default payment processor URL url=http://payment-processor-default:8080
+api2-1       | 2025/08/18 07:45:27 INFO Fallback payment processor URL url=http://payment-processor-fallback:8080
+api2-1       | 2025/08/18 07:45:27 INFO Starting server on :8080
+api2-1       | 2025/08/18 07:45:27 INFO [WRK-1] Starting dequeue with routine
+api2-1       | 2025/08/18 07:45:27 INFO [WRK-2] Starting dequeue with routine
+api2-1       | 2025/08/18 07:45:27 INFO [WRK-3] Starting dequeue with routine
+api2-1       | 2025/08/18 07:45:27 INFO [WRK-4] Starting dequeue with routine
+api2-1       | 2025/08/18 07:45:27 INFO [WRK-5] Starting dequeue with routine
+api2-1       | 2025/08/18 07:45:27 INFO [WRK-6] Starting dequeue with routine
+api2-1       | 2025/08/18 07:45:27 INFO [WRK-7] Starting dequeue with routine
+api2-1       | 2025/08/18 07:45:27 INFO [WRK-8] Starting dequeue with routine
+api2-1       | 2025/08/18 07:45:27 INFO [WRK-9] Starting dequeue with routine
+api2-1       | 2025/08/18 07:45:27 INFO [WRK-10] Starting dequeue with routine
+api2-1       | 2025/08/18 07:45:27 INFO [WRK-11] Starting dequeue with routine
+api2-1       | 2025/08/18 07:45:27 INFO [WRK-12] Starting dequeue with routine
+api2-1       | 2025/08/18 07:45:27 INFO [WRK-13] Starting dequeue with routine
+api2-1       | 2025/08/18 07:45:27 INFO [WRK-14] Starting dequeue with routine
+api2-1       | 2025/08/18 07:45:27 INFO [WRK-15] Starting dequeue with routine
+api2-1       | 2025/08/18 07:45:27 INFO [WRK-16] Starting dequeue with routine
+api2-1       | 2025/08/18 07:45:27 INFO [WRK-17] Starting dequeue with routine
+api2-1       | 2025/08/18 07:45:27 INFO [WRK-18] Starting dequeue with routine
+nginx-1      | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+nginx-1      | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+nginx-1      | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+nginx-1      | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+nginx-1      | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+nginx-1      | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+nginx-1      | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+nginx-1      | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+nginx-1      | /docker-entrypoint.sh: Configuration complete; ready for start up
+api1-1       | 07:45:35 | 404 |      15.521µs | 172.21.0.5 | POST | /purge-payments | Cannot POST /purge-payments
+[Knginx-1 exited with code 0
+[Kapi2-1 exited with code 2
+[Kapi1-1 exited with code 2
+rinha-redis  | 1:signal-handler (1755503438) Received SIGTERM scheduling shutdown...
+rinha-redis  | 1:M 18 Aug 2025 07:50:38.927 * User requested shutdown...
+rinha-redis  | 1:M 18 Aug 2025 07:50:38.927 # Redis is now ready to exit, bye bye...
+log truncated at line 1000

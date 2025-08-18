@@ -1,0 +1,1001 @@
+
+ postgres Pulling 
+ proxy Pulling 
+ core01 Pulling 
+ core02 Pulling 
+ f18232174bc9 Already exists 
+ deadaebdcba5 Pulling fs layer 
+ e9908b06a48c Pulling fs layer 
+ 1b8e259161c5 Pulling fs layer 
+ f18232174bc9 Already exists 
+ deadaebdcba5 Pulling fs layer 
+ e9908b06a48c Pulling fs layer 
+ 1b8e259161c5 Pulling fs layer 
+ b0a0cf830b12 Pulling fs layer 
+ dda3d8fbd5ed Pulling fs layer 
+ 283a477db7bb Pulling fs layer 
+ b0a0cf830b12 Waiting 
+ 91d2729fa4d5 Pulling fs layer 
+ dda3d8fbd5ed Waiting 
+ 9739ced65621 Pulling fs layer 
+ 283a477db7bb Waiting 
+ ae3bb1b347a4 Pulling fs layer 
+ 91d2729fa4d5 Waiting 
+ 9739ced65621 Waiting 
+ f8406d9c00ea Pulling fs layer 
+ ae3bb1b347a4 Waiting 
+ c199bff16b05 Pulling fs layer 
+ f8406d9c00ea Waiting 
+ e0d55fdb4d15 Pulling fs layer 
+ c1cb13b19080 Pulling fs layer 
+ c199bff16b05 Waiting 
+ 873532e5f8c7 Pulling fs layer 
+ e0d55fdb4d15 Waiting 
+ 050d9f8c3b1c Pulling fs layer 
+ c1cb13b19080 Waiting 
+ 873532e5f8c7 Waiting 
+ 710e142705f8 Pulling fs layer 
+ cb628c265f09 Pulling fs layer 
+ 050d9f8c3b1c Waiting 
+ 710e142705f8 Waiting 
+ cb628c265f09 Waiting 
+ e9908b06a48c Downloading [==================================================>]      93B/93B
+ e9908b06a48c Verifying Checksum 
+ e9908b06a48c Download complete 
+ e9908b06a48c Verifying Checksum 
+ e9908b06a48c Download complete 
+ f18232174bc9 Already exists 
+ deadaebdcba5 Pulling fs layer 
+ e9908b06a48c Pulling fs layer 
+ 1e2861312a31 Pulling fs layer 
+ e9908b06a48c Download complete 
+ 1e2861312a31 Waiting 
+ b0a0cf830b12 Downloading [>                                                  ]  296.1kB/29.15MB
+ 1b8e259161c5 Downloading [>                                                  ]  78.83kB/7.275MB
+ 1b8e259161c5 Downloading [>                                                  ]  78.83kB/7.275MB
+ deadaebdcba5 Downloading [>                                                  ]  33.25kB/2.719MB
+ deadaebdcba5 Downloading [>                                                  ]  33.25kB/2.719MB
+ deadaebdcba5 Downloading [>                                                  ]  33.25kB/2.719MB
+ deadaebdcba5 Verifying Checksum 
+ deadaebdcba5 Verifying Checksum 
+ deadaebdcba5 Download complete 
+ deadaebdcba5 Verifying Checksum 
+ deadaebdcba5 Download complete 
+ deadaebdcba5 Download complete 
+ deadaebdcba5 Extracting [>                                                  ]  32.77kB/2.719MB
+ deadaebdcba5 Extracting [>                                                  ]  32.77kB/2.719MB
+ deadaebdcba5 Extracting [>                                                  ]  32.77kB/2.719MB
+ b0a0cf830b12 Downloading [========================>                          ]  14.04MB/29.15MB
+ 1b8e259161c5 Verifying Checksum 
+ 1b8e259161c5 Download complete 
+ 1b8e259161c5 Verifying Checksum 
+ 1b8e259161c5 Download complete 
+ dda3d8fbd5ed Downloading [==================================================>]  1.165kB/1.165kB
+ dda3d8fbd5ed Verifying Checksum 
+ dda3d8fbd5ed Download complete 
+ deadaebdcba5 Extracting [==================================================>]  2.719MB/2.719MB
+ deadaebdcba5 Extracting [==================================================>]  2.719MB/2.719MB
+ deadaebdcba5 Extracting [==================================================>]  2.719MB/2.719MB
+ deadaebdcba5 Extracting [==================================================>]  2.719MB/2.719MB
+ deadaebdcba5 Extracting [==================================================>]  2.719MB/2.719MB
+ deadaebdcba5 Extracting [==================================================>]  2.719MB/2.719MB
+ deadaebdcba5 Pull complete 
+ deadaebdcba5 Pull complete 
+ deadaebdcba5 Pull complete 
+ e9908b06a48c Extracting [==================================================>]      93B/93B
+ e9908b06a48c Extracting [==================================================>]      93B/93B
+ e9908b06a48c Extracting [==================================================>]      93B/93B
+ e9908b06a48c Extracting [==================================================>]      93B/93B
+ e9908b06a48c Extracting [==================================================>]      93B/93B
+ e9908b06a48c Extracting [==================================================>]      93B/93B
+ b0a0cf830b12 Downloading [=========================================>         ]  24.23MB/29.15MB
+ e9908b06a48c Pull complete 
+ e9908b06a48c Pull complete 
+ e9908b06a48c Pull complete 
+ 283a477db7bb Downloading [>                                                  ]  50.67kB/4.533MB
+ 1b8e259161c5 Extracting [>                                                  ]   98.3kB/7.275MB
+ 1b8e259161c5 Extracting [>                                                  ]   98.3kB/7.275MB
+ 283a477db7bb Downloading [==================================================>]  4.533MB/4.533MB
+ 283a477db7bb Verifying Checksum 
+ 283a477db7bb Download complete 
+ b0a0cf830b12 Verifying Checksum 
+ b0a0cf830b12 Download complete 
+ b0a0cf830b12 Extracting [>                                                  ]  294.9kB/29.15MB
+ 91d2729fa4d5 Downloading [>                                                  ]  16.38kB/1.45MB
+ 91d2729fa4d5 Verifying Checksum 
+ 91d2729fa4d5 Download complete 
+ 1b8e259161c5 Extracting [==========================================>        ]  6.193MB/7.275MB
+ 1b8e259161c5 Extracting [==========================================>        ]  6.193MB/7.275MB
+ 9739ced65621 Downloading [>                                                  ]  85.49kB/8.069MB
+ 1b8e259161c5 Extracting [==================================================>]  7.275MB/7.275MB
+ 1b8e259161c5 Extracting [==================================================>]  7.275MB/7.275MB
+ f8406d9c00ea Downloading [==================================================>]     116B/116B
+ f8406d9c00ea Verifying Checksum 
+ f8406d9c00ea Download complete 
+ ae3bb1b347a4 Downloading [>                                                  ]  16.38kB/1.196MB
+ ae3bb1b347a4 Verifying Checksum 
+ ae3bb1b347a4 Download complete 
+ 9739ced65621 Verifying Checksum 
+ 9739ced65621 Download complete 
+ 1b8e259161c5 Pull complete 
+ 1b8e259161c5 Pull complete 
+ b0a0cf830b12 Extracting [=======>                                           ]  4.129MB/29.15MB
+ core01 Pulled 
+ core02 Pulled 
+ c199bff16b05 Downloading [==================================================>]  3.145kB/3.145kB
+ c199bff16b05 Verifying Checksum 
+ c199bff16b05 Download complete 
+ c1cb13b19080 Downloading [==================================================>]  9.925kB/9.925kB
+ c1cb13b19080 Verifying Checksum 
+ c1cb13b19080 Download complete 
+ 873532e5f8c7 Download complete 
+ e0d55fdb4d15 Downloading [>                                                  ]  531.4kB/109MB
+ 050d9f8c3b1c Downloading [==================================================>]     169B/169B
+ 050d9f8c3b1c Verifying Checksum 
+ 050d9f8c3b1c Download complete 
+ b0a0cf830b12 Extracting [===============>                                   ]  9.142MB/29.15MB
+ 710e142705f8 Downloading [==================================================>]  5.421kB/5.421kB
+ 710e142705f8 Verifying Checksum 
+ 710e142705f8 Download complete 
+ cb628c265f09 Downloading [==================================================>]     184B/184B
+ cb628c265f09 Verifying Checksum 
+ cb628c265f09 Download complete 
+ e0d55fdb4d15 Downloading [==========>                                        ]  21.88MB/109MB
+ b0a0cf830b12 Extracting [==================>                                ]  10.91MB/29.15MB
+ e0d55fdb4d15 Downloading [==============>                                    ]  31.99MB/109MB
+ b0a0cf830b12 Extracting [===========================>                       ]  16.22MB/29.15MB
+ 1e2861312a31 Downloading [>                                                  ]   69.8kB/5.883MB
+ 1e2861312a31 Verifying Checksum 
+ 1e2861312a31 Download complete 
+ 1e2861312a31 Extracting [>                                                  ]  65.54kB/5.883MB
+ b0a0cf830b12 Extracting [========================================>          ]  23.89MB/29.15MB
+ e0d55fdb4d15 Downloading [===============>                                   ]  33.06MB/109MB
+ 1e2861312a31 Extracting [==================================================>]  5.883MB/5.883MB
+ 1e2861312a31 Pull complete 
+ proxy Pulled 
+ e0d55fdb4d15 Downloading [===================>                               ]  41.63MB/109MB
+ b0a0cf830b12 Extracting [==========================================>        ]  24.77MB/29.15MB
+ e0d55fdb4d15 Downloading [===========================>                       ]  59.91MB/109MB
+ b0a0cf830b12 Extracting [===============================================>   ]  27.72MB/29.15MB
+ e0d55fdb4d15 Downloading [==============================>                    ]  67.34MB/109MB
+ e0d55fdb4d15 Downloading [===========================================>       ]  95.23MB/109MB
+ e0d55fdb4d15 Downloading [============================================>      ]  97.92MB/109MB
+ b0a0cf830b12 Extracting [================================================>  ]  28.31MB/29.15MB
+ e0d55fdb4d15 Downloading [==============================================>    ]  101.1MB/109MB
+ e0d55fdb4d15 Verifying Checksum 
+ e0d55fdb4d15 Download complete 
+ b0a0cf830b12 Extracting [==================================================>]  29.15MB/29.15MB
+ b0a0cf830b12 Pull complete 
+ dda3d8fbd5ed Extracting [==================================================>]  1.165kB/1.165kB
+ dda3d8fbd5ed Extracting [==================================================>]  1.165kB/1.165kB
+ dda3d8fbd5ed Pull complete 
+ 283a477db7bb Extracting [>                                                  ]  65.54kB/4.533MB
+ 283a477db7bb Extracting [==================================================>]  4.533MB/4.533MB
+ 283a477db7bb Pull complete 
+ 91d2729fa4d5 Extracting [=>                                                 ]  32.77kB/1.45MB
+ 91d2729fa4d5 Extracting [==================================================>]   1.45MB/1.45MB
+ 91d2729fa4d5 Pull complete 
+ 9739ced65621 Extracting [>                                                  ]   98.3kB/8.069MB
+ 9739ced65621 Extracting [=======================>                           ]  3.834MB/8.069MB
+ 9739ced65621 Extracting [====================================>              ]  5.898MB/8.069MB
+ 9739ced65621 Extracting [==================================================>]  8.069MB/8.069MB
+ 9739ced65621 Pull complete 
+ ae3bb1b347a4 Extracting [=>                                                 ]  32.77kB/1.196MB
+ ae3bb1b347a4 Extracting [==================================================>]  1.196MB/1.196MB
+ ae3bb1b347a4 Extracting [==================================================>]  1.196MB/1.196MB
+ ae3bb1b347a4 Pull complete 
+ f8406d9c00ea Extracting [==================================================>]     116B/116B
+ f8406d9c00ea Extracting [==================================================>]     116B/116B
+ f8406d9c00ea Pull complete 
+ c199bff16b05 Extracting [==================================================>]  3.145kB/3.145kB
+ c199bff16b05 Extracting [==================================================>]  3.145kB/3.145kB
+ c199bff16b05 Pull complete 
+ e0d55fdb4d15 Extracting [>                                                  ]  557.1kB/109MB
+ e0d55fdb4d15 Extracting [===>                                               ]  7.242MB/109MB
+ e0d55fdb4d15 Extracting [====>                                              ]  10.58MB/109MB
+ e0d55fdb4d15 Extracting [=======>                                           ]   15.6MB/109MB
+ e0d55fdb4d15 Extracting [=========>                                         ]  20.05MB/109MB
+ e0d55fdb4d15 Extracting [===========>                                       ]  25.62MB/109MB
+ e0d55fdb4d15 Extracting [===============>                                   ]  32.87MB/109MB
+ e0d55fdb4d15 Extracting [==================>                                ]  41.22MB/109MB
+ e0d55fdb4d15 Extracting [======================>                            ]  49.58MB/109MB
+ e0d55fdb4d15 Extracting [========================>                          ]  54.03MB/109MB
+ e0d55fdb4d15 Extracting [===========================>                       ]   59.6MB/109MB
+ e0d55fdb4d15 Extracting [===============================>                   ]  67.96MB/109MB
+ e0d55fdb4d15 Extracting [===================================>               ]  76.32MB/109MB
+ e0d55fdb4d15 Extracting [======================================>            ]  84.12MB/109MB
+ e0d55fdb4d15 Extracting [==========================================>        ]  91.91MB/109MB
+ e0d55fdb4d15 Extracting [===========================================>       ]   94.7MB/109MB
+ e0d55fdb4d15 Extracting [============================================>      ]  97.48MB/109MB
+ e0d55fdb4d15 Extracting [==============================================>    ]  100.8MB/109MB
+ e0d55fdb4d15 Extracting [===============================================>   ]  103.6MB/109MB
+ e0d55fdb4d15 Extracting [================================================>  ]  105.3MB/109MB
+ e0d55fdb4d15 Extracting [=================================================> ]  107.5MB/109MB
+ e0d55fdb4d15 Extracting [==================================================>]    109MB/109MB
+ e0d55fdb4d15 Pull complete 
+ c1cb13b19080 Extracting [==================================================>]  9.925kB/9.925kB
+ c1cb13b19080 Extracting [==================================================>]  9.925kB/9.925kB
+ c1cb13b19080 Pull complete 
+ 873532e5f8c7 Extracting [==================================================>]     128B/128B
+ 873532e5f8c7 Extracting [==================================================>]     128B/128B
+ 873532e5f8c7 Pull complete 
+ 050d9f8c3b1c Extracting [==================================================>]     169B/169B
+ 050d9f8c3b1c Extracting [==================================================>]     169B/169B
+ 050d9f8c3b1c Pull complete 
+ 710e142705f8 Extracting [==================================================>]  5.421kB/5.421kB
+ 710e142705f8 Extracting [==================================================>]  5.421kB/5.421kB
+ 710e142705f8 Pull complete 
+ cb628c265f09 Extracting [==================================================>]     184B/184B
+ cb628c265f09 Extracting [==================================================>]     184B/184B
+ cb628c265f09 Pull complete 
+ postgres Pulled 
+ Network anibalferreira-rust_backend  Creating
+ Network anibalferreira-rust_backend  Created
+ Container redis  Creating
+ Container postgres  Creating
+ Container postgres  Created
+ Container proxy  Creating
+ Container redis  Created
+ Container proxy  Created
+ Container core01  Creating
+ Container core02  Creating
+ Container core02  Created
+ Container core01  Created
+ Container haproxy  Creating
+ Container haproxy  Created
+Attaching to core01, core02, haproxy, postgres, proxy, redis
+postgres  | The files belonging to this database system will be owned by user "postgres".
+postgres  | This user must also own the server process.
+postgres  | 
+postgres  | The database cluster will be initialized with locale "en_US.utf8".
+postgres  | The default database encoding has accordingly been set to "UTF8".
+postgres  | The default text search configuration will be set to "english".
+postgres  | 
+postgres  | Data page checksums are disabled.
+postgres  | 
+postgres  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+postgres  | creating subdirectories ... ok
+postgres  | selecting dynamic shared memory implementation ... posix
+postgres  | selecting default max_connections ... 100
+postgres  | selecting default shared_buffers ... 128MB
+postgres  | selecting default time zone ... Etc/UTC
+postgres  | creating configuration files ... ok
+redis     | 1:C 18 Aug 2025 07:01:01.852 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis     | 1:C 18 Aug 2025 07:01:01.852 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis     | 1:C 18 Aug 2025 07:01:01.852 * Redis version=7.4.5, bits=64, commit=00000000, modified=0, pid=1, just started
+redis     | 1:C 18 Aug 2025 07:01:01.852 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+redis     | 1:M 18 Aug 2025 07:01:01.853 * monotonic clock: POSIX clock_gettime
+redis     | 1:M 18 Aug 2025 07:01:01.854 * Running mode=standalone, port=6379.
+redis     | 1:M 18 Aug 2025 07:01:01.855 * Server initialized
+redis     | 1:M 18 Aug 2025 07:01:01.855 * Ready to accept connections tcp
+proxy     | [2m2025-08-18T07:01:01.965330Z[0m [32m INFO[0m [2mactix_server::builder[0m[2m:[0m [2m310:[0m starting 1 workers
+proxy     | [2m2025-08-18T07:01:01.965367Z[0m [32m INFO[0m [2mactix_server::server[0m[2m:[0m [2m191:[0m Actix runtime found; starting in Actix runtime
+proxy     | [2m2025-08-18T07:01:01.965373Z[0m [32m INFO[0m [2mactix_server::server[0m[2m:[0m [2m197:[0m starting service: "actix-web-service-0.0.0.0:8005", workers: 1, listening on: 0.0.0.0:8005
+postgres  | running bootstrap script ... ok
+postgres  | performing post-bootstrap initialization ... ok
+postgres  | syncing data to disk ... ok
+postgres  | 
+postgres  | 
+postgres  | Success. You can now start the database server using:
+postgres  | 
+postgres  |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+postgres  | 
+postgres  | initdb: warning: enabling "trust" authentication for local connections
+postgres  | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+postgres  | waiting for server to start....2025-08-18 07:01:03.046 UTC [48] LOG:  starting PostgreSQL 16.2 (Debian 16.2-1.pgdg120+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+postgres  | 2025-08-18 07:01:03.046 UTC [48] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres  | 2025-08-18 07:01:03.050 UTC [51] LOG:  database system was shut down at 2025-08-18 07:01:02 UTC
+postgres  | 2025-08-18 07:01:03.057 UTC [48] LOG:  database system is ready to accept connections
+postgres  |  done
+postgres  | server started
+postgres  | 
+postgres  | /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/init-db.sql
+postgres  | CREATE TABLE
+postgres  | CREATE INDEX
+postgres  | CREATE INDEX
+postgres  | 
+postgres  | 
+postgres  | 2025-08-18 07:01:03.258 UTC [48] LOG:  received fast shutdown request
+postgres  | 2025-08-18 07:01:03.258 UTC [48] LOG:  aborting any active transactions
+postgres  | waiting for server to shut down....2025-08-18 07:01:03.262 UTC [48] LOG:  background worker "logical replication launcher" (PID 54) exited with exit code 1
+postgres  | 2025-08-18 07:01:03.263 UTC [49] LOG:  shutting down
+postgres  | 2025-08-18 07:01:03.347 UTC [48] LOG:  database system is shut down
+postgres  |  done
+postgres  | server stopped
+postgres  | 
+postgres  | PostgreSQL init process complete; ready for start up.
+postgres  | 
+postgres  | 2025-08-18 07:01:03.586 UTC [1] LOG:  starting PostgreSQL 16.2 (Debian 16.2-1.pgdg120+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+postgres  | 2025-08-18 07:01:03.586 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres  | 2025-08-18 07:01:03.586 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+postgres  | 2025-08-18 07:01:03.587 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres  | 2025-08-18 07:01:03.590 UTC [64] LOG:  database system was shut down at 2025-08-18 07:01:03 UTC
+postgres  | 2025-08-18 07:01:03.634 UTC [1] LOG:  database system is ready to accept connections
+core02    | [2m2025-08-18T07:01:07.100583Z[0m [32m INFO[0m [2mcore[0m[2m:[0m [2m27:[0m Starting anibalmf1-rust server
+core02    | [2m2025-08-18T07:01:07.100917Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m27:[0m Connected to Redis at redis://redis:6379
+core02    | [2m2025-08-18T07:01:07.100949Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m183:[0m Connected to Redis at redis://redis:6379
+core01    | [2m2025-08-18T07:01:07.160117Z[0m [32m INFO[0m [2mcore[0m[2m:[0m [2m27:[0m Starting anibalmf1-rust server
+core01    | [2m2025-08-18T07:01:07.160413Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m27:[0m Connected to Redis at redis://redis:6379
+core01    | [2m2025-08-18T07:01:07.160427Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m183:[0m Connected to Redis at redis://redis:6379
+core02    | [2m2025-08-18T07:01:07.288759Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m99:[0m Connected to Redis at redis://redis:6379 for DLQ consumer
+core02    | [2m2025-08-18T07:01:07.288784Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m198:[0m Starting to consume messages from queue: payment
+core02    | [2m2025-08-18T07:01:07.288788Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m199:[0m DLQ configured as: payment_dlq
+core02    | [2m2025-08-18T07:01:07.288795Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m113:[0m Starting to consume messages from DLQ: payment_dlq
+core02    | [2m2025-08-18T07:01:07.288952Z[0m [32m INFO[0m [2mactix_server::builder[0m[2m:[0m [2m310:[0m starting 1 workers
+core02    | [2m2025-08-18T07:01:07.288975Z[0m [32m INFO[0m [2mactix_server::server[0m[2m:[0m [2m191:[0m Actix runtime found; starting in Actix runtime
+core02    | [2m2025-08-18T07:01:07.288980Z[0m [32m INFO[0m [2mactix_server::server[0m[2m:[0m [2m197:[0m starting service: "actix-web-service-0.0.0.0:8004", workers: 1, listening on: 0.0.0.0:8004
+core01    | [2m2025-08-18T07:01:07.323751Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m99:[0m Connected to Redis at redis://redis:6379 for DLQ consumer
+core01    | [2m2025-08-18T07:01:07.323770Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m198:[0m Starting to consume messages from queue: payment
+core01    | [2m2025-08-18T07:01:07.323774Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m199:[0m DLQ configured as: payment_dlq
+core01    | [2m2025-08-18T07:01:07.323780Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m113:[0m Starting to consume messages from DLQ: payment_dlq
+core01    | [2m2025-08-18T07:01:07.323947Z[0m [32m INFO[0m [2mactix_server::builder[0m[2m:[0m [2m310:[0m starting 1 workers
+core01    | [2m2025-08-18T07:01:07.323982Z[0m [32m INFO[0m [2mactix_server::server[0m[2m:[0m [2m191:[0m Actix runtime found; starting in Actix runtime
+core01    | [2m2025-08-18T07:01:07.323987Z[0m [32m INFO[0m [2mactix_server::server[0m[2m:[0m [2m197:[0m starting service: "actix-web-service-0.0.0.0:8003", workers: 1, listening on: 0.0.0.0:8003
+haproxy   | [NOTICE]   (1) : New worker (8) forked
+haproxy   | [NOTICE]   (1) : Loading success.
+core01    | [2m2025-08-18T07:01:12.512517Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "GET /payments-summary HTTP/1.1" 200 98 "-" "curl/8.5.0" 0.031118    
+postgres  | 2025-08-18 07:01:16.684 UTC [77] FATAL:  terminating connection due to unexpected postmaster exit
+core01    | [2m2025-08-18T07:01:16.684444Z[0m [33m WARN[0m [2mdeadpool.postgres[0m[2m:[0m [2m225:[0m Connection error: db error: FATAL: terminating connection due to unexpected postmaster exit
+core02    | [2m2025-08-18T07:01:16.732663Z[0m [33m WARN[0m [2mdeadpool.postgres[0m[2m:[0m [2m225:[0m Connection error: connection closed
+[Kpostgres exited with code 137
+core02    | [2m2025-08-18T07:01:18.048725Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /purge-payments HTTP/1.1" 404 0 "-" "Grafana k6/1.1.0" 0.000051    
+core01    | [2m2025-08-18T07:01:18.050991Z[0m [33m WARN[0m [2mdeadpool.postgres[0m[2m:[0m [2m159:[0m Connection could not be recycled: Connection closed
+core02    | [2m2025-08-18T07:01:18.055121Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:18.055938Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:18.055943Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m231:[0m Received message from Redis (retry count: 0)
+core02    | [2m2025-08-18T07:01:18.055976Z[0m [32m INFO[0m [2mcore::consumers::consume_payment[0m[2m:[0m [2m23:[0m Consuming message: {"correlationId":"3ad6aa54-ccb9-41ea-909d-32e50177fd43","amount":"20.05","requestedAt":"2025-08-18T07:01:18.055113130+00:00"}
+core02    | [2m2025-08-18T07:01:18.056002Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000933    
+proxy     | [2m2025-08-18T07:01:18.056907Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-08-18T07:01:18.056931Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-08-18T07:01:18.056939Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"3ad6aa54-ccb9-41ea-909d-32e50177fd43","amount":"20.05","requestedAt":"2025-08-18T07:01:18.055113130+00:00"}
+proxy     | [2m2025-08-18T07:01:18.056942Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-08-18T07:01:18.056968Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-08-18T07:01:18.058733Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-08-18T07:01:18.058964Z[0m [33m WARN[0m [2mdeadpool.postgres[0m[2m:[0m [2m159:[0m Connection could not be recycled: Connection closed
+core01    | [2m2025-08-18T07:01:18.549386Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:18.550200Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:18.550209Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m231:[0m Received message from Redis (retry count: 0)
+core01    | [2m2025-08-18T07:01:18.550225Z[0m [32m INFO[0m [2mcore::consumers::consume_payment[0m[2m:[0m [2m23:[0m Consuming message: {"correlationId":"2dcdcb2a-1799-458f-a006-a2f0e2618cb1","amount":"20.05","requestedAt":"2025-08-18T07:01:18.549377826+00:00"}
+core01    | [2m2025-08-18T07:01:18.550256Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000916    
+proxy     | [2m2025-08-18T07:01:18.551017Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m86:[0m proxying request to /payments
+proxy     | [2m2025-08-18T07:01:18.551041Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m103:[0m forwarding request to http://payment-processor-default:8080/payments
+proxy     | [2m2025-08-18T07:01:18.551048Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m112:[0m forwarding request with body {"correlationId":"2dcdcb2a-1799-458f-a006-a2f0e2618cb1","amount":"20.05","requestedAt":"2025-08-18T07:01:18.549377826+00:00"}
+proxy     | [2m2025-08-18T07:01:18.551052Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m118:[0m forwarding request with method POST
+proxy     | [2m2025-08-18T07:01:18.551067Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m126:[0m Setting Content-Type header to application/json for POST request
+proxy     | [2m2025-08-18T07:01:18.551906Z[0m [32m INFO[0m [2mproxy[0m[2m:[0m [2m149:[0m received response with status 200 OK
+core02    | [2m2025-08-18T07:01:19.047466Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:19.048188Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:19.048241Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000828    
+core01    | [2m2025-08-18T07:01:19.057094Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:19.057746Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:19.057798Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000750    
+core02    | [2m2025-08-18T07:01:19.545541Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:19.546229Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:19.546279Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000812    
+core01    | [2m2025-08-18T07:01:19.552175Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:19.552792Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:19.552837Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000693    
+core02    | [2m2025-08-18T07:01:20.044256Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:20.044911Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:20.044963Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000756    
+core01    | [2m2025-08-18T07:01:20.049779Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:20.050352Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:20.050403Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000659    
+core02    | [2m2025-08-18T07:01:20.059318Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:20.059849Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:20.059898Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000604    
+core01    | [2m2025-08-18T07:01:20.542497Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:20.543092Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:20.543142Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000688    
+core02    | [2m2025-08-18T07:01:20.547987Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:20.548493Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:20.548542Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000604    
+core01    | [2m2025-08-18T07:01:20.554543Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:20.555039Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:20.555088Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000572    
+core02    | [2m2025-08-18T07:01:21.041064Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:21.041645Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:21.041695Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000671    
+core01    | [2m2025-08-18T07:01:21.046460Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:21.047036Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:21.047083Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000651    
+core02    | [2m2025-08-18T07:01:21.051948Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:21.052420Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:21.052468Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000544    
+core01    | [2m2025-08-18T07:01:21.061381Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:21.061903Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:21.061946Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000592    
+core02    | [2m2025-08-18T07:01:21.539489Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:21.540126Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:21.540190Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000746    
+core01    | [2m2025-08-18T07:01:21.544994Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:21.545487Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:21.545531Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000571    
+core02    | [2m2025-08-18T07:01:21.550297Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:21.550828Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:21.550871Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000597    
+core01    | [2m2025-08-18T07:01:21.556672Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:21.557158Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:21.557200Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000551    
+core02    | [2m2025-08-18T07:01:22.037828Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:22.038420Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:22.038470Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000685    
+core01    | [2m2025-08-18T07:01:22.043299Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:22.043890Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:22.043940Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000671    
+core02    | [2m2025-08-18T07:01:22.048715Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:22.049209Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:22.049253Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000562    
+core01    | [2m2025-08-18T07:01:22.054020Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:22.054473Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:22.054520Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000524    
+core02    | [2m2025-08-18T07:01:22.063309Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:22.064113Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:22.064166Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000900    
+core01    | [2m2025-08-18T07:01:22.535461Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:22.536066Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:22.536118Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000718    
+core02    | [2m2025-08-18T07:01:22.541959Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:22.542482Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:22.542526Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000620    
+core01    | [2m2025-08-18T07:01:22.546275Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:22.546800Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:22.546844Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000619    
+core02    | [2m2025-08-18T07:01:22.551588Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:22.552083Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:22.552132Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000590    
+core01    | [2m2025-08-18T07:01:22.558967Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:22.559486Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:22.559532Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000612    
+core02    | [2m2025-08-18T07:01:23.033899Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:23.034497Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:23.034550Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000713    
+core01    | [2m2025-08-18T07:01:23.039296Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:23.039845Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:23.039898Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000658    
+core02    | [2m2025-08-18T07:01:23.044614Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:23.045129Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:23.045175Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000585    
+core01    | [2m2025-08-18T07:01:23.050975Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:23.051509Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:23.051555Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000627    
+core02    | [2m2025-08-18T07:01:23.055312Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | 
+core01    | thread 'actix-rt|system:0|arbiter:0' panicked at src/store/payment.rs:158:47:
+core01    | called `Result::unwrap()` on an `Err` value: Backend(Error { kind: Connect, cause: Some(Custom { kind: Uncategorized, error: "failed to lookup address information: Try again" }) })
+core01    | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+core02    | [2m2025-08-18T07:01:23.055846Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:23.055885Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000594    
+core02    | 
+core02    | thread 'main' panicked at src/store/payment.rs:33:47:
+core02    | called `Result::unwrap()` on an `Err` value: Backend(Error { kind: Connect, cause: Some(Custom { kind: Uncategorized, error: "failed to lookup address information: Try again" }) })
+core02    | note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+core01    | [2m2025-08-18T07:01:23.065724Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:23.066192Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:23.066240Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000539    
+core02    | [2m2025-08-18T07:01:23.532475Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:23.533067Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:23.533114Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000670    
+core01    | [2m2025-08-18T07:01:23.537930Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:23.538449Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:23.538495Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000590    
+core02    | [2m2025-08-18T07:01:23.544289Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:23.544774Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:23.544816Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000553    
+core01    | [2m2025-08-18T07:01:23.548544Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:23.549089Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:23.549132Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000613    
+core02    | [2m2025-08-18T07:01:23.552952Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:23.553426Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:23.553470Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000544    
+core01    | 
+core01    | thread 'main' panicked at src/store/payment.rs:33:47:
+core01    | called `Result::unwrap()` on an `Err` value: Backend(Error { kind: Connect, cause: Some(Custom { kind: Uncategorized, error: "failed to lookup address information: Try again" }) })
+core01    | [2m2025-08-18T07:01:23.561370Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:23.561818Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:23.561861Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000511    
+core02    | [2m2025-08-18T07:01:24.030204Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:24.030823Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:24.030873Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000710    
+core01    | [2m2025-08-18T07:01:24.035703Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:24.036230Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:24.036274Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000599    
+core02    | [2m2025-08-18T07:01:24.041061Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:24.041556Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:24.041599Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000560    
+core01    | [2m2025-08-18T07:01:24.046433Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:24.046948Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:24.046993Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000584    
+core02    | [2m2025-08-18T07:01:24.052780Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:24.053225Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:24.053267Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000506    
+core01    | [2m2025-08-18T07:01:24.057026Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:24.057512Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:24.057558Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000555    
+core02    | [2m2025-08-18T07:01:24.067424Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:24.067925Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:24.067970Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000569    
+core01    | [2m2025-08-18T07:01:24.529233Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:24.529881Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:24.529927Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000731    
+core02    | [2m2025-08-18T07:01:24.534738Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:24.535271Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:24.535315Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000608    
+core01    | [2m2025-08-18T07:01:24.540073Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:24.540565Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:24.540613Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000561    
+core02    | [2m2025-08-18T07:01:24.546419Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:24.546889Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:24.546937Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000538    
+core01    | [2m2025-08-18T07:01:24.550690Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:24.551173Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:24.551219Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000555    
+core02    | [2m2025-08-18T07:01:24.555027Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:24.555565Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:24.555607Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000603    
+core01    | [2m2025-08-18T07:01:24.563370Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:24.563855Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:24.563902Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000554    
+core02    | [2m2025-08-18T07:01:25.027219Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:25.027812Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:25.027857Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000671    
+core01    | [2m2025-08-18T07:01:25.032688Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:25.033193Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:25.033241Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000581    
+core02    | [2m2025-08-18T07:01:25.038021Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:25.038536Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:25.038583Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000590    
+core01    | [2m2025-08-18T07:01:25.042261Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:25.042804Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:25.042851Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000616    
+core02    | [2m2025-08-18T07:01:25.048645Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:25.049085Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:25.049129Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000529    
+core01    | [2m2025-08-18T07:01:25.054866Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:25.055366Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:25.055413Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000568    
+core02    | [2m2025-08-18T07:01:25.059217Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:25.059717Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:25.059762Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000566    
+core01    | [2m2025-08-18T07:01:25.069729Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:25.070257Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:25.070304Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000601    
+core02    | [2m2025-08-18T07:01:25.525529Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:25.526128Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:25.526179Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000696    
+core01    | [2m2025-08-18T07:01:25.531058Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:25.531538Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:25.531586Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000562    
+core02    | [2m2025-08-18T07:01:25.536394Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:25.536896Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:25.536943Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000573    
+core01    | [2m2025-08-18T07:01:25.541788Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:25.542267Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:25.542311Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000548    
+core02    | [2m2025-08-18T07:01:25.548083Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:25.548617Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:25.548692Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000633    
+core01    | [2m2025-08-18T07:01:25.552506Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:25.552990Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:25.553040Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000558    
+core02    | [2m2025-08-18T07:01:25.556898Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:25.557350Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:25.557395Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000519    
+core01    | [2m2025-08-18T07:01:25.565290Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:25.565848Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:25.565891Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000622    
+core02    | [2m2025-08-18T07:01:26.024361Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:26.025048Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:26.025098Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000811    
+core01    | [2m2025-08-18T07:01:26.028979Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:26.029482Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:26.029526Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000577    
+core02    | [2m2025-08-18T07:01:26.034324Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:26.034802Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:26.034846Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000547    
+core01    | [2m2025-08-18T07:01:26.039659Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:26.040115Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:26.040177Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000568    
+core02    | [2m2025-08-18T07:01:26.043938Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:26.044453Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:26.044502Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000585    
+core01    | [2m2025-08-18T07:01:26.050353Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:26.050891Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:26.050935Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000609    
+core02    | [2m2025-08-18T07:01:26.056766Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:26.057232Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:26.057276Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000534    
+core01    | [2m2025-08-18T07:01:26.061041Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:26.061530Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:26.061577Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000563    
+core02    | [2m2025-08-18T07:01:26.071577Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:26.072058Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:26.072106Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000554    
+core01    | [2m2025-08-18T07:01:26.522560Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:26.523213Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:26.523265Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000778    
+core02    | [2m2025-08-18T07:01:26.527056Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:26.527556Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:26.527603Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000580    
+core01    | [2m2025-08-18T07:01:26.533380Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:26.533861Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:26.533908Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000554    
+core02    | [2m2025-08-18T07:01:26.538677Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:26.539131Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:26.539175Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000519    
+core01    | [2m2025-08-18T07:01:26.543961Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:26.544431Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:26.544479Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000537    
+core02    | [2m2025-08-18T07:01:26.550325Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:26.550822Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:26.550870Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000574    
+core01    | [2m2025-08-18T07:01:26.554672Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:26.555119Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:26.555162Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000513    
+core02    | [2m2025-08-18T07:01:26.558910Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:26.559404Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:26.559452Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000564    
+core01    | [2m2025-08-18T07:01:26.567346Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:26.567854Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:26.567897Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000572    
+core02    | [2m2025-08-18T07:01:27.021208Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:27.021838Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:27.021886Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000745    
+core01    | [2m2025-08-18T07:01:27.026723Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:27.027220Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:27.027266Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000578    
+core02    | [2m2025-08-18T07:01:27.031000Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:27.031498Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:27.031541Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000562    
+core01    | [2m2025-08-18T07:01:27.036293Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:27.036820Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:27.036856Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000586    
+core02    | [2m2025-08-18T07:01:27.041660Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:27.042108Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:27.042154Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000540    
+core01    | [2m2025-08-18T07:01:27.045985Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:27.046428Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:27.046465Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000503    
+core02    | [2m2025-08-18T07:01:27.052337Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:27.052867Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:27.052913Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000599    
+core01    | [2m2025-08-18T07:01:27.058670Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:27.059148Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:27.059193Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000580    
+core02    | [2m2025-08-18T07:01:27.062964Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:27.063435Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:27.063479Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000536    
+core01    | [2m2025-08-18T07:01:27.073435Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:27.073953Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:27.073995Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000585    
+core02    | [2m2025-08-18T07:01:27.519247Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:27.519844Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:27.519894Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000709    
+core01    | [2m2025-08-18T07:01:27.524677Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:27.525231Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:27.525275Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000628    
+core02    | [2m2025-08-18T07:01:27.529059Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:27.529560Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:27.529604Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000568    
+core01    | [2m2025-08-18T07:01:27.535445Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:27.535910Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:27.535953Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000530    
+core02    | [2m2025-08-18T07:01:27.540784Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:27.541222Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:27.541264Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000500    
+core01    | [2m2025-08-18T07:01:27.546030Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:27.546464Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:27.546507Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000499    
+core02    | [2m2025-08-18T07:01:27.552279Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:27.552767Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:27.552809Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000557    
+core01    | [2m2025-08-18T07:01:27.556656Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:27.557140Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:27.557185Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000570    
+core02    | [2m2025-08-18T07:01:27.561040Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:27.561576Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:27.561638Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000621    
+core01    | [2m2025-08-18T07:01:27.569611Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:27.570125Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:27.570172Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000587    
+core02    | [2m2025-08-18T07:01:28.017524Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:28.018122Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:28.018170Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000713    
+core01    | [2m2025-08-18T07:01:28.023024Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:28.023555Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:28.023603Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000611    
+core02    | [2m2025-08-18T07:01:28.028456Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:28.029045Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:28.029089Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000661    
+core01    | [2m2025-08-18T07:01:28.032858Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:28.033337Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:28.033382Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000547    
+core02    | [2m2025-08-18T07:01:28.038119Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:28.038642Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:28.038688Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000590    
+core01    | [2m2025-08-18T07:01:28.043417Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:28.043860Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:28.043904Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000513    
+core02    | [2m2025-08-18T07:01:28.047761Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:28.048245Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:28.048295Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000557    
+core01    | [2m2025-08-18T07:01:28.054065Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:28.054483Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:28.054527Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000484    
+core02    | [2m2025-08-18T07:01:28.060407Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:28.060865Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:28.060907Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000521    
+core01    | [2m2025-08-18T07:01:28.064684Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:28.065138Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:28.065183Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000525    
+core02    | [2m2025-08-18T07:01:28.075144Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:28.075635Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:28.075684Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000560    
+core01    | [2m2025-08-18T07:01:28.516051Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:28.516641Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:28.516696Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000714    
+core02    | [2m2025-08-18T07:01:28.521501Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:28.522015Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:28.522063Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000593    
+core01    | [2m2025-08-18T07:01:28.526962Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:28.527471Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:28.527517Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000602    
+core02    | [2m2025-08-18T07:01:28.530319Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:28.530853Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:28.530897Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000603    
+core01    | [2m2025-08-18T07:01:28.536701Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:28.537181Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:28.537224Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000571    
+core02    | [2m2025-08-18T07:01:28.542003Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:28.542485Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:28.542530Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000552    
+core01    | [2m2025-08-18T07:01:28.547281Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:28.547753Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:28.547797Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000563    
+core02    | [2m2025-08-18T07:01:28.553655Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:28.554148Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:28.554193Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000593    
+core01    | [2m2025-08-18T07:01:28.558092Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:28.558535Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:28.558579Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000506    
+core02    | [2m2025-08-18T07:01:28.563358Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:28.563883Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:28.563927Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000591    
+core01    | [2m2025-08-18T07:01:28.571876Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:28.572367Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:28.572415Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000559    
+core02    | [2m2025-08-18T07:01:29.013790Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:29.014360Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:29.014412Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000686    
+core01    | [2m2025-08-18T07:01:29.019383Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:29.019899Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:29.019944Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000593    
+core02    | [2m2025-08-18T07:01:29.024829Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:29.025345Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:29.025392Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000590    
+core01    | [2m2025-08-18T07:01:29.030200Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:29.030739Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:29.030784Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000607    
+core02    | [2m2025-08-18T07:01:29.034580Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:29.035071Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:29.035119Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000561    
+core01    | [2m2025-08-18T07:01:29.039856Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:29.040344Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:29.040389Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000555    
+core02    | [2m2025-08-18T07:01:29.045137Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:29.045585Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:29.045645Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000531    
+core01    | [2m2025-08-18T07:01:29.049477Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:29.049971Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:29.050017Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000565    
+core02    | [2m2025-08-18T07:01:29.055834Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:29.056346Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:29.056393Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000583    
+core01    | [2m2025-08-18T07:01:29.062188Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:29.062695Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:29.062741Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000576    
+core02    | [2m2025-08-18T07:01:29.066558Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:29.067028Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:29.067072Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000534    
+core01    | [2m2025-08-18T07:01:29.076844Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:29.077348Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:29.077391Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000571    
+core02    | [2m2025-08-18T07:01:29.512545Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:29.513152Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:29.513198Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000714    
+core01    | [2m2025-08-18T07:01:29.518248Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:29.518749Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:29.518794Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000577    
+core02    | [2m2025-08-18T07:01:29.523607Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:29.524109Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:29.524163Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000604    
+core01    | [2m2025-08-18T07:01:29.528937Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:29.529441Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:29.529483Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000570    
+core02    | [2m2025-08-18T07:01:29.532247Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:29.532721Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:29.532765Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000564    
+core01    | [2m2025-08-18T07:01:29.538536Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:29.539013Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:29.539060Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000548    
+core02    | [2m2025-08-18T07:01:29.543882Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:29.544366Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:29.544408Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000573    
+core01    | [2m2025-08-18T07:01:29.549130Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:29.549655Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:29.549699Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000591    
+core01    | [2m2025-08-18T07:01:29.555085Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:29.555606Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:29.555676Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000625    
+core02    | [2m2025-08-18T07:01:29.559470Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:29.560090Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:29.560134Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000697    
+core01    | [2m2025-08-18T07:01:29.564956Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:29.565450Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:29.565500Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000566    
+core02    | [2m2025-08-18T07:01:29.573370Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:29.573880Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:29.573926Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000586    
+core01    | [2m2025-08-18T07:01:30.011135Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:30.011689Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:30.011742Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000647    
+core02    | [2m2025-08-18T07:01:30.015670Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:30.016194Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:30.016242Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000629    
+core01    | [2m2025-08-18T07:01:30.021043Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:30.021540Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:30.021585Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000566    
+core02    | [2m2025-08-18T07:01:30.026349Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:30.026852Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:30.026896Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000572    
+core01    | [2m2025-08-18T07:01:30.031677Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:30.032165Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:30.032207Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000556    
+core02    | [2m2025-08-18T07:01:30.035949Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:30.036405Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:30.036450Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000526    
+core01    | [2m2025-08-18T07:01:30.041208Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:30.041721Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:30.041765Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000581    
+core02    | [2m2025-08-18T07:01:30.046565Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:30.047079Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:30.047125Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000582    
+core01    | [2m2025-08-18T07:01:30.050931Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:30.051376Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:30.051423Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000517    
+core02    | [2m2025-08-18T07:01:30.057174Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:30.057682Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:30.057729Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000581    
+core01    | [2m2025-08-18T07:01:30.063463Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:30.063947Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:30.063991Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000552    
+core02    | [2m2025-08-18T07:01:30.068036Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:30.068539Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:30.068584Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000575    
+core01    | [2m2025-08-18T07:01:30.078451Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:30.078959Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:30.079001Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000572    
+core02    | [2m2025-08-18T07:01:30.509188Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:30.510137Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:30.510191Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.001054    
+core01    | [2m2025-08-18T07:01:30.515073Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:30.515648Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:30.515697Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000655    
+core02    | [2m2025-08-18T07:01:30.520495Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:30.521008Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:30.521057Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000611    
+core01    | [2m2025-08-18T07:01:30.525863Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:30.526392Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:30.526435Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000598    
+core02    | [2m2025-08-18T07:01:30.530298Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:30.530747Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:30.530795Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000517    
+core01    | [2m2025-08-18T07:01:30.533615Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:30.534123Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:30.534168Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000578    
+core02    | [2m2025-08-18T07:01:30.539995Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:30.540473Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:30.540519Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000548    
+core01    | [2m2025-08-18T07:01:30.545320Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:30.545802Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:30.545844Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000548    
+core02    | [2m2025-08-18T07:01:30.550568Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:30.551098Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:30.551144Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000598    
+core01    | [2m2025-08-18T07:01:30.556955Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:30.557454Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:30.557498Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000569    
+core02    | [2m2025-08-18T07:01:30.561370Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:30.561875Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:30.561924Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000581    
+core01    | [2m2025-08-18T07:01:30.566870Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:30.567321Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:30.567366Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000521    
+core02    | [2m2025-08-18T07:01:30.575146Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:30.575670Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:30.575719Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000597    
+core01    | [2m2025-08-18T07:01:31.007889Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:31.008580Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:31.008650Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000835    
+core02    | [2m2025-08-18T07:01:31.013565Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:31.014125Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:31.014172Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000643    
+core01    | [2m2025-08-18T07:01:31.017019Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:31.017512Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:31.017557Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000589    
+core02    | [2m2025-08-18T07:01:31.023381Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:31.023909Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:31.023958Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000601    
+core01    | [2m2025-08-18T07:01:31.027841Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:31.028315Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:31.028360Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000570    
+core02    | [2m2025-08-18T07:01:31.033156Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:31.033685Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:31.033734Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000602    
+core01    | [2m2025-08-18T07:01:31.037589Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:31.038089Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:31.038137Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000596    
+core02    | [2m2025-08-18T07:01:31.042918Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:31.043436Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:31.043484Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000591    
+core01    | [2m2025-08-18T07:01:31.048373Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:31.048890Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:31.048937Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000612    
+core02    | [2m2025-08-18T07:01:31.052792Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:31.053277Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:31.053323Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000556    
+core01    | [2m2025-08-18T07:01:31.059099Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:31.059580Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:31.059649Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000599    
+core02    | [2m2025-08-18T07:01:31.065503Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:31.066027Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:31.066073Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000592    
+core01    | [2m2025-08-18T07:01:31.069879Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:31.070371Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:31.070416Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000585    
+core02    | [2m2025-08-18T07:01:31.080183Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:31.080767Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:31.080816Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000659    
+core01    | [2m2025-08-18T07:01:31.506225Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:31.506829Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:31.506879Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000702    
+core02    | [2m2025-08-18T07:01:31.511690Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:31.512266Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:31.512311Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000650    
+core01    | [2m2025-08-18T07:01:31.517161Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:31.517678Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:31.517722Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000583    
+core02    | [2m2025-08-18T07:01:31.522549Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:31.523065Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:31.523113Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000591    
+core01    | [2m2025-08-18T07:01:31.527952Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:31.528454Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:31.528499Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000588    
+core02    | [2m2025-08-18T07:01:31.532298Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:31.532788Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:31.532833Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000560    
+core01    | [2m2025-08-18T07:01:31.535777Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:31.536236Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:31.536279Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000551    
+core02    | [2m2025-08-18T07:01:31.542081Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:31.542583Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:31.542648Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000590    
+core01    | [2m2025-08-18T07:01:31.547458Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:31.547999Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:31.548037Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000628    
+core02    | [2m2025-08-18T07:01:31.551915Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:31.552388Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:31.552436Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000547    
+core01    | [2m2025-08-18T07:01:31.558277Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:31.558882Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:31.558928Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000712    
+core02    | [2m2025-08-18T07:01:31.563705Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:31.564240Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:31.564285Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000606    
+core01    | [2m2025-08-18T07:01:31.568330Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core01    | [2m2025-08-18T07:01:31.568854Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core01    | [2m2025-08-18T07:01:31.568900Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000618    
+core02    | [2m2025-08-18T07:01:31.576700Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m41:[0m Publishing message to queue: payment
+core02    | [2m2025-08-18T07:01:31.577152Z[0m [32m INFO[0m [2mcore::queue::redis[0m[2m:[0m [2m69:[0m Message published to Redis successfully
+core02    | [2m2025-08-18T07:01:31.577196Z[0m [32m INFO[0m [2mactix_web::middleware::logger[0m[2m:[0m [2m450:[0m 172.21.0.7 "POST /payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0" 0.000520    
+log truncated at line 1000

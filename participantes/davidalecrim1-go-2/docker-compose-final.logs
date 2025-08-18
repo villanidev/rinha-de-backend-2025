@@ -1,0 +1,7 @@
+
+ Network davidalecrim1-go-2_app  Creating
+ Network davidalecrim1-go-2_app  Created
+ Container mongodb  Creating
+ Container redis-db  Creating
+ Container mongodb  Error response from daemon: invalid restart policy: unknown policy 'on'; use one of 'no', 'always', 'on-failure', or 'unless-stopped'
+Error response from daemon: invalid restart policy: unknown policy 'on'; use one of 'no', 'always', 'on-failure', or 'unless-stopped'

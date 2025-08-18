@@ -1,0 +1,167 @@
+
+ Network cristian-s-bun-go-1_backend  Creating
+ Network cristian-s-bun-go-1_backend  Created
+ Network cristian-s-bun-go-1_nats-network  Creating
+ Network cristian-s-bun-go-1_nats-network  Created
+ Volume "cristian-s-bun-go-1_redis-data"  Creating
+ Volume "cristian-s-bun-go-1_redis-data"  Created
+ Volume "cristian-s-bun-go-1_sqlite-data"  Creating
+ Volume "cristian-s-bun-go-1_sqlite-data"  Created
+ Container cristian-s-bun-go-1-nats-1  Creating
+ Container cristian-s-bun-go-1-redis-1  Creating
+ Container cristian-s-bun-go-1-nats-1  Created
+ Container cristian-s-bun-go-1-redis-1  Created
+ Container cristian-s-bun-go-1-rinha-de-backend-2025-1-1  Creating
+ Container cristian-s-bun-go-1-rinha-de-backend-2025-1-1  Created
+ Container cristian-s-bun-go-1-rinha-de-backend-2025-2-1  Creating
+ Container cristian-s-bun-go-1-rinha-de-backend-2025-2-1  Created
+ Container cristian-s-bun-go-1-haproxy-1  Creating
+ Container cristian-s-bun-go-1-haproxy-1  Created
+ Container cristian-s-bun-go-1-sqlite-writer-go-1  Creating
+ Container cristian-s-bun-go-1-sqlite-writer-go-1  Created
+Attaching to haproxy-1, nats-1, redis-1, rinha-de-backend-2025-1-1, rinha-de-backend-2025-2-1, sqlite-writer-go-1
+nats-1  | [1] 2025/08/18 11:13:18.047922 [INF] Starting nats-server
+nats-1  | [1] 2025/08/18 11:13:18.047960 [INF]   Version:  2.11.8
+nats-1  | [1] 2025/08/18 11:13:18.047962 [INF]   Git:      [ec0d7e3]
+nats-1  | [1] 2025/08/18 11:13:18.047964 [INF]   Name:     NAIWKHVGJ56LCUIHYIZ4E725VNGKYFCKK6NDHO5736O57MJYWFES2NVB
+nats-1  | [1] 2025/08/18 11:13:18.047969 [INF]   Node:     MG8WVzTt
+nats-1  | [1] 2025/08/18 11:13:18.047971 [INF]   ID:       NAIWKHVGJ56LCUIHYIZ4E725VNGKYFCKK6NDHO5736O57MJYWFES2NVB
+nats-1  | [1] 2025/08/18 11:13:18.048355 [INF] Starting JetStream
+nats-1  | [1] 2025/08/18 11:13:18.049482 [INF]     _ ___ _____ ___ _____ ___ ___   _   __  __
+nats-1  | [1] 2025/08/18 11:13:18.049497 [INF]  _ | | __|_   _/ __|_   _| _ \ __| /_\ |  \/  |
+nats-1  | [1] 2025/08/18 11:13:18.049499 [INF] | || | _|  | | \__ \ | | |   / _| / _ \| |\/| |
+nats-1  | [1] 2025/08/18 11:13:18.049501 [INF]  \__/|___| |_| |___/ |_| |_|_\___/_/ \_\_|  |_|
+nats-1  | [1] 2025/08/18 11:13:18.049502 [INF] 
+nats-1  | [1] 2025/08/18 11:13:18.049504 [INF]          https://docs.nats.io/jetstream
+nats-1  | [1] 2025/08/18 11:13:18.049506 [INF] 
+nats-1  | [1] 2025/08/18 11:13:18.049507 [INF] ---------------- JETSTREAM ----------------
+nats-1  | [1] 2025/08/18 11:13:18.049510 [INF]   Max Memory:      5.73 GB
+nats-1  | [1] 2025/08/18 11:13:18.049513 [INF]   Max Storage:     108.19 GB
+nats-1  | [1] 2025/08/18 11:13:18.049515 [INF]   Store Directory: "/data/jetstream"
+nats-1  | [1] 2025/08/18 11:13:18.049516 [INF]   API Level:       1
+nats-1  | [1] 2025/08/18 11:13:18.049518 [INF] -------------------------------------------
+nats-1  | [1] 2025/08/18 11:13:18.050123 [INF] Listening for client connections on 0.0.0.0:4222
+nats-1  | [1] 2025/08/18 11:13:18.050333 [INF] Server is ready
+redis-1  | Starting Redis Server
+redis-1  | 1:C 18 Aug 2025 11:13:18.330 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis-1  | 1:C 18 Aug 2025 11:13:18.330 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-1  | 1:C 18 Aug 2025 11:13:18.330 * Redis version=8.2.0, bits=64, commit=00000000, modified=1, pid=1, just started
+redis-1  | 1:C 18 Aug 2025 11:13:18.330 * Configuration loaded
+redis-1  | 1:M 18 Aug 2025 11:13:18.330 * monotonic clock: POSIX clock_gettime
+redis-1  | 1:M 18 Aug 2025 11:13:18.331 * Running mode=standalone, port=6379.
+redis-1  | 1:M 18 Aug 2025 11:13:18.331 * <bf> RedisBloom version 8.2.0 (Git=unknown)
+redis-1  | 1:M 18 Aug 2025 11:13:18.331 * <bf> Registering configuration options: [
+redis-1  | 1:M 18 Aug 2025 11:13:18.331 * <bf> 	{ bf-error-rate       :      0.01 }
+redis-1  | 1:M 18 Aug 2025 11:13:18.331 * <bf> 	{ bf-initial-size     :       100 }
+redis-1  | 1:M 18 Aug 2025 11:13:18.332 * <bf> 	{ bf-expansion-factor :         2 }
+redis-1  | 1:M 18 Aug 2025 11:13:18.332 * <bf> 	{ cf-bucket-size      :         2 }
+redis-1  | 1:M 18 Aug 2025 11:13:18.332 * <bf> 	{ cf-initial-size     :      1024 }
+redis-1  | 1:M 18 Aug 2025 11:13:18.332 * <bf> 	{ cf-max-iterations   :        20 }
+redis-1  | 1:M 18 Aug 2025 11:13:18.332 * <bf> 	{ cf-expansion-factor :         1 }
+redis-1  | 1:M 18 Aug 2025 11:13:18.332 * <bf> 	{ cf-max-expansions   :        32 }
+redis-1  | 1:M 18 Aug 2025 11:13:18.332 * <bf> ]
+redis-1  | 1:M 18 Aug 2025 11:13:18.332 * Module 'bf' loaded from /usr/local/lib/redis/modules//redisbloom.so
+rinha-de-backend-2025-1-1  | $ bun run src/index.js
+redis-1                    | 1:M 18 Aug 2025 11:13:18.427 * <search> Redis version found by RedisSearch : 8.2.0 - oss
+redis-1                    | 1:M 18 Aug 2025 11:13:18.427 * <search> RediSearch version 8.2.0 (Git=d81ebce)
+redis-1                    | 1:M 18 Aug 2025 11:13:18.427 * <search> Low level api version 1 initialized successfully
+redis-1                    | 1:M 18 Aug 2025 11:13:18.427 * <search> gc: ON, prefix min length: 2, min word length to stem: 4, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, 
+redis-1                    | 1:M 18 Aug 2025 11:13:18.427 * <search> Initialized thread pools!
+redis-1                    | 1:M 18 Aug 2025 11:13:18.427 * <search> Disabled workers threadpool of size 0
+redis-1                    | 1:M 18 Aug 2025 11:13:18.427 * <search> Subscribe to config changes
+redis-1                    | 1:M 18 Aug 2025 11:13:18.427 * <search> Enabled role change notification
+redis-1                    | 1:M 18 Aug 2025 11:13:18.428 * <search> Cluster configuration: AUTO partitions, type: 0, coordinator timeout: 0ms
+redis-1                    | 1:M 18 Aug 2025 11:13:18.428 * <search> Register write commands
+redis-1                    | 1:M 18 Aug 2025 11:13:18.428 * Module 'search' loaded from /usr/local/lib/redis/modules//redisearch.so
+redis-1                    | 1:M 18 Aug 2025 11:13:18.428 * <timeseries> RedisTimeSeries version 80200, git_sha=1439d4a439ca9c063e6ef124a510abff09a5d493
+redis-1                    | 1:M 18 Aug 2025 11:13:18.428 * <timeseries> Redis version found by RedisTimeSeries : 8.2.0 - oss
+redis-1                    | 1:M 18 Aug 2025 11:13:18.428 * <timeseries> Registering configuration options: [
+redis-1                    | 1:M 18 Aug 2025 11:13:18.428 * <timeseries> 	{ ts-compaction-policy   :              }
+redis-1                    | 1:M 18 Aug 2025 11:13:18.428 * <timeseries> 	{ ts-num-threads         :            3 }
+redis-1                    | 1:M 18 Aug 2025 11:13:18.428 * <timeseries> 	{ ts-retention-policy    :            0 }
+redis-1                    | 1:M 18 Aug 2025 11:13:18.428 * <timeseries> 	{ ts-duplicate-policy    :        block }
+redis-1                    | 1:M 18 Aug 2025 11:13:18.428 * <timeseries> 	{ ts-chunk-size-bytes    :         4096 }
+redis-1                    | 1:M 18 Aug 2025 11:13:18.428 * <timeseries> 	{ ts-encoding            :   compressed }
+redis-1                    | 1:M 18 Aug 2025 11:13:18.428 * <timeseries> 	{ ts-ignore-max-time-diff:            0 }
+redis-1                    | 1:M 18 Aug 2025 11:13:18.428 * <timeseries> 	{ ts-ignore-max-val-diff :     0.000000 }
+redis-1                    | 1:M 18 Aug 2025 11:13:18.428 * <timeseries> ]
+redis-1                    | 1:M 18 Aug 2025 11:13:18.428 * <timeseries> Detected redis oss
+redis-1                    | 1:M 18 Aug 2025 11:13:18.429 * <timeseries> Enabled diskless replication
+redis-1                    | 1:M 18 Aug 2025 11:13:18.429 * Module 'timeseries' loaded from /usr/local/lib/redis/modules//redistimeseries.so
+redis-1                    | 1:M 18 Aug 2025 11:13:18.429 * <ReJSON> Created new data type 'ReJSON-RL'
+redis-1                    | 1:M 18 Aug 2025 11:13:18.429 * <ReJSON> version: 80200 git sha: unknown branch: unknown
+redis-1                    | 1:M 18 Aug 2025 11:13:18.429 * <ReJSON> Exported RedisJSON_V1 API
+redis-1                    | 1:M 18 Aug 2025 11:13:18.429 * <ReJSON> Exported RedisJSON_V2 API
+redis-1                    | 1:M 18 Aug 2025 11:13:18.429 * <ReJSON> Exported RedisJSON_V3 API
+redis-1                    | 1:M 18 Aug 2025 11:13:18.429 * <ReJSON> Exported RedisJSON_V4 API
+redis-1                    | 1:M 18 Aug 2025 11:13:18.429 * <ReJSON> Exported RedisJSON_V5 API
+redis-1                    | 1:M 18 Aug 2025 11:13:18.429 * <ReJSON> Enabled diskless replication
+redis-1                    | 1:M 18 Aug 2025 11:13:18.429 * <ReJSON> Initialized shared string cache, thread safe: false.
+redis-1                    | 1:M 18 Aug 2025 11:13:18.429 * Module 'ReJSON' loaded from /usr/local/lib/redis/modules//rejson.so
+redis-1                    | 1:M 18 Aug 2025 11:13:18.429 * <search> Acquired RedisJSON_V5 API
+redis-1                    | 1:M 18 Aug 2025 11:13:18.430 * Server initialized
+redis-1                    | 1:M 18 Aug 2025 11:13:18.430 * Ready to accept connections tcp
+rinha-de-backend-2025-2-1  | $ bun run src/index.js
+rinha-de-backend-2025-2-1  | Erro ao configurar tabela payments: 25 | export function connectToSQLite() {
+rinha-de-backend-2025-2-1  | 26 |   if (!db) {
+rinha-de-backend-2025-2-1  | 27 |     const dbPath = process.env.DATABASE_URL || path.join(process.cwd(), "rinha.db");
+rinha-de-backend-2025-2-1  | 28 |     db = new Database(dbPath, { create: true });
+rinha-de-backend-2025-2-1  | 29 | 
+rinha-de-backend-2025-2-1  | 30 |     db.exec("PRAGMA journal_mode = WAL");
+rinha-de-backend-2025-2-1  |             ^
+rinha-de-backend-2025-2-1  | SQLiteError: database is locked
+rinha-de-backend-2025-2-1  |       errno: 5,
+rinha-de-backend-2025-2-1  |  byteOffset: -1,
+rinha-de-backend-2025-2-1  |        code: "SQLITE_BUSY"
+rinha-de-backend-2025-2-1  | 
+rinha-de-backend-2025-2-1  |       at run (bun:sqlite:308:21)
+rinha-de-backend-2025-2-1  |       at connectToSQLite (/app/src/db.ts:30:8)
+rinha-de-backend-2025-2-1  |       at createPaymentsTable (/app/src/db.ts:38:5)
+rinha-de-backend-2025-2-1  |       at createPaymentsTable (/app/src/db.ts:36:42)
+rinha-de-backend-2025-2-1  |       at /app/src/index.ts:12:7
+rinha-de-backend-2025-2-1  | 
+rinha-de-backend-2025-2-1  | 25 | export function connectToSQLite() {
+rinha-de-backend-2025-2-1  | 26 |   if (!db) {
+rinha-de-backend-2025-2-1  | 27 |     const dbPath = process.env.DATABASE_URL || path.join(process.cwd(), "rinha.db");
+rinha-de-backend-2025-2-1  | 28 |     db = new Database(dbPath, { create: true });
+rinha-de-backend-2025-2-1  | 29 | 
+rinha-de-backend-2025-2-1  | 30 |     db.exec("PRAGMA journal_mode = WAL");
+rinha-de-backend-2025-2-1  |             ^
+rinha-de-backend-2025-2-1  | SQLiteError: database is locked
+rinha-de-backend-2025-2-1  |       errno: 5,
+rinha-de-backend-2025-2-1  |  byteOffset: -1,
+rinha-de-backend-2025-2-1  |        code: "SQLITE_BUSY"
+rinha-de-backend-2025-2-1  | 
+rinha-de-backend-2025-2-1  |       at run (bun:sqlite:308:21)
+rinha-de-backend-2025-2-1  |       at connectToSQLite (/app/src/db.ts:30:8)
+rinha-de-backend-2025-2-1  |       at createPaymentsTable (/app/src/db.ts:38:5)
+rinha-de-backend-2025-2-1  |       at createPaymentsTable (/app/src/db.ts:36:42)
+rinha-de-backend-2025-2-1  |       at /app/src/index.ts:12:7
+rinha-de-backend-2025-2-1  | 
+rinha-de-backend-2025-2-1  | Bun v1.2.19 (Linux x64 baseline)
+haproxy-1                  | [NOTICE]   (1) : Initializing new worker (8)
+rinha-de-backend-2025-2-1  | error: script "start" exited with code 1
+redis-1                    | 1:M 18 Aug 2025 11:13:18.942 * DB saved on disk
+sqlite-writer-go-1         | 2025/08/18 11:13:19 Arquivo .env não encontrado, usando variáveis de ambiente do sistema
+sqlite-writer-go-1         | 2025/08/18 11:13:19 Waiting SQLite requests...
+[Krinha-de-backend-2025-2-1 exited with code 1
+haproxy-1                  | [NOTICE]   (8) : haproxy version is 3.2.3-1844da7
+haproxy-1                  | [ALERT]    (8) : [/usr/local/etc/haproxy/haproxy.cfg:18] : 'server http_back/app2' : could not resolve address 'rinha-de-backend-2025-2'.
+haproxy-1                  | [ALERT]    (8) : Failed to initialize server(s) addr.
+haproxy-1                  | [NOTICE]   (1) : haproxy version is 3.2.3-1844da7
+haproxy-1                  | [WARNING]  (1) : Failed to load worker!
+[Khaproxy-1 exited with code 1
+[Ksqlite-writer-go-1 exited with code 2
+rinha-de-backend-2025-1-1  | error: script "start" was terminated by signal SIGTERM (Polite quit request)
+[Krinha-de-backend-2025-1-1 exited with code 139
+redis-1                    | 1:signal-handler (1755515672) Received SIGTERM scheduling shutdown...
+nats-1                     | [1] 2025/08/18 11:14:32.799249 [INF] Trapped "terminated" signal
+nats-1                     | [1] 2025/08/18 11:14:32.799452 [INF] Initiating Shutdown...
+nats-1                     | [1] 2025/08/18 11:14:32.799491 [INF] Initiating JetStream Shutdown...
+nats-1                     | [1] 2025/08/18 11:14:32.799497 [INF] JetStream Shutdown
+nats-1                     | [1] 2025/08/18 11:14:32.799560 [INF] Server Exiting..
+redis-1                    | 1:M 18 Aug 2025 11:14:32.896 * User requested shutdown...
+redis-1                    | 1:M 18 Aug 2025 11:14:32.896 * Saving the final RDB snapshot before exiting.
+redis-1                    | 1:M 18 Aug 2025 11:14:32.902 * DB saved on disk
+redis-1                    | 1:M 18 Aug 2025 11:14:32.902 # Redis is now ready to exit, bye bye...
+[Knats-1 exited with code 0

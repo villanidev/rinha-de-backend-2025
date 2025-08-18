@@ -1,0 +1,14 @@
+
+ nginx Pulling 
+ worker Pulling 
+ redis Pulling 
+ api01 Pulling 
+ api02 Pulling 
+ worker Pulled 
+ nginx Pulled 
+ api01 Pulled 
+ redis Pulled 
+ api02 Pulled 
+ Network dinossauro_backend  Creating
+ Network dinossauro_backend  Error
+failed to create network dinossauro_backend: Error response from daemon: invalid pool request: Pool overlaps with other one on this address space
