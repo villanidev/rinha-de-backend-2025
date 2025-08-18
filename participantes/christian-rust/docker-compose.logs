@@ -1,0 +1,57 @@
+
+time="2025-08-18T02:30:50Z" level=warning msg="/home/ubuntu/rinha-de-backend-2025/participantes/christian-rust/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+ haproxy Pulling 
+ 396b1da7636e Already exists 
+ a63b0b36fa19 Pulling fs layer 
+ 35bd1af02ffa Pulling fs layer 
+ 19a4f7c93f9a Pulling fs layer 
+ 93973c05eece Pulling fs layer 
+ 4f4fb700ef54 Pulling fs layer 
+ 93973c05eece Waiting 
+ 4f4fb700ef54 Waiting 
+ 35bd1af02ffa Downloading [==================================================>]  1.162kB/1.162kB
+ 35bd1af02ffa Verifying Checksum 
+ 35bd1af02ffa Download complete 
+ a63b0b36fa19 Downloading [>                                                  ]  16.38kB/1.277MB
+ a63b0b36fa19 Downloading [==================================================>]  1.277MB/1.277MB
+ a63b0b36fa19 Verifying Checksum 
+ a63b0b36fa19 Download complete 
+ a63b0b36fa19 Extracting [=>                                                 ]  32.77kB/1.277MB
+ 93973c05eece Downloading [==================================================>]     449B/449B
+ 93973c05eece Verifying Checksum 
+ 93973c05eece Download complete 
+ 4f4fb700ef54 Downloading [==================================================>]      32B/32B
+ 4f4fb700ef54 Verifying Checksum 
+ 4f4fb700ef54 Download complete 
+ 19a4f7c93f9a Downloading [>                                                  ]  85.49kB/8.343MB
+ a63b0b36fa19 Extracting [==================================>                ]  884.7kB/1.277MB
+ a63b0b36fa19 Extracting [==================================================>]  1.277MB/1.277MB
+ 19a4f7c93f9a Verifying Checksum 
+ 19a4f7c93f9a Download complete 
+ a63b0b36fa19 Extracting [==================================================>]  1.277MB/1.277MB
+ a63b0b36fa19 Pull complete 
+ 35bd1af02ffa Extracting [==================================================>]  1.162kB/1.162kB
+ 35bd1af02ffa Extracting [==================================================>]  1.162kB/1.162kB
+ 35bd1af02ffa Pull complete 
+ 19a4f7c93f9a Extracting [>                                                  ]   98.3kB/8.343MB
+ 19a4f7c93f9a Extracting [============================>                      ]  4.817MB/8.343MB
+ 19a4f7c93f9a Extracting [==================================================>]  8.343MB/8.343MB
+ 19a4f7c93f9a Extracting [==================================================>]  8.343MB/8.343MB
+ 19a4f7c93f9a Pull complete 
+ 93973c05eece Extracting [==================================================>]     449B/449B
+ 93973c05eece Extracting [==================================================>]     449B/449B
+ 93973c05eece Pull complete 
+ 4f4fb700ef54 Extracting [==================================================>]      32B/32B
+ 4f4fb700ef54 Extracting [==================================================>]      32B/32B
+ 4f4fb700ef54 Pull complete 
+ haproxy Pulled 
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.08kB done
+#1 DONE 0.0s
+
+#2 [app2 internal] load build definition from Dockerfile
+#2 transferring dockerfile:
+#2 transferring dockerfile: 2B done
+#2 DONE 0.0s
+target app2: failed to solve: failed to read dockerfile: open Dockerfile: no such file or directory
+
