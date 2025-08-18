@@ -1,0 +1,94 @@
+
+ back0 Pulling 
+ back1 Pulling 
+ front Pulling 
+ pay Pulling 
+ baa9e71a063a Already exists 
+ baa9e71a063a Already exists 
+ 568a94adce32 Pulling fs layer 
+ 568a94adce32 Pulling fs layer 
+ baa9e71a063a Already exists 
+ 7ae037117b18 Pulling fs layer 
+ baa9e71a063a Already exists 
+ 9e9d0876747c Pulling fs layer 
+ 568a94adce32 Downloading [>                                                  ]  244.6kB/23.9MB
+ 568a94adce32 Downloading [>                                                  ]  244.6kB/23.9MB
+ 7ae037117b18 Downloading [>                                                  ]  244.6kB/23.9MB
+ 9e9d0876747c Downloading [>                                                  ]  244.6kB/23.9MB
+ 7ae037117b18 Downloading [==================>                                ]  8.618MB/23.9MB
+ 568a94adce32 Downloading [===================================>               ]  16.96MB/23.9MB
+ 568a94adce32 Downloading [===================================>               ]  16.96MB/23.9MB
+ 9e9d0876747c Downloading [=========>                                         ]  4.424MB/23.9MB
+ 568a94adce32 Verifying Checksum 
+ 568a94adce32 Verifying Checksum 
+ 568a94adce32 Download complete 
+ 568a94adce32 Download complete 
+ 568a94adce32 Extracting [>                                                  ]  262.1kB/23.9MB
+ 568a94adce32 Extracting [>                                                  ]  262.1kB/23.9MB
+ 7ae037117b18 Downloading [===============================================>   ]  22.58MB/23.9MB
+ 9e9d0876747c Downloading [=======================================>           ]  18.92MB/23.9MB
+ 7ae037117b18 Download complete 
+ 9e9d0876747c Verifying Checksum 
+ 9e9d0876747c Download complete 
+ 7ae037117b18 Extracting [>                                                  ]  262.1kB/23.9MB
+ 568a94adce32 Extracting [==========>                                        ]  4.981MB/23.9MB
+ 568a94adce32 Extracting [==========>                                        ]  4.981MB/23.9MB
+ 9e9d0876747c Extracting [>                                                  ]  262.1kB/23.9MB
+ 7ae037117b18 Extracting [=================>                                 ]  8.126MB/23.9MB
+ 568a94adce32 Extracting [==============================>                    ]  14.42MB/23.9MB
+ 568a94adce32 Extracting [==============================>                    ]  14.42MB/23.9MB
+ 9e9d0876747c Extracting [==================>                                ]  8.913MB/23.9MB
+ 7ae037117b18 Extracting [================================>                  ]  15.47MB/23.9MB
+ 9e9d0876747c Extracting [==================================>                ]  16.25MB/23.9MB
+ 568a94adce32 Extracting [=======================================>           ]  18.87MB/23.9MB
+ 568a94adce32 Extracting [=======================================>           ]  18.87MB/23.9MB
+ 7ae037117b18 Extracting [==========================================>        ]  20.19MB/23.9MB
+ 9e9d0876747c Extracting [============================================>      ]  21.23MB/23.9MB
+ 568a94adce32 Extracting [=================================================> ]  23.86MB/23.9MB
+ 568a94adce32 Extracting [=================================================> ]  23.86MB/23.9MB
+ 568a94adce32 Extracting [==================================================>]   23.9MB/23.9MB
+ 568a94adce32 Extracting [==================================================>]   23.9MB/23.9MB
+ 568a94adce32 Pull complete 
+ 568a94adce32 Pull complete 
+ 9e9d0876747c Extracting [==================================================>]   23.9MB/23.9MB
+ back1 Pulled 
+ back0 Pulled 
+ 7ae037117b18 Extracting [=================================================> ]  23.86MB/23.9MB
+ 7ae037117b18 Extracting [==================================================>]   23.9MB/23.9MB
+ 9e9d0876747c Pull complete 
+ 7ae037117b18 Pull complete 
+ front Pulled 
+ pay Pulled 
+ Network marcioendo_default  Creating
+ Network marcioendo_default  Created
+ Network marcioendo_backend  Creating
+ Network marcioendo_backend  Created
+ Container pay  Creating
+ Container pay  Created
+ Container back0  Creating
+ Container back1  Creating
+ Container back1  Created
+ Container back0  Created
+ Container front  Creating
+ Container front  Created
+Attaching to back0, back1, front, pay
+back1  | [0.001s][warning][perf,memops] Cannot use file /tmp/hsperfdata_root/1 because it is locked by another process (errno = 11)
+back0  | [0.002s][warning][perf,memops] Cannot use file /tmp/hsperfdata_root/1 because it is locked by another process (errno = 11)
+pay    | Pay
+front  | [0.001s][warning][perf,memops] Cannot use file /tmp/hsperfdata_root/1 because it is locked by another process (errno = 11)
+pay    | Connect ok=payment-processor-default/172.18.0.3:8080
+pay    | Connect ok=payment-processor-fallback/172.18.0.2:8080
+back1  | Back
+back0  | Back
+front  | Front
+back1  | Connect ok=/tmp/kag8kie5uDie3lei0toh-pay.sock
+back0  | Connect ok=/tmp/kag8kie5uDie3lei0toh-pay.sock
+front  | Connect ok=/tmp/kag8kie5uDie3lei0toh-back0.sock
+front  | Connect ok=/tmp/kag8kie5uDie3lei0toh-back1.sock
+front  | Connect ok=/tmp/kag8kie5uDie3lei0toh-pay.sock
+[Kfront exited with code 137
+back1  | Failed to accept client conn
+[Kback1 exited with code 143
+[Kback0 exited with code 143
+pay    | Failed to accept client conn
+log truncated at line 1000
