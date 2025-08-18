@@ -23,7 +23,7 @@ x-service-templates:
         condition: service_healthy
     volumes:
       - db-socket:/var/run/postgresql
-      - tmp:/tmp
+      - sockets:/tmp
     deploy:
       resources:
         limits:
@@ -68,7 +68,7 @@ services:
     ports:
       - 9999:9999
     volumes:
-      - tmp:/tmp
+      - sockets:/tmp
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
     networks:
       - backend
@@ -115,4 +115,5 @@ networks:
 
 volumes:
   db-socket:
+  sockets:
 
