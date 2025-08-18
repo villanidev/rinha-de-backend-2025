@@ -53,7 +53,7 @@ services:
       - FALLBACK_PAYMENT_PROCESSOR_HEALTH_URL=http://payment-processor-fallback:8080/payments/service-health
       - PAYMENT_CHANNEL_LEN=10000
       - PAYMENT_NUM_WORKERS=64
-      - GOMAXPROCS=4
+      - GOMAXPROCS=2
       - GOGC=1000
     depends_on:
       - payment-gateway-db
@@ -80,7 +80,7 @@ services:
       - FALLBACK_PAYMENT_PROCESSOR_HEALTH_URL=http://payment-processor-fallback:8080/payments/service-health
       - PAYMENT_CHANNEL_LEN=10000
       - PAYMENT_NUM_WORKERS=64
-      - GOMAXPROCS=4
+      - GOMAXPROCS=2
       - GOGC=1000
     depends_on:
       - payment-gateway-db
