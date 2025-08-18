@@ -3,7 +3,7 @@
 Uma ideia para o processamento dos pagamentos na Rinha de Backend 2025, feita de forma um pouco corrida :smile:
 
 ## Repo:
-  [https://www.linkedin.com/in/caio-enrique-747621199/](https://www.linkedin.com/in/caio-enrique-747621199/)
+  [https://github.com/100f/rinha-backend-2025](https://github.com/100f/rinha-backend-2025)
 
 ## Tecnologias utilizadas
 
