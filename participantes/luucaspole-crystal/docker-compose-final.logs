@@ -1,0 +1,101 @@
+
+time="2025-08-19T06:44:48Z" level=warning msg="/home/ubuntu/rinha-de-backend-2025/participantes/luucaspole-crystal/docker-compose.yaml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+ Network luucaspole-crystal_backend  Creating
+ Network luucaspole-crystal_backend  Created
+ Volume "luucaspole-crystal_nginx_log"  Creating
+ Volume "luucaspole-crystal_nginx_log"  Created
+ Volume "luucaspole-crystal_nginx_cache"  Creating
+ Volume "luucaspole-crystal_nginx_cache"  Created
+ Volume "luucaspole-crystal_nginx_run"  Creating
+ Volume "luucaspole-crystal_nginx_run"  Created
+ Container lavinmq  Creating
+ Container lavinmq  Created
+ Container luucaspole-crystal-consumer-1  Creating
+ Container luucaspole-crystal-consumer-1  Created
+ Container luucaspole-crystal-app1-1  Creating
+ Container luucaspole-crystal-app2-1  Creating
+ Container luucaspole-crystal-app1-1  Created
+ Container luucaspole-crystal-app2-1  Created
+ Container nginx  Creating
+ Container nginx  Created
+Attaching to lavinmq, app1-1, app2-1, consumer-1, nginx
+lavinmq  | WARNING: 'guest_only_loopback' is deprecated, use '--default-user-only-loopback' instead
+lavinmq  | WARNING: 'guest_only_loopback' is deprecated, use '--default-user-only-loopback' instead
+consumer-1  | 2025-08-19T06:44:55.221759Z   INFO - Starting Kemal server
+consumer-1  | 2025-08-19T06:44:55.222035Z   INFO - kemal: [development] Kemal is ready to lead at http:///dev/shm/1.sock
+consumer-1  | 2025-08-19T06:44:55.222095Z   INFO - Listening for messages on AMQP queue: processor:queue:payments
+app2-1      | 2025-08-19T06:44:56.006430Z   INFO - HTTP Server running on port 9999
+app2-1      | 2025-08-19T06:44:56.006736Z   INFO - GET /payment-summary - Get payment summary
+app2-1      | 2025-08-19T06:44:56.006736Z   INFO - POST /payments - Create a new payment
+app2-1      | 2025-08-19T06:44:56.007372Z   INFO - HTTP Server running on socket /dev/shm/app2.sock
+app2-1      | 2025-08-19T06:44:56.007417Z   INFO - kemal: [development] Kemal is ready to lead at http:///dev/shm/app2.sock
+app1-1      | 2025-08-19T06:44:56.006430Z   INFO - HTTP Server running on port 9999
+app1-1      | 2025-08-19T06:44:56.068944Z   INFO - GET /payment-summary - Get payment summary
+app1-1      | 2025-08-19T06:44:56.068944Z   INFO - POST /payments - Create a new payment
+app1-1      | 2025-08-19T06:44:56.069244Z   INFO - HTTP Server running on socket /dev/shm/app1.sock
+app1-1      | 2025-08-19T06:44:56.069257Z   INFO - kemal: [development] Kemal is ready to lead at http:///dev/shm/app1.sock
+nginx       | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+nginx       | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+nginx       | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+nginx       | 10-listen-on-ipv6-by-default.sh: info: can not modify /etc/nginx/conf.d/default.conf (read-only file system?)
+nginx       | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+nginx       | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+nginx       | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+nginx       | /docker-entrypoint.sh: Configuration complete; ready for start up
+consumer-1  | 2025-08-19T06:44:58.591567Z   INFO - kemal: 200 GET /payments-summary 67.82µs
+consumer-1  | 2025-08-19T06:45:04.218043Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A44%3A49.216Z&to=2025-08-19T06%3A45%3A02.216Z 104.57µs
+consumer-1  | 2025-08-19T06:45:14.224228Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A44%3A59.222Z&to=2025-08-19T06%3A45%3A12.222Z 997.87µs
+consumer-1  | 2025-08-19T06:45:24.226544Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A45%3A09.225Z&to=2025-08-19T06%3A45%3A22.225Z 89.18µs
+consumer-1  | 2025-08-19T06:45:34.229711Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A45%3A19.228Z&to=2025-08-19T06%3A45%3A32.228Z 69.86µs
+consumer-1  | 2025-08-19T06:45:44.231909Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A45%3A29.231Z&to=2025-08-19T06%3A45%3A42.231Z 89.74µs
+consumer-1  | 2025-08-19T06:45:54.233852Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A45%3A39.233Z&to=2025-08-19T06%3A45%3A52.233Z 93.77µs
+consumer-1  | 2025-08-19T06:46:04.236563Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A45%3A49.235Z&to=2025-08-19T06%3A46%3A02.235Z 110.16µs
+consumer-1  | 2025-08-19T06:46:14.239298Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A45%3A59.238Z&to=2025-08-19T06%3A46%3A12.238Z 101.39µs
+consumer-1  | 2025-08-19T06:46:24.243650Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A46%3A09.242Z&to=2025-08-19T06%3A46%3A22.242Z 95.41µs
+consumer-1  | 2025-08-19T06:46:34.245820Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A46%3A19.244Z&to=2025-08-19T06%3A46%3A32.244Z 80.87µs
+consumer-1  | 2025-08-19T06:46:44.248029Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A46%3A29.247Z&to=2025-08-19T06%3A46%3A42.247Z 97.04µs
+consumer-1  | 2025-08-19T06:46:54.250872Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A46%3A39.250Z&to=2025-08-19T06%3A46%3A52.250Z 113.19µs
+consumer-1  | 2025-08-19T06:47:04.254559Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A46%3A49.253Z&to=2025-08-19T06%3A47%3A02.253Z 77.91µs
+consumer-1  | 2025-08-19T06:47:14.257130Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A46%3A59.255Z&to=2025-08-19T06%3A47%3A12.255Z 154.32µs
+consumer-1  | 2025-08-19T06:47:24.259360Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A47%3A09.258Z&to=2025-08-19T06%3A47%3A22.258Z 83.23µs
+consumer-1  | 2025-08-19T06:47:34.262320Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A47%3A19.261Z&to=2025-08-19T06%3A47%3A32.261Z 105.16µs
+consumer-1  | 2025-08-19T06:47:44.268993Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A47%3A29.264Z&to=2025-08-19T06%3A47%3A42.264Z 231.22µs
+consumer-1  | 2025-08-19T06:47:54.283647Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A47%3A39.271Z&to=2025-08-19T06%3A47%3A52.271Z 241.38µs
+consumer-1  | 2025-08-19T06:48:04.285936Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A47%3A49.284Z&to=2025-08-19T06%3A48%3A02.284Z 153.09µs
+consumer-1  | 2025-08-19T06:48:14.289333Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A47%3A59.288Z&to=2025-08-19T06%3A48%3A12.288Z 110.78µs
+consumer-1  | 2025-08-19T06:48:24.291700Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A48%3A09.291Z&to=2025-08-19T06%3A48%3A22.291Z 125.43µs
+consumer-1  | 2025-08-19T06:48:34.294730Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A48%3A19.294Z&to=2025-08-19T06%3A48%3A32.294Z 121.87µs
+consumer-1  | 2025-08-19T06:48:44.298231Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A48%3A29.296Z&to=2025-08-19T06%3A48%3A42.296Z 280.71µs
+consumer-1  | 2025-08-19T06:48:54.302861Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A48%3A39.300Z&to=2025-08-19T06%3A48%3A52.300Z 97.85µs
+consumer-1  | 2025-08-19T06:49:04.304915Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A48%3A49.304Z&to=2025-08-19T06%3A49%3A02.304Z 120.44µs
+consumer-1  | 2025-08-19T06:49:14.313826Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A48%3A59.307Z&to=2025-08-19T06%3A49%3A12.307Z 100.99µs
+[Kapp1-1 exited with code 137
+app1-1      | 2025-08-19T06:49:16.412863Z   INFO - HTTP Server running on port 9999
+app1-1      | 2025-08-19T06:49:16.412876Z   INFO - GET /payment-summary - Get payment summary
+app1-1      | 2025-08-19T06:49:16.412876Z   INFO - POST /payments - Create a new payment
+app1-1      | 2025-08-19T06:49:16.413829Z   INFO - HTTP Server running on socket /dev/shm/app1.sock
+app1-1      | 2025-08-19T06:49:16.413851Z   INFO - kemal: [development] Kemal is ready to lead at http:///dev/shm/app1.sock
+[Kapp2-1 exited with code 137
+app2-1      | 2025-08-19T06:49:17.362250Z   INFO - HTTP Server running on port 9999
+app2-1      | 2025-08-19T06:49:17.362261Z   INFO - GET /payment-summary - Get payment summary
+app2-1      | 2025-08-19T06:49:17.362261Z   INFO - POST /payments - Create a new payment
+app2-1      | 2025-08-19T06:49:17.362513Z   INFO - HTTP Server running on socket /dev/shm/app2.sock
+app2-1      | 2025-08-19T06:49:17.362531Z   INFO - kemal: [development] Kemal is ready to lead at http:///dev/shm/app2.sock
+consumer-1  | 2025-08-19T06:49:34.320533Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A49%3A19.318Z&to=2025-08-19T06%3A49%3A32.318Z 82.71µs
+consumer-1  | 2025-08-19T06:49:44.322457Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A49%3A29.321Z&to=2025-08-19T06%3A49%3A42.321Z 115.94µs
+[Kapp1-1 exited with code 137
+app1-1      | 2025-08-19T06:49:50.141714Z   INFO - HTTP Server running on port 9999
+app1-1      | 2025-08-19T06:49:50.141723Z   INFO - GET /payment-summary - Get payment summary
+app1-1      | 2025-08-19T06:49:50.141724Z   INFO - POST /payments - Create a new payment
+app1-1      | 2025-08-19T06:49:50.141981Z   INFO - HTTP Server running on socket /dev/shm/app1.sock
+app1-1      | 2025-08-19T06:49:50.141999Z   INFO - kemal: [development] Kemal is ready to lead at http:///dev/shm/app1.sock
+consumer-1  | 2025-08-19T06:49:54.328505Z   INFO - kemal: 200 GET /payments-summary?from=2025-08-19T06%3A49%3A39.324Z&to=2025-08-19T06%3A49%3A52.324Z 67.13µs
+[Knginx exited with code 0
+app2-1      | 2025-08-19T06:50:06.022380Z   INFO - kemal: Kemal is going to take a rest!
+app2-1      | 2025-08-19T06:50:06.022380Z   INFO - kemal: Kemal is going to take a rest!
+app1-1      | 2025-08-19T06:50:06.022381Z   INFO - kemal: Kemal is going to take a rest!
+[Kapp2-1 exited with code 0
+[Kapp1-1 exited with code 0
+consumer-1  | 2025-08-19T06:50:06.578875Z   INFO - kemal: Kemal is going to take a rest!
+[Kconsumer-1 exited with code 0
+log truncated at line 1000

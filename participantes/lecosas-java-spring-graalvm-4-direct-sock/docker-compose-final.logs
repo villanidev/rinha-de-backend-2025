@@ -1,0 +1,52 @@
+
+ Network lecosas-java-spring-graalvm-4-direct-sock_backend  Creating
+ Network lecosas-java-spring-graalvm-4-direct-sock_backend  Created
+ Volume "lecosas-java-spring-graalvm-4-direct-sock_sockets"  Creating
+ Volume "lecosas-java-spring-graalvm-4-direct-sock_sockets"  Created
+ Container graalvm-4-direct-sock-redis  Creating
+ Container graalvm-4-direct-sock-redis  Created
+ Container graalvm-4-direct-sock-backend-01  Creating
+ Container graalvm-4-direct-sock-backend-02  Creating
+ Container graalvm-4-direct-sock-backend-02  Created
+ Container graalvm-4-direct-sock-backend-01  Created
+ Container graalvm-4-direct-sock-nginx  Creating
+ Container graalvm-4-direct-sock-nginx  Created
+Attaching to graalvm-4-direct-sock-backend-01, graalvm-4-direct-sock-backend-02, graalvm-4-direct-sock-nginx, graalvm-4-direct-sock-redis
+graalvm-4-direct-sock-redis  | 1:C 19 Aug 2025 03:58:51.485 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+graalvm-4-direct-sock-redis  | 1:C 19 Aug 2025 03:58:51.485 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+graalvm-4-direct-sock-redis  | 1:C 19 Aug 2025 03:58:51.485 * Redis version=7.4.5, bits=64, commit=00000000, modified=0, pid=1, just started
+graalvm-4-direct-sock-redis  | 1:C 19 Aug 2025 03:58:51.485 * Configuration loaded
+graalvm-4-direct-sock-redis  | 1:M 19 Aug 2025 03:58:51.485 * monotonic clock: POSIX clock_gettime
+graalvm-4-direct-sock-redis  | 1:M 19 Aug 2025 03:58:51.486 * Running mode=standalone, port=6379.
+graalvm-4-direct-sock-redis  | 1:M 19 Aug 2025 03:58:51.486 * Server initialized
+graalvm-4-direct-sock-redis  | 1:M 19 Aug 2025 03:58:51.486 * Ready to accept connections tcp
+graalvm-4-direct-sock-nginx  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+graalvm-4-direct-sock-nginx  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+graalvm-4-direct-sock-nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+graalvm-4-direct-sock-nginx  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+graalvm-4-direct-sock-nginx  | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+graalvm-4-direct-sock-nginx  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+graalvm-4-direct-sock-nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+graalvm-4-direct-sock-nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+graalvm-4-direct-sock-nginx  | /docker-entrypoint.sh: Configuration complete; ready for start up
+graalvm-4-direct-sock-backend-01  | WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+graalvm-4-direct-sock-backend-01  | WARNING: sun.misc.Unsafe::allocateMemory has been called by io.netty.util.internal.PlatformDependent0$2 (file:/app/app)
+graalvm-4-direct-sock-backend-01  | WARNING: Please consider reporting this to the maintainers of class io.netty.util.internal.PlatformDependent0$2
+graalvm-4-direct-sock-backend-01  | WARNING: sun.misc.Unsafe::allocateMemory will be removed in a future release
+graalvm-4-direct-sock-backend-02  | WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+graalvm-4-direct-sock-backend-02  | WARNING: sun.misc.Unsafe::allocateMemory has been called by io.netty.util.internal.PlatformDependent0$2 (file:/app/app)
+graalvm-4-direct-sock-backend-02  | WARNING: Please consider reporting this to the maintainers of class io.netty.util.internal.PlatformDependent0$2
+graalvm-4-direct-sock-backend-02  | WARNING: sun.misc.Unsafe::allocateMemory will be removed in a future release
+graalvm-4-direct-sock-backend-02  | 2025-08-19T03:58:57.846Z ERROR 1 --- [rinha-backend-2025-lecosas] [           main] i.b.r.application.service.WarmupService  : START: Warmup
+graalvm-4-direct-sock-backend-01  | 2025-08-19T03:58:57.852Z ERROR 1 --- [rinha-backend-2025-lecosas] [           main] i.b.r.application.service.WarmupService  : START: Warmup
+graalvm-4-direct-sock-backend-02  | 2025-08-19T03:58:58.912Z ERROR 1 --- [rinha-backend-2025-lecosas] [           main] i.b.r.application.service.PaymentWorker  : Starting [10] Payment Workers.
+graalvm-4-direct-sock-backend-01  | 2025-08-19T03:58:58.928Z ERROR 1 --- [rinha-backend-2025-lecosas] [           main] i.b.r.application.service.PaymentWorker  : Starting [10] Payment Workers.
+graalvm-4-direct-sock-backend-02  | 2025-08-19T03:58:59.012Z ERROR 1 --- [rinha-backend-2025-lecosas] [           main] i.b.r.application.service.WarmupService  : END: Warmup in 1165.653ms
+graalvm-4-direct-sock-backend-01  | 2025-08-19T03:58:59.028Z ERROR 1 --- [rinha-backend-2025-lecosas] [           main] i.b.r.application.service.WarmupService  : END: Warmup in 1175.828ms
+[Kgraalvm-4-direct-sock-nginx exited with code 0
+[Kgraalvm-4-direct-sock-backend-02 exited with code 143
+[Kgraalvm-4-direct-sock-backend-01 exited with code 143
+graalvm-4-direct-sock-redis       | 1:signal-handler (1755576248) Received SIGTERM scheduling shutdown...
+graalvm-4-direct-sock-redis       | 1:M 19 Aug 2025 04:04:08.707 * User requested shutdown...
+graalvm-4-direct-sock-redis       | 1:M 19 Aug 2025 04:04:08.708 # Redis is now ready to exit, bye bye...
+log truncated at line 1000

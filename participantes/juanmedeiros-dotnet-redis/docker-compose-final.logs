@@ -1,0 +1,64 @@
+
+ api2 Pulling 
+ api1 Pulling 
+ 0bdf2c4d1714 Already exists 
+ 4280b73b1d39 Already exists 
+ ef9e620c2b26 Already exists 
+ bb5b6b864c18 Already exists 
+ f2be6ab42ec2 Pulling fs layer 
+ 0bdf2c4d1714 Already exists 
+ 4280b73b1d39 Already exists 
+ ef9e620c2b26 Already exists 
+ bb5b6b864c18 Already exists 
+ f2be6ab42ec2 Pulling fs layer 
+ f2be6ab42ec2 Downloading [>                                                  ]  209.1kB/19.98MB
+ f2be6ab42ec2 Downloading [>                                                  ]  209.1kB/19.98MB
+ f2be6ab42ec2 Downloading [============================================>      ]  17.96MB/19.98MB
+ f2be6ab42ec2 Downloading [============================================>      ]  17.96MB/19.98MB
+ f2be6ab42ec2 Verifying Checksum 
+ f2be6ab42ec2 Download complete 
+ f2be6ab42ec2 Download complete 
+ f2be6ab42ec2 Extracting [>                                                  ]  229.4kB/19.98MB
+ f2be6ab42ec2 Extracting [>                                                  ]  229.4kB/19.98MB
+ f2be6ab42ec2 Extracting [==========================>                        ]  10.78MB/19.98MB
+ f2be6ab42ec2 Extracting [==========================>                        ]  10.78MB/19.98MB
+ f2be6ab42ec2 Extracting [===============================================>   ]  19.04MB/19.98MB
+ f2be6ab42ec2 Extracting [===============================================>   ]  19.04MB/19.98MB
+ f2be6ab42ec2 Extracting [==================================================>]  19.98MB/19.98MB
+ f2be6ab42ec2 Extracting [==================================================>]  19.98MB/19.98MB
+ f2be6ab42ec2 Pull complete 
+ f2be6ab42ec2 Pull complete 
+ api2 Pulled 
+ api1 Pulled 
+ Container juanmedeiros-dotnet-redis-api2-1  Creating
+ Container juanmedeiros-dotnet-redis-redis-1  Creating
+ Container juanmedeiros-dotnet-redis-api1-1  Creating
+ Container juanmedeiros-dotnet-redis-api1-1  Created
+ Container haproxy_gateway  Creating
+ Container juanmedeiros-dotnet-redis-api2-1  Created
+ Container juanmedeiros-dotnet-redis-redis-1  Created
+ Container haproxy_gateway  Created
+Attaching to haproxy_gateway, api1-1, api2-1, redis-1
+redis-1  | 1:C 19 Aug 2025 01:22:16.210 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis-1  | 1:C 19 Aug 2025 01:22:16.210 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-1  | 1:C 19 Aug 2025 01:22:16.210 * Redis version=7.2.10, bits=64, commit=00000000, modified=0, pid=1, just started
+redis-1  | 1:C 19 Aug 2025 01:22:16.210 * Configuration loaded
+redis-1  | 1:M 19 Aug 2025 01:22:16.211 * monotonic clock: POSIX clock_gettime
+redis-1  | 1:M 19 Aug 2025 01:22:16.211 * Running mode=standalone, port=6379.
+redis-1  | 1:M 19 Aug 2025 01:22:16.212 * Server initialized
+redis-1  | 1:M 19 Aug 2025 01:22:16.212 * Ready to accept connections tcp
+haproxy_gateway  | [NOTICE]   (1) : New worker (8) forked
+haproxy_gateway  | [NOTICE]   (1) : Loading success.
+redis-1          | 1:signal-handler (1755566850) Received SIGTERM scheduling shutdown...
+haproxy_gateway  | [NOTICE]   (1) : haproxy version is 2.9.15-e872a3f
+haproxy_gateway  | [WARNING]  (1) : Exiting Master process...
+haproxy_gateway  | [WARNING]  (8) : Proxy tcp_front stopped (cumulated conns: FE: 605, BE: 0).
+haproxy_gateway  | [WARNING]  (8) : Proxy api_backend stopped (cumulated conns: FE: 0, BE: 605).
+redis-1          | 1:M 19 Aug 2025 01:27:30.263 * User requested shutdown...
+redis-1          | 1:M 19 Aug 2025 01:27:30.264 # Redis is now ready to exit, bye bye...
+haproxy_gateway  | [WARNING]  (1) : Current worker (8) exited with code 0 (Exit)
+haproxy_gateway  | [WARNING]  (1) : All workers exited. Exiting... (0)
+[Kredis-1 exited with code 0
+[Kapi2-1 exited with code 0
+[Khaproxy_gateway exited with code 0
+log truncated at line 1000

@@ -1,0 +1,361 @@
+
+ Network micheloliveira-com-dotnet-csharp-postgres_backend  Creating
+ Network micheloliveira-com-dotnet-csharp-postgres_backend  Created
+ Container micheloliveira-com-dotnet-csharp-postgres-backend-2-1  Creating
+ Container micheloliveira-com-dotnet-csharp-postgres-backend-db-1  Creating
+ Container micheloliveira-com-dotnet-csharp-postgres-redis-1  Creating
+ Container micheloliveira-com-dotnet-csharp-postgres-backend-1-1  Creating
+ Container micheloliveira-com-dotnet-csharp-postgres-backend-1-1  Created
+ Container micheloliveira-com-dotnet-csharp-postgres-backend-2-1  Created
+ Container micheloliveira-com-dotnet-csharp-postgres-load-balancer-1  Creating
+ Container micheloliveira-com-dotnet-csharp-postgres-backend-db-1  Created
+ Container micheloliveira-com-dotnet-csharp-postgres-redis-1  Created
+ Container micheloliveira-com-dotnet-csharp-postgres-load-balancer-1  Created
+Attaching to backend-1-1, backend-2-1, backend-db-1, load-balancer-1, redis-1
+backend-1-1  | WORKER_SIZE: 10
+backend-2-1  | WORKER_SIZE: 10
+backend-2-1  | BATCH_SIZE: 100
+backend-1-1  | BATCH_SIZE: 100
+backend-1-1  | [Redis] Attempting connection...
+backend-2-1  | [Redis] Attempting connection...
+backend-2-1  | Retry 1: RedisConnectionException - It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code.
+backend-1-1  | Retry 1: RedisConnectionException - It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code.
+redis-1      | Starting Redis Server
+backend-db-1  | The files belonging to this database system will be owned by user "postgres".
+backend-db-1  | This user must also own the server process.
+backend-db-1  | 
+backend-db-1  | The database cluster will be initialized with locale "en_US.utf8".
+backend-db-1  | The default database encoding has accordingly been set to "UTF8".
+backend-db-1  | The default text search configuration will be set to "english".
+backend-db-1  | 
+backend-db-1  | Data page checksums are disabled.
+backend-db-1  | 
+backend-db-1  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+backend-db-1  | creating subdirectories ... ok
+backend-db-1  | selecting dynamic shared memory implementation ... posix
+backend-2-1   | [Redis] Attempting connection...
+backend-1-1   | [Redis] Attempting connection...
+backend-2-1   | Retry 2: RedisConnectionException - It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code.
+backend-1-1   | Retry 2: RedisConnectionException - It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code.
+redis-1       | 1:C 19 Aug 2025 09:26:08.721 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis-1       | 1:C 19 Aug 2025 09:26:08.721 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-1       | 1:C 19 Aug 2025 09:26:08.721 * Redis version=8.2.0, bits=64, commit=00000000, modified=1, pid=1, just started
+redis-1       | 1:C 19 Aug 2025 09:26:08.721 * Configuration loaded
+redis-1       | 1:M 19 Aug 2025 09:26:08.721 * monotonic clock: POSIX clock_gettime
+redis-1       | 1:M 19 Aug 2025 09:26:08.722 * Running mode=standalone, port=6379.
+redis-1       | 1:M 19 Aug 2025 09:26:08.724 * <bf> RedisBloom version 8.2.0 (Git=unknown)
+redis-1       | 1:M 19 Aug 2025 09:26:08.724 * <bf> Registering configuration options: [
+redis-1       | 1:M 19 Aug 2025 09:26:08.724 * <bf> 	{ bf-error-rate       :      0.01 }
+redis-1       | 1:M 19 Aug 2025 09:26:08.724 * <bf> 	{ bf-initial-size     :       100 }
+redis-1       | 1:M 19 Aug 2025 09:26:08.724 * <bf> 	{ bf-expansion-factor :         2 }
+redis-1       | 1:M 19 Aug 2025 09:26:08.724 * <bf> 	{ cf-bucket-size      :         2 }
+redis-1       | 1:M 19 Aug 2025 09:26:08.724 * <bf> 	{ cf-initial-size     :      1024 }
+redis-1       | 1:M 19 Aug 2025 09:26:08.724 * <bf> 	{ cf-max-iterations   :        20 }
+redis-1       | 1:M 19 Aug 2025 09:26:08.724 * <bf> 	{ cf-expansion-factor :         1 }
+redis-1       | 1:M 19 Aug 2025 09:26:08.724 * <bf> 	{ cf-max-expansions   :        32 }
+redis-1       | 1:M 19 Aug 2025 09:26:08.724 * <bf> ]
+redis-1       | 1:M 19 Aug 2025 09:26:08.724 * Module 'bf' loaded from /usr/local/lib/redis/modules//redisbloom.so
+backend-db-1  | selecting default "max_connections" ... 100
+backend-2-1   | [Redis] Attempting connection...
+backend-1-1   | [Redis] Attempting connection...
+redis-1       | 1:M 19 Aug 2025 09:26:08.815 * <search> Redis version found by RedisSearch : 8.2.0 - oss
+redis-1       | 1:M 19 Aug 2025 09:26:08.815 * <search> RediSearch version 8.2.0 (Git=d81ebce)
+redis-1       | 1:M 19 Aug 2025 09:26:08.815 * <search> Low level api version 1 initialized successfully
+redis-1       | 1:M 19 Aug 2025 09:26:08.815 * <search> gc: ON, prefix min length: 2, min word length to stem: 4, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, 
+redis-1       | 1:M 19 Aug 2025 09:26:08.816 * <search> Initialized thread pools!
+redis-1       | 1:M 19 Aug 2025 09:26:08.816 * <search> Disabled workers threadpool of size 0
+redis-1       | 1:M 19 Aug 2025 09:26:08.816 * <search> Subscribe to config changes
+redis-1       | 1:M 19 Aug 2025 09:26:08.816 * <search> Enabled role change notification
+redis-1       | 1:M 19 Aug 2025 09:26:08.816 * <search> Cluster configuration: AUTO partitions, type: 0, coordinator timeout: 0ms
+redis-1       | 1:M 19 Aug 2025 09:26:08.816 * <search> Register write commands
+redis-1       | 1:M 19 Aug 2025 09:26:08.816 * Module 'search' loaded from /usr/local/lib/redis/modules//redisearch.so
+redis-1       | 1:M 19 Aug 2025 09:26:08.817 * <timeseries> RedisTimeSeries version 80200, git_sha=1439d4a439ca9c063e6ef124a510abff09a5d493
+redis-1       | 1:M 19 Aug 2025 09:26:08.817 * <timeseries> Redis version found by RedisTimeSeries : 8.2.0 - oss
+redis-1       | 1:M 19 Aug 2025 09:26:08.817 * <timeseries> Registering configuration options: [
+redis-1       | 1:M 19 Aug 2025 09:26:08.817 * <timeseries> 	{ ts-compaction-policy   :              }
+redis-1       | 1:M 19 Aug 2025 09:26:08.817 * <timeseries> 	{ ts-num-threads         :            3 }
+redis-1       | 1:M 19 Aug 2025 09:26:08.817 * <timeseries> 	{ ts-retention-policy    :            0 }
+redis-1       | 1:M 19 Aug 2025 09:26:08.817 * <timeseries> 	{ ts-duplicate-policy    :        block }
+redis-1       | 1:M 19 Aug 2025 09:26:08.817 * <timeseries> 	{ ts-chunk-size-bytes    :         4096 }
+redis-1       | 1:M 19 Aug 2025 09:26:08.817 * <timeseries> 	{ ts-encoding            :   compressed }
+redis-1       | 1:M 19 Aug 2025 09:26:08.817 * <timeseries> 	{ ts-ignore-max-time-diff:            0 }
+redis-1       | 1:M 19 Aug 2025 09:26:08.817 * <timeseries> 	{ ts-ignore-max-val-diff :     0.000000 }
+redis-1       | 1:M 19 Aug 2025 09:26:08.817 * <timeseries> ]
+redis-1       | 1:M 19 Aug 2025 09:26:08.817 * <timeseries> Detected redis oss
+redis-1       | 1:M 19 Aug 2025 09:26:08.817 * <timeseries> Enabled diskless replication
+redis-1       | 1:M 19 Aug 2025 09:26:08.817 * Module 'timeseries' loaded from /usr/local/lib/redis/modules//redistimeseries.so
+redis-1       | 1:M 19 Aug 2025 09:26:08.821 * <ReJSON> Created new data type 'ReJSON-RL'
+redis-1       | 1:M 19 Aug 2025 09:26:08.821 * <ReJSON> version: 80200 git sha: unknown branch: unknown
+redis-1       | 1:M 19 Aug 2025 09:26:08.822 * <ReJSON> Exported RedisJSON_V1 API
+redis-1       | 1:M 19 Aug 2025 09:26:08.822 * <ReJSON> Exported RedisJSON_V2 API
+redis-1       | 1:M 19 Aug 2025 09:26:08.822 * <ReJSON> Exported RedisJSON_V3 API
+redis-1       | 1:M 19 Aug 2025 09:26:08.822 * <ReJSON> Exported RedisJSON_V4 API
+redis-1       | 1:M 19 Aug 2025 09:26:08.822 * <ReJSON> Exported RedisJSON_V5 API
+redis-1       | 1:M 19 Aug 2025 09:26:08.822 * <ReJSON> Enabled diskless replication
+redis-1       | 1:M 19 Aug 2025 09:26:08.822 * <ReJSON> Initialized shared string cache, thread safe: false.
+redis-1       | 1:M 19 Aug 2025 09:26:08.822 * Module 'ReJSON' loaded from /usr/local/lib/redis/modules//rejson.so
+redis-1       | 1:M 19 Aug 2025 09:26:08.822 * <search> Acquired RedisJSON_V5 API
+redis-1       | 1:M 19 Aug 2025 09:26:08.822 * Server initialized
+redis-1       | 1:M 19 Aug 2025 09:26:08.822 * Ready to accept connections tcp
+backend-2-1   | [Redis] Connected successfully.
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 1: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-db-1  | selecting default "shared_buffers" ... 128MB
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 2: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 3: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 4: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-db-1  | selecting default time zone ... UTC
+backend-db-1  | creating configuration files ... ok
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 5: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 6: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 7: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 8: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 9: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 10: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 11: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 12: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-db-1  | running bootstrap script ... ok
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 13: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 14: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 15: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 16: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 17: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 18: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 19: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 20: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 21: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 22: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 23: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-db-1  | sh: locale: not found
+backend-db-1  | 2025-08-19 09:26:11.087 UTC [35] WARNING:  no usable system locales were found
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 24: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 25: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 26: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 27: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 28: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 29: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 30: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 31: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 32: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 33: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 34: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 35: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 36: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 37: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 38: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 39: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 40: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 41: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 42: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 43: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 44: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 45: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 46: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 47: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 48: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 49: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 50: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 51: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 52: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 53: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 54: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 55: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 56: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 57: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 58: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-1-1   | Retry 3: RedisConnectionException - It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code.
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 59: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-1-1   | [Redis] Attempting connection...
+backend-1-1   | [Redis] Connected successfully.
+backend-1-1   | [Postgres] Attempting warmup connection...
+backend-1-1   | Async Retry 1: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-db-1  | performing post-bootstrap initialization ... ok
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 60: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-1-1   | [Postgres] Attempting warmup connection...
+backend-1-1   | Async Retry 2: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 61: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-1-1   | [Postgres] Attempting warmup connection...
+backend-1-1   | Async Retry 3: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-db-1  | syncing data to disk ... ok
+backend-db-1  | 
+backend-db-1  | 
+backend-db-1  | Success. You can now start the database server using:
+backend-db-1  | 
+backend-db-1  |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+backend-db-1  | 
+backend-db-1  | initdb: warning: enabling "trust" authentication for local connections
+backend-db-1  | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 62: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-1-1   | [Postgres] Attempting warmup connection...
+backend-1-1   | Async Retry 4: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 63: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-1-1   | [Postgres] Attempting warmup connection...
+backend-1-1   | Async Retry 5: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-db-1  | waiting for server to start....2025-08-19 09:26:15.184 UTC [41] LOG:  starting PostgreSQL 17.5 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+backend-db-1  | 2025-08-19 09:26:15.185 UTC [41] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 64: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-1-1   | [Postgres] Attempting warmup connection...
+backend-1-1   | Async Retry 6: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-db-1  | 2025-08-19 09:26:15.271 UTC [44] LOG:  database system was shut down at 2025-08-19 09:26:14 UTC
+backend-db-1  | 2025-08-19 09:26:15.276 UTC [41] LOG:  database system is ready to accept connections
+backend-db-1  |  done
+backend-db-1  | server started
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 65: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-1-1   | [Postgres] Attempting warmup connection...
+backend-1-1   | Async Retry 7: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 66: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-1-1   | [Postgres] Attempting warmup connection...
+backend-1-1   | Async Retry 8: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 67: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-1-1   | [Postgres] Attempting warmup connection...
+backend-1-1   | Async Retry 9: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 68: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-1-1   | [Postgres] Attempting warmup connection...
+backend-1-1   | Async Retry 10: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-db-1  | CREATE DATABASE
+backend-db-1  | 
+backend-db-1  | 
+backend-db-1  | /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/init.sql
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 69: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-1-1   | [Postgres] Attempting warmup connection...
+backend-1-1   | Async Retry 11: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-db-1  | CREATE TABLE
+backend-db-1  | CREATE INDEX
+backend-db-1  | 
+backend-db-1  | 
+backend-db-1  | waiting for server to shut down...2025-08-19 09:26:15.784 UTC [41] LOG:  received fast shutdown request
+backend-db-1  | .2025-08-19 09:26:15.784 UTC [41] LOG:  aborting any active transactions
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 70: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-1-1   | [Postgres] Attempting warmup connection...
+backend-1-1   | Async Retry 12: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-db-1  | 2025-08-19 09:26:15.872 UTC [41] LOG:  background worker "logical replication launcher" (PID 47) exited with exit code 1
+backend-db-1  | 2025-08-19 09:26:15.873 UTC [42] LOG:  shutting down
+backend-db-1  | 2025-08-19 09:26:15.873 UTC [42] LOG:  checkpoint starting: shutdown immediate
+backend-db-1  | 2025-08-19 09:26:15.883 UTC [42] LOG:  checkpoint complete: wrote 927 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.010 s, sync=0.001 s, total=0.010 s; sync files=0, longest=0.000 s, average=0.000 s; distance=4276 kB, estimate=4276 kB; lsn=0/191A368, redo lsn=0/191A368
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 71: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-1-1   | [Postgres] Attempting warmup connection...
+backend-1-1   | Async Retry 13: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-db-1  | 2025-08-19 09:26:15.981 UTC [41] LOG:  database system is shut down
+backend-db-1  |  done
+backend-db-1  | server stopped
+backend-db-1  | 
+backend-db-1  | PostgreSQL init process complete; ready for start up.
+backend-db-1  | 
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 72: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-1-1   | [Postgres] Attempting warmup connection...
+backend-1-1   | Async Retry 14: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | Async Retry 73: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-1-1   | [Postgres] Attempting warmup connection...
+backend-1-1   | Async Retry 15: NpgsqlException - Failed to connect to 172.20.0.4:5432
+backend-db-1  | 2025-08-19 09:26:16.172 UTC [1] LOG:  starting PostgreSQL 17.5 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+backend-db-1  | 2025-08-19 09:26:16.172 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+backend-db-1  | 2025-08-19 09:26:16.172 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+backend-db-1  | 2025-08-19 09:26:16.172 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+backend-db-1  | 2025-08-19 09:26:16.175 UTC [59] LOG:  database system was shut down at 2025-08-19 09:26:15 UTC
+backend-db-1  | 2025-08-19 09:26:16.179 UTC [1] LOG:  database system is ready to accept connections
+backend-2-1   | [Postgres] Attempting warmup connection...
+backend-1-1   | [Postgres] Attempting warmup connection...
+backend-2-1   | [Postgres] Connection warmup successful.
+backend-1-1   | [Postgres] Connection warmup successful.
+load-balancer-1  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+load-balancer-1  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+load-balancer-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+load-balancer-1  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+load-balancer-1  | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+load-balancer-1  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+load-balancer-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+load-balancer-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+load-balancer-1  | /docker-entrypoint.sh: Configuration complete; ready for start up
+backend-db-1     | 2025-08-19 09:31:16.269 UTC [57] LOG:  checkpoint starting: time
+backend-db-1     | 2025-08-19 09:31:19.577 UTC [57] LOG:  checkpoint complete: wrote 37 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.307 s, sync=0.001 s, total=3.308 s; sync files=0, longest=0.000 s, average=0.000 s; distance=111 kB, estimate=111 kB; lsn=0/1936128, redo lsn=0/19360D0
+backend-db-1     | 2025-08-19 09:31:31.539 UTC [1] LOG:  received fast shutdown request
+backend-db-1     | 2025-08-19 09:31:31.539 UTC [1] LOG:  aborting any active transactions
+backend-db-1     | 2025-08-19 09:31:31.539 UTC [77] FATAL:  terminating connection due to administrator command
+backend-db-1     | 2025-08-19 09:31:31.539 UTC [64] FATAL:  terminating connection due to administrator command
+backend-db-1     | 2025-08-19 09:31:31.539 UTC [85] FATAL:  terminating connection due to administrator command
+backend-db-1     | 2025-08-19 09:31:31.543 UTC [63] FATAL:  terminating connection due to administrator command
+backend-db-1     | 2025-08-19 09:31:31.546 UTC [1] LOG:  background worker "logical replication launcher" (PID 62) exited with exit code 1
+redis-1          | 1:signal-handler (1755595891) Received SIGTERM scheduling shutdown...
+redis-1          | 1:M 19 Aug 2025 09:31:31.560 * User requested shutdown...
+redis-1          | 1:M 19 Aug 2025 09:31:31.560 # Redis is now ready to exit, bye bye...
+backend-db-1     | 2025-08-19 09:31:31.572 UTC [57] LOG:  shutting down
+backend-db-1     | 2025-08-19 09:31:31.573 UTC [57] LOG:  checkpoint starting: shutdown immediate
+backend-db-1     | 2025-08-19 09:31:31.580 UTC [57] LOG:  checkpoint complete: wrote 1016 buffers (6.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.001 s, total=0.008 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=100 kB; lsn=0/1936318, redo lsn=0/1936318
+backend-db-1     | 2025-08-19 09:31:31.680 UTC [1] LOG:  database system is shut down
+[Kredis-1 exited with code 0
+[Kload-balancer-1 exited with code 0
+[Kbackend-db-1 exited with code 0
+[Kbackend-1-1 exited with code 0
+log truncated at line 1000

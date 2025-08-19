@@ -1,0 +1,1001 @@
+
+ Network mxlange-ws_backend  Creating
+ Network mxlange-ws_backend  Created
+ Container mxlange-ws-api1-1  Creating
+ Container mxlange-ws-api2-1  Creating
+ Container mxlange-ws-api2-1  Created
+ Container mxlange-ws-api1-1  Created
+ Container lb  Creating
+ Container lb  Created
+Attaching to lb, api1-1, api2-1
+api2-1  | Listening on port 8080...
+api1-1  | Listening on port 8080...
+lb      | 
+lb      |  ┌───────────────────────────────────────────────────┐ 
+lb      |  │                   Fiber v2.52.9                   │ 
+lb      |  │               http://127.0.0.1:9999               │ 
+lb      |  │       (bound on host 0.0.0.0 and port 9999)       │ 
+lb      |  │                                                   │ 
+lb      |  │ Handlers ............. 3  Processes ........... 1 │ 
+lb      |  │ Prefork ....... Disabled  PID ................. 1 │ 
+lb      |  └───────────────────────────────────────────────────┘ 
+lb      | 
+lb      | Fetching from: http://api2:8080/payments-summary
+api2-1  | Received summary request - from:  to:  internal: 
+api2-1  | Requesting summary from: http://api1:8080/payments-summary?internal=true
+api1-1  | Received summary request - from:  to:  internal: true
+api1-1  | 2025/08/19 10:37:06 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api2-1  | 2025/08/19 10:37:06 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+lb      | Fetching from: http://api1:8080/payments-summary?from=2025-08-19T10:36:57.157Z&to=2025-08-19T10:37:10.157Z
+api1-1  | Received summary request - from: 2025-08-19T10:36:57.157Z to: 2025-08-19T10:37:10.157Z internal: 
+api1-1  | Requesting summary from: http://api2:8080/payments-summary?internal=true&from=2025-08-19T10:36:57.157Z&to=2025-08-19T10:37:10.157Z
+api2-1  | Received summary request - from: 2025-08-19T10:36:57.157Z to: 2025-08-19T10:37:10.157Z internal: true
+api2-1  | 2025/08/19 10:37:12 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api1-1  | 2025/08/19 10:37:12 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+lb      | Fetching from: http://api2:8080/payments-summary?from=2025-08-19T10:37:07.163Z&to=2025-08-19T10:37:20.163Z
+api2-1  | Received summary request - from: 2025-08-19T10:37:07.163Z to: 2025-08-19T10:37:20.163Z internal: 
+api2-1  | Requesting summary from: http://api1:8080/payments-summary?internal=true&from=2025-08-19T10:37:07.163Z&to=2025-08-19T10:37:20.163Z
+api1-1  | 2025/08/19 10:37:22 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api1-1  | Received summary request - from: 2025-08-19T10:37:07.163Z to: 2025-08-19T10:37:20.163Z internal: true
+api2-1  | 2025/08/19 10:37:22 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api1-1  | Received summary request - from: 2025-08-19T10:37:17.166Z to: 2025-08-19T10:37:30.166Z internal: 
+api1-1  | Requesting summary from: http://api2:8080/payments-summary?internal=true&from=2025-08-19T10:37:17.166Z&to=2025-08-19T10:37:30.166Z
+lb      | Fetching from: http://api1:8080/payments-summary?from=2025-08-19T10:37:17.166Z&to=2025-08-19T10:37:30.166Z
+api2-1  | Received summary request - from: 2025-08-19T10:37:17.166Z to: 2025-08-19T10:37:30.166Z internal: true
+api2-1  | 2025/08/19 10:37:32 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api1-1  | 2025/08/19 10:37:32 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+lb      | Fetching from: http://api2:8080/payments-summary?from=2025-08-19T10:37:27.169Z&to=2025-08-19T10:37:40.169Z
+api2-1  | Received summary request - from: 2025-08-19T10:37:27.169Z to: 2025-08-19T10:37:40.169Z internal: 
+api2-1  | Requesting summary from: http://api1:8080/payments-summary?internal=true&from=2025-08-19T10:37:27.169Z&to=2025-08-19T10:37:40.169Z
+api1-1  | Received summary request - from: 2025-08-19T10:37:27.169Z to: 2025-08-19T10:37:40.169Z internal: true
+api1-1  | 2025/08/19 10:37:42 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api2-1  | 2025/08/19 10:37:42 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+lb      | Fetching from: http://api1:8080/payments-summary?from=2025-08-19T10:37:37.172Z&to=2025-08-19T10:37:50.172Z
+api1-1  | Received summary request - from: 2025-08-19T10:37:37.172Z to: 2025-08-19T10:37:50.172Z internal: 
+api1-1  | Requesting summary from: http://api2:8080/payments-summary?internal=true&from=2025-08-19T10:37:37.172Z&to=2025-08-19T10:37:50.172Z
+api2-1  | Received summary request - from: 2025-08-19T10:37:37.172Z to: 2025-08-19T10:37:50.172Z internal: true
+api2-1  | 2025/08/19 10:37:52 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api1-1  | 2025/08/19 10:37:52 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api1-1  | Received summary request - from: 2025-08-19T10:37:47.175Z to: 2025-08-19T10:38:00.175Z internal: true
+api1-1  | 2025/08/19 10:38:02 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api2-1  | 2025/08/19 10:38:02 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api2-1  | Received summary request - from: 2025-08-19T10:37:47.175Z to: 2025-08-19T10:38:00.175Z internal: 
+api2-1  | Requesting summary from: http://api1:8080/payments-summary?internal=true&from=2025-08-19T10:37:47.175Z&to=2025-08-19T10:38:00.175Z
+lb      | Fetching from: http://api2:8080/payments-summary?from=2025-08-19T10:37:47.175Z&to=2025-08-19T10:38:00.175Z
+lb      | Fetching from: http://api1:8080/payments-summary?from=2025-08-19T10:37:57.178Z&to=2025-08-19T10:38:10.178Z
+api1-1  | Received summary request - from: 2025-08-19T10:37:57.178Z to: 2025-08-19T10:38:10.178Z internal: 
+api1-1  | Requesting summary from: http://api2:8080/payments-summary?internal=true&from=2025-08-19T10:37:57.178Z&to=2025-08-19T10:38:10.178Z
+api2-1  | Received summary request - from: 2025-08-19T10:37:57.178Z to: 2025-08-19T10:38:10.178Z internal: true
+api2-1  | 2025/08/19 10:38:12 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api1-1  | 2025/08/19 10:38:12 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api2-1  | Received summary request - from: 2025-08-19T10:38:07.180Z to: 2025-08-19T10:38:20.180Z internal: 
+api2-1  | Requesting summary from: http://api1:8080/payments-summary?internal=true&from=2025-08-19T10:38:07.180Z&to=2025-08-19T10:38:20.180Z
+lb      | Fetching from: http://api2:8080/payments-summary?from=2025-08-19T10:38:07.180Z&to=2025-08-19T10:38:20.180Z
+api1-1  | Received summary request - from: 2025-08-19T10:38:07.180Z to: 2025-08-19T10:38:20.180Z internal: true
+api1-1  | 2025/08/19 10:38:22 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api2-1  | 2025/08/19 10:38:22 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+lb      | Fetching from: http://api1:8080/payments-summary?from=2025-08-19T10:38:17.183Z&to=2025-08-19T10:38:30.183Z
+api2-1  | 2025/08/19 10:38:32 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api1-1  | 2025/08/19 10:38:32 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api1-1  | Received summary request - from: 2025-08-19T10:38:17.183Z to: 2025-08-19T10:38:30.183Z internal: 
+api1-1  | Requesting summary from: http://api2:8080/payments-summary?internal=true&from=2025-08-19T10:38:17.183Z&to=2025-08-19T10:38:30.183Z
+api2-1  | Received summary request - from: 2025-08-19T10:38:17.183Z to: 2025-08-19T10:38:30.183Z internal: true
+lb      | Fetching from: http://api2:8080/payments-summary?from=2025-08-19T10:38:27.185Z&to=2025-08-19T10:38:40.185Z
+api2-1  | Received summary request - from: 2025-08-19T10:38:27.185Z to: 2025-08-19T10:38:40.185Z internal: 
+api2-1  | Requesting summary from: http://api1:8080/payments-summary?internal=true&from=2025-08-19T10:38:27.185Z&to=2025-08-19T10:38:40.185Z
+api1-1  | Received summary request - from: 2025-08-19T10:38:27.185Z to: 2025-08-19T10:38:40.185Z internal: true
+api2-1  | 2025/08/19 10:38:42 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api1-1  | 2025/08/19 10:38:42 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+lb      | Fetching from: http://api1:8080/payments-summary?from=2025-08-19T10:38:37.187Z&to=2025-08-19T10:38:50.187Z
+api1-1  | 2025/08/19 10:38:52 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api1-1  | Received summary request - from: 2025-08-19T10:38:37.187Z to: 2025-08-19T10:38:50.187Z internal: 
+api1-1  | Requesting summary from: http://api2:8080/payments-summary?internal=true&from=2025-08-19T10:38:37.187Z&to=2025-08-19T10:38:50.187Z
+api2-1  | Received summary request - from: 2025-08-19T10:38:37.187Z to: 2025-08-19T10:38:50.187Z internal: true
+api2-1  | 2025/08/19 10:38:52 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+lb      | Fetching from: http://api2:8080/payments-summary?from=2025-08-19T10:38:47.191Z&to=2025-08-19T10:39:00.191Z
+api2-1  | Received summary request - from: 2025-08-19T10:38:47.191Z to: 2025-08-19T10:39:00.191Z internal: 
+api2-1  | Requesting summary from: http://api1:8080/payments-summary?internal=true&from=2025-08-19T10:38:47.191Z&to=2025-08-19T10:39:00.191Z
+api1-1  | Received summary request - from: 2025-08-19T10:38:47.191Z to: 2025-08-19T10:39:00.191Z internal: true
+api1-1  | 2025/08/19 10:39:02 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api2-1  | 2025/08/19 10:39:02 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api1-1  | Received summary request - from: 2025-08-19T10:38:57.194Z to: 2025-08-19T10:39:10.194Z internal: 
+api1-1  | Requesting summary from: http://api2:8080/payments-summary?internal=true&from=2025-08-19T10:38:57.194Z&to=2025-08-19T10:39:10.194Z
+lb      | Fetching from: http://api1:8080/payments-summary?from=2025-08-19T10:38:57.194Z&to=2025-08-19T10:39:10.194Z
+api2-1  | Received summary request - from: 2025-08-19T10:38:57.194Z to: 2025-08-19T10:39:10.194Z internal: true
+api2-1  | 2025/08/19 10:39:12 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api1-1  | 2025/08/19 10:39:12 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+lb      | Fetching from: http://api2:8080/payments-summary?from=2025-08-19T10:39:07.197Z&to=2025-08-19T10:39:20.197Z
+api2-1  | Received summary request - from: 2025-08-19T10:39:07.197Z to: 2025-08-19T10:39:20.197Z internal: 
+api1-1  | Received summary request - from: 2025-08-19T10:39:07.197Z to: 2025-08-19T10:39:20.197Z internal: true
+api2-1  | Requesting summary from: http://api1:8080/payments-summary?internal=true&from=2025-08-19T10:39:07.197Z&to=2025-08-19T10:39:20.197Z
+api2-1  | 2025/08/19 10:39:22 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api1-1  | 2025/08/19 10:39:22 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+lb      | Fetching from: http://api1:8080/payments-summary?from=2025-08-19T10:39:17.199Z&to=2025-08-19T10:39:30.199Z
+api1-1  | Received summary request - from: 2025-08-19T10:39:17.199Z to: 2025-08-19T10:39:30.199Z internal: 
+api1-1  | Requesting summary from: http://api2:8080/payments-summary?internal=true&from=2025-08-19T10:39:17.199Z&to=2025-08-19T10:39:30.199Z
+api2-1  | Received summary request - from: 2025-08-19T10:39:17.199Z to: 2025-08-19T10:39:30.199Z internal: true
+api2-1  | 2025/08/19 10:39:32 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api1-1  | 2025/08/19 10:39:32 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api2-1  | Received summary request - from: 2025-08-19T10:39:27.206Z to: 2025-08-19T10:39:40.206Z internal: 
+api2-1  | Requesting summary from: http://api1:8080/payments-summary?internal=true&from=2025-08-19T10:39:27.206Z&to=2025-08-19T10:39:40.206Z
+lb      | Fetching from: http://api2:8080/payments-summary?from=2025-08-19T10:39:27.206Z&to=2025-08-19T10:39:40.206Z
+api1-1  | Received summary request - from: 2025-08-19T10:39:27.206Z to: 2025-08-19T10:39:40.206Z internal: true
+api1-1  | 2025/08/19 10:39:42 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api2-1  | 2025/08/19 10:39:42 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+lb      | Fetching from: http://api1:8080/payments-summary?from=2025-08-19T10:39:37.209Z&to=2025-08-19T10:39:50.209Z
+api1-1  | Received summary request - from: 2025-08-19T10:39:37.209Z to: 2025-08-19T10:39:50.209Z internal: 
+api1-1  | Requesting summary from: http://api2:8080/payments-summary?internal=true&from=2025-08-19T10:39:37.209Z&to=2025-08-19T10:39:50.209Z
+api2-1  | Received summary request - from: 2025-08-19T10:39:37.209Z to: 2025-08-19T10:39:50.209Z internal: true
+api2-1  | 2025/08/19 10:39:52 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api1-1  | 2025/08/19 10:39:52 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+lb      | Fetching from: http://api2:8080/payments-summary?from=2025-08-19T10:39:47.221Z&to=2025-08-19T10:40:00.221Z
+api2-1  | Received summary request - from: 2025-08-19T10:39:47.221Z to: 2025-08-19T10:40:00.221Z internal: 
+api2-1  | Requesting summary from: http://api1:8080/payments-summary?internal=true&from=2025-08-19T10:39:47.221Z&to=2025-08-19T10:40:00.221Z
+api1-1  | Received summary request - from: 2025-08-19T10:39:47.221Z to: 2025-08-19T10:40:00.221Z internal: true
+api2-1  | 2025/08/19 10:40:02 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api1-1  | 2025/08/19 10:40:02 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+lb      | Fetching from: http://api1:8080/payments-summary?from=2025-08-19T10:39:57.238Z&to=2025-08-19T10:40:10.238Z
+api1-1  | Received summary request - from: 2025-08-19T10:39:57.238Z to: 2025-08-19T10:40:10.238Z internal: 
+api1-1  | Requesting summary from: http://api2:8080/payments-summary?internal=true&from=2025-08-19T10:39:57.238Z&to=2025-08-19T10:40:10.238Z
+api2-1  | Received summary request - from: 2025-08-19T10:39:57.238Z to: 2025-08-19T10:40:10.238Z internal: true
+api2-1  | 2025/08/19 10:40:12 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api1-1  | 2025/08/19 10:40:12 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+lb      | Fetching from: http://api2:8080/payments-summary?from=2025-08-19T10:40:07.246Z&to=2025-08-19T10:40:20.246Z
+api2-1  | Received summary request - from: 2025-08-19T10:40:07.246Z to: 2025-08-19T10:40:20.246Z internal: 
+api1-1  | Received summary request - from: 2025-08-19T10:40:07.246Z to: 2025-08-19T10:40:20.246Z internal: true
+api2-1  | Requesting summary from: http://api1:8080/payments-summary?internal=true&from=2025-08-19T10:40:07.246Z&to=2025-08-19T10:40:20.246Z
+api1-1  | 2025/08/19 10:40:22 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api2-1  | 2025/08/19 10:40:22 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+lb      | Fetching from: http://api1:8080/payments-summary?from=2025-08-19T10:40:17.250Z&to=2025-08-19T10:40:30.250Z
+api1-1  | Received summary request - from: 2025-08-19T10:40:17.250Z to: 2025-08-19T10:40:30.250Z internal: 
+api1-1  | Requesting summary from: http://api2:8080/payments-summary?internal=true&from=2025-08-19T10:40:17.250Z&to=2025-08-19T10:40:30.250Z
+api2-1  | Received summary request - from: 2025-08-19T10:40:17.250Z to: 2025-08-19T10:40:30.250Z internal: true
+api2-1  | 2025/08/19 10:40:32 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api1-1  | 2025/08/19 10:40:32 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+lb      | Fetching from: http://api2:8080/payments-summary?from=2025-08-19T10:40:27.253Z&to=2025-08-19T10:40:40.253Z
+api2-1  | Received summary request - from: 2025-08-19T10:40:27.253Z to: 2025-08-19T10:40:40.253Z internal: 
+api1-1  | Received summary request - from: 2025-08-19T10:40:27.253Z to: 2025-08-19T10:40:40.253Z internal: true
+api2-1  | Requesting summary from: http://api1:8080/payments-summary?internal=true&from=2025-08-19T10:40:27.253Z&to=2025-08-19T10:40:40.253Z
+api1-1  | 2025/08/19 10:40:42 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api2-1  | 2025/08/19 10:40:42 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api2-1  | Received summary request - from: 2025-08-19T10:40:37.256Z to: 2025-08-19T10:40:50.256Z internal: true
+api1-1  | Received summary request - from: 2025-08-19T10:40:37.256Z to: 2025-08-19T10:40:50.256Z internal: 
+api1-1  | Requesting summary from: http://api2:8080/payments-summary?internal=true&from=2025-08-19T10:40:37.256Z&to=2025-08-19T10:40:50.256Z
+lb      | Fetching from: http://api1:8080/payments-summary?from=2025-08-19T10:40:37.256Z&to=2025-08-19T10:40:50.256Z
+api1-1  | 2025/08/19 10:40:52 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api2-1  | 2025/08/19 10:40:52 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+lb      | Fetching from: http://api2:8080/payments-summary?from=2025-08-19T10:40:47.260Z&to=2025-08-19T10:41:00.260Z
+api2-1  | Received summary request - from: 2025-08-19T10:40:47.260Z to: 2025-08-19T10:41:00.260Z internal: 
+api2-1  | Requesting summary from: http://api1:8080/payments-summary?internal=true&from=2025-08-19T10:40:47.260Z&to=2025-08-19T10:41:00.260Z
+api1-1  | Received summary request - from: 2025-08-19T10:40:47.260Z to: 2025-08-19T10:41:00.260Z internal: true
+api1-1  | 2025/08/19 10:41:02 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api2-1  | 2025/08/19 10:41:02 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+lb      | Fetching from: http://api1:8080/payments-summary?from=2025-08-19T10:40:57.264Z&to=2025-08-19T10:41:10.264Z
+api1-1  | Received summary request - from: 2025-08-19T10:40:57.264Z to: 2025-08-19T10:41:10.264Z internal: 
+api1-1  | Requesting summary from: http://api2:8080/payments-summary?internal=true&from=2025-08-19T10:40:57.264Z&to=2025-08-19T10:41:10.264Z
+api2-1  | Received summary request - from: 2025-08-19T10:40:57.264Z to: 2025-08-19T10:41:10.264Z internal: true
+api2-1  | 2025/08/19 10:41:12 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api1-1  | 2025/08/19 10:41:12 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+lb      | Fetching from: http://api2:8080/payments-summary?from=2025-08-19T10:41:07.268Z&to=2025-08-19T10:41:20.268Z
+api2-1  | Received summary request - from: 2025-08-19T10:41:07.268Z to: 2025-08-19T10:41:20.268Z internal: 
+api2-1  | Requesting summary from: http://api1:8080/payments-summary?internal=true&from=2025-08-19T10:41:07.268Z&to=2025-08-19T10:41:20.268Z
+api1-1  | Received summary request - from: 2025-08-19T10:41:07.268Z to: 2025-08-19T10:41:20.268Z internal: true
+api1-1  | 2025/08/19 10:41:22 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api2-1  | 2025/08/19 10:41:22 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+lb      | Fetching from: http://api1:8080/payments-summary?from=2025-08-19T10:41:17.271Z&to=2025-08-19T10:41:30.271Z
+api1-1  | Received summary request - from: 2025-08-19T10:41:17.271Z to: 2025-08-19T10:41:30.271Z internal: 
+api1-1  | Requesting summary from: http://api2:8080/payments-summary?internal=true&from=2025-08-19T10:41:17.271Z&to=2025-08-19T10:41:30.271Z
+api2-1  | Received summary request - from: 2025-08-19T10:41:17.271Z to: 2025-08-19T10:41:30.271Z internal: true
+api2-1  | 2025/08/19 10:41:32 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api1-1  | 2025/08/19 10:41:32 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+lb      | Fetching from: http://api2:8080/payments-summary?from=2025-08-19T10:41:27.274Z&to=2025-08-19T10:41:40.274Z
+api2-1  | Received summary request - from: 2025-08-19T10:41:27.274Z to: 2025-08-19T10:41:40.274Z internal: 
+api2-1  | Requesting summary from: http://api1:8080/payments-summary?internal=true&from=2025-08-19T10:41:27.274Z&to=2025-08-19T10:41:40.274Z
+api1-1  | Received summary request - from: 2025-08-19T10:41:27.274Z to: 2025-08-19T10:41:40.274Z internal: true
+api1-1  | 2025/08/19 10:41:42 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api2-1  | 2025/08/19 10:41:42 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+lb      | Fetching from: http://api1:8080/payments-summary?from=2025-08-19T10:41:37.277Z&to=2025-08-19T10:41:50.277Z
+api1-1  | Received summary request - from: 2025-08-19T10:41:37.277Z to: 2025-08-19T10:41:50.277Z internal: 
+api1-1  | Requesting summary from: http://api2:8080/payments-summary?internal=true&from=2025-08-19T10:41:37.277Z&to=2025-08-19T10:41:50.277Z
+api2-1  | Received summary request - from: 2025-08-19T10:41:37.277Z to: 2025-08-19T10:41:50.277Z internal: true
+api2-1  | 2025/08/19 10:41:52 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api1-1  | 2025/08/19 10:41:52 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+lb      | Fetching from: http://api2:8080/payments-summary?from=2025-08-19T10:41:47.280Z&to=2025-08-19T10:42:00.280Z
+api2-1  | Received summary request - from: 2025-08-19T10:41:47.280Z to: 2025-08-19T10:42:00.280Z internal: 
+api2-1  | Requesting summary from: http://api1:8080/payments-summary?internal=true&from=2025-08-19T10:41:47.280Z&to=2025-08-19T10:42:00.280Z
+api1-1  | Received summary request - from: 2025-08-19T10:41:47.280Z to: 2025-08-19T10:42:00.280Z internal: true
+api1-1  | 2025/08/19 10:42:02 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api2-1  | 2025/08/19 10:42:02 http: superfluous response.WriteHeader call from main.handleGetSummary (main.go:323)
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+api1-1  | Read error: websocket: close 1006 (abnormal closure): unexpected EOF
+log truncated at line 1000

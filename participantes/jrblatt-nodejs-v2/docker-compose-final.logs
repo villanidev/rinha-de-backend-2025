@@ -1,0 +1,86 @@
+
+ Volume "jrblatt-nodejs-v2_rb2025"  Creating
+ Volume "jrblatt-nodejs-v2_rb2025"  Created
+ Container beercache  Creating
+ Container api2  Creating
+ Container api1  Creating
+ Container api1  Created
+ Container api2  Created
+ Container beercache  Created
+ Container uxlb  Creating
+ Container uxlb  Created
+Attaching to api1, api2, beercache, uxlb
+beercache  | 🍺 Server listening on /tmp/beer_cache.sock
+beercache  | Use 'SOCKET_NAME' environment variable to change the socket name.
+uxlb       | UXLB listening on port 9999
+uxlb       | Backends: ["/tmp/api1.sock", "/tmp/api2.sock"]
+uxlb       | FAF routes: [FastRoute { method: "POST", path: "/payments", status: 200 }]
+uxlb       | Workers: 1
+api2       | Server is listening on /tmp/api2.sock
+api1       | Server is listening on /tmp/api1.sock
+[Kapi2 exited with code 137
+api2       | Server is listening on /tmp/api2.sock
+api2       | /app/dist/database/pool.js:178
+api2       |             throw new Error("Conexão não está ativa");
+api2       |                   ^
+api2       | 
+api2       | Error: Conexão não está ativa
+api2       |     at Connection.sendRequest (/app/dist/database/pool.js:178:19)
+api2       |     at /app/dist/database/client.js:32:59
+api2       |     at DatabaseClient.executeOperation (/app/dist/database/client.js:25:26)
+api2       |     at async DatabaseClient.set (/app/dist/database/client.js:32:16)
+api2       |     at async Queue.setStorageEntry (/app/dist/services/queue.js:76:9)
+api2       | 
+api2       | Node.js v18.20.8
+[Kbeercache exited with code 137
+[Kapi2 exited with code 1
+beercache  | 🍺 Server listening on /tmp/beer_cache.sock
+beercache  | Use 'SOCKET_NAME' environment variable to change the socket name.
+api2       | Server is listening on /tmp/api2.sock
+[Kapi1 exited with code 137
+api1       | Server is listening on /tmp/api1.sock
+[Kbeercache exited with code 137
+beercache  | 🍺 Server listening on /tmp/beer_cache.sock
+beercache  | Use 'SOCKET_NAME' environment variable to change the socket name.
+api2       | /app/dist/database/pool.js:178
+api2       |             throw new Error("Conexão não está ativa");
+api2       |                   ^
+api2       | 
+api2       | Error: Conexão não está ativa
+api2       |     at Connection.sendRequest (/app/dist/database/pool.js:178:19)
+api2       |     at /app/dist/database/client.js:32:59
+api2       |     at DatabaseClient.executeOperation (/app/dist/database/client.js:25:26)
+api2       |     at async DatabaseClient.set (/app/dist/database/client.js:32:16)
+api2       |     at async Queue.setStorageEntry (/app/dist/services/queue.js:76:9)
+api2       | 
+api2       | Node.js v18.20.8
+[Kapi2 exited with code 1
+api2       | Server is listening on /tmp/api2.sock
+[Kuxlb exited with code 137
+[Kbeercache exited with code 137
+api2       | /app/dist/database/pool.js:178
+api2       |             throw new Error("Conexão não está ativa");
+api2       |                   ^
+api2       | 
+api2       | Error: Conexão não está ativa
+api2       |     at Connection.sendRequest (/app/dist/database/pool.js:178:19)
+api2       |     at /app/dist/database/client.js:32:59
+api2       |     at DatabaseClient.executeOperation (/app/dist/database/client.js:25:26)
+api2       |     at async DatabaseClient.set (/app/dist/database/client.js:32:16)
+api2       |     at async Queue.setStorageEntry (/app/dist/services/queue.js:76:9)
+api2       | 
+api2       | Node.js v18.20.8
+[Kapi2 exited with code 1
+api1       | /app/dist/database/pool.js:178
+api1       |             throw new Error("Conexão não está ativa");
+api1       |                   ^
+api1       | 
+api1       | Error: Conexão não está ativa
+api1       |     at Connection.sendRequest (/app/dist/database/pool.js:178:19)
+api1       |     at /app/dist/database/client.js:32:59
+api1       |     at DatabaseClient.executeOperation (/app/dist/database/client.js:25:26)
+api1       |     at async DatabaseClient.set (/app/dist/database/client.js:32:16)
+api1       |     at async Queue.setStorageEntry (/app/dist/services/queue.js:76:9)
+api1       | 
+api1       | Node.js v18.20.8
+log truncated at line 1000

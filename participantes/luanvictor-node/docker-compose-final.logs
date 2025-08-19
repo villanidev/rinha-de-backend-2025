@@ -1,0 +1,1001 @@
+
+ worker1 Pulling 
+ api2 Pulling 
+ api1 Pulling 
+ 59e22667830b Already exists 
+ 49a91da077e1 Already exists 
+ d929bb762a7b Already exists 
+ 42bf1b567479 Already exists 
+ 0980aecccf12 Already exists 
+ f3b872166265 Pulling fs layer 
+ 4e47ece94630 Pulling fs layer 
+ db338cf50050 Pulling fs layer 
+ 67d9d76559c8 Pulling fs layer 
+ 67d9d76559c8 Waiting 
+ f3b872166265 Downloading [==================================================>]     132B/132B
+ f3b872166265 Verifying Checksum 
+ f3b872166265 Download complete 
+ f3b872166265 Extracting [==================================================>]     132B/132B
+ f3b872166265 Extracting [==================================================>]     132B/132B
+ f3b872166265 Pull complete 
+ db338cf50050 Downloading [==================================================>]     768B/768B
+ db338cf50050 Download complete 
+ 4e47ece94630 Downloading [>                                                  ]  282.9kB/26.73MB
+ 67d9d76559c8 Downloading [==================================================>]  7.163kB/7.163kB
+ 67d9d76559c8 Verifying Checksum 
+ 67d9d76559c8 Download complete 
+ 59e22667830b Already exists 
+ 49a91da077e1 Already exists 
+ d929bb762a7b Already exists 
+ 42bf1b567479 Already exists 
+ 0980aecccf12 Already exists 
+ f3b872166265 Already exists 
+ 4e47ece94630 Downloading [=================================>                 ]  17.81MB/26.73MB
+ 4e47ece94630 Pulling fs layer 
+ db338cf50050 Pulling fs layer 
+ 67d9d76559c8 Pulling fs layer 
+ 67d9d76559c8 Download complete 
+ 4e47ece94630 Downloading [=================================>                 ]  17.81MB/26.73MB
+ db338cf50050 Download complete 
+ 59e22667830b Already exists 
+ 49a91da077e1 Already exists 
+ d929bb762a7b Already exists 
+ 42bf1b567479 Already exists 
+ 0980aecccf12 Already exists 
+ f3b872166265 Already exists 
+ 4e47ece94630 Pulling fs layer 
+ db338cf50050 Pulling fs layer 
+ 67d9d76559c8 Pulling fs layer 
+ 67d9d76559c8 Download complete 
+ 4e47ece94630 Downloading [=================================>                 ]  17.81MB/26.73MB
+ db338cf50050 Download complete 
+ 4e47ece94630 Download complete 
+ 4e47ece94630 Download complete 
+ 4e47ece94630 Download complete 
+ 4e47ece94630 Extracting [>                                                  ]  294.9kB/26.73MB
+ 4e47ece94630 Extracting [>                                                  ]  294.9kB/26.73MB
+ 4e47ece94630 Extracting [>                                                  ]  294.9kB/26.73MB
+ 4e47ece94630 Extracting [=========>                                         ]  5.308MB/26.73MB
+ 4e47ece94630 Extracting [=========>                                         ]  5.308MB/26.73MB
+ 4e47ece94630 Extracting [=========>                                         ]  5.308MB/26.73MB
+ 4e47ece94630 Extracting [============>                                      ]  6.783MB/26.73MB
+ 4e47ece94630 Extracting [============>                                      ]  6.783MB/26.73MB
+ 4e47ece94630 Extracting [============>                                      ]  6.783MB/26.73MB
+ 4e47ece94630 Extracting [===============>                                   ]  8.552MB/26.73MB
+ 4e47ece94630 Extracting [===============>                                   ]  8.552MB/26.73MB
+ 4e47ece94630 Extracting [===============>                                   ]  8.552MB/26.73MB
+ 4e47ece94630 Extracting [================>                                  ]  8.847MB/26.73MB
+ 4e47ece94630 Extracting [================>                                  ]  8.847MB/26.73MB
+ 4e47ece94630 Extracting [================>                                  ]  8.847MB/26.73MB
+ 4e47ece94630 Extracting [=================>                                 ]  9.437MB/26.73MB
+ 4e47ece94630 Extracting [=================>                                 ]  9.437MB/26.73MB
+ 4e47ece94630 Extracting [=================>                                 ]  9.437MB/26.73MB
+ 4e47ece94630 Extracting [==================>                                ]  9.732MB/26.73MB
+ 4e47ece94630 Extracting [==================>                                ]  9.732MB/26.73MB
+ 4e47ece94630 Extracting [==================>                                ]  9.732MB/26.73MB
+ 4e47ece94630 Extracting [==================>                                ]  10.03MB/26.73MB
+ 4e47ece94630 Extracting [==================>                                ]  10.03MB/26.73MB
+ 4e47ece94630 Extracting [==================>                                ]  10.03MB/26.73MB
+ 4e47ece94630 Extracting [===================>                               ]  10.62MB/26.73MB
+ 4e47ece94630 Extracting [===================>                               ]  10.62MB/26.73MB
+ 4e47ece94630 Extracting [===================>                               ]  10.62MB/26.73MB
+ 4e47ece94630 Extracting [====================>                              ]  10.91MB/26.73MB
+ 4e47ece94630 Extracting [====================>                              ]  10.91MB/26.73MB
+ 4e47ece94630 Extracting [====================>                              ]  10.91MB/26.73MB
+ 4e47ece94630 Extracting [====================>                              ]  11.21MB/26.73MB
+ 4e47ece94630 Extracting [====================>                              ]  11.21MB/26.73MB
+ 4e47ece94630 Extracting [====================>                              ]  11.21MB/26.73MB
+ 4e47ece94630 Extracting [======================>                            ]   11.8MB/26.73MB
+ 4e47ece94630 Extracting [======================>                            ]   11.8MB/26.73MB
+ 4e47ece94630 Extracting [======================>                            ]   11.8MB/26.73MB
+ 4e47ece94630 Extracting [======================>                            ]  12.09MB/26.73MB
+ 4e47ece94630 Extracting [======================>                            ]  12.09MB/26.73MB
+ 4e47ece94630 Extracting [======================>                            ]  12.09MB/26.73MB
+ 4e47ece94630 Extracting [========================>                          ]  12.98MB/26.73MB
+ 4e47ece94630 Extracting [========================>                          ]  12.98MB/26.73MB
+ 4e47ece94630 Extracting [========================>                          ]  12.98MB/26.73MB
+ 4e47ece94630 Extracting [========================>                          ]  13.27MB/26.73MB
+ 4e47ece94630 Extracting [========================>                          ]  13.27MB/26.73MB
+ 4e47ece94630 Extracting [========================>                          ]  13.27MB/26.73MB
+ 4e47ece94630 Extracting [=========================>                         ]  13.86MB/26.73MB
+ 4e47ece94630 Extracting [=========================>                         ]  13.86MB/26.73MB
+ 4e47ece94630 Extracting [=========================>                         ]  13.86MB/26.73MB
+ 4e47ece94630 Extracting [===========================>                       ]  14.45MB/26.73MB
+ 4e47ece94630 Extracting [===========================>                       ]  14.45MB/26.73MB
+ 4e47ece94630 Extracting [===========================>                       ]  14.45MB/26.73MB
+ 4e47ece94630 Extracting [=============================>                     ]  15.93MB/26.73MB
+ 4e47ece94630 Extracting [=============================>                     ]  15.93MB/26.73MB
+ 4e47ece94630 Extracting [=============================>                     ]  15.93MB/26.73MB
+ 4e47ece94630 Extracting [===============================>                   ]  16.81MB/26.73MB
+ 4e47ece94630 Extracting [===============================>                   ]  16.81MB/26.73MB
+ 4e47ece94630 Extracting [===============================>                   ]  16.81MB/26.73MB
+ 4e47ece94630 Extracting [================================>                  ]   17.4MB/26.73MB
+ 4e47ece94630 Extracting [================================>                  ]   17.4MB/26.73MB
+ 4e47ece94630 Extracting [================================>                  ]   17.4MB/26.73MB
+ 4e47ece94630 Extracting [====================================>              ]  19.76MB/26.73MB
+ 4e47ece94630 Extracting [====================================>              ]  19.76MB/26.73MB
+ 4e47ece94630 Extracting [====================================>              ]  19.76MB/26.73MB
+ 4e47ece94630 Extracting [======================================>            ]  20.64MB/26.73MB
+ 4e47ece94630 Extracting [======================================>            ]  20.64MB/26.73MB
+ 4e47ece94630 Extracting [======================================>            ]  20.64MB/26.73MB
+ 4e47ece94630 Extracting [=======================================>           ]  21.23MB/26.73MB
+ 4e47ece94630 Extracting [=======================================>           ]  21.23MB/26.73MB
+ 4e47ece94630 Extracting [=======================================>           ]  21.23MB/26.73MB
+ 4e47ece94630 Extracting [============================================>      ]  23.59MB/26.73MB
+ 4e47ece94630 Extracting [============================================>      ]  23.59MB/26.73MB
+ 4e47ece94630 Extracting [============================================>      ]  23.59MB/26.73MB
+ 4e47ece94630 Extracting [=================================================> ]  26.25MB/26.73MB
+ 4e47ece94630 Extracting [=================================================> ]  26.25MB/26.73MB
+ 4e47ece94630 Extracting [=================================================> ]  26.25MB/26.73MB
+ 4e47ece94630 Extracting [=================================================> ]  26.54MB/26.73MB
+ 4e47ece94630 Extracting [=================================================> ]  26.54MB/26.73MB
+ 4e47ece94630 Extracting [=================================================> ]  26.54MB/26.73MB
+ 4e47ece94630 Extracting [==================================================>]  26.73MB/26.73MB
+ 4e47ece94630 Extracting [==================================================>]  26.73MB/26.73MB
+ 4e47ece94630 Extracting [==================================================>]  26.73MB/26.73MB
+ 4e47ece94630 Pull complete 
+ 4e47ece94630 Pull complete 
+ 4e47ece94630 Pull complete 
+ db338cf50050 Extracting [==================================================>]     768B/768B
+ db338cf50050 Extracting [==================================================>]     768B/768B
+ db338cf50050 Extracting [==================================================>]     768B/768B
+ db338cf50050 Extracting [==================================================>]     768B/768B
+ db338cf50050 Extracting [==================================================>]     768B/768B
+ db338cf50050 Extracting [==================================================>]     768B/768B
+ db338cf50050 Pull complete 
+ db338cf50050 Pull complete 
+ db338cf50050 Pull complete 
+ 67d9d76559c8 Extracting [==================================================>]  7.163kB/7.163kB
+ 67d9d76559c8 Extracting [==================================================>]  7.163kB/7.163kB
+ 67d9d76559c8 Extracting [==================================================>]  7.163kB/7.163kB
+ 67d9d76559c8 Extracting [==================================================>]  7.163kB/7.163kB
+ 67d9d76559c8 Extracting [==================================================>]  7.163kB/7.163kB
+ 67d9d76559c8 Extracting [==================================================>]  7.163kB/7.163kB
+ 67d9d76559c8 Pull complete 
+ 67d9d76559c8 Pull complete 
+ 67d9d76559c8 Pull complete 
+ api2 Pulled 
+ worker1 Pulled 
+ api1 Pulled 
+ Network luanvictor-node_backend  Creating
+ Network luanvictor-node_backend  Created
+ Container luanvictor-node-cache-1  Creating
+ Container luanvictor-node-cache-1  Created
+ Container luanvictor-node-worker1-1  Creating
+ Container luanvictor-node-api2-1  Creating
+ Container luanvictor-node-api1-1  Creating
+ Container luanvictor-node-api2-1  Created
+ Container luanvictor-node-worker1-1  Created
+ Container luanvictor-node-api1-1  Created
+ Container luanvictor-node-nginx-1  Creating
+ Container luanvictor-node-nginx-1  Created
+Attaching to api1-1, api2-1, cache-1, nginx-1, worker1-1
+cache-1  | 1:C 19 Aug 2025 05:39:42.711 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+cache-1  | 1:C 19 Aug 2025 05:39:42.711 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+cache-1  | 1:C 19 Aug 2025 05:39:42.711 * Redis version=7.2.10, bits=64, commit=00000000, modified=0, pid=1, just started
+cache-1  | 1:C 19 Aug 2025 05:39:42.711 * Configuration loaded
+cache-1  | 1:M 19 Aug 2025 05:39:42.711 * monotonic clock: POSIX clock_gettime
+cache-1  | 1:M 19 Aug 2025 05:39:42.712 * Running mode=standalone, port=6379.
+cache-1  | 1:M 19 Aug 2025 05:39:42.712 * Server initialized
+cache-1  | 1:M 19 Aug 2025 05:39:42.712 * Ready to accept connections tcp
+nginx-1  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+nginx-1  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+nginx-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+nginx-1  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+nginx-1  | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+nginx-1  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+nginx-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+nginx-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+worker1-1  | [WORKER] Iniciando...
+worker1-1  | [REDIS] Conectado com sucesso!
+nginx-1    | /docker-entrypoint.sh: Configuration complete; ready for start up
+api1-1     | [REDIS] Conectado com sucesso!
+api2-1     | [REDIS] Conectado com sucesso!
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] Circuit breaker fechado - tentando novamente
+worker1-1  | [WORKER] default falhou para 8296a5c1-467a-4576-9c62-4200c11d6c55: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 45b588e0-b7f4-4906-923f-0793aa62b1e3: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 192fc443-232e-4706-a460-4130645f2270: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 2fde4228-59ac-47e7-9784-37aa2e4081b4: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 5d1535e2-4edb-4c9b-81cb-ec9f230a5e41: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para fa5f5c07-7876-4cbf-b56a-05f65582887b: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para fa5c601c-b1f0-46cf-a7cf-297c0114f9f9: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para fb66ec31-c855-47ac-993d-f1943efcedac: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 5d20cb9c-d8e0-4d35-b3a5-f252609b7491: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para e0ab6a8a-6e82-460d-9893-0821b384b0d3: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para e0b763f6-bbca-4ba9-8bc3-a54904545a42: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 7b396a92-ac4e-47c7-b812-5a394b8be709: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para abf4e154-d2dd-4faa-8f03-5938b618b299: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para f81f371e-b879-4a7d-b72b-957f1dc987e9: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 162dc916-ed6b-420c-a843-f52466607947: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker fechado - tentando novamente
+worker1-1  | [WORKER] default falhou para 859dfc5b-f3e9-4c48-8960-45feaffd2539: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para f9326a59-e521-40ac-bfc3-b96119357f4a: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 8e7aeafb-ba32-44f2-a8ad-c78c50c58032: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para a317a0cc-7433-4c93-92b0-050805cb276b: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 5c074f51-dc5b-47b7-bf40-00694067bf7c: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 358a15ee-3b6e-4689-b287-0017f1ef24a9: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 7978bb57-a10f-44d6-a809-578f2054ba74: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 62056a61-5360-4aeb-b253-b8b54ac7fa7c: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para a268ed02-a77e-48bd-8464-7cfd7c24e59f: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para b731714f-5499-47ab-9dea-435c9f89a3aa: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 40af1290-aceb-4d85-8915-ea5481e56a06: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para a0f3887a-6809-4dec-a598-7bd8d0710e9b: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 84793ae1-ce71-4b63-9ee6-f7f24a725a68: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 9fdad8ab-333e-4f3d-9411-0b293fdec185: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para c825313a-415c-4994-bb1d-ee565778c125: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker fechado - tentando novamente
+worker1-1  | [WORKER] default falhou para 3575f50b-7e10-4b18-9ad8-5a3fe241f20a: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para f4cc69d8-4e6d-45f1-8285-c9bad2917c86: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 3a6cbe69-ede1-49bd-bf82-f1e813b0c6ab: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 07759482-0d6e-44ea-afc2-a68bd8d02a49: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 9eebd2f0-f033-46d4-bb06-61ff0184d4c3: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 9d375f91-c150-420b-abbb-45714bc4812c: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 590c7b8c-32f0-4595-914f-973325ad74df: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 4fc9e1a4-cfaa-4256-a2f7-79aa5005ccb9: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para b1731c84-6468-474e-9211-5559b56e8426: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para f09b7078-85ea-424e-b421-377422d13795: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 0a569f14-55de-49b9-8d12-bb59164498fc: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 2328d2d3-0176-4805-8273-d7816b7cff28: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para f70d31e2-8243-4ed3-b285-1dc5a79e9209: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 389fa797-9138-4163-873b-6d762ee86cca: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para f24a5493-02be-4968-943a-9c5c83c2f4b5: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker fechado - tentando novamente
+worker1-1  | [WORKER] default falhou para b63c83be-e74c-4f54-a39b-7badef1bb00a: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para e5d75443-a17c-4de4-9241-e65518ad0390: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 203d626b-bfc1-4eed-acab-7b95514434f0: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para ec54fced-2478-4dd6-8c34-e1c95eb0a47f: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 84abb22f-054c-4c22-9f3b-8dd69652417c: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para f301c1d8-0b05-4fa0-9136-7b8fcb0082b5: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 894a8aec-6085-43d6-8544-5d45478acee0: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 49a8ae14-3148-4546-8a0a-60fbd067a62b: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 3b849e57-4c07-4234-952e-dbb974dae8e4: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para a496dcbc-cdd8-4769-9d7b-f127d301490b: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 3b4357eb-92e5-4dee-bd04-4ae04b09851a: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 2b858f38-856e-40c2-aa69-5a8fad488a35: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para d397706b-de19-4285-acc7-c3e3fc20a1d7: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para f4bd7c3b-d032-4909-92a6-891da71c15fb: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para ca99e551-b5c9-419c-9a89-127fd6896088: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker fechado - tentando novamente
+worker1-1  | [WORKER] default falhou para 1a1215a2-0ee4-4196-8b72-afc6d4fbb22b: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 6353bea5-4832-4b4c-ab7c-06017dca2105: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para f8ee2112-0236-4a54-97d5-1eaf8e501807: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para f22061ac-9e0d-4202-b990-acb761ac6a5a: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para caf4a6ac-10ed-4237-9235-bab7530875ba: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para a6db3b74-7ee8-41ad-998a-fdc97a3da535: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 40ce0929-356e-4022-9120-0d53cc71dabf: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para d415e961-a8b1-4e42-bf77-ee20cb7c8313: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 4857cb85-089a-4cc6-bd9c-688fd491cf55: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para dc3345fa-f662-4e69-98d6-5ccf79dd081d: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 94fdf8ec-7f4f-47e8-a768-253ebbd3d0ec: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 6be9392e-321d-495f-8918-b481b01c9b95: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para e921d6e3-1f7c-4468-9729-b37c0a47d4cc: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 8dcb90ed-a640-47be-8277-9acdc5ee7192: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 39fece40-66fa-4653-af55-ae0a55c6ac6b: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker fechado - tentando novamente
+worker1-1  | [WORKER] default falhou para 61b17916-d1fe-4de7-aff6-d763cafb65d8: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para f8fa8dca-ce73-438c-b4e5-efcb3d68717c: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 0cd1aed7-35ce-49cf-86b1-f50f17db7c01: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 90c9504f-948f-4cfe-9e3f-d697bc356bbf: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 3dadc78a-5a19-42cd-a606-6af4d34b766f: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para fca20c91-7350-43da-a939-de1ea2bdead3: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para c069ae73-2ce8-4155-bea7-233a3dff58a4: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para eafad519-c7c3-41c7-b444-6fe9c0449b22: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 0e6a6a1b-cdfb-41e8-a892-a617dcf280f6: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para af8814f2-36d0-4c2c-9bad-4a49810d2ece: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 9457244e-4074-4e3b-88d5-f47c7c8265cd: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 344fc567-320d-45de-809b-f20ef832c81c: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 11ee71b4-ab34-44ce-8ff2-a4f6c6569204: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 17a2f2d1-f616-41bd-9d11-c61284557bfd: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 9cca432f-659c-4009-846a-98a246c9967e: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker fechado - tentando novamente
+worker1-1  | [WORKER] default falhou para 306bbac4-fe0f-497f-bff7-4b19e3b49d1f: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para f9004ebc-c6f1-4802-9a5a-3ca525da7575: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 4506026f-142c-4d6f-b1c8-30ba58fc2ca3: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para df05b13e-6108-44cb-96f2-036ee6b1e0ac: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 31f8bc0a-eeda-48eb-8c31-443293d0b8bf: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para bd8f589a-f2e6-4f3e-a91d-daf6eab83f86: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para b12cac0b-6f19-41c8-ab47-1860d7ce1936: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 0398ec03-bfcd-4067-bdd2-5d38624783cb: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 1d053c3c-6496-49e8-a8d6-72c319ba7591: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 57e3e769-df7c-499e-bcb9-52d3449f9734: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 489f24b1-32a7-4991-bc5e-207bf4434ee3: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para b305baa8-da64-44f9-bc41-ea1c395bed85: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 1977d4a7-e89a-4ac8-a49a-41e9fb71c43e: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para d9fcf05b-91e0-49c9-be98-a92528c783c0: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 148a8e6d-a0b7-4cbb-a6bf-3b32fb4b0397: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker fechado - tentando novamente
+worker1-1  | [WORKER] default falhou para 306e17af-8862-4e15-a5ec-a51868e68af8: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 600b8c85-a52d-42b2-835b-ffc251d57b74: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 12ad17f5-99d0-438c-8806-f23ecc0ecf9b: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 0568fe9c-a51e-4c51-b6a2-62ee6e4ffcd0: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para ec78c0a8-a4b5-46ee-a394-8dce521a6154: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para bc8ba1c6-76eb-4694-a0fe-78df6b95fb60: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para ef995bb7-66c3-477b-9581-e6c7d95ebade: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para e9f96fad-c578-4cfb-9f04-99f94d4870f4: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para cef48282-4f0d-41b7-b356-b556b6119306: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 3d89aef6-8419-4726-98be-48d4e2f3205d: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para e4b4eccf-919f-457e-b7ca-ad7c3e4a66ba: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para fbd39a35-bff0-4615-9f58-575fcede2caa: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 91a13c7d-4481-4a86-871c-2e330d778242: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para d0103e56-a303-424d-b23f-908a07503656: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 8e5874c0-b291-4d0a-af36-541db212da54: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker fechado - tentando novamente
+worker1-1  | [WORKER] default falhou para 9dcda05c-0028-46f4-99d9-d0f5479bf59a: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 477a6fa6-f440-482e-b1e0-8a1ac0b19603: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 4747097a-7ca0-4627-96bd-22f30b05d56d: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 00f5c101-9e7a-45b2-b9e8-984ca7429f8f: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para b4dd6982-ddc7-4699-89d4-1875c68c7900: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para f43de56f-ec5e-44d4-951a-c9b1c6964ea5: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 566b7c74-f480-4f3c-a934-4dd1eef63b8e: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 0e25f2ce-a7f5-4a32-ae45-4a52e9081eff: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 13a45602-46e0-4ed2-912e-265c9b3b8ecc: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 3049d356-3676-468f-b303-ef56ea016ff5: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 763fa34b-168e-4624-913c-4954f84b26b6: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 51aee772-ceeb-4903-a9fb-05df0bc8f902: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 23669ff0-72db-434c-a6a2-0200f15a31c8: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 718ba8af-6e82-4cac-9d1f-cc01cadf81b5: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 3c11e8de-a6bd-407a-8e94-0aeec5bbc96d: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker fechado - tentando novamente
+worker1-1  | [WORKER] default falhou para d4690c2e-4ab0-4659-8d10-906290a492b1: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 83e3c83b-14d8-4560-8226-4afa1d226192: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 5969f50a-f871-4100-8482-bab879824072: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para dc7f5ef7-d472-464e-9d18-1b6580512ca4: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para e8fe84e4-c953-4a2b-a879-0cd5656ccaa5: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 1f173883-4439-40a1-a147-d14f3b745b1b: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 7ad57b46-687b-4307-acaa-f0201893b995: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para ebe0ed44-f36d-41ad-8530-8f2666f29ac6: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 364f2237-0109-4a59-a5cd-6d71390050ce: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 09c945a9-99d8-448c-9edb-ae58da6d9c19: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 3f31c92d-dea9-4669-89dd-fbadcedebfe3: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 0382afba-e5b4-4e8e-b543-ab8d1254dc99: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para aa22036e-40b3-4b04-8f77-5eeb13965560: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para c373daf4-7078-48a1-9708-58d6f7302b68: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 01b5e84e-5f68-46d4-8d2f-30bd981bda58: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker fechado - tentando novamente
+worker1-1  | [WORKER] default falhou para 03787e64-dec6-45cd-877c-7464c7d61a45: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para fc43bcc0-d04d-4f33-854d-62aaff448e07: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 0a01ba20-47b0-4eaa-9759-1734e3bc2d7a: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para f2229264-d7f4-4126-af60-1f03ebd2df8f: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para f92db55c-2623-4f4c-b015-83368e2eafcb: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para f13ce74a-d5b5-4388-b2c8-2e15bd6debed: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para fe2ce7d8-6523-4eea-9bfd-ed59a5c9cb88: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para da11961f-c810-4d0e-94a6-cc5ddeed45d0: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para cc719cd1-3b9c-4cde-9362-9834250bb434: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para f99808d1-e283-4283-8f89-cf3046942fa9: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para cb16d24d-52ff-41ce-8833-d4af0fcc64ce: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para f2ad1877-c53a-4a7b-87ca-471c42f23ce3: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 56427abc-ad47-4892-a807-9d0c86d4ec36: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para db7dafb9-2577-4951-b190-49517395ce92: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 7cc50b50-8ec1-457b-a1b5-12e5d00d4e5f: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker fechado - tentando novamente
+worker1-1  | [WORKER] default falhou para 2d541539-22a4-4c6d-9563-916d2e5a005c: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 18547300-bb4d-48c4-944d-ba3403d1094d: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para f306e7f5-c5d5-429f-9341-e7c10effa890: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 5eeb001f-ba8d-41c7-8f03-b118f59b2c95: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 2640b4c8-bb5f-40d6-bf5e-be5e3f8ccd09: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 51d90a1c-6cec-499c-8fa1-81bdce4e2589: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 2b36db2f-9579-42a2-9051-5deb86fdc0d2: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 36c962ba-4ddb-47d5-a6aa-6f707fe67798: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para a70b33b5-b193-4f2c-844b-db42472da2e9: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 17a3a313-a4d6-4eb6-9a73-0d0cd131bd9f: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 816b9f58-47f7-4774-b61b-d3ed08e168da: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 0e342b8c-eebd-4ba7-80e7-193e485e71f3: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 673ed9e8-7d48-47f2-932a-1d1c78a779c7: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 501604c0-3341-4057-a901-a9d1212c48ca: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para ed470752-1308-47bc-9a8d-16ed1d4cea6c: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker fechado - tentando novamente
+worker1-1  | [WORKER] default falhou para 196db0ba-5679-4a65-a190-1212fabf3a36: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 62d049fe-1e19-4119-90bd-8ca2348d8f4d: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 8345aab4-1fb0-4838-96b7-656d073bc229: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 0b167555-fdbc-4771-843e-1c211743c6bf: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 30abfd48-3b5a-4a10-ba83-a3182ebb624a: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para 3ee675a4-715d-4c1b-bc37-bb79ada43ece: Headers Timeout Error
+worker1-1  | [WORKER] default falhou para fe3d7a36-4975-4b63-b161-647da7e4deef: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 3cb74ccd-74e0-41e6-9dbf-97528cf10a2a: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 2d3605cd-8fa3-460a-84ed-f735c8470e00: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para bdc3f887-238a-4713-bb77-b4d7266ed7cd: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para d02d3589-afe0-423c-9135-d18b65100cb6: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 031621c5-e1ea-47b4-85f0-40ed910724e0: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 54c13f5a-21bd-45f1-8adc-f13e4711df96: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para a5469c6d-ac08-478e-a11b-2299f9949897: Headers Timeout Error
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] default falhou para 10178e83-45e3-4888-a524-494b17b2c62a: Headers Timeout Error
+worker1-1  | [WORKER] Falhou geral bdc3f887-238a-4713-bb77-b4d7266ed7cd
+worker1-1  | [WORKER] Falhou geral 2d3605cd-8fa3-460a-84ed-f735c8470e00
+worker1-1  | [WORKER] Falhou geral fe3d7a36-4975-4b63-b161-647da7e4deef
+worker1-1  | [WORKER] Falhou geral 3ee675a4-715d-4c1b-bc37-bb79ada43ece
+worker1-1  | [WORKER] Falhou geral 30abfd48-3b5a-4a10-ba83-a3182ebb624a
+worker1-1  | [WORKER] Falhou geral 0b167555-fdbc-4771-843e-1c211743c6bf
+worker1-1  | [WORKER] Falhou geral 8345aab4-1fb0-4838-96b7-656d073bc229
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] Falhou geral 62d049fe-1e19-4119-90bd-8ca2348d8f4d
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] Falhou geral 196db0ba-5679-4a65-a190-1212fabf3a36
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] Falhou geral 3cb74ccd-74e0-41e6-9dbf-97528cf10a2a
+worker1-1  | [WORKER] Falhou geral 6f9e309a-f287-49fd-b526-c07860abdf40
+worker1-1  | [WORKER] Falhou geral 7f819291-4c70-4709-9abb-8144844c66e4
+worker1-1  | [WORKER] Falhou geral 21279d1c-b403-4912-8f4a-5ac5e37f72c0
+worker1-1  | [WORKER] Falhou geral 9cfffb55-5cbf-40be-97b1-f5ec8044581a
+worker1-1  | [WORKER] Falhou geral 80a6f922-4dc5-44fe-93dc-6cab39afde56
+worker1-1  | [WORKER] Falhou geral 20f1a91b-0ca3-4ffa-a8c0-211c05f10aa1
+worker1-1  | [WORKER] Falhou geral db34b592-672d-4f8b-bc51-83b307f5d11e
+worker1-1  | [WORKER] Falhou geral da129f77-e3fe-43a5-af95-0e3d2744d27d
+worker1-1  | [WORKER] Falhou geral 222586b5-29aa-4cba-83ff-f71e911302ec
+worker1-1  | [WORKER] Falhou geral 1e850be1-1aa4-4d8b-983e-4b297fd9d5b3
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] Falhou geral d02d3589-afe0-423c-9135-d18b65100cb6
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] Falhou geral 10178e83-45e3-4888-a524-494b17b2c62a
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] Falhou geral 54c13f5a-21bd-45f1-8adc-f13e4711df96
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] Falhou geral 031621c5-e1ea-47b4-85f0-40ed910724e0
+worker1-1  | [WORKER] Circuit breaker aberto devido a muitas falhas
+worker1-1  | [WORKER] Falhou geral a5469c6d-ac08-478e-a11b-2299f9949897
+worker1-1  | [WORKER] Falhou geral 5fa2ac95-7842-43f2-a64a-c54fb6f514a4
+worker1-1  | [WORKER] Falhou geral eb462afe-362b-438c-b503-8893fc1ebd91
+worker1-1  | [WORKER] Falhou geral f749425d-05e6-447d-897f-491c47c216ee
+worker1-1  | [WORKER] Falhou geral c735fa25-42b6-42eb-91b6-4f2b04121cbe
+worker1-1  | [WORKER] Falhou geral ef35bb61-5e41-4d40-beeb-4fc3b4b58ec9
+worker1-1  | [WORKER] Falhou geral 41c64ae9-0382-448f-a93e-bce83d8caeef
+worker1-1  | [WORKER] Falhou geral 4bcee92c-71b2-4ab2-b963-5f7b2863c1b0
+worker1-1  | [WORKER] Falhou geral 51ffb1c1-2298-496e-9c02-11d66d8be1f6
+worker1-1  | [WORKER] Falhou geral e60b325d-c04b-4602-b36f-07a4b9bbfd73
+worker1-1  | [WORKER] Falhou geral bc640d1d-713b-40f5-9067-d6b4c92e9342
+worker1-1  | [WORKER] Falhou geral 2d8cb2e7-9659-48f7-9ee1-db5b5261f500
+worker1-1  | [WORKER] Falhou geral ebe640d3-f71a-4519-b064-3013937cdf9c
+worker1-1  | [WORKER] Falhou geral da6c506c-279a-420b-aff6-278ccc92fcdb
+worker1-1  | [WORKER] Falhou geral 59291b65-821f-41de-a55c-8cfa8e569353
+worker1-1  | [WORKER] Falhou geral 711312f0-6249-4ded-9a66-0979edf27e8f
+worker1-1  | [WORKER] Falhou geral 51e9e099-bbf5-401d-a74c-68bfe62cb6f0
+worker1-1  | [WORKER] Falhou geral 179998de-a06a-4029-baf4-cc4a2b1bb4d3
+worker1-1  | [WORKER] Falhou geral 68890b35-ce74-4e35-823d-001da9b00419
+worker1-1  | [WORKER] Falhou geral 22e569c5-c74b-4c37-b4f6-7513ce28443a
+worker1-1  | [WORKER] Falhou geral e618c64c-a033-424b-94ed-63aa78550383
+worker1-1  | [WORKER] Falhou geral 3ab8a49c-16b2-490d-a35b-868521c24631
+worker1-1  | [WORKER] Falhou geral d5132a04-8138-4bc6-a2aa-551a280adf15
+worker1-1  | [WORKER] Falhou geral 41c41128-acda-41f3-a371-bc0e0544d814
+worker1-1  | [WORKER] Falhou geral dcd7704a-dcaa-4046-8845-9c3064864427
+worker1-1  | [WORKER] Falhou geral 7387b32f-b2bf-476d-9fd5-8841c24937df
+worker1-1  | [WORKER] Falhou geral 0888cdd1-339c-4a34-9a2e-6810cba70b0e
+worker1-1  | [WORKER] Falhou geral bd8ac07e-2a76-41b5-b034-90b5792c57a5
+worker1-1  | [WORKER] Falhou geral abb3235a-40d7-423a-aa4f-865b82e4df89
+worker1-1  | [WORKER] Falhou geral 1afed5ac-3976-424a-9286-3f9ea8c8c557
+worker1-1  | [WORKER] Falhou geral bfdc5920-7c5a-4c4a-aff0-d60d1e832e03
+worker1-1  | [WORKER] Falhou geral ad301a5a-2160-40d1-af5d-07553baa24b8
+worker1-1  | [WORKER] Falhou geral 33af603c-ebdd-4abd-85f4-4d2fe6d4d145
+worker1-1  | [WORKER] Falhou geral c510532e-ab41-41e4-885e-0326ae6573c6
+worker1-1  | [WORKER] Falhou geral 51b02128-9994-4b9d-8149-a5b0d6330559
+worker1-1  | [WORKER] Falhou geral d26efc2e-6b52-4426-8261-c310250b8768
+worker1-1  | [WORKER] Falhou geral 6a2666f0-9a74-4622-bc14-e9d06a037cf7
+worker1-1  | [WORKER] Falhou geral 01d658eb-7792-410d-9bad-0ca71219723b
+worker1-1  | [WORKER] Falhou geral cae9cd00-77bc-4ac0-9089-5b1f47c955d1
+worker1-1  | [WORKER] Falhou geral 365e7db7-781f-477e-9dae-eb848ea5784e
+worker1-1  | [WORKER] Falhou geral ae471bb4-3207-402f-8da7-48c8b1515cf5
+worker1-1  | [WORKER] Falhou geral 875f76e0-9a1f-4196-b3b0-593ac806989a
+worker1-1  | [WORKER] Falhou geral 3f288985-8147-4991-b9aa-f4961752c8d6
+worker1-1  | [WORKER] Falhou geral 56abdc50-f8e8-437e-8ff4-db1763c8314a
+worker1-1  | [WORKER] Falhou geral e64df301-f2b8-44a4-8287-28e9ff4e6ce6
+worker1-1  | [WORKER] Falhou geral 541b7485-f3aa-4294-bbf9-b9f2de9aaa95
+worker1-1  | [WORKER] Falhou geral d7674e4a-398d-4b42-9159-dd78a10304e6
+worker1-1  | [WORKER] Falhou geral 0e0fca73-63d3-48e5-82ba-9fd19f2c7d7a
+worker1-1  | [WORKER] Falhou geral dc267fdd-f6d8-4b67-a51f-a2f99acdaa9e
+worker1-1  | [WORKER] Falhou geral 3ee102e3-7778-4cfd-b566-0c149f6f8c48
+worker1-1  | [WORKER] Falhou geral 1befacb2-f4c2-4b3a-82b7-c3145327e230
+worker1-1  | [WORKER] Falhou geral 1855b960-4331-46e9-b9a8-7f96b659dd21
+worker1-1  | [WORKER] Falhou geral 3e2fbc00-dbd6-4b74-8fb7-3411406aeffe
+worker1-1  | [WORKER] Falhou geral db0bacad-f1c1-4ffe-81a1-38577fa20642
+worker1-1  | [WORKER] Falhou geral eaec72a6-0f4d-4f87-b9c1-762536461c73
+worker1-1  | [WORKER] Falhou geral 4b1a26e8-d75e-4c66-a728-cab59c5d33dc
+worker1-1  | [WORKER] Falhou geral e7971382-5648-49cd-9afe-148e5c03cd7a
+worker1-1  | [WORKER] Falhou geral 1bf702de-e321-404e-bcf1-7fcbf0bb2eca
+worker1-1  | [WORKER] Falhou geral 45990667-4460-4983-b129-8cca2402cc73
+worker1-1  | [WORKER] Falhou geral d6bb7137-a7af-4d83-a901-3b44464b1341
+worker1-1  | [WORKER] Falhou geral de42a1eb-3e08-4322-8464-19a0bc549e70
+worker1-1  | [WORKER] Falhou geral 4feca96b-4740-4d9b-a962-02670b9ba9b3
+worker1-1  | [WORKER] Falhou geral 38747f28-a95b-4573-b488-9d1f98be0b8e
+worker1-1  | [WORKER] Falhou geral 87d06ae4-2efd-4efc-866f-3f0d485a4ea2
+worker1-1  | [WORKER] Falhou geral fb2ae98f-b07e-4957-817e-55f759f0dc50
+worker1-1  | [WORKER] Falhou geral 20084882-7b88-4d60-ade6-ac7e33196dda
+worker1-1  | [WORKER] Falhou geral a30982e0-7c72-4620-a55f-46372cbea2d8
+worker1-1  | [WORKER] Falhou geral d77c4ea5-4e6e-4ea3-8687-926cac832fd9
+worker1-1  | [WORKER] Falhou geral 3e7626d6-b3c9-41ea-8b3e-d47e4aa82b58
+worker1-1  | [WORKER] Falhou geral 8f631c4a-fe95-4850-a061-62c4af043e24
+worker1-1  | [WORKER] Falhou geral dda49ac0-b1ad-4bdb-81d8-820fcda0214e
+worker1-1  | [WORKER] Falhou geral 6be496b7-0301-4ebc-b0c8-d6d4f5073125
+worker1-1  | [WORKER] Falhou geral 1e5d107b-7010-4eeb-8267-5554c3e443a8
+worker1-1  | [WORKER] Falhou geral 8ebcd8f1-f644-40d5-a9e9-7061591e5b7f
+worker1-1  | [WORKER] Falhou geral 68240ddc-d8b5-4536-86a3-3e8851e78e2f
+worker1-1  | [WORKER] Falhou geral 53c0e590-7478-4c88-bff2-483f0c7a2cd2
+worker1-1  | [WORKER] Falhou geral f5bf122e-449e-4efe-b04b-38f3d3aa869b
+worker1-1  | [WORKER] Falhou geral 7e8b47d2-f0bf-4960-bc6d-6a63684e8678
+worker1-1  | [WORKER] Falhou geral daba8c2a-c69a-4c48-bcc8-ec4baccaa55c
+worker1-1  | [WORKER] Falhou geral 3bd4dee7-234d-4514-a24e-5bdb4aa48aa8
+worker1-1  | [WORKER] Falhou geral 31586ddf-ad40-4bc5-905b-e1e2db76586e
+worker1-1  | [WORKER] Falhou geral 531eeaba-3d00-4c9b-bf59-ef4da7a56bfd
+worker1-1  | [WORKER] Falhou geral 26bc86be-b106-494c-b2ae-dc69de992428
+worker1-1  | [WORKER] Falhou geral aa593888-692a-4549-8468-7c74e244bb85
+worker1-1  | [WORKER] Falhou geral a9a72d38-50c9-43e2-9ada-ddf007a42bca
+worker1-1  | [WORKER] Falhou geral 32e03ab5-3ae0-4d92-b187-28ba3273efec
+worker1-1  | [WORKER] Falhou geral b2a45590-38fb-4765-b7b3-3f3988d3e10a
+worker1-1  | [WORKER] Falhou geral 37f3e151-231f-45f4-8feb-cd98a35067ed
+worker1-1  | [WORKER] Falhou geral 62151d95-4d59-462c-99c7-3e1064231c04
+worker1-1  | [WORKER] Falhou geral 9b184973-b024-44fc-a766-a4afeeaf3f0b
+worker1-1  | [WORKER] Falhou geral 4f5e61cb-19ea-44b3-a16f-94d89f2b7b01
+worker1-1  | [WORKER] Falhou geral b6f55156-3429-404c-99b6-6848aeb34ddb
+worker1-1  | [WORKER] Falhou geral 65e4131c-122e-4854-b21d-b1499b8f8b88
+worker1-1  | [WORKER] Falhou geral 11a34f4b-67b0-4de8-93c7-74426848cf70
+worker1-1  | [WORKER] Falhou geral 065848c8-7391-4214-a116-395e51cb7dc9
+worker1-1  | [WORKER] Falhou geral ff9618de-8be9-4b34-a0c4-f8025d52424e
+worker1-1  | [WORKER] Falhou geral f9917185-08ab-4809-a581-0eea74b6474e
+worker1-1  | [WORKER] Falhou geral 4bfde2c9-7c72-45cc-9a7f-308d22494bce
+worker1-1  | [WORKER] Falhou geral e169538c-d6ab-4d84-8740-383bff5db586
+worker1-1  | [WORKER] Falhou geral d0315408-dbf0-4954-bb3e-39c4bea343ab
+worker1-1  | [WORKER] Falhou geral 65bf5fc4-9f9c-427d-9f0f-5194cfdc6437
+worker1-1  | [WORKER] Falhou geral 4c5b91c0-d840-4ebf-8480-2e811687976a
+worker1-1  | [WORKER] Falhou geral 0028b8b6-7d4a-49b0-b9c6-eaf2b2cfadba
+worker1-1  | [WORKER] Falhou geral 09099093-5ddc-47e0-8764-64c58e5b4d1e
+worker1-1  | [WORKER] Falhou geral dcbeea41-0bd7-4833-aa79-983644c120ff
+worker1-1  | [WORKER] Falhou geral 42c0a12c-c08d-4ea8-b490-3b942d754159
+worker1-1  | [WORKER] Falhou geral b6fc8321-eb9e-4043-af3c-ac3d0450e0b0
+worker1-1  | [WORKER] Falhou geral eee7ef34-e3eb-4aea-9477-49760d02db28
+worker1-1  | [WORKER] Falhou geral 29f97ce0-e150-4fb0-9b45-0f6d33260d9d
+worker1-1  | [WORKER] Falhou geral fdfe539d-82b4-4f25-8391-f6052a1fbd5e
+worker1-1  | [WORKER] Falhou geral ae7615d8-cbb3-4705-bf0a-66843f999df4
+worker1-1  | [WORKER] Falhou geral b3b8e5dd-098b-4799-8887-14a3b86d5cb7
+worker1-1  | [WORKER] Falhou geral 2263c2b8-7702-4aae-afd3-22859af4eda5
+worker1-1  | [WORKER] Falhou geral 58f8a38e-1876-4e89-a52f-dca7335ea5b0
+worker1-1  | [WORKER] Falhou geral 07db533d-d6ef-462b-bc05-b6733c422f11
+worker1-1  | [WORKER] Falhou geral d186bee5-e10d-4c0b-b68b-cbc342ff9a12
+worker1-1  | [WORKER] Falhou geral cd618ffe-50c8-4c23-bcae-ca2f3920d5ca
+worker1-1  | [WORKER] Falhou geral 25e9b29a-fabb-4d0a-9c00-a92f782ffd12
+worker1-1  | [WORKER] Falhou geral c0e768fe-00aa-4c32-8976-e1b8f8ee35fe
+worker1-1  | [WORKER] Falhou geral de0ad04a-2494-4ad8-9418-4957e6441544
+worker1-1  | [WORKER] Falhou geral 45a1ad79-9a07-4232-8adf-bceeb11fcc74
+worker1-1  | [WORKER] Falhou geral 29b8e1a3-615f-4922-a1ee-5d0862e813b7
+worker1-1  | [WORKER] Falhou geral 8214dcb8-0da9-4728-8a3e-bad3a7910313
+worker1-1  | [WORKER] Falhou geral 7f65c83f-40a6-4d5a-a06d-acbc4c954010
+worker1-1  | [WORKER] Falhou geral a075ad3c-1467-403d-a5d9-ad10c1e7a6f2
+worker1-1  | [WORKER] Falhou geral fad49d65-639e-4235-9107-c1dc4e0f4186
+worker1-1  | [WORKER] Falhou geral c98c4bdc-7f1c-4af2-a121-58360fa6179c
+worker1-1  | [WORKER] Falhou geral 7ef4a41f-8253-4c89-a50e-3f8cc1dd7a61
+worker1-1  | [WORKER] Falhou geral cf2f57e7-f5bd-44b1-86e4-2ce14d0dbd45
+worker1-1  | [WORKER] Falhou geral 2709efb7-7367-42de-bc2f-8cc792d05c86
+worker1-1  | [WORKER] Falhou geral 0c720b7b-36a7-429a-b339-1dbbf3957fbe
+worker1-1  | [WORKER] Falhou geral ee6c0e42-cbba-4eb2-8a6e-bd9a7c0fb7e9
+worker1-1  | [WORKER] Falhou geral 1dc0395f-297d-40f3-bf9c-c665e1887db9
+worker1-1  | [WORKER] Falhou geral 9db3314b-39dd-42cc-ba08-b1b26ad49390
+worker1-1  | [WORKER] Falhou geral 8b290282-fb2f-40cb-894e-ae046abac6b6
+worker1-1  | [WORKER] Falhou geral f5f614a3-959a-41e7-8007-0ccf10c0540e
+worker1-1  | [WORKER] Falhou geral 01942fdd-9fcf-4c28-b643-2383bd6ac5ad
+worker1-1  | [WORKER] Falhou geral 26595d79-67bb-450f-b0c6-ec85f28ab84a
+worker1-1  | [WORKER] Falhou geral fbecdfab-0619-480c-a8ab-818d3fb0f526
+worker1-1  | [WORKER] Falhou geral 9075254c-f240-470c-ac97-456c4db28698
+worker1-1  | [WORKER] Falhou geral d2c3a3f3-5b3f-4fd8-8d6e-3beb3a6b3346
+worker1-1  | [WORKER] Falhou geral cb3d5743-5288-4fc2-ba41-4f8fe4edb3f9
+worker1-1  | [WORKER] Falhou geral abacc229-a8c5-4675-98c6-a6474cb21172
+worker1-1  | [WORKER] Falhou geral b683b344-9be4-4f55-9ab2-e3819d5b8332
+worker1-1  | [WORKER] Falhou geral 7d7b979c-fee7-49ac-9e78-bdf2a413326a
+worker1-1  | [WORKER] Falhou geral ca1f983e-297f-4310-b221-e6d960639f62
+worker1-1  | [WORKER] Falhou geral d827201a-5c05-4fc6-8b29-fd3459083792
+worker1-1  | [WORKER] Falhou geral 91cb0a2f-3699-48f0-9b8d-e47aeb0f7af7
+worker1-1  | [WORKER] Falhou geral 6daeca21-c9df-4dfd-b9c8-1a2e58dd379d
+worker1-1  | [WORKER] Falhou geral 6bd53faf-360f-4dd4-8dcc-d25dcfd890d1
+worker1-1  | [WORKER] Falhou geral 0784f6c6-8fb5-4a9d-b05d-5691652cb488
+worker1-1  | [WORKER] Falhou geral 10739479-3c42-4a9b-843f-5c0e47d7a535
+worker1-1  | [WORKER] Falhou geral 73513af3-4ba1-4f72-8a17-9fc38d45d0e5
+worker1-1  | [WORKER] Falhou geral 3dd08bdb-d0ba-48bc-ade0-84cb2a880d21
+worker1-1  | [WORKER] Falhou geral c0f7d6f7-f515-4bba-b8d1-9bb56e1a22a7
+worker1-1  | [WORKER] Falhou geral c9e9fe94-77ef-49d6-85ec-ef216e55ebf9
+worker1-1  | [WORKER] Falhou geral ed5e56da-31fb-4a9e-9ead-675bfa092252
+worker1-1  | [WORKER] Falhou geral ead298d7-0158-4187-a15c-8b40e560ffe4
+worker1-1  | [WORKER] Falhou geral 3bfd7f6e-b3df-42dc-be91-fe21564c5872
+worker1-1  | [WORKER] Falhou geral 18634fe1-ef72-44e2-96b5-0a2f13776e02
+worker1-1  | [WORKER] Falhou geral fb487aeb-1ba0-4912-8c29-d73f908d8009
+worker1-1  | [WORKER] Falhou geral bd61e6e8-92c0-4bec-a699-fcc7c705bc33
+worker1-1  | [WORKER] Falhou geral 3f609a4c-ee18-4340-9285-1f2087901a43
+worker1-1  | [WORKER] Falhou geral 5ccc7640-344f-484a-bc0e-d6c3dce6026f
+worker1-1  | [WORKER] Falhou geral 0e741fb9-f0b8-4ed7-b2b2-214c794ccf8d
+worker1-1  | [WORKER] Falhou geral 8f3c641b-94f9-4e2f-8e48-0482eba00840
+worker1-1  | [WORKER] Falhou geral d00ceaf3-8087-4d34-9780-303418332be6
+worker1-1  | [WORKER] Falhou geral faa7e7ea-f87a-4c64-adc9-e2d5a784cc7c
+worker1-1  | [WORKER] Falhou geral e3ed5207-4373-4306-bbe6-2e6a3ae47410
+worker1-1  | [WORKER] Falhou geral a45c8f50-2111-47eb-acfb-4e5d6cee6041
+worker1-1  | [WORKER] Falhou geral ebdd33d5-005a-4461-8e61-77f78738331c
+worker1-1  | [WORKER] Falhou geral 5718b12f-cce8-42ff-832d-2fcd6305a023
+worker1-1  | [WORKER] Falhou geral 2238f9f4-3694-4ea5-bef0-d6555bf13954
+worker1-1  | [WORKER] Falhou geral 1840108b-98be-43c3-87b6-0ad0dda28f69
+worker1-1  | [WORKER] Falhou geral b7fa00eb-020d-45ff-9dd5-f35cde713048
+worker1-1  | [WORKER] Falhou geral ff6e4324-40fb-4d87-9cdd-f74d733bd24d
+worker1-1  | [WORKER] Falhou geral 290fc706-2101-4abc-91f3-6709f282a814
+worker1-1  | [WORKER] Falhou geral e8e9b79f-61d9-46ae-b4cc-91af9d4a6e56
+worker1-1  | [WORKER] Falhou geral cdb2dd4c-58b2-4a0a-8cdd-75d0f8f73d14
+worker1-1  | [WORKER] Falhou geral 65015f04-46be-4475-8a96-a3f870863e1c
+worker1-1  | [WORKER] Falhou geral 1ec08874-4978-4f42-ae15-6fc343b597f3
+worker1-1  | [WORKER] Falhou geral 14bbce0f-3970-4152-85ab-c7e1903b9a87
+worker1-1  | [WORKER] Falhou geral db1d32db-df7f-4a67-878a-db106281af36
+worker1-1  | [WORKER] Falhou geral 156e82a9-a433-4e08-aee8-cc756f6f0718
+worker1-1  | [WORKER] Falhou geral 9b433723-b81e-4587-966f-6ab3d587911a
+worker1-1  | [WORKER] Falhou geral dded8150-f9a3-49e9-aedb-42272c5e3ac1
+worker1-1  | [WORKER] Falhou geral 4f525f90-2e64-4320-a8fa-3fad378c27bc
+worker1-1  | [WORKER] Falhou geral c1708093-5b70-421a-8d00-912722b59327
+worker1-1  | [WORKER] Falhou geral 74155ac2-6d42-4942-a356-346fc9f489dd
+worker1-1  | [WORKER] Falhou geral 814fbcf0-d6ed-42b2-8c46-31b208b582fc
+worker1-1  | [WORKER] Falhou geral c4ad4982-79ed-4037-a292-6d376ea8fb58
+worker1-1  | [WORKER] Falhou geral 13adbadd-222a-4fff-bf02-9a1a6a9b2e9e
+worker1-1  | [WORKER] Falhou geral 693617fa-19f2-42a9-8c7d-6e73c6720123
+worker1-1  | [WORKER] Falhou geral 5d8ac179-78bc-4aa9-9038-7a596ca47f3b
+worker1-1  | [WORKER] Falhou geral 99a02d3d-f4d9-4df2-937e-c79e864a0351
+worker1-1  | [WORKER] Falhou geral f43d4245-25ac-46e4-8324-927f5ff48547
+worker1-1  | [WORKER] Falhou geral 7f26c24b-2999-4d3e-9fa1-1e7f3d8d45ab
+worker1-1  | [WORKER] Falhou geral e3cb64f2-b23d-4dd5-bbe8-7916a9025531
+worker1-1  | [WORKER] Falhou geral dfbfe903-c4a4-4f37-b9c2-cd6dd4fe1d92
+worker1-1  | [WORKER] Falhou geral f86a7132-60d7-404a-b3b9-180e601f01e0
+worker1-1  | [WORKER] Falhou geral 40bc785e-5919-4469-a848-de814d8c448c
+worker1-1  | [WORKER] Falhou geral b0b3b09d-71b7-4126-a081-25e71e18bd2d
+worker1-1  | [WORKER] Falhou geral 126d3615-5571-4fc3-8d4d-3c3b36765050
+worker1-1  | [WORKER] Falhou geral d4a3a50b-528c-4ade-8757-2753395d6e8e
+worker1-1  | [WORKER] Falhou geral 390b989c-5c8c-464f-b175-7bbe8460acd3
+worker1-1  | [WORKER] Falhou geral 8aaa95ef-3a2c-4f61-b897-7dbc99e74573
+worker1-1  | [WORKER] Falhou geral c03d8456-1586-414f-9c4c-3c7a0836ae23
+worker1-1  | [WORKER] Falhou geral 27b8104d-9de7-4024-9d3d-8ca10a88fa75
+worker1-1  | [WORKER] Falhou geral 2016b64c-dbe3-4140-9a7d-a9ff785e946d
+worker1-1  | [WORKER] Falhou geral 8ea7afb3-a0da-4074-a965-850cebb961b1
+worker1-1  | [WORKER] Falhou geral 9afd3f8d-7091-4740-98a1-a38a10966852
+worker1-1  | [WORKER] Falhou geral 6d579a49-9485-4ccc-b9f2-4884e2cab112
+worker1-1  | [WORKER] Falhou geral fed5b83e-d90d-4948-82dd-a115b7a864e6
+worker1-1  | [WORKER] Falhou geral 545f8676-93dd-43ec-af98-47993b730f8d
+worker1-1  | [WORKER] Falhou geral 83e24265-0910-4831-9617-ff00c030a733
+worker1-1  | [WORKER] Falhou geral 4146f782-640c-4df1-8905-9291c62114c9
+worker1-1  | [WORKER] Falhou geral fcd4de40-4665-4092-a9c9-9206411c7862
+worker1-1  | [WORKER] Falhou geral 1966d959-d681-45b6-b0f7-af468f763af0
+worker1-1  | [WORKER] Falhou geral e7d73e5c-d675-4894-a5f3-268ed429425e
+worker1-1  | [WORKER] Falhou geral ef85f23b-7938-4def-8164-c12fefd263b3
+worker1-1  | [WORKER] Falhou geral df0ebcd1-999f-4718-acd5-b01b844998c0
+worker1-1  | [WORKER] Falhou geral 895a293e-85fa-4c4d-a3ab-96816bd2c450
+worker1-1  | [WORKER] Falhou geral 85989f51-0e3e-48c7-96f2-c9a01d1419be
+worker1-1  | [WORKER] Falhou geral 88852d9b-1a81-457c-8c58-cc3adb4ac11d
+worker1-1  | [WORKER] Falhou geral 910d08bc-4bb0-45ec-b1b5-140e23b21ef0
+worker1-1  | [WORKER] Falhou geral 05c5de2c-80bb-4a19-8f6d-8a90df6f1ad2
+worker1-1  | [WORKER] Falhou geral 78a2a7fb-6365-4f9d-8ab7-1e1d1213de3e
+worker1-1  | [WORKER] Falhou geral 489f086d-a845-4fbc-9ff5-54c5437d1201
+worker1-1  | [WORKER] Falhou geral c74d2e9b-178a-4ddb-bda6-074e7323fd0c
+worker1-1  | [WORKER] Falhou geral c5408c30-81cb-4336-b8d7-a035e3e0b811
+worker1-1  | [WORKER] Falhou geral 31cd0326-3149-4764-81ed-93abb92b112e
+worker1-1  | [WORKER] Falhou geral 61cf67ed-f4dc-499b-8413-8c0ebfd7335b
+worker1-1  | [WORKER] Falhou geral b7350d1d-a528-4dc3-8364-1b518442c7b8
+worker1-1  | [WORKER] Falhou geral 597bab56-2c83-4cdb-b6ea-11f3534101a1
+worker1-1  | [WORKER] Falhou geral abf1085b-b874-4bcd-b107-b77688bd0dfc
+worker1-1  | [WORKER] Falhou geral 3b65a17d-7f9a-40cd-affb-b65dca062389
+worker1-1  | [WORKER] Falhou geral 6aeadd5d-df54-4300-94df-0e6c37f4f525
+worker1-1  | [WORKER] Falhou geral 153d0714-57bf-4615-a3f7-6da37fd4551c
+worker1-1  | [WORKER] Falhou geral 2aed273f-0d7a-402c-9d49-698ee26b5b33
+worker1-1  | [WORKER] Falhou geral 39a995e1-fd44-4ab7-8da4-355a381836f9
+worker1-1  | [WORKER] Falhou geral c98cb4fa-1901-419e-bd50-e5514909cd35
+worker1-1  | [WORKER] Falhou geral b3e3d1d6-a62d-431b-9677-783eddd02f6e
+worker1-1  | [WORKER] Falhou geral 501ab9f5-d98d-4dbc-95a3-f2bd1bddeda0
+worker1-1  | [WORKER] Falhou geral efff30df-238c-42f3-99fb-3d7da4d56a06
+worker1-1  | [WORKER] Falhou geral 17ea7bee-258d-46ca-931c-3511240a47fb
+worker1-1  | [WORKER] Falhou geral 3eb18dd7-3bfe-458c-837f-71027652a90a
+worker1-1  | [WORKER] Falhou geral 82493282-b2dc-496c-9be9-ddfb9662fa8d
+worker1-1  | [WORKER] Falhou geral f98766b2-d053-4b0c-9dab-d4a2a8e5a8a2
+worker1-1  | [WORKER] Falhou geral 946f7e46-d3e1-4376-bad1-648ae1be5919
+worker1-1  | [WORKER] Falhou geral 96d3b7c9-7932-4ee5-b057-48feba2d7e0d
+worker1-1  | [WORKER] Falhou geral f4a39791-1ecc-449d-8023-2da589476f31
+worker1-1  | [WORKER] Falhou geral 6410e999-4afe-4439-90eb-1779ee2d1cad
+worker1-1  | [WORKER] Falhou geral 8dcd6c91-cf55-4060-9041-cdc12692e967
+worker1-1  | [WORKER] Falhou geral f7709f81-2c6f-4714-9252-af5b6637444d
+worker1-1  | [WORKER] Falhou geral 4d813f93-92ea-471b-9f70-437698162330
+worker1-1  | [WORKER] Falhou geral ff8ff6f8-1898-4bf9-a5be-b7ad9c5a77b3
+worker1-1  | [WORKER] Falhou geral c617e8ae-b40f-47bb-b398-dd1a2eeae328
+worker1-1  | [WORKER] Falhou geral 1f6b8156-3a9e-4bde-8875-4f5552748e58
+worker1-1  | [WORKER] Falhou geral 58f81e1e-86d5-445b-8ae0-294661564eeb
+worker1-1  | [WORKER] Falhou geral aafa421e-99d0-4f91-922a-177deb178d59
+worker1-1  | [WORKER] Falhou geral 03ff06a8-d2fc-4be6-a073-418903ee8510
+worker1-1  | [WORKER] Falhou geral cc5df969-822d-4366-9532-901baa13299f
+worker1-1  | [WORKER] Falhou geral 989cc8b4-8986-4e6a-860f-e4b9daa1d742
+worker1-1  | [WORKER] Falhou geral 29598cb9-8557-48ba-b74f-c74e4349238c
+worker1-1  | [WORKER] Falhou geral e71c4eb3-cf40-4f65-b5ca-616ddf0b85ca
+worker1-1  | [WORKER] Falhou geral 4c273460-33f8-4509-9919-8375fa8e25d6
+worker1-1  | [WORKER] Falhou geral 84660f41-7d55-4401-b7f4-c32e5269b090
+worker1-1  | [WORKER] Falhou geral da5d1189-03e4-446d-a7dc-96bf7d0255ce
+worker1-1  | [WORKER] Falhou geral 04feef24-92dd-42b6-99c9-889a99e51675
+worker1-1  | [WORKER] Falhou geral 021538e4-b79b-419b-a8df-bca5437ece5e
+worker1-1  | [WORKER] Falhou geral 10c36c03-e068-4bcd-b164-ce06f5820e63
+worker1-1  | [WORKER] Falhou geral 35edb108-e95a-487a-900a-fbff80b80bd9
+worker1-1  | [WORKER] Falhou geral d4124172-c4c7-4b2b-8195-0b467d603b9d
+worker1-1  | [WORKER] Falhou geral b2abbda0-af77-4fe3-a6a1-5d155d50860b
+worker1-1  | [WORKER] Falhou geral 0d5fac7a-fb9d-4aab-afca-0461564b3afe
+worker1-1  | [WORKER] Falhou geral 07ed2b4f-89b3-4714-bf85-68357f26ac5a
+worker1-1  | [WORKER] Falhou geral 32752247-618c-4cbb-ac33-81a4414fcc64
+worker1-1  | [WORKER] Falhou geral cbdab306-98bc-47ce-b77e-6b7e40fab617
+worker1-1  | [WORKER] Falhou geral a6fbfffc-0f29-4ca1-b51d-93948ff84ea4
+worker1-1  | [WORKER] Falhou geral 905bafc0-f6e2-41a7-b62e-1630bc2cf8d3
+worker1-1  | [WORKER] Falhou geral 47418bcc-40e9-497d-ab67-09fee576a420
+worker1-1  | [WORKER] Falhou geral 35572a36-d9cf-46dc-b832-e7a08f07c34a
+worker1-1  | [WORKER] Falhou geral 575537d8-791d-49a4-a3a4-dfc8c5111074
+worker1-1  | [WORKER] Falhou geral 5701f49b-1170-4562-85e7-2268055cb20d
+worker1-1  | [WORKER] Falhou geral c547718d-7f90-4dd2-9601-f2be95e014a1
+worker1-1  | [WORKER] Falhou geral 727cf74a-0908-42c7-bfad-64b157bd4842
+worker1-1  | [WORKER] Falhou geral 4678cf72-fa31-4ee7-8dd1-94155a802f19
+worker1-1  | [WORKER] Falhou geral 1a95efbc-d928-44c7-970f-aaa13e716890
+worker1-1  | [WORKER] Falhou geral 71498a01-af90-4936-b85a-9e5a9976d8d2
+worker1-1  | [WORKER] Falhou geral 4146e34b-e7f3-4747-954b-752f3116e578
+worker1-1  | [WORKER] Falhou geral d710d6c6-d071-4e84-9dc2-3649ee0ef17c
+worker1-1  | [WORKER] Falhou geral 293737f6-fc87-450b-ac69-d03283a5767f
+worker1-1  | [WORKER] Falhou geral 6a87129d-e1be-4434-a6b3-bc6a54f59eaf
+worker1-1  | [WORKER] Falhou geral c4f25b55-d61e-4ca5-86da-affbf27d8afe
+worker1-1  | [WORKER] Falhou geral f5cca0c3-9ed2-4f6c-ba2f-5165374335c2
+worker1-1  | [WORKER] Falhou geral 2b53255a-824b-430b-a9da-11810885ff2e
+worker1-1  | [WORKER] Falhou geral 69781c87-e209-442a-986d-7c9d90c0da01
+worker1-1  | [WORKER] Falhou geral 8fd967e3-790a-4a1d-9500-46aad06b89c7
+worker1-1  | [WORKER] Falhou geral e0dd5b7f-5da9-4fe0-9512-8b98360d10c4
+worker1-1  | [WORKER] Falhou geral e1e81ca4-3616-409b-b4c2-9fad2a8ce638
+worker1-1  | [WORKER] Falhou geral 34c6135a-3161-4a94-9e35-039a7f3e4c92
+worker1-1  | [WORKER] Falhou geral 620c5139-16f6-493d-bd9b-5105198c41f9
+worker1-1  | [WORKER] Falhou geral 2f989421-304f-4294-b5df-a15fa46ea527
+worker1-1  | [WORKER] Falhou geral 286db904-fc78-4dbe-aa86-8c37d14fb5b9
+worker1-1  | [WORKER] Falhou geral 930750ec-938f-4ab0-a09b-56022fb8f5ba
+worker1-1  | [WORKER] Falhou geral 934feeaf-ad4e-499e-b313-363b8807aeed
+worker1-1  | [WORKER] Falhou geral 7ad1689e-a5f2-406c-953d-613e28a7205a
+worker1-1  | [WORKER] Falhou geral 4b541068-7b8f-4b16-a827-7fe525fcd460
+worker1-1  | [WORKER] Falhou geral eaf2b2c9-28ef-480a-82ef-793734acdcbe
+worker1-1  | [WORKER] Falhou geral 20a51859-eefc-48e9-a77e-ab337d579e6e
+worker1-1  | [WORKER] Falhou geral f15f8613-d106-4744-81ea-8ab97c68d4a8
+worker1-1  | [WORKER] Falhou geral e0c63d9c-b9e2-45ac-877b-4b82991ce7f4
+worker1-1  | [WORKER] Falhou geral ccdb59ab-ad30-45c8-8a09-7eef1faf54cc
+worker1-1  | [WORKER] Falhou geral 451f0c7a-9538-4c0d-a727-14babe62d429
+worker1-1  | [WORKER] Falhou geral efac9872-e98d-4d8c-a523-8cf21563f923
+worker1-1  | [WORKER] Falhou geral fffbe4a9-4e97-44b1-8a0e-9820386b93c2
+worker1-1  | [WORKER] Falhou geral b92eab64-67e4-40f3-9a52-e27c8172d026
+worker1-1  | [WORKER] Falhou geral b81e6ead-603f-41b4-92ce-f78c0d688af4
+worker1-1  | [WORKER] Falhou geral 568b5737-bbb4-4559-bfe2-b974dc4de0a0
+worker1-1  | [WORKER] Falhou geral 832ea1e7-0874-42af-82a8-9f64e2eaef59
+worker1-1  | [WORKER] Falhou geral 943810e8-0a03-4eaa-ad74-a753e4ec53bc
+worker1-1  | [WORKER] Falhou geral 6749a5a6-26f1-460a-941f-d0696199c427
+worker1-1  | [WORKER] Falhou geral 6d39b3e8-5c6b-4034-affc-9b77a3e60aed
+worker1-1  | [WORKER] Falhou geral 7a2ae383-6e59-42d1-b327-f6b2b4d3c69f
+worker1-1  | [WORKER] Falhou geral ba11c959-1bbf-4d1b-a11e-d83dc5e4891e
+worker1-1  | [WORKER] Falhou geral 987d2f5a-b832-4d32-87c8-1deda66f3e74
+worker1-1  | [WORKER] Falhou geral 86f55f4b-042a-4db2-87fe-61c93807c70c
+worker1-1  | [WORKER] Falhou geral 832ef258-18da-4b18-afbb-68e39ae49f16
+worker1-1  | [WORKER] Falhou geral 971f6f99-baa2-44ee-be3a-eb023d096f49
+worker1-1  | [WORKER] Falhou geral 2fb77ca3-67f7-44d1-8c25-ae94e100b1d8
+worker1-1  | [WORKER] Falhou geral 32be2f53-45cf-4ff7-afc0-762b3f17946d
+worker1-1  | [WORKER] Falhou geral 1e9eb6be-3187-4ee2-897e-7db5f3ded98d
+worker1-1  | [WORKER] Falhou geral ac20e642-4315-4aba-aaed-2595466ecf62
+worker1-1  | [WORKER] Falhou geral cf0fe328-5a8f-4ff8-8e3b-c29bd24fc032
+worker1-1  | [WORKER] Falhou geral cffb643e-7467-4be6-995e-855e560f6d4d
+worker1-1  | [WORKER] Falhou geral 33c41c3c-e8b5-4aea-8732-e07ef8ceb4b0
+worker1-1  | [WORKER] Falhou geral a3258bc8-b886-40a6-8b26-e16c4794ce5d
+worker1-1  | [WORKER] Falhou geral 6bfa6afb-7c6d-443d-8aca-74e1e552c09e
+worker1-1  | [WORKER] Falhou geral 324267c0-5c6d-41ef-a43a-4b0a97d87dcf
+worker1-1  | [WORKER] Falhou geral 89261817-f528-4bfa-a5b4-c59ec436875f
+worker1-1  | [WORKER] Falhou geral f1b3b20e-0fe8-4fd4-b995-4d4b4c5fc201
+worker1-1  | [WORKER] Falhou geral a6b9db9e-37bb-4763-a823-41bf6d40f3f7
+worker1-1  | [WORKER] Falhou geral 3e91262d-9a75-4267-bee6-94e72d80a9a0
+worker1-1  | [WORKER] Falhou geral cf929c82-9a69-4c5b-bfcc-d319c5867ed6
+worker1-1  | [WORKER] Falhou geral 3f2f5b67-cda7-4d20-8ff6-d28c9ad77ee9
+worker1-1  | [WORKER] Falhou geral 854b876c-2554-4f47-bf1d-edefe978f7cf
+worker1-1  | [WORKER] Falhou geral 4f4faaf2-1878-4d11-aa77-6fbe270c1982
+worker1-1  | [WORKER] Falhou geral f776d9f5-5a61-4cd7-a60f-516ecb887f65
+worker1-1  | [WORKER] Falhou geral 5b88199f-51f8-4de3-8012-69ab935ed589
+worker1-1  | [WORKER] Falhou geral 81dda063-1b6d-4c68-b972-cc57a6024626
+worker1-1  | [WORKER] Falhou geral 0ba067a1-be7c-4334-80e0-8ce506e9a921
+worker1-1  | [WORKER] Falhou geral 4ff7a8bd-3dae-4fe7-bd46-f22a58e7dc7f
+worker1-1  | [WORKER] Falhou geral 11291f58-c581-42f9-aa1b-7b426c578e47
+worker1-1  | [WORKER] Falhou geral 4e4b8fcd-13c4-44fa-95bf-871c2a509d10
+worker1-1  | [WORKER] Falhou geral eeb5f77f-5ff9-4e38-a7e8-e678b450b7e1
+worker1-1  | [WORKER] Falhou geral b0806c9d-fb4c-49b1-9a4f-0c7195d23f87
+worker1-1  | [WORKER] Falhou geral 781fe246-f353-4af3-9a8c-368443e36eca
+worker1-1  | [WORKER] Falhou geral e4d7c877-e0fd-4e82-9b39-8f7ee7f72b35
+worker1-1  | [WORKER] Falhou geral 87a6db11-1467-4809-b6a2-a611e6169651
+worker1-1  | [WORKER] Falhou geral 362ff280-ef91-4cba-905e-a0faa68fc453
+worker1-1  | [WORKER] Falhou geral 3b3271ac-fd03-4624-8ddf-7859bec9c972
+worker1-1  | [WORKER] Falhou geral d5cebcbe-b6ca-404c-bff4-bcea6f0264b1
+worker1-1  | [WORKER] Falhou geral 66b4f8a6-6402-438d-9b9b-6a17b49df95f
+worker1-1  | [WORKER] Falhou geral 78b6085c-791e-431c-a6b4-09178b826f78
+worker1-1  | [WORKER] Falhou geral 8ac4f6b9-72d6-46bb-b6c1-3b8da8aab3b3
+worker1-1  | [WORKER] Falhou geral 67a19f31-c466-4cf3-90fa-2b27faf58620
+worker1-1  | [WORKER] Falhou geral e906f437-5039-48b5-9ac0-4a70867fd428
+worker1-1  | [WORKER] Falhou geral 13f36375-37ec-44c5-9e70-6364f510ad42
+worker1-1  | [WORKER] Falhou geral 688a4a6d-fdca-4cbb-9144-1a1d6caa07d7
+worker1-1  | [WORKER] Falhou geral 181df310-e710-4f5f-b7ac-ea674e37db4a
+worker1-1  | [WORKER] Falhou geral d961d11a-fab5-45f9-bd4b-6278501ef327
+worker1-1  | [WORKER] Falhou geral abc120ec-7c2a-46d0-8a92-4c103c2b089b
+worker1-1  | [WORKER] Falhou geral 30a25441-9993-4cd5-9b5b-ebdc3d54eaba
+worker1-1  | [WORKER] Falhou geral 20716b30-5061-444b-9957-bd4023f73ca3
+worker1-1  | [WORKER] Falhou geral dac6f34c-7734-4733-8fd6-a1d893e6aafb
+worker1-1  | [WORKER] Falhou geral 598b6fc7-cad9-4430-92a7-9bec99152e0b
+worker1-1  | [WORKER] Falhou geral 11b46949-a2a2-4a5c-b8ef-f5dbaf61dbcd
+worker1-1  | [WORKER] Falhou geral dd993bfd-596b-4866-ba54-9f5da01f2d34
+worker1-1  | [WORKER] Falhou geral 148c5630-ee58-410b-ad32-014fa29027c7
+worker1-1  | [WORKER] Falhou geral 6b4c4745-715e-4a6b-8629-32de2ed13a7d
+worker1-1  | [WORKER] Falhou geral 08c0ea51-6da6-4a5e-a44d-85e1567f2d0e
+worker1-1  | [WORKER] Falhou geral bbfb3476-cbde-44ff-92f9-a4be41c9795e
+worker1-1  | [WORKER] Falhou geral 74b141e3-e6e5-4ca7-bd9c-d6a4d7b6d817
+worker1-1  | [WORKER] Falhou geral bb1440d4-09c0-460e-8727-7adec05e5a43
+worker1-1  | [WORKER] Falhou geral a6efe3a0-d2df-44a5-b49c-4998e072bb11
+worker1-1  | [WORKER] Falhou geral dec30233-e34d-4710-942c-648dabbc2b66
+worker1-1  | [WORKER] Falhou geral cb31284c-f976-4420-8ddd-9eda0e5e8e1f
+worker1-1  | [WORKER] Falhou geral 76209582-b6ee-4441-bedb-ab9b298a56d1
+worker1-1  | [WORKER] Falhou geral eb3b1892-d6c3-4b75-944a-308a41fb9e12
+worker1-1  | [WORKER] Falhou geral 044320f4-b781-4fab-8d0c-98572ee521ef
+worker1-1  | [WORKER] Falhou geral b6cefdd7-5e81-406a-a91c-7794a3a154c2
+worker1-1  | [WORKER] Falhou geral fe1a44cd-b2a3-4901-a0df-a37ce6ffc719
+worker1-1  | [WORKER] Falhou geral 859c4c21-50dc-454b-b107-196066ceafc5
+worker1-1  | [WORKER] Falhou geral e8f3ea5b-e9c3-4ad2-a61d-763f8321b346
+worker1-1  | [WORKER] Falhou geral 014301ef-4fc4-43a6-9900-104e393c0988
+worker1-1  | [WORKER] Falhou geral 850f521c-5846-464c-a774-2bbc1373c187
+worker1-1  | [WORKER] Falhou geral daee1367-98b8-4b76-909c-627c47ad8a9c
+worker1-1  | [WORKER] Falhou geral 871b8b2b-9c71-40f9-a854-9fcb2228f175
+worker1-1  | [WORKER] Falhou geral eea71854-2001-4505-b334-6514834179b8
+worker1-1  | [WORKER] Falhou geral 64fb017f-d185-42d0-9759-b9d6afd7f476
+worker1-1  | [WORKER] Falhou geral 0c503470-d6f3-4df4-88e7-0ec331c05c40
+worker1-1  | [WORKER] Falhou geral 0bd33434-1326-4410-bc85-fcd2445e2dc3
+worker1-1  | [WORKER] Falhou geral d95b49a0-d5c2-4c97-9123-42d9c21526ec
+worker1-1  | [WORKER] Falhou geral 9fb7054e-d03d-4335-98a4-568b4e51867e
+worker1-1  | [WORKER] Falhou geral 4b01c908-a7c7-45b0-8d46-6f8f9e5f8428
+worker1-1  | [WORKER] Falhou geral 74857e76-3789-44b1-b40a-cbc9b5300872
+worker1-1  | [WORKER] Falhou geral dd68d8b2-551a-4236-82ec-e7a5f10fed96
+worker1-1  | [WORKER] Falhou geral 2c5c69d5-a755-442d-8c38-fcc34d4660a9
+worker1-1  | [WORKER] Falhou geral c64acf75-2212-4968-94c0-1dbf8bf8d9ff
+worker1-1  | [WORKER] Falhou geral a3e6162d-a168-4998-b65a-a8edd2c5a55b
+worker1-1  | [WORKER] Falhou geral 11142d62-0b6b-4b0b-80e5-232f73c25ae0
+worker1-1  | [WORKER] Falhou geral ced8bf1e-f96a-4d1d-afe3-a0d3c4d4c478
+worker1-1  | [WORKER] Falhou geral 45cae17f-9520-41a1-950e-8792c0bffc9a
+worker1-1  | [WORKER] Falhou geral 41c72a1b-a732-4a2e-85d1-562f9e7d4777
+worker1-1  | [WORKER] Falhou geral 36fdce0a-053a-4372-bddc-3a60443207a1
+worker1-1  | [WORKER] Falhou geral 8a97bf07-c402-4777-80a3-47f727fd9393
+worker1-1  | [WORKER] Falhou geral 3c5565c7-ec84-4b72-a55d-1ec07931b39c
+worker1-1  | [WORKER] Falhou geral 7333f3b3-6c7f-4911-9233-4820a3fa64eb
+worker1-1  | [WORKER] Falhou geral 4c9d823c-5d7f-4556-a681-4f08c6d353c7
+worker1-1  | [WORKER] Falhou geral c94f0aa2-0851-40d8-9df9-be59ee508e5c
+worker1-1  | [WORKER] Falhou geral 00a7d73e-7982-47a3-9852-f0ea475520dc
+worker1-1  | [WORKER] Falhou geral 0b0cd924-ab0d-4671-9e7b-4c755e081f71
+worker1-1  | [WORKER] Falhou geral 85b2024d-9ad1-45b2-8d7d-ac76c931387a
+worker1-1  | [WORKER] Falhou geral f5d61f96-11b6-4cef-9d3b-deddc4be5497
+worker1-1  | [WORKER] Falhou geral a66942e8-6bd1-4724-8ce0-919df858a16a
+worker1-1  | [WORKER] Falhou geral e32fe1cf-4b10-429f-ae5d-3da872150492
+worker1-1  | [WORKER] Falhou geral 052fc2f2-3216-47fe-8e0f-d123be542792
+worker1-1  | [WORKER] Falhou geral 1004e325-8c8d-4951-ab35-88d07a5d3cff
+worker1-1  | [WORKER] Falhou geral 8cf18b9a-f9f3-4269-96e4-5ef5a1b93abe
+worker1-1  | [WORKER] Falhou geral 562674b4-858f-49ca-8218-fe3ddee0720b
+worker1-1  | [WORKER] Falhou geral 4511cb8e-5e44-4007-a566-def92708644c
+worker1-1  | [WORKER] Falhou geral ce9742b4-e98f-4ddb-977f-31ff86fc88b7
+worker1-1  | [WORKER] Falhou geral 980e466b-1828-493d-ba0f-2ca09b25161f
+worker1-1  | [WORKER] Falhou geral aeeb5d62-2327-49eb-9393-9fb8bed14081
+worker1-1  | [WORKER] Falhou geral a75ba1dd-999e-47ad-8d2c-cad062283087
+worker1-1  | [WORKER] Falhou geral 6ba809b0-b979-4def-b678-ef61969385a2
+worker1-1  | [WORKER] Falhou geral 4dd021aa-9b10-4728-8191-f7d7f827b86e
+worker1-1  | [WORKER] Falhou geral c3ab7ff9-777a-453a-9864-9b1690d0f301
+worker1-1  | [WORKER] Falhou geral a312690b-b042-4c5f-8d99-27aaefb12616
+worker1-1  | [WORKER] Falhou geral dfd99096-2eea-44e0-8196-b69f90138cd9
+worker1-1  | [WORKER] Falhou geral a76203c4-c852-4eb3-90ae-79f124ff3302
+worker1-1  | [WORKER] Falhou geral 534f6bb8-6e50-4832-aef9-2aa78a6d12b6
+worker1-1  | [WORKER] Falhou geral 425c5ce2-3076-49ee-ac69-d418de15f296
+worker1-1  | [WORKER] Falhou geral bbe118a9-ac77-43c9-9502-489e556250cc
+worker1-1  | [WORKER] Falhou geral 6429f785-1ed6-459f-aa5b-8970af64a786
+worker1-1  | [WORKER] Falhou geral 63d6428b-9db4-41c4-bdb9-ad9820c522fa
+worker1-1  | [WORKER] Falhou geral dd9fb1c8-7711-4c8d-8190-9988f4fbd3b6
+worker1-1  | [WORKER] Falhou geral 437ec7af-87ec-467e-8aa0-d8dafe1c5c00
+worker1-1  | [WORKER] Falhou geral 03ce7126-a0ff-4d1e-9b2e-461a46107b5d
+worker1-1  | [WORKER] Falhou geral e76b6da6-276c-4d97-853d-45e6456df3f8
+worker1-1  | [WORKER] Falhou geral 0c6c6b66-0824-475d-bd29-b3de4a0fc8d5
+worker1-1  | [WORKER] Falhou geral 771e7fbf-8f73-4ce1-9001-be3d25d68d2e
+worker1-1  | [WORKER] Falhou geral 5004fc6c-cd44-4db2-b102-4dbf575e43f6
+worker1-1  | [WORKER] Falhou geral cb92bf51-ffc1-4528-9817-42799893c012
+worker1-1  | [WORKER] Falhou geral 91497ab0-09ec-40b0-8ddd-418c5dd093e9
+log truncated at line 1000

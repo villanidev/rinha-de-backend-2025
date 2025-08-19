@@ -1,0 +1,53 @@
+
+ backend-01 Pulling 
+ backend-02 Pulling 
+ backend-01 Pulled 
+ backend-02 Pulled 
+ Network lecosas-java-spring_backend  Creating
+ Network lecosas-java-spring_backend  Created
+ Container redis  Creating
+ Container redis  Created
+ Container backend-02  Creating
+ Container backend-01  Creating
+ Container backend-01  Created
+ Container backend-02  Created
+ Container openresty  Creating
+ Container openresty  Created
+Attaching to backend-01, backend-02, openresty, redis
+redis  | 1:C 19 Aug 2025 03:07:29.488 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis  | 1:C 19 Aug 2025 03:07:29.489 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis  | 1:C 19 Aug 2025 03:07:29.489 * Redis version=7.4.5, bits=64, commit=00000000, modified=0, pid=1, just started
+redis  | 1:C 19 Aug 2025 03:07:29.489 * Configuration loaded
+redis  | 1:M 19 Aug 2025 03:07:29.489 * monotonic clock: POSIX clock_gettime
+redis  | 1:M 19 Aug 2025 03:07:29.490 * Running mode=standalone, port=6379.
+redis  | 1:M 19 Aug 2025 03:07:29.579 * Server initialized
+redis  | 1:M 19 Aug 2025 03:07:29.579 * Ready to accept connections tcp
+openresty  | 2025/08/19 03:07:38 [error] 8#8: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.20.0.4:8080/payments-summary", host: "localhost:9999"
+openresty  | 2025/08/19 03:07:38 [error] 8#8: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.20.0.3:8080/payments-summary", host: "localhost:9999"
+openresty  | 2025/08/19 03:07:43 [error] 8#8: *4 no live upstreams while connecting to upstream, client: 172.20.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://app/payments-summary", host: "localhost:9999"
+backend-02  | WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+backend-02  | WARNING: sun.misc.Unsafe::allocateMemory has been called by io.netty.util.internal.PlatformDependent0$2 (jar:nested:/app/app.jar/!BOOT-INF/lib/netty-common-4.1.122.Final.jar!/)
+backend-02  | WARNING: Please consider reporting this to the maintainers of class io.netty.util.internal.PlatformDependent0$2
+backend-02  | WARNING: sun.misc.Unsafe::allocateMemory will be removed in a future release
+openresty   | 2025/08/19 03:07:48 [error] 9#9: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.20.0.4:8080/payments-summary", host: "localhost:9999"
+openresty   | 2025/08/19 03:07:48 [error] 9#9: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.20.0.3:8080/payments-summary", host: "localhost:9999"
+backend-01  | WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+backend-01  | WARNING: sun.misc.Unsafe::allocateMemory has been called by io.netty.util.internal.PlatformDependent0$2 (jar:nested:/app/app.jar/!BOOT-INF/lib/netty-common-4.1.122.Final.jar!/)
+backend-01  | WARNING: Please consider reporting this to the maintainers of class io.netty.util.internal.PlatformDependent0$2
+backend-01  | WARNING: sun.misc.Unsafe::allocateMemory will be removed in a future release
+backend-02  | WARNING: A restricted method in java.lang.System has been called
+backend-02  | WARNING: java.lang.System::loadLibrary has been called by io.netty.util.internal.NativeLibraryUtil in an unnamed module (jar:nested:/app/app.jar/!BOOT-INF/lib/netty-common-4.1.122.Final.jar!/)
+backend-02  | WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+backend-02  | WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+backend-02  | 
+backend-01  | WARNING: A restricted method in java.lang.System has been called
+backend-01  | WARNING: java.lang.System::loadLibrary has been called by io.netty.util.internal.NativeLibraryUtil in an unnamed module (jar:nested:/app/app.jar/!BOOT-INF/lib/netty-common-4.1.122.Final.jar!/)
+backend-01  | WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+backend-01  | WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+backend-01  | 
+[Kbackend-02 exited with code 137
+[Kbackend-01 exited with code 137
+[Kopenresty exited with code 0
+redis       | 1:signal-handler (1755572953) Received SIGTERM scheduling shutdown...
+redis       | 1:M 19 Aug 2025 03:09:14.003 * User requested shutdown...
+redis       | 1:M 19 Aug 2025 03:09:14.003 # Redis is now ready to exit, bye bye...

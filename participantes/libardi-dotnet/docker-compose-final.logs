@@ -1,0 +1,146 @@
+
+ Network libardi-dotnet_backend  Creating
+ Network libardi-dotnet_backend  Created
+ Container payment-db  Creating
+ Container payment-db  Created
+ Container payment-api-2  Creating
+ Container payment-api-1  Creating
+ Container payment-api-1  Created
+ Container payment-api-2  Created
+ Container payment-lb  Creating
+ Container payment-lb  Created
+Attaching to payment-api-1, payment-api-2, payment-db, payment-lb
+payment-db  | The files belonging to this database system will be owned by user "postgres".
+payment-db  | This user must also own the server process.
+payment-db  | 
+payment-db  | The database cluster will be initialized with locale "en_US.utf8".
+payment-db  | The default database encoding has accordingly been set to "UTF8".
+payment-db  | The default text search configuration will be set to "english".
+payment-db  | 
+payment-db  | Data page checksums are disabled.
+payment-db  | 
+payment-db  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+payment-db  | creating subdirectories ... ok
+payment-db  | selecting dynamic shared memory implementation ... posix
+payment-db  | selecting default max_connections ... 100
+payment-db  | selecting default shared_buffers ... 128MB
+payment-db  | selecting default time zone ... UTC
+payment-db  | creating configuration files ... ok
+payment-db  | running bootstrap script ... ok
+payment-db  | sh: locale: not found
+payment-db  | 2025-08-19 05:05:24.904 UTC [35] WARNING:  no usable system locales were found
+payment-db  | performing post-bootstrap initialization ... ok
+payment-db  | syncing data to disk ... ok
+payment-db  | 
+payment-db  | 
+payment-db  | Success. You can now start the database server using:
+payment-db  | 
+payment-db  |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+payment-db  | 
+payment-db  | initdb: warning: enabling "trust" authentication for local connections
+payment-db  | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+payment-db  | waiting for server to start....2025-08-19 05:05:28.122 UTC [41] LOG:  starting PostgreSQL 15.13 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+payment-db  | 2025-08-19 05:05:28.122 UTC [41] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+payment-db  | 2025-08-19 05:05:28.124 UTC [44] LOG:  database system was shut down at 2025-08-19 05:05:27 UTC
+payment-db  | 2025-08-19 05:05:28.201 UTC [41] LOG:  database system is ready to accept connections
+payment-db  |  done
+payment-db  | server started
+payment-db  | 2025-08-19 05:05:28.300 UTC [57] FATAL:  database "PaymentsDB" does not exist
+payment-db  | 2025-08-19 05:05:28.314 UTC [56] LOG:  duration: 1.352 ms  statement: SELECT 1 FROM pg_database WHERE datname = 'PaymentsDB' ;
+payment-db  | 2025-08-19 05:05:28.608 UTC [59] LOG:  duration: 206.048 ms  statement: CREATE DATABASE "PaymentsDB" ;
+payment-db  | CREATE DATABASE
+payment-db  | 
+payment-db  | 
+payment-db  | /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/init.sql
+payment-db  | 2025-08-19 05:05:28.723 UTC [61] LOG:  duration: 7.647 ms  statement: CREATE UNLOGGED TABLE payments (
+payment-db  | 	    correlation_id UUID PRIMARY KEY,
+payment-db  | 	    amount DECIMAL NOT NULL,
+payment-db  | 	    processed_by TEXT NOT NULL,
+payment-db  | 	    requested_at_utc TIMESTAMPTZ NOT NULL
+payment-db  | 	);
+payment-db  | CREATE TABLE
+payment-db  | 2025-08-19 05:05:28.727 UTC [61] LOG:  duration: 3.885 ms  statement: CREATE INDEX CONCURRENTLY idx_payments_requested_at_utc_processed_by 
+payment-db  | 	ON payments(requested_at_utc, processed_by);
+payment-db  | CREATE INDEX
+payment-db  | 
+payment-db  | 
+payment-db  | waiting for server to shut down....2025-08-19 05:05:28.729 UTC [41] LOG:  received fast shutdown request
+payment-db  | 2025-08-19 05:05:28.729 UTC [41] LOG:  aborting any active transactions
+payment-db  | 2025-08-19 05:05:28.812 UTC [41] LOG:  background worker "logical replication launcher" (PID 53) exited with exit code 1
+payment-db  | 2025-08-19 05:05:28.815 UTC [42] LOG:  shutting down
+payment-db  | 2025-08-19 05:05:28.815 UTC [42] LOG:  checkpoint starting: shutdown immediate
+payment-db  | 2025-08-19 05:05:28.830 UTC [42] LOG:  checkpoint complete: wrote 922 buffers (1.4%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.015 s, sync=0.001 s, total=0.015 s; sync files=0, longest=0.000 s, average=0.000 s; distance=7393 kB, estimate=7393 kB
+payment-db  | 2025-08-19 05:05:28.914 UTC [41] LOG:  database system is shut down
+payment-db  |  done
+payment-db  | server stopped
+payment-db  | 
+payment-db  | PostgreSQL init process complete; ready for start up.
+payment-db  | 
+payment-db  | 2025-08-19 05:05:29.100 UTC [1] LOG:  starting PostgreSQL 15.13 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+payment-db  | 2025-08-19 05:05:29.101 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+payment-db  | 2025-08-19 05:05:29.101 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+payment-db  | 2025-08-19 05:05:29.101 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+payment-db  | 2025-08-19 05:05:29.104 UTC [66] LOG:  database system was shut down at 2025-08-19 05:05:28 UTC
+payment-db  | 2025-08-19 05:05:29.671 UTC [72] FATAL:  the database system is starting up
+payment-db  | 2025-08-19 05:05:29.671 UTC [73] FATAL:  the database system is starting up
+payment-db  | 2025-08-19 05:05:29.705 UTC [67] FATAL:  the database system is starting up
+payment-db  | 2025-08-19 05:05:29.705 UTC [68] FATAL:  the database system is starting up
+payment-db  | 2025-08-19 05:05:29.725 UTC [69] FATAL:  the database system is starting up
+payment-db  | 2025-08-19 05:05:29.725 UTC [70] FATAL:  the database system is starting up
+payment-db  | 2025-08-19 05:05:29.727 UTC [71] FATAL:  the database system is starting up
+payment-db  | 2025-08-19 05:05:29.748 UTC [75] FATAL:  the database system is starting up
+payment-db  | 2025-08-19 05:05:29.748 UTC [74] FATAL:  the database system is starting up
+payment-db  | 2025-08-19 05:05:29.750 UTC [76] FATAL:  the database system is starting up
+payment-api-1  | Unhandled exception. Npgsql.PostgresException (0x80004005): 57P03: the database system is starting up
+payment-api-1  |    at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+payment-api-1  |    at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+payment-api-1  |    at Npgsql.Internal.NpgsqlConnector.Authenticate(String username, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+payment-api-1  |    at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|214_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+payment-api-1  |    at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+payment-api-1  |    at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+payment-api-1  |    at Npgsql.PoolingDataSource.<Get>g__RentAsync|33_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+payment-api-1  |    at Npgsql.NpgsqlConnection.<>c__DisplayClass165_0.<<StartBindingScope>g__StartBindingScopeAsync|0>d.MoveNext()
+payment-api-1  | --- End of stack trace from previous location ---
+payment-api-1  |    at Npgsql.NpgsqlConnection.<Open>g__PerformMultiplexingStartupCheck|42_1(Boolean async, CancellationToken cancellationToken)
+payment-api-1  |    at Rinha2025.Infrastructure.Repositories.PaymentRepository.GetProcessorsSummaryAsync(Nullable`1 from, Nullable`1 to) in /src/Rinha2025.Infrastructure/Repositories/PaymentRepository.cs:line 49
+payment-api-1  |    at Rinha2025.Infrastructure.Repositories.PaymentRepository.GetProcessorsSummaryAsync(Nullable`1 from, Nullable`1 to) in /src/Rinha2025.Infrastructure/Repositories/PaymentRepository.cs:line 59
+payment-api-1  |    at Rinha2025.Infrastructure.Extensions.DbExtensions.<>c__DisplayClass0_0.<<TestAsync>b__0>d.MoveNext() in /src/Rinha2025.Infrastructure/Extensions/DbExtensions.cs:line 17
+payment-api-1  | --- End of stack trace from previous location ---
+payment-api-1  |    at Rinha2025.Infrastructure.Extensions.DbExtensions.TestAsync(IHost host) in /src/Rinha2025.Infrastructure/Extensions/DbExtensions.cs:line 15
+payment-api-1  |    at Rinha2025.WebAPI.Program.Main(String[] args) in /src/Rinha2025.WebAPI/Program.cs:line 79
+payment-api-1  |    at Rinha2025.WebAPI.Program.<Main>(String[] args)
+payment-api-1  |   Exception data:
+payment-api-1  |     Severity: FATAL
+payment-api-1  |     SqlState: 57P03
+payment-api-1  |     MessageText: the database system is starting up
+payment-api-1  |     File: postmaster.c
+payment-api-1  |     Line: 2393
+payment-api-1  |     Routine: ProcessStartupPacket
+payment-api-2  | Unhandled exception. Npgsql.PostgresException (0x80004005): 57P03: the database system is starting up
+payment-api-2  |    at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+payment-api-2  |    at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+payment-api-2  |    at Npgsql.Internal.NpgsqlConnector.Authenticate(String username, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+payment-api-2  |    at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|214_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+payment-api-2  |    at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+payment-api-2  |    at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+payment-api-2  |    at Npgsql.PoolingDataSource.<Get>g__RentAsync|33_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+payment-api-2  |    at Npgsql.NpgsqlConnection.<>c__DisplayClass165_0.<<StartBindingScope>g__StartBindingScopeAsync|0>d.MoveNext()
+payment-api-2  | --- End of stack trace from previous location ---
+payment-api-2  |    at Npgsql.NpgsqlConnection.<Open>g__PerformMultiplexingStartupCheck|42_1(Boolean async, CancellationToken cancellationToken)
+payment-api-2  |    at Rinha2025.Infrastructure.Repositories.PaymentRepository.GetProcessorsSummaryAsync(Nullable`1 from, Nullable`1 to) in /src/Rinha2025.Infrastructure/Repositories/PaymentRepository.cs:line 49
+payment-api-2  |    at Rinha2025.Infrastructure.Repositories.PaymentRepository.GetProcessorsSummaryAsync(Nullable`1 from, Nullable`1 to) in /src/Rinha2025.Infrastructure/Repositories/PaymentRepository.cs:line 59
+payment-api-2  |    at Rinha2025.Infrastructure.Extensions.DbExtensions.<>c__DisplayClass0_0.<<TestAsync>b__0>d.MoveNext() in /src/Rinha2025.Infrastructure/Extensions/DbExtensions.cs:line 17
+payment-api-2  | --- End of stack trace from previous location ---
+payment-api-2  |    at Rinha2025.Infrastructure.Extensions.DbExtensions.TestAsync(IHost host) in /src/Rinha2025.Infrastructure/Extensions/DbExtensions.cs:line 15
+payment-api-2  |    at Rinha2025.WebAPI.Program.Main(String[] args) in /src/Rinha2025.WebAPI/Program.cs:line 79
+payment-api-2  |    at Rinha2025.WebAPI.Program.<Main>(String[] args)
+payment-api-2  |   Exception data:
+payment-api-2  |     Severity: FATAL
+payment-api-2  |     SqlState: 57P03
+payment-api-2  |     MessageText: the database system is starting up
+payment-api-2  |     File: postmaster.c
+payment-api-2  |     Line: 2393
+payment-api-2  |     Routine: ProcessStartupPacket
+[Kpayment-api-2 exited with code 139
+[Kpayment-api-1 exited with code 139
+dependency failed to start: container payment-api-2 exited (139)

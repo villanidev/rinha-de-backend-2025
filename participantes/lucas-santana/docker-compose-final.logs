@@ -1,0 +1,93 @@
+
+ Network lucas-santana_default  Creating
+ Network lucas-santana_default  Created
+ Volume "lucas-santana_sockets"  Creating
+ Volume "lucas-santana_sockets"  Created
+ Container lucas-santana-keydb-1  Creating
+ Container lucas-santana-keydb-1  Created
+ Container lucas-santana-backend2-1  Creating
+ Container lucas-santana-worker-1  Creating
+ Container lucas-santana-backend1-1  Creating
+ Container lucas-santana-backend2-1  Created
+ Container lucas-santana-worker-1  Created
+ Container lucas-santana-backend1-1  Created
+ Container lucas-santana-lighttpd-1  Creating
+ Container lucas-santana-lighttpd-1  Created
+Attaching to backend1-1, backend2-1, keydb-1, lighttpd-1, worker-1
+keydb-1  | 1:1:C 19 Aug 2025 06:15:23.822 # oO0OoO0OoO0Oo KeyDB is starting oO0OoO0OoO0Oo
+keydb-1  | 1:1:C 19 Aug 2025 06:15:23.822 # KeyDB version=6.3.4, bits=64, commit=7e7e5e57, modified=1, pid=1, just started
+keydb-1  | 1:1:C 19 Aug 2025 06:15:23.822 # Configuration loaded
+keydb-1  | 1:1:C 19 Aug 2025 06:15:23.823 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+keydb-1  | 1:1:M 19 Aug 2025 06:15:23.825 * monotonic clock: POSIX clock_gettime
+keydb-1  |                                                                       
+keydb-1  |                   _                                                   
+keydb-1  |                _-(+)-_                                                
+keydb-1  |             _-- /   \ --_                                            
+keydb-1  |          _--   /     \   --_            KeyDB  6.3.4 (7e7e5e57/1) 64 bit     
+keydb-1  |      __--     /       \     --__                                     
+keydb-1  |     (+) _    /         \    _ (+)       Running in standalone mode
+keydb-1  |      |   -- /           \ --   |        Port: 6379
+keydb-1  |      |     /--_   _   _--\     |        PID: 1
+keydb-1  |      |    /     -(+)-     \    |                                     
+keydb-1  |      |   /        |        \   |        https://docs.keydb.dev       
+keydb-1  |      |  /         |         \  |                                     
+keydb-1  |      | /          |          \ |                                     
+keydb-1  |     (+)_ -- -- -- | -- -- -- _(+)                                     
+keydb-1  |         --_       |       _--                                         
+keydb-1  |             --_   |   _--                                             
+keydb-1  |                 -(+)-        KeyDB has now joined Snap! See the announcement at:  https://docs.keydb.dev/news
+keydb-1  | 
+keydb-1  |                                                                      
+keydb-1  | 1:1:M 19 Aug 2025 06:15:23.867 # Server initialized
+keydb-1  | 1:1:M 19 Aug 2025 06:15:23.868 * The server is now ready to accept connections at /sockets/keydb.sock
+keydb-1  | 1:30:M 19 Aug 2025 06:15:23.868 * Thread 0 alive.
+keydb-1  | 1:32:M 19 Aug 2025 06:15:23.869 * Thread 1 alive.
+keydb-1  | 1:33:M 19 Aug 2025 06:15:23.869 * Thread 2 alive.
+backend1-1  | [Server] Listening on unix:/sockets/backend1.sock.
+backend2-1  | [Server] Listening on unix:/sockets/backend2.sock.
+worker-1    | [Worker] Starting workers...
+lighttpd-1  | 2025-08-19 06:15:35: (server.c.1974) server started (lighttpd/1.4.79)
+keydb-1     | 1:30:M 19 Aug 2025 06:16:51.833 * 10000 changes in 60 seconds. Saving...
+keydb-1     | 1:30:M 19 Aug 2025 06:16:51.835 * Background saving started by pid 136
+keydb-1     | 1:30:M 19 Aug 2025 06:16:51.835 * Background saving started
+keydb-1     | 136:30:C 19 Aug 2025 06:16:51.848 * DB saved on disk
+keydb-1     | 136:30:C 19 Aug 2025 06:16:51.851 * RDB: 0 MB of memory used by copy-on-write
+keydb-1     | 1:30:M 19 Aug 2025 06:16:51.935 * Background saving terminated with success
+keydb-1     | 1:30:M 19 Aug 2025 06:17:52.026 * 10000 changes in 60 seconds. Saving...
+keydb-1     | 1:30:M 19 Aug 2025 06:17:52.028 * Background saving started by pid 209
+keydb-1     | 1:30:M 19 Aug 2025 06:17:52.028 * Background saving started
+keydb-1     | 209:30:C 19 Aug 2025 06:17:52.049 * DB saved on disk
+keydb-1     | 209:30:C 19 Aug 2025 06:17:52.126 * RDB: 0 MB of memory used by copy-on-write
+keydb-1     | 1:30:M 19 Aug 2025 06:17:52.128 * Background saving terminated with success
+keydb-1     | 1:30:M 19 Aug 2025 06:18:53.084 * 10000 changes in 60 seconds. Saving...
+keydb-1     | 1:30:M 19 Aug 2025 06:18:53.085 * Background saving started by pid 276
+keydb-1     | 1:30:M 19 Aug 2025 06:18:53.085 * Background saving started
+keydb-1     | 276:30:C 19 Aug 2025 06:18:53.334 * DB saved on disk
+keydb-1     | 276:30:C 19 Aug 2025 06:18:53.338 * RDB: 2 MB of memory used by copy-on-write
+keydb-1     | 1:30:M 19 Aug 2025 06:18:53.429 * Background saving terminated with success
+keydb-1     | 1:30:M 19 Aug 2025 06:19:54.051 * 10000 changes in 60 seconds. Saving...
+keydb-1     | 1:30:M 19 Aug 2025 06:19:54.053 * Background saving started by pid 351
+keydb-1     | 1:30:M 19 Aug 2025 06:19:54.053 * Background saving started
+keydb-1     | 351:30:C 19 Aug 2025 06:19:54.749 * DB saved on disk
+keydb-1     | 351:30:C 19 Aug 2025 06:19:54.829 * RDB: 2 MB of memory used by copy-on-write
+keydb-1     | 1:30:M 19 Aug 2025 06:19:54.934 * Background saving terminated with success
+lighttpd-1  | 2025-08-19 06:20:44: (server.c.2370) server stopped by UID = 0 PID = 1
+lighttpd-1  | 2025-08-19 06:20:44: (server.c.2370) server stopped by UID = 0 PID = 1
+lighttpd-1  | 2025-08-19 06:20:44: (server.c.2370) server stopped by UID = 0 PID = 1
+[Klighttpd-1 exited with code 0
+[Kworker-1 exited with code 137
+keydb-1     | 1:30:M 19 Aug 2025 06:20:55.067 * 10000 changes in 60 seconds. Saving...
+keydb-1     | 1:30:M 19 Aug 2025 06:20:55.071 * Background saving started by pid 425
+keydb-1     | 1:30:M 19 Aug 2025 06:20:55.072 * Background saving started
+[Kbackend1-1 exited with code 137
+[Kbackend2-1 exited with code 137
+keydb-1     | 1:signal-handler (1755584455) Received SIGTERM scheduling shutdown...
+keydb-1     | 1:30:M 19 Aug 2025 06:20:55.225 # User requested shutdown...
+keydb-1     | 1:30:M 19 Aug 2025 06:20:55.225 # There is a child saving an .rdb. Killing it!
+keydb-1     | 425:signal-handler (1755584455) Received SIGUSR1 in child, exiting now.
+keydb-1     | 1:30:M 19 Aug 2025 06:20:55.225 * Saving the final RDB snapshot before exiting.
+keydb-1     | 1:30:M 19 Aug 2025 06:20:56.037 * DB saved on disk
+keydb-1     | 1:30:M 19 Aug 2025 06:20:56.037 * Removing the pid file.
+keydb-1     | 1:30:M 19 Aug 2025 06:20:56.037 * Removing the unix socket file.
+keydb-1     | 1:30:M 19 Aug 2025 06:20:56.038 # KeyDB is now ready to exit, bye bye...
+log truncated at line 1000

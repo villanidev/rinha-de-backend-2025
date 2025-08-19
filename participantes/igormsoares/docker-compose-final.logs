@@ -124,3 +124,102 @@ payment-proxy-1  | 2025/08/18 20:36:05 Server starting on :8081
 payment-proxy-2  | 2025/08/18 20:36:05 15 workers have been registered
 payment-proxy-2  | 2025/08/18 20:36:05 Starting dispatcher
 payment-proxy-2  | 2025/08/18 20:36:05 Server starting on :8081
+nginx            | 2025/08/18 20:36:09 [error] 30#30: *1 upstream prematurely closed connection while reading response header from upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.4:8081/payments-summary", host: "localhost:9999"
+[Kpayment-proxy-1 exited with code 137
+payment-proxy-1  | 2025/08/18 20:36:10 15 workers have been registered
+payment-proxy-1  | 2025/08/18 20:36:10 Starting dispatcher
+payment-proxy-1  | 2025/08/18 20:36:10 Server starting on :8081
+nginx            | 2025/08/18 20:36:10 [error] 30#30: *1 upstream prematurely closed connection while reading response header from upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.5:8081/payments-summary", host: "localhost:9999"
+nginx            | 172.21.0.1 - - [18/Aug/2025:20:36:10 +0000] "GET /payments-summary HTTP/1.1" 502 157 "-" "curl/8.5.0"
+[Kpayment-proxy-2 exited with code 137
+payment-proxy-2  | 2025/08/18 20:36:11 15 workers have been registered
+payment-proxy-2  | 2025/08/18 20:36:11 Starting dispatcher
+payment-proxy-2  | 2025/08/18 20:36:11 Server starting on :8081
+nginx            | 172.21.0.1 - - [18/Aug/2025:20:36:15 +0000] "GET /payments-summary HTTP/1.1" 502 157 "-" "curl/8.5.0"
+nginx            | 2025/08/18 20:36:15 [error] 30#30: *4 no live upstreams while connecting to upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://payment_proxy/payments-summary", host: "localhost:9999"
+nginx            | 2025/08/18 20:36:21 [error] 30#30: *5 upstream prematurely closed connection while reading response header from upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.4:8081/payments-summary", host: "localhost:9999"
+[Kpayment-proxy-1 exited with code 137
+payment-proxy-1  | 2025/08/18 20:36:22 15 workers have been registered
+payment-proxy-1  | 2025/08/18 20:36:22 Starting dispatcher
+payment-proxy-1  | 2025/08/18 20:36:22 Server starting on :8081
+nginx            | 2025/08/18 20:36:23 [error] 30#30: *5 upstream prematurely closed connection while reading response header from upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.5:8081/payments-summary", host: "localhost:9999"
+nginx            | 172.21.0.1 - - [18/Aug/2025:20:36:23 +0000] "GET /payments-summary HTTP/1.1" 502 157 "-" "curl/8.5.0"
+[Kpayment-proxy-2 exited with code 137
+payment-proxy-2  | 2025/08/18 20:36:23 15 workers have been registered
+payment-proxy-2  | 2025/08/18 20:36:23 Starting dispatcher
+payment-proxy-2  | 2025/08/18 20:36:23 Server starting on :8081
+nginx            | 2025/08/18 20:36:28 [error] 30#30: *8 no live upstreams while connecting to upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://payment_proxy/payments-summary", host: "localhost:9999"
+nginx            | 172.21.0.1 - - [18/Aug/2025:20:36:28 +0000] "GET /payments-summary HTTP/1.1" 502 157 "-" "curl/8.5.0"
+nginx            | 2025/08/18 20:36:34 [error] 30#30: *9 upstream prematurely closed connection while reading response header from upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.4:8081/payments-summary", host: "localhost:9999"
+[Kpayment-proxy-1 exited with code 137
+payment-proxy-1  | 2025/08/18 20:36:34 15 workers have been registered
+payment-proxy-1  | 2025/08/18 20:36:34 Starting dispatcher
+payment-proxy-1  | 2025/08/18 20:36:34 Server starting on :8081
+nginx            | 172.21.0.1 - - [18/Aug/2025:20:36:35 +0000] "GET /payments-summary HTTP/1.1" 502 157 "-" "curl/8.5.0"
+nginx            | 2025/08/18 20:36:35 [error] 30#30: *9 upstream prematurely closed connection while reading response header from upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.5:8081/payments-summary", host: "localhost:9999"
+[Kpayment-proxy-2 exited with code 137
+payment-proxy-2  | 2025/08/18 20:36:35 15 workers have been registered
+payment-proxy-2  | 2025/08/18 20:36:35 Starting dispatcher
+payment-proxy-2  | 2025/08/18 20:36:35 Server starting on :8081
+nginx            | 2025/08/18 20:36:40 [error] 30#30: *12 no live upstreams while connecting to upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://payment_proxy/payments-summary", host: "localhost:9999"
+nginx            | 172.21.0.1 - - [18/Aug/2025:20:36:40 +0000] "GET /payments-summary HTTP/1.1" 502 157 "-" "curl/8.5.0"
+nginx            | 2025/08/18 20:36:46 [error] 30#30: *13 upstream prematurely closed connection while reading response header from upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.4:8081/payments-summary", host: "localhost:9999"
+[Kpayment-proxy-1 exited with code 137
+payment-proxy-1  | 2025/08/18 20:36:46 15 workers have been registered
+payment-proxy-1  | 2025/08/18 20:36:46 Starting dispatcher
+payment-proxy-1  | 2025/08/18 20:36:46 Server starting on :8081
+nginx            | 2025/08/18 20:36:47 [error] 30#30: *13 upstream prematurely closed connection while reading response header from upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.5:8081/payments-summary", host: "localhost:9999"
+nginx            | 172.21.0.1 - - [18/Aug/2025:20:36:47 +0000] "GET /payments-summary HTTP/1.1" 502 157 "-" "curl/8.5.0"
+[Kpayment-proxy-2 exited with code 137
+payment-proxy-2  | 2025/08/18 20:36:48 15 workers have been registered
+payment-proxy-2  | 2025/08/18 20:36:48 Starting dispatcher
+payment-proxy-2  | 2025/08/18 20:36:48 Server starting on :8081
+nginx            | 2025/08/18 20:36:52 [error] 30#30: *16 no live upstreams while connecting to upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://payment_proxy/payments-summary", host: "localhost:9999"
+nginx            | 172.21.0.1 - - [18/Aug/2025:20:36:52 +0000] "GET /payments-summary HTTP/1.1" 502 157 "-" "curl/8.5.0"
+nginx            | 2025/08/18 20:36:58 [error] 30#30: *17 upstream prematurely closed connection while reading response header from upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.4:8081/payments-summary", host: "localhost:9999"
+[Kpayment-proxy-1 exited with code 137
+payment-proxy-1  | 2025/08/18 20:36:59 15 workers have been registered
+payment-proxy-1  | 2025/08/18 20:36:59 Starting dispatcher
+payment-proxy-1  | 2025/08/18 20:36:59 Server starting on :8081
+nginx            | 2025/08/18 20:36:59 [error] 30#30: *17 upstream prematurely closed connection while reading response header from upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.5:8081/payments-summary", host: "localhost:9999"
+nginx            | 172.21.0.1 - - [18/Aug/2025:20:36:59 +0000] "GET /payments-summary HTTP/1.1" 502 157 "-" "curl/8.5.0"
+[Kpayment-proxy-2 exited with code 137
+payment-proxy-2  | 2025/08/18 20:37:00 15 workers have been registered
+payment-proxy-2  | 2025/08/18 20:37:00 Starting dispatcher
+payment-proxy-2  | 2025/08/18 20:37:00 Server starting on :8081
+nginx            | 2025/08/18 20:37:04 [error] 30#30: *20 no live upstreams while connecting to upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://payment_proxy/payments-summary", host: "localhost:9999"
+nginx            | 172.21.0.1 - - [18/Aug/2025:20:37:04 +0000] "GET /payments-summary HTTP/1.1" 502 157 "-" "curl/8.5.0"
+nginx            | 2025/08/18 20:37:10 [error] 30#30: *21 upstream prematurely closed connection while reading response header from upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.4:8081/payments-summary", host: "localhost:9999"
+[Kpayment-proxy-1 exited with code 137
+payment-proxy-1  | 2025/08/18 20:37:11 15 workers have been registered
+payment-proxy-1  | 2025/08/18 20:37:11 Starting dispatcher
+payment-proxy-1  | 2025/08/18 20:37:11 Server starting on :8081
+nginx            | 2025/08/18 20:37:11 [error] 30#30: *21 upstream prematurely closed connection while reading response header from upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.5:8081/payments-summary", host: "localhost:9999"
+nginx            | 172.21.0.1 - - [18/Aug/2025:20:37:11 +0000] "GET /payments-summary HTTP/1.1" 502 157 "-" "curl/8.5.0"
+[Kpayment-proxy-2 exited with code 137
+payment-proxy-2  | 2025/08/18 20:37:12 15 workers have been registered
+payment-proxy-2  | 2025/08/18 20:37:12 Starting dispatcher
+payment-proxy-2  | 2025/08/18 20:37:12 Server starting on :8081
+nginx            | 2025/08/18 20:37:16 [error] 30#30: *24 no live upstreams while connecting to upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://payment_proxy/payments-summary", host: "localhost:9999"
+nginx            | 172.21.0.1 - - [18/Aug/2025:20:37:16 +0000] "GET /payments-summary HTTP/1.1" 502 157 "-" "curl/8.5.0"
+nginx            | 2025/08/18 20:37:22 [error] 30#30: *25 upstream prematurely closed connection while reading response header from upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.4:8081/payments-summary", host: "localhost:9999"
+[Kpayment-proxy-1 exited with code 137
+payment-proxy-1  | 2025/08/18 20:37:23 15 workers have been registered
+payment-proxy-1  | 2025/08/18 20:37:23 Starting dispatcher
+payment-proxy-1  | 2025/08/18 20:37:23 Server starting on :8081
+nginx            | 2025/08/18 20:37:23 [error] 30#30: *25 upstream prematurely closed connection while reading response header from upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://172.21.0.5:8081/payments-summary", host: "localhost:9999"
+nginx            | 172.21.0.1 - - [18/Aug/2025:20:37:23 +0000] "GET /payments-summary HTTP/1.1" 502 157 "-" "curl/8.5.0"
+[Kpayment-proxy-2 exited with code 137
+payment-proxy-2  | 2025/08/18 20:37:24 15 workers have been registered
+payment-proxy-2  | 2025/08/18 20:37:24 Starting dispatcher
+payment-proxy-2  | 2025/08/18 20:37:24 Server starting on :8081
+nginx            | 172.21.0.1 - - [18/Aug/2025:20:37:28 +0000] "GET /payments-summary HTTP/1.1" 502 157 "-" "curl/8.5.0"
+nginx            | 2025/08/18 20:37:28 [error] 30#30: *28 no live upstreams while connecting to upstream, client: 172.21.0.1, server: , request: "GET /payments-summary HTTP/1.1", upstream: "http://payment_proxy/payments-summary", host: "localhost:9999"
+payment-proxy-2  | 2025/08/18 20:37:34 Received shutdown signal
+payment-proxy-1  | 2025/08/18 20:37:34 Received shutdown signal
+[Kpayment-proxy-1 exited with code 0
+[Kpayment-proxy-2 exited with code 0
+redis            | 1:signal-handler (1755549454) Received SIGTERM scheduling shutdown...
+redis            | 1:M 18 Aug 2025 20:37:34.394 * User requested shutdown...
+redis            | 1:M 18 Aug 2025 20:37:34.394 # Redis is now ready to exit, bye bye...
+[Knginx exited with code 0

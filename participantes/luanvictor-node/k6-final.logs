@@ -1,0 +1,12 @@
+
+time="2025-08-19T05:42:41Z" level=warning msg="================ [inconsistências encontradas] ================" source=console
+time="2025-08-19T05:42:41Z" level=warning msg="backend.default.totalRequests vs default.totalRequests: 1876 vs 1906" source=console
+time="2025-08-19T05:42:41Z" level=warning msg="backend.fallback.totalRequests vs fallback.totalRequests: 1146 vs 1146" source=console
+time="2025-08-19T05:44:42Z" level=warning msg="================ [inconsistências encontradas] ================" source=console
+time="2025-08-19T05:44:42Z" level=warning msg="backend.default.totalRequests vs default.totalRequests: 0 vs 675" source=console
+time="2025-08-19T05:44:42Z" level=warning msg="backend.fallback.totalRequests vs fallback.totalRequests: 646 vs 1713" source=console
+time="2025-08-19T05:44:52Z" level=warning msg="================ [inconsistências encontradas] ================" source=console
+time="2025-08-19T05:44:52Z" level=warning msg="backend.default.totalRequests vs default.totalRequests: 0 vs 45" source=console
+time="2025-08-19T05:44:52Z" level=warning msg="backend.fallback.totalRequests vs fallback.totalRequests: 3033 vs 3033" source=console
+time="2025-08-19T05:45:02Z" level=info msg="summaries from 2025-08-19T05:43:52.496Z to 2025-08-19T05:45:02.496Z" source=console
+log truncated at line 1000

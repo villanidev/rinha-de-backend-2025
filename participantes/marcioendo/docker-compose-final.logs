@@ -1,0 +1,33 @@
+
+ Network marcioendo_default  Creating
+ Network marcioendo_default  Created
+ Network marcioendo_backend  Creating
+ Network marcioendo_backend  Created
+ Container pay  Creating
+ Container pay  Created
+ Container back1  Creating
+ Container back0  Creating
+ Container back0  Created
+ Container back1  Created
+ Container front  Creating
+ Container front  Created
+Attaching to back0, back1, front, pay
+back1  | [0.030s][warning][perf,memops] Cannot use file /tmp/hsperfdata_root/1 because it is locked by another process (errno = 11)
+back0  | [0.030s][warning][perf,memops] Cannot use file /tmp/hsperfdata_root/1 because it is locked by another process (errno = 11)
+pay    | Pay
+front  | [0.032s][warning][perf,memops] Cannot use file /tmp/hsperfdata_root/1 because it is locked by another process (errno = 11)
+pay    | Connect ok=payment-processor-default/172.18.0.3:8080
+pay    | Connect ok=payment-processor-fallback/172.18.0.2:8080
+back0  | Back
+back1  | Back
+front  | Front
+back0  | Connect ok=/tmp/kag8kie5uDie3lei0toh-pay.sock
+back1  | Connect ok=/tmp/kag8kie5uDie3lei0toh-pay.sock
+front  | Connect ok=/tmp/kag8kie5uDie3lei0toh-back0.sock
+front  | Connect ok=/tmp/kag8kie5uDie3lei0toh-back1.sock
+front  | Connect ok=/tmp/kag8kie5uDie3lei0toh-pay.sock
+[Kfront exited with code 137
+back0  | Failed to accept client conn
+[Kback1 exited with code 143
+[Kback0 exited with code 143
+log truncated at line 1000

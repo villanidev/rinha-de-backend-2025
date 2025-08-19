@@ -1,0 +1,105 @@
+
+ api1 Pulling 
+ api2 Pulling 
+ 0bdf2c4d1714 Already exists 
+ 136759efcfb5 Already exists 
+ 267fb3c0707c Already exists 
+ 7a8adda00518 Already exists 
+ 462e6c1e58f3 Already exists 
+ 54076c9489fe Already exists 
+ 0bdf2c4d1714 Already exists 
+ 136759efcfb5 Already exists 
+ 939e859f9cfd Pulling fs layer 
+ 8c98b7a14333 Pulling fs layer 
+ 267fb3c0707c Already exists 
+ 7a8adda00518 Already exists 
+ 462e6c1e58f3 Already exists 
+ 54076c9489fe Already exists 
+ 939e859f9cfd Pulling fs layer 
+ 8c98b7a14333 Pulling fs layer 
+ 939e859f9cfd Downloading [==================================================>]      90B/90B
+ 939e859f9cfd Verifying Checksum 
+ 939e859f9cfd Verifying Checksum 
+ 939e859f9cfd Download complete 
+ 939e859f9cfd Download complete 
+ 939e859f9cfd Extracting [==================================================>]      90B/90B
+ 939e859f9cfd Extracting [==================================================>]      90B/90B
+ 939e859f9cfd Extracting [==================================================>]      90B/90B
+ 939e859f9cfd Extracting [==================================================>]      90B/90B
+ 939e859f9cfd Pull complete 
+ 939e859f9cfd Pull complete 
+ 8c98b7a14333 Downloading [=>                                                 ]  16.38kB/576.6kB
+ 8c98b7a14333 Downloading [=>                                                 ]  16.38kB/576.6kB
+ 8c98b7a14333 Verifying Checksum 
+ 8c98b7a14333 Download complete 
+ 8c98b7a14333 Download complete 
+ 8c98b7a14333 Extracting [==>                                                ]  32.77kB/576.6kB
+ 8c98b7a14333 Extracting [==>                                                ]  32.77kB/576.6kB
+ 8c98b7a14333 Extracting [==================================================>]  576.6kB/576.6kB
+ 8c98b7a14333 Extracting [==================================================>]  576.6kB/576.6kB
+ 8c98b7a14333 Pull complete 
+ 8c98b7a14333 Pull complete 
+ api2 Pulled 
+ api1 Pulled 
+ Network maxwelloliveira01-dotnet_backend  Creating
+ Network maxwelloliveira01-dotnet_backend  Created
+ Container maxwelloliveira01-dotnet-api1-1  Creating
+ Container rinha-redis  Creating
+ Container maxwelloliveira01-dotnet-api2-1  Creating
+ Container maxwelloliveira01-dotnet-api1-1  Created
+ Container maxwelloliveira01-dotnet-api2-1  Created
+ Container rinha-nginx  Creating
+ Container rinha-redis  Created
+ Container rinha-nginx  Created
+Attaching to api1-1, api2-1, rinha-nginx, rinha-redis
+rinha-redis  | 1:C 19 Aug 2025 09:00:21.347 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+rinha-redis  | 1:C 19 Aug 2025 09:00:21.347 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+rinha-redis  | 1:C 19 Aug 2025 09:00:21.347 * Redis version=7.2.10, bits=64, commit=00000000, modified=0, pid=1, just started
+rinha-redis  | 1:C 19 Aug 2025 09:00:21.347 * Configuration loaded
+rinha-redis  | 1:M 19 Aug 2025 09:00:21.348 * monotonic clock: POSIX clock_gettime
+rinha-redis  | 1:M 19 Aug 2025 09:00:21.349 * Running mode=standalone, port=6379.
+rinha-redis  | 1:M 19 Aug 2025 09:00:21.350 * Server initialized
+rinha-redis  | 1:M 19 Aug 2025 09:00:21.350 * Ready to accept connections tcp
+rinha-nginx  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+rinha-nginx  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+rinha-nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+rinha-nginx  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+rinha-nginx  | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+rinha-nginx  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+rinha-nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+rinha-nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+rinha-nginx  | /docker-entrypoint.sh: Configuration complete; ready for start up
+api2-1       | info: rinha_backend_2025.Services.QueueWorker[0]
+api2-1       |       PaymentQueueService started
+api1-1       | info: rinha_backend_2025.Services.QueueWorker[0]
+api1-1       |       PaymentQueueService started
+api2-1       | info: Microsoft.Hosting.Lifetime[14]
+api2-1       |       Now listening on: http://[::]:8080
+api2-1       | info: Microsoft.Hosting.Lifetime[0]
+api2-1       |       Application started. Press Ctrl+C to shut down.
+api2-1       | info: Microsoft.Hosting.Lifetime[0]
+api2-1       |       Hosting environment: Production
+api2-1       | info: Microsoft.Hosting.Lifetime[0]
+api2-1       |       Content root path: /app
+api1-1       | info: Microsoft.Hosting.Lifetime[14]
+api1-1       |       Now listening on: http://[::]:8080
+api1-1       | info: Microsoft.Hosting.Lifetime[0]
+api1-1       |       Application started. Press Ctrl+C to shut down.
+api1-1       | info: Microsoft.Hosting.Lifetime[0]
+api1-1       |       Hosting environment: Production
+api1-1       | info: Microsoft.Hosting.Lifetime[0]
+api1-1       |       Content root path: /app
+api1-1       | warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+api1-1       |       Failed to determine the https port for redirect.
+api2-1       | warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+api2-1       |       Failed to determine the https port for redirect.
+rinha-redis  | 1:signal-handler (1755594331) Received SIGTERM scheduling shutdown...
+rinha-redis  | 1:M 19 Aug 2025 09:05:31.999 * User requested shutdown...
+rinha-redis  | 1:M 19 Aug 2025 09:05:31.999 # Redis is now ready to exit, bye bye...
+[Krinha-redis exited with code 0
+[Krinha-nginx exited with code 0
+api1-1       | info: Microsoft.Hosting.Lifetime[0]
+api1-1       |       Application is shutting down...
+api2-1       | info: Microsoft.Hosting.Lifetime[0]
+api2-1       |       Application is shutting down...
+log truncated at line 1000

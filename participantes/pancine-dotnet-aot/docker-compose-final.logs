@@ -1,0 +1,94 @@
+
+ Network purchase-gateway  Creating
+ Network purchase-gateway  Created
+ Container postgres  Creating
+ Container postgres  Created
+ Container api-2  Creating
+ Container api-1  Creating
+ Container api-1  Created
+ Container api-2  Created
+ Container load-balancer  Creating
+ Container load-balancer  Created
+Attaching to api-1, api-2, load-balancer, postgres
+postgres  | The files belonging to this database system will be owned by user "postgres".
+postgres  | This user must also own the server process.
+postgres  | 
+postgres  | The database cluster will be initialized with locale "en_US.utf8".
+postgres  | The default database encoding has accordingly been set to "UTF8".
+postgres  | The default text search configuration will be set to "english".
+postgres  | 
+postgres  | Data page checksums are disabled.
+postgres  | 
+postgres  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+postgres  | creating subdirectories ... ok
+postgres  | selecting dynamic shared memory implementation ... posix
+postgres  | selecting default "max_connections" ... 100
+postgres  | selecting default "shared_buffers" ... 128MB
+postgres  | selecting default time zone ... Etc/UTC
+postgres  | creating configuration files ... ok
+postgres  | running bootstrap script ... ok
+postgres  | performing post-bootstrap initialization ... ok
+postgres  | syncing data to disk ... ok
+postgres  | 
+postgres  | 
+postgres  | Success. You can now start the database server using:
+postgres  | 
+postgres  |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+postgres  | 
+postgres  | initdb: warning: enabling "trust" authentication for local connections
+postgres  | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+postgres  | waiting for server to start....2025-08-19 11:53:37.804 UTC [70] LOG:  starting PostgreSQL 17.5 (Debian 17.5-1.pgdg130+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+postgres  | 2025-08-19 11:53:37.807 UTC [70] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres  | 2025-08-19 11:53:37.819 UTC [73] LOG:  database system was shut down at 2025-08-19 11:53:37 UTC
+postgres  | 2025-08-19 11:53:37.826 UTC [70] LOG:  database system is ready to accept connections
+postgres  |  done
+postgres  | server started
+postgres  | CREATE DATABASE
+postgres  | 
+postgres  | 
+postgres  | /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/init.sql
+postgres  | CREATE TABLE
+postgres  | CREATE INDEX
+postgres  | 
+postgres  | 
+postgres  | 2025-08-19 11:53:38.602 UTC [70] LOG:  received fast shutdown request
+postgres  | waiting for server to shut down....2025-08-19 11:53:38.606 UTC [70] LOG:  aborting any active transactions
+postgres  | 2025-08-19 11:53:38.608 UTC [70] LOG:  background worker "logical replication launcher" (PID 76) exited with exit code 1
+postgres  | 2025-08-19 11:53:38.608 UTC [92] FATAL:  the database system is shutting down
+postgres  | 2025-08-19 11:53:38.610 UTC [71] LOG:  shutting down
+postgres  | 2025-08-19 11:53:38.613 UTC [71] LOG:  checkpoint starting: shutdown immediate
+postgres  | 2025-08-19 11:53:38.747 UTC [71] LOG:  checkpoint complete: wrote 926 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.097 s, sync=0.026 s, total=0.137 s; sync files=311, longest=0.004 s, average=0.001 s; distance=4273 kB, estimate=4273 kB; lsn=0/1919EA0, redo lsn=0/1919EA0
+postgres  | 2025-08-19 11:53:38.756 UTC [70] LOG:  database system is shut down
+postgres  |  done
+postgres  | server stopped
+postgres  | 
+postgres  | PostgreSQL init process complete; ready for start up.
+postgres  | 
+postgres  | 2025-08-19 11:53:38.829 UTC [1] LOG:  starting PostgreSQL 17.5 (Debian 17.5-1.pgdg130+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+postgres  | 2025-08-19 11:53:38.830 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres  | 2025-08-19 11:53:38.830 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+postgres  | 2025-08-19 11:53:38.836 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres  | 2025-08-19 11:53:38.844 UTC [96] LOG:  database system was shut down at 2025-08-19 11:53:38 UTC
+postgres  | 2025-08-19 11:53:38.852 UTC [1] LOG:  database system is ready to accept connections
+load-balancer  | [NOTICE]   (1) : Initializing new worker (8)
+load-balancer  | [NOTICE]   (1) : Loading success.
+postgres       | 2025-08-19 11:58:38.944 UTC [94] LOG:  checkpoint starting: time
+postgres       | 2025-08-19 11:58:45.185 UTC [94] LOG:  checkpoint complete: wrote 91 buffers (0.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=6.219 s, sync=0.010 s, total=6.241 s; sync files=28, longest=0.004 s, average=0.001 s; distance=2311 kB, estimate=2311 kB; lsn=0/1B5C3B8, redo lsn=0/1B5BB90
+load-balancer  | [NOTICE]   (1) : haproxy version is 3.2.3-1844da7
+load-balancer  | [NOTICE]   (1) : path to executable is /usr/local/sbin/haproxy
+load-balancer  | [WARNING]  (1) : Exiting Master process...
+load-balancer  | [WARNING]  (8) : Proxy api_frontend stopped (cumulated conns: FE: 634, BE: 0).
+load-balancer  | [WARNING]  (8) : Proxy api stopped (cumulated conns: FE: 0, BE: 90610).
+load-balancer  | [WARNING]  (1) : Current worker (8) exited with code 0 (Exit)
+load-balancer  | [WARNING]  (1) : All workers exited. Exiting... (0)
+[Kload-balancer exited with code 0
+[Kapi-1 exited with code 0
+[Kapi-2 exited with code 0
+postgres       | 2025-08-19 11:58:58.658 UTC [1] LOG:  received fast shutdown request
+postgres       | 2025-08-19 11:58:58.661 UTC [1] LOG:  aborting any active transactions
+postgres       | 2025-08-19 11:58:58.665 UTC [1] LOG:  background worker "logical replication launcher" (PID 99) exited with exit code 1
+postgres       | 2025-08-19 11:58:58.665 UTC [94] LOG:  shutting down
+postgres       | 2025-08-19 11:58:58.668 UTC [94] LOG:  checkpoint starting: shutdown immediate
+postgres       | 2025-08-19 11:58:58.721 UTC [94] LOG:  checkpoint complete: wrote 1266 buffers (7.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.037 s, sync=0.004 s, total=0.056 s; sync files=6, longest=0.003 s, average=0.001 s; distance=4 kB, estimate=2080 kB; lsn=0/1B5CF70, redo lsn=0/1B5CF70
+postgres       | 2025-08-19 11:58:58.811 UTC [1] LOG:  database system is shut down
+log truncated at line 1000

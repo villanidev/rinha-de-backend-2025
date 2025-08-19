@@ -1,0 +1,44 @@
+
+ Network ogabriel-elixir-alt_backend  Creating
+ Network ogabriel-elixir-alt_backend  Created
+ Container ogabriel-elixir-alt-app1-1  Creating
+ Container ogabriel-elixir-alt-app1-1  Created
+ Container ogabriel-elixir-alt-app2-1  Creating
+ Container ogabriel-elixir-alt-app2-1  Created
+ Container ogabriel-elixir-alt-haproxy-1  Creating
+ Container ogabriel-elixir-alt-haproxy-1  Created
+Attaching to app1-1, app2-1, haproxy-1
+haproxy-1  | [NOTICE]   (1) : Initializing new worker (8)
+haproxy-1  | [NOTICE]   (8) : haproxy version is 3.1.8-4391242
+haproxy-1  | [WARNING]  (8) : missing timeouts for frontend 'app'.
+haproxy-1  |    | While not properly invalid, you will certainly encounter various problems
+haproxy-1  |    | with such a configuration. To fix this, please ensure that all following
+haproxy-1  |    | timeouts are set to a non-zero value: 'client', 'connect', 'server'.
+haproxy-1  | [WARNING]  (8) : missing timeouts for backend 'apps'.
+haproxy-1  |    | While not properly invalid, you will certainly encounter various problems
+haproxy-1  |    | with such a configuration. To fix this, please ensure that all following
+haproxy-1  |    | timeouts are set to a non-zero value: 'client', 'connect', 'server'.
+haproxy-1  | [NOTICE]   (1) : Loading success.
+haproxy-1  | [WARNING]  (8) : Server apps/app1 is DOWN, reason: Layer4 connection problem, info: "Connection refused", check duration: 0ms. 1 active and 0 backup servers left. 0 sessions active, 0 requeued, 0 remaining in queue.
+haproxy-1  | [WARNING]  (8) : Server apps/app2 is DOWN, reason: Layer4 connection problem, info: "Connection refused", check duration: 0ms. 0 active and 0 backup servers left. 0 sessions active, 0 requeued, 0 remaining in queue.
+haproxy-1  | [ALERT]    (8) : backend 'apps' has no server available!
+app2-1     | 
+app2-1     | 11:21:59.631 [info] Running Rinha.Router with Bandit 1.7.0 at 0.0.0.0:9999 (http)
+app1-1     | 
+app1-1     | 11:22:00.511 [info] Running Rinha.Router with Bandit 1.7.0 at 0.0.0.0:9999 (http)
+haproxy-1  | [WARNING]  (8) : Server apps/app2 is UP, reason: Layer4 check passed, check duration: 0ms. 1 active and 0 backup servers online. 0 sessions requeued, 0 total in queue.
+haproxy-1  | [WARNING]  (8) : Server apps/app1 is UP, reason: Layer4 check passed, check duration: 0ms. 2 active and 0 backup servers online. 0 sessions requeued, 0 total in queue.
+[Kapp2-1 exited with code 137
+haproxy-1  | [WARNING]  (8) : Server apps/app2 is DOWN, reason: Layer4 timeout, check duration: 2000ms. 1 active and 0 backup servers left. 632 sessions active, 0 requeued, 0 remaining in queue.
+haproxy-1  | HAProxy version 3.1.8-4391242 2025/06/02 - https://haproxy.org/
+haproxy-1  | Status: stable branch - will stop receiving fixes around Q1 2026.
+haproxy-1  | Known bugs: http://www.haproxy.org/bugs/bugs-3.1.8.html
+haproxy-1  | Running on: Linux 6.14.0-1010-aws #10~24.04.1-Ubuntu SMP Fri Jul 18 20:44:30 UTC 2025 x86_64
+haproxy-1  | [NOTICE]   (1) : haproxy version is 3.1.8-4391242
+haproxy-1  | [ALERT]    (1) : Current worker (8) exited with code 137 (Killed)
+haproxy-1  | [WARNING]  (1) : A worker process unexpectedly died and this can only be explained by a bug in haproxy or its dependencies.
+haproxy-1  | Please check that you are running an up to date and maintained version of haproxy and open a bug report.
+haproxy-1  | [ALERT]    (1) : exit-on-failure: killing every processes with SIGTERM
+haproxy-1  | [WARNING]  (1) : All workers exited. Exiting... (137)
+[Khaproxy-1 exited with code 137
+log truncated at line 1000

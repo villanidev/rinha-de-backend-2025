@@ -1,0 +1,26 @@
+
+ Network not4rt-uring_rs_backend  Creating
+ Network not4rt-uring_rs_backend  Created
+ Volume "not4rt-uring_rs_sockets"  Creating
+ Volume "not4rt-uring_rs_sockets"  Created
+ Container not4rt-uring_rs-backend1-1  Creating
+ Container not4rt-uring_rs-backend2-1  Creating
+ Container not4rt-uring_rs-backend1-1  Created
+ Container not4rt-uring_rs-backend2-1  Created
+ Container not4rt-uring_rs-haproxy-1  Creating
+ Container not4rt-uring_rs-haproxy-1  Created
+Attaching to backend1-1, backend2-1, haproxy-1
+backend2-1  | Server started
+backend1-1  | Server started
+haproxy-1   | [NOTICE]   (1) : haproxy version is 3.2.3-1844da7
+haproxy-1   | [WARNING]  (1) : missing timeouts for frontend 'api_frontend'.
+haproxy-1   |    | While not properly invalid, you will certainly encounter various problems
+haproxy-1   |    | with such a configuration. To fix this, please ensure that all following
+haproxy-1   |    | timeouts are set to a non-zero value: 'client', 'connect', 'server'.
+haproxy-1   | [WARNING]  (1) : missing timeouts for backend 'api_backend'.
+haproxy-1   |    | While not properly invalid, you will certainly encounter various problems
+haproxy-1   |    | with such a configuration. To fix this, please ensure that all following
+haproxy-1   |    | timeouts are set to a non-zero value: 'client', 'connect', 'server'.
+[Khaproxy-1 exited with code 137
+[Kbackend1-1 exited with code 137
+log truncated at line 1000

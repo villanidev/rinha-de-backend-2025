@@ -1,0 +1,7 @@
+
+time="2025-08-19T07:33:50Z" level=warning msg="/home/ubuntu/rinha-de-backend-2025/participantes/marcelo-dias-final/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+ app2 Pulling 
+ app1 Pulling 
+ app2 Error manifest for maruero/rinha-de-backend-2025:20250817_final not found: manifest unknown: manifest unknown
+ app1  Interrupted
+Error response from daemon: manifest for maruero/rinha-de-backend-2025:20250817_final not found: manifest unknown: manifest unknown

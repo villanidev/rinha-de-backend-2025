@@ -1,0 +1,56 @@
+
+ Network mateuxlucax-elysia_backend  Creating
+ Network mateuxlucax-elysia_backend  Created
+ Container valkey  Creating
+ Container valkey  Created
+ Container worker-1  Creating
+ Container worker-2  Creating
+ Container api-2  Creating
+ Container api-1  Creating
+ Container api-2  Created
+ Container api-1  Created
+ Container haproxy  Creating
+ Container worker-1  Created
+ Container worker-2  Created
+ Container haproxy  Created
+Attaching to api-1, api-2, haproxy, valkey, worker-1, worker-2
+valkey  | 1:M 19 Aug 2025 08:09:59.593 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+valkey  | 1:M 19 Aug 2025 08:09:59.593 * oO0OoO0OoO0Oo Valkey is starting oO0OoO0OoO0Oo
+valkey  | 1:M 19 Aug 2025 08:09:59.593 * Valkey version=8.1.3, bits=64, commit=00000000, modified=0, pid=1, just started
+valkey  | 1:M 19 Aug 2025 08:09:59.593 * Configuration loaded
+valkey  | 1:M 19 Aug 2025 08:09:59.595 * monotonic clock: POSIX clock_gettime
+valkey  | 1:M 19 Aug 2025 08:09:59.613 * Running mode=standalone, port=6379.
+valkey  | 1:M 19 Aug 2025 08:09:59.614 * Server initialized
+valkey  | 1:M 19 Aug 2025 08:09:59.622 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+valkey  | 1:M 19 Aug 2025 08:09:59.629 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+valkey  | 1:M 19 Aug 2025 08:09:59.629 * Ready to accept connections tcp
+worker-1  | ⚙️ Starting worker...
+worker-2  | ⚙️ Starting worker...
+worker-2  | 🩺 Health Check Leader: null Current PID: 19yiu83jv1mm
+worker-1  | 🩺 Health Check Leader: null Current PID: 1xkj9esbug8i
+worker-2  | ✅ Processor health check initialized.
+worker-1  | ✅ Processor health check initialized.
+worker-1  | ✅ Worker initialized.
+worker-2  | ✅ Worker initialized.
+api-2     | 🦊 Server is running on http://localhost:9999
+api-1     | 🦊 Server is running on http://localhost:9999
+haproxy   | [NOTICE]   (1) : New worker (8) forked
+haproxy   | [NOTICE]   (1) : Loading success.
+haproxy   | [NOTICE]   (1) : haproxy version is 2.9.15-e872a3f
+haproxy   | [NOTICE]   (1) : path to executable is /usr/local/sbin/haproxy
+haproxy   | [WARNING]  (1) : Exiting Master process...
+haproxy   | [WARNING]  (8) : Proxy http-in stopped (cumulated conns: FE: 14, BE: 0).
+haproxy   | [WARNING]  (8) : Proxy services stopped (cumulated conns: FE: 0, BE: 14).
+haproxy   | [WARNING]  (1) : Current worker (8) exited with code 0 (Exit)
+haproxy   | [WARNING]  (1) : All workers exited. Exiting... (0)
+[Khaproxy exited with code 0
+[Kworker-2 exited with code 137
+[Kworker-1 exited with code 137
+[Kapi-2 exited with code 137
+[Kapi-1 exited with code 137
+valkey    | 1:signal-handler (1755591084) Received SIGTERM scheduling shutdown...
+valkey    | 1:M 19 Aug 2025 08:11:24.681 * User requested shutdown...
+valkey    | 1:M 19 Aug 2025 08:11:24.681 * Calling fsync() on the AOF file.
+valkey    | 1:M 19 Aug 2025 08:11:24.681 * Saving the final RDB snapshot before exiting.
+valkey    | 1:M 19 Aug 2025 08:11:24.686 * DB saved on disk
+valkey    | 1:M 19 Aug 2025 08:11:24.686 # Valkey is now ready to exit, bye bye...

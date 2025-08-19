@@ -1,0 +1,1001 @@
+
+ api-2 Pulling 
+ redis Pulling 
+ api-1 Pulling 
+ redis Pulled 
+ 59e22667830b Already exists 
+ 332e204f49c9 Pulling fs layer 
+ 2badcc820818 Pulling fs layer 
+ 59e22667830b Already exists 
+ 332e204f49c9 Pulling fs layer 
+ 2badcc820818 Pulling fs layer 
+ 332e204f49c9 Downloading [>                                                  ]  50.65kB/3.51MB
+ 332e204f49c9 Downloading [>                                                  ]  50.65kB/3.51MB
+ 2badcc820818 Downloading [>                                                  ]  33.27kB/2.266MB
+ 2badcc820818 Downloading [>                                                  ]  33.27kB/2.266MB
+ 332e204f49c9 Verifying Checksum 
+ 332e204f49c9 Download complete 
+ 332e204f49c9 Download complete 
+ 332e204f49c9 Extracting [>                                                  ]  65.54kB/3.51MB
+ 332e204f49c9 Extracting [>                                                  ]  65.54kB/3.51MB
+ 332e204f49c9 Extracting [========================================>          ]  2.818MB/3.51MB
+ 332e204f49c9 Extracting [========================================>          ]  2.818MB/3.51MB
+ 2badcc820818 Downloading [================================================>  ]  2.184MB/2.266MB
+ 2badcc820818 Downloading [================================================>  ]  2.184MB/2.266MB
+ 2badcc820818 Verifying Checksum 
+ 2badcc820818 Download complete 
+ 2badcc820818 Verifying Checksum 
+ 2badcc820818 Download complete 
+ 332e204f49c9 Extracting [==================================================>]   3.51MB/3.51MB
+ 332e204f49c9 Extracting [==================================================>]   3.51MB/3.51MB
+ 332e204f49c9 Extracting [==================================================>]   3.51MB/3.51MB
+ 332e204f49c9 Extracting [==================================================>]   3.51MB/3.51MB
+ 332e204f49c9 Pull complete 
+ 332e204f49c9 Pull complete 
+ 2badcc820818 Extracting [>                                                  ]  32.77kB/2.266MB
+ 2badcc820818 Extracting [>                                                  ]  32.77kB/2.266MB
+ 2badcc820818 Extracting [==================================================>]  2.266MB/2.266MB
+ 2badcc820818 Extracting [==================================================>]  2.266MB/2.266MB
+ 2badcc820818 Pull complete 
+ 2badcc820818 Pull complete 
+ api-2 Pulled 
+ api-1 Pulled 
+ Network rinha-net  Creating
+ Network rinha-net  Created
+ Volume "lipenvs_redis-data"  Creating
+ Volume "lipenvs_redis-data"  Created
+ Container redis  Creating
+ Container redis  Created
+ Container api-1  Creating
+ Container api-2  Creating
+ Container api-2  Created
+ Container api-1  Created
+ Container nginx-lb  Creating
+ Container nginx-lb  Created
+Attaching to api-1, api-2, nginx-lb, redis
+redis  | Starting Redis Server
+redis  | 1:C 19 Aug 2025 05:17:43.211 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis  | 1:C 19 Aug 2025 05:17:43.211 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis  | 1:C 19 Aug 2025 05:17:43.211 * Redis version=8.0.3, bits=64, commit=00000000, modified=1, pid=1, just started
+redis  | 1:C 19 Aug 2025 05:17:43.211 * Configuration loaded
+redis  | 1:M 19 Aug 2025 05:17:43.212 * monotonic clock: POSIX clock_gettime
+redis  | 1:M 19 Aug 2025 05:17:43.215 * Running mode=standalone, port=6379.
+redis  | 1:M 19 Aug 2025 05:17:43.219 * <bf> RedisBloom version 8.0.1 (Git=unknown)
+redis  | 1:M 19 Aug 2025 05:17:43.219 * <bf> Registering configuration options: [
+redis  | 1:M 19 Aug 2025 05:17:43.219 * <bf> 	{ bf-error-rate       :      0.01 }
+redis  | 1:M 19 Aug 2025 05:17:43.219 * <bf> 	{ bf-initial-size     :       100 }
+redis  | 1:M 19 Aug 2025 05:17:43.219 * <bf> 	{ bf-expansion-factor :         2 }
+redis  | 1:M 19 Aug 2025 05:17:43.219 * <bf> 	{ cf-bucket-size      :         2 }
+redis  | 1:M 19 Aug 2025 05:17:43.219 * <bf> 	{ cf-initial-size     :      1024 }
+redis  | 1:M 19 Aug 2025 05:17:43.219 * <bf> 	{ cf-max-iterations   :        20 }
+redis  | 1:M 19 Aug 2025 05:17:43.219 * <bf> 	{ cf-expansion-factor :         1 }
+redis  | 1:M 19 Aug 2025 05:17:43.219 * <bf> 	{ cf-max-expansions   :        32 }
+redis  | 1:M 19 Aug 2025 05:17:43.219 * <bf> ]
+redis  | 1:M 19 Aug 2025 05:17:43.219 * Module 'bf' loaded from /usr/local/lib/redis/modules//redisbloom.so
+redis  | 1:M 19 Aug 2025 05:17:43.243 * <search> Redis version found by RedisSearch : 8.0.3 - oss
+redis  | 1:M 19 Aug 2025 05:17:43.243 * <search> RediSearch version 8.0.1 (Git=5688fcc)
+redis  | 1:M 19 Aug 2025 05:17:43.243 * <search> Low level api version 1 initialized successfully
+redis  | 1:M 19 Aug 2025 05:17:43.244 * <search> gc: ON, prefix min length: 2, min word length to stem: 4, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, 
+redis  | 1:M 19 Aug 2025 05:17:43.245 * <search> Initialized thread pools!
+redis  | 1:M 19 Aug 2025 05:17:43.245 * <search> Disabled workers threadpool of size 0
+redis  | 1:M 19 Aug 2025 05:17:43.246 * <search> Subscribe to config changes
+redis  | 1:M 19 Aug 2025 05:17:43.247 * <search> Enabled role change notification
+redis  | 1:M 19 Aug 2025 05:17:43.248 * <search> Cluster configuration: AUTO partitions, type: 0, coordinator timeout: 0ms
+redis  | 1:M 19 Aug 2025 05:17:43.249 * <search> Register write commands
+redis  | 1:M 19 Aug 2025 05:17:43.249 * Module 'search' loaded from /usr/local/lib/redis/modules//redisearch.so
+redis  | 1:M 19 Aug 2025 05:17:43.254 * <timeseries> RedisTimeSeries version 80001, git_sha=577bfa8b5909e7ee572f0b651399be8303dc6641
+redis  | 1:M 19 Aug 2025 05:17:43.254 * <timeseries> Redis version found by RedisTimeSeries : 8.0.3 - oss
+redis  | 1:M 19 Aug 2025 05:17:43.254 * <timeseries> Registering configuration options: [
+redis  | 1:M 19 Aug 2025 05:17:43.254 * <timeseries> 	{ ts-compaction-policy   :              }
+redis  | 1:M 19 Aug 2025 05:17:43.254 * <timeseries> 	{ ts-num-threads         :            3 }
+redis  | 1:M 19 Aug 2025 05:17:43.254 * <timeseries> 	{ ts-retention-policy    :            0 }
+redis  | 1:M 19 Aug 2025 05:17:43.254 * <timeseries> 	{ ts-duplicate-policy    :        block }
+redis  | 1:M 19 Aug 2025 05:17:43.254 * <timeseries> 	{ ts-chunk-size-bytes    :         4096 }
+redis  | 1:M 19 Aug 2025 05:17:43.254 * <timeseries> 	{ ts-encoding            :   compressed }
+redis  | 1:M 19 Aug 2025 05:17:43.254 * <timeseries> 	{ ts-ignore-max-time-diff:            0 }
+redis  | 1:M 19 Aug 2025 05:17:43.254 * <timeseries> 	{ ts-ignore-max-val-diff :     0.000000 }
+redis  | 1:M 19 Aug 2025 05:17:43.254 * <timeseries> ]
+redis  | 1:M 19 Aug 2025 05:17:43.255 * <timeseries> Detected redis oss
+redis  | 1:M 19 Aug 2025 05:17:43.255 * Module 'timeseries' loaded from /usr/local/lib/redis/modules//redistimeseries.so
+redis  | 1:M 19 Aug 2025 05:17:43.267 * <ReJSON> Created new data type 'ReJSON-RL'
+redis  | 1:M 19 Aug 2025 05:17:43.269 * <ReJSON> version: 80001 git sha: unknown branch: unknown
+redis  | 1:M 19 Aug 2025 05:17:43.269 * <ReJSON> Exported RedisJSON_V1 API
+redis  | 1:M 19 Aug 2025 05:17:43.269 * <ReJSON> Exported RedisJSON_V2 API
+redis  | 1:M 19 Aug 2025 05:17:43.269 * <ReJSON> Exported RedisJSON_V3 API
+redis  | 1:M 19 Aug 2025 05:17:43.269 * <ReJSON> Exported RedisJSON_V4 API
+redis  | 1:M 19 Aug 2025 05:17:43.269 * <ReJSON> Exported RedisJSON_V5 API
+redis  | 1:M 19 Aug 2025 05:17:43.269 * <ReJSON> Enabled diskless replication
+redis  | 1:M 19 Aug 2025 05:17:43.270 * <ReJSON> Initialized shared string cache, thread safe: false.
+redis  | 1:M 19 Aug 2025 05:17:43.270 * Module 'ReJSON' loaded from /usr/local/lib/redis/modules//rejson.so
+redis  | 1:M 19 Aug 2025 05:17:43.270 * <search> Acquired RedisJSON_V5 API
+redis  | 1:M 19 Aug 2025 05:17:43.270 * Server initialized
+redis  | 1:M 19 Aug 2025 05:17:43.272 * Ready to accept connections tcp
+api-1  | API iniciada na porta 3000
+api-1  | Iniciando worker de processamento de pagamentos...
+api-2  | API iniciada na porta 3000
+api-2  | Iniciando worker de processamento de pagamentos...
+nginx-lb  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+nginx-lb  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+nginx-lb  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+nginx-lb  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+nginx-lb  | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+nginx-lb  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+nginx-lb  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+nginx-lb  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+nginx-lb  | /docker-entrypoint.sh: Configuration complete; ready for start up
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:17:56 +0000] "GET /payments-summary HTTP/1.1" 200 98 "-" "curl/8.5.0"
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:01 +0000] "POST /purge-payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0"
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:01 +0000] "GET /payments-summary?from=2025-08-19T05:17:46.699Z&to=2025-08-19T05:17:59.699Z HTTP/1.1" 200 98 "-" "Grafana k6/1.1.0"
+api-2     | Payment c7836d96-029a-4244-994c-470950cd04a4 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:01 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Worker: Processando payment
+api-1     | Payment 33775488-8103-472f-a1c2-89848c4ab4b5 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:02 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Worker: Processando payment
+api-2     | Payment 2997eb17-63ee-4ea9-9302-e8ca8b71fa13 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:02 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 3162c1aa-d819-46fd-b14d-47f1a4245764 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:02 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Payment 66f35071-1844-46f7-92cb-c924ee5c438d adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:03 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 39863f24-95a4-4285-a36a-2d5c27674c2b adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:03 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Payment 9aefcd56-a413-464a-bab3-659a0afc4a17 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:03 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 5cbe1fce-33f8-4371-9b82-2f6c00289dad adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:03 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment a2a0b7ed-fa96-4231-8752-36a1d868e87f adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:03 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Payment 765eca35-2fa5-4ddc-949e-e33eadff19e1 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:04 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 891d820e-1e9b-423d-8503-a30a9b1b43d6 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:04 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 0d769619-b3e1-4c76-91c8-d8a5cbcd9c01 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:04 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Payment c7676484-ff03-456e-973f-7dbfb67cb284 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:04 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 569e4d6a-9b49-4734-bbc5-60aaa9597b1e adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:04 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 9ff1d25c-24ac-43d1-98eb-6d0ed7bcdd3a adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:04 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment dc029a0d-6003-4f0e-9218-3ba8029cdc46 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:04 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Payment 1b126aea-cddd-40de-ae38-e2e6672edac7 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:05 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment e17c66f1-9981-4836-b204-2ff64723a4bc adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:05 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 1e6134be-9af0-46f8-932c-2bf85130d3f6 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:05 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment f7698aa7-de6b-463f-9943-845986360846 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:05 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Payment 44e9615c-f049-4548-be35-95ef8399b85a adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:05 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 9c3de8c3-700b-4309-8c64-5a9e23d00bf4 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:05 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 6166a6a3-63fe-4a1d-842b-04a14e370185 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:05 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 7a00d781-6c72-4c42-b353-842b305e8788 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:05 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 5627a2b7-c211-4432-bd75-7550aad94dd2 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:05 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Payment 69ecdc81-f3c7-4c53-a8cc-288b2be9a02a adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:06 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 1e15f41e-2f70-410a-bfca-46a9b2d8ea38 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:06 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 1a3c4e5e-1049-4160-ba7b-addca736f457 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:06 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 9ce9fa54-0b99-47a8-b4ef-b9aee8c2e516 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:06 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment f97efeac-a25b-4513-bae7-0f4c168414be adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:06 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Payment 086a3d46-cafd-4f46-9299-465643ffded4 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:06 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 48576382-bd30-4b7f-b516-fc0ad938315a adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:06 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment c80f34c2-69fc-478c-a972-92a7d7b7432b adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:06 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment c69e77cb-4636-43f8-a764-c9c8e243c7e0 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:06 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment b778d00f-32ff-44ca-aa54-fec1e3f7417f adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:06 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment f51b5bd8-a31a-4c40-9f3b-9bac49621c56 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:06 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Payment 7e66912d-1d65-4b3d-8b64-f51c11c59ba2 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:07 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 777d8e3c-65de-43d5-9dcd-fe46f5008a9d adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:07 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 29c875f8-8f7e-4aa0-9635-979b899952a8 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:07 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 32f024c0-65c0-4056-89b4-be45e157f90e adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:07 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 812bb824-eca7-4795-bc2e-970aa7f9550d adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:07 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 3314efef-4c3f-495d-a793-94a3066460f8 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:07 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Payment b1e15326-1859-41b9-962f-deb6eaf03c65 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:07 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 16c3dadc-5e78-41b7-a65f-c43b14649612 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:07 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 3d5e34d8-e2ab-41cf-829f-7a21d813033d adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:07 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment bfce89ae-a7d4-45fa-ba18-4f6c99daf529 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:07 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment b67a838f-6040-4455-b121-7e0b61967fd4 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:07 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment b46ec78c-b58f-4f61-877d-2a74270aece4 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:07 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 1af60556-5140-4bad-bd74-6b0855e215a5 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:07 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Payment c911dfda-5dab-4f76-8907-51ab00670882 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:08 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment ad23e721-3a61-4856-a8ca-381bbbb90978 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:08 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 1e52f6cb-1d3b-4af4-bcbb-59331eb34acc adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:08 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 2b757481-3389-4669-856f-c519e704a75a adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:08 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 2a2e34e5-4ae8-4f5d-b04d-7125d1681987 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:08 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment ed7f6a74-caf0-431c-8f34-9e11e5e202bc adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:08 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment c85e20bb-f4ec-4c0a-8be2-1f421cb91ebb adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:08 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Payment 23f29522-23f8-473d-a34c-e50ed1aae652 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:08 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 15e94c59-a840-4c75-8a40-ac004e77fddd adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:08 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment fdf55e9d-7cf8-4978-a99f-bce20fef891c adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:08 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 640ee2e5-3b84-4969-a09c-10e9dee90641 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:08 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment fdb9f46e-d275-43f1-92e9-c35ac19d959a adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:08 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment a35bde98-7308-4eb6-b6e4-5bafcc07a567 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:08 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 5471c07b-a83c-44e0-b74a-7cdbe6bd3c16 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:08 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 723cc32b-fed3-4db6-bf0a-cf04ce446aeb adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:08 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Payment 6a20000f-31b3-41de-9cb7-5ef159815af3 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 19afc429-5ccc-4085-84d9-7129decca98b adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 67b2e18a-f21c-4f7b-a51f-76cc01cb77b8 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment d74df6fc-c5ab-4390-ab7c-0b4835d2fb10 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 3e5d23e2-a2ee-41b6-ace0-ea5f43cfc319 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment ff87f59c-4c81-4397-8932-ec3af80b1ed2 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 93add17b-1b65-4ed1-b092-336d026380af adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment a642902c-d9d4-4760-850e-6672d99254be adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Payment 0ee8584d-c435-4e35-a668-812d064d46e2 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment f51f99ae-84b9-47d9-a046-4ed03161c123 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 6db553b5-cbeb-4aa1-84c7-846610b58dea adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 3e26c4dc-90ae-48df-957a-d466dce3e011 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 5461b18c-da57-40da-9742-a67997ccd9e1 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 4c54097c-5467-4c46-8100-214a5f977e08 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment a36f349d-acd8-426c-ba86-4150616ba804 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment dee0ba63-9749-4d6e-a6be-03e5cd9afc25 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 3b6e768e-c044-4f7c-9e5b-470b2a918c32 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:09 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Payment 5ca07640-0881-424f-9bd0-107650f6f1eb adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 28198290-e5a4-494f-9f64-716c39fef20b adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 1f0efdae-1b92-45de-840b-d1edf14b6335 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment a6a4bbae-b612-42e3-8648-3b9896e98b8e adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 9f32495d-d804-448b-8ac8-9bb7023c024a adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 05eec8fa-7b45-4017-bcc2-da482f4ba175 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment b7cbdcac-57a3-4896-95fc-f18021715ffc adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment f19ad180-c18a-4362-b724-87a8edfa4e7d adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 91350625-81c7-489a-93bc-a8d944650726 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Payment c9e52087-2351-4816-a22a-066a314f654d adicionado a fila
+api-2     | Payment 14d60111-210d-43c0-a5da-2f97c0416795 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 66947260-f83e-4cf8-aa0f-e051bff706ef adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 912ee335-e0a4-4ff5-8070-5cf24baa4b00 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 0150232c-fc63-42ab-a29d-268a3ebdeadf adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 1e04b0df-e5ad-415b-b215-5be4cbd19fe6 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 2ab008ce-175b-48a4-ba64-e3644b4d8ec9 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 6d928967-f2b3-4d7a-a257-f8bca5a5250f adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 15357b5d-87bf-487b-80e1-e87f6ddf35ff adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 30d50655-88d9-4b6e-80f6-1adbd53e2c3b adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:10 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Payment 0dd999b5-1ea5-496b-aff1-97dbe44ce62c adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 7eee0df3-87a2-4855-bc07-aa9639993fc1 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 8a9e2fd6-030d-48a1-bbf2-8ff0bae52f40 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 151d1ae9-09fd-47a7-80fe-634ff2663457 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment a93fb1df-0e41-438a-890e-ea7ff46d846f adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment d14d077e-4af2-4d53-af0b-5d66b9eaf4c6 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 447ee956-b6d2-40f2-ba74-f7f39ec9a91e adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment ed00ef4b-f2be-47ea-b883-8369ae258361 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 56f789b4-9ed5-4b80-afff-613f9ab377f7 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 9d7eb0e4-4b56-44d5-b091-438f1b16b183 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-2     | Payment 1610062b-b840-49b3-820f-b2440d881808 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 91df3359-c64d-4746-a961-ee5671172a90 adicionado a fila
+api-1     | Payment 405ee6dd-d5a3-4c56-ac64-3e73157cd3cc adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 0caacdc2-549a-4367-9bd8-dee12a992712 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment ae3b1284-4368-404e-8a59-6a07216e1f95 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment a0629977-5acf-4014-b8ac-470409dfe7ef adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 9e2413ff-690b-49ce-b96f-84e7c8384df6 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 2f3479c7-11b6-4a1a-8e52-942dfb46ac87 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 18e72302-cbcd-49fb-b2cd-7e35cc24a4c1 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:11 +0000] "GET /payments-summary?from=2025-08-19T05:17:56.705Z&to=2025-08-19T05:18:09.705Z HTTP/1.1" 200 115 "-" "Grafana k6/1.1.0"
+api-2     | Payment b20a8aed-3100-4407-9d3c-99939d3b765e adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 5facbb82-8990-46bd-abb6-eaa4744228be adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:11 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-2     | Payment 160cc7e2-9660-4d48-a728-d86d31e035cb adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 48813df0-c2b0-4864-b705-46f98c2d2193 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 403e7609-650c-40d3-af48-65c31f8cc1f4 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 501eaad5-63bb-4e77-bcdd-5b337f26e97f adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment cc396bcc-f4ca-432e-bda2-172cf40c3596 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment bd7b148c-7265-4b20-9134-4d73f5399f01 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment d29e0feb-e268-49ca-ac1a-1e11ee933fe1 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 3a3bbd0a-ec54-4886-a2c1-7a33b706e57a adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment d1632769-e7d9-4b9d-b0dc-55aea80f4ccd adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 41e3e3a1-f4eb-4461-8361-ab105a36cd59 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment c7613e5d-f454-442e-8294-0ddcdd6aefc3 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Payment 8bf2b317-d1ae-49eb-ba78-859c946627ca adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment fdcbc9e2-cf88-49f8-984d-b6d7a47b9f0e adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 866bf953-32da-4dd5-b690-68a7dca9a549 adicionado a fila
+api-2     | Payment 59866643-bd65-4dd7-901e-a39162877e38 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 6519bd70-7c27-46be-a414-117c6059fd81 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 26934474-7e5d-4e5a-aebf-a03a19850772 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment bea009b5-eb2a-4478-927c-33030f9c091f adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 33945332-f0b7-44bb-9857-f4b74ff223f7 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 64717785-6d93-4eeb-967e-4e1a9535f780 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 5a05ac93-1c4e-4913-ab33-8dd83886779c adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment a47d22a5-4d8a-486e-a3c6-43995491101f adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 14ba38f4-f26e-424f-8177-448dca739625 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:12 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Payment 0a879218-96aa-48e9-b2ae-6e989b266929 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 95d34c39-ab96-4c46-b342-2b2b32df03e8 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment e9afecbf-3447-4a63-955b-ebeeec5a61c6 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 97c1182f-93f6-4f3e-aa5a-da8b67d2f584 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 5ba16762-2e28-4f4c-9159-6ef50ba7fce8 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 5d67fca8-ebf6-4255-bfe9-faf6dd0e2bcc adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment f2214501-f691-49a4-aa6c-374e06edca41 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 3e82dbce-8ed5-4973-ab23-723385a03d96 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment fa40b1a8-4e6a-4b33-8c2b-6b9c881f05a2 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 71b3b98a-7bc1-47de-9dba-8f518e7cce5b adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment f4a47074-7101-4b08-86c1-55a030dda39b adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment d8810f72-23fc-4fb8-ae7c-d2ec67167c39 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Payment e6b67a02-fb46-4618-a529-8a9dcd85e008 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment b7f2c10c-31a6-41b9-8921-cc5c2b44161b adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 963f5516-59f8-4365-9974-b4bdf7171543 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment ea0bc9ea-440a-48fa-b86c-a1e6c90cd72c adicionado a fila
+api-1     | Payment 2d23a2a8-743d-4a87-a665-91d6de3f902b adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 278699cf-2f1e-40a2-907f-bf98523d1f35 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 6d8c4541-ecb5-4133-870e-56244a3f4076 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 3dd84064-e87e-4c4d-8138-1748dbfb4c21 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 644df7df-8a5e-4b5c-beb5-4bae143c9216 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 4742455d-5819-4c8e-85e1-7c028bcb26bf adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 89089afe-421a-4d4f-a1c2-80a3818de7fa adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 305cb5b8-adf1-4ce2-9f99-d7669ba43651 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment cbe98b5f-d27f-44fb-b738-cc895ef5fc70 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:13 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Payment 970f9cc0-b4b2-4a46-89ac-f99bd99c60e1 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment fcfe8076-0530-4b10-ac59-6c6ab072b9db adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment f133e072-4ab8-4a9b-a86f-bc2a8029280c adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 20d30f38-b2cf-49ac-b2a7-e50572b6adc3 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment ea4123f6-0d41-4427-a698-fba69ea41c4d adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment dc769f7f-9f55-4040-a526-a712f60343cb adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment d4b34aab-3837-47eb-8de0-a66a26957309 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 391f73ba-bd35-4ec5-9bf3-cc34faa04c4f adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 9a0d1225-0b36-4c96-b7ff-ab4df27c5a43 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 0d32bf05-2bc8-43ba-a676-f6bfca4bcbf0 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 871f6d92-58d7-4d50-9b50-bb33bc18b740 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment ff18c15f-1e84-4dd7-ae4d-31f1bd63392b adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment d5597676-7e03-4e02-8e7c-cdf1d30bad83 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Payment 385615bf-78a5-4ceb-a2b7-c074b6e12e2f adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 5c9d503d-e664-4068-8a0a-dea428b39497 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 3d1ef812-8e0d-4c2a-bfac-e577c657e440 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment ee2c374f-307f-400b-97bd-d5baf1a3ac46 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 81eb696b-59dc-4d46-b991-bce816b6a099 adicionado a fila
+api-2     | Payment 01526019-3875-411d-97aa-db5c85f9aaa3 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment d226efd5-18b1-48cd-bfaf-043414589221 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 1712d435-63b1-4c6b-aaa0-3658a87271bc adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment c78377ed-2f6b-47d4-8a6d-80a3ba4d72ff adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment d9f66da0-86b3-495e-95cd-81d58bf13e2c adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 45cb2ea1-9a9d-4139-8618-392650466f47 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment dc7738ed-cc17-42f6-9328-3aaee4611acb adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 29d86d5b-784c-4edb-b532-267e22ce4b2d adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment e84e2fc7-18cb-4dd5-b49c-46ff72121d25 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:14 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Payment 7c19fb07-9017-41dd-9ebd-9e59d3804f2c adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment d5314b95-4f06-40ce-b77f-9f478b23dbc4 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 0b099058-7c46-4669-8671-328380c35a71 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 67b3f759-3039-4c7d-a4a1-699f0cdab499 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 85f3bead-4c4e-4dab-a610-a0e67a6224b6 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment fb19d8b2-f273-45c5-8f9b-e8c5a1affe19 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment ce8c98c0-5faa-43bb-8ee0-a45d97249d7f adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment accff517-e2b7-4a3b-b207-5cf3d63591bb adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment eb5f0b91-4c4b-419d-bff1-4273fe06f97c adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment ee1ae235-6b35-4c56-ac53-3ba0221234cb adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 7c237485-0113-4a1d-b688-2de485f4c0e2 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 817e2525-4bf1-4329-b09c-a5e0db5c8521 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment dab542d3-0e43-4a58-83d1-4b25b084f29d adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment ec7b7e05-5213-433b-aef9-999f311e5a13 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Payment b6dd79b9-f1eb-416d-9bb6-40a38b906d2c adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 4cf1a6e1-6a00-4228-8a60-7ccd9f3c4b4a adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 260cab68-3b28-4dc5-8ebf-1dbac927eaeb adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment c1f3a3ea-bec4-44e4-9b9c-a7e82f254876 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 0a91dfbb-e3c2-4f24-9755-7cd5ad4118f5 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 74fdba2b-8eea-4209-9b3c-25f07002f0e4 adicionado a fila
+api-1     | Payment 54c18bfc-805d-4a5a-9f80-af4bd8d89dd3 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 89895c28-9176-40ac-99d7-91e6cb54ed0c adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 2a535748-9494-431f-a0b3-e351091305ad adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 78e3ad8a-f8f0-4835-b421-2a460f5afaa1 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment ddbc0046-313c-48a9-b75d-d3e9177672ba adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment cfda1eb1-ba7a-4a90-a9be-50b34755c445 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment b0b22fbf-07f1-4c2c-be00-9e9863060a66 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 27311d8c-4698-4c4f-bce7-9c63b82c5b26 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment fbbcf867-1930-497f-b07a-787eac0d2041 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:15 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Payment 3f28a388-6ec5-4013-89ea-8a4078914748 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment c0e2ae3c-c28c-44ea-9f45-abba274ea761 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 151fbbe4-3d09-4e76-8d8b-1ec67bc6e46b adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 07b42fb7-2fa6-4a53-9507-560a64130467 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 0be721a3-ac05-40c6-b059-e770f3fc9202 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 2df44bcd-906c-4860-b368-d298294383fe adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 5db67926-3959-46ed-be27-cbe2753c4be6 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment e7b066bd-ecb7-4235-ad2b-c524e2152ea3 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 4fd96b3b-2145-4d59-bb7b-d275a8e1c4be adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 438dee11-c4ba-4b04-88b1-2713371b2d2c adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 1f4fcc67-d436-4263-a23c-41e47eb306a4 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment dbfacde0-b356-4095-965e-48c347dcdff0 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 3459d334-c90d-422b-b7ed-9abdaa5da520 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment e68f42d6-de21-4692-9c86-4226f73eed74 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment c3c7ebd1-2f9d-43ca-ad9b-a4dcc320e9e2 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Payment 6f5f9a56-ba8d-4751-b3ae-e32acab598c5 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment e106115f-69af-4cb2-935c-36d4752bcbf0 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 59b8cc31-ec2f-476a-b1f9-8a4ca6bcb8d9 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment cc739ff6-9d2c-4c8c-9f01-22e52cbbeb9c adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 6e348194-ffc8-4f8a-acae-ccccb681070b adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 440d237c-90a1-4466-ab38-cf9290a48f35 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment b3eec2a8-f244-4f8b-a5f4-aed9d165350b adicionado a fila
+api-2     | Payment 3c10ee30-cf11-4e07-8a16-c3416772284b adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 8653d5e0-45e1-4119-a48b-04cdf2792bdb adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment f47f79b4-de38-432b-817d-77be873df375 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 568dbb8f-c196-4011-aa8e-267b721e28ed adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 7d7d469f-c68f-47e1-9791-30fd11a76733 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 4b2b8d0a-de08-4853-b170-7b18096c230e adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment a725069e-d129-4501-8551-60c3d9a317e4 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 59caff13-05a7-4f1c-91fd-fcddc2ba4fa5 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment c02bacc8-7a06-403e-8bbb-b2a033037fd2 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:16 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Payment dad51fec-5e10-443b-b3c0-3e805819ba78 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 43aa0398-1d6a-4501-9be0-6b32901c2573 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 0b442bfd-feb4-452d-95eb-22d827311ad4 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 2ebb9a18-d2ea-47dc-b465-924c835f1a77 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 536a6c79-4f17-4a57-a1d9-22cd90359c14 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 26ae9dba-3694-4c29-bb5b-798dae1971c9 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 9da10407-bd57-4d06-8507-28ba0fa0894c adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 811ad933-516d-42b3-a4c4-4d072a362b3f adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 6caac1a0-21f8-419e-8430-cdd43c01fb86 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 56a6dde3-5862-403e-83c3-1eadd8b0ec20 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 7e2f2b61-a2c3-4e92-957d-2d4c1977b907 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 05878912-fa38-4fe0-a121-c0be6d95e3fb adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment a8561476-6587-415b-8482-a0200c8936d6 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment fd8255fa-bafa-41e7-87cf-e791bc4b3ca2 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment b559fcc9-6f81-48d2-8366-3f3bb71d69bd adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 8429f6d2-562c-45af-8484-2142464b145b adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Payment 69690128-4d47-48ee-83eb-f33cf15c369e adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment b59c3c9e-6acc-4217-a9c5-e4df235f24e1 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 200a392f-f012-4425-bafc-1a2c23673322 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 481f7339-f13f-42b5-8b74-4fa60dfb6cd2 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment cb64b2bd-d749-495d-ad9e-857ae9ab5f0d adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 95219ef7-5e7c-4c1b-8cf6-2f0a90be2205 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment ff7dc48d-8dcf-4dc8-a5d0-04dc70e6f98d adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 192b219e-4e06-49cc-b7e3-36c02e3b4360 adicionado a fila
+api-1     | Payment 71abb9e8-272f-4d65-ac53-cc03f7dcb32d adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 38f8fd2a-b6a1-4a1b-bfca-09a234ca6eb4 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 077ac54a-90fe-45bf-abcf-fb734012a31e adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 97c4ed0b-a0e5-4499-802c-60e59caaff18 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 73d017b2-61f3-4072-b6dc-2717a03e2ef8 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment 7c17e265-ed60-4454-b7c2-673bc211905a adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 8e2887c5-87f9-4949-b049-d9ba8e481125 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Payment ae217e98-aa83-428e-acd0-39dc80ea9b21 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 534d6579-7bbf-40fa-9084-9c98cd27d468 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:17 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-1     | Worker: Processando payment
+api-2     | Worker: Processando payment
+api-2     | Payment 9d2ab7a0-c053-41ce-97ed-5ab205d1f793 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+api-1     | Payment 07c2d1e5-228d-4b53-a6ca-7f3591fc1ee1 adicionado a fila
+nginx-lb  | 172.20.0.1 - - [19/Aug/2025:05:18:18 +0000] "POST /payments HTTP/1.1" 202 0 "-" "Grafana k6/1.1.0"
+log truncated at line 1000

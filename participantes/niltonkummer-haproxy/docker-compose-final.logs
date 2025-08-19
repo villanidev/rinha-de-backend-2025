@@ -1,0 +1,191 @@
+
+ Network niltonkummer-haproxy_backend-network  Creating
+ Network niltonkummer-haproxy_backend-network  Created
+ Volume "niltonkummer-haproxy_unix-sock"  Creating
+ Volume "niltonkummer-haproxy_unix-sock"  Created
+ Container niltonkummer-haproxy-cache-1  Creating
+ Container niltonkummer-haproxy-cache-1  Created
+ Container niltonkummer-haproxy-api2-1  Creating
+ Container niltonkummer-haproxy-consumer1-1  Creating
+ Container niltonkummer-haproxy-api3-1  Creating
+ Container niltonkummer-haproxy-api1-1  Creating
+ Container niltonkummer-haproxy-consumer1-1  Created
+ Container niltonkummer-haproxy-api3-1  Created
+ Container niltonkummer-haproxy-api1-1  Created
+ Container niltonkummer-haproxy-api2-1  Created
+ Container niltonkummer-haproxy-haproxy-1  Creating
+ Container niltonkummer-haproxy-haproxy-1  Created
+Attaching to api1-1, api2-1, api3-1, cache-1, consumer1-1, haproxy-1
+api2-1  | 🔌 Server listening on /unix-sock/api2.sock
+consumer1-1  | 2025/08/19 11:00:08 INFO Health default="{Failing:false MinResponseTime:0}"
+consumer1-1  | 2025/08/19 11:00:08 INFO Health fallback="{Failing:false MinResponseTime:0}"
+api1-1       | 🔌 Server listening on /unix-sock/api1.sock
+api3-1       | 🔌 Server listening on /unix-sock/api3.sock
+haproxy-1    | [NOTICE]   (1) : New worker (9) forked
+haproxy-1    | [NOTICE]   (1) : Loading success.
+cache-1      | 2025/08/19 11:00:12 INFO Stats summary processed default_requests=0 default_amount=0 fallback_requests=0 fallback_amount=0 duration=220ns
+consumer1-1  | 2025/08/19 11:00:13 INFO Health default="{Failing:false MinResponseTime:0}"
+consumer1-1  | 2025/08/19 11:00:13 INFO Health fallback="{Failing:false MinResponseTime:0}"
+cache-1      | 2025/08/19 11:00:17 INFO Stats summary processed default_requests=0 default_amount=0 fallback_requests=0 fallback_amount=0 duration=340ns
+consumer1-1  | 2025/08/19 11:00:18 INFO Health default="{Failing:false MinResponseTime:0}"
+consumer1-1  | 2025/08/19 11:00:18 INFO Health fallback="{Failing:false MinResponseTime:0}"
+consumer1-1  | 2025/08/19 11:00:23 INFO Health default="{Failing:false MinResponseTime:0}"
+consumer1-1  | 2025/08/19 11:00:23 INFO Health fallback="{Failing:false MinResponseTime:0}"
+cache-1      | 2025/08/19 11:00:27 INFO Stats summary processed default_requests=72 default_amount=1443.6 fallback_requests=0 fallback_amount=0 duration=76.873µs
+consumer1-1  | 2025/08/19 11:00:28 INFO Health default="{Failing:false MinResponseTime:0}"
+consumer1-1  | 2025/08/19 11:00:28 INFO Health fallback="{Failing:false MinResponseTime:0}"
+consumer1-1  | 2025/08/19 11:00:33 INFO Health default="{Failing:false MinResponseTime:0}"
+consumer1-1  | 2025/08/19 11:00:33 INFO Health fallback="{Failing:false MinResponseTime:0}"
+cache-1      | 2025/08/19 11:00:37 INFO Stats summary processed default_requests=326 default_amount=6536.3 fallback_requests=0 fallback_amount=0 duration=82.263µs
+consumer1-1  | 2025/08/19 11:00:38 INFO Health default="{Failing:false MinResponseTime:0}"
+consumer1-1  | 2025/08/19 11:00:38 INFO Health fallback="{Failing:false MinResponseTime:0}"
+consumer1-1  | 2025/08/19 11:00:43 INFO Health default="{Failing:false MinResponseTime:0}"
+consumer1-1  | 2025/08/19 11:00:43 INFO Health fallback="{Failing:false MinResponseTime:0}"
+cache-1      | 2025/08/19 11:00:47 INFO Stats summary processed default_requests=563 default_amount=11288.15 fallback_requests=0 fallback_amount=0 duration=247.308µs
+consumer1-1  | 2025/08/19 11:00:48 INFO Health default="{Failing:false MinResponseTime:1000}"
+consumer1-1  | 2025/08/19 11:00:48 INFO Health fallback="{Failing:false MinResponseTime:1000}"
+consumer1-1  | 2025/08/19 11:00:53 INFO Health default="{Failing:false MinResponseTime:1000}"
+consumer1-1  | 2025/08/19 11:00:53 INFO Health fallback="{Failing:false MinResponseTime:1000}"
+cache-1      | 2025/08/19 11:00:57 INFO Stats summary processed default_requests=760 default_amount=15238 fallback_requests=0 fallback_amount=0 duration=160.686µs
+consumer1-1  | 2025/08/19 11:00:59 INFO Health default="{Failing:false MinResponseTime:1000}"
+consumer1-1  | 2025/08/19 11:00:59 INFO Health fallback="{Failing:false MinResponseTime:1000}"
+consumer1-1  | 2025/08/19 11:01:04 INFO Health default="{Failing:false MinResponseTime:1000}"
+consumer1-1  | 2025/08/19 11:01:04 INFO Health fallback="{Failing:false MinResponseTime:1000}"
+cache-1      | 2025/08/19 11:01:07 INFO Stats summary processed default_requests=780 default_amount=15639 fallback_requests=0 fallback_amount=0 duration=177.286µs
+consumer1-1  | 2025/08/19 11:01:09 INFO Health default="{Failing:false MinResponseTime:1000}"
+consumer1-1  | 2025/08/19 11:01:09 INFO Health fallback="{Failing:false MinResponseTime:1000}"
+consumer1-1  | 2025/08/19 11:01:14 INFO Health default="{Failing:false MinResponseTime:1000}"
+consumer1-1  | 2025/08/19 11:01:14 INFO Health fallback="{Failing:false MinResponseTime:1000}"
+cache-1      | 2025/08/19 11:01:17 INFO Stats summary processed default_requests=780 default_amount=15639 fallback_requests=0 fallback_amount=0 duration=204.167µs
+consumer1-1  | 2025/08/19 11:01:19 INFO Health default="{Failing:false MinResponseTime:500}"
+consumer1-1  | 2025/08/19 11:01:19 INFO Health fallback="{Failing:false MinResponseTime:500}"
+consumer1-1  | 2025/08/19 11:01:24 INFO Health default="{Failing:false MinResponseTime:500}"
+consumer1-1  | 2025/08/19 11:01:24 INFO Health fallback="{Failing:false MinResponseTime:500}"
+cache-1      | 2025/08/19 11:01:27 INFO Stats summary processed default_requests=1231 default_amount=24681.55 fallback_requests=0 fallback_amount=0 duration=480.196µs
+consumer1-1  | 2025/08/19 11:01:29 INFO Health default="{Failing:false MinResponseTime:500}"
+consumer1-1  | 2025/08/19 11:01:29 INFO Health fallback="{Failing:false MinResponseTime:500}"
+consumer1-1  | 2025/08/19 11:01:34 INFO Health default="{Failing:false MinResponseTime:500}"
+consumer1-1  | 2025/08/19 11:01:34 INFO Health fallback="{Failing:false MinResponseTime:500}"
+cache-1      | 2025/08/19 11:01:37 INFO Stats summary processed default_requests=1560 default_amount=31278 fallback_requests=0 fallback_amount=0 duration=401.294µs
+consumer1-1  | 2025/08/19 11:01:39 INFO Health default="{Failing:false MinResponseTime:500}"
+consumer1-1  | 2025/08/19 11:01:39 INFO Health fallback="{Failing:false MinResponseTime:500}"
+consumer1-1  | 2025/08/19 11:01:44 INFO Health default="{Failing:false MinResponseTime:500}"
+consumer1-1  | 2025/08/19 11:01:44 INFO Health fallback="{Failing:false MinResponseTime:500}"
+cache-1      | 2025/08/19 11:01:47 INFO Stats summary processed default_requests=1560 default_amount=31278 fallback_requests=0 fallback_amount=0 duration=441.225µs
+consumer1-1  | 2025/08/19 11:01:49 INFO Health default="{Failing:true MinResponseTime:2000}"
+consumer1-1  | 2025/08/19 11:01:49 INFO Health fallback="{Failing:true MinResponseTime:2000}"
+consumer1-1  | 2025/08/19 11:01:54 INFO Health default="{Failing:true MinResponseTime:2000}"
+consumer1-1  | 2025/08/19 11:01:54 INFO Health fallback="{Failing:true MinResponseTime:2000}"
+cache-1      | 2025/08/19 11:01:57 INFO Stats summary processed default_requests=540 default_amount=10827 fallback_requests=0 fallback_amount=0 duration=297.37µs
+consumer1-1  | 2025/08/19 11:01:59 INFO Health default="{Failing:true MinResponseTime:2000}"
+consumer1-1  | 2025/08/19 11:01:59 INFO Health fallback="{Failing:true MinResponseTime:2000}"
+consumer1-1  | 2025/08/19 11:02:04 INFO Health default="{Failing:true MinResponseTime:2000}"
+consumer1-1  | 2025/08/19 11:02:04 INFO Health fallback="{Failing:true MinResponseTime:2000}"
+cache-1      | 2025/08/19 11:02:07 INFO Stats summary processed default_requests=0 default_amount=0 fallback_requests=0 fallback_amount=0 duration=132.454µs
+consumer1-1  | 2025/08/19 11:02:09 INFO Health default="{Failing:true MinResponseTime:2000}"
+consumer1-1  | 2025/08/19 11:02:09 INFO Health fallback="{Failing:true MinResponseTime:2000}"
+consumer1-1  | 2025/08/19 11:02:14 INFO Health default="{Failing:true MinResponseTime:2000}"
+consumer1-1  | 2025/08/19 11:02:14 INFO Health fallback="{Failing:true MinResponseTime:2000}"
+cache-1      | 2025/08/19 11:02:17 INFO Stats summary processed default_requests=0 default_amount=0 fallback_requests=0 fallback_amount=0 duration=109.364µs
+consumer1-1  | 2025/08/19 11:02:20 INFO Health default="{Failing:true MinResponseTime:5000}"
+consumer1-1  | 2025/08/19 11:02:20 INFO Health fallback="{Failing:true MinResponseTime:5000}"
+consumer1-1  | 2025/08/19 11:02:25 INFO Health default="{Failing:true MinResponseTime:5000}"
+consumer1-1  | 2025/08/19 11:02:25 INFO Health fallback="{Failing:true MinResponseTime:5000}"
+cache-1      | 2025/08/19 11:02:27 INFO Stats summary processed default_requests=0 default_amount=0 fallback_requests=0 fallback_amount=0 duration=134.115µs
+consumer1-1  | 2025/08/19 11:02:30 INFO Health default="{Failing:true MinResponseTime:5000}"
+consumer1-1  | 2025/08/19 11:02:30 INFO Health fallback="{Failing:true MinResponseTime:5000}"
+consumer1-1  | 2025/08/19 11:02:35 INFO Health default="{Failing:true MinResponseTime:5000}"
+consumer1-1  | 2025/08/19 11:02:35 INFO Health fallback="{Failing:true MinResponseTime:5000}"
+cache-1      | 2025/08/19 11:02:37 INFO Stats summary processed default_requests=0 default_amount=0 fallback_requests=0 fallback_amount=0 duration=153.415µs
+consumer1-1  | 2025/08/19 11:02:40 INFO Health default="{Failing:true MinResponseTime:5000}"
+consumer1-1  | 2025/08/19 11:02:40 INFO Health fallback="{Failing:true MinResponseTime:5000}"
+consumer1-1  | 2025/08/19 11:02:45 INFO Health default="{Failing:true MinResponseTime:5000}"
+consumer1-1  | 2025/08/19 11:02:45 INFO Health fallback="{Failing:true MinResponseTime:5000}"
+cache-1      | 2025/08/19 11:02:47 INFO Stats summary processed default_requests=0 default_amount=0 fallback_requests=0 fallback_amount=0 duration=195.026µs
+consumer1-1  | 2025/08/19 11:02:50 INFO Health default="{Failing:false MinResponseTime:0}"
+consumer1-1  | 2025/08/19 11:02:50 INFO Health fallback="{Failing:false MinResponseTime:0}"
+consumer1-1  | 2025/08/19 11:02:55 INFO Health default="{Failing:false MinResponseTime:0}"
+consumer1-1  | 2025/08/19 11:02:55 INFO Health fallback="{Failing:false MinResponseTime:0}"
+cache-1      | 2025/08/19 11:02:57 INFO Stats summary processed default_requests=10606 default_amount=212650.3 fallback_requests=0 fallback_amount=0 duration=10.347768ms
+consumer1-1  | 2025/08/19 11:03:00 INFO Health default="{Failing:false MinResponseTime:0}"
+consumer1-1  | 2025/08/19 11:03:00 INFO Health fallback="{Failing:false MinResponseTime:0}"
+consumer1-1  | 2025/08/19 11:03:05 INFO Health default="{Failing:false MinResponseTime:0}"
+consumer1-1  | 2025/08/19 11:03:05 INFO Health fallback="{Failing:false MinResponseTime:0}"
+cache-1      | 2025/08/19 11:03:07 INFO Stats summary processed default_requests=15560 default_amount=311978 fallback_requests=0 fallback_amount=0 duration=3.271941ms
+consumer1-1  | 2025/08/19 11:03:10 INFO Health default="{Failing:false MinResponseTime:0}"
+consumer1-1  | 2025/08/19 11:03:10 INFO Health fallback="{Failing:false MinResponseTime:0}"
+consumer1-1  | 2025/08/19 11:03:15 INFO Health default="{Failing:false MinResponseTime:0}"
+consumer1-1  | 2025/08/19 11:03:15 INFO Health fallback="{Failing:false MinResponseTime:0}"
+cache-1      | 2025/08/19 11:03:17 INFO Stats summary processed default_requests=5410 default_amount=108470.5 fallback_requests=0 fallback_amount=0 duration=1.646526ms
+consumer1-1  | 2025/08/19 11:03:20 INFO Health default="{Failing:false MinResponseTime:100}"
+consumer1-1  | 2025/08/19 11:03:20 INFO Health fallback="{Failing:false MinResponseTime:100}"
+consumer1-1  | 2025/08/19 11:03:25 INFO Health default="{Failing:false MinResponseTime:100}"
+consumer1-1  | 2025/08/19 11:03:25 INFO Health fallback="{Failing:false MinResponseTime:100}"
+cache-1      | 2025/08/19 11:03:27 INFO Stats summary processed default_requests=4704 default_amount=94315.2 fallback_requests=0 fallback_amount=0 duration=1.512162ms
+consumer1-1  | 2025/08/19 11:03:30 INFO Health default="{Failing:false MinResponseTime:100}"
+consumer1-1  | 2025/08/19 11:03:30 INFO Health fallback="{Failing:false MinResponseTime:100}"
+consumer1-1  | 2025/08/19 11:03:35 INFO Health default="{Failing:false MinResponseTime:100}"
+consumer1-1  | 2025/08/19 11:03:35 INFO Health fallback="{Failing:false MinResponseTime:100}"
+cache-1      | 2025/08/19 11:03:37 INFO Stats summary processed default_requests=5061 default_amount=101473.05 fallback_requests=0 fallback_amount=0 duration=2.753584ms
+consumer1-1  | 2025/08/19 11:03:40 INFO Health default="{Failing:false MinResponseTime:100}"
+consumer1-1  | 2025/08/19 11:03:40 INFO Health fallback="{Failing:false MinResponseTime:100}"
+consumer1-1  | 2025/08/19 11:03:46 INFO Health default="{Failing:false MinResponseTime:100}"
+consumer1-1  | 2025/08/19 11:03:46 INFO Health fallback="{Failing:false MinResponseTime:100}"
+cache-1      | 2025/08/19 11:03:47 INFO Stats summary processed default_requests=5276 default_amount=105783.8 fallback_requests=0 fallback_amount=0 duration=2.34495ms
+consumer1-1  | 2025/08/19 11:03:51 INFO Health default="{Failing:false MinResponseTime:50}"
+consumer1-1  | 2025/08/19 11:03:51 INFO Health fallback="{Failing:false MinResponseTime:50}"
+consumer1-1  | 2025/08/19 11:03:56 INFO Health default="{Failing:false MinResponseTime:50}"
+consumer1-1  | 2025/08/19 11:03:56 INFO Health fallback="{Failing:false MinResponseTime:50}"
+cache-1      | 2025/08/19 11:03:57 INFO Stats summary processed default_requests=5542 default_amount=111117.1 fallback_requests=0 fallback_amount=0 duration=2.454334ms
+consumer1-1  | 2025/08/19 11:04:01 INFO Health default="{Failing:false MinResponseTime:50}"
+consumer1-1  | 2025/08/19 11:04:01 INFO Health fallback="{Failing:false MinResponseTime:50}"
+consumer1-1  | 2025/08/19 11:04:06 INFO Health default="{Failing:false MinResponseTime:50}"
+consumer1-1  | 2025/08/19 11:04:06 INFO Health fallback="{Failing:false MinResponseTime:50}"
+cache-1      | 2025/08/19 11:04:07 INFO Stats summary processed default_requests=5843 default_amount=117152.15 fallback_requests=0 fallback_amount=0 duration=2.36337ms
+consumer1-1  | 2025/08/19 11:04:11 INFO Health default="{Failing:false MinResponseTime:50}"
+consumer1-1  | 2025/08/19 11:04:11 INFO Health fallback="{Failing:false MinResponseTime:50}"
+consumer1-1  | 2025/08/19 11:04:16 INFO Health default="{Failing:false MinResponseTime:50}"
+consumer1-1  | 2025/08/19 11:04:16 INFO Health fallback="{Failing:false MinResponseTime:50}"
+cache-1      | 2025/08/19 11:04:17 INFO Stats summary processed default_requests=6051 default_amount=121322.55 fallback_requests=0 fallback_amount=0 duration=2.667471ms
+consumer1-1  | 2025/08/19 11:04:21 INFO Health default="{Failing:false MinResponseTime:103}"
+consumer1-1  | 2025/08/19 11:04:21 INFO Health fallback="{Failing:false MinResponseTime:103}"
+consumer1-1  | 2025/08/19 11:04:26 INFO Health default="{Failing:false MinResponseTime:103}"
+consumer1-1  | 2025/08/19 11:04:26 INFO Health fallback="{Failing:false MinResponseTime:103}"
+cache-1      | 2025/08/19 11:04:27 INFO Stats summary processed default_requests=6278 default_amount=125873.9 fallback_requests=0 fallback_amount=0 duration=2.568277ms
+consumer1-1  | 2025/08/19 11:04:31 INFO Health default="{Failing:false MinResponseTime:103}"
+consumer1-1  | 2025/08/19 11:04:31 INFO Health fallback="{Failing:false MinResponseTime:103}"
+consumer1-1  | 2025/08/19 11:04:36 INFO Health default="{Failing:false MinResponseTime:103}"
+consumer1-1  | 2025/08/19 11:04:36 INFO Health fallback="{Failing:false MinResponseTime:103}"
+cache-1      | 2025/08/19 11:04:37 INFO Stats summary processed default_requests=6563 default_amount=131588.15 fallback_requests=0 fallback_amount=0 duration=2.187959ms
+consumer1-1  | 2025/08/19 11:04:41 INFO Health default="{Failing:false MinResponseTime:103}"
+consumer1-1  | 2025/08/19 11:04:41 INFO Health fallback="{Failing:false MinResponseTime:103}"
+consumer1-1  | 2025/08/19 11:04:46 INFO Health default="{Failing:false MinResponseTime:103}"
+consumer1-1  | 2025/08/19 11:04:46 INFO Health fallback="{Failing:false MinResponseTime:103}"
+cache-1      | 2025/08/19 11:04:47 INFO Stats summary processed default_requests=6830 default_amount=136941.5 fallback_requests=0 fallback_amount=0 duration=3.747255ms
+consumer1-1  | 2025/08/19 11:04:51 INFO Health default="{Failing:false MinResponseTime:2000}"
+consumer1-1  | 2025/08/19 11:04:51 INFO Health fallback="{Failing:false MinResponseTime:2000}"
+consumer1-1  | 2025/08/19 11:04:56 INFO Health default="{Failing:false MinResponseTime:2000}"
+consumer1-1  | 2025/08/19 11:04:56 INFO Health fallback="{Failing:false MinResponseTime:2000}"
+cache-1      | 2025/08/19 11:04:57 INFO Stats summary processed default_requests=2876 default_amount=57663.8 fallback_requests=0 fallback_amount=0 duration=1.644491ms
+consumer1-1  | 2025/08/19 11:05:01 INFO Health default="{Failing:false MinResponseTime:2000}"
+consumer1-1  | 2025/08/19 11:05:01 INFO Health fallback="{Failing:false MinResponseTime:2000}"
+consumer1-1  | 2025/08/19 11:05:06 INFO Health default="{Failing:false MinResponseTime:2000}"
+consumer1-1  | 2025/08/19 11:05:06 INFO Health fallback="{Failing:false MinResponseTime:2000}"
+cache-1      | 2025/08/19 11:05:07 INFO Stats summary processed default_requests=420 default_amount=8421 fallback_requests=0 fallback_amount=0 duration=1.946918ms
+consumer1-1  | 2025/08/19 11:05:11 INFO Health default="{Failing:false MinResponseTime:2000}"
+consumer1-1  | 2025/08/19 11:05:11 INFO Health fallback="{Failing:false MinResponseTime:2000}"
+consumer1-1  | 2025/08/19 11:05:16 INFO Health default="{Failing:false MinResponseTime:2000}"
+consumer1-1  | 2025/08/19 11:05:16 INFO Health fallback="{Failing:false MinResponseTime:2000}"
+haproxy-1    | [NOTICE]   (1) : haproxy version is 2.9.15-e872a3f
+haproxy-1    | [NOTICE]   (1) : path to executable is /usr/local/sbin/haproxy
+haproxy-1    | [WARNING]  (1) : Exiting Master process...
+haproxy-1    | [WARNING]  (9) : Proxy http_front stopped (cumulated conns: FE: 634, BE: 0).
+haproxy-1    | [WARNING]  (9) : Proxy go_backends stopped (cumulated conns: FE: 0, BE: 634).
+haproxy-1    | [WARNING]  (1) : Current worker (9) exited with code 0 (Exit)
+haproxy-1    | [WARNING]  (1) : All workers exited. Exiting... (0)
+[Khaproxy-1 exited with code 0
+[Kconsumer1-1 exited with code 143
+[Kapi1-1 exited with code 143
+[Kapi2-1 exited with code 143
+[Kapi3-1 exited with code 143
+log truncated at line 1000

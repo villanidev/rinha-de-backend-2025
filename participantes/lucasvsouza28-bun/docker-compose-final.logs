@@ -1,0 +1,1001 @@
+
+ Network lucasvsouza28-bun_rinha-backend  Creating
+ Network lucasvsouza28-bun_rinha-backend  Created
+ Volume "lucasvsouza28-bun_redis_data_1"  Creating
+ Volume "lucasvsouza28-bun_redis_data_1"  Created
+ Container lucasvsouza28-bun-db-1  Creating
+ Container lucasvsouza28-bun-redis-1  Creating
+ Container lucasvsouza28-bun-redis-1  Created
+ Container lucasvsouza28-bun-api-2-1  Creating
+ Container lucasvsouza28-bun-api-1-1  Creating
+ Container lucasvsouza28-bun-db-1  Created
+ Container lucasvsouza28-bun-api-2-1  Created
+ Container lucasvsouza28-bun-api-1-1  Created
+ Container lucasvsouza28-bun-nginx-1  Creating
+ Container lucasvsouza28-bun-nginx-1  Created
+Attaching to api-1-1, api-2-1, db-1, nginx-1, redis-1
+redis-1  | Starting Redis Server
+redis-1  | 1:C 19 Aug 2025 06:32:20.686 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis-1  | 1:C 19 Aug 2025 06:32:20.686 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-1  | 1:C 19 Aug 2025 06:32:20.686 * Redis version=8.2.0, bits=64, commit=00000000, modified=1, pid=1, just started
+redis-1  | 1:C 19 Aug 2025 06:32:20.686 * Configuration loaded
+redis-1  | 1:M 19 Aug 2025 06:32:20.686 * monotonic clock: POSIX clock_gettime
+redis-1  | 1:M 19 Aug 2025 06:32:20.688 * Running mode=standalone, port=6379.
+redis-1  | 1:M 19 Aug 2025 06:32:20.690 * <bf> RedisBloom version 8.2.0 (Git=unknown)
+redis-1  | 1:M 19 Aug 2025 06:32:20.716 * <bf> Registering configuration options: [
+redis-1  | 1:M 19 Aug 2025 06:32:20.716 * <bf> 	{ bf-error-rate       :      0.01 }
+redis-1  | 1:M 19 Aug 2025 06:32:20.716 * <bf> 	{ bf-initial-size     :       100 }
+redis-1  | 1:M 19 Aug 2025 06:32:20.716 * <bf> 	{ bf-expansion-factor :         2 }
+redis-1  | 1:M 19 Aug 2025 06:32:20.716 * <bf> 	{ cf-bucket-size      :         2 }
+redis-1  | 1:M 19 Aug 2025 06:32:20.716 * <bf> 	{ cf-initial-size     :      1024 }
+redis-1  | 1:M 19 Aug 2025 06:32:20.716 * <bf> 	{ cf-max-iterations   :        20 }
+redis-1  | 1:M 19 Aug 2025 06:32:20.716 * <bf> 	{ cf-expansion-factor :         1 }
+redis-1  | 1:M 19 Aug 2025 06:32:20.716 * <bf> 	{ cf-max-expansions   :        32 }
+redis-1  | 1:M 19 Aug 2025 06:32:20.716 * <bf> ]
+redis-1  | 1:M 19 Aug 2025 06:32:20.716 * Module 'bf' loaded from /usr/local/lib/redis/modules//redisbloom.so
+redis-1  | 1:M 19 Aug 2025 06:32:20.729 * <search> Redis version found by RedisSearch : 8.2.0 - oss
+redis-1  | 1:M 19 Aug 2025 06:32:20.730 * <search> RediSearch version 8.2.0 (Git=d81ebce)
+redis-1  | 1:M 19 Aug 2025 06:32:20.730 * <search> Low level api version 1 initialized successfully
+redis-1  | 1:M 19 Aug 2025 06:32:20.730 * <search> gc: ON, prefix min length: 2, min word length to stem: 4, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, 
+redis-1  | 1:M 19 Aug 2025 06:32:20.730 * <search> Initialized thread pools!
+redis-1  | 1:M 19 Aug 2025 06:32:20.730 * <search> Disabled workers threadpool of size 0
+redis-1  | 1:M 19 Aug 2025 06:32:20.730 * <search> Subscribe to config changes
+redis-1  | 1:M 19 Aug 2025 06:32:20.730 * <search> Enabled role change notification
+redis-1  | 1:M 19 Aug 2025 06:32:20.730 * <search> Cluster configuration: AUTO partitions, type: 0, coordinator timeout: 0ms
+redis-1  | 1:M 19 Aug 2025 06:32:20.730 * <search> Register write commands
+redis-1  | 1:M 19 Aug 2025 06:32:20.730 * Module 'search' loaded from /usr/local/lib/redis/modules//redisearch.so
+redis-1  | 1:M 19 Aug 2025 06:32:20.732 * <timeseries> RedisTimeSeries version 80200, git_sha=1439d4a439ca9c063e6ef124a510abff09a5d493
+redis-1  | 1:M 19 Aug 2025 06:32:20.732 * <timeseries> Redis version found by RedisTimeSeries : 8.2.0 - oss
+redis-1  | 1:M 19 Aug 2025 06:32:20.732 * <timeseries> Registering configuration options: [
+redis-1  | 1:M 19 Aug 2025 06:32:20.732 * <timeseries> 	{ ts-compaction-policy   :              }
+redis-1  | 1:M 19 Aug 2025 06:32:20.732 * <timeseries> 	{ ts-num-threads         :            3 }
+redis-1  | 1:M 19 Aug 2025 06:32:20.732 * <timeseries> 	{ ts-retention-policy    :            0 }
+redis-1  | 1:M 19 Aug 2025 06:32:20.732 * <timeseries> 	{ ts-duplicate-policy    :        block }
+redis-1  | 1:M 19 Aug 2025 06:32:20.732 * <timeseries> 	{ ts-chunk-size-bytes    :         4096 }
+redis-1  | 1:M 19 Aug 2025 06:32:20.732 * <timeseries> 	{ ts-encoding            :   compressed }
+redis-1  | 1:M 19 Aug 2025 06:32:20.732 * <timeseries> 	{ ts-ignore-max-time-diff:            0 }
+redis-1  | 1:M 19 Aug 2025 06:32:20.732 * <timeseries> 	{ ts-ignore-max-val-diff :     0.000000 }
+redis-1  | 1:M 19 Aug 2025 06:32:20.732 * <timeseries> ]
+redis-1  | 1:M 19 Aug 2025 06:32:20.733 * <timeseries> Detected redis oss
+redis-1  | 1:M 19 Aug 2025 06:32:20.733 * <timeseries> Enabled diskless replication
+redis-1  | 1:M 19 Aug 2025 06:32:20.733 * Module 'timeseries' loaded from /usr/local/lib/redis/modules//redistimeseries.so
+redis-1  | 1:M 19 Aug 2025 06:32:20.737 * <ReJSON> Created new data type 'ReJSON-RL'
+redis-1  | 1:M 19 Aug 2025 06:32:20.738 * <ReJSON> version: 80200 git sha: unknown branch: unknown
+redis-1  | 1:M 19 Aug 2025 06:32:20.738 * <ReJSON> Exported RedisJSON_V1 API
+redis-1  | 1:M 19 Aug 2025 06:32:20.738 * <ReJSON> Exported RedisJSON_V2 API
+redis-1  | 1:M 19 Aug 2025 06:32:20.738 * <ReJSON> Exported RedisJSON_V3 API
+redis-1  | 1:M 19 Aug 2025 06:32:20.738 * <ReJSON> Exported RedisJSON_V4 API
+redis-1  | 1:M 19 Aug 2025 06:32:20.738 * <ReJSON> Exported RedisJSON_V5 API
+redis-1  | 1:M 19 Aug 2025 06:32:20.738 * <ReJSON> Enabled diskless replication
+redis-1  | 1:M 19 Aug 2025 06:32:20.738 * <ReJSON> Initialized shared string cache, thread safe: false.
+redis-1  | 1:M 19 Aug 2025 06:32:20.738 * Module 'ReJSON' loaded from /usr/local/lib/redis/modules//rejson.so
+redis-1  | 1:M 19 Aug 2025 06:32:20.738 * <search> Acquired RedisJSON_V5 API
+redis-1  | 1:M 19 Aug 2025 06:32:20.739 * Server initialized
+redis-1  | 1:M 19 Aug 2025 06:32:20.739 * Ready to accept connections tcp
+db-1     | The files belonging to this database system will be owned by user "postgres".
+db-1     | This user must also own the server process.
+db-1     | 
+db-1     | The database cluster will be initialized with locale "en_US.utf8".
+db-1     | The default database encoding has accordingly been set to "UTF8".
+db-1     | The default text search configuration will be set to "english".
+db-1     | 
+db-1     | Data page checksums are disabled.
+db-1     | 
+db-1     | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+db-1     | creating subdirectories ... ok
+db-1     | selecting dynamic shared memory implementation ... posix
+db-1     | selecting default "max_connections" ... 100
+db-1     | selecting default "shared_buffers" ... 128MB
+db-1     | selecting default time zone ... UTC
+db-1     | creating configuration files ... ok
+nginx-1  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+nginx-1  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+nginx-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+nginx-1  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+api-1-1  | Server is listening on port 3000
+nginx-1  | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+nginx-1  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+nginx-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+api-2-1  | Server is listening on port 3000
+nginx-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+nginx-1  | /docker-entrypoint.sh: Configuration complete; ready for start up
+db-1     | running bootstrap script ... ok
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:24 +0000] "GET /payments-summary HTTP/1.1" 500 17 "-" "curl/8.5.0"
+db-1     | sh: locale: not found
+db-1     | 2025-08-19 06:32:25.083 UTC [35] WARNING:  no usable system locales were found
+db-1     | performing post-bootstrap initialization ... ok
+db-1     | syncing data to disk ... ok
+db-1     | 
+db-1     | 
+db-1     | Success. You can now start the database server using:
+db-1     | 
+db-1     |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+db-1     | 
+db-1     | initdb: warning: enabling "trust" authentication for local connections
+db-1     | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+db-1     | waiting for server to start....2025-08-19 06:32:27.779 UTC [41] LOG:  starting PostgreSQL 17.5 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+db-1     | 2025-08-19 06:32:27.782 UTC [41] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+db-1     | 2025-08-19 06:32:27.793 UTC [44] LOG:  database system was shut down at 2025-08-19 06:32:27 UTC
+db-1     | 2025-08-19 06:32:27.801 UTC [41] LOG:  database system is ready to accept connections
+db-1     |  done
+db-1     | server started
+db-1     | CREATE DATABASE
+db-1     | 
+db-1     | 
+db-1     | /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/init.sql
+db-1     | CREATE TABLE
+db-1     | CREATE INDEX
+db-1     | 
+db-1     | 
+db-1     | waiting for server to shut down....2025-08-19 06:32:28.379 UTC [41] LOG:  received fast shutdown request
+db-1     | 2025-08-19 06:32:28.383 UTC [41] LOG:  aborting any active transactions
+db-1     | 2025-08-19 06:32:28.471 UTC [41] LOG:  background worker "logical replication launcher" (PID 47) exited with exit code 1
+db-1     | 2025-08-19 06:32:28.473 UTC [42] LOG:  shutting down
+db-1     | 2025-08-19 06:32:28.476 UTC [42] LOG:  checkpoint starting: shutdown immediate
+db-1     | 2025-08-19 06:32:28.590 UTC [42] LOG:  checkpoint complete: wrote 927 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.088 s, sync=0.016 s, total=0.118 s; sync files=306, longest=0.003 s, average=0.001 s; distance=4276 kB, estimate=4276 kB; lsn=0/191A310, redo lsn=0/191A310
+db-1     | 2025-08-19 06:32:28.600 UTC [41] LOG:  database system is shut down
+db-1     |  done
+db-1     | server stopped
+db-1     | 
+db-1     | PostgreSQL init process complete; ready for start up.
+db-1     | 
+db-1     | 2025-08-19 06:32:28.771 UTC [1] LOG:  starting PostgreSQL 17.5 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+db-1     | 2025-08-19 06:32:28.771 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+db-1     | 2025-08-19 06:32:28.771 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+db-1     | 2025-08-19 06:32:28.777 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+db-1     | 2025-08-19 06:32:28.785 UTC [59] LOG:  database system was shut down at 2025-08-19 06:32:28 UTC
+db-1     | 2025-08-19 06:32:28.793 UTC [1] LOG:  database system is ready to accept connections
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:30 +0000] "GET /payments-summary HTTP/1.1" 200 94 "-" "curl/8.5.0"
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:35 +0000] "POST /purge-payments HTTP/1.1" 200 0 "-" "Grafana k6/1.1.0"
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:35 +0000] "GET /payments-summary?from=2025-08-19T06:32:20.807Z&to=2025-08-19T06:32:33.807Z HTTP/1.1" 200 94 "-" "Grafana k6/1.1.0"
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "58e8f216-1ed3-4bf4-8bf0-0d02091d1f88",
+api-2-1  |   requested_at: 2025-08-19T06:32:35.829Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:35 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: 58e8f216-1ed3-4bf4-8bf0-0d02091d1f88
+api-2-1  | checking processor health: default
+api-2-1  | processor's default health: {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: 58e8f216-1ed3-4bf4-8bf0-0d02091d1f88
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "9336619b-da51-45ec-9daa-a0f2e5754859",
+api-1-1  |   requested_at: 2025-08-19T06:32:36.312Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:36 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: 9336619b-da51-45ec-9daa-a0f2e5754859
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: 9336619b-da51-45ec-9daa-a0f2e5754859
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "9294cf11-11f6-4a29-a09e-218832a09be4",
+api-2-1  |   requested_at: 2025-08-19T06:32:36.806Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:36 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: 9294cf11-11f6-4a29-a09e-218832a09be4
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: 9294cf11-11f6-4a29-a09e-218832a09be4
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "52ec4480-6ec6-47e9-9880-409c78c1f9ba",
+api-1-1  |   requested_at: 2025-08-19T06:32:36.835Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:36 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: 52ec4480-6ec6-47e9-9880-409c78c1f9ba
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: 52ec4480-6ec6-47e9-9880-409c78c1f9ba
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "5b8357ff-6bea-4d9b-bf9e-d1f407b4f919",
+api-2-1  |   requested_at: 2025-08-19T06:32:37.304Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:37 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: 5b8357ff-6bea-4d9b-bf9e-d1f407b4f919
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: 5b8357ff-6bea-4d9b-bf9e-d1f407b4f919
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "d9b19aa9-d816-4e29-a88b-9d9a4056d09a",
+api-1-1  |   requested_at: 2025-08-19T06:32:37.318Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:37 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: d9b19aa9-d816-4e29-a88b-9d9a4056d09a
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: d9b19aa9-d816-4e29-a88b-9d9a4056d09a
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "4da2587b-b00c-4665-9763-893e42579044",
+api-2-1  |   requested_at: 2025-08-19T06:32:37.803Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:37 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: 4da2587b-b00c-4665-9763-893e42579044
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: 4da2587b-b00c-4665-9763-893e42579044
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "b5e39876-829c-44da-9e25-47a2a267bf3a",
+api-1-1  |   requested_at: 2025-08-19T06:32:37.812Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:37 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: b5e39876-829c-44da-9e25-47a2a267bf3a
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: b5e39876-829c-44da-9e25-47a2a267bf3a
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "064eb570-aeab-4427-8eba-ac28971ac14f",
+api-2-1  |   requested_at: 2025-08-19T06:32:37.838Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:37 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: 064eb570-aeab-4427-8eba-ac28971ac14f
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: 064eb570-aeab-4427-8eba-ac28971ac14f
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "b6981aae-8c63-4886-a04f-d728327eb433",
+api-1-1  |   requested_at: 2025-08-19T06:32:38.301Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:38 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: b6981aae-8c63-4886-a04f-d728327eb433
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: b6981aae-8c63-4886-a04f-d728327eb433
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "5c945e03-9d11-41c8-898f-dd1b123454eb",
+api-2-1  |   requested_at: 2025-08-19T06:32:38.307Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:38 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: 5c945e03-9d11-41c8-898f-dd1b123454eb
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: 5c945e03-9d11-41c8-898f-dd1b123454eb
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "b66f5c67-2beb-40d0-8afa-0797da4b20fa",
+api-1-1  |   requested_at: 2025-08-19T06:32:38.321Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:38 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: b66f5c67-2beb-40d0-8afa-0797da4b20fa
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: b66f5c67-2beb-40d0-8afa-0797da4b20fa
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "0baed315-95fa-4fe3-bd53-4fe61694f234",
+api-2-1  |   requested_at: 2025-08-19T06:32:38.799Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:38 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: 0baed315-95fa-4fe3-bd53-4fe61694f234
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: 0baed315-95fa-4fe3-bd53-4fe61694f234
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "42ddeece-cf8b-46ea-92f4-bc25e17d4f83",
+api-1-1  |   requested_at: 2025-08-19T06:32:38.806Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:38 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: 42ddeece-cf8b-46ea-92f4-bc25e17d4f83
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: 42ddeece-cf8b-46ea-92f4-bc25e17d4f83
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "1fd4d0c4-b572-4d7b-9910-6eeb2730ff3f",
+api-2-1  |   requested_at: 2025-08-19T06:32:38.814Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:38 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: 1fd4d0c4-b572-4d7b-9910-6eeb2730ff3f
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: 1fd4d0c4-b572-4d7b-9910-6eeb2730ff3f
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "d423a739-4689-423c-ba05-0dfad0bb81fc",
+api-1-1  |   requested_at: 2025-08-19T06:32:38.842Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:38 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: d423a739-4689-423c-ba05-0dfad0bb81fc
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: d423a739-4689-423c-ba05-0dfad0bb81fc
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "f28d5630-2ba4-4ab2-ba29-8cd951937812",
+api-2-1  |   requested_at: 2025-08-19T06:32:39.297Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:39 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: f28d5630-2ba4-4ab2-ba29-8cd951937812
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: f28d5630-2ba4-4ab2-ba29-8cd951937812
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "ad17c59f-8526-45ab-b86d-714c78f080e5",
+api-1-1  |   requested_at: 2025-08-19T06:32:39.304Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:39 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: ad17c59f-8526-45ab-b86d-714c78f080e5
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: ad17c59f-8526-45ab-b86d-714c78f080e5
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "2435e3f9-ac22-4353-969b-465729b97660",
+api-2-1  |   requested_at: 2025-08-19T06:32:39.309Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:39 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: 2435e3f9-ac22-4353-969b-465729b97660
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: 2435e3f9-ac22-4353-969b-465729b97660
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "a7515685-29d4-4652-adab-74107bd3abca",
+api-1-1  |   requested_at: 2025-08-19T06:32:39.323Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:39 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: a7515685-29d4-4652-adab-74107bd3abca
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: a7515685-29d4-4652-adab-74107bd3abca
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "c08e887e-2d50-4046-b884-794d2d6c6290",
+api-2-1  |   requested_at: 2025-08-19T06:32:39.795Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:39 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: c08e887e-2d50-4046-b884-794d2d6c6290
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: c08e887e-2d50-4046-b884-794d2d6c6290
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "477f5283-7c4e-4f46-bcd4-701377a0c370",
+api-1-1  |   requested_at: 2025-08-19T06:32:39.802Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:39 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: 477f5283-7c4e-4f46-bcd4-701377a0c370
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: 477f5283-7c4e-4f46-bcd4-701377a0c370
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "f7fcc0ca-83af-4ea5-817a-3fb30bf3f4be",
+api-2-1  |   requested_at: 2025-08-19T06:32:39.808Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:39 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: f7fcc0ca-83af-4ea5-817a-3fb30bf3f4be
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: f7fcc0ca-83af-4ea5-817a-3fb30bf3f4be
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "04bd287f-aa7a-48f3-ad07-a7d260509eaa",
+api-1-1  |   requested_at: 2025-08-19T06:32:39.816Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:39 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: 04bd287f-aa7a-48f3-ad07-a7d260509eaa
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: 04bd287f-aa7a-48f3-ad07-a7d260509eaa
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "5cf427ff-0108-49af-a719-8d424439de5f",
+api-2-1  |   requested_at: 2025-08-19T06:32:39.844Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:39 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: 5cf427ff-0108-49af-a719-8d424439de5f
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: 5cf427ff-0108-49af-a719-8d424439de5f
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "e1e593de-5d2e-4236-b698-3ac2e735d185",
+api-1-1  |   requested_at: 2025-08-19T06:32:40.294Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:40 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: e1e593de-5d2e-4236-b698-3ac2e735d185
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: e1e593de-5d2e-4236-b698-3ac2e735d185
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "8a592abc-a039-4baf-b939-712a990364a9",
+api-2-1  |   requested_at: 2025-08-19T06:32:40.300Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:40 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: 8a592abc-a039-4baf-b939-712a990364a9
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: 8a592abc-a039-4baf-b939-712a990364a9
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "d029a188-8de6-4d9c-8c72-f46010e53408",
+api-1-1  |   requested_at: 2025-08-19T06:32:40.306Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:40 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: d029a188-8de6-4d9c-8c72-f46010e53408
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: d029a188-8de6-4d9c-8c72-f46010e53408
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "6bac57e9-6acd-4599-a5aa-2f3bd4f98ffe",
+api-2-1  |   requested_at: 2025-08-19T06:32:40.311Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:40 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: 6bac57e9-6acd-4599-a5aa-2f3bd4f98ffe
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: 6bac57e9-6acd-4599-a5aa-2f3bd4f98ffe
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "27145826-db2b-4b7d-b0a5-2db0b3ab6d7c",
+api-1-1  |   requested_at: 2025-08-19T06:32:40.325Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:40 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: 27145826-db2b-4b7d-b0a5-2db0b3ab6d7c
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: 27145826-db2b-4b7d-b0a5-2db0b3ab6d7c
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "3f66720d-363c-4c75-a3ed-723525945a4c",
+api-2-1  |   requested_at: 2025-08-19T06:32:40.792Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:40 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: 3f66720d-363c-4c75-a3ed-723525945a4c
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: 3f66720d-363c-4c75-a3ed-723525945a4c
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "7e20035e-dcf2-42f0-a67e-63f9d0442250",
+api-1-1  |   requested_at: 2025-08-19T06:32:40.797Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:40 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: 7e20035e-dcf2-42f0-a67e-63f9d0442250
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: 7e20035e-dcf2-42f0-a67e-63f9d0442250
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "3f664fb5-e261-4c54-b9ef-a3ebfb2fcf87",
+api-2-1  |   requested_at: 2025-08-19T06:32:40.804Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:40 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: 3f664fb5-e261-4c54-b9ef-a3ebfb2fcf87
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: 3f664fb5-e261-4c54-b9ef-a3ebfb2fcf87
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:40 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "e6390e13-c1f9-4142-bd91-f9edd9589a73",
+api-1-1  |   requested_at: 2025-08-19T06:32:40.810Z,
+api-1-1  | }
+api-1-1  | Processing payment: e6390e13-c1f9-4142-bd91-f9edd9589a73
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: e6390e13-c1f9-4142-bd91-f9edd9589a73
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "7b233019-cd25-4cc1-90de-738ad134a913",
+api-2-1  |   requested_at: 2025-08-19T06:32:40.819Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:40 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: 7b233019-cd25-4cc1-90de-738ad134a913
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: 7b233019-cd25-4cc1-90de-738ad134a913
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "9622b6f7-fd81-43c9-a8bb-8e17f9e921bf",
+api-1-1  |   requested_at: 2025-08-19T06:32:40.846Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:40 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: 9622b6f7-fd81-43c9-a8bb-8e17f9e921bf
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: 9622b6f7-fd81-43c9-a8bb-8e17f9e921bf
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "76cf0448-7086-4c11-9e10-ddc318a31071",
+api-2-1  |   requested_at: 2025-08-19T06:32:41.291Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:41 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: 76cf0448-7086-4c11-9e10-ddc318a31071
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: 76cf0448-7086-4c11-9e10-ddc318a31071
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "78645b40-6ca5-4f45-91e0-0c65f0daa85a",
+api-1-1  |   requested_at: 2025-08-19T06:32:41.297Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:41 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: 78645b40-6ca5-4f45-91e0-0c65f0daa85a
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: 78645b40-6ca5-4f45-91e0-0c65f0daa85a
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "9fe59281-c401-45ba-9874-db48890ffb9c",
+api-2-1  |   requested_at: 2025-08-19T06:32:41.302Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:41 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: 9fe59281-c401-45ba-9874-db48890ffb9c
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: 9fe59281-c401-45ba-9874-db48890ffb9c
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "6de1ace2-44b3-4f2e-833d-34ce812b3987",
+api-1-1  |   requested_at: 2025-08-19T06:32:41.308Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:41 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: 6de1ace2-44b3-4f2e-833d-34ce812b3987
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: 6de1ace2-44b3-4f2e-833d-34ce812b3987
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:41 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "818868a9-33af-45f7-bc17-2a509c6691f0",
+api-2-1  |   requested_at: 2025-08-19T06:32:41.313Z,
+api-2-1  | }
+api-2-1  | Processing payment: 818868a9-33af-45f7-bc17-2a509c6691f0
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: 818868a9-33af-45f7-bc17-2a509c6691f0
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "d1f63a0f-5c74-44c8-8926-c0fb0521e114",
+api-1-1  |   requested_at: 2025-08-19T06:32:41.328Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:41 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: d1f63a0f-5c74-44c8-8926-c0fb0521e114
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: d1f63a0f-5c74-44c8-8926-c0fb0521e114
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "7698acff-71ca-49cb-a25e-e6f2907b360f",
+api-2-1  |   requested_at: 2025-08-19T06:32:41.789Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:41 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: 7698acff-71ca-49cb-a25e-e6f2907b360f
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: 7698acff-71ca-49cb-a25e-e6f2907b360f
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "ae92eb4d-66a4-469f-92b9-cf9ad3ecb88f",
+api-1-1  |   requested_at: 2025-08-19T06:32:41.795Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:41 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: ae92eb4d-66a4-469f-92b9-cf9ad3ecb88f
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: ae92eb4d-66a4-469f-92b9-cf9ad3ecb88f
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "26ccd77c-2c66-4a3e-8cb5-c539ff80bc88",
+api-2-1  |   requested_at: 2025-08-19T06:32:41.800Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:41 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: 26ccd77c-2c66-4a3e-8cb5-c539ff80bc88
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: 26ccd77c-2c66-4a3e-8cb5-c539ff80bc88
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "15b65819-6d56-4dd7-8cf3-c7f9c005dde6",
+api-1-1  |   requested_at: 2025-08-19T06:32:41.807Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:41 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: 15b65819-6d56-4dd7-8cf3-c7f9c005dde6
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: 15b65819-6d56-4dd7-8cf3-c7f9c005dde6
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "df2a6629-74c1-4b5e-9ae3-649930091189",
+api-2-1  |   requested_at: 2025-08-19T06:32:41.812Z,
+api-2-1  | }
+api-2-1  | Processing payment: df2a6629-74c1-4b5e-9ae3-649930091189
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:41 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: df2a6629-74c1-4b5e-9ae3-649930091189
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "800c8c93-86fd-4769-aa0e-28a8c802e7df",
+api-1-1  |   requested_at: 2025-08-19T06:32:41.821Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:41 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: 800c8c93-86fd-4769-aa0e-28a8c802e7df
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: 800c8c93-86fd-4769-aa0e-28a8c802e7df
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "3e6de1ae-3743-4ccf-9d91-ec2e5bb9e441",
+api-2-1  |   requested_at: 2025-08-19T06:32:41.849Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:41 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: 3e6de1ae-3743-4ccf-9d91-ec2e5bb9e441
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: 3e6de1ae-3743-4ccf-9d91-ec2e5bb9e441
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "a6ec260c-3936-4ac1-bcd3-98da0614a640",
+api-1-1  |   requested_at: 2025-08-19T06:32:42.288Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:42 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: a6ec260c-3936-4ac1-bcd3-98da0614a640
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "696df30a-f92e-4ae1-8ef4-966641fc4899",
+api-2-1  |   requested_at: 2025-08-19T06:32:42.293Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:42 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-2-1  | Processing payment: 696df30a-f92e-4ae1-8ef4-966641fc4899
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | Payment processed via default: a6ec260c-3936-4ac1-bcd3-98da0614a640
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: 696df30a-f92e-4ae1-8ef4-966641fc4899
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "c4dbc116-61ad-4380-b27a-c2f5f59acf76",
+api-1-1  |   requested_at: 2025-08-19T06:32:42.298Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:42 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: c4dbc116-61ad-4380-b27a-c2f5f59acf76
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: c4dbc116-61ad-4380-b27a-c2f5f59acf76
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "d6cb198f-25f3-4085-bacc-48486503827e",
+api-2-1  |   requested_at: 2025-08-19T06:32:42.305Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:42 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: d6cb198f-25f3-4085-bacc-48486503827e
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: d6cb198f-25f3-4085-bacc-48486503827e
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "64eb72c3-a63c-4e3e-aa5a-2c926f08d6c5",
+api-1-1  |   requested_at: 2025-08-19T06:32:42.310Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:42 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: 64eb72c3-a63c-4e3e-aa5a-2c926f08d6c5
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: 64eb72c3-a63c-4e3e-aa5a-2c926f08d6c5
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "f2eda94f-46bd-49a0-a035-2b1a1369064e",
+api-2-1  |   requested_at: 2025-08-19T06:32:42.316Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:42 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: f2eda94f-46bd-49a0-a035-2b1a1369064e
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: f2eda94f-46bd-49a0-a035-2b1a1369064e
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "de402240-4f2c-4f80-9375-e4fffaf80748",
+api-1-1  |   requested_at: 2025-08-19T06:32:42.330Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:42 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: de402240-4f2c-4f80-9375-e4fffaf80748
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: de402240-4f2c-4f80-9375-e4fffaf80748
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "a291217a-4498-4f92-ad79-eb90c1f2c2c5",
+api-2-1  |   requested_at: 2025-08-19T06:32:42.785Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:42 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: a291217a-4498-4f92-ad79-eb90c1f2c2c5
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: a291217a-4498-4f92-ad79-eb90c1f2c2c5
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "7b20ac9e-c943-4a32-ad93-149093b0c2fa",
+api-1-1  |   requested_at: 2025-08-19T06:32:42.792Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:42 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: 7b20ac9e-c943-4a32-ad93-149093b0c2fa
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: 7b20ac9e-c943-4a32-ad93-149093b0c2fa
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "a5b51481-1552-425b-830e-70b9719c2ae2",
+api-2-1  |   requested_at: 2025-08-19T06:32:42.798Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:42 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: a5b51481-1552-425b-830e-70b9719c2ae2
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: a5b51481-1552-425b-830e-70b9719c2ae2
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "a498cb54-1306-415b-9f7a-c79e1a03129d",
+api-1-1  |   requested_at: 2025-08-19T06:32:42.802Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:42 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: a498cb54-1306-415b-9f7a-c79e1a03129d
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: a498cb54-1306-415b-9f7a-c79e1a03129d
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "ca763932-ac56-41e4-b765-9297b21244a1",
+api-2-1  |   requested_at: 2025-08-19T06:32:42.810Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:42 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: ca763932-ac56-41e4-b765-9297b21244a1
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: ca763932-ac56-41e4-b765-9297b21244a1
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "b7469720-99b9-4da3-901a-ec7af9dc9530",
+api-1-1  |   requested_at: 2025-08-19T06:32:42.815Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:42 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: b7469720-99b9-4da3-901a-ec7af9dc9530
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: b7469720-99b9-4da3-901a-ec7af9dc9530
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "4af4fd60-fa7f-4891-8037-31eb899e557b",
+api-2-1  |   requested_at: 2025-08-19T06:32:42.824Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:42 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: 4af4fd60-fa7f-4891-8037-31eb899e557b
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: 4af4fd60-fa7f-4891-8037-31eb899e557b
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "876c8616-bd3b-46e6-86fc-089739d72a5a",
+api-1-1  |   requested_at: 2025-08-19T06:32:42.850Z,
+api-1-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:42 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-1-1  | Processing payment: 876c8616-bd3b-46e6-86fc-089739d72a5a
+api-1-1  | checking processor health: default
+api-1-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-1-1  | processor response:  {
+api-1-1  |   message: "payment processed successfully",
+api-1-1  | }
+api-1-1  | Payment processed via default: 876c8616-bd3b-46e6-86fc-089739d72a5a
+api-2-1  | Enqueuing payment {
+api-2-1  |   amount: 20.05,
+api-2-1  |   correlationId: "8142a418-dcdb-4dca-97a0-e54fe88c1b8f",
+api-2-1  |   requested_at: 2025-08-19T06:32:43.284Z,
+api-2-1  | }
+nginx-1  | 172.20.0.1 - - [19/Aug/2025:06:32:43 +0000] "POST /payments HTTP/1.1" 202 8 "-" "Grafana k6/1.1.0"
+api-2-1  | Processing payment: 8142a418-dcdb-4dca-97a0-e54fe88c1b8f
+api-2-1  | checking processor health: default
+api-2-1  | returning from cache:  {"failing":false,"minResponseTime":0}
+api-2-1  | processor response:  {
+api-2-1  |   message: "payment processed successfully",
+api-2-1  | }
+api-2-1  | Payment processed via default: 8142a418-dcdb-4dca-97a0-e54fe88c1b8f
+api-1-1  | Enqueuing payment {
+api-1-1  |   amount: 20.05,
+api-1-1  |   correlationId: "16111080-f8e1-445b-bd5d-84ccae35092d",
+api-1-1  |   requested_at: 2025-08-19T06:32:43.290Z,
+api-1-1  | }
+log truncated at line 1000

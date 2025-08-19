@@ -1,0 +1,206 @@
+
+ Network lucas-go-01_rinha-network  Creating
+ Network lucas-go-01_rinha-network  Created
+ Volume "lucas-go-01_postgres_data"  Creating
+ Volume "lucas-go-01_postgres_data"  Created
+ Container rinha-postgres  Creating
+ Container rinha-postgres  Created
+ Container rinha-api-1  Creating
+ Container rinha-worker  Creating
+ Container rinha-api-2  Creating
+ Container rinha-worker  Created
+ Container rinha-api-2  Created
+ Container rinha-api-1  Created
+ Container rinha-haproxy  Creating
+ Container rinha-haproxy  Created
+Attaching to rinha-api-1, rinha-api-2, rinha-haproxy, rinha-postgres, rinha-worker
+rinha-postgres  | The files belonging to this database system will be owned by user "postgres".
+rinha-postgres  | This user must also own the server process.
+rinha-postgres  | 
+rinha-postgres  | The database cluster will be initialized with locale "en_US.utf8".
+rinha-postgres  | The default database encoding has accordingly been set to "UTF8".
+rinha-postgres  | The default text search configuration will be set to "english".
+rinha-postgres  | 
+rinha-postgres  | Data page checksums are disabled.
+rinha-postgres  | 
+rinha-postgres  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+rinha-postgres  | creating subdirectories ... ok
+rinha-postgres  | selecting dynamic shared memory implementation ... posix
+rinha-postgres  | selecting default max_connections ... 100
+rinha-postgres  | selecting default shared_buffers ... 128MB
+rinha-postgres  | selecting default time zone ... UTC
+rinha-postgres  | creating configuration files ... ok
+rinha-postgres  | running bootstrap script ... ok
+rinha-postgres  | sh: locale: not found
+rinha-postgres  | 2025-08-19 05:45:24.115 UTC [35] WARNING:  no usable system locales were found
+rinha-postgres  | performing post-bootstrap initialization ... ok
+rinha-postgres  | syncing data to disk ... ok
+rinha-postgres  | 
+rinha-postgres  | 
+rinha-postgres  | Success. You can now start the database server using:
+rinha-postgres  | 
+rinha-postgres  |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+rinha-postgres  | 
+rinha-postgres  | initdb: warning: enabling "trust" authentication for local connections
+rinha-postgres  | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+rinha-postgres  | waiting for server to start....2025-08-19 05:45:27.309 UTC [41] LOG:  starting PostgreSQL 15.13 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+rinha-postgres  | 2025-08-19 05:45:27.310 UTC [41] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+rinha-postgres  | 2025-08-19 05:45:27.312 UTC [44] LOG:  database system was shut down at 2025-08-19 05:45:27 UTC
+rinha-postgres  | 2025-08-19 05:45:27.316 UTC [41] LOG:  database system is ready to accept connections
+rinha-postgres  |  done
+rinha-postgres  | server started
+rinha-postgres  | 2025-08-19 05:45:27.415 UTC [56] FATAL:  database "rinha" does not exist
+rinha-postgres  | CREATE DATABASE
+rinha-postgres  | 
+rinha-postgres  | 
+rinha-postgres  | /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/01-schema.sql
+rinha-postgres  | ALTER DATABASE
+rinha-postgres  | ALTER SYSTEM
+rinha-postgres  | ALTER SYSTEM
+rinha-postgres  | ALTER SYSTEM
+rinha-postgres  | ALTER SYSTEM
+rinha-postgres  | ALTER SYSTEM
+rinha-postgres  | ALTER SYSTEM
+rinha-postgres  | CREATE TABLE
+rinha-postgres  | CREATE TABLE
+rinha-postgres  | INSERT 0 2
+rinha-postgres  | CREATE INDEX
+rinha-postgres  | CREATE INDEX
+rinha-postgres  | CREATE INDEX
+rinha-postgres  | 
+rinha-postgres  | 
+rinha-postgres  | waiting for server to shut down....2025-08-19 05:45:27.813 UTC [41] LOG:  received fast shutdown request
+rinha-postgres  | 2025-08-19 05:45:27.813 UTC [41] LOG:  aborting any active transactions
+rinha-postgres  | 2025-08-19 05:45:27.816 UTC [41] LOG:  background worker "logical replication launcher" (PID 47) exited with exit code 1
+rinha-postgres  | 2025-08-19 05:45:27.819 UTC [42] LOG:  shutting down
+rinha-postgres  | 2025-08-19 05:45:27.819 UTC [42] LOG:  checkpoint starting: shutdown immediate
+rinha-postgres  | 2025-08-19 05:45:27.912 UTC [42] LOG:  checkpoint complete: wrote 928 buffers (11.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.093 s, sync=0.001 s, total=0.094 s; sync files=0, longest=0.000 s, average=0.000 s; distance=4267 kB, estimate=4267 kB
+rinha-postgres  | 2025-08-19 05:45:27.930 UTC [41] LOG:  database system is shut down
+rinha-postgres  |  done
+rinha-postgres  | server stopped
+rinha-postgres  | 
+rinha-postgres  | PostgreSQL init process complete; ready for start up.
+rinha-postgres  | 
+rinha-postgres  | 2025-08-19 05:45:28.114 UTC [1] LOG:  starting PostgreSQL 15.13 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+rinha-postgres  | 2025-08-19 05:45:28.114 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+rinha-postgres  | 2025-08-19 05:45:28.114 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+rinha-postgres  | 2025-08-19 05:45:28.114 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+rinha-postgres  | 2025-08-19 05:45:28.122 UTC [66] LOG:  database system was shut down at 2025-08-19 05:45:27 UTC
+rinha-postgres  | 2025-08-19 05:45:28.130 UTC [1] LOG:  database system is ready to accept connections
+rinha-api-2     | API MAIN: Iniciando aplicação...
+rinha-api-2     | API MAIN: Memory limits configurados (80MB)
+rinha-api-2     | API MAIN: Porta configurada: 8080
+rinha-api-2     | API MAIN: Criando worker...
+rinha-api-2     | WORKER: Criando novo worker com buffers...
+rinha-api-1     | API MAIN: Iniciando aplicação...
+rinha-api-1     | API MAIN: Memory limits configurados (80MB)
+rinha-api-1     | API MAIN: Porta configurada: 8080
+rinha-api-1     | API MAIN: Criando worker...
+rinha-api-1     | WORKER: Criando novo worker com buffers...
+rinha-api-1     | WORKER: Worker criado com sucesso - Queue: 200k, Pool: 1000
+rinha-api-1     | API MAIN: Worker criado
+rinha-api-1     | API MAIN: Inicializando pool de conexões do banco...
+rinha-api-1     | DATABASE: Inicializando pool de conexões (apenas uma vez)...
+rinha-api-2     | WORKER: Worker criado com sucesso - Queue: 200k, Pool: 1000
+rinha-api-2     | API MAIN: Worker criado
+rinha-api-2     | API MAIN: Inicializando pool de conexões do banco...
+rinha-api-2     | DATABASE: Inicializando pool de conexões (apenas uma vez)...
+rinha-worker    | WORKER MAIN: Iniciando aplicação...
+rinha-worker    | WORKER MAIN: Memory limits configurados (60MB)
+rinha-worker    | WORKER MAIN: Criando worker...
+rinha-worker    | WORKER: Criando novo worker com buffers...
+rinha-worker    | WORKER: Worker criado com sucesso - Queue: 200k, Pool: 1000
+rinha-worker    | WORKER MAIN: Worker criado
+rinha-worker    | WORKER MAIN: Inicializando pool de conexões do banco...
+rinha-worker    | DATABASE: Inicializando pool de conexões (apenas uma vez)...
+rinha-api-2     | DATABASE: Pool inicializado com sucesso!
+rinha-api-2     | API MAIN: Pool do banco inicializado com sucesso
+rinha-api-2     | API MAIN: Testando conexão com banco...
+rinha-api-2     | WORKER: Obtendo pool de conexões...
+rinha-api-2     | WORKER: Pool de conexões obtido com sucesso
+rinha-api-2     | WORKER: Testando ping no banco...
+rinha-api-1     | DATABASE: Pool inicializado com sucesso!
+rinha-api-1     | API MAIN: Pool do banco inicializado com sucesso
+rinha-api-1     | API MAIN: Testando conexão com banco...
+rinha-api-1     | WORKER: Obtendo pool de conexões...
+rinha-api-1     | WORKER: Pool de conexões obtido com sucesso
+rinha-api-1     | WORKER: Testando ping no banco...
+rinha-api-1     | WORKER: Ping no banco bem-sucedido - Conexão estabelecida
+rinha-api-1     | API MAIN: Conexão com banco OK
+rinha-api-1     | API MAIN: Iniciando worker...
+rinha-api-1     | WORKER: Iniciando worker pool...
+rinha-api-1     | WORKER: Criando 1000 goroutines...
+rinha-api-2     | WORKER: Ping no banco bem-sucedido - Conexão estabelecida
+rinha-api-2     | API MAIN: Conexão com banco OK
+rinha-api-2     | API MAIN: Iniciando worker...
+rinha-api-2     | WORKER: Iniciando worker pool...
+rinha-api-2     | WORKER: Criando 1000 goroutines...
+rinha-worker    | DATABASE: Pool inicializado com sucesso!
+rinha-worker    | WORKER MAIN: Pool do banco inicializado com sucesso
+rinha-worker    | WORKER MAIN: Testando conexão com banco...
+rinha-worker    | WORKER: Obtendo pool de conexões...
+rinha-worker    | WORKER: Pool de conexões obtido com sucesso
+rinha-worker    | WORKER: Testando ping no banco...
+rinha-worker    | WORKER: Ping no banco bem-sucedido - Conexão estabelecida
+rinha-worker    | WORKER MAIN: Conexão com banco OK
+rinha-worker    | WORKER MAIN: Iniciando worker...
+rinha-worker    | WORKER: Iniciando worker pool...
+rinha-worker    | WORKER: Criando 1000 goroutines...
+rinha-api-2     | WORKER: 1000 goroutines criadas e ativas
+rinha-api-2     | WORKER: Worker pool iniciado com sucesso
+rinha-api-2     | API MAIN: Worker iniciado com sucesso
+rinha-api-2     | API MAIN: Criando handlers da API...
+rinha-api-2     | API MAIN: Handlers criados
+rinha-api-2     | API MAIN: Iniciando servidor HTTP na porta 8080...
+rinha-api-2     | API MAIN: Servidor pronto para receber conexões!
+rinha-worker    | WORKER: 1000 goroutines criadas e ativas
+rinha-worker    | WORKER: Worker pool iniciado com sucesso
+rinha-worker    | WORKER MAIN: Worker iniciado com sucesso!
+rinha-worker    | WORKER MAIN: Entrando em loop infinito...
+rinha-worker    | WORKER MAIN: Worker pronto para processar jobs!
+rinha-api-1     | WORKER: 1000 goroutines criadas e ativas
+rinha-api-1     | WORKER: Worker pool iniciado com sucesso
+rinha-api-1     | API MAIN: Worker iniciado com sucesso
+rinha-api-1     | API MAIN: Criando handlers da API...
+rinha-api-1     | API MAIN: Handlers criados
+rinha-api-1     | API MAIN: Iniciando servidor HTTP na porta 8080...
+rinha-api-1     | API MAIN: Servidor pronto para receber conexões!
+rinha-haproxy   | [NOTICE]   (1) : New worker (8) forked
+rinha-haproxy   | [NOTICE]   (1) : Loading success.
+rinha-postgres  | 2025-08-19 05:50:28.219 UTC [64] LOG:  checkpoint starting: time
+rinha-postgres  | 2025-08-19 05:50:33.608 UTC [64] LOG:  checkpoint complete: wrote 90 buffers (1.1%); 1 WAL file(s) added, 0 removed, 0 recycled; write=5.320 s, sync=0.001 s, total=5.389 s; sync files=0, longest=0.000 s, average=0.000 s; distance=4054 kB, estimate=4054 kB
+rinha-haproxy   | [NOTICE]   (1) : haproxy version is 2.8.15-a9aef56
+rinha-haproxy   | [ALERT]    (1) : Current worker (8) exited with code 137 (Killed)
+rinha-haproxy   | [ALERT]    (1) : exit-on-failure: killing every processes with SIGTERM
+rinha-haproxy   | [WARNING]  (1) : All workers exited. Exiting... (137)
+[Krinha-haproxy exited with code 137
+rinha-haproxy   | [NOTICE]   (1) : New worker (8) forked
+rinha-haproxy   | [NOTICE]   (1) : Loading success.
+rinha-haproxy   | [NOTICE]   (1) : haproxy version is 2.8.15-a9aef56
+rinha-haproxy   | [ALERT]    (1) : Current worker (8) exited with code 137 (Killed)
+rinha-haproxy   | [ALERT]    (1) : exit-on-failure: killing every processes with SIGTERM
+rinha-haproxy   | [WARNING]  (1) : All workers exited. Exiting... (137)
+[Krinha-haproxy exited with code 137
+rinha-haproxy   | [NOTICE]   (1) : New worker (8) forked
+rinha-haproxy   | [NOTICE]   (1) : Loading success.
+rinha-haproxy   | [NOTICE]   (1) : haproxy version is 2.8.15-a9aef56
+rinha-haproxy   | [WARNING]  (1) : Exiting Master process...
+rinha-haproxy   | [WARNING]  (8) : Proxy health stopped (cumulated conns: FE: 0, BE: 0).
+rinha-haproxy   | [WARNING]  (8) : Proxy frontend stopped (cumulated conns: FE: 0, BE: 0).
+rinha-haproxy   | [WARNING]  (8) : Proxy backend stopped (cumulated conns: FE: 0, BE: 0).
+rinha-haproxy   | [WARNING]  (1) : Current worker (8) exited with code 0 (Exit)
+rinha-haproxy   | [WARNING]  (1) : All workers exited. Exiting... (0)
+[Krinha-haproxy exited with code 0
+[Krinha-worker exited with code 2
+rinha-postgres  | 2025-08-19 05:50:47.338 UTC [83] LOG:  could not receive data from client: Connection reset by peer
+rinha-postgres  | 2025-08-19 05:50:47.338 UTC [98] LOG:  could not receive data from client: Connection reset by peer
+[Krinha-api-1 exited with code 2
+[Krinha-api-2 exited with code 2
+rinha-postgres  | 2025-08-19 05:50:47.910 UTC [1] LOG:  received fast shutdown request
+rinha-postgres  | 2025-08-19 05:50:47.911 UTC [1] LOG:  aborting any active transactions
+rinha-postgres  | 2025-08-19 05:50:47.914 UTC [1] LOG:  background worker "logical replication launcher" (PID 69) exited with exit code 1
+rinha-postgres  | 2025-08-19 05:50:47.915 UTC [64] LOG:  shutting down
+rinha-postgres  | 2025-08-19 05:50:47.915 UTC [64] LOG:  checkpoint starting: shutdown immediate
+rinha-postgres  | 2025-08-19 05:50:47.985 UTC [64] LOG:  checkpoint complete: wrote 1925 buffers (23.5%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.070 s, sync=0.001 s, total=0.070 s; sync files=0, longest=0.000 s, average=0.000 s; distance=95 kB, estimate=3658 kB
+rinha-postgres  | 2025-08-19 05:50:48.013 UTC [1] LOG:  database system is shut down
+log truncated at line 1000

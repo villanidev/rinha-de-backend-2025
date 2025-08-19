@@ -1,0 +1,138 @@
+
+ nginx Pulling 
+ backend-2 Pulling 
+ backend-1 Pulling 
+ nginx Pulled 
+ 0368fd46e3c6 Already exists 
+ b2cfd92d46e1 Already exists 
+ bed0ae60cca4 Already exists 
+ a70d06f762c0 Already exists 
+ 0368fd46e3c6 Already exists 
+ 431200b796ef Already exists 
+ b2cfd92d46e1 Already exists 
+ d4da49add472 Already exists 
+ bed0ae60cca4 Already exists 
+ a70d06f762c0 Already exists 
+ a64a009979d2 Pulling fs layer 
+ d51c06ae6928 Pulling fs layer 
+ 431200b796ef Already exists 
+ d4da49add472 Already exists 
+ a64a009979d2 Pulling fs layer 
+ d51c06ae6928 Pulling fs layer 
+ a64a009979d2 Downloading [==================================================>]     225B/225B
+ a64a009979d2 Download complete 
+ a64a009979d2 Verifying Checksum 
+ a64a009979d2 Download complete 
+ a64a009979d2 Extracting [==================================================>]     225B/225B
+ a64a009979d2 Extracting [==================================================>]     225B/225B
+ a64a009979d2 Extracting [==================================================>]     225B/225B
+ a64a009979d2 Extracting [==================================================>]     225B/225B
+ a64a009979d2 Pull complete 
+ a64a009979d2 Pull complete 
+ d51c06ae6928 Downloading [>                                                  ]  179.4kB/17.75MB
+ d51c06ae6928 Downloading [>                                                  ]  179.4kB/17.75MB
+ d51c06ae6928 Downloading [===========================================>       ]  15.49MB/17.75MB
+ d51c06ae6928 Downloading [===========================================>       ]  15.49MB/17.75MB
+ d51c06ae6928 Verifying Checksum 
+ d51c06ae6928 Download complete 
+ d51c06ae6928 Download complete 
+ d51c06ae6928 Extracting [>                                                  ]  196.6kB/17.75MB
+ d51c06ae6928 Extracting [>                                                  ]  196.6kB/17.75MB
+ d51c06ae6928 Extracting [===================>                               ]  6.881MB/17.75MB
+ d51c06ae6928 Extracting [===================>                               ]  6.881MB/17.75MB
+ d51c06ae6928 Extracting [===========================================>       ]  15.34MB/17.75MB
+ d51c06ae6928 Extracting [===========================================>       ]  15.34MB/17.75MB
+ d51c06ae6928 Extracting [==================================================>]  17.75MB/17.75MB
+ d51c06ae6928 Extracting [==================================================>]  17.75MB/17.75MB
+ d51c06ae6928 Pull complete 
+ d51c06ae6928 Pull complete 
+ backend-1 Pulled 
+ backend-2 Pulled 
+ Network rafaelberrocalj-dotnet_backend  Creating
+ Network rafaelberrocalj-dotnet_backend  Created
+ Volume "sqlite-data"  Creating
+ Volume "sqlite-data"  Created
+ Container backend-2  Creating
+ Container backend-1  Creating
+ Container backend-2  Created
+ Container backend-1  Created
+ Container rafaelberrocalj-dotnet-nginx-1  Creating
+ Container rafaelberrocalj-dotnet-nginx-1  Created
+Attaching to backend-1, backend-2, nginx-1
+nginx-1  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+nginx-1  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+nginx-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+nginx-1  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+nginx-1  | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+nginx-1  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+nginx-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+nginx-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+nginx-1  | /docker-entrypoint.sh: Configuration complete; ready for start up
+backend-1  | fail: Microsoft.EntityFrameworkCore.Database.Connection[20004]
+backend-1  |       An error occurred using the connection to database 'main' on server 'temp/payments.db'.
+backend-2  | fail: Microsoft.EntityFrameworkCore.Database.Connection[20004]
+backend-2  |       An error occurred using the connection to database 'main' on server 'temp/payments.db'.
+backend-2  | fail: bz1-rinha-de-backend-2025[0]
+backend-2  |       Failed to initialize database: SQLite Error 14: 'unable to open database file'.
+backend-2  |       Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 14: 'unable to open database file'.
+backend-2  |          at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+backend-2  |          at Microsoft.Data.Sqlite.SqliteConnectionInternal..ctor(SqliteConnectionStringBuilder connectionOptions, SqliteConnectionPool pool)
+backend-2  |          at Microsoft.Data.Sqlite.SqliteConnectionPool.GetConnection()
+backend-2  |          at Microsoft.Data.Sqlite.SqliteConnectionFactory.GetConnection(SqliteConnection outerConnection)
+backend-2  |          at Microsoft.Data.Sqlite.SqliteConnection.Open()
+backend-2  |          at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+backend-2  |          at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+backend-2  |          at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+backend-2  |          at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator.Create()
+backend-2  |          at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.CreateAsync(CancellationToken cancellationToken)
+backend-2  |          at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreatedAsync(CancellationToken cancellationToken)
+backend-2  |          at Program.<Main>$(String[] args) in /Users/rafaelberrocalj/LocalDocuments/GitHub/bz1-rinha-de-backend-2025/Program.cs:line 74
+backend-2  |          at Program.<Main>$(String[] args) in /Users/rafaelberrocalj/LocalDocuments/GitHub/bz1-rinha-de-backend-2025/Program.cs:line 75
+backend-1  | fail: bz1-rinha-de-backend-2025[0]
+backend-1  |       Failed to initialize database: SQLite Error 14: 'unable to open database file'.
+backend-1  |       Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 14: 'unable to open database file'.
+backend-1  |          at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+backend-1  |          at Microsoft.Data.Sqlite.SqliteConnectionInternal..ctor(SqliteConnectionStringBuilder connectionOptions, SqliteConnectionPool pool)
+backend-1  |          at Microsoft.Data.Sqlite.SqliteConnectionPool.GetConnection()
+backend-1  |          at Microsoft.Data.Sqlite.SqliteConnectionFactory.GetConnection(SqliteConnection outerConnection)
+backend-1  |          at Microsoft.Data.Sqlite.SqliteConnection.Open()
+backend-1  |          at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+backend-1  |          at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+backend-1  |          at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+backend-1  |          at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator.Create()
+backend-1  |          at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.CreateAsync(CancellationToken cancellationToken)
+backend-1  |          at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreatedAsync(CancellationToken cancellationToken)
+backend-1  |          at Program.<Main>$(String[] args) in /Users/rafaelberrocalj/LocalDocuments/GitHub/bz1-rinha-de-backend-2025/Program.cs:line 74
+backend-1  |          at Program.<Main>$(String[] args) in /Users/rafaelberrocalj/LocalDocuments/GitHub/bz1-rinha-de-backend-2025/Program.cs:line 75
+backend-1  | Unhandled exception. Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 14: 'unable to open database file'.
+backend-1  |    at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+backend-1  |    at Microsoft.Data.Sqlite.SqliteConnectionInternal..ctor(SqliteConnectionStringBuilder connectionOptions, SqliteConnectionPool pool)
+backend-1  |    at Microsoft.Data.Sqlite.SqliteConnectionPool.GetConnection()
+backend-1  |    at Microsoft.Data.Sqlite.SqliteConnectionFactory.GetConnection(SqliteConnection outerConnection)
+backend-1  |    at Microsoft.Data.Sqlite.SqliteConnection.Open()
+backend-1  |    at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+backend-1  |    at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+backend-1  |    at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+backend-1  |    at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator.Create()
+backend-1  |    at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.CreateAsync(CancellationToken cancellationToken)
+backend-1  |    at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreatedAsync(CancellationToken cancellationToken)
+backend-1  |    at Program.<Main>$(String[] args) in /Users/rafaelberrocalj/LocalDocuments/GitHub/bz1-rinha-de-backend-2025/Program.cs:line 74
+backend-1  |    at Program.<Main>$(String[] args) in /Users/rafaelberrocalj/LocalDocuments/GitHub/bz1-rinha-de-backend-2025/Program.cs:line 75
+backend-1  |    at Program.<Main>(String[] args)
+backend-2  | Unhandled exception. Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 14: 'unable to open database file'.
+backend-2  |    at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+backend-2  |    at Microsoft.Data.Sqlite.SqliteConnectionInternal..ctor(SqliteConnectionStringBuilder connectionOptions, SqliteConnectionPool pool)
+backend-2  |    at Microsoft.Data.Sqlite.SqliteConnectionPool.GetConnection()
+backend-2  |    at Microsoft.Data.Sqlite.SqliteConnectionFactory.GetConnection(SqliteConnection outerConnection)
+backend-2  |    at Microsoft.Data.Sqlite.SqliteConnection.Open()
+backend-2  |    at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+backend-2  |    at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+backend-2  |    at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+backend-2  |    at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator.Create()
+backend-2  |    at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.CreateAsync(CancellationToken cancellationToken)
+backend-2  |    at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreatedAsync(CancellationToken cancellationToken)
+backend-2  |    at Program.<Main>$(String[] args) in /Users/rafaelberrocalj/LocalDocuments/GitHub/bz1-rinha-de-backend-2025/Program.cs:line 74
+backend-2  |    at Program.<Main>$(String[] args) in /Users/rafaelberrocalj/LocalDocuments/GitHub/bz1-rinha-de-backend-2025/Program.cs:line 75
+backend-2  |    at Program.<Main>(String[] args)
+[Kbackend-2 exited with code 139
+[Kbackend-1 exited with code 139
