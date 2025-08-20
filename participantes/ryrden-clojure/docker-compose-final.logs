@@ -1,0 +1,35 @@
+
+ Network ryrden-clojure_backend  Creating
+ Network ryrden-clojure_backend  Created
+ Volume "ryrden-clojure_redis_data"  Creating
+ Volume "ryrden-clojure_redis_data"  Created
+ Container ryrden-clojure-redis-1  Creating
+ Container ryrden-clojure-redis-1  Created
+ Container ryrden-clojure-api-02-1  Creating
+ Container ryrden-clojure-api-01-1  Creating
+ Container ryrden-clojure-api-02-1  Created
+ Container ryrden-clojure-api-01-1  Created
+ Container ryrden-clojure-nginx-1  Creating
+ Container ryrden-clojure-nginx-1  Created
+Attaching to api-01-1, api-02-1, nginx-1, redis-1
+redis-1  | 1:C 19 Aug 2025 16:39:31.666 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[Kapi-02-1 exited with code 137
+api-01-1  | Starting system...
+api-01-1  | Starting 5 payment processing workers
+api-01-1  | Worker payment-worker-0 started
+api-01-1  | Worker payment-worker-1 started
+api-01-1  | Worker payment-worker-2 started
+api-01-1  | Worker payment-worker-3 started
+api-01-1  | Worker payment-worker-4 started
+api-01-1  | === Initializing Health Monitoring ===
+api-01-1  | Checking default processor health...
+api-01-1  | Checking fallback processor health...
+api-01-1  | Health monitoring initialized
+api-01-1  | === Rinha Payment System Started ===
+api-01-1  | HTTP Server: localhost:8080
+api-01-1  | Workers: 5 payment processing workers
+api-01-1  | =====================================
+[Kapi-01-1 exited with code 137
+redis-1   | 1:signal-handler (1755621656) Received SIGTERM scheduling shutdown...
+redis-1   | 1:M 19 Aug 2025 16:40:56.499 # Redis is now ready to exit, bye bye...
+dependency failed to start: container ryrden-clojure-api-02-1 exited (137)

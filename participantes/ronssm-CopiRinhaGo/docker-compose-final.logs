@@ -1,0 +1,31 @@
+
+ backend1 Pulling 
+ haproxy Pulling 
+ backend2 Pulling 
+ haproxy Pulled 
+ backend2 Pulled 
+ backend1 Pulled 
+ Network ronssm-copirinhago_backend  Creating
+ Network ronssm-copirinhago_backend  Created
+ Container ronssm-copirinhago-backend2-1  Creating
+ Container ronssm-copirinhago-backend1-1  Creating
+ Container ronssm-copirinhago-backend2-1  Created
+ Container ronssm-copirinhago-backend1-1  Created
+ Container ronssm-copirinhago-haproxy-1  Creating
+ Container ronssm-copirinhago-haproxy-1  Created
+Attaching to backend1-1, backend2-1, haproxy-1
+backend2-1  | [MAIN] 2025/08/19 16:20:42 Starting API server on port 9999
+backend1-1  | [MAIN] 2025/08/19 16:20:42 Starting API server on port 9999
+haproxy-1   | [NOTICE]   (1) : New worker (8) forked
+haproxy-1   | [NOTICE]   (1) : Loading success.
+haproxy-1   | [NOTICE]   (1) : haproxy version is 2.8.15-a9aef56
+haproxy-1   | [WARNING]  (1) : Exiting Master process...
+haproxy-1   | [WARNING]  (8) : Proxy frontend stopped (cumulated conns: FE: 3078, BE: 0).
+haproxy-1   | [WARNING]  (8) : Proxy api_servers stopped (cumulated conns: FE: 0, BE: 68877).
+haproxy-1   | [WARNING]  (1) : Current worker (8) exited with code 0 (Exit)
+haproxy-1   | [WARNING]  (1) : All workers exited. Exiting... (0)
+[Khaproxy-1 exited with code 0
+backend1-1  | [MAIN] 2025/08/19 16:25:54 Shutting down gracefully...
+backend2-1  | [MAIN] 2025/08/19 16:25:54 Shutting down gracefully...
+[Kbackend1-1 exited with code 0
+log truncated at line 1000

@@ -1,0 +1,83 @@
+
+time="2025-08-19T18:44:51Z" level=warning msg="/home/ubuntu/rinha-de-backend-2025/participantes/tvillani-java/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+ jproxy-payment2 Pulling 
+ a3be5d4ce401 Already exists 
+ a22d4e398983 Pulling fs layer 
+ 74362a1bde1d Pulling fs layer 
+ f34f25f9917c Pulling fs layer 
+ b2ea2ced5283 Pulling fs layer 
+ 01bf15593321 Pulling fs layer 
+ 6019b9f10202 Pulling fs layer 
+ b2ea2ced5283 Waiting 
+ 6019b9f10202 Waiting 
+ 01bf15593321 Waiting 
+ f34f25f9917c Downloading [==================================================>]     160B/160B
+ f34f25f9917c Verifying Checksum 
+ f34f25f9917c Download complete 
+ a22d4e398983 Downloading [>                                                  ]  174.3kB/16.15MB
+ 74362a1bde1d Downloading [>                                                  ]  539.8kB/52.97MB
+ b2ea2ced5283 Downloading [==================================================>]  2.283kB/2.283kB
+ b2ea2ced5283 Verifying Checksum 
+ b2ea2ced5283 Download complete 
+ a22d4e398983 Downloading [==========================================>        ]  13.75MB/16.15MB
+ 01bf15593321 Downloading [==================================================>]      92B/92B
+ 01bf15593321 Verifying Checksum 
+ 01bf15593321 Download complete 
+ a22d4e398983 Verifying Checksum 
+ a22d4e398983 Download complete 
+ 74362a1bde1d Downloading [===============>                                   ]  16.17MB/52.97MB
+ a22d4e398983 Extracting [>                                                  ]  163.8kB/16.15MB
+ 74362a1bde1d Downloading [==========================>                        ]  28.43MB/52.97MB
+ a22d4e398983 Extracting [==>                                                ]  655.4kB/16.15MB
+ 6019b9f10202 Downloading [>                                                  ]  16.38kB/1.365MB
+ a22d4e398983 Extracting [============>                                      ]  4.096MB/16.15MB
+ 74362a1bde1d Downloading [===============================>                   ]  33.77MB/52.97MB
+ 6019b9f10202 Verifying Checksum 
+ 6019b9f10202 Download complete 
+ 74362a1bde1d Downloading [==============================================>    ]  49.24MB/52.97MB
+ a22d4e398983 Extracting [=======================>                           ]  7.537MB/16.15MB
+ 74362a1bde1d Downloading [==================================================>]  52.97MB/52.97MB
+ 74362a1bde1d Verifying Checksum 
+ 74362a1bde1d Download complete 
+ a22d4e398983 Extracting [==============================>                    ]   9.83MB/16.15MB
+ a22d4e398983 Extracting [=====================================>             ]  12.12MB/16.15MB
+ a22d4e398983 Extracting [==========================================>        ]   13.6MB/16.15MB
+ a22d4e398983 Extracting [==============================================>    ]  14.91MB/16.15MB
+ a22d4e398983 Extracting [==============================================>    ]  15.07MB/16.15MB
+ a22d4e398983 Extracting [===============================================>   ]  15.24MB/16.15MB
+ a22d4e398983 Extracting [=================================================> ]  16.06MB/16.15MB
+ a22d4e398983 Extracting [==================================================>]  16.15MB/16.15MB
+ a22d4e398983 Pull complete 
+ 74362a1bde1d Extracting [>                                                  ]  557.1kB/52.97MB
+ 74362a1bde1d Extracting [=======>                                           ]  8.356MB/52.97MB
+ 74362a1bde1d Extracting [===============>                                   ]  16.15MB/52.97MB
+ 74362a1bde1d Extracting [=======================>                           ]  24.51MB/52.97MB
+ 74362a1bde1d Extracting [==============================>                    ]  32.31MB/52.97MB
+ 74362a1bde1d Extracting [====================================>              ]  38.99MB/52.97MB
+ 74362a1bde1d Extracting [==========================================>        ]  45.12MB/52.97MB
+ 74362a1bde1d Extracting [=================================================> ]  52.92MB/52.97MB
+ 74362a1bde1d Extracting [==================================================>]  52.97MB/52.97MB
+ 74362a1bde1d Pull complete 
+ f34f25f9917c Extracting [==================================================>]     160B/160B
+ f34f25f9917c Extracting [==================================================>]     160B/160B
+ f34f25f9917c Pull complete 
+ b2ea2ced5283 Extracting [==================================================>]  2.283kB/2.283kB
+ b2ea2ced5283 Extracting [==================================================>]  2.283kB/2.283kB
+ b2ea2ced5283 Pull complete 
+ 01bf15593321 Extracting [==================================================>]      92B/92B
+ 01bf15593321 Extracting [==================================================>]      92B/92B
+ 01bf15593321 Pull complete 
+ 6019b9f10202 Extracting [=>                                                 ]  32.77kB/1.365MB
+ 6019b9f10202 Extracting [==================================================>]  1.365MB/1.365MB
+ 6019b9f10202 Extracting [==================================================>]  1.365MB/1.365MB
+ 6019b9f10202 Pull complete 
+ jproxy-payment2 Pulled 
+#1 [internal] load local bake definitions
+#1 reading from stdin 634B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 2B done
+#2 DONE 0.0s
+failed to solve: failed to read dockerfile: open Dockerfile: no such file or directory
+

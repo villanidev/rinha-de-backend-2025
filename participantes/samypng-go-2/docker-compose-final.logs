@@ -1,0 +1,65 @@
+
+ backend2 Pulling 
+ backend1 Pulling 
+ backend1 Pulled 
+ backend2 Pulled 
+ Network samypng-go-2_rinha-network  Creating
+ Network samypng-go-2_rinha-network  Created
+ Volume "samypng-go-2_sockets"  Creating
+ Volume "samypng-go-2_sockets"  Created
+ Container rinha-redis  Creating
+ Container rinha-redis  Created
+ Container rinha-backend-2  Creating
+ Container rinha-backend-1  Creating
+ Container rinha-backend-2  Created
+ Container rinha-backend-1  Created
+ Container rinha-haproxy  Creating
+ Container rinha-haproxy  Created
+Attaching to rinha-backend-1, rinha-backend-2, rinha-haproxy, rinha-redis
+rinha-redis  | 1:C 19 Aug 2025 16:53:34.218 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+rinha-redis  | 1:C 19 Aug 2025 16:53:34.218 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+rinha-redis  | 1:C 19 Aug 2025 16:53:34.218 * Redis version=8.2.0, bits=64, commit=00000000, modified=1, pid=1, just started
+rinha-redis  | 1:C 19 Aug 2025 16:53:34.218 * Configuration loaded
+rinha-redis  | 1:M 19 Aug 2025 16:53:34.218 * monotonic clock: POSIX clock_gettime
+rinha-redis  | 1:M 19 Aug 2025 16:53:34.219 * Running mode=standalone, port=6379.
+rinha-redis  | 1:M 19 Aug 2025 16:53:34.219 # WARNING: The TCP backlog setting of 8192 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 4096.
+rinha-redis  | 1:M 19 Aug 2025 16:53:34.220 * Server initialized
+rinha-redis  | 1:M 19 Aug 2025 16:53:34.220 * Ready to accept connections tcp
+rinha-redis  | 1:M 19 Aug 2025 16:53:34.220 * Ready to accept connections unix
+rinha-backend-1  | 
+rinha-backend-1  |  ┌───────────────────────────────────────────────────┐ 
+rinha-backend-1  |  │                   Fiber v2.52.8                   │ 
+rinha-backend-1  |  │           http:///sockets/actix.sock.2:           │ 
+rinha-backend-1  |  │                                                   │ 
+rinha-backend-1  |  │ Handlers ............. 4  Processes ........... 1 │ 
+rinha-backend-1  |  │ Prefork ....... Disabled  PID ................. 1 │ 
+rinha-backend-1  |  └───────────────────────────────────────────────────┘ 
+rinha-backend-1  | 
+rinha-backend-2  | 
+rinha-backend-2  |  ┌───────────────────────────────────────────────────┐ 
+rinha-backend-2  |  │                   Fiber v2.52.8                   │ 
+rinha-backend-2  |  │           http:///sockets/actix.sock.1:           │ 
+rinha-backend-2  |  │                                                   │ 
+rinha-backend-2  |  │ Handlers ............. 4  Processes ........... 1 │ 
+rinha-backend-2  |  │ Prefork ....... Disabled  PID ................. 1 │ 
+rinha-backend-2  |  └───────────────────────────────────────────────────┘ 
+rinha-backend-2  | 
+rinha-haproxy    | [NOTICE]   (1) : Initializing new worker (9)
+rinha-haproxy    | [NOTICE]   (1) : Loading success.
+[Krinha-backend-2 exited with code 137
+rinha-haproxy    | [WARNING]  (9) : Server backend_servers/backend1 is DOWN, reason: Socket error, info: "General socket error (Connection refused)", check duration: 0ms. 1 active and 0 backup servers left. 0 sessions active, 0 requeued, 0 remaining in queue.
+[Krinha-backend-1 exited with code 137
+rinha-haproxy    | [WARNING]  (9) : Server backend_servers/backend2 is DOWN, reason: Socket error, info: "General socket error (Connection refused)", check duration: 0ms. 0 active and 0 backup servers left. 0 sessions active, 0 requeued, 0 remaining in queue.
+rinha-haproxy    | [ALERT]    (9) : backend 'backend_servers' has no server available!
+rinha-haproxy    | [NOTICE]   (1) : haproxy version is 3.2.3-1844da7
+rinha-haproxy    | [WARNING]  (1) : Exiting Master process...
+rinha-haproxy    | [WARNING]  (9) : Proxy http-in stopped (cumulated conns: FE: 26788, BE: 0).
+rinha-haproxy    | [WARNING]  (9) : Proxy backend_servers stopped (cumulated conns: FE: 0, BE: 26788).
+rinha-haproxy    | [WARNING]  (1) : Current worker (9) exited with code 0 (Exit)
+rinha-haproxy    | [WARNING]  (1) : All workers exited. Exiting... (0)
+[Krinha-haproxy exited with code 0
+rinha-redis      | 1:signal-handler (1755622737) Received SIGTERM scheduling shutdown...
+rinha-redis      | 1:M 19 Aug 2025 16:58:57.823 * User requested shutdown...
+rinha-redis      | 1:M 19 Aug 2025 16:58:57.823 * Removing the unix socket file.
+rinha-redis      | 1:M 19 Aug 2025 16:58:57.823 # Redis is now ready to exit, bye bye...
+log truncated at line 1000

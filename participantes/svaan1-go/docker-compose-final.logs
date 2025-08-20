@@ -1,0 +1,76 @@
+
+ Network svaan1-go_backend  Creating
+ Network svaan1-go_backend  Created
+ Container svaan1-go-redis-1  Creating
+ Container health  Creating
+ Container svaan1-go-redis-1  Created
+ Container health  Created
+ Container api2  Creating
+ Container api1  Creating
+ Container api2  Created
+ Container api1  Created
+ Container haproxy  Creating
+ Container haproxy  Created
+Attaching to api1, api2, haproxy, health, redis-1
+redis-1  | 1:C 19 Aug 2025 17:32:15.913 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis-1  | 1:C 19 Aug 2025 17:32:15.913 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-1  | 1:C 19 Aug 2025 17:32:15.913 * Redis version=7.4.5, bits=64, commit=00000000, modified=0, pid=1, just started
+redis-1  | 1:C 19 Aug 2025 17:32:15.913 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+redis-1  | 1:M 19 Aug 2025 17:32:15.914 * monotonic clock: POSIX clock_gettime
+redis-1  | 1:M 19 Aug 2025 17:32:15.914 * Running mode=standalone, port=6379.
+redis-1  | 1:M 19 Aug 2025 17:32:15.915 * Server initialized
+redis-1  | 1:M 19 Aug 2025 17:32:15.915 * Ready to accept connections tcp
+api2     | 
+api2     |  ┌───────────────────────────────────────────────────┐ 
+api2     |  │                   Fiber v2.52.9                   │ 
+api2     |  │                http://127.0.0.1:80                │ 
+api2     |  │        (bound on host 0.0.0.0 and port 80)        │ 
+api2     |  │                                                   │ 
+api2     |  │ Handlers ............. 4  Processes ........... 1 │ 
+api2     |  │ Prefork ....... Disabled  PID ................. 1 │ 
+api2     |  └───────────────────────────────────────────────────┘ 
+api2     | 
+api1     | 
+api1     |  ┌───────────────────────────────────────────────────┐ 
+api1     |  │                   Fiber v2.52.9                   │ 
+api1     |  │                http://127.0.0.1:80                │ 
+api1     |  │        (bound on host 0.0.0.0 and port 80)        │ 
+api1     |  │                                                   │ 
+api1     |  │ Handlers ............. 4  Processes ........... 1 │ 
+api1     |  │ Prefork ....... Disabled  PID ................. 1 │ 
+api1     |  └───────────────────────────────────────────────────┘ 
+api1     | 
+health   | 2025/08/19 17:32:16 Starting server at :8080
+haproxy  | [NOTICE]   (1) : Initializing new worker (8)
+haproxy  | [NOTICE]   (1) : Loading success.
+redis-1  | 1:M 19 Aug 2025 17:34:26.627 * 10000 changes in 60 seconds. Saving...
+redis-1  | 1:M 19 Aug 2025 17:34:26.627 * Background saving started by pid 21
+redis-1  | 21:C 19 Aug 2025 17:34:26.693 * DB saved on disk
+redis-1  | 21:C 19 Aug 2025 17:34:26.694 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+redis-1  | 1:M 19 Aug 2025 17:34:26.779 * Background saving terminated with success
+redis-1  | 1:M 19 Aug 2025 17:35:27.046 * 10000 changes in 60 seconds. Saving...
+redis-1  | 1:M 19 Aug 2025 17:35:27.047 * Background saving started by pid 22
+redis-1  | 22:C 19 Aug 2025 17:35:27.087 * DB saved on disk
+redis-1  | 22:C 19 Aug 2025 17:35:27.088 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+redis-1  | 1:M 19 Aug 2025 17:35:27.148 * Background saving terminated with success
+redis-1  | 1:M 19 Aug 2025 17:36:28.016 * 10000 changes in 60 seconds. Saving...
+redis-1  | 1:M 19 Aug 2025 17:36:28.017 * Background saving started by pid 23
+redis-1  | 23:C 19 Aug 2025 17:36:28.297 * DB saved on disk
+redis-1  | 23:C 19 Aug 2025 17:36:28.298 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 1 MB
+redis-1  | 1:M 19 Aug 2025 17:36:28.382 * Background saving terminated with success
+haproxy  | [NOTICE]   (1) : haproxy version is 3.2.3-1844da7
+haproxy  | [WARNING]  (1) : Exiting Master process...
+haproxy  | [WARNING]  (8) : Proxy frontend stopped (cumulated conns: FE: 605, BE: 0).
+haproxy  | [WARNING]  (8) : Proxy backend stopped (cumulated conns: FE: 0, BE: 90605).
+haproxy  | [WARNING]  (1) : Current worker (8) exited with code 0 (Exit)
+haproxy  | [WARNING]  (1) : All workers exited. Exiting... (0)
+[Khaproxy exited with code 0
+[Kapi1 exited with code 2
+[Kapi2 exited with code 2
+redis-1  | 1:signal-handler (1755625047) Received SIGTERM scheduling shutdown...
+redis-1  | 1:M 19 Aug 2025 17:37:27.531 * User requested shutdown...
+redis-1  | 1:M 19 Aug 2025 17:37:27.531 * Saving the final RDB snapshot before exiting.
+[Khealth exited with code 2
+redis-1  | 1:M 19 Aug 2025 17:37:27.701 * DB saved on disk
+redis-1  | 1:M 19 Aug 2025 17:37:27.701 # Redis is now ready to exit, bye bye...
+log truncated at line 1000

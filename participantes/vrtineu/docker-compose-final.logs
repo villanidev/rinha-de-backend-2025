@@ -1,0 +1,37 @@
+
+ Network vrtineu_backend  Creating
+ Network vrtineu_backend  Created
+ Container vrtineu-redis-1  Creating
+ Container vrtineu-redis-1  Created
+ Container vrtineu-app1-1  Creating
+ Container vrtineu-app2-1  Creating
+ Container vrtineu-app2-1  Created
+ Container vrtineu-app1-1  Created
+ Container vrtineu-haproxy-1  Creating
+ Container vrtineu-haproxy-1  Created
+Attaching to app1-1, app2-1, haproxy-1, redis-1
+redis-1  | 1:C 19 Aug 2025 20:10:21.280 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis-1  | 1:C 19 Aug 2025 20:10:21.280 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-1  | 1:C 19 Aug 2025 20:10:21.280 * Redis version=7.2.10, bits=64, commit=00000000, modified=0, pid=1, just started
+redis-1  | 1:C 19 Aug 2025 20:10:21.280 * Configuration loaded
+redis-1  | 1:M 19 Aug 2025 20:10:21.280 * monotonic clock: POSIX clock_gettime
+redis-1  | 1:M 19 Aug 2025 20:10:21.281 * Running mode=standalone, port=6379.
+redis-1  | 1:M 19 Aug 2025 20:10:21.282 * Server initialized
+redis-1  | 1:M 19 Aug 2025 20:10:21.282 * Ready to accept connections tcp
+haproxy-1  | [NOTICE]   (1) : Initializing new worker (9)
+haproxy-1  | [NOTICE]   (1) : Loading success.
+haproxy-1  | [NOTICE]   (1) : haproxy version is 3.1.7-c3f4089
+haproxy-1  | [NOTICE]   (1) : path to executable is /usr/local/sbin/haproxy
+haproxy-1  | [WARNING]  (1) : Exiting Master process...
+haproxy-1  | [WARNING]  (9) : Proxy health stopped (cumulated conns: FE: 21, BE: 0).
+haproxy-1  | [WARNING]  (9) : Proxy http-in stopped (cumulated conns: FE: 634, BE: 0).
+haproxy-1  | [WARNING]  (9) : Proxy app_servers stopped (cumulated conns: FE: 0, BE: 634).
+haproxy-1  | [WARNING]  (1) : Current worker (9) exited with code 0 (Exit)
+haproxy-1  | [WARNING]  (1) : All workers exited. Exiting... (0)
+[Khaproxy-1 exited with code 0
+[Kapp2-1 exited with code 2
+[Kapp1-1 exited with code 2
+redis-1    | 1:signal-handler (1755634548) Received SIGTERM scheduling shutdown...
+redis-1    | 1:M 19 Aug 2025 20:15:48.174 * User requested shutdown...
+redis-1    | 1:M 19 Aug 2025 20:15:48.174 # Redis is now ready to exit, bye bye...
+log truncated at line 1000

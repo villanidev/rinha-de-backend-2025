@@ -1,0 +1,18 @@
+
+ Network wesleymatosdev-rust_backend  Creating
+ Network wesleymatosdev-rust_backend  Created
+ Volume "wesleymatosdev-rust_nats_data"  Creating
+ Volume "wesleymatosdev-rust_nats_data"  Created
+ Volume "wesleymatosdev-rust_postgres_data"  Creating
+ Volume "wesleymatosdev-rust_postgres_data"  Created
+ Volume "wesleymatosdev-rust_sockets"  Creating
+ Volume "wesleymatosdev-rust_sockets"  Created
+ Container wesleymatosdev-rust-nats-1  Creating
+ Container wesleymatosdev-rust-postgres-1  Creating
+ Container wesleymatosdev-rust-postgres-1  Created
+ Container wesleymatosdev-rust-nats-1  Created
+ Container wesleymatosdev-rust-api01-1  Creating
+ Container wesleymatosdev-rust-worker-1  Creating
+ Container wesleymatosdev-rust-api02-1  Creating
+ Container wesleymatosdev-rust-api01-1  Error response from daemon: failed to create symlink: /var/lib/docker/volumes/wesleymatosdev-rust_sockets/_data/run: symlink /run /var/lib/docker/volumes/wesleymatosdev-rust_sockets/_data/run: file exists
+Error response from daemon: failed to create symlink: /var/lib/docker/volumes/wesleymatosdev-rust_sockets/_data/run: symlink /run /var/lib/docker/volumes/wesleymatosdev-rust_sockets/_data/run: file exists

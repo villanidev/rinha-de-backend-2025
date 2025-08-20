@@ -1,0 +1,1001 @@
+
+time="2025-08-19T14:59:22Z" level=warning msg="/home/ubuntu/rinha-de-backend-2025/participantes/ricardovhz/docker-compose.yaml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+ Network ricardovhz_rinha-net  Creating
+ Network ricardovhz_rinha-net  Created
+ Container ricardovhz-db-1  Creating
+ Container ricardovhz-db-1  Created
+ Container ricardovhz-api01-1  Creating
+ Container ricardovhz-api02-1  Creating
+ Container ricardovhz-api01-1  Created
+ Container ricardovhz-api02-1  Created
+ Container ricardovhz-lb-1  Creating
+ Container ricardovhz-lb-1  Created
+Attaching to api01-1, api02-1, db-1, lb-1
+db-1  | 
+db-1  |     _______ __             
+db-1  |    / ____(_) /_  ___  _____
+db-1  |   / /_  / / __ \/ _ \/ ___/
+db-1  |  / __/ / / /_/ /  __/ /    
+db-1  | /_/   /_/_.___/\___/_/          v3.0.0-beta.4
+db-1  | --------------------------------------------------
+db-1  | INFO Server started on: 	http://127.0.0.1:3000 (bound on host 0.0.0.0 and port 3000)
+db-1  | INFO Total handlers count: 	2
+db-1  | INFO Prefork: 			Disabled
+db-1  | INFO PID: 			1
+db-1  | INFO Total process count: 	1
+db-1  | 
+api02-1  | 
+api02-1  |     _______ __             
+api02-1  |    / ____(_) /_  ___  _____
+api02-1  |   / /_  / / __ \/ _ \/ ___/
+api02-1  |  / __/ / / /_/ /  __/ /    
+api02-1  | /_/   /_/_.___/\___/_/          v3.0.0-beta.4
+api02-1  | --------------------------------------------------
+api02-1  | INFO Server started on: 	http://127.0.0.1:9999 (bound on host 0.0.0.0 and port 9999)
+api02-1  | INFO Total handlers count: 	2
+api02-1  | INFO Prefork: 			Disabled
+api02-1  | INFO PID: 			1
+api02-1  | INFO Total process count: 	1
+api02-1  | 
+api01-1  | 
+api01-1  |     _______ __             
+api01-1  |    / ____(_) /_  ___  _____
+api01-1  |   / /_  / / __ \/ _ \/ ___/
+api01-1  |  / __/ / / /_/ /  __/ /    
+api01-1  | /_/   /_/_.___/\___/_/          v3.0.0-beta.4
+api01-1  | --------------------------------------------------
+api01-1  | INFO Server started on: 	http://127.0.0.1:9999 (bound on host 0.0.0.0 and port 9999)
+api01-1  | INFO Total handlers count: 	2
+api01-1  | INFO Prefork: 			Disabled
+api01-1  | INFO PID: 			1
+api01-1  | INFO Total process count: 	1
+api01-1  | 
+lb-1     | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+lb-1     | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+lb-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+lb-1     | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+lb-1     | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+lb-1     | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+lb-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+lb-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+lb-1     | /docker-entrypoint.sh: Configuration complete; ready for start up
+api01-1  | Fetching payments summary from  to 
+api01-1  | Failed to parse date  with formats [2006-01-02T15:04:05 2006-01-02 2006-01-02T15:04:05.999999999Z07:00 2006-01-02 2006-01-02T15:04:05Z 2006-01-02T15:04:05Z07:00 2006-01-02T15:04:05Z07:00]
+api01-1  | Failed to parse date  with formats [2006-01-02T15:04:05 2006-01-02 2006-01-02T15:04:05.999999999Z07:00 2006-01-02 2006-01-02T15:04:05Z 2006-01-02T15:04:05Z07:00 2006-01-02T15:04:05Z07:00]
+api01-1  | Summary from  to : &{TotalRequests:0 TotalAmount:0} &{TotalRequests:0 TotalAmount:0}
+api01-1  | Fetching payments summary from 2025-08-19T14:59:17.887Z to 2025-08-19T14:59:30.887Z
+api01-1  | Summary from 2025-08-19T14:59:17.887Z to 2025-08-19T14:59:30.887Z: &{TotalRequests:0 TotalAmount:0} &{TotalRequests:0 TotalAmount:0}
+api01-1  | Fetching payments summary from 2025-08-19T14:59:27.921Z to 2025-08-19T14:59:40.921Z
+api01-1  | Summary from 2025-08-19T14:59:27.921Z to 2025-08-19T14:59:40.921Z: &{TotalRequests:76 TotalAmount:152380} &{TotalRequests:0 TotalAmount:0}
+api02-1  | Fetching payments summary from 2025-08-19T14:59:37.927Z to 2025-08-19T14:59:50.927Z
+api02-1  | Summary from 2025-08-19T14:59:37.927Z to 2025-08-19T14:59:50.927Z: &{TotalRequests:317 TotalAmount:635585} &{TotalRequests:0 TotalAmount:0}
+api01-1  | Fetching payments summary from 2025-08-19T14:59:47.930Z to 2025-08-19T15:00:00.930Z
+api01-1  | Summary from 2025-08-19T14:59:47.930Z to 2025-08-19T15:00:00.930Z: &{TotalRequests:578 TotalAmount:1158890} &{TotalRequests:0 TotalAmount:0}
+api01-1  | Fetching payments summary from 2025-08-19T14:59:57.934Z to 2025-08-19T15:00:10.934Z
+api01-1  | Summary from 2025-08-19T14:59:57.934Z to 2025-08-19T15:00:10.934Z: &{TotalRequests:599 TotalAmount:1200995} &{TotalRequests:0 TotalAmount:0}
+api01-1  | Fetching payments summary from 2025-08-19T15:00:07.938Z to 2025-08-19T15:00:20.938Z
+api01-1  | Summary from 2025-08-19T15:00:07.938Z to 2025-08-19T15:00:20.938Z: &{TotalRequests:517 TotalAmount:1036585} &{TotalRequests:0 TotalAmount:0}
+api01-1  | Fetching payments summary from 2025-08-19T15:00:17.942Z to 2025-08-19T15:00:30.942Z
+api01-1  | Summary from 2025-08-19T15:00:17.942Z to 2025-08-19T15:00:30.942Z: &{TotalRequests:520 TotalAmount:1042600} &{TotalRequests:0 TotalAmount:0}
+api01-1  | Fetching payments summary from 2025-08-19T15:00:27.945Z to 2025-08-19T15:00:40.945Z
+api01-1  | Summary from 2025-08-19T15:00:27.945Z to 2025-08-19T15:00:40.945Z: &{TotalRequests:822 TotalAmount:1648110} &{TotalRequests:0 TotalAmount:0}
+api02-1  | Fetching payments summary from 2025-08-19T15:00:37.948Z to 2025-08-19T15:00:50.948Z
+api02-1  | Summary from 2025-08-19T15:00:37.948Z to 2025-08-19T15:00:50.948Z: &{TotalRequests:1029 TotalAmount:2063145} &{TotalRequests:0 TotalAmount:0}
+api01-1  | Fetching payments summary from 2025-08-19T15:00:47.952Z to 2025-08-19T15:01:00.952Z
+api01-1  | Summary from 2025-08-19T15:00:47.952Z to 2025-08-19T15:01:00.952Z: &{TotalRequests:1038 TotalAmount:2081190} &{TotalRequests:0 TotalAmount:0}
+api02-1  | Health check failed or response time too high: <nil>, true, 2000ms
+api02-1  | Switching backend from 0 to 1 due to health check failure or high response time
+api01-1  | Health check failed or response time too high: <nil>, true, 2000ms
+api01-1  | Switching backend from 0 to 1 due to health check failure or high response time
+api02-1  | Fetching payments summary from 2025-08-19T15:00:57.955Z to 2025-08-19T15:01:10.955Z
+api02-1  | Summary from 2025-08-19T15:00:57.955Z to 2025-08-19T15:01:10.955Z: &{TotalRequests:360 TotalAmount:721800} &{TotalRequests:200 TotalAmount:401000}
+api02-1  | Health check failed or response time too high: <nil>, true, 2000ms
+api01-1  | Health check failed or response time too high: <nil>, true, 2000ms
+api02-1  | Fetching payments summary from 2025-08-19T15:01:07.959Z to 2025-08-19T15:01:20.959Z
+api02-1  | Summary from 2025-08-19T15:01:07.959Z to 2025-08-19T15:01:20.959Z: &{TotalRequests:0 TotalAmount:0} &{TotalRequests:480 TotalAmount:962400}
+api02-1  | Health check failed or response time too high: <nil>, true, 2000ms
+api01-1  | Health check failed or response time too high: <nil>, true, 2000ms
+api02-1  | Fetching payments summary from 2025-08-19T15:01:17.962Z to 2025-08-19T15:01:30.962Z
+api02-1  | Summary from 2025-08-19T15:01:17.962Z to 2025-08-19T15:01:30.962Z: &{TotalRequests:0 TotalAmount:0} &{TotalRequests:520 TotalAmount:1042600}
+api02-1  | Health check failed or response time too high: <nil>, true, 5000ms
+api01-1  | Health check failed or response time too high: <nil>, true, 5000ms
+api01-1  | Fetching payments summary from 2025-08-19T15:01:27.967Z to 2025-08-19T15:01:40.967Z
+api01-1  | Summary from 2025-08-19T15:01:27.967Z to 2025-08-19T15:01:40.967Z: &{TotalRequests:0 TotalAmount:0} &{TotalRequests:4784 TotalAmount:9591920}
+api02-1  | Health check failed or response time too high: <nil>, true, 5000ms
+api01-1  | Health check failed or response time too high: <nil>, true, 5000ms
+api02-1  | Fetching payments summary from 2025-08-19T15:01:38.035Z to 2025-08-19T15:01:51.035Z
+api02-1  | Summary from 2025-08-19T15:01:38.035Z to 2025-08-19T15:01:51.035Z: &{TotalRequests:0 TotalAmount:0} &{TotalRequests:7374 TotalAmount:14784870}
+api02-1  | Health check failed or response time too high: <nil>, true, 5000ms
+api01-1  | Health check failed or response time too high: <nil>, true, 5000ms
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:02 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | Fetching payments summary from 2025-08-19T15:01:48.047Z to 2025-08-19T15:02:01.047Z
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | Summary from 2025-08-19T15:01:48.047Z to 2025-08-19T15:02:01.047Z: &{TotalRequests:0 TotalAmount:0} &{TotalRequests:6939 TotalAmount:13912695}
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api01-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+api02-1  | 2025/08/19 15:02:03 Error processing payment: failed to process payment: error 500
+log truncated at line 1000

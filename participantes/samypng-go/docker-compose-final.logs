@@ -1,0 +1,115 @@
+
+ backend2 Pulling 
+ backend1 Pulling 
+ backend2 Pulled 
+ backend1 Pulled 
+ Network samypng-go_rinha-network  Creating
+ Network samypng-go_rinha-network  Created
+ Container rinha-redis  Creating
+ Container rinha-redis  Created
+ Container rinha-backend-1  Creating
+ Container rinha-backend-2  Creating
+ Container rinha-backend-1  Created
+ Container rinha-backend-2  Created
+ Container rinha-haproxy  Creating
+ Container rinha-haproxy  Created
+Attaching to rinha-backend-1, rinha-backend-2, rinha-haproxy, rinha-redis
+rinha-redis  | Starting Redis Server
+rinha-redis  | 1:C 19 Aug 2025 16:47:58.318 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+rinha-redis  | 1:C 19 Aug 2025 16:47:58.319 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+rinha-redis  | 1:C 19 Aug 2025 16:47:58.319 * Redis version=8.2.0, bits=64, commit=00000000, modified=1, pid=1, just started
+rinha-redis  | 1:C 19 Aug 2025 16:47:58.319 * Configuration loaded
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.320 * monotonic clock: POSIX clock_gettime
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.323 * Running mode=standalone, port=6379.
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.323 # WARNING: The TCP backlog setting of 8192 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 4096.
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.326 * <bf> RedisBloom version 8.2.0 (Git=unknown)
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.326 * <bf> Registering configuration options: [
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.326 * <bf> 	{ bf-error-rate       :      0.01 }
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.326 * <bf> 	{ bf-initial-size     :       100 }
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.326 * <bf> 	{ bf-expansion-factor :         2 }
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.326 * <bf> 	{ cf-bucket-size      :         2 }
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.326 * <bf> 	{ cf-initial-size     :      1024 }
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.326 * <bf> 	{ cf-max-iterations   :        20 }
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.326 * <bf> 	{ cf-expansion-factor :         1 }
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.326 * <bf> 	{ cf-max-expansions   :        32 }
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.326 * <bf> ]
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.327 * Module 'bf' loaded from /usr/local/lib/redis/modules//redisbloom.so
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.384 * <search> Redis version found by RedisSearch : 8.2.0 - oss
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.384 * <search> RediSearch version 8.2.0 (Git=d81ebce)
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.385 * <search> Low level api version 1 initialized successfully
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.386 * <search> gc: ON, prefix min length: 2, min word length to stem: 4, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, 
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.387 * <search> Initialized thread pools!
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.387 * <search> Disabled workers threadpool of size 0
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.389 * <search> Subscribe to config changes
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.389 * <search> Enabled role change notification
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.389 * <search> Cluster configuration: AUTO partitions, type: 0, coordinator timeout: 0ms
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.389 * <search> Register write commands
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.390 * Module 'search' loaded from /usr/local/lib/redis/modules//redisearch.so
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.393 * <timeseries> RedisTimeSeries version 80200, git_sha=1439d4a439ca9c063e6ef124a510abff09a5d493
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.393 * <timeseries> Redis version found by RedisTimeSeries : 8.2.0 - oss
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.393 * <timeseries> Registering configuration options: [
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.393 * <timeseries> 	{ ts-compaction-policy   :              }
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.393 * <timeseries> 	{ ts-num-threads         :            3 }
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.393 * <timeseries> 	{ ts-retention-policy    :            0 }
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.393 * <timeseries> 	{ ts-duplicate-policy    :        block }
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.393 * <timeseries> 	{ ts-chunk-size-bytes    :         4096 }
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.393 * <timeseries> 	{ ts-encoding            :   compressed }
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.393 * <timeseries> 	{ ts-ignore-max-time-diff:            0 }
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.393 * <timeseries> 	{ ts-ignore-max-val-diff :     0.000000 }
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.393 * <timeseries> ]
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.393 * <timeseries> Detected redis oss
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.394 * <timeseries> Enabled diskless replication
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.394 * Module 'timeseries' loaded from /usr/local/lib/redis/modules//redistimeseries.so
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.407 * <ReJSON> Created new data type 'ReJSON-RL'
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.409 * <ReJSON> version: 80200 git sha: unknown branch: unknown
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.410 * <ReJSON> Exported RedisJSON_V1 API
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.410 * <ReJSON> Exported RedisJSON_V2 API
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.410 * <ReJSON> Exported RedisJSON_V3 API
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.410 * <ReJSON> Exported RedisJSON_V4 API
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.410 * <ReJSON> Exported RedisJSON_V5 API
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.410 * <ReJSON> Enabled diskless replication
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.410 * <ReJSON> Initialized shared string cache, thread safe: false.
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.410 * Module 'ReJSON' loaded from /usr/local/lib/redis/modules//rejson.so
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.410 * <search> Acquired RedisJSON_V5 API
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.410 * Server initialized
+rinha-redis  | 1:M 19 Aug 2025 16:47:58.411 * Ready to accept connections tcp
+rinha-backend-1  | 
+rinha-backend-1  |  ┌───────────────────────────────────────────────────┐ 
+rinha-backend-1  |  │                   Fiber v2.52.8                   │ 
+rinha-backend-1  |  │               http://127.0.0.1:8000               │ 
+rinha-backend-1  |  │       (bound on host 0.0.0.0 and port 8000)       │ 
+rinha-backend-1  |  │                                                   │ 
+rinha-backend-1  |  │ Handlers ............. 4  Processes ........... 1 │ 
+rinha-backend-1  |  │ Prefork ....... Disabled  PID ................. 1 │ 
+rinha-backend-1  |  └───────────────────────────────────────────────────┘ 
+rinha-backend-1  | 
+rinha-backend-2  | 
+rinha-backend-2  |  ┌───────────────────────────────────────────────────┐ 
+rinha-backend-2  |  │                   Fiber v2.52.8                   │ 
+rinha-backend-2  |  │               http://127.0.0.1:8000               │ 
+rinha-backend-2  |  │       (bound on host 0.0.0.0 and port 8000)       │ 
+rinha-backend-2  |  │                                                   │ 
+rinha-backend-2  |  │ Handlers ............. 4  Processes ........... 1 │ 
+rinha-backend-2  |  │ Prefork ....... Disabled  PID ................. 1 │ 
+rinha-backend-2  |  └───────────────────────────────────────────────────┘ 
+rinha-backend-2  | 
+rinha-haproxy    | [NOTICE]   (1) : Initializing new worker (8)
+rinha-haproxy    | [NOTICE]   (1) : Loading success.
+[Krinha-backend-1 exited with code 137
+[Krinha-backend-2 exited with code 137
+rinha-haproxy    | [WARNING]  (8) : Server backend_servers/backend1 is DOWN, reason: Layer4 timeout, check duration: 2000ms. 1 active and 0 backup servers left. 569 sessions active, 0 requeued, 0 remaining in queue.
+rinha-haproxy    | [NOTICE]   (1) : haproxy version is 3.2.3-1844da7
+rinha-haproxy    | [ALERT]    (1) : Current worker (8) exited with code 137 (Killed)
+rinha-haproxy    | [WARNING]  (1) : A worker process unexpectedly died and this can only be explained by a bug in haproxy or its dependencies.
+rinha-haproxy    | Please check that you are running an up to date and maintained version of haproxy and open a bug report.
+rinha-haproxy    | HAProxy version 3.2.3-1844da7 2025/07/09 - https://haproxy.org/
+rinha-haproxy    | Status: long-term supported branch - will stop receiving fixes around Q2 2030.
+rinha-haproxy    | Known bugs: http://www.haproxy.org/bugs/bugs-3.2.3.html
+rinha-haproxy    | Running on: Linux 6.14.0-1010-aws #10~24.04.1-Ubuntu SMP Fri Jul 18 20:44:30 UTC 2025 x86_64
+rinha-haproxy    | [ALERT]    (1) : exit-on-failure: killing every processes with SIGTERM
+rinha-haproxy    | [WARNING]  (1) : All workers exited. Exiting... (137)
+[Krinha-haproxy exited with code 137
+rinha-redis      | 1:signal-handler (1755622405) Received SIGTERM scheduling shutdown...
+rinha-redis      | 1:M 19 Aug 2025 16:53:25.269 * User requested shutdown...
+rinha-redis      | 1:M 19 Aug 2025 16:53:25.269 # Redis is now ready to exit, bye bye...
+log truncated at line 1000

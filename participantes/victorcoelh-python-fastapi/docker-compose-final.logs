@@ -1,0 +1,124 @@
+
+ web-server-2 Pulling 
+ web-server-1 Pulling 
+ 396b1da7636e Already exists 
+ 7b1ad37e982c Already exists 
+ 31b0d2470ce1 Already exists 
+ 8c141999d083 Already exists 
+ 396b1da7636e Already exists 
+ 84f6d3fe7714 Pulling fs layer 
+ 183bb0a77d22 Pulling fs layer 
+ 78a89d4ba6a9 Pulling fs layer 
+ e3010d30cc53 Pulling fs layer 
+ e3010d30cc53 Waiting 
+ 7b1ad37e982c Already exists 
+ 31b0d2470ce1 Already exists 
+ 8c141999d083 Already exists 
+ 84f6d3fe7714 Pulling fs layer 
+ 183bb0a77d22 Pulling fs layer 
+ 78a89d4ba6a9 Pulling fs layer 
+ e3010d30cc53 Pulling fs layer 
+ e3010d30cc53 Waiting 
+ 78a89d4ba6a9 Download complete 
+ 78a89d4ba6a9 Download complete 
+ 183bb0a77d22 Downloading [=====================>                             ]  16.38kB/38.09kB
+ 183bb0a77d22 Downloading [=====================>                             ]  16.38kB/38.09kB
+ 183bb0a77d22 Download complete 
+ 183bb0a77d22 Downloading [==================================================>]  38.09kB/38.09kB
+ 183bb0a77d22 Verifying Checksum 
+ 183bb0a77d22 Download complete 
+ e3010d30cc53 Downloading [>                                                  ]  296.1kB/29.44MB
+ e3010d30cc53 Downloading [>                                                  ]  296.1kB/29.44MB
+ 84f6d3fe7714 Download complete 
+ 84f6d3fe7714 Download complete 
+ 84f6d3fe7714 Extracting [==================================================>]      93B/93B
+ 84f6d3fe7714 Extracting [==================================================>]      93B/93B
+ 84f6d3fe7714 Extracting [==================================================>]      93B/93B
+ 84f6d3fe7714 Extracting [==================================================>]      93B/93B
+ 84f6d3fe7714 Pull complete 
+ 84f6d3fe7714 Pull complete 
+ 183bb0a77d22 Extracting [===========================================>       ]  32.77kB/38.09kB
+ 183bb0a77d22 Extracting [===========================================>       ]  32.77kB/38.09kB
+ 183bb0a77d22 Extracting [==================================================>]  38.09kB/38.09kB
+ 183bb0a77d22 Extracting [==================================================>]  38.09kB/38.09kB
+ e3010d30cc53 Downloading [===============================>                   ]  18.74MB/29.44MB
+ e3010d30cc53 Downloading [===============================>                   ]  18.74MB/29.44MB
+ 183bb0a77d22 Pull complete 
+ 183bb0a77d22 Pull complete 
+ 78a89d4ba6a9 Extracting [==================================================>]      93B/93B
+ 78a89d4ba6a9 Extracting [==================================================>]      93B/93B
+ 78a89d4ba6a9 Extracting [==================================================>]      93B/93B
+ 78a89d4ba6a9 Extracting [==================================================>]      93B/93B
+ 78a89d4ba6a9 Pull complete 
+ 78a89d4ba6a9 Pull complete 
+ e3010d30cc53 Verifying Checksum 
+ e3010d30cc53 Download complete 
+ e3010d30cc53 Verifying Checksum 
+ e3010d30cc53 Download complete 
+ e3010d30cc53 Extracting [>                                                  ]  294.9kB/29.44MB
+ e3010d30cc53 Extracting [>                                                  ]  294.9kB/29.44MB
+ e3010d30cc53 Extracting [=================>                                 ]  10.03MB/29.44MB
+ e3010d30cc53 Extracting [=================>                                 ]  10.03MB/29.44MB
+ e3010d30cc53 Extracting [===========================>                       ]  16.22MB/29.44MB
+ e3010d30cc53 Extracting [===========================>                       ]  16.22MB/29.44MB
+ e3010d30cc53 Extracting [==================================>                ]  20.05MB/29.44MB
+ e3010d30cc53 Extracting [==================================>                ]  20.05MB/29.44MB
+ e3010d30cc53 Extracting [=====================================>             ]  21.82MB/29.44MB
+ e3010d30cc53 Extracting [=====================================>             ]  21.82MB/29.44MB
+ e3010d30cc53 Extracting [==========================================>        ]  24.77MB/29.44MB
+ e3010d30cc53 Extracting [==========================================>        ]  24.77MB/29.44MB
+ e3010d30cc53 Extracting [==================================================>]  29.44MB/29.44MB
+ e3010d30cc53 Extracting [==================================================>]  29.44MB/29.44MB
+ e3010d30cc53 Pull complete 
+ e3010d30cc53 Pull complete 
+ web-server-2 Pulled 
+ web-server-1 Pulled 
+ Network victorcoelh-python-fastapi_default  Creating
+ Network victorcoelh-python-fastapi_default  Created
+ Container fastapi-2  Creating
+ Container fastapi-1  Creating
+ Container redis  Creating
+ Container fastapi-2  Created
+ Container fastapi-1  Created
+ Container redis  Created
+ Container nginx  Creating
+ Container nginx  Created
+Attaching to fastapi-1, fastapi-2, nginx, redis
+redis  | 1:C 19 Aug 2025 19:37:33.276 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis  | 1:C 19 Aug 2025 19:37:33.276 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis  | 1:C 19 Aug 2025 19:37:33.276 * Redis version=7.2.10, bits=64, commit=00000000, modified=0, pid=1, just started
+redis  | 1:C 19 Aug 2025 19:37:33.276 * Configuration loaded
+redis  | 1:M 19 Aug 2025 19:37:33.277 * monotonic clock: POSIX clock_gettime
+redis  | 1:M 19 Aug 2025 19:37:33.277 * Running mode=standalone, port=6379.
+redis  | 1:M 19 Aug 2025 19:37:33.278 * Server initialized
+redis  | 1:M 19 Aug 2025 19:37:33.278 * Ready to accept connections tcp
+nginx  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+nginx  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+nginx  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+nginx  | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+nginx  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+nginx  | /docker-entrypoint.sh: Configuration complete; ready for start up
+fastapi-2  | [INFO] Starting granian (main PID: 1)
+fastapi-2  | [INFO] Listening at: http://0.0.0.0:8000
+fastapi-2  | [INFO] Spawning worker-1 with PID: 7
+fastapi-1  | [INFO] Starting granian (main PID: 1)
+fastapi-1  | [INFO] Listening at: http://0.0.0.0:8000
+fastapi-1  | [INFO] Spawning worker-1 with PID: 7
+fastapi-2  | [INFO] Started worker-1
+fastapi-2  | [INFO] Started worker-1 runtime-1
+fastapi-1  | [INFO] Started worker-1
+fastapi-1  | [INFO] Started worker-1 runtime-1
+redis      | 1:signal-handler (1755632325) Received SIGTERM scheduling shutdown...
+redis      | 1:M 19 Aug 2025 19:38:45.750 * User requested shutdown...
+redis      | 1:M 19 Aug 2025 19:38:45.750 # Redis is now ready to exit, bye bye...
+[Knginx exited with code 0
+[Kredis exited with code 0
+fastapi-1  | [INFO] Shutting down granian
+fastapi-1  | [INFO] Stopping worker-1 runtime-1
+fastapi-1  | [INFO] Stopping worker-1
+fastapi-2  | [INFO] Shutting down granian
+fastapi-2  | [INFO] Stopping worker-1
+fastapi-2  | [INFO] Stopping worker-1 runtime-1

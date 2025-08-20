@@ -1,0 +1,1001 @@
+
+time="2025-08-19T14:11:31Z" level=warning msg="/home/ubuntu/rinha-de-backend-2025/participantes/rafaelviefe/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+ Network rafaelviefe_backend  Creating
+ Network rafaelviefe_backend  Created
+ Container rinha-redis  Creating
+ Container rinha-redis  Created
+ Container rafaelviefe-api2-1  Creating
+ Container rafaelviefe-api1-1  Creating
+ Container rafaelviefe-api1-1  Created
+ Container rafaelviefe-api2-1  Created
+ Container rinha-load-balancer  Creating
+ Container rinha-load-balancer  Created
+Attaching to api1-1, api2-1, rinha-load-balancer, rinha-redis
+rinha-redis  | 1:C 19 Aug 2025 14:11:31.928 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+rinha-redis  | 1:C 19 Aug 2025 14:11:31.929 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+rinha-redis  | 1:C 19 Aug 2025 14:11:31.929 * Redis version=7.4.5, bits=64, commit=00000000, modified=0, pid=1, just started
+rinha-redis  | 1:C 19 Aug 2025 14:11:31.929 * Configuration loaded
+rinha-redis  | 1:M 19 Aug 2025 14:11:31.930 * monotonic clock: POSIX clock_gettime
+rinha-redis  | 1:M 19 Aug 2025 14:11:31.932 * Running mode=standalone, port=6379.
+rinha-redis  | 1:M 19 Aug 2025 14:11:31.949 * <timeseries> RedisTimeSeries version 11206, git_sha=cdcbe34f8e87e15ea700b737634be6bac6b6700b
+rinha-redis  | 1:M 19 Aug 2025 14:11:31.953 * <timeseries> Redis version found by RedisTimeSeries : 7.4.5 - oss
+rinha-redis  | 1:M 19 Aug 2025 14:11:31.953 * <timeseries> loaded default CHUNK_SIZE_BYTES policy: 4096
+rinha-redis  | 1:M 19 Aug 2025 14:11:31.953 * <timeseries> loaded server DUPLICATE_POLICY: block
+rinha-redis  | 1:M 19 Aug 2025 14:11:31.953 * <timeseries> loaded default IGNORE_MAX_TIME_DIFF: 0
+rinha-redis  | 1:M 19 Aug 2025 14:11:31.953 * <timeseries> loaded default IGNORE_MAX_VAL_DIFF: 0.000000
+rinha-redis  | 1:M 19 Aug 2025 14:11:31.953 * <timeseries> Setting default series ENCODING to: compressed
+rinha-redis  | 1:M 19 Aug 2025 14:11:31.954 * <timeseries> Detected redis oss
+rinha-redis  | 1:M 19 Aug 2025 14:11:31.956 * Module 'timeseries' loaded from /opt/redis-stack/lib/redistimeseries.so
+rinha-redis  | 1:M 19 Aug 2025 14:11:31.956 * Server initialized
+rinha-redis  | 1:M 19 Aug 2025 14:11:31.958 * Ready to accept connections tcp
+api2-1       | 
+api2-1       |   .   ____          _            __ _ _
+api2-1       |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+api2-1       | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+api2-1       |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+api1-1       | 
+api1-1       |   .   ____          _            __ _ _
+api1-1       |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+api1-1       | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+api1-1       |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+api1-1       |   '  |____| .__|_| |_|_| |_\__, | / / / /
+api1-1       |  =========|_|==============|___/=/_/_/_/
+api1-1       | 
+api1-1       |  :: Spring Boot ::                (v3.5.3)
+api2-1       |   '  |____| .__|_| |_|_| |_\__, | / / / /
+api2-1       |  =========|_|==============|___/=/_/_/_/
+api2-1       | 
+api2-1       |  :: Spring Boot ::                (v3.5.3)
+api2-1       | 
+api1-1       | 
+api1-1       | 2025-08-19T14:11:37.888Z  INFO 1 --- [pagamentos] [           main] b.c.r.pagamentos.PagamentosApplication   : Starting AOT-processed PagamentosApplication using Java 21.0.8 with PID 1 (/app/pagamentos started by root in /app)
+api1-1       | 2025-08-19T14:11:37.888Z  INFO 1 --- [pagamentos] [           main] b.c.r.pagamentos.PagamentosApplication   : No active profile set, falling back to 1 default profile: "default"
+api2-1       | 2025-08-19T14:11:37.888Z  INFO 1 --- [pagamentos] [           main] b.c.r.pagamentos.PagamentosApplication   : Starting AOT-processed PagamentosApplication using Java 21.0.8 with PID 1 (/app/pagamentos started by root in /app)
+api2-1       | 2025-08-19T14:11:37.888Z  INFO 1 --- [pagamentos] [           main] b.c.r.pagamentos.PagamentosApplication   : No active profile set, falling back to 1 default profile: "default"
+api2-1       | 2025-08-19T14:11:38.125Z  INFO 1 --- [pagamentos] [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+api1-1       | 2025-08-19T14:11:38.138Z  INFO 1 --- [pagamentos] [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+api1-1       | 2025-08-19T14:11:38.156Z  INFO 1 --- [pagamentos] [           main] b.c.r.pagamentos.PagamentosApplication   : Started PagamentosApplication in 0.341 seconds (process running for 0.513)
+api2-1       | 2025-08-19T14:11:38.173Z  INFO 1 --- [pagamentos] [           main] b.c.r.pagamentos.PagamentosApplication   : Started PagamentosApplication in 0.358 seconds (process running for 0.53)
+[Krinha-load-balancer exited with code 2
+api2-1               | 2025-08-19T14:16:49.249Z  INFO 1 --- [pagamentos] [ionShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+api1-1               | 2025-08-19T14:16:49.248Z  INFO 1 --- [pagamentos] [ionShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+api1-1               | 2025-08-19T14:16:49.284Z  INFO 1 --- [pagamentos] [ netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+api2-1               | 2025-08-19T14:16:49.319Z  INFO 1 --- [pagamentos] [ netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+api1-1               | 2025-08-19T14:16:49.326Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [ecbd9bf4-700, L:/172.19.0.4:50942 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.327Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [1cb8ba82-3, L:/172.19.0.4:52868 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.327Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [980e1fc8-191, L:/172.19.0.4:58864 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.328Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [c2bafcb5-190, L:/172.19.0.4:58874 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.328Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [62e14268-1, L:/172.19.0.4:52882 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.328Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [a20be933-1, L:/172.19.0.4:53016 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.328Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [64e2fdf5-1, L:/172.19.0.4:53102 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.328Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [e31ff4c1-1, L:/172.19.0.4:53114 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.329Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [951309d4-1, L:/172.19.0.4:53134 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.329Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [13c7a3de-1, L:/172.19.0.4:53140 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.329Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [190830e4-1, L:/172.19.0.4:53164 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.329Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [1b9a479f-150, L:/172.19.0.4:37146 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.333Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [eea8788f-150, L:/172.19.0.4:37188 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.333Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [6593b3de-150, L:/172.19.0.4:37210 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.333Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [ddc41e46-150, L:/172.19.0.4:37222 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.333Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [7790d04c-150, L:/172.19.0.4:37342 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.335Z  WARN 1 --- [pagamentos] [or-http-epoll-4] r.netty.http.client.HttpClientConnect    : [129a00fa-1, L:/172.19.0.4:52842 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.336Z  WARN 1 --- [pagamentos] [or-http-epoll-4] r.netty.http.client.HttpClientConnect    : [0a0a99dc-1, L:/172.19.0.4:52850 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.333Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [c2faa1b2-150, L:/172.19.0.4:37346 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.336Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [3832ee0a-150, L:/172.19.0.4:37354 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.337Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [bd1d6a22-150, L:/172.19.0.4:37368 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.337Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [2f7bada1-150, L:/172.19.0.4:37378 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.338Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [0daceffd-150, L:/172.19.0.4:37380 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.338Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [83d9755b-150, L:/172.19.0.4:37382 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.339Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [44213bfb-150, L:/172.19.0.4:37394 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.339Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [09e6a4b9-150, L:/172.19.0.4:37406 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.339Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [da7bd57f-2, L:/172.19.0.4:52954 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.339Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [fad7504a-150, L:/172.19.0.4:37410 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.339Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [d03da57f-216, L:/172.19.0.4:41950 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.337Z  WARN 1 --- [pagamentos] [or-http-epoll-4] r.netty.http.client.HttpClientConnect    : [e45f7291-1, L:/172.19.0.4:52852 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.340Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [454f4961-2, L:/172.19.0.4:52830 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.340Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [0556682d-150, L:/172.19.0.4:37422 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.340Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [0aa7bc0b-216, L:/172.19.0.4:41960 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.342Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [a715ded4-217, L:/172.19.0.4:41974 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.342Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [1df84b7a-217, L:/172.19.0.4:41982 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.342Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [57c3590e-216, L:/172.19.0.4:41990 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.342Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [c4c86917-216, L:/172.19.0.4:41996 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.342Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [5c795ddb-216, L:/172.19.0.4:42012 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.342Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [74c04ef2-216, L:/172.19.0.4:42028 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.342Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [eea5bea5-216, L:/172.19.0.4:42032 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.342Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [08853a10-216, L:/172.19.0.4:42042 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.342Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [43af4ca7-216, L:/172.19.0.4:42048 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.342Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [dffb5035-216, L:/172.19.0.4:42060 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.342Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [30ec1562-217, L:/172.19.0.4:42076 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.342Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [ce40833c-219, L:/172.19.0.4:42088 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.342Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [3e1f22f5-216, L:/172.19.0.4:42096 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.343Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [132b839c-216, L:/172.19.0.4:42100 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.343Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [1e0f0b31-216, L:/172.19.0.4:42104 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.343Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [77523cc4-216, L:/172.19.0.4:42116 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.343Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [9bcc516f-216, L:/172.19.0.4:42132 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.343Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [474fadde-217, L:/172.19.0.4:42138 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.343Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [58289a27-216, L:/172.19.0.4:42144 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.343Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [8923597f-217, L:/172.19.0.4:42154 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.343Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [dd9ccbee-216, L:/172.19.0.4:42168 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.343Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [736a72f7-216, L:/172.19.0.4:42184 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.343Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [69f131d2-216, L:/172.19.0.4:42196 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.343Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [fe220a49-216, L:/172.19.0.4:42210 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.343Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [9a69253f-216, L:/172.19.0.4:42226 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.344Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [42c561ad-215, L:/172.19.0.4:42240 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.344Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [f1199c97-215, L:/172.19.0.4:42246 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.344Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [1a206ff9-215, L:/172.19.0.4:42256 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.344Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [fb1b0cab-215, L:/172.19.0.4:42270 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.344Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [0b705c61-216, L:/172.19.0.4:42284 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.344Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [c55199b6-215, L:/172.19.0.4:42296 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.344Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [306b44a0-214, L:/172.19.0.4:42310 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.344Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [335595e3-213, L:/172.19.0.4:42322 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.344Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [b0f461a1-211, L:/172.19.0.4:42334 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.344Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [dcaaa03d-210, L:/172.19.0.4:42350 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.345Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [25157a54-209, L:/172.19.0.4:42358 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.345Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [bd811ef9-209, L:/172.19.0.4:50070 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.345Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [2f86c459-207, L:/172.19.0.4:50086 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.345Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [ef46f829-206, L:/172.19.0.4:50090 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.345Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [5cda30cc-205, L:/172.19.0.4:50106 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.345Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [7ff986ee-206, L:/172.19.0.4:50108 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.345Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [f43b93b4-204, L:/172.19.0.4:50124 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.345Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [b17305aa-203, L:/172.19.0.4:50138 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.346Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [03763d03-200, L:/172.19.0.4:50170 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.346Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [d794c37d-199, L:/172.19.0.4:50182 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.346Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [617c48d5-199, L:/172.19.0.4:58808 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.346Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [7c4bb3a3-198, L:/172.19.0.4:58810 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.346Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [5dc6fd58-1, L:/172.19.0.4:52970 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.346Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [456206ae-120, L:/172.19.0.4:37182 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.346Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [6e2ebf70-119, L:/172.19.0.4:37198 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.346Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [b38ab068-118, L:/172.19.0.4:37204 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.347Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [b9e48936-119, L:/172.19.0.4:37216 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.347Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [cf47ca15-1, L:/172.19.0.4:53004 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.347Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [a3459b91-1, L:/172.19.0.4:53344 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.347Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [d0506988-120, L:/172.19.0.4:37294 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.347Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [bfb3c809-120, L:/172.19.0.4:37312 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.347Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [0a8ff1b2-1, L:/172.19.0.4:53360 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.348Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [ba581eec-1, L:/172.19.0.4:53372 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.348Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [d889e227-1, L:/172.19.0.4:53380 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.349Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [fab617e1-1, L:/172.19.0.4:53396 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.349Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [6ebe85a5-150, L:/172.19.0.4:36992 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.349Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [9327e85e-150, L:/172.19.0.4:37002 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.349Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [e65062e2-150, L:/172.19.0.4:37016 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.350Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [a262e16b-150, L:/172.19.0.4:37026 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.350Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [811d3c19-150, L:/172.19.0.4:37028 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.341Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [8561be62-204, L:/172.19.0.4:50122 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.350Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [8d876892-150, L:/172.19.0.4:37044 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.352Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [e60b1843-150, L:/172.19.0.4:37056 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.352Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [971c2825-150, L:/172.19.0.4:37070 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.352Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [91ee2c96-150, L:/172.19.0.4:37086 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.352Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [39e71fae-150, L:/172.19.0.4:37092 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.352Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [cb0bc335-150, L:/172.19.0.4:37148 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.353Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [7e10c79f-149, L:/172.19.0.4:37430 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.353Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [20586da1-150, L:/172.19.0.4:37446 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.353Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [a74a51a7-150, L:/172.19.0.4:37456 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.353Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [f382629c-149, L:/172.19.0.4:37470 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.353Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [0baaf356-150, L:/172.19.0.4:37484 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.353Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [ef7784b9-149, L:/172.19.0.4:37488 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.353Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [9526ce7b-150, L:/172.19.0.4:37504 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.353Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [839e1673-150, L:/172.19.0.4:37516 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.353Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [f0a26f75-149, L:/172.19.0.4:37778 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.354Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [f7abbf65-149, L:/172.19.0.4:37786 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.354Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [29acc1ee-149, L:/172.19.0.4:37798 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.354Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [99e07f7f-149, L:/172.19.0.4:37828 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.354Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [2f640998-149, L:/172.19.0.4:37838 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.355Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [d24e1439-149, L:/172.19.0.4:38034 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.355Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [797be34d-201, L:/172.19.0.4:50154 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.355Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [8ee6755b-196, L:/172.19.0.4:58820 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.356Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [8965f992-195, L:/172.19.0.4:58832 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.358Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [8f90484c-195, L:/172.19.0.4:58846 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.359Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [b54a4991-194, L:/172.19.0.4:58856 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.360Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [bd9a58a1-192, L:/172.19.0.4:58860 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.360Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [81132772-191, L:/172.19.0.4:58870 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.360Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [37ec288f-189, L:/172.19.0.4:41070 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.360Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [a0059878-188, L:/172.19.0.4:41084 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.360Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [40012365-3, L:/172.19.0.4:52836 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.360Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [92e881e2-2, L:/172.19.0.4:52892 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.361Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [44bc5e50-1, L:/172.19.0.4:52896 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.361Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [692ef274-2, L:/172.19.0.4:52904 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.361Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [5ae2d74a-1, L:/172.19.0.4:52908 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.361Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [6556d9ab-119, L:/172.19.0.4:37296 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api2-1               | 2025-08-19T14:16:49.376Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [60bf6d9d-2, L:/172.19.0.5:37730 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.376Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [066c671d-3, L:/172.19.0.5:37736 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.376Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [f0fc7ef2-690, L:/172.19.0.5:59500 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.376Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [20f7fe21-213, L:/172.19.0.5:49922 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.377Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [90e89045-200, L:/172.19.0.5:52502 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.377Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [e09fdaec-190, L:/172.19.0.5:52136 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.377Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [52ae3df8-189, L:/172.19.0.5:52146 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.377Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [cf413e5d-188, L:/172.19.0.5:58636 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.378Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [3e32cf3b-187, L:/172.19.0.5:58644 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.378Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [081e1681-3, L:/172.19.0.5:37746 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.378Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [d4cca729-216, L:/172.19.0.5:49594 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.382Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [683059ae-216, L:/172.19.0.5:49610 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.382Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [0c4e78a8-216, L:/172.19.0.5:49620 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.382Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [c9740dfd-216, L:/172.19.0.5:49624 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.382Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [2548d59f-216, L:/172.19.0.5:49634 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.382Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [adaf87f4-216, L:/172.19.0.5:49648 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.383Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [aa1df821-216, L:/172.19.0.5:49662 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.383Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [3b6567ed-216, L:/172.19.0.5:49670 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.383Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [074f8e54-215, L:/172.19.0.5:49672 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.386Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [cc3a59f3-1, L:/172.19.0.5:38320 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.386Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [dd2c8cbf-1, L:/172.19.0.5:38354 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.387Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [201a8919-1, L:/172.19.0.5:38370 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.387Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [a56f0a4d-1, L:/172.19.0.5:38378 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.387Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [fd243faf-1, L:/172.19.0.5:38392 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.387Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [35adf283-1, L:/172.19.0.5:38406 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.392Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [647e7454-1, L:/172.19.0.5:38416 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.393Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [2722a116-1, L:/172.19.0.5:38422 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.393Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [f34ff51e-1, L:/172.19.0.5:38450 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.394Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [fd055a8b-216, L:/172.19.0.5:49680 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.394Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [315ef367-216, L:/172.19.0.5:49690 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.394Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [9cbc3e3e-216, L:/172.19.0.5:49694 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.394Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [754f132a-215, L:/172.19.0.5:49710 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.394Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [106cfe9c-215, L:/172.19.0.5:49724 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.394Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [ba189c9a-215, L:/172.19.0.5:49738 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.394Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [8562dd41-216, L:/172.19.0.5:49752 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.394Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [71aa2dbd-216, L:/172.19.0.5:49766 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.395Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [bbf2ad6b-215, L:/172.19.0.5:49776 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.395Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [fcf24469-215, L:/172.19.0.5:49782 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.395Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [8e0f909c-215, L:/172.19.0.5:49798 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.395Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [77abb5ab-215, L:/172.19.0.5:49808 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.395Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [2df0a5f1-215, L:/172.19.0.5:49818 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.395Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [70df76b1-215, L:/172.19.0.5:49820 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.395Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [241e79dd-215, L:/172.19.0.5:49830 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.396Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [32cacae6-1, L:/172.19.0.5:38456 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.396Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [c3f8cff4-1, L:/172.19.0.5:38470 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.396Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [58395235-1, L:/172.19.0.5:38474 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.397Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [fac6eaa2-13, L:/172.19.0.5:32916 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.397Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [a663534a-13, L:/172.19.0.5:32922 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.397Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [d575b1fe-13, L:/172.19.0.5:32982 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.398Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [a4f21ff3-13, L:/172.19.0.5:33040 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.398Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [7d452b1c-13, L:/172.19.0.5:33046 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.398Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [cd8dbf16-13, L:/172.19.0.5:33088 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.399Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [30887ad4-13, L:/172.19.0.5:33248 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.399Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [beb96aaa-13, L:/172.19.0.5:33272 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.400Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [0e26c510-13, L:/172.19.0.5:33292 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.401Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [c29ec8c8-13, L:/172.19.0.5:33308 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api2-1               | 2025-08-19T14:16:49.401Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [89cd5f68-13, L:/172.19.0.5:33334 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api2-1               | 
+api2-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api2-1               | 
+api1-1               | 2025-08-19T14:16:49.355Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [a511062d-149, L:/172.19.0.4:38038 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.424Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [c460b088-149, L:/172.19.0.4:38066 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.424Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [e557fc6a-150, L:/172.19.0.4:37528 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.424Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [eaadddc5-150, L:/172.19.0.4:37540 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.424Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [0bf50580-149, L:/172.19.0.4:37554 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.424Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [9d4da21e-150, L:/172.19.0.4:37566 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.424Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [1a122588-149, L:/172.19.0.4:37574 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.424Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [73b470b7-149, L:/172.19.0.4:37590 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.424Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [83715fd5-150, L:/172.19.0.4:37604 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.424Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [6dc9e03c-150, L:/172.19.0.4:37616 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.424Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [451e3570-149, L:/172.19.0.4:37626 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.425Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [e8157c69-149, L:/172.19.0.4:37632 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.425Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [60264821-150, L:/172.19.0.4:37648 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.425Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [c51fb761-149, L:/172.19.0.4:37680 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.425Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [e14f134c-149, L:/172.19.0.4:37690 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.425Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [9b1f4233-150, L:/172.19.0.4:37704 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.425Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [b386af3b-149, L:/172.19.0.4:37718 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.425Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [d52b4490-150, L:/172.19.0.4:37724 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.425Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [dd4abc7a-150, L:/172.19.0.4:37726 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.425Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [2bc7d4f0-149, L:/172.19.0.4:37734 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.426Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [243e500a-149, L:/172.19.0.4:37738 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.426Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [60c02688-149, L:/172.19.0.4:37770 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.426Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [eb90acb3-149, L:/172.19.0.4:37808 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.426Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [938bceb7-149, L:/172.19.0.4:37812 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.426Z  WARN 1 --- [pagamentos] [or-http-epoll-3] r.netty.http.client.HttpClientConnect    : [96e3b878-149, L:/172.19.0.4:37840 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.426Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [66aafc52-120, L:/172.19.0.4:37304 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.427Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [52b27964-149, L:/172.19.0.4:38086 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.427Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [056d8635-149, L:/172.19.0.4:38132 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.427Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [7352b74b-149, L:/172.19.0.4:38158 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.427Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [d8229177-1, L:/172.19.0.4:52924 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.427Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [8a0d9dfe-149, L:/172.19.0.4:38162 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.428Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [44d90b90-149, L:/172.19.0.4:38178 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.428Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [b7ad1d24-149, L:/172.19.0.4:38186 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.428Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [9b07d34f-1, L:/172.19.0.4:52940 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.428Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [f4c52977-149, L:/172.19.0.4:38190 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.428Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [e49f1c6c-1, L:/172.19.0.4:53408 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.428Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [253a973d-1, L:/172.19.0.4:53416 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.428Z  WARN 1 --- [pagamentos] [or-http-epoll-2] r.netty.http.client.HttpClientConnect    : [9627710d-1, L:/172.19.0.4:52952 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.428Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [73ad7a78-1, L:/172.19.0.4:53430 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.428Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [2b0de570-149, L:/172.19.0.4:38220 ! R:payment-processor-default/172.19.0.3:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.429Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [200c526e-1, L:/172.19.0.4:53440 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.429Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [071f53ef-1, L:/172.19.0.4:53444 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.429Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [04f7e5db-1, L:/172.19.0.4:53460 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+api1-1               | 
+api1-1               | reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+api1-1               | 
+api1-1               | 2025-08-19T14:16:49.429Z  WARN 1 --- [pagamentos] [or-http-epoll-1] r.netty.http.client.HttpClientConnect    : [25d34bb3-1, L:/172.19.0.4:53466 ! R:payment-processor-fallback/172.19.0.2:8080] The connection observed an error
+log truncated at line 1000

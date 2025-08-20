@@ -1,0 +1,24 @@
+
+ backend-2 Pulling 
+ backend-1 Pulling 
+ 9824c27679d3 Already exists 
+ f711be546856 Already exists 
+ 754ee179d65a Already exists 
+ a3dfd3a5252a Pulling fs layer 
+ e921ecc6c3f8 Pulling fs layer 
+ e921ecc6c3f8 Downloading [>                                                  ]  25.82kB/2.5MB
+ a3dfd3a5252a Downloading [>                                                  ]  33.23kB/2.5MB
+ a3dfd3a5252a Verifying Checksum 
+ a3dfd3a5252a Download complete 
+ a3dfd3a5252a Extracting [>                                                  ]  32.77kB/2.5MB
+ e921ecc6c3f8 Downloading [===========================================>       ]  2.184MB/2.5MB
+ e921ecc6c3f8 Verifying Checksum 
+ e921ecc6c3f8 Download complete 
+ a3dfd3a5252a Extracting [==================================================>]    2.5MB/2.5MB
+ a3dfd3a5252a Pull complete 
+ e921ecc6c3f8 Extracting [>                                                  ]  32.77kB/2.5MB
+ e921ecc6c3f8 Extracting [==================================================>]    2.5MB/2.5MB
+ e921ecc6c3f8 Pull complete 
+ backend-2 Pulled 
+ backend-1 Error Head "https://registry-1.docker.io/v2/rodrigomilitao/rinha-go-in-memory/manifests/2025-v6": Get "https://auth.docker.io/token?scope=repository%3Arodrigomilitao%2Frinha-go-in-memory%3Apull&service=registry.docker.io": net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+Error response from daemon: Head "https://registry-1.docker.io/v2/rodrigomilitao/rinha-go-in-memory/manifests/2025-v6": Get "https://auth.docker.io/token?scope=repository%3Arodrigomilitao%2Frinha-go-in-memory%3Apull&service=registry.docker.io": net/http: request canceled (Client.Timeout exceeded while awaiting headers)

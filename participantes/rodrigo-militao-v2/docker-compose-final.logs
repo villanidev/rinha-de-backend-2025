@@ -1,0 +1,93 @@
+
+ Network rodrigo-militao-v2_backend  Creating
+ Network rodrigo-militao-v2_backend  Created
+ Volume "rodrigo-militao-v2_redis-socket"  Creating
+ Volume "rodrigo-militao-v2_redis-socket"  Created
+ Container redis  Creating
+ Container redis  Created
+ Container rodrigo-militao-v2-worker-1  Creating
+ Container rodrigo-militao-v2-backend-1-1  Creating
+ Container rodrigo-militao-v2-backend-2-1  Creating
+ Container rodrigo-militao-v2-worker-1  Created
+ Container rodrigo-militao-v2-backend-1-1  Created
+ Container rodrigo-militao-v2-backend-2-1  Created
+ Container haproxy-lb  Creating
+ Container haproxy-lb  Created
+Attaching to haproxy-lb, redis, backend-1-1, backend-2-1, worker-1
+backend-1-1  | 2025/08/19 15:38:52 API iniciada. Pressione Ctrl+C para encerrar.
+backend-1-1  | 2025/08/19 15:38:52 Servidor HTTP escutando em :8080
+backend-2-1  | 2025/08/19 15:38:52 API iniciada. Pressione Ctrl+C para encerrar.
+worker-1     | 2025/08/19 15:38:52 Iniciando 5 workers...
+backend-2-1  | 2025/08/19 15:38:52 Servidor HTTP escutando em :8080
+worker-1     | 2025/08/19 15:38:52 Workers rodando. Pressione Ctrl+C para encerrar.
+haproxy-lb   | [NOTICE]   (1) : Initializing new worker (7)
+haproxy-lb   | [NOTICE]   (7) : haproxy version is 3.2.3-1844da7
+haproxy-lb   | [NOTICE]   (7) : path to executable is /usr/local/sbin/haproxy
+haproxy-lb   | [WARNING]  (7) : log format ignored for frontend 'fe_http' since it has no log address.
+haproxy-lb   | [NOTICE]   (1) : Loading success.
+[Kbackend-1-1 exited with code 137
+haproxy-lb   | [WARNING]  (7) : Server be_http/api1 is DOWN, reason: Layer4 timeout, check duration: 2001ms. 1 active and 0 backup servers left. 93 sessions active, 0 requeued, 0 remaining in queue.
+[Kbackend-2-1 exited with code 137
+haproxy-lb   | [NOTICE]   (1) : haproxy version is 3.2.3-1844da7
+haproxy-lb   | [NOTICE]   (1) : path to executable is /usr/local/sbin/haproxy
+haproxy-lb   | [WARNING]  (1) : Exiting Master process...
+haproxy-lb   | [WARNING]  (7) : Proxy fe_http stopped (cumulated conns: FE: 1541, BE: 0).
+haproxy-lb   | [WARNING]  (7) : Proxy be_http stopped (cumulated conns: FE: 0, BE: 88597).
+worker-1     | 2025/08/19 15:44:03 Encerrando workers...
+haproxy-lb   | [WARNING]  (7) : Server be_http/api2 is DOWN, reason: Layer4 timeout, check duration: 2001ms. 0 active and 0 backup servers left. 0 sessions active, 0 requeued, 0 remaining in queue.
+haproxy-lb   | [ALERT]    (7) : backend 'be_http' has no server available!
+worker-1     | 2025/08/19 15:44:04 [Worker 3] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:04 [Worker 4] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:04 [Worker 1] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:04 [Worker 2] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:04 [Worker 0] Redis error: context canceled
+haproxy-lb   | [WARNING]  (1) : Current worker (7) exited with code 0 (Exit)
+haproxy-lb   | [WARNING]  (1) : All workers exited. Exiting... (0)
+[Khaproxy-lb exited with code 0
+worker-1     | 2025/08/19 15:44:05 [Worker 0] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:05 [Worker 1] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:05 [Worker 3] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:05 [Worker 4] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:05 [Worker 2] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:06 [Worker 2] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:06 [Worker 0] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:06 [Worker 3] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:06 [Worker 4] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:06 [Worker 1] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:07 [Worker 4] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:07 [Worker 3] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:07 [Worker 2] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:07 [Worker 1] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:07 [Worker 0] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:08 [Worker 0] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:08 [Worker 4] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:08 [Worker 3] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:08 [Worker 2] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:08 [Worker 1] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:09 [Worker 1] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:09 [Worker 4] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:09 [Worker 0] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:09 [Worker 2] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:09 [Worker 3] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:10 [Worker 3] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:10 [Worker 1] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:10 [Worker 4] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:10 [Worker 0] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:10 [Worker 2] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:11 [Worker 2] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:11 [Worker 4] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:11 [Worker 0] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:11 [Worker 3] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:11 [Worker 1] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:12 [Worker 3] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:12 [Worker 1] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:12 [Worker 4] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:12 [Worker 0] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:12 [Worker 2] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:13 [Worker 2] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:13 [Worker 4] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:13 [Worker 3] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:13 [Worker 0] Redis error: context canceled
+worker-1     | 2025/08/19 15:44:13 [Worker 1] Redis error: context canceled
+[Kworker-1 exited with code 137
+log truncated at line 1000

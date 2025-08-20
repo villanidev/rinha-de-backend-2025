@@ -77,3 +77,10 @@ nginx-1  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolve
 nginx-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
 nginx-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
 nginx-1  | /docker-entrypoint.sh: Configuration complete; ready for start up
+[Knginx-1 exited with code 0
+[Kapi1-1 exited with code 0
+[Kapi2-1 exited with code 0
+redis-1  | 1:signal-handler (1755612683) Received SIGTERM scheduling shutdown...
+redis-1  | 1:M 19 Aug 2025 14:11:23.205 * User requested shutdown...
+redis-1  | 1:M 19 Aug 2025 14:11:23.205 # Redis is now ready to exit, bye bye...
+log truncated at line 1000

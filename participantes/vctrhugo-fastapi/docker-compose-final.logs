@@ -1,0 +1,1001 @@
+
+ Network vctrhugo-fastapi_backend  Creating
+ Network vctrhugo-fastapi_backend  Created
+ Container redis  Creating
+ Container redis  Created
+ Container worker2  Creating
+ Container worker1  Creating
+ Container worker2  Created
+ Container worker1  Created
+ Container vctrhugo-fastapi-api1-1  Creating
+ Container vctrhugo-fastapi-api2-1  Creating
+ Container vctrhugo-fastapi-api1-1  Created
+ Container vctrhugo-fastapi-api2-1  Created
+ Container nginx  Creating
+ Container nginx  Created
+Attaching to nginx, redis, api1-1, api2-1, worker1, worker2
+redis  | 1:C 19 Aug 2025 18:57:32.703 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis  | 1:C 19 Aug 2025 18:57:32.703 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis  | 1:C 19 Aug 2025 18:57:32.703 * Redis version=7.2.10, bits=64, commit=00000000, modified=0, pid=1, just started
+redis  | 1:C 19 Aug 2025 18:57:32.704 * Configuration loaded
+redis  | 1:M 19 Aug 2025 18:57:32.704 * monotonic clock: POSIX clock_gettime
+redis  | 1:M 19 Aug 2025 18:57:32.705 * Running mode=standalone, port=6379.
+redis  | 1:M 19 Aug 2025 18:57:32.705 * Server initialized
+redis  | 1:M 19 Aug 2025 18:57:32.705 * Ready to accept connections tcp
+nginx  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+nginx  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+nginx  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+nginx  | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+nginx  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+nginx  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+nginx  | /docker-entrypoint.sh: Configuration complete; ready for start up
+worker1  | 2025-08-19 18:57:40.656 | INFO     | __main__:<module>:50 - Starting worker.
+worker2  | 2025-08-19 18:57:40.712 | INFO     | __main__:<module>:50 - Starting worker.
+api1-1   | 
+api2-1   | 
+api2-1   |    FastAPI   Starting production server 🚀
+api2-1   |  
+api2-1   |              Searching for package file structure from directories with         
+api2-1   |              __init__.py files                                                  
+api1-1   |    FastAPI   Starting production server 🚀
+api1-1   |  
+api1-1   |              Searching for package file structure from directories with         
+api1-1   |              __init__.py files                                                  
+api2-1   |              Importing from /app
+api2-1   |  
+api2-1   |     module   📁 app            
+api2-1   |              ├── 🐍 __init__.py
+api2-1   |              └── 🐍 main.py    
+api2-1   |  
+api2-1   |       code   Importing the FastAPI app object from the module with the following
+api2-1   |              code:                                                              
+api2-1   |  
+api2-1   |              from app.main import app
+api2-1   |  
+api2-1   |        app   Using import string: app.main:app
+api2-1   |  
+api2-1   |     server   Server started at http://0.0.0.0:8000
+api2-1   |     server   Documentation at http://0.0.0.0:8000/docs
+api2-1   |  
+api2-1   |              Logs:
+api2-1   |  
+api1-1   |              Importing from /app
+api1-1   |  
+api1-1   |     module   📁 app            
+api1-1   |              ├── 🐍 __init__.py
+api1-1   |              └── 🐍 main.py    
+api1-1   |  
+api1-1   |       code   Importing the FastAPI app object from the module with the following
+api1-1   |              code:                                                              
+api1-1   |  
+api1-1   |              from app.main import app
+api1-1   |  
+api1-1   |        app   Using import string: app.main:app
+api1-1   |  
+api1-1   |     server   Server started at http://0.0.0.0:8000
+api1-1   |     server   Documentation at http://0.0.0.0:8000/docs
+api1-1   |  
+api1-1   |              Logs:
+api1-1   |  
+api2-1   |       INFO   Started server process [1]
+api2-1   |       INFO   Waiting for application startup.
+api1-1   |       INFO   Started server process [1]
+api1-1   |       INFO   Waiting for application startup.
+api1-1   |       INFO   Application startup complete.
+api1-1   |       INFO   Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+api2-1   |       INFO   Application startup complete.
+api2-1   |       INFO   Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+api1-1   |       INFO   172.19.0.8:57912 - "GET /payments-summary HTTP/1.1" 200
+api1-1   |       INFO   172.19.0.8:50310 - "POST /purge-payments HTTP/1.1" 200
+api1-1   |       INFO   172.19.0.8:50320 - "GET                                            
+api1-1   |              /payments-summary?from=2025-08-19T18:57:42.443Z&to=2025-08-19T18:57
+api1-1   |              :55.443Z HTTP/1.1" 200
+worker1  | 2025-08-19 18:57:57.454 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:57:57.943 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:57:58.442 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:57:58.458 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:57:58.940 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:57:58.947 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:57:59.438 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:57:59.445 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:57:59.460 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:57:59.937 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:57:59.943 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:57:59.950 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:00.435 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:00.441 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:00.448 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:00.463 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:00.933 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:00.940 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:00.947 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:00.952 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:01.432 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:01.438 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:01.445 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:01.452 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:01.466 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:01.931 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:01.937 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:01.943 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:01.950 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:01.956 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:02.429 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:02.436 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:02.441 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:02.448 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:02.455 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:02.470 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:02.927 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:02.934 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:02.939 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:02.946 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:02.953 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:02.959 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:03.426 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:03.433 | DEBUG    | __main__:process_payment:23 - Processing message.
+worker2  | 2025-08-19 18:58:03.440 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:03.444 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:03.451 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:03.459 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:03.474 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:03.924 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:03.931 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:03.937 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:03.943 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:03.950 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:03.956 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:03.962 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:04.422 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:04.429 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:04.436 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:04.443 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:04.448 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:04.455 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:04.464 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:04.478 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:04.920 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:04.927 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:04.934 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:04.941 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:04.947 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:04.953 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:04.959 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:04.965 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:05.419 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:05.425 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:05.432 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:05.439 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:05.447 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:05.450 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:05.458 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:05.467 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:05.481 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:05.917 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:05.924 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:05.930 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:05.938 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:05.945 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:05.950 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:05.957 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:05.963 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:05.968 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:06.416 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:06.422 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:06.428 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:06.435 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:06.442 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:06.450 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:06.454 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:06.461 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:06.470 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:06.484 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:06.913 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:06.920 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:06.927 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:06.933 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:06.941 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:06.948 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:06.953 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:06.960 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:06.965 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:06.971 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:07.412 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:07.419 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:07.425 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:07.432 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:07.438 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:07.446 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+api2-1   |       INFO   172.19.0.8:45386 - "GET                                            
+api2-1   |              /payments-summary?from=2025-08-19T18:57:52.449Z&to=2025-08-19T18:58
+api2-1   |              :05.449Z HTTP/1.1" 200
+worker2  | 2025-08-19 18:58:07.453 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:07.457 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:07.464 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:07.473 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:07.487 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:07.910 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:07.917 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:07.923 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:07.930 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:07.936 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:07.944 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:07.951 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:07.956 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:07.963 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:07.968 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:07.974 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:08.409 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:08.415 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:08.422 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:08.428 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:08.434 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:08.441 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:08.448 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:08.456 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:08.460 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:08.466 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:08.476 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:08.490 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:08.907 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:08.913 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:08.920 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:08.926 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:08.932 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:08.939 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:08.946 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:08.955 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:08.958 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:08.966 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:08.971 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:08.977 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:09.405 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:09.412 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:09.418 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:09.425 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:09.431 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:09.437 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:09.443 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:09.451 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:09.458 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:09.463 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:09.469 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:09.478 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:09.493 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:09.903 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:09.910 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:09.916 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:09.922 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:09.929 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:09.935 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:09.942 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:09.949 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:09.957 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:09.961 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:09.969 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:09.973 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:09.980 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:10.402 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:10.408 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:10.415 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:10.421 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:10.427 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:10.434 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:10.440 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:10.447 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:10.454 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:10.461 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:10.466 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:10.472 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:10.481 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:10.496 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:10.901 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:10.906 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:10.912 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:10.919 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:10.924 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:10.932 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:10.938 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:10.944 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:10.952 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:10.960 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:10.964 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:10.972 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:10.976 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:10.983 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:11.399 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:11.404 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:11.411 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:11.417 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:11.423 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:11.430 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:11.436 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:11.442 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:11.450 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:11.456 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:11.465 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:11.469 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:11.474 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:11.485 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:11.499 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:11.897 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:11.903 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:11.909 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:11.915 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:11.922 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:11.927 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:11.935 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:11.941 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:11.947 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:11.955 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:11.963 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:11.966 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:11.975 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:11.979 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:11.985 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:12.395 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:12.402 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:12.408 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:12.414 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:12.420 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:12.426 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:12.432 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:12.439 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:12.445 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:12.453 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:12.459 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:12.468 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:12.472 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:12.477 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:12.488 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:12.502 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:12.893 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:12.900 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:12.906 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:12.912 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:12.918 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:12.925 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:12.930 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:12.937 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:12.944 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:12.950 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:12.958 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:12.966 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:12.969 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:12.978 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:12.981 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:12.988 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:13.393 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:13.398 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:13.406 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:13.410 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:13.417 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:13.424 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:13.429 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:13.483 | DEBUG    | __main__:process_payment:23 - Processing message.
+worker1  | 2025-08-19 18:58:13.483 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50320 - "POST /payments HTTP/1.1" 202
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:13.486 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:13.487 | DEBUG    | __main__:process_payment:23 - Processing message.
+worker2  | 2025-08-19 18:58:13.488 | DEBUG    | __main__:process_payment:23 - Processing message.
+worker1  | 2025-08-19 18:58:13.489 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:13.494 | DEBUG    | __main__:process_payment:23 - Processing message.
+worker2  | 2025-08-19 18:58:13.496 | DEBUG    | __main__:process_payment:23 - Processing message.
+worker2  | 2025-08-19 18:58:13.497 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+api1-1   |       INFO   172.19.0.8:44040 - "POST /payments HTTP/1.1" 202
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:13.508 | DEBUG    | __main__:process_payment:23 - Processing message.
+worker2  | 2025-08-19 18:58:13.890 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:13.897 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:13.903 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:44040 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:13.909 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:13.915 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:13.921 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:13.928 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:13.932 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:13.940 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:13.946 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:13.953 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:13.961 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:13.968 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:44040 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:13.972 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:13.980 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:13.984 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:13.991 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:44040 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:14.388 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:14.396 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:14.401 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:14.408 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:14.414 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:44040 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:14.420 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:14.426 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:14.432 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:14.487 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:14.488 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:14.491 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:14.494 | DEBUG    | __main__:process_payment:23 - Processing message.
+worker1  | 2025-08-19 18:58:14.494 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:14.497 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:44040 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:14.498 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+api1-1   |       INFO   172.19.0.8:44040 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:14.500 | DEBUG    | __main__:process_payment:23 - Processing message.
+worker2  | 2025-08-19 18:58:14.500 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:14.509 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:14.887 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:14.893 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:14.900 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:14.906 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:14.913 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:14.918 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:14.925 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:14.931 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:14.935 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:14.943 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:14.950 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:14.955 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:44040 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:14.964 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:14.972 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:14.974 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:14.984 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:14.987 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:44040 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:14.995 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:15.385 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:15.392 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:15.399 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:15.403 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:44040 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:15.411 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:15.416 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:15.423 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:15.430 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:15.434 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:15.490 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:44040 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:15.492 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:15.494 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:15.497 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:15.500 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:15.502 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45386 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:15.503 | DEBUG    | __main__:process_payment:23 - Processing message.
+worker2  | 2025-08-19 18:58:15.503 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:57090 - "POST /payments HTTP/1.1" 202
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:15.504 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:44040 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:15.512 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:15.883 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:44040 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:15.890 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:15.896 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:15.903 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:15.909 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:57090 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:15.915 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:15.921 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:15.927 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:15.934 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:15.938 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:15.947 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:15.953 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:15.958 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:44040 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:15.967 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:15.974 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:57090 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:15.977 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:15.986 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:15.990 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:44040 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:15.997 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:57090 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:16.382 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:16.388 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:16.395 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:16.402 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:16.406 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:44040 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:16.413 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:16.419 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:57090 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:16.426 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:16.433 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:16.437 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:16.494 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:16.494 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:44040 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:16.497 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:16.500 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:16.502 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:16.505 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:57090 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:16.507 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+api1-1   |       INFO   172.19.0.8:44040 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:16.508 | DEBUG    | __main__:process_payment:23 - Processing message.
+worker2  | 2025-08-19 18:58:16.508 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:57090 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:16.515 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:16.880 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:16.887 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:44040 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:16.893 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:16.899 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:16.906 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:16.911 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:57090 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:16.919 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:16.924 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:16.931 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:16.937 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:16.940 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:16.949 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:16.955 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:16.961 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:44040 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:16.970 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:16.978 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:57090 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:16.980 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:16.989 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:16.993 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:44040 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:17.000 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:57090 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:17.385 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:17.386 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:17.392 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:17.397 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:17.406 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:17.409 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:44040 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:17.416 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:17.422 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:57090 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:17.429 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:17.435 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:17.440 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+api1-1   |       INFO   172.19.0.8:44040 - "GET                                            
+api1-1   |              /payments-summary?from=2025-08-19T18:58:02.453Z&to=2025-08-19T18:58
+api1-1   |              :15.453Z HTTP/1.1" 200
+worker1  | 2025-08-19 18:58:17.498 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+api2-1   |       INFO   172.19.0.8:57090 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:17.500 | DEBUG    | __main__:process_payment:23 - Processing message.
+worker1  | 2025-08-19 18:58:17.501 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:17.503 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50332 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:17.506 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:17.508 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:44040 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:17.511 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:17.511 | DEBUG    | __main__:process_payment:23 - Processing message.
+worker1  | 2025-08-19 18:58:17.512 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:44040 - "POST /payments HTTP/1.1" 202
+api2-1   |       INFO   172.19.0.8:57090 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:17.518 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50324 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:17.877 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45398 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:17.884 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:17.890 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:57090 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:17.896 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45374 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:17.902 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:17.909 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:17.914 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:44040 - "POST /payments HTTP/1.1" 202
+worker2  | 2025-08-19 18:58:17.921 | DEBUG    | __main__:process_payment:23 - Processing message.
+api1-1   |       INFO   172.19.0.8:50310 - "POST /payments HTTP/1.1" 202
+worker1  | 2025-08-19 18:58:17.927 | DEBUG    | __main__:process_payment:23 - Processing message.
+api2-1   |       INFO   172.19.0.8:45390 - "POST /payments HTTP/1.1" 202
+log truncated at line 1000
