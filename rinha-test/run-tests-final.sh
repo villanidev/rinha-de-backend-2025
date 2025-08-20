@@ -129,7 +129,7 @@ results=$(find ../participantes/*/final-results.json -size +1b | wc -l)
 errors=$(find ../participantes/*/final-results.json -size 0 | wc -l)
 total=$(find ../participantes/*/final-results.json | wc -l)
 
-echo -e "# Prévia do Resultados da Rinha de Backend 2025" > $RESULTADOS_FINAIS
+echo -e "# Resultados Finais da Rinha de Backend 2025" > $RESULTADOS_FINAIS
 echo -e "Atualizado em **$(date)**" >> $RESULTADOS_FINAIS
 echo -e "$total submissões / $results resultados / $errors submissões com erro" >> $RESULTADOS_FINAIS
 echo -e "*Testes executados com MAX_REQUESTS=$MAX_REQUESTS*."
